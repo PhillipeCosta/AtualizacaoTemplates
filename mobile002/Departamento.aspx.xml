@@ -105,6 +105,11 @@
             <div class="ciashop-infoShowCase">
               <p class="collection-info">[D6]</p>
             </div>
+            <condicao:pre_venda>
+              <span class="ciashop-boxLaunch">
+                <img src="imagens/selo_prevenda.png" alt="Pre Venda" class="img-responsive" />
+              </span>
+            </condicao:pre_venda>               
             <condicao:lancamento>
               <span class="ciashop-boxLaunch">
                 <img src="imagens/selo_novidade.png" alt="D1 em Lançamento" class="img-responsive" />

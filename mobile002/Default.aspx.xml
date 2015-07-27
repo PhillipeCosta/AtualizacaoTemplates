@@ -272,11 +272,16 @@
             <div class="ciashop-infoShowCase">
               <p class="collection-info">[A6]</p>
             </div>
+            <condicao:pre_venda>
+              <span class="ciashop-boxLaunch">
+                <img src="imagens/selo_prevenda.png" alt="Pre Venda" class="img-responsive" />
+              </span>
+            </condicao:pre_venda>            
             <condicao:lancamento>
               <span class="ciashop-boxLaunch">
                 <img src="imagens/selo_novidade.png" alt="Novidade" class="img-responsive" />
               </span>
-            </condicao:lancamento>
+            </condicao:lancamento>            
             <condicao:promocao_frete>
               <div class="ciashop-boxShippingLabel">                     
                   <h4 class="ciashop-shippingLabel">Frete Grátis</h4>                        
@@ -403,4 +408,4 @@
          </ul>]]></MenuHTML><TipoMenu value="Horizontal" /></Menu></Menus><Links><Link ID="Vitrine_Lancamentos"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoPrincipal" /><Parametros value="" /><Target value="NovaPagina" /><Texto value="Lançamentos" /><UsarHTTPS value="False" /></Link></Links><ScriptRazors><ScriptRazor ID="sampleBanner"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.main_sampleBanner == "true"){
   <img src="imagens/banner1.png" alt="SampleBanner" class="img-responsive img-bannerSlider" />
   <img src="imagens/banner2.png" alt="SampleBanner" class="img-responsive img-bannerSlider" />
-}          ]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom" /><ScriptRazor ID="script_bodyTop" /><ScriptRazor ID="script_bodyBottom" /></ScriptRazors></controles></page>
+}          ]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

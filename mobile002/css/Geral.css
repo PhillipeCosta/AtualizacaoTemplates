@@ -264,6 +264,11 @@ header{
   padding: 0.5em;
 }
 
+.ciashop-titBox h3{
+    margin: 13px 0;
+    padding: 10px;
+}
+
 .ciashop-cantoTit{
   width: 1px;
   height: 1px;
