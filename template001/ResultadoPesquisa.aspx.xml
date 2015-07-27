@@ -62,6 +62,11 @@
                       Indisponível
                     </div>                     
                   </condicao:produto_indisponivel>
+             <condicao:pre_venda>
+                <div class="box-tag collection-product-presaleTag">                          
+                  Pré-Venda
+                </div>                      
+             </condicao:pre_venda>               
               <condicao:lancamento>
                 <div class="box-tag collection-product-releaseTag">                          
                   Lançamento

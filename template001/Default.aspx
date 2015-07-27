@@ -84,7 +84,7 @@
   });  
 </script>
 <ciac:scriptrazor id="script_bodyBottom" runat="server"></ciac:scriptrazor>
-<!-- Template Spock - versão 23 - mantido por Ciashop -->
+<!-- Template Spock - versão 25 - mantido por Ciashop -->
 </form>
 </body>
 </html>
