@@ -1,64 +1,55 @@
-﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><OpiniaoProdutos><OpiniaoProduto ID="OpiniaoProduto1"><ImagemAvaliacaoDeselecionado value="rating-star-off.png" /><ImagemAvaliacaoSelecionado value="rating-star-on.png" /><OpiniaoProdutoHTML><![CDATA[<div class="col-md-6">
-      <h4 class="heading-collection">// Opine sobre os produtos que você comprou</h4>
-  <div class="main-overflow main-padding main-clear form-guest">
-
-    <div class="form main-clear main-overflow required">
-      <label class="col-md-3 text-right main-clearPadding main-padding">Nome</label>
-      <span class="col-md-7">
-        [A0]
-      </span>
-    </div>  
-    <div class="form main-clear main-overflow required">
-      <label class="col-md-3 text-right main-clearPadding main-padding">Email</label>
-      <span class="col-md-7">
-        [A1]
-      </span>
-    </div>
-    <div class="form main-clear main-overflow required">
-      <label class="col-md-3 text-right main-clearPadding main-padding">Cidade</label>
-      <span class="col-md-7">
-        [A3]
-      </span>
-    </div> 
-    <div class="form main-clear main-overflow required">
-      <label class="col-md-3 text-right main-clearPadding main-padding">Estado</label>
-      <span class="col-md-7">
-        [A4]
-      </span>
-    </div> 
-    <div class="form parent-validation main-clear main-overflow">
-      <label class="col-md-3 text-right main-clearPadding main-padding">&nbsp;</label>
-      <span class="col-md-7">
-          <span class="col-md-1 pull-left form-inscEstadual main-clearPadding">[A2]</span>
-          <span class="col-md-11">Sim</span>
-      </span>
-    </div>          
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><OpiniaoProdutos><OpiniaoProduto ID="OpiniaoProduto1"><ImagemAvaliacaoDeselecionado value="star_off.png" /><ImagemAvaliacaoSelecionado value="star_on.png" /><OpiniaoProdutoHTML><![CDATA[<h3 class="text-uppercase text-left heading-primary custom-paddingV20">Opine sobre os produtos que você comprou</h3>
+<div class="main-overflow main-padding main-clear form-guest">
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Nome</label>
+    <span class="col-md-7">
+      [A0]
+    </span>
+  </div>  
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Email</label>
+    <span class="col-md-7">
+      [A1]
+    </span>
   </div>
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Cidade</label>
+    <span class="col-md-7">
+      [A3]
+    </span>
+  </div> 
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Estado</label>
+    <span class="col-md-7">
+      [A4]
+    </span>
+  </div> 
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Exibir email no comentário?</label>
+    <span class="col-md-2">
+      [A2]
+    </span>
+  </div>         
 </div>
-<div class="col-md-6">
-  <div class="opiniao">
-    <ul class="produto_avaliar">
-      <repeticao:produtos>
-        <li>
-          <h3>[A6]</h3>
-          <div class="opiniao_foto">
-          <img src="[A5]?width=150&height=150" alt="[A6]" />
-          </div>
-          <div class="form">
-          <div class="">Avaliação<br />[A7]</div>
-          <div class="">
-          Comentário:<br />[A8]
-          </div>
-          </div>
-        </li>
-      </repeticao:produtos>
-    </ul>
-    <div class="main-overflow main-clear">
-      <a href="[A9]" class="bt btn-secondary">Enviar</a>
+<ul class="produto_avaliar">
+  <repeticao:produtos>
+  <li>
+    <h4 class="text-uppercase text-left heading-primary custom-paddingV20">[A6]</h4>
+    <div class="row">
+      <div class="col-md-3">
+        <img src="[A5]?width=150&height=150" alt="[A6]" />
+      </div>
+      <div class="form col-md-6">
+        <div class="">Avaliação<br />[A7]</div>
+        <div class=""> Comentário:<br />[A8]</div>
+      </div>
     </div>
-    </div>
-</div>      
-]]></OpiniaoProdutoHTML><ProdutosAvaliadosHTML><![CDATA[<h4 class="heading-collection">// Oops</h4>
+  </li>
+</repeticao:produtos>
+</ul>
+<div class="pull-right custom-paddingV20">
+  <a href="[A9]" class="btn btn-secondary text-uppercase text-center custom-paddingV5 custom-paddingH15">Avaliar Todos</a>
+</div>]]></OpiniaoProdutoHTML><ProdutosAvaliadosHTML><![CDATA[<h4 class="heading-collection">// Oops</h4>
 <br />
 <div class="alert alert-warning" role="alert">
   Você já opiniou sobre este produto!

@@ -69,11 +69,14 @@
           </h6>           
         </div>
         </condicaofalsa:sob_orcamento>
-        <condicao:lancamento>
-          <div class="collection-sealRelease custom-paddingV10">
-            <span class="collection-sealRelease btn-tertiary custom-paddingV5 custom-paddingH10 text-center text-uppercase">Lançamento</span>
-          </div>    
-        </condicao:lancamento> 
+        <div class="collection-sealRelease custom-paddingV10">
+        <condicao:pre_venda>   
+          <span class="btn-tertiary custom-paddingV5 custom-paddingH15 text-center text-uppercase">Pré-venda</span>
+         </condicao:pre_venda>        
+        <condicao:lancamento>   
+          <span class="btn-tertiary custom-paddingV5 custom-paddingH15 text-center text-uppercase">Lançamento</span>
+         </condicao:lancamento>
+        </div>
         <div class="collection-sealShipping">
           <condicao:promocao_frete>
               <a href="[D37]" data-toggle="modal" data-target="#promoFrete1"><img src="[D29]" alt="[D6]" title="Clique e Saiba Mais!" /></a>
