@@ -91,7 +91,7 @@
       })   
     </script>
     <ciac:scriptrazor id="script_bodyBottom" runat="server"></ciac:scriptrazor>
-	<!-- Template Speed - versão 14 - mantido por Ciashop -->
+	<!-- Template Speed - versão 15 - mantido por Ciashop -->
 </form>
 </body>
 </html>

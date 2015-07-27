@@ -152,6 +152,9 @@
           <span class="collection-sealUnavailable btn-Unavailable custom-paddingV5 custom-paddingH10 text-center"><strong>Indisponível</strong></span>
         </condicao:produto_indisponivel>
         <a href="[A1]" class="<condicao:produto_indiponivel>photoUnavailable</condicao:produto_indisponivel>"><img src="[A3]?width=125&height=125" alt="[A6]" /></a>
+        <condicao:pre_venda>
+          <span class="collection-sealRelease btn-tertiary custom-paddingV5 custom-paddingH10 text-center text-uppercase">Pré-venda</span>
+        </condicao:pre_venda>        
         <condicao:lancamento>
           <span class="collection-sealRelease btn-tertiary custom-paddingV5 custom-paddingH10 text-center text-uppercase">Lançamento</span>
         </condicao:lancamento>   
@@ -239,6 +242,9 @@
           <span class="collection-sealUnavailable btn-Unavailable custom-paddingV5 custom-paddingH10 text-center"><strong>Indisponível</strong></span>
         </condicao:produto_indisponivel>
         <a href="[A1]" class="<condicao:produto_indiponivel>photoUnavailable</condicao:produto_indisponivel>"><img src="[A3]?width=125&height=125" alt="[A6]" /></a>
+        <condicao:pre_venda>
+          <span class="collection-sealRelease btn-tertiary custom-paddingV5 custom-paddingH10 text-center text-uppercase">Pré-venda</span>
+        </condicao:pre_venda>        
         <condicao:lancamento>
           <span class="collection-sealRelease btn-tertiary custom-paddingV5 custom-paddingH10 text-center text-uppercase">Lançamento</span>
         </condicao:lancamento>   

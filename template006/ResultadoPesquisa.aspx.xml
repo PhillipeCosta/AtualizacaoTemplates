@@ -79,6 +79,9 @@
           <span class="collection-sealUnavailable btn-Unavailable custom-paddingV5 custom-paddingH10 text-center"><strong>Indisponível</strong></span>
         </condicao:produto_indisponivel>
         <a href="[D1]" class="<condicao:produto_indiponivel>photoUnavailable</condicao:produto_indisponivel>"><img src="[D2]?width=125&height=125" alt="[D6]" /></a>       
+        <condicao:pre_venda>
+          <span class="collection-sealRelease btn-tertiary custom-paddingV5 custom-paddingH10 text-center text-uppercase">Pré-venda</span>
+        </condicao:pre_venda>        
         <condicao:lancamento>
           <span class="collection-sealRelease"><img src="imagens/lancamento.png" alt="Tag Lançamento" /></span>
         </condicao:lancamento>   
