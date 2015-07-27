@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><IdentificacaoCompradors><IdentificacaoComprador ID="IdentificacaoComprador"><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="tit-checkout heading-secondary">
+    <h3>Dados Residênciais</h3>
+</div>
+<div class="formulario_conteudo">
+    <div class="formulario">
+        <div class="list obrigatorio cep">
+            <label><span class="tit_label pt">Digite Primeiro o CEP*</span>
+            [I2] </label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Nome do Local* <small class="pt">(Casa, Trabalho, etc)</small></span>
+            [I5]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_100"><span class="tit_label pt">Endereço*</span>
+            [I7]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_25"><span class="tit_label pt">Número*</span>
+            [I9]</label>
+            <label class="larg_73"><span class="tit_label pt">Complemento</span>
+            [I11]</label>          
+        </div>
+        <div class="list">
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Bairro*</span>
+            [I13]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Cidade*</span>
+            [I15]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label><span class="tit_label pt">Estado*</span>
+            [I17] </label>
+        </div>
+        <div class="list">
+            <label class="larg_100"><span class="tit_label pt">Pontos de Referência</span>
+            [I19]</label>
+        </div>
+    </div>
+</div>
+    <div class="bt-identificacao bt-respiro">
+      <a href="javascript:void(0);" onclick="[I31]" class="bt-continuar text-center btn-primary">
+        <strong><span class="fa fa-caret-right"></span> Continuar</strong> 
+    </a>         
+    </div>]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[<div class="tit-checkout heading-secondary">
+    <h3>Dados Pessoais</h3>
+</div>
+<div class="formulario_conteudo">
+    <div class="info pt">Campos marcados com * são obrigatórios.</div>
+    <div class="formulario">
+        <condicao:tipo_pessoa>
+            <div class="list radio">
+                <label><span class="tit_label">&nbsp;</span></label>
+                [H36]
+                [H37]
+            </div>
+        </condicao:tipo_pessoa>
+        <condicao:exibe_pais>
+            <div class="list">
+                <label><span class="tit_label pt">País</span>
+                [H1]</label>
+            </div>
+        </condicao:exibe_pais>
+        <div class="list obrigatorio">
+            <label class="larg_100"><span class="tit_label pt">Nome Completo*</span>
+            [H7]</label>
+        </div>
+        <condicao:pessoa_fisica>
+            <div class="list obrigatorio">
+                <label><span class="tit_label pt">Sexo*</span>
+                [H18]</label>
+            </div>
+            <div class="list obrigatorio">
+                <label class="larg_50"><span class="tit_label pt">Data de Nascimento*<small class="pt"> (DD/MM/AAAA)</small></span>
+                [H16]</label>
+            </div>
+            <div class="list">
+                <label><span class="tit_label pt">Estado Civil</span>
+                [H23]</label>
+            </div>
+            <div class="list">
+                <label class="larg_50"><span class="tit_label pt">Profissão</span>
+                [H14]</label>
+            </div>
+            <div class="list obrigatorio">
+                <label class="larg_75"><span class="tit_label pt">CPF <small class="pt"> (XXX.XXX.XXX-XX)</small>*</span>
+                [H21] </label>
+            </div>
+            <div class="list">
+                <label class="larg_50"><span class="tit_label pt">RG</span>
+                [H26]</label>
+            </div>
+            <div class="list">
+                <label><span class="tit_label pt">Estado Emissor</span>
+                [H28]</label>
+            </div>
+        </condicao:pessoa_fisica>
+
+        <condicao:pessoa_juridica>
+            <div class="list obrigatorio">
+                <label class="larg_75"><span class="tit_label pt">CNPJ*</span>
+                [H31]</label>
+            </div>
+            <div class="list obrigatorio">
+                <label class="larg_50"><span class="tit_label pt">Inscrição Estadual*</span>
+                [H33]</label>
+            </div>
+        </condicao:pessoa_juridica>
+
+        <div class="list obrigatorio">
+            <label><span class="tit_label pt">Telefone Principal* <small class="pt">(DDD + XXXX-XXXX)</small></span></label>                  
+            <label class="larg_25">[I22]</label>
+            <label class="larg_73">[I23] </label>          
+        </div>
+        <div class="list">
+            <label><span class="tit_label pt">Telefone Alternativo* <small class="pt">(DDD + XXXX-XXXX)</small></span></label>                  
+            <label class="larg_25">[I26]</label>
+            <label class="larg_73">[I27] </label>          
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Crie sua Senha* <small class="pt">(Mínimo 4 caracteres)</small></span>
+            [H9]  </label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Digite Novamente a Senha*</span>
+            [H11] </label>
+        </div>      
+        <div class="list checkbox">
+            [I28]
+              <span class="tit_label pt">Gostaria de receber E-mail informando sobre lançamentos e promoções da Loja?</span>
+        </div>
+    </div>
+</div>]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<div class="form">
+<div class="respiro">
+[A4]
+</div>  
+        <div class="identificacao_conteudo respiro">
+            [A0] [A1] [A2] [A3]
+        </div>
+        [A5]
+        <div class="formulario_identificacao">
+            <div class="box">
+                [A6]
+            </div>
+            <div class="box">
+                [A7]
+            </div>
+        </div>
+</div>  
+]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[<div class="identificacao">
+    <fieldset>
+        <label><span class="pt">E-mail</span>[D1]</label>
+    </fieldset>
+    <fieldset>
+        <label><span class="pt">Senha</span>[D15]</label>
+    </fieldset>
+    <a href="[D10]" class="esqueci-senha btn-tertiary">
+      <strong>Esquecei minha senha</strong>
+    </a>        
+    <div class="bt-identificacao">
+      <a href="javascript:void(0);" onclick="[B2]" class="bt-continuar text-center btn-primary">
+        <strong><span class="fa fa-caret-right"></span> Continuar</strong> 
+    </a>         
+    </div>
+</div>
+[D5] [D6] [D7] [D8]]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div class="alert bt-respiro message-error">
+  <h5 style="margin: 0;">[F0]</h5>
+  <ul>
+    <repeticao:erro>
+       <li>[F1]</li>
+    </repeticao:erro>
+  </ul>
+</div>]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[<div class="alert text-center message-success">
+        <h5>[J0]</h5>
+</div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[<div class="alert text-center message-firstBuy">
+    <h4>Esta é a sua primeira compra! Agradecemos sua preferência.</h4>
+    <p>Para prosseguir será necessário o preenchimento do formulário abaixo. É fácil e rápido.</p>
+</div>]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[<div class="identificacao_esquerda">
+    <fieldset>
+        <label><span class="pt">Forneça seu email e enviaremos sua senha por E-mail.</span><span class="en">Type your Email. We send your passaword.</span><br />[E1]</label>
+    </fieldset>
+    <div class="bt_direita bt-respiro">
+      	<a href="javascript:void(0);" onclick="[E3]" class="btn-tertiary">Voltar</a>
+        <a href="javascript:void(0);" onclick="[E2]" class="btn-tertiary">Recuperar senha</a>
+    </div>
+</div>]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[<div class="identificacao">
+    <fieldset>
+        <label><span class="pt">E-mail</span>[B1]</label>
+    </fieldset>
+    <!--<a href="[B9]" class="esqueci-senha btn-tertiary">
+      <strong>Esqueci minha senha</strong>
+    </a>-->     
+    <div class="bt-identificacao">
+      <a href="javascript:void(0);" onclick="[B2]" class="bt-continuar text-center btn-primary">
+        <strong><span class="fa fa-caret-right"></span> Continuar</strong> 
+	  </a>         
+    </div>
+</div>]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[<div class="identificacao">
+    <fieldset>
+        <label><span class="pt">E-mail</span>[C1]</label>
+    </fieldset>
+    <a href="[C9]" class="esqueci-senha btn-tertiary">
+      <strong>Esquecei minha senha</strong>
+    </a>     
+    <div class="bt-identificacao">
+      <a href="javascript:void(0);" onclick="[C10]" class="bt-continuar text-center btn-primary">
+        <strong><span class="fa fa-caret-right"></span> Verificar Novamente</strong> 
+    </a>         
+    </div>
+</div>]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /><UsarHTTPS value="False" /></Link><Link ID="PaginaInicial"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Continuar comprando" /><UsarHTTPS value="False" /></Link><Link ID="linkCadastro"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Identifique-se para continuar" /><UsarHTTPS value="True" /></Link></Links><Banners><Banner ID="header" /></Banners><Carrinhos><Carrinho ID="Carrinho1"><CarrinhoHTML><![CDATA[]]></CarrinhoHTML><CarrinhoItensEditavel value="True" /><CarrinhoVazioHTML><![CDATA[]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[]]></MensagemAlertaValorMinimoHTML><TamanhoImagem value="Pequenas" /></Carrinho><Carrinho ID="Identificacao"><CarrinhoHTML><![CDATA[]]></CarrinhoHTML><CarrinhoItensEditavel value="True" /><CarrinhoVazioHTML><![CDATA[]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[]]></MensagemAlertaValorMinimoHTML><MensagemCupomCompradorInvalido><![CDATA[Cupom não é válido para o comprador atual.]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[Cupom fora do prazo de validade.]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[Cupom não encontrado.]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[O cupom não é válido para o(s) departamento(s) selecionado(s).]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[O cupom não é válido para o(s) produto(s) selecionado(s).]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[A compra não atingiu o valor mínimo para ativação do cupom.]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[O cupom já foi usado.]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[O produto [L0] não está mais disponível para pronta entrega na quantidade solicitada. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[O preço do produto [F0] mudou de [F1] para [F2].]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[O produto <strong>[K0]</strong> não esta mais disponível.]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Pequenas" /></Carrinho></Carrinhos><GoogleAnalyticss><GoogleAnalytics ID="googleanalytitcs"><AnalyticsConfirmadoHTML><![CDATA[]]></AnalyticsConfirmadoHTML><AnalyticsHTML><![CDATA[]]></AnalyticsHTML><ConversionConfirmadoHTML><![CDATA[]]></ConversionConfirmadoHTML><CssComponente><![CDATA[]]></CssComponente></GoogleAnalytics></GoogleAnalyticss><SEOs><SEO ID="seo" /></SEOs><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

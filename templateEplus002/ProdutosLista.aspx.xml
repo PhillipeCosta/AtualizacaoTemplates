@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ProdutosListas><ProdutosLista ID="produtosLista"><ProdutosListaHTML><![CDATA[<h3>Produtos da lista [A16]</h3>
+<span class="sub-listas">
+    <ul>
+        <li> > Confira abaixo os produtos da lista</li>
+    </ul>
+</span>
+<div class="acao-lista-top">
+    <a href="[A14]" class="box-bt btn-primary">Comprar lista</a>
+    <a href="javascript:window.print();" style="float: left;" class="box-bt btn-special">Imprimir lista</a>
+</div>   
+
+    <div class="container-produto-vitrine-lista">
+		<table class="tab_carrinho" cellpadding="0" cellspacing="0" border="0" width="100%;">
+            <thead>
+                <tr>
+                    <th class="table-heading" colspan="2">Produto</th>
+                    <th class="table-heading">Variantes</th>
+                    <th class="table-heading">Preço Unit.</th>
+                    <th class="table-heading">Quantidade</th>
+                    <th class="table-heading">Preço</th>
+                </tr>
+            </thead>
+            <tbody>      
+              <repeticao:produtos>  
+                <tr>             
+                	<td class="table-information">
+                      <a href="[A2]"><img src="[A1]?width=85&height=70" alt="[A0]" /></a>
+				          		
+                	</td>
+                	<td class="table-information">
+                      <a href="[A2]">	<span class="titulo-produto-lista">[A0]</span></a>
+                		<span class="descricao-produto-lista">[A15]</span>
+                       <div class="tags">
+                         	  <condicao:produto_indiponivel>
+                              </condicao:produto_indiponivel>
+				              <condicao:variante_indisponivel>
+				                 <a href="[A2]" class="tag_indisponivel box-bt bt-tertiary">
+                                   Produto Indisponivel
+                                </a>
+				              </condicao:variante_indisponivel>
+				               <condicao:lancamento>
+				                 <a href="[A2]" class="box-bt bt-secondary">
+                                   Lançamento
+                                 </a>
+				              </condicao:lancamento> 
+				               <condicao:oferta>
+				                 <a href="[A2]"><img src="imagens/tag_oferta.png?40" alt="Oferta" /></a>
+				              </condicao:oferta>
+				          </div>           
+                	</td>
+                	<td class="variante-produto-lista table-information">
+						<condicao:variante>
+							[B]
+						</condicao:variante>
+                	</td>
+                  	<td class="precounitario-produto-lista table-information">
+                     <condicao:preco_em_oferta><span class="precounitario_de">De: [A6]</span>
+                       <span class="precounitario_por">Por: </span></condicao:preco_em_oferta> <span class="precounitario_preco">[A5]</span>
+                	</td>
+                	<td class="qtd table-information">
+                		[A4]
+                		<a href="[A21]" class="remove"><img src="imagens/bt_remover_carrinho.png?1" alt="Remover do Carrinho" style="vertical-align: middle;" /></a>
+                	</td>
+                	<td class="table-information">
+                      <div class="preco-produto-lista">
+                           <h4>[A20]</h4>
+                      </div>
+                	</td>
+                </tr>
+              </repeticao:produtos>              
+            </tbody>
+        </table>
+    </div>
+<div class="acao-lista-bottom">
+    <a href="[A14]" class="box-bt btn-primary">Comprar lista</a>
+    <a href="javascript:window.print();" style="float: left;" class="box-bt btn-special">Imprimir lista</a>
+</div>    
+]]></ProdutosListaHTML><VariantesProdutosListaHTML><![CDATA[<span>[B2]</span>[B0]<span>[B3]</span> [B1]]]></VariantesProdutosListaHTML></ProdutosLista></ProdutosListas><CategoriasListas><CategoriasLista ID="CategoriaLista"><CategoriasListaHTML><![CDATA[<h3 class="titulo-lista">Encontre sua lista:</h3>
+<ul>
+    <repeticao:categorias>
+    <li>
+      <a href="[A1]" class="heading-primary">
+            <span>[A0]</span>
+        </a>
+    </li>
+    </repeticao:categorias>
+</ul>]]></CategoriasListaHTML></CategoriasLista></CategoriasListas><ProdutoListaBarraNavegacaos><ProdutoListaBarraNavegacao ID="BarraNavegacaoLista"><ProdutoListaBarraNavegacaoHTML><![CDATA[<a href="[A0]">Home</a> > <a href="[A1]">[A2]</a> > <strong>[A3]</strong>]]></ProdutoListaBarraNavegacaoHTML></ProdutoListaBarraNavegacao></ProdutoListaBarraNavegacaos><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

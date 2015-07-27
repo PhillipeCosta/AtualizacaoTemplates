@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja"><CaixaAguardeHTML><![CDATA[]]></CaixaAguardeHTML></CaixaAguardeLoja></CaixaAguardeLojas><PacotePresentes><PacotePresente ID="PacotePresente1"><PacotePresenteHTML><![CDATA[<h3>Escolha o Pacote do Presente</h3>
+<div class="ciashop-overflow gift-package">
+    <p>Escolha uma opção de Pacote de presente e preencha a mensagem que será posta no cartão!. Caso não queira que o produto seja embrulhado escolha a opção "Não enviar para presente" e clique em continuar.</p>
+    <ul>
+        <repeticao:pacote_presente>
+        <li class="ciashop-overflow">
+            <div class="ciashop-titBox heading-primary">
+                <h2>[A0]</h2> <span class="ciashop-cantoTit"></span><hr />
+            </div>
+            <div class="ciashop-form">
+                <div class="form-group col-md-6">
+                    <label>[A1]</label>
+                    <ul>
+                        <repeticao:opcoes> <li>[A2]</li> </repeticao:opcoes>
+                    </ul>
+                </div>
+                <condicao:mensagem>
+                    <div class="form-group col-md-6">
+                        <label>Mensagem do Cartão <small>(Máximo de 250 caracteres)</small>:</label>
+                        <br />
+                        [A3]      
+                    <div class="form-group ciashop-overflow characters ciashop-paddingNone">
+                        <div class="col-md-2 ciashop-paddingNone">[A4]</div> <span>Caracteres.</span>
+                    </div>                                          
+                    </div>
+                </condicao:mensagem>
+            </div>
+        </li>
+        </repeticao:pacote_presente>
+    </ul>
+</div>
+<a href="#" onclick="[A5]" class="btn btn-primary pull-left">Continuar</a>]]></PacotePresenteHTML><TextoExibicaoOpcao1 value="Embrulho de presente e cartão" /><TextoExibicaoOpcao2 value="Somente embrulho de presente" /><TextoExibicaoOpcao3 value="Somente cartão" /><TextoNaoEnviarPresente value="Não enviar para presente" /></PacotePresente></PacotePresentes><Links><Link ID="LinkAjuda"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

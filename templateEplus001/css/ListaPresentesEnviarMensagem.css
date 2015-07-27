@@ -1,0 +1,73 @@
+.envia_mensagem{
+    padding: 10px 5px 10px 170px;
+    background: url("../imagens/ico_lista_presentes_mensagem.png") no-repeat 40px 30px #f1f1f1;
+    text-align: left;
+    margin: 10px 0 20px;
+    overflow: hidden;
+}
+
+.envia_mensagem_conteudo{
+	float: left;
+            margin: 10px 0;
+}
+
+.envia_mensagem_conteudo h4{
+	font-size: 22px;
+	color: #232323;
+	margin: 0 0 15px;   
+}
+
+.envia_mensagem_conteudo p{
+	font-size: 12px;
+	color: #232323; 
+}
+
+.lista_convidados_conteudo fieldset{
+  border: none;
+  margin: 5px 0 0px 5px;
+  padding: 0 0 0 0px;
+  width: 550px;
+  clear: both;
+  display: block;
+  color: #666666;
+}
+
+.lista_convidados_conteudo fieldset label{
+  display: block;
+  margin: 8px 0 0px 0px;
+  color: #333;
+  float: left;
+    font-size: 13px;
+}
+
+.lista_convidados_conteudo fieldset label *{
+  vertical-align: middle;
+}
+
+.lista_convidados_conteudo fieldset label img{
+  margin-left: 3px;
+}
+
+
+.lista_convidados_conteudo fieldset label input{
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  width: 88%;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 11px;
+  color: #666;
+}
+
+
+
+.lista_convidados_conteudo fieldset label textarea{
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width: 500px;
+    height: 120px;
+    font-size: 12px;
+    color: #666;    
+    border-radius: 3px;
+    padding: 5px;
+}

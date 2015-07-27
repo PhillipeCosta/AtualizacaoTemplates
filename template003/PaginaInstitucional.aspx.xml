@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ExibePaginaInstitucionals><ExibePaginaInstitucional ID="institutionalContent"><InstitucionalHTML><![CDATA[<h5 class="custom-paddingV10 custom-overflow heading-primary text-uppercase text-left"><strong>[A1]</strong></h5>
+<p class="custom-paddingV20">[A2]</p>]]></InstitucionalHTML><InstitucionalNaoEncontradaHTML><![CDATA[<h5 class="custom-paddingV10 custom-overflow heading-primary text-uppercase text-left"><strong>Oops, página não encontrada</strong></h5>
+<p class="custom-paddingV20">O que pode ter acontecido?</p>
+  <ul>
+    <li>» Verifique se o endereço foi digitado corretamente</li>
+    <li>» O conteúdo pode ter sido removido ou não estar mais disponível</li>
+    <li>» O servidor pode estar fora do ar no momento</li>
+  </ul>]]></InstitucionalNaoEncontradaHTML></ExibePaginaInstitucional></ExibePaginaInstitucionals><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

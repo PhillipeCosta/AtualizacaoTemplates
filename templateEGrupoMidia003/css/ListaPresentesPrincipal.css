@@ -1,0 +1,186 @@
+.container-lista-presente{
+    height: 450px;
+    position: relative;
+}
+
+#containerconteudo{
+    background: #f0ece1;
+    padding-bottom: 35px;
+}
+
+.conteudo_fixo{
+    height: 597px;
+    margin: 0 auto 10px;
+	background: none !important;
+}
+
+.CriarLista{
+    float: left;
+    width: 275px;
+}
+
+.title_criarlista{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.CriarLista span, .MinhasListas span{
+      width: 110px;
+	  text-align: center;
+	  margin: 5px 0;
+	
+}
+
+.MinhasListas{
+    float: right;
+    width: 248px;
+}
+
+.logo-lista-presente{
+    display: block;
+    text-indent: -9999px;
+    background: url('../imagens/logo_lista.png') no-repeat 0 0 transparent;
+    width: 283px;
+    height: 344px;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    display: none;
+}
+
+.acoes-lista-presente{
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 570px;
+}
+
+.acoes-lista-presente a{
+    display: block;
+	width: 110px;
+}
+
+.container-encontrar-lista{
+    position: absolute;
+    top: 210px;
+    right: 25px;
+}
+
+.container-encontrar-lista fieldset{
+    display: block;
+    border: 0 none;
+    padding: 52px 23px 10px;
+    width: 522px;
+}
+
+.container-encontrar-lista fieldset .itens_busca{
+    float: left;
+}
+
+.container-encontrar-lista fieldset .itens_busca.first{
+    margin-right: 45px;
+}
+
+.container-encontrar-lista fieldset .itens_busca.last input{
+    width: 345px;
+}
+    
+
+.container-encontrar-lista fieldset label{
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    margin: 21px 0 0;
+}
+
+.container-encontrar-lista fieldset input{
+    border: 1px solid #ccc9bf;
+    background: #fff;
+    font-size: 11px;
+    display: block;
+    padding: 4px 2px;
+    width: 220px;
+    color: #666;
+}
+
+.container-encontrar-lista fieldset select{
+    border: 1px solid #ccc9bf;
+    background: #fff;
+    font-size: 11px;
+    display: block;
+    padding: 3px 2px;
+    width: 250px;
+    color: #666;
+}
+
+.container-encontrar-lista fieldset .buscar-lista{
+    display: block;
+    text-align: right;
+    float: left;
+    text-indent: -9999px;
+    background: url('../imagens/bt_buscar_lista.png') no-repeat 0 0 transparent;
+    width: 153px;
+    height: 31px;
+    color: transparent;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+.busca_erro{
+    text-align: left;
+    width: 305px;
+    background-color: #FFF5E1;
+    border: 1px solid #FCE7BB;
+    font-size: 12px;
+    position: absolute;
+    left: -330px;
+}
+
+
+.busca_erro_conteudo{
+    padding: 10px 5px 10px 65px;
+    background-image: url('../imagens/erro.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.busca_erro h2{
+    color: #444444;
+    font-size: 12px;
+    margin: 7px 0;
+}
+
+.busca_erro ul{
+    list-style: none;
+}
+
+.busca_erro ul li{
+    padding-left: 12px;
+    color: #7E7E7E;
+    font-size: 12px;
+    background-image: url('../imagens/seta_erro.gif');
+    background-repeat: no-repeat;
+    background-position: left 4px;
+    line-height: 20px;
+}
+
+.voltar_topo {
+    display: none !important;
+}
+
+span.nome_lista_baixo {
+	color: #6e6e6e;
+	font-size: 11px;
+}
+
+.itens_busca.last{
+	margin-bottom: 10px;
+}
+
+.bt-lista-presente{
+	clear: both;
+	display: table !important;
+}

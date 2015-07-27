@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ParcelamentoProdutos><ParcelamentoProduto ID="ParcelamentoProduto1"><CssComponente><![CDATA[]]></CssComponente><ParcelamentoProdutoHTML><![CDATA[]]></ParcelamentoProdutoHTML></ParcelamentoProduto></ParcelamentoProdutos><PrecoProdutos><PrecoProduto ID="PrecoProduto1"><ParcelamentoProdutoHTML><![CDATA[<div id="parce" style="display: none;">
+    <div class="overlay"><a href="javascript: closeOverBox('#parce')"></a></div>
+    <div class="overBox">
+    <a class="overbox-close btn-secondary" href="javascript: closeOverBox('#parce')">x</a>
+    <div class="tit_box_roxo heading-primary text-left"><h3><strong>Formas de Pagamento</strong></h3></div>
+    <div class="content-parcelado">
+        <repeticao:metodo_pagamento>
+        <div class="media">
+                <div class="media-left">
+                    <img src="[B1]" alt="Parcelamento" class="ciashop-display media-object" />                  
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading text-left"><strong>[B4]</strong></h5>
+                    <table border="0" cellpadding="2" cellspacing="1" class="ciashop-modalList table text-center" width="100%">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Número de Parcelas</th>
+                                <th class="text-center">Valor das Parcelas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <repeticao:parcelas>
+                            <tr>
+                                <td>[B2]</td>
+                                <td>[B3]</td>
+                            </tr>
+                            </repeticao:parcelas>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+        </repeticao:metodo_pagamento>
+        </div>
+    </div>
+</div>]]></ParcelamentoProdutoHTML><PrecoProdutoHTML><![CDATA[<div class="produto_preco">
+    <div class="produto_preco_antigo">
+        <span class="preco-antigo-produto product-price"><strong>[A1]</strong></span>
+        <span class="preco-do-produto product-adjustedPrice"><strong>[A3]</strong></span>
+        <condicao:desconto_vista>
+          <span class="preco-a-vista product-payInFullPrice">à vista <strong>[A13]</strong></span>
+        </condicao:desconto_vista>
+    </div>
+    <condicao:parcelamento>
+        <div class="produto-preco-parcelado">
+          <span class="preco-parcelado-produto product-installments"><strong>[A6]x de [A7]</strong></span>        
+        </div>
+      <a href="javascript: openOverBox('#parce')" class="btn btn-secondary">Parcelamento</a>
+      [A10]  
+    </condicao:parcelamento> 
+</div>]]></PrecoProdutoHTML></PrecoProduto></PrecoProdutos></controles></page>

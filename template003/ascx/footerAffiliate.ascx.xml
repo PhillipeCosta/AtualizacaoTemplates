@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><PaginasInstitucionaiss><PaginasInstitucionais ID="institutional"><PaginasInstitucionaisHTML><![CDATA[<repeticao:pagina_institucional>
+	<li class="col-md-6">
+      <a href="[A1]">[A0]</a>
+    </li>
+</repeticao:pagina_institucional>]]></PaginasInstitucionaisHTML></PaginasInstitucionais></PaginasInstitucionaiss><IconesRodapes><IconesRodape ID="paymentMethodsIcons"><IconesRodapeHTML><![CDATA[<repeticao:icone>
+	<li class="paymentMethodsIcons-li"><img src="[A2]" alt="[A1]" /></li>
+</repeticao:icone>      ]]></IconesRodapeHTML></IconesRodape></IconesRodapes><BoletimNoticiass><BoletimNoticias ID="newsletter"><BoletimNoticiasHTML><![CDATA[<div class="container main-container">
+  <div class="main-clear main-overflow newsletter text-center">
+    <h4 class="text-uppercase heading-collection"><strong><span class="fa fa-envelope-o"></span>&nbsp;Newsletter</strong></h4>
+    <br />
+    <p class="text-uppercase">Cadastre-se e receba em seu e-mail, novidades, promoções e ofertas da loja</p>
+    <div class="form-newsletter form">
+      <span class="newsletter-name">[A0]</span>
+      <span class="newsletter-email">[A2]</span>
+      <a href="[A4]" class="bt btn-secondary text-uppercase text-center">Enviar</a>    
+    </div>  
+    
+    <condicao:sexo>
+      [A3] [A6]
+    </condicao:sexo>
+    <condicao:nascimento>
+      [A1]
+    </condicao:nascimento>
+  </div>
+</div>
+
+]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass><ScriptRazors><ScriptRazor ID="socialNetwork"><ScriptRazorHTML><![CDATA[<a href="@TemplateSettings.footer_facebookLink" class="footer-socialNetwork"><span class="fa fa-facebook"></span></a>
+<a href="@TemplateSettings.footer_twitterLink" class="footer-socialNetwork"><span class="fa fa-twitter"></span></a>
+<a href="@TemplateSettings.footer_googleLink" class="footer-socialNetwork"><span class="fa fa-google"></span></a>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="ebit"><ScriptRazorHTML><![CDATA[@TemplateSettings.footer_ebit]]></ScriptRazorHTML></ScriptRazor></ScriptRazors><Links><Link ID="affiliate"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="destino=AfiliadoPrincipal" /><Target value="MesmaPagina" /><Texto value="Afiliados" /><UsarHTTPS value="False" /></Link><Link ID="readyList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="CategoriasLista" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Listas prontas" /><UsarHTTPS value="False" /></Link><Link ID="giftList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="ListaPresentesPrincipal" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Lista de presentes" /><UsarHTTPS value="True" /></Link><Link ID="link_affiliateRegistration2"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AlterarCadastroAfiliado" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Meu cadastro" /><UsarHTTPS value="False" /></Link><Link ID="link_backStore2"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Voltar para a loja" /><UsarHTTPS value="False" /></Link></Links></controles></page>

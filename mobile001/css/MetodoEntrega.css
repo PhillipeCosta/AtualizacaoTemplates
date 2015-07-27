@@ -1,0 +1,26 @@
+.metodo_entrega{
+    display: block;
+    overflow: hidden;
+    margin: 1em 0;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.metodo_entrega p{
+    font-size:13px;
+    margin: 0;
+}
+
+.metodo_entrega p strong{
+	font-size: 15px;
+}
+
+.metodo_entrega p.shippingPrice{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.metodo_entrega p.shippingPrice del{
+	font-size: 13px;
+	font-weight: normal;
+}

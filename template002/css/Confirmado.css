@@ -1,0 +1,80 @@
+.ebit{
+    padding: 20px 0 10px 0;
+    margin: 10px 0;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.go-home-bt{
+    clear: both;
+}
+
+/* alterar Senha */
+
+#passwordChange{
+	background: none repeat scroll 0 0 #eeeeee;
+}
+
+.alterar_login_senha{
+	padding: 10px 0;
+}
+
+.alterar_login_senha p{
+	margin: 0;
+}
+
+.alteara_formulario_titulo{
+	padding: 5px 0;
+}
+
+.passwordChange-form{
+	background: none repeat scroll 0 0 #dadada;
+	padding: 7px 44px;
+}
+
+.passwordChange-form span{
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 4px;
+    text-align: right;
+    width: 113px;
+}
+
+.passwordChange-form input{
+    border: 1px solid transparent;
+    font-size: 11px;
+    padding: 2px 0;
+    width: 151px;
+}
+
+.passwordChange-form.parent-validation-error {
+    background: none repeat scroll 0 0 #fcf8e3;
+}
+
+.passwordChange-form.parent-validation-error fieldset label input {
+    border: 1px solid #8a6d3b;
+}
+
+.passwordChange-form.parent-validation-error fieldset label span {
+    color: #8a6d3b;
+}
+
+.passwordChange-form.parent-validation-error .alteara_formulario_titulo {
+    color: #8a6d3b;
+}
+
+.passwordChange-success small{
+    font-size: 12.78px;
+    font-weight: normal;
+}
+
+.passwordChange-successMsg{
+    font-size: 19.71px;
+    line-height: 27px;
+    padding-top: 20px;
+}
+
+.passwordChange-successMsg span{
+	font-size: 31px;
+	display: inline;
+}

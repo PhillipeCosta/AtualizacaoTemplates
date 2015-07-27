@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoDivulgaEmails><AfiliadoDivulgaEmail ID="affiliateEmail"><AfiliadoDivulgaEmailHTML><![CDATA[[A4] [A10]
+<div class="custom-overflow custom-paddingV10 form form-guest">
+    <repeticao:novocadastro>
+        <div class="col-md-6">    
+          <div class="form custom-clear custom-overflow required">
+            <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Nome</label>
+            <span class="col-md-7">
+              [A0]
+            </span>
+          </div>    
+        </div>
+        <div class="col-md-6">
+          <div class="form custom-clear custom-overflow required">
+            <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">E-mail</label>
+            <span class="col-md-7">
+              [A1]
+            </span>
+          </div>            
+        </div>        
+    </repeticao:novocadastro>
+</div>    
+<div class="custom-overflow col-md-12 text-right custom-paddingV10">
+        <a href="[A2]" class="btn btn-secondary text-uppercase text-center custom-paddingV5 custom-paddingH10">Adicionar email</a>
+        <a href="[A9]" class="btn btn-primary text-uppercase text-center custom-paddingV5 custom-paddingH10">Enviar emails</a>
+</div>
+]]></AfiliadoDivulgaEmailHTML><MensagemAlertaAfiliadoEnvioEmailHTML><![CDATA[<div class="custom-paddingV10 custom-overflow">
+  <div class="alert alert-warning" role="alert">
+    <h5>[B0]</h5>
+    <ul>
+      <repeticao:erro>
+        <li>[B1]</li>
+      </repeticao:erro>
+    </ul>
+  </div>
+</div>
+]]></MensagemAlertaAfiliadoEnvioEmailHTML><MensagemSucessoAfiliadoEnvioEmailHTML><![CDATA[<div class="custom-paddingV20 custom-overflow">
+  <div class="alert alert-success" role="alert">
+     <h5>Seus e-mails foram enviados com sucesso!</h5>
+  </div>
+</div>
+          
+          ]]></MensagemSucessoAfiliadoEnvioEmailHTML></AfiliadoDivulgaEmail></AfiliadoDivulgaEmails></controles></page>

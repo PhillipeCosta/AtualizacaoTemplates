@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaPesquisas><CaixaPesquisa ID="CaixaPesquisa"><CaixaPesquisaHTML><![CDATA[                  <fieldset>
+                      <label style="margin-left: 0"><img onclick="[A2]" src="imagens/busca_ico.png?24" style="cursor: pointer; vertical-align: middle"></label>
+                      <label>[A0]</label>
+                      <span>em</span>
+                      <label>[A1]</label>
+                      <label class="bt"><img onclick="[A2]" src="imagens/btn_procurar.png?24" /></label>
+                  </fieldset>]]></CaixaPesquisaHTML><CssComponente><![CDATA[]]></CssComponente></CaixaPesquisa><CaixaPesquisa ID="buscatopo"><CaixaPesquisaHTML><![CDATA[                  <fieldset>
+                      <label style="margin-left: 0" class="img_busca"><img onclick="[A2]" src="imagens/busca_ico.png?24" style="cursor: pointer; vertical-align: middle" /></label>
+                      <label class="lbl_busca">[A0]</label>
+                      <span>em</span>
+                      <label class="busca_deptos">[A1]</label>
+                      <label class="bt"><img onclick="[A2]" src="imagens/btn_procurar.png?24" /></label>
+                  </fieldset>]]></CaixaPesquisaHTML><CssComponente><![CDATA[]]></CssComponente></CaixaPesquisa><CaixaPesquisa ID="caixaPesquisa"><CaixaPesquisaHTML><![CDATA[<a href="javascript:void(0);" onclick="[A2]" class="fa fa-search bt-buscar-topo btn-headerSearch pull-right"></a>	
+	<div class="box-input-busca-topo header-inputSearch">
+			[A0]
+	</div>]]></CaixaPesquisaHTML></CaixaPesquisa></CaixaPesquisas><Menus><Menu ID="MenuTopo"><ApenasDepartamento value="False" /><CssComponente><![CDATA[]]></CssComponente><MenuHTML><![CDATA[<span class="menu_conteudo">  
+  <ul>
+            <repeticao:pais>
+	       <li><a href="[A0]">[A1]</a>
+                <condicao:filho>
+                  <ul>
+                    <repeticao:filhos>
+                        <li><a href="[A0]">[A1]</a></li>
+                    </repeticao:filhos>
+                  </ul>
+                </condicao:filho>
+               </li>
+            </repeticao:pais>
+         </ul>
+</span>]]></MenuHTML><TipoMenu value="Horizontal" /></Menu><Menu ID="menu"><ApenasDepartamento value="False" /><CssComponente><![CDATA[]]></CssComponente><MenuHTML><![CDATA[  <div id="pattern" class="pattern" style="position: relative; z-index: 8888;">
+    <!--Begin Pattern HTML-->
+		<a href="#menu" class="menu-link">Departamentos</a>
+		<nav id="menu" class="menu" role="navigation">
+			<ul class="level-1">
+				<!--Parent #1-->
+				<repeticao:pais>
+				<li class="has-subnav">
+					<a href="[A0]">[A1]</a>
+					<condicao:filho>
+					<ul class="level-2">
+						<repeticao:filhos>
+						<li class="has-subnav">
+							<a href="[A0]">[A1]</a>
+							<condicao:neto>
+							<ul class="level-3">
+								<repeticao:netos>
+								<li><a href="[A0]">[A1]</a></li>
+								</repeticao:netos>
+							</ul>	
+						    </condicao:neto>
+						</li>
+					    </repeticao:filhos>
+					</ul>
+				    </condicao:filho>
+				</li>
+				</repeticao:pais>
+
+
+			</ul>
+		</nav>
+	</div>]]></MenuHTML><TipoMenu value="Horizontal" /></Menu><Menu ID="menuTopo"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[]]></MenuHTML><TipoMenu value="Vertical" /></Menu><Menu ID="menuPrincipal"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<ul class="box-menu-principal">
+	<repeticao:pais>
+	<li class="icon icon-arrow-left lista-menu-principal">
+      <a class="icon icon-display link-menu-principal" href="[A0]"><strong>[A1]</strong> <condicao:filho><span class="fa fa-caret-right pull-right"></span></condicao:filho></a>
+		<condicao:filho>
+		<div class="mp-level">
+			<a class="icon icon-display mp-back" href="#"><span class="fa fa-caret-left"></span><strong>[A1]</strong></a>
+			<ul class="box-menu-filho">
+				<li class="icon icon-arrow-left lista-menu-principal">
+					<a class="icon link-menu-principal" href="[A0]"><strong>Ver Todo Departamento</strong></a>
+				</li>	
+				<repeticao:filhos>
+					<li class="icon icon-arrow-left lista-menu-principal">
+						<a class="icon link-menu-principal" href="[A0]"><strong>[A1]</strong></a>
+					</li>
+				</repeticao:filhos>							
+			</ul>
+		</div>
+		</condicao:filho>
+	</li>	
+	</repeticao:pais>
+</ul>]]></MenuHTML><TipoMenu value="Vertical" /></Menu><Menu ID="menuPush"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<ul class="box-menu-pai nav-containerLinks">
+  <repeticao:pais>
+  <li class="lista-pai nav-parentsList">
+                <a href="[A0]" class="link-pai nav-parentsLink"><strong>[A1]</strong><condicao:filho><span class="fa fa-caret-right pull-right"></span></condicao:filho></a>
+    <condicao:filho>  
+      <ul class="box-menu-filho nav-containerLinks-children">
+        <!--div class="back nav-childrenBack">
+          <a href="javascript:void(0);"><span class="fa fa-caret-left pull-left"></span><strong>[A1]</strong></a>
+        </div-->     
+        <li class="lista-filho nav-childrenList">
+          <a href="javascript:void(0);" class="back link-filho nav-childrenLink"><span class="fa fa-caret-left pull-left"></span><strong>[A1]</strong></a>
+        </li>          
+        <li class="lista-filho nav-childrenList">
+          <a href="[A0]" class="link-filho nav-childrenLink"><strong>Ver todo o departamento</strong></a>
+        </li>        
+        <repeticao:filhos>
+          <li class="lista-filho nav-childrenList">
+             <a href="[A0]" class="link-filho nav-childrenLink"><strong>[A1]</strong></a>
+          </li>             
+        </repeticao:filhos>           
+      </ul>
+    </condicao:filho>
+  </li>
+  </repeticao:pais>
+</ul>
+<script>
+  
+$(function(){  
+  $('.lista-pai').each(function(){
+      if($(this).find('.link-pai span').length){
+           $(this).find('a.link-pai').attr("href","#");
+      };
+  });  
+})  
+  
+</script>]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><LabelVisitantes><LabelVisitante ID="LabelVisitante1"><HTMLModeloLogado><![CDATA[[A1] <strong>[A2]</strong> (Se não for você, <a href="[A0]">clique aqui</a>.)]]></HTMLModeloLogado><HTMLModeloNaoLogado><![CDATA[[B1] <strong>Visitante</strong> (<a href="[B0]">Para efetuar o login, clique aqui</a>)]]></HTMLModeloNaoLogado></LabelVisitante><LabelVisitante ID="Saudacao"><CssComponente><![CDATA[]]></CssComponente><HTMLModeloLogado><![CDATA[[A1]<strong> [A2]</strong> (<a href="[A0]">Para efetuar o login, clique aqui</a>)]]></HTMLModeloLogado><HTMLModeloNaoLogado><![CDATA[[B1]<strong> Visitante</strong> (<a href="[B0]">Para efetuar o login, clique aqui</a>)]]></HTMLModeloNaoLogado></LabelVisitante><LabelVisitante ID="saudacao"><HTMLModeloLogado><![CDATA[<a href="[A0]" class="saudacao-topo nav-accessAccount">[A2],<small>(sair)</small></a>]]></HTMLModeloLogado><HTMLModeloNaoLogado><![CDATA[<a href="[B0]" class="saudacao-topo nav-accessAccount">Login ou cadastre-se</a>]]></HTMLModeloNaoLogado></LabelVisitante></LabelVisitantes><MiniCarrinhos><MiniCarrinho ID="MiniCarrinho1" NomeAmigavel="Informações resumidas sobre o carrinho de compra" Visible="True"><![CDATA[
+				<div id="MiniCarrinhoDivPai" name="MiniCarrinhoDivPai" style="width: 155px;height: 50px;position: absolute;top: 100px;left: 300px;border: 0px;cursor: hand;" Transp="100">
+					<img border="0" src="nav_bt_carrinho_2.gif" alt="Carrinho" class="MiniCarrinhoCesto" id="MiniCarrinhoSpan"/>
+					<img border="0" src="nav_bt_carrinho_titulo.png" alt="Carrinho" class="MiniCarrinhoTitulo" id="MiniCarrinhoSpan"/>&nbsp;&nbsp;
+					<span class="MiniCarrinhoQtdeProd" id="MiniCarrinhoSpan">
+						2 Produtos
+					</span>
+				</div>
+				<div id="MiniCarrinhoDivFilho" name="MiniCarrinhoDivFilho" style="width: 300px;height: 169px;position: absolute;border: 0px;background-image: url('MiniCarrinho.png');opacity: 0.9;MozOpacity: 0.9;KhtmlOpacity: 0.9;filter: alpha(opacity=100);visibility: hidden;cursor: hand;">
+					<table id="MiniCarrinhoSpan">
+						<tr id="MiniCarrinhoSpan">
+							<td id="MiniCarrinhoSpan">
+								<span id="MiniCarrinhoSpan" name="MiniCarrinhoNomeProd_1" class="MiniCarrinhoNomeProd"  codigo="codProd">Produto 1<span id="MiniCarrinhoSpan" class="MiniCarrinhoQtde">(1)</span></span>
+							</td>
+							<td id="MiniCarrinhoSpan">
+								<span id="MiniCarrinhoSpan" class="MiniCarrinhoValor">R$ 10,00</span>
+							</td>
+						</td>
+					</table>
+
+					<span id="MiniCarrinhoSpan" class="MiniCarrinhoDescr">descrição resumida ...</span> 
+					
+				</div>
+				<script>
+					
+					var div1 = document.getElementById("MiniCarrinhoDivPai");
+					var div2 = document.getElementById("MiniCarrinhoDivFilho");
+
+					var div1t = parseInt(div1.style.top);
+					var div1l = parseInt(div1.style.left);
+					var div1w = parseInt(div1.style.width);
+					var div1h = parseInt(div1.style.height);
+
+					div2.style.left = ((div1l+div1w)-parseInt(div2.style.width))+'px';
+					div2.style.top = (div1t+div1h) + 'px'; 
+					
+				</script>					 
+			]]></MiniCarrinho></MiniCarrinhos><Links><Link ID="LinkMeuCadastro"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="btn_cadastro.png" /><PaginaLoja value="Identificacao" /><Parametros value="destino=comprador" /><Target value="MesmaPagina" /><Texto value="Meu cadastro" /><UsarHTTPS value="True" /></Link><Link ID="LinkMeusPedidos"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="btn_pedidos.png" /><PaginaLoja value="Identificacao" /><Parametros value="destino=MeusPedidos" /><Target value="MesmaPagina" /><Texto value="Meus pedidos" /><UsarHTTPS value="True" /></Link><!--<Link ID="LinkCarrinhoCompras" NomeAmigavel="Link Carrinho" Visible="True">
+        <PaginaLoja value="Carrinho" />
+        <EnderecoLinkExterno value="" />
+        <Target value="MesmaPagina" />
+        <Texto value="Carrinho" />
+        <Parametros value="" />
+        <Imagem value="nav_bt_carrinho.gif" />
+        <Template value="1" />
+      </Link>--><Link ID="LinkDefault" NomeAmigavel="Link Página Inicial" Visible="True"><PaginaLoja value="Default" /><EnderecoLinkExterno value="" /><Target value="MesmaPagina" /><Texto value="Página Inicial" /><Parametros value="" /><Imagem value="" /><Template value="1" /></Link><Link ID="LinkDefaultBanner" NomeAmigavel="Link Página Inicial" Visible="True"><PaginaLoja value="Default" /><EnderecoLinkExterno value="" /><Target value="MesmaPagina" /><Texto value="Página Inicial" /><Parametros value="" /><Imagem value="" /><Template value="1" /></Link><Link ID="LinkCarrinhoCompras"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="0 iten(s)" /><UsarHTTPS value="False" /></Link><Link ID="PaginaInicial"><CssComponente><![CDATA[]]></CssComponente><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Pagina Principal" /><UsarHTTPS value="False" /></Link><Link ID="LinkHome"><Imagem value="btn_home.png" /><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link><Link ID="LinkEmpresa"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="btn_empresa.png" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Empresa" /><UsarHTTPS value="False" /></Link><Link ID="LinkTelevendas"><Imagem value="btn_televendas.png" /><PaginaLoja value="FaleConosco" /><Target value="MesmaPagina" /><Texto value="Televendas" /><UsarHTTPS value="False" /></Link><Link ID="LinkContato"><Imagem value="btn_lojavirtual.png" /><PaginaLoja value="FaleConosco" /><Target value="MesmaPagina" /><Texto value="Fale Conosco" /><UsarHTTPS value="False" /></Link><Link ID="LinkCarrinhoComprasMini"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="bt_ir_carrinho.png" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ir carrinho" /><UsarHTTPS value="False" /></Link><Link ID="Sessao_Afiliado"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="btn_afiliados.png" /><PaginaLoja value="Identificacao" /><Parametros value="destino=AfiliadoPrincipal" /><Target value="MesmaPagina" /><Texto value="Sessão de Afiliado" /><UsarHTTPS value="True" /></Link><Link ID="CadastroRWD"><CssComponente><![CDATA[]]></CssComponente><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Comprador" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Cadastro" /><UsarHTTPS value="True" /></Link><Link ID="PedidosRWD"><CssComponente><![CDATA[]]></CssComponente><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Pedidos" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Pedidos" /><UsarHTTPS value="False" /></Link><Link ID="CarrinhoRWD"><CssComponente><![CDATA[]]></CssComponente><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Carrinho" /><UsarHTTPS value="False" /></Link><Link ID="MeuCadastro"><CssComponente><![CDATA[]]></CssComponente><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="btn_cadastro.png" /><PaginaLoja value="Comprador" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Cadastro" /><UsarHTTPS value="False" /></Link><Link ID="MeusPedidos"><CssComponente><![CDATA[]]></CssComponente><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="btn_pedidos.png" /><PaginaLoja value="Pedidos" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Pedidos" /><UsarHTTPS value="False" /></Link><Link ID="LnkInicial"><CssComponente><![CDATA[]]></CssComponente><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ciashop E-commerce Evolution" /><UsarHTTPS value="False" /></Link><Link ID="linkLogo"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Mobile Store" /><UsarHTTPS value="False" /></Link><Link ID="linkCarrinho"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="&lt;span class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/span&gt;" /><UsarHTTPS value="False" /></Link></Links><Carrinhos><CarrinhoTopo ID="Mini_Carrinho"><CarrinhoHTML><![CDATA[<script>
+    $(function() { 
+       var quantidade = 0
+       $(".tab_carrinho_mini .qtd").each(function(){
+          quantidade = quantidade + parseInt($(this).html());
+       });
+       $(".mini_itens a").html(quantidade+" Iten(s)")
+    });
+
+    $(".bt_carrinho").mouseover(function(){
+        $(".mini_carrinho").show();
+    });
+    $(".bt_carrinho").mouseout(function(){
+        $(".mini_carrinho").hide();
+    });
+</script>
+<h5>Meu Carrinho</h5>
+<table cellpadding="0" cellspacing="0" border="0" class="tab_carrinho_mini" width="100%">
+    <repeticao:produtos>
+    <tr>
+       <td class="mini_foto"><a href="[A24]"><img src="[A3]" alt="[A4]" /></a></td>
+        <td class="mini_titulo"><a href="[A24]">[A4] <span class="quantidade">(<span class="qtd">[A5]</span>)</span></a></td>
+        <td class="mini_preco">[A9]</td>
+    </tr>
+    </repeticao:produtos>
+    <tr>
+        <th class="mini_subtotal"></th>
+         <td class="mini_subtotal">Subtotal:</td>
+        <td class="mini_subtotal">[A23]</td>
+    </tr>
+</table>]]></CarrinhoHTML><CarrinhoVazioHTML><![CDATA[<h5>Meu Carrinho</h5>
+
+Carrinho Vazio<br />]]></CarrinhoVazioHTML><CssComponente><![CDATA[]]></CssComponente><TamanhoImagem value="Pequenas" /></CarrinhoTopo></Carrinhos><LoginB2Bs><LoginB2B ID="loginTopo"><LoginHTML><![CDATA[@if(IsCustomerAuthenticated){
+    <a href="@Model.Login.LogOffUrl" class="saudacao"><strong>@Customer.FirstName, <small>(sair)</small></strong></a>
+    <!--<div class="saudacao">
+        Olá @Customer.FirstName (<a class="text-saudacao" href="@Model.Login.LogOffUrl">Para sair, clique aqui</a>)        
+    </div> -->
+    <script>
+        $(function(){
+              $("body").addClass("logado");
+          });
+    </script>
+}else{
+    <a href="@Model.Login.RegisterUrl" class="saudacao"><strong>Login ou cadastre-se</strong></a>
+
+}
+ 
+ ]]></LoginHTML></LoginB2B></LoginB2Bs><ScriptRazors><ScriptRazor ID="nomeMenu"><ScriptRazorHTML><![CDATA[@TemplateSettings.nav_text]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

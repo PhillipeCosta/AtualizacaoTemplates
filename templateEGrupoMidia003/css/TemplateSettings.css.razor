@@ -1,0 +1,692 @@
+/* Main */
+
+.main{
+    background-color: @TemplateSettings.main_backgroundColor;
+  @if(TemplateSettings.main_backgroundImage_display == "true"){
+      <text>
+          background-image: url(../imagens/@TemplateSettings.main_backgroundImage);
+    </text>
+  }
+    color: @TemplateSettings.main_color;
+    font-size: @TemplateSettings.main_fontSize;
+}
+
+
+
+input#BuscaTopotxtCaixaPesquisa,.pesquisa .pesquisa_conteudo fieldset label select{
+ color: @TemplateSettings.main_link_color;
+ background: @TemplateSettings.header_inputSearch_backgroundColor;
+
+
+}
+
+.main-container, .conteudo_fixo,.banner{
+  background: @TemplateSettings.main_backgroundColor;
+}
+
+a{ 
+    color: @TemplateSettings.main_link_color;
+}
+
+.main-border{ 
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.main_borderColor;    
+}
+
+.main-pagination{ 
+    color: @TemplateSettings.btn_primary_color;
+}
+
+.main-paginationSelected,
+.navegacao_direita .paginacao-navegacao a.selecionado{ 
+    background: @TemplateSettings.btn_primary_color;
+    color: @TemplateSettings.btn_primary_backgroundColor;   
+}
+
+@if(TemplateSettings.main_giftList == ""){
+  <text>
+      .main-giftList{
+          display: none;
+      }
+  </text>
+}
+
+@if(TemplateSettings.main_affiliateLink == ""){
+  <text>
+      .main-affiliateLink{
+          display: none !important;
+      }
+  </text>
+}
+
+@if(TemplateSettings.main_readyList == ""){
+  <text>
+      .main-readyList{
+          display: none !important;
+      }
+  </text>
+}
+
+/* Header */
+
+.fixed .topo , .fixed .container_topo{
+  background: @TemplateSettings.header_FloatbackgroundColor
+}
+.container_topo, .containertopo{
+   background: @TemplateSettings.header_backgroundColor;
+}
+.header-logo{
+    background: url('../imagens/@TemplateSettings.header_logo_image') no-repeat 0 0 scroll transparent;;
+}
+
+#header.fixed{
+  border-bottom: 5px solid @TemplateSettings.header_borderColor;
+}
+
+.header-link,.header-link a , #ciac-Saudacao > label, .acesso_rapido div a{ 
+    color: @TemplateSettings.header_link_color;
+}
+
+.header-inputSearch input, .lbl_busca{
+  background: @TemplateSettings.header_inputSearch_backgroundColor;
+  border-color: @TemplateSettings.header_inputSearch_borderColor;
+  border-width: 1px;
+  border-style: solid;    
+}
+ .produto_direita .produto_comprar .variante select{
+
+  background-image: url(../Imagens/arrow.png);
+  background-position: right;
+  background-size: 34px;   
+  background-color: @TemplateSettings.header_inputSearch_backgroundColor;
+   color: @TemplateSettings.main_link_color;
+}
+.header-miniCart a{ 
+
+  background: url('../imagens/@TemplateSettings.header_miniCart_image') no-repeat center center scroll transparent;
+  color: @TemplateSettings.header_miniCart_color;
+}
+
+.enderecos li{
+  background: @TemplateSettings.form_input_backgroundColor;
+  color: @TemplateSettings.form_input_color;
+  border: 1px solid @TemplateSettings.form_input_color; 
+
+}
+
+
+/* Checkout Header */
+
+.checkoutHeader-step-identification{ 
+    background: url('../imagens/@TemplateSettings.checkoutHeader_step_identification_image') no-repeat 0 0 scroll transparent;
+}
+
+.checkoutHeader-step-delivery{ 
+    background: url('../imagens/@TemplateSettings.checkoutHeader_step_delivery_image') no-repeat 0 0 scroll transparent;
+}
+
+.checkoutHeader-step-payment{
+    background: url('../imagens/@TemplateSettings.checkoutHeader_step_payment_image') no-repeat 0 0 scroll transparent;
+}
+
+/* Footer */
+
+
+
+.footer a{
+  color: @TemplateSettings.footer_color;
+}
+
+@if(TemplateSettings.footer_newsletter_display == ""){
+  <text>
+    .footer-newsletter{
+      display: none;
+    }
+  </text>
+}
+
+.footer-newsletter{ 
+    background: @TemplateSettings.footer_newsletter_backgroundColor;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: @TemplateSettings.footer_newsletter_borderColor;    
+    color: @TemplateSettings.footer_newsletterInput_backgroundColor;
+}
+
+form .footer-newsletter input{
+  background-color: @TemplateSettings.footer_newsletterInput_backgroundColor;
+  color: @TemplateSettings.footer_newsletterInput_color;
+  border-color: @TemplateSettings.footer_newsletterInput_borderColor;
+  border-style: solid;
+  border-width: 1px;    
+}
+
+.footer-newsletter-tag{ 
+    background: url('../imagens/@TemplateSettings.footer_newsletter_tag_image') no-repeat 0 0 scroll transparent;
+}
+
+.footer-rights{ 
+    background: @TemplateSettings.footer_rights_backgroundColor;
+  color: @TemplateSettings.footer_rights_color;
+}
+
+@if(TemplateSettings.footer_institutional_display == ""){
+  <text>
+    .box_institucionais{
+      display: none;
+    }
+  </text>
+}
+
+/* Nav Horizontal */
+
+@if(TemplateSettings.nav_horizontal_display == ""){
+  <text>
+    .nav-horizontal{
+      display: none;
+    }
+  </text>
+}
+
+
+
+.containertopo,, .departamento_destaque  a.lnk_dpto_topo,  .departamento_destaque  a.header-menu-a {
+  color: @TemplateSettings.nav_horizontal_link_color;
+}
+
+
+}
+
+.filtros-tipo-tit, .menupgs .lnk_filho_lat{
+    color: @TemplateSettings.main_link_color;
+
+}
+.menupgs .lnk_filho_lat:hover {
+  color: @TemplateSettings.top_primarycolor;
+    border-left: solid 6px @TemplateSettings.top_primarycolor;
+    margin-left: -6px;
+}
+
+
+.fixed .departamento_destaque,.fixed  .nav-horizontal-link ,.fixed  .box_menu > .box_menu_topo,.fixed .departamento_destaque a,
+.fixed .departamento_destaque  a.header-menu-a .box_menu_topo .box_menu_topo_filhos > li:nth-child(1) > ul > li > a,
+.box_menu_topo .box_menu_topo_filhos li,.departamento_pai , .departamento_destaque ul .link-menu-topo a, .fixed .departamento_destaque:last-child a{
+  color:@TemplateSettings.top_primarycolor;
+}
+
+.fixed .lnk_dpto_topo {
+  color:@TemplateSettings.top_primarycolor;
+}
+.departamento_destaque, .nav-horizontal-link , .box_menu > .box_menu_topo, .departamento_destaque:last-child a{
+  color:@TemplateSettings.nav_horizontal_link_color;
+}
+
+ .box_menu > .box_menu_topo {
+  background-color:@TemplateSettings.top_primarycolor;
+}
+
+
+
+.box_menu_topo .box_menu_topo_filhos > li{
+
+  background-color: @TemplateSettings.submenuheader_backgroundColor;
+
+}
+
+@if(TemplateSettings.nav_horizontalChildren_display == ""){
+  <text>
+    .nav-horizontalChildren{
+      display: none !important;
+    }
+  </text>
+}
+
+
+.nav-horizontalChildren-link, .nav-vertical-childrenLink{ 
+    color: @TemplateSettings.nav_horizontalChildren_link_color;
+    
+}
+
+
+
+/* Nav Vertical */
+
+@if(TemplateSettings.nav_vertical_display == ""){
+  <text>
+    .nav-verticalHome{
+      display: none;
+    }
+  </text>
+}
+
+
+
+.nav-verticalHome-link{
+    color: @TemplateSettings.nav_verticalHome_link_color;       
+}
+
+.nav-verticalHome-link:hover{ 
+    color: @TemplateSettings.nav_verticalHome_linkHover_color;   
+    background: @TemplateSettings.nav_verticalHome_linkHover_backgroundColor;
+}
+
+@if(TemplateSettings.nav_verticalHome_children_display == ""){
+  <text>
+    .nav-verticalHome-children{
+      display: none !important;
+    }
+  </text>
+}
+
+.nav-verticalHome-children{
+    background: @TemplateSettings.nav_verticalHome_children_backgroundColor;  
+}
+
+.nav-verticalHome-childrenLink{
+  color: @TemplateSettings.nav_verticalHome_childrenLink_color;
+}
+
+.nav-vertical{ 
+  background: @TemplateSettings.nav_vertical_backgroundColor;
+ 
+}
+
+.nav-vertical-link{ 
+    background: @TemplateSettings.nav_vertical_link_backgroundColor;
+    color: @TemplateSettings.nav_vertical_link_color;     
+}
+
+.menupgs .lnk_menu_lat{
+border: 2px solid @TemplateSettings.nav_vertical_link_color;     
+color: @TemplateSettings.nav_vertical_link_color;     
+background-color: @TemplateSettings.nav_vertical_link_backgroundColor;
+}
+
+.filtros_busca_conteudo select{
+      color: @TemplateSettings.nav_vertical_link_color;     
+
+}
+
+
+
+
+/* Buttons */
+
+.btn-primary, .btn-primary a,.btn-tertiary{ 
+    color: @TemplateSettings.btn_primary_color;
+    background: @TemplateSettings.btn_primary_backgroundColor;
+}
+
+.show_comentary p strong{
+
+    background  : @TemplateSettings.btn_primary_color;
+    color: @TemplateSettings.btn_primary_backgroundColor;
+}
+.toggle_description{
+
+    background  : @TemplateSettings.btn_primary_backgroundColor;
+    color: @TemplateSettings.btn_primary_color;
+}
+.btn-primary-background{ 
+    background: @TemplateSettings.btn_primary_backgroundColor;
+}
+
+.btn-primary-text{
+    color: @TemplateSettings.btn_primary_color;
+}
+
+.btn-secondary, .btn-secondary a{ 
+    color: @TemplateSettings.btn_secondary_color;
+    background: @TemplateSettings.btn_secondary_backgroundColor;    
+}
+
+.bt-carrinho{
+    background-color: @TemplateSettings.btn_secondary_color;
+    color: @TemplateSettings.btn_secondary_backgroundColor;    
+}
+
+.btn-secondary-background{ 
+     background: @TemplateSettings.btn_secondary_backgroundColor;       
+}
+
+.btn-secondary-text{ 
+    color: @TemplateSettings.btn_secondary_color;
+}
+
+.btn-tertiary, .btn-tertiary a{ 
+}
+
+.btn-tertiary-background{ 
+     background: @TemplateSettings.btn_tertiary_backgroundColor;        
+}
+
+.btn-tertiary-text{ 
+    color: @TemplateSettings.btn_tertiary_color;
+}
+
+.btn-special, .btn-special a{ 
+    color: @TemplateSettings.btn_special_color;
+    background: @TemplateSettings.btn_special_backgroundColor;            
+}
+
+.btn-special-background{ 
+     background: @TemplateSettings.btn_special_backgroundColor;       
+}
+
+.btn-special-text{ 
+    color: @TemplateSettings.btn_special_color;
+}
+
+/* Titles */
+
+li a.texto-tit-principal2{
+    color: @TemplateSettings.main_link_color;
+}
+.selected .texto-tit-principal2{
+    color: @TemplateSettings.heading_primary_color;
+
+}
+.heading-primary{ 
+    background: @TemplateSettings.heading_primary_backgroundColor;
+    color: @TemplateSettings.heading_primary_color;
+    padding: 5px;
+}
+.respiro_conteudo{
+/*      background: @TemplateSettings.heading_secondary_backgroundColor;
+*/
+}
+
+.heading-secondary , .paymentAddress-box{ 
+    background: @TemplateSettings.heading_secondary_backgroundColor;
+    color: @TemplateSettings.heading_secondary_color;    
+    padding: 5px;
+}
+
+.heading-tertiary{ 
+  background: @TemplateSettings.heading_tertiary_backgroundColor;
+  color: @TemplateSettings.heading_tertiary_color;
+  padding: 5px 10px;
+  font-weight: normal;    
+}
+
+.heading-special{ 
+    color: @TemplateSettings.heading_special_color;
+    
+}
+
+.heading-navigation{
+    background: @TemplateSettings.heading_navigation_backgroundColor;
+    color:  @TemplateSettings.heading_navigation_color;
+}
+
+.heading-productName{ 
+    color: @TemplateSettings.heading_productName_color;
+}
+
+.heading-footer{ 
+    color: @TemplateSettings.heading_footer_color;
+}
+
+/* Products */
+
+.product-name{ 
+    color: @TemplateSettings.product_name_color;
+    font-size: @TemplateSettings.product_name_fontSize;
+}
+
+.product-price{ 
+    color: @TemplateSettings.product_price_color;
+    font-size: @TemplateSettings.product_price_fontSize;
+}
+
+.product-adjustedPrice{
+    color: @TemplateSettings.product_adjustedPrice_color;
+    font-size: @TemplateSettings.product_adjustedPrice_fontSize;
+}
+
+.product-installments{
+    color: @TemplateSettings.product_installments_color;
+    font-size: @TemplateSettings.product_installments_fontSize;
+}
+
+.product-payInFullPrice{ 
+    color:  @TemplateSettings.product_payInFullPrice_color;
+    font-size: @TemplateSettings.product_payInFullPrice_fontSize;
+}
+
+.product-price-box{ 
+    background: @TemplateSettings.product_priceBox_backgroundColor;
+}
+
+
+/* Collections */
+
+.collection-productName{
+    color: @TemplateSettings.collection_productName_color;
+    font-size: @TemplateSettings.collection_productName_fontSize;
+  text-transform:uppercase;
+}
+
+.collection-productDescription{
+    color: @TemplateSettings.collection_productDescription_color;
+}
+
+@if(TemplateSettings.collection_productDescription_display == ""){
+    <text>
+        .collection-productDescription{
+            display: none;
+        }
+    </text>
+}
+
+.collection-productPrice{
+    color: @TemplateSettings.collection_productPrice_color;
+    font-size: @TemplateSettings.collection_productPrice_fontSize;
+}
+
+.collection-product-adjustedPrice{ 
+    color: @TemplateSettings.collection_productName_color;
+    font-size: @TemplateSettings.collection_product_adjustedPrice_fontSize;
+}
+
+.collection-productInstallments{ 
+    color: @TemplateSettings.collection_productInstallments_color;
+    font-size: @TemplateSettings.collection_productInstallments_fontSize;
+}
+
+.collection-product-payInFullPrice{ 
+    color:  @TemplateSettings.collection_product_payInFullPrice_color;
+    font-size: @TemplateSettings.collection_product_payInFullPrice_fontSize;
+}
+
+.collection-product-releaseTag{ 
+    background: @TemplateSettings.collection_product_releaseTag_backgroundColor;
+    color: @TemplateSettings.collection_product_releaseTag_color;
+}
+
+.collection-product-shippingTag{ 
+    background: @TemplateSettings.collection_product_shippingTag_backgroundColor;
+    color: @TemplateSettings.collection_product_shippingTag_color;
+}
+
+.collection-product-unavailableTag{ 
+    background: @TemplateSettings.collection_product_unavailableTag_backgroundColor;
+    color: @TemplateSettings.collection_product_unavailableTag_color;
+}
+
+@if(TemplateSettings.collection_product_buyFast == ""){
+    <text>
+        .maisdetalhe{
+            display: none;
+        }
+    </text>
+}
+
+/* Lista of errors and success */
+
+.message-error{
+  background: @TemplateSettings.message_error_backgroundColor;
+  color: @TemplateSettings.message_error_color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.message_error_borderColor;
+}
+
+.message-success{
+  background: @TemplateSettings.message_success_backgroundColor;
+  color: @TemplateSettings.message_success_color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.message_success_borderColor;
+}
+
+/* Gift List */
+
+.giftList-background{ 
+    background: url('../imagens/@TemplateSettings.gifList_home_image') no-repeat center center scroll transparent;
+}
+
+
+/* Ready List */
+
+.readyList-home{ 
+    background: url("../imagens/@TemplateSettings.readyList_home_image") no-repeat scroll right top rgba(0, 0, 0, 0);
+}
+
+/* Tabelas */
+
+
+
+.table-information{
+  background: @TemplateSettings.table_information_backgroundColor;
+  color: @TemplateSettings.table_information_color;
+}
+
+.table-boxCep{
+  background: @TemplateSettings.table_cep_backgroundColor;
+}
+
+.table-boxCupom{
+  background: @TemplateSettings.table_discount_backgroundColor;
+}
+
+/* Formulários */
+
+.form-field-nameRequired{
+  color: @TemplateSettings.form_field_nameRequired_color;
+}
+
+.form input, .form select, .form textarea{
+  background: @TemplateSettings.form_input_backgroundColor;
+  color: @TemplateSettings.form_input_color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.form_input_borderColor;
+}
+
+/*CSS Avançado*/
+
+@TemplateSettings.advanced_css
+
+/*Topo*/
+.departamento_destaque:hover .lnk_dpto_topo {
+/*
+  color:@TemplateSettings.top_primarycolor;
+*/
+}
+
+
+
+.saudacao > div{
+
+background-color:@TemplateSettings.top_primarycolor;
+
+}
+
+
+.acesso_rapido div,.bt-busca-topo,.fixed .mini_carrinho .bt_ir_carrinho a, .mini_carrinho .bt_ir_carrinho, .acesso_rapido a{
+  background-color: @TemplateSettings.top_primarycolor;
+}
+#footer_bonus_text{
+  color:@TemplateSettings.btn_special_color;
+  background-color:@TemplateSettings.btn_special_backgroundColor
+}
+#ciac-Mini_Carrinho h5, .numb_prod, .footer_cnpj{
+  color: @TemplateSettings.top_primarycolor;
+}
+.rodape_fixed{
+  background: @TemplateSettings.footer_backgroundColor;
+}
+
+.rodape_inst ul li, .rodape_inst ul li a,.rodape_inst ul li:nth-child(1), .rodape_inst ul li:nth-child(6), .desc_news, .news_text label,
+.rodape_inst ul li:nth-child(1) a{
+   color: @TemplateSettings.footer_color;
+}
+
+.rodape_inst ul > li:nth-child(2):hover,.rodape_inst ul > li:nth-child(3):hover,
+.rodape_inst ul > li:nth-child(4):hover{
+      background: @TemplateSettings.footer_backgroundSecondaryColor;
+
+  
+}
+
+
+.bt_ir_carrinho a{
+    color: @TemplateSettings.header_link_color;
+
+}
+
+.rodape_inst > ul > li >div > .content{
+  background-color: @TemplateSettings.footer_backgroundSecondaryColor;
+}
+
+.tit-variante,.verify{
+  color:@TemplateSettings.product_name_color;
+}
+
+.redes_sociais a{
+  background-color:@TemplateSettings.product_name_color;
+}
+
+
+.carrinho_icon{
+    background: url("../imagens/@TemplateSettings.cart_image");
+
+}
+
+.galeria .tit-box  h2{
+
+  color:@TemplateSettings.collection_product_adjustedPrice_color;
+  background-color: @TemplateSettings.collection_vitrineNameBack;
+}
+
+.fullzao_expansivel .nivo-controlNav a{
+  background-color: @TemplateSettings.header_link_color;
+  color: @TemplateSettings.top_primarycolor;
+  border:solid 1px;
+}
+
+.fullzao_expansivel .nivo-controlNav a.active{
+  background-color:@TemplateSettings.top_primarycolor;
+  color: @TemplateSettings.header_link_color;
+  border:solid 1px;
+}
+.fullzao_expansivel .nivo-controlNav a:hover{
+  background-color:@TemplateSettings.top_primarycolor;
+  border-color: @TemplateSettings.header_link_color;
+  border:solid 1px;
+}
+.indique input, .cupom input , .frete input{
+  background-color:@TemplateSettings.header_inputSearch_backgroundColor;
+}
+
+
+.tab_carrinho thead{
+background-color: @TemplateSettings.heading_secondary_backgroundColor;
+}
+
+
+.tab_carrinho thead .table-heading{
+  color: @TemplateSettings.heading_secondary_color;
+}

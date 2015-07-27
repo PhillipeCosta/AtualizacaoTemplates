@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListaPresenteBuscas><ListaPresenteBusca ID="listaPresenteBusca1"><CssComponente><![CDATA[]]></CssComponente><ListaPresenteBuscaHTML><![CDATA[Nome Homenageado : [A0] - Data Evento : [A1]<br>
+Tipo da Lista: [A2]</br>
+<input type="button" id="btnEnviar" value="Buscar Evento" onclick="[A3]" /><br>
+[A4]</br>
+
+]]></ListaPresenteBuscaHTML><MensagemAlertaListaPresenteBuscaHTML><![CDATA[[B0]<br>
+[B1]</br>
+]]></MensagemAlertaListaPresenteBuscaHTML></ListaPresenteBusca></ListaPresenteBuscas><ListaPresentesProdutoAdicionars><ListaPresentesProdutoAdicionar ID="lstListaPresentesProdutoAdicionar"><CssComponente><![CDATA[]]></CssComponente><ListaPresentesProdutoAdicionarHTML><![CDATA[<input type="button" id="btnEnviar" value="Adicionar Produto" onclick="[A0]" /><br />
+]]></ListaPresentesProdutoAdicionarHTML></ListaPresentesProdutoAdicionar></ListaPresentesProdutoAdicionars></controles></page>

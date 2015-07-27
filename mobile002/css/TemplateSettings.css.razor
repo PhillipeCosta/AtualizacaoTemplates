@@ -1,0 +1,335 @@
+/* Main */
+
+.main{
+  background: @TemplateSettings.main_backgroundColor; /* fff */
+  font-size: @TemplateSettings.main_fontSize; /* 11 */
+    color: @TemplateSettings.main_color; /* 333 */  
+}
+
+.main-container{
+  background: @TemplateSettings.main_container_backgroundColor; /* fff */
+}
+
+a{
+  color: @TemplateSettings.main_color; /* 333 */
+}
+
+
+/* Header */
+
+.header{
+    background-color: @TemplateSettings.header_backgroundColor; /* 8d8d8d */
+    background-image: url(../imagens/@TemplateSettings.header_backgroundImage);
+	background-position: center top;
+} 
+
+.header-search{
+  background: url('../imagens/bullet_search.png') no-repeat right center scroll @TemplateSettings.header_search_backgroundColor;
+}
+
+.header-search input{
+  color: @TemplateSettings.header_search_color;
+}
+
+.header-navbar-menu a{
+  background: @TemplateSettings.header_navBar_backgroundColor; /* 373737 */
+  color: @TemplateSettings.header_navBar_color; /* fff */ 
+}
+
+.header-miniCartContainer{
+  background: @TemplateSettings.header_miniCartContainer_backgroundColor; /* 9d9c9c */
+}
+
+.header-miniCartContainer a{
+  color: @TemplateSettings.header_miniCartContainer_color; /* fff */
+}
+
+.header-goCart{
+  background: @TemplateSettings.header_goCart_backgroundColor; /* 33302d */
+  color: @TemplateSettings.header_goCart_color; /* fff */
+}
+
+.header-goCart a{
+  color: @TemplateSettings.header_goCart_color; /* fff */
+}
+
+/* Checkout */
+
+.headerCheckout{
+  background: @TemplateSettings.headerCheckout_backgroundColor; /* 373737 */
+}
+
+header.headerCheckout{
+	box-shadow: 0 0px 10px #333;
+}
+
+.header-stepsCheckout .active{
+  color: @TemplateSettings.headerCheckoutActive_color; /* 97b74 */
+}
+
+.header-stepsCheckout{
+  color: @TemplateSettings.headerCheckout_color; /* fff */
+}
+
+/* Nav Horizontal */
+
+.navHorizontal a{
+  color: @TemplateSettings.@TemplateSettings.navHorizontal_color;
+}
+
+.navHorizontal img{
+  background: @TemplateSettings.navHorizontal_backgroundColor;
+}
+
+.navHorizontal:hover h4{
+  border-bottom: 5px solid @TemplateSettings.navHorizontal_borderColor;
+}
+
+.navHorizontal-children{
+  background: @TemplateSettings.navHorizontal_children_backgroundColor;
+}
+
+.navHorizontal-children li a{
+  color: @TemplateSettings.navHorizontal_children_color;
+}
+
+.navHorizontal-navBar{
+  background: @TemplateSettings.navHorizontal_navBar_backgroundColor; /* 373737 */
+}
+
+.navHorizontal-navBar-link{
+  color: @TemplateSettings.navHorizontal_navBar_color; /* fff */
+}
+
+.navHorizontal-navBar-toggle{
+  border-color: @TemplateSettings.navHorizontal_navBarToggle_backgroundColor; /* fff */
+  background: @TemplateSettings.navHorizontal_navBarToggle_backgroundColor; /* fff */
+}
+
+.navHorizontal-navBar-toggleIcon{
+  color: @TemplateSettings.navHorizontal_navBarToggle_color; /* 888 */
+}
+
+.navHorizontal-navBarCollapse{
+  background: @TemplateSettings.navHorizontal_navBarCollapse_backgroundColor; /* f2f2f2 */
+}
+
+.navHorizontal-navBarCollapse-link a{
+  color: @TemplateSettings.navHorizontal_navBarCollapse_color; /* 777 */  
+}
+
+.navHorizontal-navBarCollapse-search{
+  background: @TemplateSettings.navHorizontal_navBarCollapse_search_backgroundColor; /* 373737 */
+}
+
+.navHorizontal-navBarCollapse-search input{
+  background: @TemplateSettings.navHorizontal_navBarCollapse_searchInput_backgroundColor; /* fff */
+  color: @TemplateSettings.navHorizontal_navBarCollapse_searchInput_color; /* 555 */
+}
+
+/* Heading */
+
+.heading-primary h2{
+  background: @TemplateSettings.heading_primary_backgroundColor; /* 373737 */
+  color: @TemplateSettings.heading_primary_color; /* fff */
+}
+
+.ciashop-cantoTit{
+  border-left: solid 10px @TemplateSettings.heading_primary_backgroundColor !important; /* 373737 */  
+}
+
+.heading-footer{
+  color: @TemplateSettings.heading_footer_color; /* #807454 */
+}
+
+/* Collection */
+
+.collection-info{
+  background: @TemplateSettings.collection_info_backgroundColor; /* 000 */
+  color: @TemplateSettings.collection_info_color; /* fff */
+}
+
+.collection-price{
+  background: @TemplateSettings.collection_price_backgroundColor; /* fff */
+  color: @TemplateSettings.collection_price_color; /* 373737 */
+}
+
+.collection-priceBorder{
+  border-right: 10px solid @TemplateSettings.collection_price_backgroundColor !important;
+}
+
+.collection-adjustedPrice{
+  background: @TemplateSettings.collection_adjustedPrice_backgroundColor; /* 97b714 */
+  color: @TemplateSettings.collection_adjustedPrice_color; /* fff */
+}
+
+.collection-adjustedPriceBorder{
+  border-right: 10px solid @TemplateSettings.collection_adjustedPrice_backgroundColor !important;
+}
+
+.collection-filter,
+.ciashop-boxFilterGroups{
+  background: @TemplateSettings.collection_filter_backgroundColor; /* 373737 */
+  color: @TemplateSettings.collection_filter_color; /* fff */
+}
+
+.collection-filter select{
+  background: @TemplateSettings.collection_filterSelect_backgroundColor; /* fff */
+  border: 1px solid @TemplateSettings.collection_filterSelect_borderColor; /* fff */
+  color: @TemplateSettings.collection_filterSelect_color; /* 373737 */
+}
+
+.collection-filterUsed{
+  background: @TemplateSettings.collection_filterUsed_backgroundColor; /* 373737 */
+  color: @TemplateSettings.collection_filterUsed_color; /* fff */
+}
+
+.collection-filterUsed a{
+  color: @TemplateSettings.collection_filterUsed_color; /* fff */
+}
+
+/* Pagination */
+
+.pagination-iten{
+  border: 1px solid @TemplateSettings.pagination_borderColor;
+  background: @TemplateSettings.pagination_backgroundColor;
+  color: @TemplateSettings.pagination_color;
+}
+
+.pagination-iten.active, .pagination-iten:hover{
+  border: 1px solid @TemplateSettings.pagination_active_borderColor;
+  background: @TemplateSettings.pagination_active_backgroundColor;
+  color: @TemplateSettings.pagination_active_color;
+}
+
+/* Footer */
+
+.footer{
+  background: @TemplateSettings.footer_backgroundColor; /* ececec */
+  color: @TemplateSettings.footer_color; /* 777 */
+}
+
+.footer a{
+  color: @TemplateSettings.footer_color; /* 777 */
+}
+
+.footer-newsletter input{
+  background: @TemplateSettings.footer_newsletter_backgroundColor; /* fff */
+  border: 1px solid @TemplateSettings.footer_newsletter_borderColor; /* 717171 */
+  color: @TemplateSettings.footer_newsletter_color; /* fff */
+}
+
+.footer-newsletterIcon{
+  background: @TemplateSettings.footer_newsletterIcon_backgroundColor; /* 717171 */
+  color: @TemplateSettings.footer_newsletterIcon_color !important; /* fff */
+}
+
+.footer-social a{
+  background: @TemplateSettings.footer_social_backgroundColor; /* aaa */
+  color: @TemplateSettings.footer_social_color; /* ececec */
+}
+
+.footer-secondary{
+  background: @TemplateSettings.footer_secondary_backgroundColor; /* e4e4e4 */
+  color: @TemplateSettings.footer_secondary_color; /* 999 */
+}
+
+/* Buttons */
+
+.btn-secondary,
+.btn-secondary a{
+  background: @TemplateSettings.btn_secondary_backgroundColor;
+  color: @TemplateSettings.btn_secondary_color;
+}
+
+.btn-primary,
+.btn-primary a{
+  background: @TemplateSettings.btn_primary_backgroundColor;
+  color: @TemplateSettings.btn_primary_color;
+}
+
+.btn-buy h2{
+  background: @TemplateSettings.btn_buy_backgroundColor;
+  color: @TemplateSettings.btn_buy_color;
+}
+
+.btn-buy .ciashop-cantoBtBuy{
+  border-left: 15px solid @TemplateSettings.btn_buy_backgroundColor !important;
+}
+
+.btn-secondary .ciashop-cantoBtBuy{
+  border-left: 15px solid @TemplateSettings.btn_secondary_backgroundColor !important;
+}
+
+/* Form */
+
+.form input, .form select, .form textarea{
+  border: 1px solid @TemplateSettings.form_borderColor; /* 373737 */
+  background: @TemplateSettings.form_backgroundColor; /* fff */
+  color: @TemplateSettings.form_color; /* 373737 */
+}
+
+/* Product */
+
+.product-name{
+  color: @TemplateSettings.product_name_color; /* 686868 */
+}
+
+.product-boxPrice{
+  background: @TemplateSettings.product_boxPrice_backgroundColor; /*eaeaea */
+  color: @TemplateSettings.product_boxPrice_color; /* 373737 */
+}
+
+.product-adjustedPrice{
+  color: @TemplateSettings.product_adjustedPrice_color; /* #807454 */
+}
+
+.product-variants{
+  background: @TemplateSettings.product_variants_backgroundColor; /* fff */
+  border: 2px solid @TemplateSettings.product_variants_borderColor; /* dde4e8 */
+}
+
+.product-shipping{
+background: @TemplateSettings.product_shipping_backgroundColor; /* e8e8e8 */
+}
+
+.bundles-iten .thumbnail input{
+	border: 1px solid @TemplateSettings.form_borderColor; /* 373737 */
+}
+
+.bundles-iten .thumbnail input{
+	border: 1px solid @TemplateSettings.form_borderColor; /* 373737 */
+	background: @TemplateSettings.form_backgroundColor; /* fff */
+	color: @TemplateSettings.form_color; /* 373737 */
+}
+
+.comnpre_junto_remove, .comnpre_junto_adiciona{
+	border-color: @TemplateSettings.form_borderColor;
+}
+
+
+/* MEDIA QUERIES */
+
+@@media(max-width: 650px){
+  .header-logo a{
+    background: @TemplateSettings.header_logo_backgroundColor; /* 373737 */
+  }
+}
+
+@@media(min-width: 992px){
+  .header-miniCart a{
+    background: url(../imagens/@TemplateSettings.header_miniCartImage) no-repeat center center scroll transparent;  
+    color: @TemplateSettings.header_miniCart_color;
+  }
+}  
+
+@@media(min-width: 650px) and (max-width: 991px){
+  .header-miniCart a{
+    background: url(../imagens/@TemplateSettings.header_miniCartImage2) no-repeat center center scroll transparent;  
+    color: @TemplateSettings.header_miniCart_color;
+  }
+}
+
+/*CSS Avançado*/
+
+@TemplateSettings.advanced_css

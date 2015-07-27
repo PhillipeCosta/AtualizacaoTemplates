@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoBannerss><AfiliadoBanners ID="affiliateBanners"><AfiliadoBannerHTML><![CDATA[<div class="main-overflow main-padding20">
+    <h5 class="heading-collection">// Modelos</h5>
+    <div class="main-padding main-overflow text-center">
+        <ul class="main-clearPadding">
+            <repeticao:banners>
+                <li class="main-padding20">
+                    <img src="[A5]" alt="Modelo [A1]" border="0 /" />
+                    <div class="main-clear main-overflow main-padding" style="border: 1px solid #ececec; padding: 10px; margin: 10px 0;">
+                        [A6]
+                    </div>
+                </li>
+            </repeticao:banners>
+        </ul>
+    </div>
+</div>]]></AfiliadoBannerHTML></AfiliadoBanners></AfiliadoBannerss></controles></page>

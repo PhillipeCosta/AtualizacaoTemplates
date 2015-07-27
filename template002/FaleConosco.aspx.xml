@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><Links><Link ID="orders"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ver Meus Pedidos" /><UsarHTTPS value="True" /></Link><Link ID="alter_customer_data"><Destino value="Comprador" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Alterar dados cadastrais" /><UsarHTTPS value="True" /></Link><Link ID="faq"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Perguntas Frequentes" /><UsarHTTPS value="False" /></Link></Links><PaginasInstitucionaiss><PaginasInstitucionais ID="institutional"><PaginasInstitucionaisHTML><![CDATA[<repeticao:pagina_institucional>
+  	<li><a href="[A1]">[A0]</a></li>
+</repeticao:pagina_institucional>]]></PaginasInstitucionaisHTML></PaginasInstitucionais></PaginasInstitucionaiss><FaleConoscos><FaleConosco ID="contactUs"><FaleConoscoHTML><![CDATA[<div class="main-padding20">
+  <h4 class="text-left"><span class="fa fa-group"></span>&nbsp;&nbsp;<strong>Entre em contato conosco</strong></h4>
+</div>
+<div class="main-overflow form form-guest">
+  <div class="col-md-6">
+      <div class="form main-clear main-overflow">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Nome</label>
+        <span class="col-md-7">
+          [A1]
+        </span>
+      </div>	
+      <div class="form main-clear main-overflow">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Email</label>
+        <span class="col-md-7">
+          [A2]
+        </span>
+      </div>
+      <div class="form main-clear main-overflow">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Telefone</label>
+        <span class="col-md-7">
+          [A3]
+        </span>
+      </div>    	         
+  </div>
+  <div class="col-md-6">
+      <div class="form main-clear main-overflow">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Número do pedido</label>
+        <span class="col-md-5" style="padding-right: 0;">
+          [A4]
+        </span>
+        <span class="pull-left main-padding">
+          <small>Se houver</small>       
+        </span>      
+      </div>    
+      <div class="form main-clear main-overflow">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Mensagem</label>
+        <span class="col-md-7">
+          [A6]
+        </span>
+        <span style="display: none;">
+          <small>[A7]</small>       
+        </span>
+      </div> 
+      <div class="form main-clear main-overflow">
+        <label class="col-md-3 text-right main-clearPadding main-padding">&nbsp;</label>
+        <span class="col-md-7 text-right" style="padding: 0 28px;">
+          <a href="javascript:void(0)" onclick="[A8]" class="bt btn-primary text-uppercase text-center">Enviar</a>
+        </span>
+      </div> 
+  </div>
+</div>
+
+]]></FaleConoscoHTML><ObrigatorioCPFCNPJ value="True" /><tipoFormulario value="Dúvidas" /></FaleConosco></FaleConoscos><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

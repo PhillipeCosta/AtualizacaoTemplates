@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><PaymentMethodss><PaymentMethods ID="payment_methods"><PaymentMethodsHTML><![CDATA[@using (Html.BeginForm()){
+  <div class="paymentMethods">
+        <div class="heading-primary">
+          <h1><strong>Selecione</strong> a Forma de Pagamento</h1>
+        </div>
+    <div class="paymentMethodsList">
+      <ul>
+        @foreach(var Categoria in Model.PaymentCategories){
+          <li>
+            <div>
+              @switch(Categoria.Id){
+              	case 1:
+              		<h3>Cartão de Crédito</h3>
+              		break;
+              	case 2:
+              		<h3>Transferência</h3>
+              		break;
+              	case 3:
+              		<h3>Boleto</h3>
+              		break;
+              	case 4:
+              		<h3>Depósito</h3>
+              		break;
+              	default:
+              		<h3>@Categoria.Name</h3>
+              		break;
+              }
+           	 <ul>
+              @foreach(var Metodo in Categoria.PaymentMethods){
+                <li class="paymentMethodsList-method">
+                  <img src="@Metodo.MainImageURL" alt="@Metodo.DisplayName" />                                 
+                  <span>@Metodo.DisplayName</span>
+                  @if(Metodo.HasPayInFullDiscount){
+                    <div class="paymentMethodsList-method-discount">
+                      @Metodo.PayInFullDiscountPercent% de desc
+                    </div>
+                  }
+                  @Html.InputRadio("PaymentMethod.Id", Metodo.Id, Metodo.Selected)
+                </li> 
+              }           
+            </ul>
+            </div>
+          </li>
+        }           
+      </ul>
+    </div>
+    @Html.ValidationSummary()
+        <div class="paymentSelecione">
+          <img src="imagens/payment-select.png" alt="Selecione o método acima" />
+        </div>
+    <div class="paymentMethodContent">
+      @foreach(var Metodo in Model.PaymentMethods){
+        <div class="paymentMethod form-box" method="@Metodo.Id">
+          <h2 class="form-box-heading"><img src="@Metodo.MainImageURL?v0001" alt="@Metodo.DisplayName" /> <span>@Metodo.DisplayName</span></h2>
+          @if(Metodo.HasPayInFullDiscount){
+            <div class="paymentMethod-discount">
+              <strong>Pague somente @Metodo.PayInFullDiscountValue.AsMoney()</strong> (@Metodo.PayInFullDiscountPercent% de desconto)
+            </div>
+          }         
+          @if(Metodo.HasForm){
+            <div class="paymentMethod-form form">
+              @foreach(var Field in Metodo.PaymentForm.Fields){
+                if(Field.Id=="SecurityCode"){
+                  <div class="paymentMethod-field parent-validation">
+                    <label><span class="paymentMethod-fieldSpan">@Field.LabelText</span> @Html.Input(Field).AddClass(Field.Id)<a href="#popup-codigo-seguranca" class="paymentMethod-fieldCodSeg">(O que é código de segurança?)</a> @Html.ValidateMessage(Field)</label>
+                  </div>                  
+                }else if(Field.Id=="ExpirationMonth"){
+                  @:<div class="paymentMethod-field parent-validation">
+                    @:<label><span class="paymentMethod-fieldSpan">Validade</span> @Html.Input(Field).AddClass(Field.Id)</label>
+                }else if(Field.Id=="ExpirationYear"){
+                    @:<label>@Html.Input(Field) @Html.ValidateMessage(Field)</label>
+                  @:</div>              
+                }else{
+                  <div class="paymentMethod-field parent-validation">
+                    <label><span class="paymentMethod-fieldSpan">@Field.LabelText</span> @Html.Input(Field).AddClass(Field.Id) <span class="paymentMethod-fieldExemplo">@Field.Help</span> @Html.ValidateMessage(Field)</label>
+                  </div>                  
+                }
+              }                                     
+            </div>
+                }         
+          @if(Metodo.HasInstallments){
+            <div class="paymentMethod-parcel form">
+              <span>Parcele em:</span>
+              @Html.InputDropdown("PaymentInstallments.Quantity", Metodo.PaymentInstallments,"Selecione o parcelamento")
+            </div>
+          }               
+          @if(Metodo.Help!=""){
+              <div class="paymentMethod-text">@Metodo.Help</div>
+          }
+          <div class="form-box-bt">
+              <a href="javascript: void(0);" class="bt-big-special to-right" id="enviar" name="enviar">Concluir Compra</a>
+          </div>
+        </div>
+      }
+    </div>
+    @if(Config.Payment_SaoPauloInvoiveEnabled=="true"){
+      <div class="paymentMethodNote">
+        <input type="checkbox" name="MetaField.Cart.System.NotaPaulista" value="Sim" />
+        <span class="paymentMethodNote-box">
+          <h3>Desejo nota fiscal paulista:</h3>
+          <p>Se deseja saber mais sobre o programa de Estímulo à Cidadania Fiscal, acesse: <a href="http://www.nfp.fazenda.sp.gov.br">http://www.nfp.fazenda.sp.gov.br</a></p>
+        </span>
+      </div>
+    }
+  </div>
+}
+
+<div style="display: none;">
+  
+  <div id="popup-codigo-seguranca">
+    <div class="heading-primary"><h2>Código de Segurança</h2></div>
+    <p class="linha">
+      O que é?<br />
+      O código de segurança do cartão de crédito é uma sequência numérica complementar ao número do cartão, que garante a veracidade dos dados de uma transação eletrônica, uma vez que essa informação é verificada somente pelo portador do cartão e não consta em nenhum tipo de leitura magnética.
+    </p>
+    <div class="image-text linha">
+      <div class="image">
+        <img src="imagens/cartao_verso_01.png" />
+      </div>
+      <div class="text">
+        <h3>VISA / MaterCard / Diners</h3>
+        <p>O código de segurança dos cartões com Bandeira VISA / MasterCard / Diners está localizado no verso do cartão e corresponde aos três últimos dígitos da faixa numérica.</p>
+      </div>
+    </div>
+    <div class="image-text linha">
+      <div class="image">
+        <img src="imagens/cartao_verso_02.png" />
+      </div>
+      <div class="text">
+        <h3>AMERICAN EXPRESS</h3>
+        <p>O código de segurança está localizado na parte frontal do cartão AMERICAN EXPRESS e corresponde aos 4 dígitos localizados do lado direito acima da faixa numérica do seu cartão.</p>
+      </div>
+    </div>    
+  </div>
+
+</div>
+<script src="js/paymentMethod.js?v0005" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $(".paymentMethod-fieldCodSeg").colorbox({inline:true});
+  });
+</script>]]></PaymentMethodsHTML></PaymentMethods></PaymentMethodss><CarrinhoBonuss><CarrinhoBonus ID="bonus"><CarrinhoBonusHTML><![CDATA[<div class="bonus">
+    <div class="heading-primary">
+      	<h2><strong>Pagar</strong> com Bônus</h2>
+    </div>
+    <div style="padding: 10px 0 0 0" class="form">
+        <p>
+            Pague sua compra ultilizado seus bônus. Eles serão revertidos em forma de desconto para você!<br /><br />
+          	Você possui <strong>[A0]</strong> bônus </p>
+          	<div class="form-item w-100" style="padding: 10px 0;">
+                <label><span class="form-title">Selecione a quantidade de bônus:</span>[A1]</label>
+          	</div>        
+    </div>
+</div>]]></CarrinhoBonusHTML></CarrinhoBonus></CarrinhoBonuss><Carrinhos><Carrinho ID="cart_items"><CarrinhoContratoHTML><![CDATA[]]></CarrinhoContratoHTML><CarrinhoHTML><![CDATA[<div class="heading-primary">
+  <h2><strong>Itens</strong> do Pedido</h2>
+</div>
+<div class="miniCart-table">
+  <div class="miniCart-items">
+    <table class="table">
+      <tbody>
+        <repeticao:produtos>
+            <tr class="table-item">
+                <td class="cart-product-image" width="50"><img class="photo-product" src="[A3]?width=50&height=50" alt="[A4]" width="50" height="50" /></td>
+              <td class="cart-product-name"><strong>[A4]</strong><div class="miniCart-product-quantity">Quantidade: [A5]</div></td> 
+                <td class="cart-product-subtotalPrice">[A9]</td>
+            </tr>
+        </repeticao:produtos>
+      </tbody>
+    </table>
+  </div>
+  <table class="table" style="margin: 0;">
+    <tbody>
+      <tr class="miniCart-subtotal">
+        <th>Subtotal</th>
+        <td>
+          [A23]
+        </td>
+      </tr>
+
+      <tr class="miniCart-shipping">
+        <th>
+            Frete      
+        </th>
+        <td>
+          [A16]
+        </td>
+      </tr>
+      <condicao:cupom_valor>
+        <tr class="miniCart-coupom">
+          <th>
+              Cupom de Desconto
+          </th>
+          <td>            
+               - [A12]            
+          </td>
+        </tr>
+      </condicao:cupom_valor>
+      <condicao:bonus>
+        <tr class="miniCart-bonus">
+          <th>
+              Bônus
+          </th>
+          <td>            
+               - [A38]            
+          </td>
+        </tr>
+      </condicao:bonus>
+      <!--  TOTAL  -->
+      <tr class="miniCart-total">
+        <th>
+          Total a Pagar
+        </th>
+        <td>
+          [A21]
+        </td>
+      </tr>   
+     </tbody>
+  </table>
+</div>]]></CarrinhoHTML><CarrinhoItensEditavel value="False" /><CarrinhoVazioHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> Seu carrinho expirou.
+</div>]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong> NNão entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
+</div>]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[Cupom não é válido para o comprador atual.]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[Cupom fora do prazo de validade.]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[Cupom não encontrado.]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[O cupom não é válido para o(s) departamento(s) selecionado(s).]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[O cupom não é válido para o(s) produto(s) selecionado(s).]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[A compra não atingiu o valor mínimo para ativação do cupom.]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[O cupom já foi usado.]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[O produto [L0] não está mais disponível para pronta entrega na quantidade solicitada. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[O preço do produto [F0] mudou de [F1] para [F2].]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosPorRestricaoDeTemplateHTML><![CDATA[Atenção! O produto [S0] foi removido do carrinho pois não está disponível para o template acessado.]]></MensagemProdutosRemovidosPorRestricaoDeTemplateHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[O produto <strong>[K0]</strong> não esta mais disponível.]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Gigantes" /></Carrinho></Carrinhos><CarrinhoEnderecoEntregas><CarrinhoEnderecoEntrega ID="shipping_address"><CarrinhoEnderecoEntregaHTML><![CDATA[<div class="shipping-address"> 
+    <div class="heading-primary">
+       <h2><strong>Endereço</strong> de Entrega</h2>
+    </div>
+    <div class="shipping-address-content">
+      <p><strong>[A0]</strong></p>
+      <p>[A1], [A2] [A3]</p>
+      <p>[A4] - [A5] - [A6]</p>
+      <p>CEP: [A8]</p>
+    </div>
+    <a href="[A11]" class="bt-small-secundary">Alterar endereço de entrega</a>
+</div>]]></CarrinhoEnderecoEntregaHTML></CarrinhoEnderecoEntrega></CarrinhoEnderecoEntregas><BoletimNoticiass><BoletimNoticias ID="tidings"><BoletimNoticiasHTML><![CDATA[<h3>ASSINE NOSSA NEWS LETTER</h3>
+<label class="keep_informed">Mantenha-se Informado!</label>
+<fieldset class="form">
+  <span class="news-email">
+    <label> <i></i>Email:</label>[A2]    
+    </span>
+  <span class="news-name"><label>Nome:</label>[A0]</span>
+
+  
+  <condicao:nascimento>    
+    <span class="news-birth"><label><small>Data de<br />nascimento</small></label>[A1]</span>
+  </condicao:nascimento>
+
+  <condicao:sexo>
+    <span class="news-gender "><label>Gênero</label>[A3][A6]</span>
+  </condicao:sexo>
+  
+  <a href="[A4]" class="bt-small-special w-15 to-right align-center">enviar</a>
+</fieldset>
+]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass></controles></page>

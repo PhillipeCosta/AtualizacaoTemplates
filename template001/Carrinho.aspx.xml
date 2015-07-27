@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Carrinhos><Carrinho ID="Carrinho1"><CarrinhoContratoHTML><![CDATA[<div id="contrato">
+  <div class="contrato_titulo">
+    <h2>Contrato</h2>
+  </div>
+  <div class="contrato_texto">
+    [H0]
+  </div>
+  <div class="cotrato_aceite">
+    <label>[H1] <span>Aceito os termos do contrato</span></label>
+  </div>
+  <div class="contrato_bt">
+    <a href="[H2]" class="contrato_aceito box-bt btn-primary">
+      Continuar
+    </a>
+  </div>
+</div>]]></CarrinhoContratoHTML><CarrinhoHTML><![CDATA[<div class="heading-primary">
+  <h2>Meu Carrinho</h2>
+</div>
+
+[A28][A29][A41][A42][A45][A66]
+
+<div id="carrinho">
+  <table class="tab_carrinho" cellpadding="0" cellspacing="0" border="0" width="100%;">
+    <thead>
+      <tr>
+        <th class="table-heading">&nbsp;</th>
+        <th class="table-heading" style="text-align: left; padding-left: 5px;">Produto</th>
+        <th class="table-heading">Quantidade</th>
+        <th class="table-heading"><img src="imagens/tit_carrinho_presente.png" alt="titulopresente" class="titulo-presente" style="display: table; margin: 0 auto;" /></th>
+        <th class="table-heading">Disponibilidade</th>
+        <th class="table-heading">Preço Unitário</th>
+        <th class="table-heading">Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <repeticao:produtos>
+      <tr class="item_carrinho <condicao:brinde>brinde</condicao:brinde>">       
+        <td class="table-information" style="width: 100px">          
+          <condicao:brinde>
+              <div class="brinde">
+                <img src="imagens/brinde.png" alt="Brinde" />
+                <a class="link-modal-iframe" href="[A63]" target="_blank" style="text-decoration: underline;">saiba mais</a>                
+              </div>
+          </condicao:brinde>           
+          <condicao:promocao_express>
+            <script language="javascript">
+              var win = null;
+              function NovaJanela(pagina,nome,w,h,scroll){
+              LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+              TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+              settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+              win = window.open(pagina,nome,settings);
+              }
+            </script>
+            <a href="[A37]" onclick="NovaJanela(this.href,'nomeJanela','680','600','yes');return false" style="float:left;"><img src="[A34]" alt="[A4] em promoção" /></a>
+          </condicao:promocao_express>            
+          <a href="[A24]"><img src="[A3]?width=150&height=150;" alt="[A4]" border="0" class="cart-img" />
+          </a>      
+          <div>
+          </div>
+          <condicao:promocao_brinde>
+            	<div class="promocao_brinde_carrinho"><a class="link-modal-iframe" href="[A63]" target="_blank"><img src="[A64]" alt="Promocao Brinde" /></a></div>
+          </condicao:promocao_brinde>           
+        </td>
+        <td class="table-information" style="text-align: left;">
+          <a href="[A24]">[A4]</a>
+		  <span class="cart-variantSelect">[A65]</span>
+          <condicao:promocao_frete>
+          	<a href="[A36]" style="display: block;"><img src="[A33]" alt="Frete Grátis" /></a>
+          </condicao:promocao_frete>
+          <condicao:produto_ainda_nao_customizado>
+            <a href="javascript:void();" onclick="[AC46]" class="bt-carrinho btn-secondary" style="display: table;">
+              personalizar produto
+            </a>
+          </condicao:produto_ainda_nao_customizado>           
+          <!-- Contrato do produto -->
+            <condicao:contrato>
+              <condicao:contrato_aceito>
+                <div class="produto_contrato contrato_aceito">
+                  <span class="contrato_titulo">Contrato aceito</span>
+                  <span class="contrato_info">Contrato de compra aceito. <a href="[A43]">(Ver contrato)</a> <a href="[A44]" class="contrato_cancelar">(Cancelar)</a></span>
+                </div>                
+              </condicao:contrato_aceito>
+            
+              <condicao:contrato_nao_aceito>
+                <div class="produto_contrato contrato_nao_aceito">
+                  <span class="contrato_titulo">Contrato não aceito <a href="[A43]">(Aceitar contrato)</a></span>
+                  <span class="contrato_info">Para comprar esse produto é necessário aceitar o contrato. <a href="[A43]">(Ver contrato)</a></span>
+                </div>
+              </condicao:contrato_nao_aceito>              
+            </condicao:contrato>
+          
+          <!-- -->
+        </td>
+        <td class="table-information qtd">[A5]<a href="javascript: void(0)"><img src="imagens/reload.png?24" alt="Atualizar Quantidade" class="img_reload_carrinho" /></a></td>
+        <td class="table-information"><label>[A6]</label></td>
+        <td class="table-information">[A32]</td>  
+        <td class="table-information">[A8]</td>
+        <td class="table-information">[A9] <a href="[A7]" class="remover-carrinho"><img src="imagens/bt_remover_carrinho.png?24" alt="Remover do Carrinho" border="0" /></a></td>
+      </tr>
+      <!-- KIT DE PRODUTO -->
+      
+        <condicao:kit>
+          <tr class="kit heading-secondary">
+            <th colspan="8">
+              <h2>Itens que compõem o KIT:</h2>
+            </th>
+          </tr>
+          <tr class="kit">
+            <td colspan="8">
+              <div class="container_kits">
+                <repeticao:kit_itens>
+                  <a href="[A59]" class="box_kits" tareget="_blank">
+                    <span class="img_kit">
+                      <img src="[A55]?width=100&height=100" alt="[A57]" />
+                    </span>
+                    <span class="info_produto_kit">
+                      <h5>[A57]</h5>
+                      <h6>quantidade: [A58]</h6>
+                    </span>
+                  </a>
+                </repeticao:kit_itens>
+              </div>
+            </td>
+          </tr>
+        </condicao:kit>
+        
+        
+        
+      <!-- -->
+    <!-- CUSTOMIZAÇÃO DO PRODUTO -->
+      
+        <condicao:customizacao_carrinho>
+          <repeticao:customizacao_carrinho>
+            <tr class="item_customizacao">
+              <th colspan="7">[AC40]&nbsp;&nbsp;<a href="javascript:void(0);" onclick="[AC46]" class="bt-carrinho btn-secondary">editar</a></th>
+            </tr>
+            <repeticao:customizacao_campos_carrinho>
+              <tr class="item_customizacao">
+                <td colspan="6" style="text-align: left;">[AC43]: <strong>[AC41]</strong></td>
+                <td>[AC44]</td>
+              </tr>
+            </repeticao:customizacao_campos_carrinho>
+          </repeticao:customizacao_carrinho>
+        </condicao:customizacao_carrinho>
+        
+        
+      <!-- -->
+    </repeticao:produtos>
+    <tr>
+      <td colspan="5" class="td-left">
+        <table class="table-left" cellpadding="0" cellspacing="0" border="0" width="100%;">
+          <tr class="frete">
+            <th class="table-boxCep">
+              <label>CEP: <a href="javascript:callSearchZipCode('Carrinho1txtCep')">(Esqueci meu CEP)</a> [A14]</label>
+              <a href="[A15]" class="bt-carrinho btn-secondary">calcular</a>  
+            </th>
+          </tr>
+        <tr>
+          <td>
+            <table class="tab_transportadoras" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+              <repeticao:frete>
+              <tr class="alternada1">
+                <td>[A18]</td>
+                <td>[A19]</td>
+                <td><del>[A48]</del>[A20]</td>
+                <td>[A17]</td>
+              </tr>
+            </repeticao:frete>
+          </table>
+        </td>
+      </tr>
+      <tr class="table-boxCupom cupom">
+        <th>
+            Digite seu cupom de desconto <small>(Não Obrigatório)</small>:  [A10] 
+            <a href="[A11]" class="bt-carrinho btn-secondary">calcular</a>
+        </th>
+      </tr>
+    </table>
+  </td>
+  <td colspan="2">
+    <table class="table-right" cellpadding="0" cellspacing="0" border="0" width="100%;">
+      <tr>
+        <th>Sub total:</th>
+        <td>[A23]</td>
+      </tr>
+      <condicao:cupom_valor>
+      <tr>
+        <th>Cupom:</th>
+        <td> - [A12]</td>
+      </tr>
+      </condicao:cupom_valor>
+      <tr>
+        <th>Frete:</th>
+        <td>[A16]</td>
+      </tr>
+      <tr class="total">
+        <th>Total:</th>
+        <td>[A21]</td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="bt_direita">
+  <condicao:listapresente>
+    <a href="[A40]" style="float:left;" class="bt-comprar-mais btn-tertiary">Voltar para lista de presentes</a> 
+  </condicao:listapresente>
+  <condicao:listapresenteinterna>
+    <a href="[A50]" style="float:left;" class="bt-comprar-mais btn-tertiary">Voltar para lista de presentes</a> 
+  </condicao:listapresenteinterna>
+  <a href="[A0]" class="bt-comprar-mais btn-tertiary">Comprar mais</a>
+  <a href="[A2]" class="bt-comprar-carrinho btn-primary">Fechar Pedido</a>
+</div>
+]]></CarrinhoHTML><CarrinhoItensEditavel value="True" /><CarrinhoVazioHTML><![CDATA[<div class="container_carrinho_vazio carrinho-vazio">
+    <h2>Seu carrinho de compras está vazio!</h2>
+    <div class="continuar_compra">
+        <h3>Para inserir produtos no seu carrinho</h3>
+        <ul>
+          <li>- Navegue pelos departamentos ou utilize a busca do site.</li>
+          <li>- Ao encontrar os itens desejados, clique no botão "Adicionar ao Carrinho".</li>
+        </ul>
+        <a href="[B0]" class="bt-comprar-mais btn-tertiary">Continuar Comprando</a>
+    </div>
+</div>
+]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[<div class="erro">
+        <div class="lista_erro message-error">
+        <h2>Os produtos que foram comprados já não estão mais disponíveis</h2>
+            <condicao:com_tabela>
+		<table width="100%" cellpadding="0" cellspacing="0">
+		            <thead>
+		                <tr>
+		                    <th>Nome do produto</th>
+		                    <th>Quantidade do Pedido</th>
+		                    <th>Nova Quantidade</th>
+		                </tr>
+		            </thead>
+	                    <repeticao:produtos>
+		            <tr>
+		                <td>
+		                    [D0]
+		                </td>
+		                <td>
+		                    [D1]
+		                </td>
+		                <td>
+		                    <condicao:alterado>
+		                        [D2]
+		                    </condicao:alterado>
+		                    <condicao:semestoque>
+		                        estoque acabou
+		                    </condicao:semestoque>
+		                </td>
+		            </tr>
+	        </repeticao:produtos>
+	    </table>
+        </condicao:com_tabela>
+    </div>
+</div>]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           Não entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
+    </div>
+</div>
+]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>O valor mínimo da compra é de [C0]</h2>
+    </div>
+</div>]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[<div class="brinde_sucesso">  	
+  	<repeticao:brindes>
+      	<div class="brinde_sucesso_img">
+          	<img src="[O1]?width=70&height=70" title="[O0]" />
+      	</div>  		
+  	</repeticao:brindes>
+  	<div class="brinde_sucesso_mensagem">
+  		<h2>PARABÉNS</h2>
+      	<p>Você acaba de ganhar o(s) brinde(s) ao lado!</p>
+  	</div>
+</div>]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>Cupom não é válido para o comprador atual.</h2>
+    </div>
+</div>]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>Cupom fora do prazo de validade.</h2>
+    </div>
+</div>]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>Cupom não encontrado.</h2>
+    </div>
+</div>]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>O cupom não é válido para o(s) departamento(s) selecionado(s).</h2>
+    </div>
+</div>]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>O cupom não é válido para o(s) produto(s) selecionado(s).</h2>
+    </div>
+</div>]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>A compra não atingiu o valor mínimo para ativação do cupom.</h2>
+    </div>
+</div>]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>O cupom já foi usado.</h2>
+    </div>
+</div>]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[        O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.
+]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[
+           O produto [L0] não está disponível para pronta-entrega. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.
+
+]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[           O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.
+
+]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[           A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].
+]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[       <h2>Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.</h2>
+]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[           O preço do produto [F0] mudou de [F1] para [F2].
+]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[
+           O produto <strong>[K0]</strong> não esta mais disponível.
+
+]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           Você não possui permissão para comprar!
+    </div>
+</div>
+]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Gigantes" /></Carrinho></Carrinhos><Menus><Menu ID="MenuTopo" Visible="True"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,33 @@
+.container-price .product-price {
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.container-price .product-adjustedPrice {
+    font-family: "ubuntubold";
+}
+
+.container-price .product-instalments {
+    font-size: 12px;
+}
+
+.container-price .product-payInFullPrice {
+    clear: both;
+}
+
+.container-price a.product-instalments {
+  display: none;
+}
+
+.variante_texto_disponivel {
+    border: 1px solid #ededed;
+    display: block;
+    float: left;
+    margin: 3px 5px 3px 0;
+    padding: 5px 10px;
+}
+.variante_texto_disponivel_selecionada {
+    background: #333 none repeat scroll 0 0;
+    border: 1px solid #333;
+    color: #fff;
+}

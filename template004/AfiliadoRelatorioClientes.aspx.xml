@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoRelatorioClientess><AfiliadoRelatorioClientes ID="affiliateClients"><AfiliadoRelatorioClientesHTML><![CDATA[    <div class="padding-20">
+                <condicao:mensagem_sem_registro>
+                            <div class="alert ">
+                                <strong>Atenção!</strong>Não existe registros para esta consulta
+                            </div>
+                </condicao:mensagem_sem_registro>      
+        <table cellpadding="0" cellspacing="0" border="0" class="table">
+            <thead>
+                <tr>
+                    <th class="table-title">&nbsp;</th>
+                    <th class="table-title">Cliente</th>
+                    <th class="table-title">E-mail</th>
+                    <th class="table-title">Pedidos</th>
+                    <th class="table-title">Pedidos Entregues</th>
+                    <th class="table-title">Valor Pedidos Entregues</th>
+                    <th class="table-title">Comissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <repeticao:cliente>
+                    <tr class="table-item">
+                        <td class="align-center">&nbsp;</td>
+                        <td class="align-center">[A5]</td>
+                        <td class="align-center">[A6]</td>
+                        <td class="align-center">[A7]</td>
+                        <td class="align-center">[A8]</td>
+                        <td class="align-center">[A9]</td>
+                        <td class="align-center">[A10]</td>
+                    </tr>
+                    <condicao:pedidos>
+                        <tr class="table-item">
+                            <td colspan="7">
+                                <repeticao:pedidos>
+                                    <table cellpadding="0" cellspacing="0" border="0" class="table">
+                                        <tbody>
+                                            <tr class="table-item">
+                                                <td class="align-center">&nbsp;</td>
+                                                <td class="align-center"><strong>Pedido:</strong> [A11]</td>
+                                                <td class="align-center"><strong>Valor do Pedido:</strong> [A12]</td>
+                                                <td class="align-center"><strong>Comissão:</strong> [A13]</td>
+                                            </tr>
+                                            <condicao:produtos>
+                                                <tr class="table-item">
+                                                    <td colspan="4">                                                  
+                                                        <table cellpadding="0" cellspacing="0" class="table">
+                                                            <thead>
+                                                                <th class="table-title">Código do Produto</th>
+                                                                <th class="table-title">Valor do Produto</th>
+                                                                <th class="table-title">% Comissão</th>
+                                                                <th class="table-title">R$ Comissão</th>
+                                                            </thead>    
+                                                            <tbody>
+                                                                <repeticao:produtos>
+                                                                    <tr class="table-item">
+                                                                        <td class="align-center">[A15]</td>
+                                                                        <td class="align-center">[A16]</td>
+                                                                        <td class="align-center">[A17]</td>
+                                                                        <td class="align-center">[A18]</td>
+                                                                    </tr>
+                                                                </repeticao:produtos>
+                                                            </tbody>                                
+                                                        </table>                                                        
+                                                    </td>
+                                                </tr>
+                                            </condicao:produtos>
+                                        </tbody>
+                                    </table>    
+                                </repeticao:pedidos>                
+                            </td>
+                        </tr>
+                    </condicao:pedidos>
+                </repeticao:cliente>                
+                <tr class="table-item">
+                    <td></td>
+                  <td><strong>Total</strong></td>
+                    <td></td>
+                    <td class="align-center">[A19]</td>
+                    <td class="align-center">[A20]</td>
+                    <td class="align-center">[A21]</td>
+                    <td class="align-center">[A22]</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+]]></AfiliadoRelatorioClientesHTML></AfiliadoRelatorioClientes></AfiliadoRelatorioClientess></controles></page>

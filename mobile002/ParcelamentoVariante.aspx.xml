@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ParcelamentoProdutos><ParcelamentoProduto ID="ParcelamentoProduto1"><CssComponente><![CDATA[]]></CssComponente><ParcelamentoProdutoHTML><![CDATA[]]></ParcelamentoProdutoHTML></ParcelamentoProduto></ParcelamentoProdutos><PrecoProdutos><PrecoProduto ID="PrecoProduto1"><ParcelamentoProdutoHTML><![CDATA[<div class="modal fade" id="Payments" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">
+          <span class="fa fa-credit-card"></span>
+          Formas de Pagamento
+        </h4>
+      </div>
+      <div class="modal-body">
+            <ul>
+                <repeticao:metodo_pagamento>
+                <li>
+                    <div class="img_parc">
+                      <img src="[B1]" alt="Parcelamento" class="ciashop-display" />
+                      <h5 class="ciashop-display"><strong>[B4]</strong></h5>
+                    </div>
+                    <div class="formas_parc">
+                        <table border="0" cellpadding="2" cellspacing="1" class="table" width="100%">
+                            <thead>
+ 
+                                <tr>
+                                    <th>Número de Parcelas</th>
+                                    <th>Valor das Parcelas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <repeticao:parcelas>
+                                <tr>
+                                    <td>[B2]</td>
+                                    <td>[B3]</td>
+                                </tr>
+                                </repeticao:parcelas>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                </repeticao:metodo_pagamento>
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>]]></ParcelamentoProdutoHTML><PrecoProdutoHTML><![CDATA[<condicao:sem_orcamento>
+<div class="ciashop-productPrice product-boxPrice">
+    <div class="ciashop-productPriceOld">
+        <span class="ciashop-priceOld">[A0] [A1]</span>
+    </div>
+    <div class="ciashop-productTotalPrice">
+        <h5 class="product-adjustedPrice pull-left">por:&nbsp;</h5>
+        <h3 class="product-adjustedPrice">[A3]</h3>
+	    <condicao:parcelamento>
+	        <div class="ciashop-productSubdivision">
+              <span>em [A6]x de <span class="ciashop-productSubdivisionPrice">[A7]</span></span>
+	        </div>
+	        <div class="ciashop-btSubdivision">
+	            <a href="#" class="abrir_parcelamento ciashop-openSubdivision" data-toggle="modal" data-target="#Payments">
+                    <span class="fa fa-credit-card text-center"></span>
+                    <span class="fa fa-credit-card text-center"></span>
+                    <span class="text-center">Formas de<br />Pagamento</span>
+	            </a>
+	        </div>
+	        [A10]
+	    </condicao:parcelamento>
+        <condicao:desconto_vista>
+          <span class="ciashop-priceFor">ou <span class="ciashop-priceForBig">[A13] </span><br />à vista no boleto bancário</span>
+        </condicao:desconto_vista>	    
+    </div>    
+</div>
+</condicao:sem_orcamento>]]></PrecoProdutoHTML></PrecoProduto></PrecoProdutos></controles></page>

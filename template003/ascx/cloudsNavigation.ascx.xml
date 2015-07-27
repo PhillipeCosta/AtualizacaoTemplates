@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><TagCloudss><TagClouds ID="clouds"><Classe1 value="clouds1" /><Classe2 value="clouds2" /><Classe3 value="clouds3" /><Classe4 value="clouds4" /><Classe5 value="clouds5" /><Classe6 value="clouds6" /><Classe7 value="clouds7" /><LayoutHTML><![CDATA[<div class="tagclouds main-clear main-tagClouds col-xs-12">
+    <h5 class="text-center text-uppercase heading-primary custom-paddingV10">
+      <strong>Tag Clouds<span style="display: block; margin-top: -8px;">____</span></strong>
+    </h5>
+    <div class="text-center">
+      [A1]
+    </div>
+</div>]]></LayoutHTML><Titulo value="" /></TagClouds></TagCloudss><HistoricoNavegacaos><HistoricoNavegacao ID="navigation"><CaracterSeparador value="," /><HistoricoNavegacaoHTML><![CDATA[<div class="navigation main-overflow">
+  <div>
+   <div class="navigation-products col-xs-12">
+     <h5 class="text-center text-uppercase heading-primary custom-paddingV10"><strong>Produtos<br />Visualizados<span style="display: block; margin-top: -8px;">___</span></strong></h5>     
+    <condicao:imagem_anterior>
+      <a onclick="[A3]" href="javascript:void(0)" class="btn-clouds-navigation custom-paddingV10 text-center"><span class="fa fa-angle-up"></span></a>
+    </condicao:imagem_anterior>        
+      <div class="custom-overflow text-center" style="clear: both;">
+      [A5]
+      </div>       
+    <condicao:imagem_proximo>
+      <a onclick="[A4]" href="javascript:void(0)" class="btn-clouds-navigation custom-paddingV10 text-center"><span class="fa fa-angle-down"></span></a>
+    </condicao:imagem_proximo>      
+   </div>
+  </div>
+  <div class="col-xs-12 navigation-info custom-paddingV15">
+    <div class="col-xs-12">
+        <h5 class="text-uppercase heading-primary text-center custom-paddingV10">Adicionado<br />ao carrinho</h5>
+      <ul class="custom-clearPadding text-center custom-paddingV10">
+        <repeticao:itens_carrinho quantidade="4">
+          <li><a href="[A6]">[A7]</a></li>
+        </repeticao:itens_carrinho>    
+      </ul>
+    </div>
+    <div class="col-xs-12">
+        <h5 class="text-uppercase heading-primary text-center custom-paddingV10">Últimas<br />pesquisas</h5>
+      <ul class="custom-clearPadding text-center custom-paddingV10">
+        <repeticao:itens_pesquisa quantidade="4">
+          <li><a href="[A8]">[A9]</a></li>
+        </repeticao:itens_pesquisa>
+      </ul>    
+    </div>
+    <div class="col-xs-12">
+        <h5 class="text-uppercase heading-primary text-center custom-paddingV10">Categorias<br />visitadas</h5>
+      <ul class="custom-clearPadding text-center custom-paddingV10">
+        <repeticao:itens_departamento quantidade="4">
+          <li><a href="[A10]">[A11]</a></li>
+        </repeticao:itens_departamento>    
+      </ul>
+    </div> 
+  </div>
+</div>]]></HistoricoNavegacaoHTML><ProdutoHTML><![CDATA[<a href="[B0]" class="navigation-product">
+  <img src="[B2]?width=100&height=100" alt="[B3]" />
+</a>]]></ProdutoHTML><TamanhoImagem value="Gigantes" /><TotalProdutosPagina value="4" /></HistoricoNavegacao></HistoricoNavegacaos></controles></page>

@@ -1,0 +1,70 @@
+.clouds-navigation{
+	margin: 3em 0;
+}
+
+.navigation{
+	padding: 3em 0;
+}
+
+.navigation-product{
+	padding: 0 0.5em;
+}
+
+.navigation *{
+	vertical-align: middle;
+}
+
+.btn-clouds-navigation{
+	display: block;
+}
+
+
+.btn-clouds-navigation span.fa{
+	font-size: 30px;
+}
+
+.navigation-info{
+
+}
+
+.navigation-info a{
+	font-size: 10px;
+}	
+
+.navigation-info a:hover{
+	text-decoration: underline;
+}
+
+/* tag clouds e navegacao */
+
+.tagclouds a{
+	display: inline-block;
+}
+
+.clouds1{
+	font-size: 10px;
+}
+
+.clouds2{
+	font-size: 12px;
+}
+
+.clouds3{
+	font-size: 14px;
+}
+
+.clouds4{
+	font-size: 16px;
+}
+
+.clouds5{
+	font-size: 18px;
+}
+
+.clouds6{
+	font-size: 20px;
+}
+
+.clouds7{
+	font-size: 22px;
+}

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><QuoteRequests><QuoteRequest ID="orcamento"><QuoteRequestHTML><![CDATA[<div class="heading-primary"><h2>Formulário de Solicitação de Orçamento</h2></div>
+<div class="box-orcamento box-produto-orcamento w-49 to-left">
+    <h3>@Model.QuoteRequest.SelectedVariant.Name</h3>
+    <div class="foto-produto-orcamento to-left w-35">
+      <img src="@Model.QuoteRequest.SelectedVariant.MainImage?width=150&height=150" alt="@Model.QuoteRequest.SelectedProduct.Name" />
+    </div>
+  <p class="info_quote">@TemplateSettings.quoterequest_info</p>
+</div>
+<div class="formulario-orcamento form-box w-49 to-right" style="border: 0 none;"> 
+  @if(Model.Post)
+  {
+  if(Model.Saved)
+  {
+  <div class="alert alert-success">
+    <h2>Orçamento enviado com sucesso</h2>
+    <p>Em breve enviaremos a resposta com seu orçamento.</p>
+  </div>
+  <script>
+    _gaq.push(['_trackEvent', 'Form Solicitar Proposta', 'Envio Sucesso', location.pathname]);
+  </script>
+}
+else
+{
+  <div class="alert alert-warning"> 
+    @Html.ValidationSummary()
+  </div> 
+}
+}  
+@using (Html.BeginForm()){    
+  <div class="list parent-validation">
+    <fieldset class="form register-content">
+      <div class="form-item w-100 register-personType">
+        @Html.InputRadio("QuoteRequest.PersonType", "Person").AddClass("radio").TabIndex("1")<label>Pessoa Física</label>@Html.InputRadio("QuoteRequest.PersonType", "Company").AddClass("radio").TabIndex("2").AddAttr("checked","checked")<label>Pessoa Jurídica</label>
+      </div>
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Nome:</span> @Html.InputText("QuoteRequest.Name").TabIndex("1")</label>
+      </div>
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Email:</span> @Html.InputText("QuoteRequest.Email").TabIndex("2")</label>
+      </div>
+      <div class="form-item validate required w-50 register-phone">
+        <span class="form-title">Telefone:</span>
+        <label class="w-15">@Html.InputText("QuoteRequest.PhoneAreaCode").Maxlength("2").AddClass("txtDDD validar").TabIndex("3") </label> <label class="w-5 align-center">-</label> <label class="w-80"> @Html.InputText("QuoteRequest.PhoneNumber").AddClass("validar").Maxlength("10").TabIndex("7")</label>
+      </div>
+      <div class="form-item validate required w-50">
+        <label><span class="form-title documentid">CNPJ:</span> @Html.InputText("QuoteRequest.DocumentId").Maxlength("18").TabIndex("4")</label>
+        <small class="exampledocumentid">(00.000.000/0000-00)</small>
+      </div>
+      <div class="form-item validate required w-100">
+        <label><span class="form-title">Mensagem:</span> <textarea name="MetaField.QuoteRequest.System.Observacoes" tabindex="15" rows="20"></textarea></label>
+      </div> 
+      <div class="form-item validate required w-100 input-captcha">
+        <span class="form-title">Escreva a palavra:</span>
+        <label class="w-30">@Html.Captcha("imagens/reload.png")</label> <label class="w-40"> @Html.InputText("QuoteRequest.Captcha").TabIndex("16")</label>
+      </div>
+      <div class="bt_enviar_orcamento">
+        <a href="#" class="fakeButtom bt-big-primary to-right" name="enviar" id="enviar">Enviar</a>
+      </div>
+    </fieldset>
+  </div>
+}
+</div>
+<script>
+  $(document).ready(function(){
+    $('#QuoteRequest_Quantity').val('1');
+  })
+
+// A partir daqui foi utilizado a função validarPrePost para verificar se os campos extras foram preenchidos.
+
+function validarPrePost(){
+  if($("#campo_extra").val() === ""){
+    AddError($('#campo_extra'));
+    return false;
+  } return true;
+}
+</script>
+]]></QuoteRequestHTML></QuoteRequest></QuoteRequests><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor></ScriptRazors><Banners><Banner ID="header_full" /></Banners></controles></page>

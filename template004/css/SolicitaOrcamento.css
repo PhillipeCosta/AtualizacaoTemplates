@@ -1,0 +1,85 @@
+.box-produto-orcamento{
+  padding: 10px 5px;
+}
+
+/* Btns */
+
+.bt_enviar_orcamento{
+    clear: both;
+    margin: 40px 0;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+/*  ValidaÃ§Ã£o FormulÃ¡rio */
+
+/*Erros*/
+
+.field-validation-valid{
+    display: none;
+}
+
+.field-validation-error{
+    color: red;
+    font-size: 11px;
+}
+
+.parent-validation-error{
+
+}
+
+.input-validation-error{
+    border-color: red !important;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*formulario-orcamentos*/
+
+
+.captcha input{
+    border: 2px solid #ccc !important;
+    padding: 0 3px !important;
+}
+
+.register-phone label {
+    display: inline-block;
+}
+
+.formulario-orcamento .list .erro{
+    vertical-align: middle;
+}
+
+.formulario-orcamento .list small{
+    color: #999999;
+    font-size: 11px;
+}
+
+.formulario-orcamento .list small.contador input{
+    width: 25px;
+    padding:0;
+    margin:0;
+    border: none transparent;
+    color: #999;
+}
+
+.input-captcha label{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input-captcha label a {
+    vertical-align: super;
+}
+
+.register-personType {
+    padding: 10px 15px !important;
+}
+.register-personType label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 15px;
+    vertical-align: middle;
+}

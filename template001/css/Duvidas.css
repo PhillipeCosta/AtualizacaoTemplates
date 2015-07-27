@@ -1,0 +1,63 @@
+.heading-help:before{
+    content: "";
+    width: 91px;
+    height: 84px;
+    background: url("../imagens/sprite.png") no-repeat 0 -850px;
+    float: left;
+    margin: -40px 15px 15px -40px;
+}
+
+.heading-contact:before{
+    content: "";
+    width: 91px;
+    height: 84px;
+    background: url("../imagens/sprite.png") no-repeat -100px -850px;
+    float: left;
+    margin: -40px 15px 15px -40px;
+}
+
+.chats{
+    padding: 0 0 40px 0;
+    overflow: hidden;
+}
+
+.chat-phone{
+    background-position: 0 -950px;
+    width: 330px;
+    height: 97px;
+}
+
+.ask{
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 45px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.ask .fa-chevron-down{
+	float: right;
+	padding-top: 15px;
+}
+
+.faq{
+    margin-top: 25px !important;
+}
+
+.faq h3{
+  text-transform: uppercase;
+  margin: 5px 0;	
+}
+
+.answer{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    line-height: 22px;
+    margin: 10px 0;
+    padding: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}

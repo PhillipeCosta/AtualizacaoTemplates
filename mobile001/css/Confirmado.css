@@ -1,0 +1,43 @@
+.box-confirmacao-dados{
+  overflow: hidden;
+  display: block;
+}
+
+.box-confirmacao-dados .numero{
+
+}
+
+.duvidas div{
+    display: block;
+    overflow: hidden;
+}
+
+p{
+    margin: 0;
+}
+
+.selo-ebit img{
+    width: 268px !important;
+    height: 45px !important;
+}
+
+.box-bt a,
+.box-bt a:hover{
+    background: none repeat scroll 0 0 #FF6600;
+    border: 0 none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 17px;
+    margin: 1em auto;
+    padding: 1em;
+    width: 94%;
+}
+
+.pedido_dados p,
+.dadosEntrega p{
+    padding: 0.5em 0;
+    border-bottom: 1px solid #efefef;
+	margin: 0;
+	font-size: 12px;
+}

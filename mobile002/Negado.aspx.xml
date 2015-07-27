@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" /></CaixaAguardeLojas><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /><UsarHTTPS value="False" /></Link><Link ID="Alterar_Pedido"><PaginaLoja value="Default" /><Target value="MesmaPagina" /></Link></Links><Negados><Negado ID="Negado1"><NegadoHTML><![CDATA[<div class="ciashop-clear">
+  <h4>O pedido n&atilde;o pode ser autorizado</h4>
+  <p>O pedido [A0] não foi autorizado pela operadora.<br /> O motivo citado pela mesma foi: [A1] </p>
+  <p>Aconselhamos a você clicar no botão <strong>"Tentar Novamente"</strong> e, se possível, fechar o pedido com outro método de pagamento.</p>
+  <p style="text-align:center; margin-top:30px;"><a href="[A2]" class="btn btn-secondary">Tentar novamente</a></p>
+</div>
+
+
+]]></NegadoHTML></Negado></Negados><Banners><Banner ID="Banner_Fullzao" /><Banner ID="Fullzao_Topo" /><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

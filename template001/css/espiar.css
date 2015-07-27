@@ -1,0 +1,100 @@
+.box-bt-comprar{
+    font-size: 24px;
+    font-family: 'source_sans_prosemibold';
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.produto_bt_parcelamento{
+	display: none;
+}
+
+.produto_comprar ul li select{
+    border:1px solid #ccc;
+    color:#656565;
+}
+
+.produto_comprar ul li{
+    list-style-type:none;
+}
+
+.product-price-box .preco_de {
+    font-size: 14px;
+}
+.product-price-box .preco_antigo_preco {
+    color: #5a5a5a;
+    font-size: 14px;
+}
+.product-price-box .produto_preco {
+    clear: both;
+    display: table-cell;
+    height: 130px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    width: 295px;
+}
+.product-price-box .produto_preco .produto_preco_total {
+    padding: 7px 0 10px 10px;
+}
+.product-price-box .produto_preco .produto_preco_total .preco_de {
+    color: #545454;
+    font-size: 11px;
+}
+.product-price-box .produto_preco .produto_preco_total .preco_de_preco {
+    color: #545454;
+    font-size: 11px;
+}
+.product-price-box .produto_preco_antigo {
+    display: block;
+    padding-top: 5px;
+}
+.product-price-box .preco_por_titulo {
+    font-weight: bold;
+}
+.product-price-box .preco_produto {
+}
+.product-price-box .preco_por_texto {
+    display: block;
+    font-weight: normal;
+    margin: 3px 0;
+}
+.product-price-box .produto_preco .produto_preco_parcelado {
+    color: #0f3b69;
+    font-size: 14px;
+    font-weight: normal;
+}
+.preco_parcelado {
+    font-weight: bold;
+}
+.product-price-box .produto_preco .produto_preco_parcelado .preco_parcelado_texto {
+    color: #062a59;
+    font-size: 11px;
+    font-weight: bold;
+}
+.product-price-box .produto_preco .produto_bt_parcelamento {
+display: none;
+}
+.product-price-box .produto_preco .produto_bt_parcelamento img {
+    margin: 2px 0;
+}
+
+/*CSS COMPRA DIRETA*/
+.mensagem_compra_direta {
+    padding: 25px 10px 0;
+    text-align: center;
+}
+.mensagem_compra_direta p {
+    color: #8B5B67;
+    font-family: "Trebuchet MS",Arial,Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+}
+.mensagem_compra_direta .bt_compra_direta {
+    margin: 15px 0;
+    text-align: center;
+}
+.mensagem_compra_direta .bt_compra_direta img {
+    margin: 0 5px;
+}

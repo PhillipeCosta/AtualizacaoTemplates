@@ -1,0 +1,43 @@
+.captcha-img input {
+    width: auto !important;
+}
+
+.captcha-img a {
+    display: block;
+    float: right;
+    margin-top: 11px;    
+}
+
+.box-produto-orcamento h3{
+    font-size: 15px;
+    color: #555;
+    margin: 5px 0 15px;
+}
+
+.foto-produto-orcamento img{
+	display: block;
+	border: 1px solid #ccc;
+}
+
+/*Erros*/
+
+.field-validation-valid{
+    display: none;
+}
+
+.field-validation-error{
+    color: red;
+    font-size: 11px;
+}
+
+.parent-validation-error{
+
+}
+
+.input-validation-error{
+    border: 1px solid red !important;
+}
+
+.validation-summary-valid {
+    display: none;
+}

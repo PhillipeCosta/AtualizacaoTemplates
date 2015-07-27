@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CategoriasListas><CategoriasLista ID="QuickLists_Categories"><CategoriasListaHTML><![CDATA[<nav class="nav-primary depto-menu">
+  <a href="javascript:void(0);"><span class="nav-bullet"></span><strong>Categorias</strong></a>
+<ul>
+  <repeticao:categorias>
+    <li class="nav-primary-heading-primary">
+      <h3><a href="[A1]">[A0]<span class="to-right"> &rsaquo; </span></a></h3>
+    </li>
+  </repeticao:categorias>
+</ul>  
+</nav>]]></CategoriasListaHTML></CategoriasLista></CategoriasListas><CategoriaListas><CategoriaLista ID="QuickLists_Lists"><Listas><![CDATA[<div class="quickLists-list">
+  <h1 class="quickLists-title">[A5]</h1>
+  <div class="quickLists-content">
+    <table border="0" cellpadding="0" cellspacing="0" class="table">
+      <thead>
+        <tr>
+          <th class="table-title">&nbsp;</th>
+          <th class="table-title align-left">Lista</th>
+          <th class="table-title">Nº de Produtos</th>
+          <th class="table-title">Preço Total</th>
+          <th class="table-title">Comprar lista</th>
+        </tr>
+      </thead>
+      <tbody>
+        <repeticao:listas>
+          <tr class="table-item">
+            <td><a href="[A4]"><img src="?width120&height=120" alt="[A0]" /></a></td>
+            <td><a href="[A4]">[A0]</a></td>
+            <td class="align-center">[A3]</td>
+            <td class="align-center"><span style="text-decoration:line-through">[A9]</span><br /><strong>[A6]</strong></td>
+            <td class="align-center"><a href="[A7]" class="bt-small-special">Comprar Lista</a></td>
+          </tr>
+        </repeticao:listas>
+      </tbody>
+    </table>        
+  </div>
+</div>]]></Listas><ListaVaziaHTML><![CDATA[<div class="sorry">
+	<div class="sorry-content ops">
+      	<div class="sorry-info">
+          <h2>Não há listas para essa <strong>categoria</strong>!</h2>
+      		<h3>Veja abaixo o que posso fazer</h3>
+      		<ul>
+              	<li>» Escolha outra categoria.</li>
+              	<li>» Acesse mais tarde para ver se já há listas cadastradas</li>
+      		</ul>
+  		</div>
+  	</div>
+</div>]]></ListaVaziaHTML></CategoriaLista></CategoriaListas></controles></page>

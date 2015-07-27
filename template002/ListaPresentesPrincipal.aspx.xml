@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><Links><Link ID="createList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="ListaPresentesCadastro" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Cadastro de Lista" /><UsarHTTPS value="False" /></Link><Link ID="myList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="ListaPresentesListagem" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Minhas listas" /><UsarHTTPS value="False" /></Link></Links><ListaPresenteBuscas><ListaPresenteBusca ID="giftList_search"><ListaPresenteBuscaHTML><![CDATA[<h4>Encontrar lista de presentes</h4>
+<div class="main-overflow">
+[A4]
+  <fieldset class="form">
+    <div class="main-overflow main-padding">
+      <div class="col-md-6" style="padding-left: 0">
+        <label class="text-uppercase">Tipo de Lista:</label>
+        [A2]
+      </div>
+      <div class="col-md-6" style="padding-left: 0">
+        <label class="text-uppercase">Data do Evento:</label>
+        [A1]
+      </div>
+     </div>
+     <div class="col-md-12" style="padding-left: 0;">
+      <label class="text-uppercase">Nome:</label>
+      [A0]
+     </div>
+     <div class="main-clear text-right" style="padding: 10px 15px;">
+     	<a href="[A3]" class="btn btn-tertiary text-uppercase text-center">Buscar Lista</a>
+     </div>
+  </fieldset>
+</div>  ]]></ListaPresenteBuscaHTML><MensagemAlertaListaPresenteBuscaHTML><![CDATA[<div class="alert alert-warning" role="alert">
+    <h2>[B0]</h2>
+    <ul class="main-clearPadding">
+      <repeticao:erro>
+        <li>[B1]</li>
+      </repeticao:erro>
+    </ul>
+</div>
+          ]]></MensagemAlertaListaPresenteBuscaHTML></ListaPresenteBusca></ListaPresenteBuscas></controles></page>

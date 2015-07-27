@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><IdentificacaoCompradors><IdentificacaoComprador ID="Comprador1"><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="heading-special">
+    <h2>Dados Residênciais</h2>
+</div>
+<div class="formulario_conteudo">
+    <div class="formulario">
+        <div class="list obrigatorio cep form heading-secondary">
+            <label><span class="tit_label form-field-nameRequired">Digite Primeiro o CEP*</span>
+            [I2] <a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">Esqueceu o CEP?</a>   </label>
+        </div>
+        <div class="list obrigatorio form">
+            <label class="larg_75"><span class="tit_label form-field-nameRequired">Nome do Local*</span>
+            [I5] <small>(Casa, Trabalho, etc)</small> </label>
+        </div>
+        <div class="list obrigatorio form">
+            <label class="larg_100"><span class="tit_label form-field-nameRequired">Endereço*</span>
+            [I7]</label>
+        </div>
+        <div class="list obrigatorio form">
+            <label class="larg_25"><span class="tit_label form-field-nameRequired">Número*</span>
+            [I9]</label>
+        </div>
+        <div class="list form">
+            <label class="larg_50"><span class="tit_label form-fieldName">Complemento</span>
+            [I11]</label>
+        </div>
+        <div class="list obrigatorio form">
+            <label class="larg_75"><span class="tit_label form-field-nameRequired">Bairro*</span>
+            [I13]</label>
+        </div>
+        <div class="list obrigatorio form">
+            <label class="larg_75"><span class="tit_label form-field-nameRequired">Cidade*</span>
+            [I15]</label>
+        </div>
+        <div class="list obrigatorio form">
+            <label><span class="tit_label form-field-nameRequired">Estado*</span>
+            [I17] </label>
+        </div>
+        <div class="list form">
+            <label class="larg_100"><span class="tit_label form-fieldName">Pontos de Referência</span>
+            [I19]</label>
+        </div>
+    </div>
+</div>
+<div class="bt_direita">
+        <a class="btnContinuar2" onclick="validarForm();"></a>
+  		<a href="javascript:void(0);" onclick="[I31]" class="box-bt btn-secondary">Salvar</a>
+</div>]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[<div class="heading-special">
+    <h2>Dados Pessoais</h2>
+</div>
+<div class="formulario_conteudo">
+    <div class="info">Campos marcados com * são obrigatórios.</div>
+    <div class="formulario">
+        <condicao:tipo_pessoa>
+            <div class="list radio form">
+                <label><span class="tit_label">&nbsp;</span></label>
+                [H36][H37]
+            </div>
+        </condicao:tipo_pessoa>
+        <condicao:exibe_pais>
+            <div class="list form">
+                <label><span class="tit_label form-fieldName">País</span>
+                [H1]</label>
+            </div>
+        </condicao:exibe_pais>
+        <div class="list obrigatorio form">
+            <label class="larg_100"><span class="tit_label form-fieldName">Nome Completo*</span>
+            [H7]</label>
+        </div>
+        <div class="list obrigatorio form">
+            <label><span class="tit_label form-fieldName">Email*</span>
+            [H35]</label>
+       </div>
+        <condicao:pessoa_fisica>
+            <div class="list obrigatorio form">
+                <label><span class="tit_label form-fieldName">Sexo*</span>
+                [H18]</label>
+            </div>
+            <div class="list obrigatorio form">
+                <label class="larg_50"><span class="tit_label form-fieldName">Data de Nascimento*</span>
+                [H16] <small>(DD/MM/AAAA)</small> </label>
+            </div>
+            <div class="list form">
+                <label><span class="tit_label form-field-nameRequired">Estado Civil</span>
+                [H23]</label>
+            </div>
+            <div class="list form">
+                <label class="larg_50"><span class="tit_label form-field-nameRequired">Profissão</span>
+                [H14]</label>
+            </div>
+            <div class="list obrigatorio form">
+                <label class="larg_75"><span class="tit_label form-fieldName">CPF*</span>
+                [H21] <small>(XXX.XXX.XXX-XX)</small></label>
+            </div>
+            <div class="list form">
+                <label class="larg_50"><span class="tit_label form-fieldName">RG</span>
+                [H26]</label>
+            </div>
+            <div class="list form">
+                <label><span class="tit_label form-fieldName">Estado Emissor</span>
+                [H28]</label>
+            </div>
+        </condicao:pessoa_fisica>
+
+        <condicao:pessoa_juridica>
+            <div class="list obrigatorio form">
+                <label class="larg_75"><span class="tit_label form-field-nameRequired">CNPJ*</span>
+                [H31]</label>
+            </div>
+            <div class="list obrigatorio form">
+                <label class="larg_50"><span class="tit_label form-field-nameRequired">Inscri&ccedil;&atilde;o Estadual*</span>
+                [H33]</label><span id="isentoCampo">[H47]<span>Isento</span></span>
+            </div>
+        </condicao:pessoa_juridica>
+
+        <div class="list obrigatorio form">
+            <label class="larg_25"><span class="tit_label form-field-nameRequired">Telefone Principal*</span>
+            [I22]</label> - <label class="larg_50">[I23] <small>(DDD + XXXX-XXXX)</small> </label>
+        </div>
+        <div class="list form">
+            <label class="larg_25"><span class="tit_label form-fieldName">Telefone Alternativo</span>
+            [I26]</label> - <label class="larg_50">[I27] <small>(DDD + XXXX-XXXX)</small></label>
+        </div>
+        <div class="list form">
+            <label> <span class="tit_label">&nbsp;</span>
+            <a href="#" onclick="[H40]">Clique aqui para alterar sua senha</a> </label>
+        </div>
+        <condicao:alterar_senha>
+        <div class="list obrigatorio form">
+            <label class="larg_75"><span class="tit_label form-field-nameRequired">Digite a senha atual*</span>
+            [H39]</label>
+        </div>
+        <div class="list obrigatorio form">
+            <label class="larg_75"><span class="tit_label form-field-nameRequired">Digite a nova Senha*</span>
+            [H9] <small>(Mínimo 5 caracteres)</small> </label>
+        </div>
+        <div class="list obrigatorio form">
+            <label class="larg_75"><span class="tit_label form-field-nameRequired">Digite Novamente a nova Senha*</span>
+            [H11] </label>
+        </div>
+        </condicao:alterar_senha>
+        <div class="list form">
+            <label class="checkbox"><span class="tit_label form-fieldName">Gostaria de receber E-mail informando sobre lançamentos e promoções da Loja?</span>
+           [I28] Sim
+            </label>
+        </div>
+      
+      
+        <div class="list form campoEx campoExtra01">
+            <label><span class="tit_label"></span>
+              <input type="text" />
+            </label>
+        </div>
+      
+      	<div class="list form campoEx campoExtra02">
+            <label><span class="tit_label"></span>
+              <input type="text" />
+            </label>
+        </div>
+      
+      	<div class="list form campoEx campoExtra03">
+            <label><span class="tit_label"></span>
+              <input type="text" />
+            </label>
+        </div>
+      
+        <div class="list form campoEx campoExtra04">
+            <label><span class="tit_label"></span>
+              <input type="text" />
+            </label>
+        </div>
+      
+        <div class="list form campoEx campoExtra05">
+            <label><span class="tit_label"></span>
+              <input type="text" />
+            </label>
+        </div>
+      
+      
+    </div>
+</div>]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<div class="dados_comprador">
+    [A4]
+    [A6]
+    [A7]
+</div>]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>[F0]</h2>
+        <ul>
+            <repeticao:erro>
+                <li>[F1]</li>
+            </repeticao:erro>
+        </ul>
+    </div>
+</div>]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[<div id="sucesso">
+    <div class="lista_sucesso message-success">
+        <h2>Sucesso</h2>
+    </div>
+</div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[]]></VerificarNovamenteEmailHTML></IdentificacaoComprador><IdentificacaoComprador ID="Comprador" NomeAmigavel="" Visible="True"><FormularioNovoCadastroEnderecoHTML><![CDATA[]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[]]></MensagemAlertaHTML><NovaCompraHTML><![CDATA[]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="campoExtra01"><ScriptRazorHTML><![CDATA[<span class="camposEx campoNome001">@TemplateSettings.campos_extras_01_nome</span>
+<span class="camposEx campoNome002">@TemplateSettings.campos_extras_02_nome</span>
+<span class="camposEx campoNome003">@TemplateSettings.campos_extras_03_nome</span>
+<span class="camposEx campoNome004">@TemplateSettings.campos_extras_04_nome</span>
+<span class="camposEx campoNome005">@TemplateSettings.campos_extras_05_nome</span>
+<span class="camposEx campoId001">@TemplateSettings.campos_extras_01_id</span>
+<span class="camposEx campoId002">@TemplateSettings.campos_extras_02_id</span>
+<span class="camposEx campoId003">@TemplateSettings.campos_extras_03_id</span>
+<span class="camposEx campoId004">@TemplateSettings.campos_extras_04_id</span>
+<span class="camposEx campoId005">@TemplateSettings.campos_extras_05_id</span>
+<span class="camposEx camposValid campoRequired001">@TemplateSettings.campos_extras_01_required</span>
+<span class="camposEx camposValid campoRequired002">@TemplateSettings.campos_extras_02_required</span>
+<span class="camposEx camposValid campoRequired003">@TemplateSettings.campos_extras_03_required</span>
+<span class="camposEx camposValid campoRequired004">@TemplateSettings.campos_extras_04_required</span>
+<span class="camposEx camposValid campoRequired005">@TemplateSettings.campos_extras_05_required</span>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

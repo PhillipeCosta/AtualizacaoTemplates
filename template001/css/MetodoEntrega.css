@@ -1,0 +1,130 @@
+.box-bt-continuar{
+    padding: 12px 35px !important;
+}
+
+.bt_esquerda{
+    text-align: left;
+    margin:  10px 0 10px 0;
+}
+
+.bt_esquerda a{
+    margin: 0 5px;
+}
+
+.endereco_entrega{
+    margin: 0px 0 0 5px;
+    padding: 5px;
+    line-height: 19px;
+    display: table;
+}
+
+.endereco_entrega p{
+    font-size:13px;
+}
+
+.endereco_entrega p.local{
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    font-size:14px;
+}
+
+.tab_transportadoras{
+    border: none !important;
+}
+
+.tab_carrinho .selecione_frete th{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.tab_transportadoras td{
+    padding: 15px;
+}
+
+.tab_transportadoras  .tipos_frete {
+    height: 110px;
+    width: 100%;
+
+}
+
+.tab_transportadoras .alternada1 .tipos_frete td {
+    padding: 0;
+}
+
+.tab_transportadoras .tipos_frete h3{
+    font-size: 14px;
+    display: block;
+    padding: 0 10px;
+}
+
+.tab_transportadoras .tipos_frete p{
+    font-size: 13px;
+    font-weight: normal;
+    display: block;
+    padding: 0 10px;
+}
+
+.tab_transportadoras .tipos_frete .frete_titulo{
+    width: 200px;
+}
+
+.tab_transportadoras .tipos_frete .frete_valor{
+    width: 150px;
+}
+
+.tab_transportadoras .tipos_frete td.frete_input{
+    width: 100px;
+}
+
+.tab_transportadoras .tipos_frete td.frete_input label {
+    display: block;
+    font-size:11px;
+}
+
+.frete-metodo{}
+
+
+.tab_carrinho .frete-metodo th{
+    font-size: 15px;
+    height: 35px;
+    text-align: right;
+}
+
+.frete-metodo th label{}
+
+.frete-metodo td{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tab_carrinho .total th {
+    border-top: 5px solid #FFFFFF;
+    font-size: 15px;
+    text-align: right;
+    line-height: 30px;
+}
+
+.tab_carrinho .total td {
+    border-top: 5px solid #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.endereco_entrega{
+    margin: 0px 0 0 5px;
+}
+
+.endereco_entrega p{
+    font-size:13px;
+}
+
+.endereco_entrega p.local{
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    font-size:14px;
+}

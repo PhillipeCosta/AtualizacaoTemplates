@@ -1,0 +1,33 @@
+.gift-message{
+	margin: 15px 0;
+}
+
+.gift-item{
+	font-size: 12px; 
+	display: block; 
+	padding: 2px 0;
+	float: left;
+}
+
+.gift-giftCard{
+	margin-bottom: 15px;
+	float: left;
+	width: 600px;
+}
+.form-title select{
+	width:100%;
+	float: left;
+	display: block;
+}
+.gift-giftCard textarea{
+	width:600px;
+}
+
+#content .bt-big-special{
+    float: left;
+	
+}
+.gift-content{
+    float: left;
+	
+}

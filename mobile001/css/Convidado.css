@@ -1,0 +1,89 @@
+.tit_label_entrega{
+    color: #333;
+    display: block;
+    font-size: 13px;
+    padding: 0.5em 0;
+}
+
+.list_entrega input,
+.list_entrega select{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D9EEF7;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #333333 inset;
+    color: #666666;
+    font-size: 12px;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+}
+
+.centro input{
+    width: 20px;
+    display: inline-block;
+    box-shadow: none !important;
+}
+
+.recebe_email input{
+  vertical-align: 6px !important;
+}
+
+.centro label{
+    display: inline-block;
+}
+
+.list_entrega label{
+    display: block;
+}
+
+.larg_25,
+.larg_73{
+    display: inline-block !important;
+}
+
+.tipo_pessoa input,
+.entrega_oculta .centro label input{
+    box-shadow: none;
+}
+
+.tipo_pessoa label{
+    display: inline-block;
+}
+
+.entrega_oculta .centro label{
+    display: inline-block;
+}
+
+.enderecoCobranca{
+    display: none !important;
+}
+
+.mostra{
+    display: block !important;
+}
+
+.recebe_email label{
+    display: inline-block;
+    width: 90%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.parent-validation-error input,
+.input-validation-error{
+    border: 1px solid #de2b2b !important;
+	box-shadow: 0 1px 1px #de2b2b inset !important;
+}
+
+.mostra-erro{
+    color: #de2b2b !important;
+    font-size: 12px;
+    font-family: 'Arial';
+    padding: 0.3em 0;
+    display: none;
+    font-weight: bold;
+}
+
+.parent-validation-error .mostra-erro{
+    display: block;
+}

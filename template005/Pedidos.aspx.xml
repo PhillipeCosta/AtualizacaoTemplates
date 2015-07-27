@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><VisualizacaoPedidos><VisualizacaoPedido ID="order_info"><TamanhoImagem value="Gigantes" /><VisualizacaoPedidoHTML><![CDATA[  <div class="order-info">
+    <div class="order-info-content">
+      <div class="order-number">
+        <h3>Número do Pedido</h3>
+        <p>[A0]</p>
+      </div>
+      <div class="order-payment">        
+          <p><strong>Status do Pedido:</strong> [A2]</p>
+          <p><strong>Forma de Pagamento:</strong> [A5]</p>
+         <condicao:afiliado>
+           <p class="affiliate-show"><strong>Afiliado:</strong> [A34] - [A35] </p>
+         </condicao:afiliado>          
+          <condicao:boleto>
+            <p style="display: block; margin: 10px 0;"><a href="javascript: window.open('[A6]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);" class="bt-big-secundary">Reimprimir Boleto</a></p>
+              <p><strong>Atenção:</strong> Uma nova janela será aberta com o boleto.</p>
+              <p><strong>Atenção</strong> Ver data de vencimento no boleto, após o prazo seu pedido será cancelado.</p>
+          </condicao:boleto>          
+      </div>
+    </div>
+  </div>
+  <div class="order-shipping">
+    <div class="heading-primary"><h2>Dados de Entrega</h2></div>
+    <div style="padding: 10px 0;">
+      <p><strong>CEP: </strong>[A15]</p>
+      <p><strong>Endereço: </strong>[A13]</p>
+      <p><strong>Complemento: </strong>[A25]</p>
+      <p><strong>Bairro: </strong>[A14]</p>
+      <p><strong>Cidade: </strong>[A16], [A17]</p>
+      <condicao:rastreamento>
+        <repeticao:urlrastreamento>
+          <p><a href="[A32]" class="bt-big-primary" style="margin: 5px 0;">Rastrear Pedido - [A33]</a></p>
+        </repeticao:urlrastreamento>
+      </condicao:rastreamento>
+    </div>
+  </div>]]></VisualizacaoPedidoHTML></VisualizacaoPedido><VisualizacaoPedido ID="order_items"><TamanhoImagem value="Gigantes" /><VisualizacaoPedidoHTML><![CDATA[<div class="heading-primary"><h2><strong>Itens</strong> do Pedido</h2></div>
+<div class="miniCart-table">
+    <div class="miniCart-items">
+        <table class="table">
+            <tbody>
+                <repeticao:produtos>
+                    <tr class="table-item">
+                        <td class="cart-product-image" width="90"><img src="[A8]?width=80&height=80" alt="[A7]" border="0" width="60" height="60" /></td>
+                      	<td class="cart-product-name"><strong>[A7]</strong><div class="miniCart-product-quantity">Quantidade: [A10]</div></td>
+                        <td class="cart-product-subtotalPrice">[A12]</td>
+                    </tr>
+					<tr>
+                      <td colspan="3">
+                         <condicao:customizacao_carrinho>
+                          <repeticao:customizacao_carrinho>
+                              <div class="cart-box" style="margin-top: 5px;">
+                                <p><strong>Personalização do produto:</strong></p>
+                                <repeticao:customizacao_campos_carrinho>
+                                  <div class="cart-box">
+                                    <p style="padding-left: 15px;">[A29]: <strong>[A31]</strong></p>
+                                    <p style="padding-left: 15px;"><strong>[A30]</strong></p>
+                                  </div>
+                                </repeticao:customizacao_campos_carrinho>
+                              </div>                  
+                          </repeticao:customizacao_carrinho>
+                        </condicao:customizacao_carrinho>
+                      </td>
+                    </tr>                  
+                </repeticao:produtos>
+         	</tbody>
+    	</table>
+  	</div>
+  	<table class="table" style="margin: 0;">
+      <tbody>
+        <tr class="miniCart-shipping">
+          <th>Frete</th>
+          <td>[A19]</td>
+        </tr>
+          <tr class="miniCart-coupom">
+            <th>Cupom de Desconto</th>
+            <td>-[A23]</td>
+          </tr>
+          <tr class="miniCart-discount">
+            <th>Desconto</th>
+            <td>-[A20]</td>
+          </tr>
+        <tr class="miniCart-total">
+          <th>Total</th>
+          <td>[A21]</td>
+        </tr>
+      </tbody>
+  </table>    
+</div>]]></VisualizacaoPedidoHTML></VisualizacaoPedido></VisualizacaoPedidos><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

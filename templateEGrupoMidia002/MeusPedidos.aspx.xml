@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><MeusPedidoss><MeusPedidos ID="customer_orders"><DadosUltimoPedidoHTML><![CDATA[<div class="order-info">
+    <div class="order-info-content">
+        <div class="order-number last-order-number w-40 to-left">
+            <h3>Último Pedido</h3>
+            <p class="numero">[C0]</p>
+        </div>
+        <div class="order-payment w-50 to-right">
+            <h3 class="order-payment-title w-80 to-left">Dados da Compra</h3>
+			<div class="w-80 to-left">
+
+              <p><strong>Status:</strong> [C2]</p>
+              <p><strong>Valor:</strong> [C3]</p>
+              <p><strong>Data:</strong> [C4]</p>
+              <p><a href="[C6]" class="order-payment-bt bt-small-primary">Veja a descrição completa do pedido</a></p>
+          
+         	</div>  
+      
+      </div>
+    </div>
+</div>]]></DadosUltimoPedidoHTML><ListagemPedidosPesquisadosHTML><![CDATA[<div class="main-padding20 main-overflow main-clear">
+    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%;" class="table">
+        <thead>
+            <tr>
+                <th class="table-title">Código</th>
+                <th class="table-title">Data do Pedido</th>
+                <th class="table-title">Total</th>
+                <th class="table-title">Método de Pagamento</th>
+                <th class="table-title">Status</th>
+              	<th class="table-title"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <repeticao:pedidos>
+            <tr class="table-item">
+                <td class="align-center">[E0]</td>
+                <td class="align-center">[E1]</td>
+                <td class="align-center">[E2]</td>
+                <td class="align-center">[E3]</td>
+                <td class="align-center">[E4]</td>
+              	<td class="align-center"><a href="[E5]" class="bt-small-secundary">Ver Detalhes</a></td>
+            </tr>
+            </repeticao:pedidos>
+        </tbody>
+    </table>
+</div>]]></ListagemPedidosPesquisadosHTML><ListagemPedidosPesquisadosSemResultadoHTML><![CDATA[<div class="institutional sorry">
+  <div class="institutional-content sorry-content ops">
+    <div class="institutional-info sorry-info">
+      <h2><strong>Nenhum</strong> pedido encontrado!</h2>
+      <h3>O que pode ter acontecido?</h3>
+      <ul>
+        <li>» Verifique o número do pedido está correto</li>
+        <li>» O servidor pode estar fora do ar no momento</li>
+      </ul>
+    </div>
+  </div>
+</div>]]></ListagemPedidosPesquisadosSemResultadoHTML><MeusPedidosInicialHTML><![CDATA[<div class="heading-primary">
+  <h2 class="titulo_pedido">
+      <strong>Meus</strong> Pedidos
+  </h2>
+</div>
+[A0]
+[A1]]]></MeusPedidosInicialHTML><MeusPedidosPesquisaHTML><![CDATA[<div class="heading-primary">
+  <h2 class="titulo_pedido">
+      <strong>Meus</strong> Pedidos
+  </h2>
+</div>
+[B1]
+[B2]]]></MeusPedidosPesquisaHTML><PesquisarOutrosPedidosHTML><![CDATA[<div class="orders-search">
+        <div class="heading-primary">
+          <h2><strong>Consultar</strong> outros pedidos</h2>
+        </div>
+        <div class="orders-search-content form">
+            <fieldset>
+                <label>
+                    [D1] <span>Pedidos Abertos</span> </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    [D0] <span>Todos Pedidos</span></label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    [D2] <span>Pesquisa por Número do Pedido:</span>
+                </label>
+                <label>[D3]</label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    [D4] <span>Por Data (Mês/Ano) de:</span> </label>
+                <label>
+                    [D5]
+                </label>
+                <label>
+                    [D6]
+                </label>
+                <label>a &nbsp;</label>
+                <label>
+                    [D7]
+                </label>
+                <label>
+                    [D8]
+                </label>
+            </fieldset>
+      <a href="[D9]" class="bt-small-secundary orders-search-bt">Pesquisar</a>
+        </div>
+    </div>]]></PesquisarOutrosPedidosHTML></MeusPedidos></MeusPedidoss><BoletimNoticiass><BoletimNoticias ID="tidings"><BoletimNoticiasHTML><![CDATA[<h3>ASSINE NOSSA NEWS LETTER</h3>
+<label class="keep_informed">Mantenha-se Informado!</label>
+<fieldset class="form">
+  <span class="news-email">
+    <label> <i></i>Email:</label>[A2]    
+    </span>
+  <span class="news-name"><label>Nome:</label>[A0]</span>
+
+  
+  <condicao:nascimento>    
+    <span class="news-birth"><label><small>Data de<br />nascimento</small></label>[A1]</span>
+  </condicao:nascimento>
+
+  <condicao:sexo>
+    <span class="news-gender "><label>Gênero</label>[A3][A6]</span>
+  </condicao:sexo>
+  
+  <a href="[A4]" class="bt-small-special w-15 to-right align-center">enviar</a>
+</fieldset>
+]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass></controles></page>

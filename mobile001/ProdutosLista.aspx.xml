@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ProdutosListas><ProdutosLista ID="produtosLista"><CssComponente><![CDATA[]]></CssComponente><ListaVaziaHTML><![CDATA[]]></ListaVaziaHTML><ProdutosListaHTML><![CDATA[<h3>Produtos da lista [A16]</h3>
+<small>
+    <ul>
+        <li>Confira abaixo os produtos da lista</li>
+    </ul>
+</small>
+<div class="acao-lista-top">
+    <a href="[A14]"><img src="imagens/bt-comprar-lista.png?1" alt="Comprar Lista" /></a>
+    <a href="javascript:window.print();" style="float: left;"><img src="imagens/bt-imprimir-lista.png?1" alt="Imprimir Lista" /></a>
+</div>   
+
+    <div class="container-produto-vitrine-lista">
+		<table class="tab_carrinho" cellpadding="0" cellspacing="0" border="0" width="100%;">
+            <thead>
+                <tr>
+                    <th class="th_tit_carrinho"></th>
+                    <th style="text-align: left;">Produto</th>
+                    <th>Variantes</th>
+                    <th>Preço Unit.</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>      
+              <repeticao:produtos>  
+                <tr>             
+                	<td>
+                      <a href="[A2]"><img src="[A1]?width=85&height=70" alt="[A0]" /></a>
+				          		
+                	</td>
+                	<td>
+                      <a href="[A2]">	<span class="titulo-produto-lista">[A0]</span></a>
+                		<span class="descricao-produto-lista">[A15]</span>
+                       <div class="tags">
+                         	  <condicao:produto_indiponivel>
+                              </condicao:produto_indiponivel>
+				              <condicao:variante_indisponivel>
+				                 <a href="[A2]" class="tag_indisponivel"><img src="imagens/indisponivel.png?1" alt="Produto Indisponivel" /></a>
+				              </condicao:variante_indisponivel>
+				               <condicao:lancamento>
+				                 <a href="[A2]"><img src="imagens/tag_lancamento.png?40" alt="Lançamento" /></a>
+				              </condicao:lancamento> 
+				               <condicao:oferta>
+				                 <a href="[A2]"><img src="imagens/tag_oferta.png?40" alt="Oferta" /></a>
+				              </condicao:oferta>
+				          </div>           
+                	</td>
+                	<td class="variante-produto-lista">
+						<condicao:variante>
+							[B]
+						</condicao:variante>
+                	</td>
+                  	<td class="precounitario-produto-lista">
+                     <condicao:preco_em_oferta><span class="precounitario_de">De: [A6]</span>
+                       <span class="precounitario_por">Por: </span></condicao:preco_em_oferta> <span class="precounitario_preco">[A5]</span>
+                	</td>
+                	<td class="qtd">
+                		[A4]
+                		<a href="[A21]" class="remove"><img src="imagens/bt_remover_carrinho.png?1" alt="Remover do Carrinho" style="vertical-align: top;" /></a>
+                	</td>
+                	<td>
+                      <div class="preco-produto-lista">
+                           <h4>[A20]</h4>
+                      </div>
+                	</td>
+                </tr>
+              </repeticao:produtos>              
+            </tbody>
+        </table>
+    </div>
+<div class="acao-lista-bottom">
+    <a href="[A14]"><img src="imagens/bt-comprar-lista.png?1" alt="Comprar Lista" /></a>
+    <a href="javascript:window.print();" style="float: left;"><img src="imagens/bt-imprimir-lista.png?1" alt="Imprimir Lista" /></a>
+</div>    
+
+]]></ProdutosListaHTML><VariantesProdutosListaHTML><![CDATA[<span>[B2]</span>[B0]<span>[B3]</span> [B1]]]></VariantesProdutosListaHTML></ProdutosLista></ProdutosListas><CategoriasListas><CategoriasLista ID="CategoriaLista"><CategoriasListaHTML><![CDATA[<div class="bg_listas"></div>
+<ul>
+    <repeticao:categorias>
+    <li>
+      <a href="[A1]" class="<condicao:menu_selecionado>lista-selecionada</condicao:menu_selecionado>">
+            <span>[A0]</span>
+        </a>
+    </li>
+    </repeticao:categorias>
+</ul>]]></CategoriasListaHTML><CssComponente><![CDATA[]]></CssComponente></CategoriasLista></CategoriasListas><ProdutoListaBarraNavegacaos><ProdutoListaBarraNavegacao ID="BarraNavegacaoLista"><CssComponente><![CDATA[]]></CssComponente><ProdutoListaBarraNavegacaoHTML><![CDATA[<a href="[A0]">Home</a> > <a href="[A1]">[A2]</a> > <strong>[A3]</strong>]]></ProdutoListaBarraNavegacaoHTML></ProdutoListaBarraNavegacao></ProdutoListaBarraNavegacaos></controles></page>

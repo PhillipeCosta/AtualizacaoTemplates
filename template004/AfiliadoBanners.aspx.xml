@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoBannerss><AfiliadoBanners ID="affiliateBanners"><AfiliadoBannerHTML><![CDATA[<ul>
+  <repeticao:banners>
+    <li class="padding-20">
+      <img src="[A5]" alt="Modelo [A1]" />
+      <p class="affiliate-urlBanner">
+        [A6]
+      </p>
+    </li>
+  </repeticao:banners>
+</ul>]]></AfiliadoBannerHTML></AfiliadoBanners></AfiliadoBannerss></controles></page>

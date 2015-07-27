@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CategoriasListas><CategoriasLista ID="CategoriaLista"><CategoriasListaHTML><![CDATA[<h3 class="titulo-lista">Encontre sua lista:</h3>
+<ul>
+    <repeticao:categorias>
+    <li>
+        <a href="[A1]" class="heading-primary">
+            [A0]
+        </a>
+    </li>
+    </repeticao:categorias>
+</ul>]]></CategoriasListaHTML></CategoriasLista></CategoriasListas><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="giftlist_text"><ScriptRazorHTML><![CDATA[<p>@TemplateSettings.giftList_text</p>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><VisualizacaoPedidos><VisualizacaoPedido ID="VisualizacaoPedido1"><TamanhoImagem value="Gigantes" /><VisualizacaoPedidoHTML><![CDATA[<div class="tit_box_roxo heading-primary">
+  <h3>
+    <strong>Meus pedidos</strong>
+  </h3>
+</div>
+    <div class="info_pedido">
+      <div class="info_pedido_conteudo">
+          <div class="numero_pedido respiro">
+              <h3><small>Número do Último Pedido:</small> [A0]</h3>
+              <p>A confirmação do pedido foi enviada a seu endereço do e-mail: <strong>[A1]</strong></p>
+          </div>
+          <div class="tit_box_roxo heading-primary">
+              <h3><strong>Dados da compra</strong></h3>
+          </div>      
+          <div class="pedido_dados_compra respiro">
+              <p class="status">Status: [A2]</p>
+          </div>
+          <div class="pedido_dados respiro">
+              <p class="boleto">Forma de Pagamento: [A5]</p>
+              <condicao:boleto>
+                <p><a href="[A6]" class="btn btn-secondary">Re-imprimir boleto</a></p>
+              </condicao:boleto>
+          </div>
+      </div>
+    </div>
+<div class="tit_box_roxo heading-primary">
+  <h3>
+    <strong>Detalhes do pedido</strong>
+  </h3>
+</div>
+<ul class="container-produto-carrinho table">
+  <repeticao:produtos>  
+    <li class="lista-produto-carrinho">
+      <div class="box-produto-carrinho">
+          <div class="img-produto-carrinho pull-left">
+              <img src="[A8]?width=50&height=50" alt="[A7]" border="0" />
+          </div>          
+          <div class="qtd-produto-carrinho pull-right text-center">
+            <h6 class="text-center"><strong>Qtd</strong></h6>
+            <span class="form">[A10]</span>
+          </div>
+          <div class="info-produto-carrinho">
+            <h5><strong>[A7]</strong></h5>
+            <p><small>[A27]</small></p>
+            <div class="presente-carrinho">
+              <condicao:imagem_presente>para presente</condicao:imagem_presente>
+            </div>
+          </div>
+          <div class="subtotal subtotal-baixo table-cart-productTotal">
+            <div class="subtotal-valores">
+              <h4 class="pull-right"><strong>[A12]</strong></h4>
+            </div>
+          </div>         
+      </div>  
+    </li>
+  </repeticao:produtos>  
+</ul>
+<div class="total table">
+  <div class="total-valores table-cart-total">
+    <div>
+      <condicao:cupom_desconto><p class="pull-right">Bônus: -[A23]</p></condicao:cupom_desconto>
+    </div>
+    <h3 class="pull-left"><strong>Total</strong></h3>
+    <h4 class="pull-right"><strong>[A21]</strong></h4>
+  </div>
+</div>
+
+<a href="javascript:history.go(-1);" class="btn btn-primary bt-principal">
+<span class="fa fa-angle-left"></span>&nbsp;Voltar
+</a>
+]]></VisualizacaoPedidoHTML></VisualizacaoPedido></VisualizacaoPedidos><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><Banners><Banner ID="header" /></Banners><MensagemServicoArs><MensagemServicoAr ID="MensagemServicoAR"><CssComponente><![CDATA[]]></CssComponente><MensagemServicoArHTML><![CDATA[<div id="erro">
+    <div class="lista_erro">
+        <h2>[A0]</h2>
+    </div>
+</div>
+]]></MensagemServicoArHTML></MensagemServicoAr></MensagemServicoArs><Widgets><Widget ID="campoextra"><WidgetUsado value="138" /></Widget></Widgets><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

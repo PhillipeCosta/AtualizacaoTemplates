@@ -1,0 +1,127 @@
+.identification{
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.identification-form{
+    text-align: center;
+}
+
+.identification-form .form-box fieldset{
+    padding: 10px 0;
+}
+
+.identification-form fieldset label input[type=text], .identification-form fieldset label input[type=password]{
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.identification-form-bt{
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+}
+
+.identification-forgotPassword{
+    margin-top: 17px;
+}
+
+.register-info{
+    float: right;
+    font-size: 11px;
+}
+
+.register-personType{
+    padding: 10px 15px !important;
+}
+
+.register-personType label{
+    vertical-align: middle;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.register-phone label{
+    display: inline-block;
+    vertical-align; middle
+}
+
+.register-isent{
+    float: right;
+    margin: -25px 10px 0 0;
+    position: relative;
+}
+
+.register-isent span{
+    vertical-align: middle;
+}
+
+.register-forgotZipCode, .register-changeEmail{
+    margin: -24px 10px 0 0;
+    float: right;
+    position: relative;
+}
+
+.first-buy{
+    padding: 8px 35px 8px 14px;
+    margin: 15px auto;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    font-size: 13px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.first-buy h2{
+    font-size: 15px;
+}
+
+.attention{
+    width: 480px;
+    padding: 10px;
+    text-align: left;
+}
+
+.attention h2{
+    font-size: 30px;
+    color: #FFA200;
+    font-weight: normal;
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.attention h2:before{
+    content:"";
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../imagens/sprite.png") no-repeat -400px -350px;
+    margin: 3px 10px 0 0;
+}
+
+.attention h3{
+    font-size: 15px;
+    color: #666666;
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+.attention p{
+    font-size: 12px;
+    color: #666666;
+    display: block;
+    font-weight: normal;
+    margin-top: 8px;
+    line-height: 17px;
+}
+
+.register-alterPassword-bt, register-cancel-alterPassword-bt{
+    margin-top: 10px;
+}

@@ -1,0 +1,230 @@
+ /* Migalha de Pão */
+
+ #migalha-listas{
+   width: 100%;
+   padding: 3px 5px;
+   margin: 2px 15px;
+   font-size: 11px;
+   color: #888;
+ }
+
+#migalha-listas a{
+    color: #888;
+}
+
+ #migalha-listas a:hover{
+   text-decoration: underline;
+ }
+
+ #migalha-listas strong{
+   color: #062a59;
+ }
+
+/* Vitrine de produtos da lista */
+.acao-lista-top{
+  margin: 10px 0;
+  float: right;
+  width: 100%;
+}
+
+.acao-lista-bottom{
+  float: right;
+  width: 100%;
+  border-top: 8px solid #08558c;
+  padding-top: 10px;
+}
+
+.acao-lista-top a, .acao-lista-bottom a{
+  float: right;
+}
+
+.acao-lista-top img, .acao-lista-bottom img{
+  margin-left: 5px;
+}
+
+.container-produto-vitrine-lista{
+    clear: both;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.foto-produto-lista{
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.foto-produto-lista .tags{
+    text-align: left;
+    position: absolute;
+    bottom: -3px;
+    left: -8px;
+    text-align: center;
+    width: 100%;
+}
+
+.produto_lista_direita{
+    float: left;
+    width: 565px;
+    margin-right: 20px;
+    padding-left: 15px;
+}
+
+.titulo-produto-lista{
+    font-size: 13px;
+    color: #383839;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.descricao-produto-lista{
+  font-size: 12px;
+  margin: 5px 10px 5px 0;
+  color: #666;
+  display: block;
+  text-align: left;
+}
+
+.opcoes-produto-lista{
+  float: left;
+}
+
+.variante-produto-lista select{
+  font-size: 11px;
+  color: #888;
+  padding: 3px;
+  width: 127px;
+  border: 1px solid #bdbcbd;  
+  margin: 3px 0;
+}
+
+.variante-produto-lista select option.indisponivel{
+    color: #CCCCCC;
+    font-style: italic
+}
+
+.qtd-produto-lista span{
+    display: block;
+    clear: both;
+    font-size: 11px;
+    color: #888;
+}
+
+.qtd-produto-lista input{
+  font-size: 11px;
+  color: #888;
+  padding: 3px;
+  width: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.qtd-produto-lista{
+    overflow: hidden;
+    padding: 0 80px;
+    margin-top: 10px;
+}
+
+.variante-produto-lista{
+  height: 30px;
+}
+
+
+.preco-produto-lista{
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0 20px;
+}
+
+.preco-produto-lista h4{
+
+}
+
+.preco-produto-lista small{
+  color: #FFF !important;
+  padding-top: 3px;
+  font-size: 10px !important;
+  margin: 0 6px !important;
+}
+
+
+.tab_carrinho{
+    width: 100%;
+}
+
+.tab_carrinho td{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.tab_carrinho td.qtd{
+    width: 107px;
+}
+
+.tab_carrinho td.variante-produto-lista span{
+    display: block;
+    color: #333333;
+    font-weight: bold;
+    font-size:11px;
+}
+
+.tab_carrinho td.precounitario-produto-lista{
+    color: #7b7b7b;
+    font-size: 13px;
+    width:110px;
+}
+
+.tab_carrinho td.precounitario-produto-lista span.precounitario_de{
+    display: block;
+    font-size: 11px;
+    text-decoration: line-through;
+}
+
+.tab_carrinho th{
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    font-weight: normal;
+    padding: 0 5px;
+}
+
+.tab_carrinho a{
+    color: #052547;
+    text-decoration: none;
+}
+
+.tab_carrinho a:hover{
+    text-decoration: underline;
+}
+
+.tab_carrinho thead th {
+    background: none repeat scroll 0 0 #08558c;
+    color: #FFFFFF;
+    line-height: 36px;
+    white-space: nowrap;
+    border-right: 1px solid #44b7eb;
+}
+
+.th_tit_carrinho{
+    background-position: left top !important;
+}
+
+.qtd input{
+  width: 30px;
+  color: #000;
+  padding: 3px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+a.tag_indisponivel{
+    float: right;
+    padding-right: 10px;
+}

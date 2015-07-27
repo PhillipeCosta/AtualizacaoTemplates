@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><EnderecoEntregas><EnderecoEntrega ID="shipping_address"><ComponenteLista value="False" /><EnderecoEntregaHTML><![CDATA[<div class="heading-primary">
+  <h1>
+     Endereço de Entrega
+  </h1>
+</div>
+[A30]
+<div>
+    <ul class="shipping-addreses">
+        <repeticao:enderecos_cadastrados>
+            <li class="shipping-address">
+                <div class="shipping-address-content">
+                    <h3><a href="[A25]" class="link-default to-right">Editar Endereço</a>[A17]</h3>
+                    <p>[A18]</p>
+                    <p>[A19], [A20]- [A21] - [A22] - [A23]<br />
+                        CEP: [A24]
+                    </p>                    
+                    <a href="[A26]" class="bt-small-special shipping-address-bt">Entregar nesse endereço</a>
+                </div>
+            </li>
+        </repeticao:enderecos_cadastrados>
+    </ul>
+    [A16]
+    <div class="form-box">
+
+        <h2 class="form-box-heading">Adicionar/Editar Endereço</h2>
+        <div class="form address-content">
+            <div class="form-item validate required cep  w-100">
+                <label><span class="form-title">Digite Primeiro o CEP*</span>
+                [A0] <a href="http://www.buscacep.correios.com.br/" target="_blank" class="register-forgotZipCode link-default">Esqueceu o CEP?</a></label>
+            </div>
+            <div class="form-item validate required  w-100">
+                <label><span class="form-title">País*</span>
+                [A14]</label>
+            </div>
+            <div class="form-item validate required  w-100">
+                <label><span class="form-title">Nome para Entrega*</span>
+                [A1]</label>
+            </div>
+            <div class="form-item validate required  w-100">
+                <label><span class="form-title">Identifique este Endereço*</span>
+                [A2]</label>
+            </div>
+            <div class="form-item validate required  w-60">
+                <label><span class="form-title">Cidade*</span>
+                [A7]</label>
+            </div>
+            <condicao:selecao_estado>
+                <div class="form-item validate required  w-40">
+                    <label><span class="form-title">Estado*</span>
+                    [A8] </label>
+                </div>
+            </condicao:selecao_estado>
+            <div class="form-item validate required  w-70">
+                <label><span class="form-title">Endereço*</span>
+                [A3]</label>
+            </div>
+            <div class="form-item validate required  w-30">
+                <label><span class="form-title">Número*</span>
+                [A4]</label>
+            </div>
+            <div class="form-item validate required  w-60">
+                <label><span class="form-title">Bairro*</span>
+                [A6]</label>
+            </div>   
+            <div class="form-item  w-40">
+                <label><span class="form-title">Complemento</span>
+                [A5]</label>
+            </div>             
+            <div class="form-item  w-100">
+                <label><span class="form-title">Pontos de Referência</span>
+                [A9]</label>
+            </div>    
+            <div class="form-item validate required w-50 register-phone">
+                  <span class="form-title">Telefone Principal*</span>
+                  <label class="w-25">[A10]</label> <label class="w-5 align-center">-</label> <label class="w-70">[A11]</label>
+            </div>
+            <div class="form-item w-50 register-phone">
+                <span class="form-title">Telefone Alternativo</span> 
+                <label class="w-25">[A12]</label><label class="w-5 align-center">-</label><label class="w-70">[A13]</label>
+            </div>                    
+        </div>        
+    </div>
+  	<div class="form-box-bt">
+        <a href="javascript: void(0)" class="fakeButtom bt-big-special to-right w-100">Continuar</a>
+        <input type="button" onclick="[A15]" class="realButtom hide" value="Continuar" />
+    </div>
+</div>]]></EnderecoEntregaHTML><EnderecoEntregaMensagemAlertaHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> [B0]
+  	<ul>
+        <repeticao:erro>
+          <li>[B1]</li>
+        </repeticao:erro>
+    </ul>
+</div>]]></EnderecoEntregaMensagemAlertaHTML><MensagemCamposObrigatorios value="Esses campos são obrigatórios e não foram preenchidos corretamente:" /><MensagemProdutosComEstoqueAlteradoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O estoque do produto [E0] mudou. Quantidade solicitada [E1], quantidade disponível [E2].
+</div>]]></MensagemProdutosComEstoqueAlteradoHTML><MensagemProdutosComPrecoAlteradoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O preço do produto [D0] mudou de [D1] para [D2].
+</div>
+]]></MensagemProdutosComPrecoAlteradoHTML><MensagemProdutosSemPrecoRemovidosHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O produto <strong>[F0]</strong> não esta mais disponível.
+</div>]]></MensagemProdutosSemPrecoRemovidosHTML><MensagemSelecionarEndereco value="Selecione um dos endereços para continuar." /><MensagensOcorrenciasCarrinhoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> [C0]
+</div>]]></MensagensOcorrenciasCarrinhoHTML></EnderecoEntrega></EnderecoEntregas><Banners><Banner ID="header_full" /></Banners><SEOs><SEO ID="seo" /></SEOs><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

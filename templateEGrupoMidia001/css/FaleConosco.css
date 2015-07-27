@@ -1,0 +1,36 @@
+.heading-contact{
+	margin-bottom: 30px;
+}
+
+.contact{
+	width: 500px;
+	height: auto;
+	float: none;
+	margin: auto;
+	display: block;
+	position: relative;
+}
+.contact > div{
+    width: 800px;
+	
+    margin: auto;
+    float: none!important;
+}
+.contact-content{
+	margin: 0 15px 15px 15px;
+}
+
+.contact-phone{
+	display: block;
+	padding-top: 10px;
+}
+
+.contact-phone strong{
+	font-size: 16px;
+	color: #f47710;
+}
+
+#content #col-content{
+	width:1200px;
+	margin:auto;
+}

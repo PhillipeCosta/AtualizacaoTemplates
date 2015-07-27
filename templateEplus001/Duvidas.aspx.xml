@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Duvidass><Duvidas ID="Duvidas_Conteudo"><AssuntoRespostasHTML><![CDATA[<h3>[D1]</h3>]]></AssuntoRespostasHTML><AssuntosHTML><![CDATA[            <li class="duv_assunto">
+              <a href="#[A1]">   
+                [A0]
+              </a>  
+            </li> ]]></AssuntosHTML><DuvidasHTML><![CDATA[<div class="heading-special">
+  <h2>
+    <span>Dúvidas Frequentes</span>
+  </h2>
+</div>
+
+<div class="perguntas">
+    [C1]
+</div>
+]]></DuvidasHTML><RespostasHTML><![CDATA[<div class="respostas">
+    <h4>[B0]</h4>
+    <p>[B1]</p>
+</div>
+          ]]></RespostasHTML></Duvidas></Duvidass><FaleConoscos><FaleConosco ID="FaleConosco1"><FaleConoscoHTML><![CDATA[<div class="box_faleconosco">
+  <div class="heading-special">
+    <h2>
+      Fale Conosco
+    </h2>
+  </div>
+    <div class="faleconosco">
+        <ul class="formulario">
+            <div class="info">Campos indicados com * são de preenchimento obrigatório.</div>
+            <li class="list obrigatorio form">
+                <label class="larg_100"><span class="tit_label form-field-nameRequired">Nome*</span>[A1]</label>
+            </li>
+            <li class="list obrigatorio form">
+                <label class="larg_75"><span class="tit_label form-field-nameRequired">E-mail*</span>[A2]</label>
+            </li>
+            <li class="list obrigatorio form">
+                <label class="larg_75"><span class="tit_label form-field-nameRequired">Telefone*</span>[A3] <small>(DDD + XXXX-XXXX)</small></label>
+            </li>
+            <li class="list form">
+                <label class="larg_50"><span class="tit_label form-fieldName">Número do Pedido</span>[A4] <small>(Caso a dúvida seja de uma compra já realizada)</small></label>
+            </li>
+            <li class="list form">
+                <label class="larg_75"><span class="tit_label form-fieldName">Empresa</span>[A5]</label>
+            </li>
+            <li class="list obrigatorio form">
+                <label><span class="tit_label form-field-nameRequired">Qual sua dúvida?*</span>[A6] <small class="contador">[A7]<span class="pt">caracteres</span></small></label>
+            </li>
+            <li class="list form">
+                <label><span class="tit_label">&nbsp;</span> <a href="[A8]" class="box-bt btn-secondary">enviar</a> </label>
+            </li>
+        </ul>
+    </div>
+</div>]]></FaleConoscoHTML><ObrigatorioCPFCNPJ value="True" /><tipoFormulario value="Dúvidas" /></FaleConosco></FaleConoscos><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="custom_prog01"><ScriptRazorHTML><![CDATA[@TemplateSettings.custom_prog01]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

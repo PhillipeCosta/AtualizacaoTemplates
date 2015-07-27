@@ -1,0 +1,26 @@
+.quickLists-home{
+	padding: 30px 30px 120px 30px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.quickLists-home-description{
+	display: block;
+	width: 475px;
+	font-size: 14px;
+	line-height: 25px;
+	min-height: 175px;
+}
+
+.quickLists-title{
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+.nav-quickList-heading{
+	font-size: 19px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><SEOs><SEO ID="seo" /></SEOs><Banners><Banner ID="Fullzao" /></Banners><Links><Link ID="Identificacao"><CssComponente><![CDATA[]]></CssComponente><Destino value="DestinoAtual" /><EnderecoLinkExterno value="" /><Imagem value="bt_sou_cliente.png" /><PaginaLoja value="Identificacao" /><Parametros value="destino=EnderecoEntrega" /><Target value="MesmaPagina" /><Texto value="" /><UsarHTTPS value="True" /></Link><Link ID="linkUser"><Destino value="DestinoAtual" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="&lt;span class=&quot;fa fa-user&quot;&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;Já possuo login e senha" /><UsarHTTPS value="True" /></Link></Links><Convidados><Convidado ID="Convidado1"><LoginConvidadoHTML><![CDATA[@using (Html.BeginForm()) {  
+<div class="col-md-6">
+  <div class="ciashop-titBox heading-primary">
+    <h2>1. Dados Pessoais&nbsp;&nbsp;</h2>      
+    <span class="ciashop-cantoTit"></span>      
+    <hr />
+  </div>
+  <div class="form_entrega ciashop-form ">
+    <div class="form-group ciashop-overflow text-center col-md-12">
+      <div class="radio-inline">
+        @Html.InputRadio("Customer.CustomerType", "Person").TabIndex("1")
+        <label>Pessoa Física</label>
+      </div>
+      <div class="radio-inline">
+        @Html.InputRadio("Customer.CustomerType", "Company").TabIndex("2")
+        <label>Pessoa Jurídica</label>
+      </div>
+    </div>
+    <div class="form-group col-md-12 parent-validation">
+      <label>Nome Completo</label>
+      @Html.InputText("Customer.Name").Maxlength("100").TabIndex("3")
+    </div> 
+    <div class="form-group col-md-12 parent-validation">
+      <label class="documentid">CPF <small class="exampledocumentid">(000.000.000-00)</small></label>
+      @Html.InputText("Customer.DocumentId").Maxlength("18").TabIndex("4")
+    </div>          
+    <div class="form-group col-md-12 parent-validation inscricaoEstadual campo_inscricao_estadual">
+      <label>Inscrição Estadual</label>
+      @Html.InputText("Customer.RegionalDocumentId").Maxlength("20").TabIndex("5")
+    </div>
+    <div class="form-group col-md-12">
+      <label class="checkComplemento">
+        <input id="chkIsentoInscricaoEstadual" type="checkbox" /> <span>Isento</span>
+      </label>            
+    </div>  
+    <div class="form-group ciashop-overflow col-md-6 parent-validation">
+      <label style="display: block;">Telefone Principal</label>
+      <div class="col-md-2 ciashop-paddingNone ciashop-formTelDDD">@Html.InputText("Customer.PhoneAreaCode").Maxlength("2").AddClass("txtDDD").TabIndex("6")</div>
+      <div class="col-md-10 ciashop-formTel" style="padding-right: 0;">@Html.InputText("Customer.PhoneNumber").Maxlength("10").TabIndex("7")</div>
+    </div>   
+    <div class="form-group ciashop-overflow col-md-6">
+      <label style="display: block;">Telefone Secundário</label>
+      <div class="col-md-2 ciashop-paddingNone ciashop-formTelDDD">@Html.InputText("Customer.PhoneAreaCodeAlternative").Maxlength("2").AddClass("txtDDD").TabIndex("8")</div>
+      <div class="col-md-10 ciashop-formTel" style="padding-right: 0;">@Html.InputText("Customer.PhoneNumberAlternative").Maxlength("10").TabIndex("9")</div>  
+    </div>   
+    <div class="form-group col-md-12 parent-validation">
+      <label class="documentid">Email</label>
+      @Html.InputText("Customer.Email").Maxlength("100").TabIndex("10")
+    </div>  
+    <div class="form-group col-md-12 parent-validation">
+      <label>@Html.InputCheckBox("Customer.AcceptsMarketing")</label>
+      @Html.LabelText("Customer.AcceptsMarketing", "Gostaria de receber emails com lançamentos e promoções")
+    </div>                           
+
+  </div>                        
+</div>
+if (Model.IsGiftList) {
+<div class="col-md-6">
+  <div class="ciashop-titBox heading-primary">
+    <h2>2. Dados de Entrega&nbsp;&nbsp;</h2>      
+    <span class="ciashop-cantoTit"></span>      
+    <hr />
+  </div>
+  <div class="presente_entrega">
+    <div class="dados_presente">
+      <span>Este produto vai ser entregue para:</span>
+      <strong class="usuario">@Model.ShippingAddresses.RecipientName</strong>
+      <strong>@Model.ShippingAddresses.Street, @Model.ShippingAddresses.StreetNumber</strong>
+      <strong>@Model.ShippingAddresses.District - @Model.ShippingAddresses.City,@Model.ShippingAddresses.State</strong>
+    </div>
+  </div>
+</div>
+
+}else{
+
+<div class="col-md-6">
+  <div class="ciashop-titBox heading-primary">
+    <h2>2. Dados de Entrega&nbsp;&nbsp;</h2>      
+    <span class="ciashop-cantoTit"></span>      
+    <hr />
+  </div>
+  <div class="form_entrega ciashop-form">
+    <div class="form-group ciashop-overflow text-center" style="width: 100%">
+      <label>&nbsp;</label>
+      &nbsp;
+    </div>             
+    <div class="form-group col-md-12 cep">
+      <label>CEP <small><a href="javascript:callSearchZipCode('txtCep')">(Esqueceu o CEP?)</a></small></label>
+      @Html.InputText("ShippingAddresses.ZipCode").Maxlength("9").TabIndex("11")
+    </div> 
+    <div class="form-group col-md-6 entrega_oculta">
+      <label>Endereço</label>
+      @Html.InputText("ShippingAddresses.Street").Maxlength("200").TabIndex("12")
+    </div>  
+    <div class="form-group col-md-6 entrega_oculta">
+      <label>Número</label>
+      @Html.InputText("ShippingAddresses.StreetNumber").Maxlength("10").TabIndex("13")
+    </div>                 
+    <div class="form-group col-md-6 entrega_oculta">
+      <label>Complemento</label>
+      @Html.InputText("ShippingAddresses.StreetComplement").Maxlength("50").TabIndex("14")
+    </div> 
+    <div class="form-group col-md-6 entrega_oculta">
+      <label>Bairro</label>
+      @Html.InputText("ShippingAddresses.District").Maxlength("50").TabIndex("15")
+    </div>                 
+    <div class="form-group col-md-6 entrega_oculta">
+      <label>Cidade</label>
+      @Html.InputText("ShippingAddresses.City").Maxlength("100").TabIndex("16")
+    </div>                                 
+    <div class="form-group col-md-6 entrega_oculta">
+      <label>Estado</label>
+      @Html.InputDropdown("ShippingAddresses.State", "States", "Selecione um estado").TabIndex("17")
+    </div>                                                 
+    <div class="form-group col-md-12 entrega_oculta" id="cobranca">
+      <strong style="display: block; text-align:center;">Este é seu endereço de cobrança?</strong>
+      <div class="list_entrega centro" style="padding: 3px 0 0; text-align: center;">
+        <label style="padding: 10px 50px;">
+          @Html.InputRadio("IsSameBillingAddress", "True").AddClass("radio").TabIndex("18") <span>Sim</span>
+        </label>
+        <label style="padding: 10px 50px;">
+          @Html.InputRadio("IsSameBillingAddress", "False").AddClass("radio").TabIndex("19") <span>Não</span>
+        </label>
+      </div>
+    </div>                                                                     
+  </div>
+</div>
+}
+
+
+<div class="col-md-6 pull-right enderecoCobranca @if (Model.IsGiftList)
+{
+  @:mostra
+}
+">
+<div class="ciashop-titBox heading-primary">
+  <h2>3. Dados de Cobrança</h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div> 
+<div class="form_entrega ciashop-form">
+  <div class="form-group ciashop-overflow text-center" style="width: 100%">
+    <label>&nbsp;</label>
+    &nbsp;
+  </div>             
+  <div class="form-group col-md-12 cep">
+    <label>CEP <small><a href="javascript:callSearchZipCode('txtCep')">(Esqueceu o CEP?)</a></small></label>
+    @Html.InputText("Customer.BillingAddress.ZipCode").Maxlength("9").TabIndex("20")
+  </div> 
+  <div class="form-group col-md-6 entrega_oculta">
+    <label>Endereço</label>
+    @Html.InputText("Customer.BillingAddress.Street").Maxlength("200").TabIndex("21")
+  </div>  
+  <div class="form-group col-md-6 entrega_oculta">
+    <label>Número</label>
+    @Html.InputText("Customer.BillingAddress.StreetNumber").Maxlength("10").TabIndex("22")
+  </div>                 
+  <div class="form-group col-md-6 entrega_oculta">
+    <label>Complemento</label>
+    @Html.InputText("Customer.BillingAddress.StreetComplement").Maxlength("50").TabIndex("23")
+  </div> 
+  <div class="form-group col-md-6 entrega_oculta">
+    <label>Bairro</label>
+    @Html.InputText("Customer.BillingAddress.District").Maxlength("50").TabIndex("24")
+  </div>                 
+  <div class="form-group col-md-6 entrega_oculta">
+    <label>Cidade</label>
+    @Html.InputText("Customer.BillingAddress.City").Maxlength("100").TabIndex("25")
+  </div>                                 
+  <div class="form-group col-md-6 entrega_oculta">
+    <label>Estado</label>
+    @Html.InputDropdown("Customer.BillingAddress.State", "States", "Selecione um estado").TabIndex("26")
+  </div>                                                                     
+</div>
+</div>
+
+<div class="col-md-6 pull-right @if (!Model.IsGiftList)
+{ 
+  @:entrega_oculta
+} 
+" style="clear: both;">
+<a href="#" class="btn btn-primary" name="enviar" id="enviar" style="width: 100%;">Enviar</a>
+<!--@Html.ImageSubmit("Enviar", "Enviar").TabIndex("27") -->
+</div>
+}
+]]></LoginConvidadoHTML></Convidado></Convidados><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

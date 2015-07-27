@@ -1,0 +1,24 @@
+.endereco_entrega{
+    display: block;
+    overflow: hidden;
+    margin: 1em 0;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.endereco_entrega p{
+    font-size:13px;
+    margin: 0;
+}
+
+.endereco_entrega p strong{
+	font-size: 15px;
+}
+
+.alterar-endereco{
+    display: block;
+    clear: both;
+    padding: 1em 0 0.5em;
+    font-size: 12px;
+    text-decoration: underline;
+}

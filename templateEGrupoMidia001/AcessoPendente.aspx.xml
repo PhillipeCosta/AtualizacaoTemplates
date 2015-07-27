@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AcessoPendentes><AcessoPendente ID="AcessoPendente"><AcessoPendenteGeralHTML><![CDATA[[A0] <a href="[A1]">Solicitar acesso</a> ]]></AcessoPendenteGeralHTML></AcessoPendente><AcessoPendente ID="Acessopendente"><AcessoPendenteGeralHTML><![CDATA[<div class="box-acesso">
+  <div class="acesso-esq">
+    <img src="imagens/acesso-pendente.png" alt="Acesso Pendente" />
+  </div>
+  <div class="acesso-dir">
+    <h3 class="tit-acesso">
+      Usuário pendente de aprovação
+    </h3>
+    <p class="msg-acesso">[B0]</p>
+  </div>
+</div> ]]></AcessoPendenteGeralHTML><AcessoPosCadastroGeralHTML><![CDATA[<div class="box-acesso">
+    <div class="acesso-esq">
+      <img src="imagens/acesso-pendente.png" alt="Acesso Pendente" />
+    </div>
+    <div class="acesso-dir">
+      <h3 class="tit-acesso">
+        Cadastro realizado com sucesso!
+      </h3>
+      <p class="msg-acesso">[A0]</p>
+    </div>
+
+</div> ]]></AcessoPosCadastroGeralHTML></AcessoPendente><AcessoPendente ID="PendingAccess"><AcessoPendenteGeralHTML><![CDATA[<div class="sorry">
+	<div class="sorry-content ops">
+      	<div class="sorry-info">
+          	<h2>Usuário pendente de <strong>aprovação</strong>!</h2>
+          	<p>[B0]</p>
+  		</div>
+  	</div>
+</div>]]></AcessoPendenteGeralHTML><AcessoPosCadastroGeralHTML><![CDATA[<div class="sorry">
+	<div class="sorry-content ops">
+      	<div class="sorry-info">
+          	<h2>Cadastro realizado com <strong>sucesso</strong>!</h2>
+          	<p>[A0]</p>
+  		</div>
+  	</div>
+</div>]]></AcessoPosCadastroGeralHTML></AcessoPendente></AcessoPendentes><Banners><Banner ID="header_full" /></Banners></controles></page>

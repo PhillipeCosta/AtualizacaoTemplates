@@ -1,0 +1,60 @@
+.vitrine_jquery{
+    margin: 0 0 30px;
+}
+
+.vitrine_jquery li{
+    padding-top: 30px !important;
+    width: 295px !important;
+	height: 445px !important;
+    text-align: center !important;
+}
+
+.tit_vitrine_jquery{
+    display: block;
+    text-align: center;
+    margin-top: -11px;
+}
+
+.tit_vitrine_jquery h2{
+    font-size: 18px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: normal;
+    font-family: 'source_sans_prosemibold';
+    *display: inline;
+}
+
+.bx-wrapper{
+    width: 920px !important;
+    margin-left: 33px;
+    margin-top: -15px;
+}
+
+.bx-wrapper .foto {
+    height: 252px !important;
+}
+
+.bx-prev{
+    position:absolute;
+    top: 170px;
+    left: -20px;
+    display: block;
+    height: 50px;
+    width: 35px;
+    background:  url('../imagens/navegacao_vitrine_seta_voltar.png') no-repeat left center; 
+    display: block;
+    text-indent:-9999px;
+}
+
+.bx-next{
+    position:absolute;
+    top: 170px;
+    right: -20px;
+    display: block;
+    height: 50px;
+    width: 35px;
+    background:  url('../imagens/navegacao_vitrine_seta_avancar.png') no-repeat right center; 
+    display: block;
+    text-indent:9999px;
+}

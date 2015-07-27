@@ -1,0 +1,21 @@
+.heading-contact{
+	margin-bottom: 30px;
+}
+
+.contact{
+	margin: 15px 0;
+}
+
+.contact-content{
+	margin: 0 15px 15px 15px;
+}
+
+.contact-phone{
+	display: block;
+	padding-top: 10px;
+}
+
+.contact-phone strong{
+	font-size: 16px;
+	color: #f47710;
+}

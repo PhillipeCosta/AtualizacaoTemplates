@@ -1,0 +1,67 @@
+#rodape {
+    border-top: 5px solid #D4D4D4;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 990px;
+}
+.rodape-conteudo {
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+}
+
+.rodape-esquerda {
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 350px;
+}
+
+/*metodos*/
+
+.rodape-metodos-tit{
+    color: #092335;
+    font-size: 13px;
+}
+
+
+.rodape-metodos {
+    margin-bottom: 20px;
+}
+
+.rodape-met-list {
+    margin: 5px 0 0;
+    overflow: hidden;
+}
+.rodape-met-item {
+    float: left;
+    list-style: none outside none;
+    margin: 0 8px 0 0;
+}
+
+.rodape-direita {
+    float: right;
+    margin: 20px 15px 0 0;
+    width: 513px;
+}
+
+.rodape-dir-tit {
+    color: #101763;
+    font-size: 17px;
+    text-align: right;
+}
+
+.rodape-direita ul {
+    clear: both;
+    overflow: hidden;
+}
+.rodape-selos-item {
+    float: left;
+    list-style: none outside none;
+    margin: 0 0 0 8px;
+}
+
+.rodape-selos{
+    text-align: right;
+}

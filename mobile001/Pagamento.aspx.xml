@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CarrinhoPassoss><CarrinhoPassos ID="CarrinhoPassos1" NomeAmigavel="Passos do Carrinho" Visible="True"><Passo value="4" /></CarrinhoPassos></CarrinhoPassoss><CarrinhoItenss><CarrinhoItens ID="CarrinhoItens1" NomeAmigavel="Listagem dos Itens do Carrinho" Visible="True"><SomenteLeitura value="Sim" /></CarrinhoItens></CarrinhoItenss><CarrinhoBonuss><CarrinhoBonus ID="CarrinhoBonus1" NomeAmigavel="Listagem dos Bonus do Carrinho" Visible="True"></CarrinhoBonus><CarrinhoBonus ID="CarrinhoBonus"><CarrinhoBonusHTML><![CDATA[]]></CarrinhoBonusHTML></CarrinhoBonus><CarrinhoBonus ID="carrinhobonus"><CarrinhoBonusHTML><![CDATA[<div class="bonus">
+    <div class="tit_box">
+        <h2>Bônus</h2>
+    </div>
+    <div class="respiro">
+        <p>
+            Pague sua compra ultilizado seus bônus. Eles serão revertidos em forma de desconto para você!<br/><br/>
+            Você possui [A0] bônus <br />
+            Selecione a quantidade de bônus que você deseja utilizar nessa compra: [A1]
+        </p>
+    </div>
+</div>]]></CarrinhoBonusHTML><CssComponente><![CDATA[]]></CssComponente></CarrinhoBonus></CarrinhoBonuss><MetodosPagamentos><MetodosPagamento ID="MetodosPagamento1"><CssComponente><![CDATA[]]></CssComponente><MetodosPagamentoHTML><![CDATA[<condicao:nf_paulista>
+    <div class="nota">
+        <div class="tit_box">
+            <h2>Nota fiscal Paulista</h2>
+        </div>
+        <div class="nota_conteudo">
+            <p>[A1]<strong>Desejo nota fiscal paulista:</strong></p>
+            <p>Se deseja saber mais sobre o Programa de Estímulo à Cidadania Fiscal, acesse: <a href="http://www.nfp.fazenda.sp.gov.br/" target="_blank">http://www.nfp.fazenda.sp.gov.br/</a></p>
+        </div>
+    </div>
+</condicao:nf_paulista>
+<div class="formas_pagamento">
+    <h2 class="formaspagamento">Formas de Pagamento</h2>
+    <table cellpadding="0" cellspacing="2" border="0" width="100%">
+        <thead>
+            <tr>
+                <repeticao:formas_pagamento>
+                    <th>[A2]</th>
+                </repeticao:formas_pagamento>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <condicao:bandeiras>
+                    <td>
+                        <repeticao:bandeiras>
+                            <a href="#[A11]"><img src="[A4]" border="0" alt="Ir para pagamento com esta opção" onclick="[A10]" /></a>
+                        </repeticao:bandeiras>
+                    </td>
+                </condicao:bandeiras>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="pagamento">
+    <div class="pagamento_conteudo">
+        <ul>
+            <repeticao:categorias>
+                <li>
+                    <h3>[A2]</h3>
+                    <ul>
+                        <repeticao:opcoes_pagamento>
+                            <li class="<condicao:metodo_selecionado> class=selecionado </condicao:metodo_selecionado>">
+                                <div class="pag_item">
+                                    <a name="[A11]">&nbsp</a>
+                                    <div class="pag_radio">[A3]</div>
+                                    <div class="pag_img">
+                                        <img src="[A4]" border="0" alt=" [A5]" onclick="[A8]" />
+                                    </div>
+                                    <div class="pag_info">
+                                        <h4>[A5]</h4>
+                                        <div class="parcelas">[A6]</div>
+                                        <condicao:ajuda>
+                                            <div class="ajuda">[A7]</div>
+                                        </condicao:ajuda>
+                                    </div>
+                                </div>
+                            </li>
+                        </repeticao:opcoes_pagamento>
+                    </ul>
+                </li>
+                <condicao:metodo_cielo>
+                        <h5>Preencha os Dados do Seu Cartão</h5>
+                        <div class="formulario_pag">
+                            <div class="list obrigatorio">
+                                <label class="larg_100"><span class="tit_label">Nome do títular</span>[A12]<small>(Como o impresso no cartão)</small></label>
+                            </div>
+                            <div class="list obrigatorio">
+                                <label class="larg_75"><span class="tit_label">Número do cartão</span>[A13]</label>
+                            </div>
+                            <!--<div class="list obrigatorio">
+                                <label class="larg_75"><span class="tit_label">Emissor</span>[A14] <small>(Exemplo: Banco do Brasil)</small></label>
+                            </div>-->
+                            <div class="list obrigatorio">
+                                <label><span class="tit_label">Data de validade</span>[A15]</label>
+                                <label> -[A16] </label>
+                            </div>
+                            <div class="list obrigatorio">
+                                <label class="larg_25"><span class="tit_label">Código de segurança</span>[A17] <small>(Somente números)</small></label>
+                            </div>
+                            
+                        </div>
+                </condicao:metodo_cielo>
+                <condicao:metodo_moip_cc>
+                        <h5>Preencha os Dados do Seu Cartão</h5>
+                        <div class="formulario_pag">
+                            <div class="list obrigatorio">
+                                <label class="larg_100"><span class="tit_label">Nome do títular</span>[A12]<small>(Como o impresso no cartão)</small></label>
+                            </div>
+                            <div class="list obrigatorio">
+                                <label class="larg_75"><span class="tit_label">Número do cartão</span>[A13]</label>
+                            </div>
+                            <!--<div class="list obrigatorio">
+                                <label class="larg_75"><span class="tit_label">Emissor</span>[A14] <small>(Exemplo: Banco do Brasil)</small></label>
+                            </div>-->
+                            <div class="list obrigatorio">
+                                <label><span class="tit_label">Data de validade</span>[A15]</label>
+                                <label> -[A16] </label>
+                            </div>
+                            <div class="list obrigatorio">
+                                <label class="larg_25"><span class="tit_label">Código de segurança</span>[A17] <small>(Somente números)</small></label>
+                            </div>
+                            <div class="list obrigatorio">
+                                <label><span class="tit_label">CPF do titular</span>[A18] <small>(Somente números)</small></label>
+                            </div>
+                            <div class="list obrigatorio">
+                                    <label class="larg_25"><span class="tit_label">Data de nascimento do títular</span>[A19]</label>
+                                    <label class="larg_25"> / [A20] </label>
+                                    <label class="larg_25"> / [A21] <small>(Ex: 00/00/0000)</small></label>
+                                </div>
+                        </div>
+                </condicao:metodo_moip_cc>
+                <div class="bt_direita">
+                    <div class="respiro">
+                        <condicao:exibe_botao_finalizar><a href="#" name="btnFinalizar"><img src="[A9]" alt="finalizar com [A2]" border="0" /></a></condicao:exibe_botao_finalizar>
+                    </div>
+                </div>
+            </repeticao:categorias>
+        </ul>
+    </div>
+</div>]]></MetodosPagamentoHTML></MetodosPagamento></MetodosPagamentos><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><Carrinhos><Carrinho ID="Carrinho1"><CarrinhoHTML><![CDATA[]]></CarrinhoHTML><CarrinhoItensEditavel value="False" /><CarrinhoVazioHTML><![CDATA[]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[<div class="erro">
+        <div class="lista_erro">
+        <h2>Os produtos que foram comprados já não estão mais disponíveis</h2>
+            <condicao:com_tabela>
+		<table width="100%" cellpadding="0" cellspacing="0">
+		            <thead>
+		                <tr>
+		                    <th>Nome do produto</th>
+		                    <th>Quantidade do Pedido</th>
+		                    <th>Nova Quantidade</th>
+		                </tr>
+		            </thead>
+	                    <repeticao:produtos>
+		            <tr>
+		                <td>
+		                    [D0]
+		                </td>
+		                <td>
+		                    [D1]
+		                </td>
+		                <td>
+		                    <condicao:alterado>
+		                        [D2]
+		                    </condicao:alterado>
+		                    <condicao:semestoque>
+		                        estoque acabou
+		                    </condicao:semestoque>
+		                </td>
+		            </tr>
+	        </repeticao:produtos>
+	    </table>
+        </condicao:com_tabela>
+    </div>
+</div>]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div id="erro">
+    <div class="lista_erro">
+        <h2>Aviso Importante!</h2>
+           Não entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
+    </div>
+</div>]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[<div class="erro">
+    <div class="lista_erro">
+        <h2>O valor mínimo da compra é de [C0]</h2>
+    </div>
+</div>]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[Cupom não é válido para o comprador atual.]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[Cupom fora do prazo de validade.]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[Cupom não encontrado.]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[O cupom não é válido para o(s) departamento(s) selecionado(s).]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[O cupom não é válido para o(s) produto(s) selecionado(s).]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[A compra não atingiu o valor mínimo para ativação do cupom.]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[O cupom já foi usado.]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[O produto [L0] não está mais disponível para pronta entrega na quantidade solicitada. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[O preço do produto [F0] mudou de [F3] para [F4].]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[O produto <strong>[K0]</strong> não esta mais disponível.]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Pequenas" /></Carrinho></Carrinhos><Links><Link ID="LinkAjuda"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="header" /></Banners><SEOs><SEO ID="seo" /></SEOs><AfiliadoEscolhas><AfiliadoEscolha ID="AfiliadoEscolha"><AfiliadoPesquisadosHtml><![CDATA[    <div class="tit_box">
+        <h2>Selecione seu Afiliado</h2>
+    </div>
+    <table cellspacing="0" cellpadding="0" class="tab_afiliados" border="0">
+        <thead>
+            <tr>
+
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>&nbsp;</th>
+
+            </tr>
+        </thead>
+        <tbody>
+          <repeticao:repeticaoafiliado>
+            <tr>
+              <td>[B0]</td>
+              <td>[B1]</td>
+              <td class="selecionar"><a href="[B2]"><img src="imagens/bt_Afiliado_selecionar.png?1" alt="Selecionar" /></a></td>
+            </tr>
+          </repeticao:repeticaoafiliado>
+          <condicao:mensagemsemregistro>
+            <tr class="nenhum_afiliado"><td colspan="3">Não existe registro para esta consulta</td></tr>
+          </condicao:mensagemsemregistro>
+        </tbody>
+    </table>
+]]></AfiliadoPesquisadosHtml><CssComponente><![CDATA[]]></CssComponente><EscolhaAfiliadoHtml><![CDATA[<div class="escolha_afiliado">
+    <h2>Digite nome ou e-mail do afiliado que lhe indicou a loja no campo abaixo</h2>
+    <span class="meu_afiliado">Meu Afiliado:</span> [A0] <a href="[A1]"><img src="imagens/bt_pesquisar.png?1" alt="Pesquisar" /></a>
+    <condicao:afiliado_selecionado>
+       <div class="afiliado_selecionado">
+         <h2>Afiliado:</h2>[A2]
+       </div>
+    </condicao:afiliado_selecionado>
+</div>
+]]></EscolhaAfiliadoHtml></AfiliadoEscolha></AfiliadoEscolhas><CarrinhoEnderecoEntregas><CarrinhoEnderecoEntrega ID="CarrinhoEnderecoEntrega1"><CarrinhoEnderecoEntregaHTML><![CDATA[  <div class="endereco_entrega">
+    <div class="pull-left">
+      <p><strong>[A9]</strong></p>
+      <p class="end-entrega">[A1], [A2] [A3]</p>
+      <p><small>[A4], [A5]-[A6], [A8]</small></p> 
+      <a href="[A11]" class="alterar-endereco"><strong>Alterar endereço de entrega</strong></a>      
+    </div>
+  </div>
+]]></CarrinhoEnderecoEntregaHTML></CarrinhoEnderecoEntrega></CarrinhoEnderecoEntregas><Widgets><Widget ID="ItenseFreteCarrinho"><WidgetUsado value="140" /></Widget><Widget ID="TotalCarrinho"><WidgetUsado value="19" /></Widget><Widget ID="ItensCarrinho"><WidgetUsado value="18" /></Widget></Widgets><PaymentMethodss><PaymentMethods ID="PaymentMethods1"><PaymentMethodsHTML><![CDATA[@using (Html.BeginForm()){
+    <div class="paymentMethods form">
+        <div class="paymentMethodsList">
+            <div class="paymentMethodTit">
+                <div class="paymentMethod-select">
+                    @Html.ValidationSummary()
+                    @foreach(var Categoria in Model.PaymentCategories){
+                     <div class="box-metodos-pagamento">
+                        <a href="javascript: void(0)" class="boxMethod-select btn-secondary" categoryid="@Categoria.Id">
+                          <strong>@Categoria.Name</strong>
+                        </a>                    
+                        <div class="paymentMethod-box" categoryid="@Categoria.Id">                  
+                            <ul>
+                                @foreach(var Metodo in Categoria.PaymentMethods){
+                                    <li class="paymentMethodsList-method"> 
+                                        <div class="paymentMethodsList-method-display">
+                                            <span style="display: none;">
+                                                @Html.InputRadio("PaymentMethod.Id", Metodo.Id, Metodo.Selected)
+                                            </span>
+                                            <img src="@Metodo.MainImageURL" alt="@Metodo.DisplayName" />
+                                        </div>   
+                                    </li> 
+                                }
+                                @foreach(var Metodo in Categoria.PaymentMethods){
+                                                                           
+                                    <div class="paymentMethodContent">
+                                            @if(Cart.Total>0 && Metodo.Id==95){
+                                                continue;               
+                                            }                                      		
+                                            <div class="paymentMethod paymentMethod@(Metodo.Id)" method="@Metodo.Id">
+                                      			<div class="paymentMethod-Title">@Metodo.DisplayName</div>
+                                                @if(Metodo.HasPayInFullDiscount){
+                                                    <div class="paymentMethod-discount">
+                                                        <small>Pague somente @Metodo.PayInFullDiscountValue.AsMoney() - (@Metodo.PayInFullDiscountPercent% de desconto)</small>
+                                                    </div>
+                                                }
+                                                @if(Metodo.Help!=""){
+                                                    <div class="paymentMethod-text">@Metodo.Help</div>
+                                                }
+                                                @if(Metodo.HasForm){
+                                                    <div class="paymentMethod-form">
+                                                        @foreach(var Field in Metodo.PaymentForm.Fields){
+                                                            if(Field.Id=="SecurityCode"){
+                                                                <div class="paymentMethod-field parent-validation">
+                                                                    <label><span class="paymentMethod-fieldSpan">@Field.LabelText</span> @Html.Input(Field).AddClass(Field.Id) <img src="imagens/codSeguranca.png" />@Html.ValidateMessage(Field)<span class="erros">Ops, que tal verificar este campo</span></label>
+                                                                </div>                                  
+                                                            }else if(Field.Id=="ExpirationMonth"){
+                                                                @:<div class="paymentMethod-field parent-validation">
+                                                                    @:<label><span class="paymentMethod-fieldSpan">Validade</span> @Html.Input(Field).AddClass(Field.Id)<span class="erros">Ops, que tal verificar este campo</span></label>
+                                                            }else if(Field.Id=="ExpirationYear"){
+                                                                    @:<label>@Html.Input(Field) @Html.ValidateMessage(Field)<span class="erros">Ops, que tal verificar este campo</span></label>
+                                                                @:</div>                            
+                                                            }
+                                                            else{
+                                                                <div class="paymentMethod-field parent-validation">
+                                                                    <label>
+                                                                        <span class="paymentMethod-fieldSpan">@Field.LabelText</span> @Html.Input(Field).AddClass(Field.Id) <span class="paymentMethod-fieldExemplo"></span> @Html.ValidateMessage(Field)
+                                                                        <span class="erros">Ops, que tal verificar este campo</span>
+                                                                    </label>
+                                                                </div>                                  
+                                                            }
+                                                        }                                                                           
+                                                    </div>
+                                                }     
+                                      			
+                                                @if(Metodo.HasInstallments){
+                                                    <div class="paymentMethod-parcel">
+                                                        @Html.InputDropdown("PaymentInstallments.Quantity", Metodo.PaymentInstallments,"Selecione o parcelamento")
+                                                    </div>
+                                                }
+                                                <div class="paymentMethod-buttom">
+                                                   <input type="button" id="enviar" name="enviar" value="concluir compra" class="bt-principal text-center btn-primary" style="" />
+                                                </div>
+                                            </div>
+                                    </div>                                  
+                                }
+                            </ul>
+                        </div> 
+                      </div>                        
+                    }                   
+                </div>
+            </div>          
+        </div>
+    </div>
+}
+
+<script type="text/javascript" src="js/paymentMethod.js"></script>]]></PaymentMethodsHTML></PaymentMethods></PaymentMethodss><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

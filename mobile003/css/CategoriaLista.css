@@ -1,0 +1,13 @@
+.quickLists-title{
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 15px;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.nav-quickList-heading{
+	font-size: 19px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}

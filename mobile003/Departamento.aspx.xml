@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Menus><Menu ID="currentDeptMenu"><ApenasDepartamento value="True" /><MenuHTML><![CDATA[<repeticao:pais>
+  <div class="heading-primary" style="overflow: hidden;">
+      <h1>[A1]</h1>
+      <condicao:filho>	
+          <span class="deptChildrens">+</span>
+          <select id="deptMenu" class="invisibleSelect overplace">
+              <option value="">Departamentos</option>
+              <repeticao:filhos>
+                <option value="[A0]">[A1]</option>
+              </repeticao:filhos>
+          </select>
+          <script>
+              $("#deptMenu").goToUrl();
+          </script>
+      </condicao:filho>
+  </div>
+</repeticao:pais>
+]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><ListagemCompletas><ListagemCompleta ID="deptCollection"><Comparar value="Não" /><HTMLComparacao><![CDATA[]]></HTMLComparacao><HTMLDestaque><![CDATA[]]></HTMLDestaque><HTMLListagem><![CDATA[<div class="collection deptCollection">
+  <ul>
+    <repeticao:produtos>
+      <li class="collection-li w-50">
+        <div class="collection-product">
+            <div class="collection-product-image">   
+              	<condicao:lancamento>
+                      <a href="[D1]" class="collection-product-release">Lançamento</a>
+                </condicao:lancamento>
+              	<condicao:pre_venda>
+                      <a href="[D1]" class="collection-product-preSale">Pré-Venda</a>
+                </condicao:pre_venda>
+                <condicao:oferta>
+                      <a href="[D1]" class="collection-product-offer">[D54]% Off</a>
+                </condicao:oferta>  
+                <a href="[D1]"><img src="[D2]?width=250&height=250" width="100%" alt="[D6]" /></a>
+              	<condicao:produto_indisponivel>
+                    <div class="collection-product-unavailable">
+                          <a href="[D1]">Produto Indisponível</a>
+                    </div>
+                </condicao:produto_indisponivel> 
+              	<condicao:promocao_frete>
+                  <div class="collection-product-shippingPromo">
+                    <a href="[D1]"><img src="[D29]" alt="" /></a>
+                  </div>
+                </condicao:promocao_frete> 
+            </div>
+            <h3 class="collection-product-name"><a href="[D1]">[D6]</a></h3>
+          	<div class="collection-product-price-content">
+              <p class="collection-product-price">                
+                <condicao:preco_antigo><del>[D19]</del></condicao:preco_antigo>
+                <a href="[D1]">[D15]</a>
+                <condicao:desconto_vista>
+                      <a href="[D1]" style="display:inline-block;" class="collection-product-splitPrice">([D27] à vista)</a>
+                </condicao:desconto_vista>                
+              </p>
+              <p class="collection-product-splitPrice"><condicao:parcelamento><a href="[D1]">[D13] de <strong>[D12]</strong> sem juros</a></condicao:parcelamento></p>          
+            </div>             
+        </div>
+      </li>
+    </repeticao:produtos>
+  </ul>
+</div>]]></HTMLListagem><HTMLModelo><![CDATA[[A2]
+<div class="collection-bottom">
+  <div class="collection-pagination">[A1]</div>
+</div>]]></HTMLModelo><HTMLOrdenarPor><![CDATA[<label>Ordenar por:</label> [E0]]]></HTMLOrdenarPor><HTMLPaginacao><![CDATA[<condicao:paginacao>
+  <div class="collection-pagination-pages">
+        <condicao:pagina_anterior>
+            <a href="[F5]" class="prev-page">Anterior </a>
+        </condicao:pagina_anterior>
+        <repeticao:paginas quantidade="6">
+            <a href="[F7]" class="page <condicao:pagina_selecionada> active </condicao:pagina_selecionada>">[F8]</a>
+        </repeticao:paginas>
+        <condicao:proxima_pagina>
+            <a href="[F6]" class="next-page">Próxima</a>
+        </condicao:proxima_pagina>
+    	<div class="last-page hide">[F4]</div>
+  </div>  
+</condicao:paginacao>]]></HTMLPaginacao><HTMLPesquisaInvalida><![CDATA["<strong>A pesquisa por [G1] possúi termos inválidos. Seus termos de pesquisa devem possuír pelo menos três caracteres.</strong>"]]></HTMLPesquisaInvalida><HTMLSemResultados><![CDATA[<div class="collection-noResults sorry">
+	<div class="dept-noResults sorry-content ops">
+      	<div class="dept-noResults-info sorry-info">
+      		<h2>Este departamento ainda não possui produtos</h2>
+      		<h3>O que posso fazer?</h3>
+      		<ul>
+              	<li>» Utilize nossa busca para encontrar o que deseja</li>
+              	<li>» Acesse nossos demais departamentos</li>
+              	<li>» Volte para a página inicial e confira nossas incríveis ofertas</li>
+      		</ul>
+  		</div>
+  	</div>
+</div>]]></HTMLSemResultados><ImagemAvaliacaoDeselecionado value="" /><ImagemAvaliacaoSelecionado value="" /><MostraDestaque value="Não" /><Ordenar value="Sim" /><Paginacao value="Sim" /><TamanhoImagem value="Gigantes" /><TipoExibicao value="Departamento" /></ListagemCompleta></ListagemCompletas><FiltroGruposs><FiltroGrupos ID="departamentGroups"><FiltroGruposHTML><![CDATA[<div class="filters to-right">
+  <select id="filters" class="invisibleSelect overplace">
+      <option value="">Filtros</option>
+      <repeticao:tipo_filtro>
+        <optgroup label="[A0]">
+            <repeticao:filtro>
+              <option value="[A3]">[A1] <small>([A2])</small></option>
+            </repeticao:filtro>        
+        </optgroup>
+      </repeticao:tipo_filtro>
+  </select>
+</div>
+<script>
+  $("#filters").goToUrl();
+  if($("#filters option").length<2){
+  	$(".filters").hide();
+  }
+</script>]]></FiltroGruposHTML></FiltroGrupos></FiltroGruposs><FiltrosUtilizadoss><FiltrosUtilizados ID="departamentFilterBy"><FiltrosUtilizadosHTML><![CDATA[<div class="filterBy">
+    <repeticao:parametros_utilizados>
+        <a href="[A1]" class="filterBy-item">[A0]</a>
+    </repeticao:parametros_utilizados>
+</div>]]></FiltrosUtilizadosHTML></FiltrosUtilizados></FiltrosUtilizadoss><DepartamentoDescricaos><DepartamentoDescricao ID="deptDescription"><DepartamentoDescricaoHTML><![CDATA[[A0]]]></DepartamentoDescricaoHTML></DepartamentoDescricao></DepartamentoDescricaos><Banners><Banner ID="header_full" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

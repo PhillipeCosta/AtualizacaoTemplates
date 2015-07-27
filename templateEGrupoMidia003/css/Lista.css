@@ -1,0 +1,36 @@
+.box{
+    width: 810px;
+    float: left;
+    margin: 0 0px;
+    clear: none!important;
+}
+.vitrine_geral{
+    width: 100%;
+}
+.vitrine_geral ul#scroller li {
+    width: 260px;
+}
+.float{
+    float: left!important;
+    width: 842px!important;
+}
+.conteudo_fixo{
+    width: 1100px;
+    margin: 15px auto 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff!important;
+    margin-bottom: 40px!important;
+}
+.tit-box{
+    background-color: rgba(221, 221, 221, 0);
+    display:none;   
+}
+.menupgs .drop_filho_lat{
+    float: left;
+
+    position: relative;
+}
+.menupgs .lista_menu_lat{
+    float: left;
+}

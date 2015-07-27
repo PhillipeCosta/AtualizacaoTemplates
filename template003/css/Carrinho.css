@@ -1,0 +1,73 @@
+.cart-input-qtd input{
+	text-align: center;
+	padding: 2px !important;
+}
+
+.cart-listItem{
+	border-bottom: 1px solid #acacac;
+}
+
+.form-cartCupom input{
+	width: 48% !important;
+	margin-right: 5px;
+}
+
+.form-cartShipping input{
+	width: 67% !important;
+	margin-right: 5px;
+}
+
+.cart-box{
+	background: #ededed;
+}
+
+.cart-boxTotal{
+	border: 1px solid #242424;
+}	
+
+.cart-boxTotal h3{
+	font-size: 21px;
+}
+
+.cart-contract a{
+	text-decoration: underline;
+}
+
+/* Contrato do produto */
+
+.cart-contractText{
+	max-height: 185px;
+	overflow: auto;
+}
+
+.cart-contractInfo{
+	padding-left: 15px;
+}
+
+/* Kit */
+
+.cart-kitsContainer{
+	background: #f4f4f4;
+}
+
+.cart-kitShow{
+	cursor: pointer;
+}
+
+.cart-kit{
+	display: none;
+}
+
+.cart-kitOpen .cart-kit{
+	display: block;
+}
+
+/* Brinde */
+
+.cart-variantSelect select{
+    border: 1px solid #acacac;
+    font-size: 13px;
+    margin-top: 5px;
+    padding:4px 10px;
+}
+

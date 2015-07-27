@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><GoogleAnalyticss><GoogleAnalytics ID="GoogleAnalytics"><AnalyticsConfirmadoHTML><![CDATA[<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '[B14]']);
+  _gaq.push(['_setDomainName', 'none']); 
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_addTrans',
+        "[B0]", 
+        "[B1]", 
+        "[B2]", 
+        "[B3]", 
+        "[B4]", 
+        "[B5]", 
+        "[B6]", 
+        "[B7]"  
+     ]);
+   <repeticao:produtos>
+        _gaq.push(['_addItem',
+          "[B0]", 
+          "[B9]", 
+          "[B10]",
+          "[B11]",
+          "[B12]",          
+          "[B13]"
+        ]);
+   </repeticao:produtos>
+  _gaq.push(['_trackTrans']); //submits transaction to the Analytics servers
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>]]></AnalyticsConfirmadoHTML><AnalyticsHTML><![CDATA[<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', '[A0]']);
+_gaq.push(['_setDomainName', 'none']); 
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type =
+'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+: 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+</script>
+]]></AnalyticsHTML><ConversionConfirmadoHTML><![CDATA[<script language="JavaScript" type="text/javascript">
+<!--
+var google_conversion_id = [C0];
+var google_conversion_language = "pt_BR";
+var google_conversion_format = "1";
+var google_conversion_color = "666666";
+var google_conversion_label = "[C1]";
+var google_conversion_value = [C2];
+//-->
+</script>
+<script language="JavaScript" src="https://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<img height="1" width="1" border="0" src="https://www.googleadservices.com/pagead/conversion/[C0]/?value=[C2]&label=[C1]&script=0" />
+</noscript>]]></ConversionConfirmadoHTML></GoogleAnalytics><GoogleAnalytics ID="GoogleAnalytics1"><AnalyticsConfirmadoHTML><![CDATA[]]></AnalyticsConfirmadoHTML><AnalyticsHTML><![CDATA[]]></AnalyticsHTML><ConversionConfirmadoHTML><![CDATA[]]></ConversionConfirmadoHTML></GoogleAnalytics></GoogleAnalyticss></controles></page>

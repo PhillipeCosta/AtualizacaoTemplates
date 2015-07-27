@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AjudaAfiliadoss><AjudaAfiliados ID="affiliateHelp"><AjudaAfiliadosHTML><![CDATA[<script type="text/javascript">
+    $(document).ready(function(){
+	$('h2.accordion').click(function(){
+		$(this).parent().find('div.accordion').slideToggle("fast");
+	});
+});
+</script>
+<ul class="main-clearPadding">
+	<repeticao:ajuda>
+		<li>
+		<h5 class="accordion">[A0]</h5>
+			<div class="accordion">
+				<p>[A1]</p>
+			</div>
+		</li>
+	</repeticao:ajuda>
+</ul>
+]]></AjudaAfiliadosHTML></AjudaAfiliados></AjudaAfiliadoss></controles></page>

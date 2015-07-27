@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ScriptRazors><ScriptRazor ID="cartLink"><ScriptRazorHTML><![CDATA[@{
+var link = "www9.ciashop.com.br/magazine25/MontaCarrinho.aspx";
+	var contsku = 0;
+	var contqtd = 0;
+
+
+
+  foreach(var item in Cart.Items){
+	if(contsku==0){
+  		link = link+"?sku="+@item.Variant.ErpId;
+		contsku = 1;
+	}else{
+		link = link+"|"+@item.Variant.ErpId;
+	}
+  }
+  
+  foreach(var item in Cart.Items){
+	if(contqtd==0){
+  		link = link+"&qtd="+@item.Quantity;
+		contqtd = 1;
+	}else{
+		link = link+"|"+@item.Quantity;
+	}
+  }
+
+  link = link.Replace(" ", "");
+
+}
+
+<div style="padding: 0 5px;">
+  	<div class="heading-primary"><h2>Link do Carrinho</h2></div>
+  	<p style="text-align: left; margin-top: 10px;">
+        O link abaixo adiciona todos os produtos do seu carrinho. Assim você poderá enviar esse link para outra pessoa ou para o para você mesmo para visualizar o carrinho em outro computador.
+    </p>
+    <textarea style="color: #666; font-size: 12px; border: 0; background: transparent; resize: none; width: 100%; height: 120px">
+          @link
+    </textarea>  	
+</div>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

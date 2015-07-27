@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CadastroDeAfiliados><CadastroDeAfiliado ID="changeAffiliateRegistration"><CadastroAfiliadoHTML><![CDATA[<div class="custom-overflow form form-guest">
+	<h5 class="heading-primary text-uppercase text-left custom-paddingV20">Dados bancários</h5>	
+	<ul>
+		<li><span class="fa fa-angle-right"></span>&nbsp;&nbsp;Atenção não vamos solicitar dados confidências, apenas dados da sua conta para depósito de sua comissão.</li>
+		<li><span class="fa fa-angle-right"></span>&nbsp;&nbsp;Preencha os campos abaixo com seus dados bancários para que a comissão sobre a venda realizada seja creditada em sua conta.</li>
+	</ul> 
+	<div class="col-md-6">           
+		<div class="form custom-clear custom-overflow custom-paddingV5 required">             
+			<label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Banco*</label>
+			<span class="col-md-7">[A3]</span>
+		</div>
+		<div class="form custom-clear custom-overflow custom-paddingV5 required">             
+			<label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Agência*</label>
+			<span class="col-md-7">[A4]</span>
+		</div>
+	</div> 
+	<div class="col-md-6">
+		<div class="form custom-clear custom-overflow custom-paddingV5 required">             
+			<label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Conta*</label>
+			<span class="col-md-7">[A5]</span>
+		</div>  
+		<div class="form custom-clear custom-overflow custom-paddingV5 required">             
+			<label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Titular da conta*</label>
+			<span class="col-md-7">[A6]</span>
+		</div> 
+	</div>    
+	<h5 class="heading-primary text-uppercase text-left custom-paddingV20">URL do Site</h5>
+	<div class="col-md-12">
+		<div class="form custom-clear custom-overflow custom-paddingV5 required">             
+			<label class="col-md-3 text-right custom-clearPadding custom-paddingV5">URL(s) de seu(s) site(s)/blog(s)*</label>
+			<span class="col-md-7">[A2]</span> <span class="pull-left custom-clearPadding"><small>(Separado por vírgulas)</small></span>
+		</div>   
+	</div>
+	<h5 class="heading-primary text-uppercase text-left custom-paddingV20">Termo de adesão</h5>                             
+	<div style="border: 1px solid #ccc; width: 100%; height: 200px; overflow: auto; padding: 10px; box-sizing: border-box;">
+		[K0]
+	</div> 
+	<div class="form parent-validation custom-clear custom-overflow custom-paddingV5 col-md-6">
+		<span class="col-md-12">
+			<span class="col-md-1 pull-left form-inscEstadual custom-clearPadding">[K1]</span>
+			<span class="col-md-11">Concordo com o termo de adesão de programa de afiliados e quero participar!</span>
+		</span>
+	</div> 	   
+	<div class="pull-right custom-paddingV20">
+		<div class="text-center custom-clear">
+			<a href="#" onclick="[A7]" class="btn-primary text-uppercase text-center custom-paddingV5 custom-paddingH15">Salvar</a>
+		</div>
+	</div>
+</div>]]></CadastroAfiliadoHTML><FormatacaoAfiliadoHTML><![CDATA[<div id="afiliados">
+	[C0][C1][C2]
+</div>]]></FormatacaoAfiliadoHTML><SucessoCadastroAfiliadoHTML><![CDATA[<div class="alert alert-success" role="alert">
+  <strong>Sucesso!</strong> Cadastro alterado com sucesso!
+</div>]]></SucessoCadastroAfiliadoHTML><TermoAfiliadoHTML><![CDATA[]]></TermoAfiliadoHTML><ValidacaoCadastroAfiliadoHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <strong>Atenção!</strong>         
+  <ul>
+    <repeticao:erro>
+    	<li>[B0]</li>
+    </repeticao:erro>
+  </ul>
+</div>]]></ValidacaoCadastroAfiliadoHTML></CadastroDeAfiliado></CadastroDeAfiliados></controles></page>

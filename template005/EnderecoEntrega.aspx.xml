@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><EnderecoEntregas><EnderecoEntrega ID="shipping_address"><ComponenteLista value="False" /><EnderecoEntregaHTML><![CDATA[<div class="heading-primary">
+  <h1>
+     <strong>Selecione</strong> o Endereço de Entrega
+  </h1>
+</div>
+[A30]
+<div>
+    <ul class="shipping-addreses">
+        <repeticao:enderecos_cadastrados>
+            <li class="shipping-address">
+                <div class="shipping-address-content">
+                    <h3><a href="[A25]" class="link-default to-right">Editar Endereço</a>[A17]</h3>
+                    <p>[A18]</p>
+                    <p>[A19], [A20]- [A21] - [A22] - [A23]<br />
+                        CEP: [A24]
+                    </p>                    
+                    <a href="[A26]" class="bt-small-special shipping-address-bt">Entregar nesse endereço</a>
+                </div>
+            </li>
+        </repeticao:enderecos_cadastrados>
+    </ul>
+    [A16]
+    <div class="form-box">
+
+        <h2 class="form-box-heading"><span class="register-info">Campos marcados com * são obrigatórios.</span>Novo Endereço</h2>
+        <div class="form address-content">
+            <div class="form-item validate required cep  w-100">
+                <label><span class="form-title">Digite Primeiro o CEP*</span>
+                [A0] <a href="javascript:callSearchZipCode('txtCep')" class="register-forgotZipCode link-default">Esqueceu o CEP?</a></label>
+            </div>
+            <div class="form-item validate required  w-100">
+                <label><span class="form-title">País*</span>
+                [A14]</label>
+            </div>
+            <div class="form-item validate required  w-100">
+                <label><span class="form-title">Nome para Entrega* <small>(Nome de quem irá receber os produtos)</small></span>
+                [A1]</label>
+            </div>
+            <div class="form-item validate required  w-100">
+                <label><span class="form-title">Identifique este Endereço* (Casa, Trabalho, etc.)</span>
+                [A2]</label>
+            </div>
+            <div class="form-item validate required  w-60">
+                <label><span class="form-title">Cidade*</span>
+                [A7]</label>
+            </div>
+            <condicao:selecao_estado>
+                <div class="form-item validate required  w-40">
+                    <label><span class="form-title">Estado*</span>
+                    [A8] </label>
+                </div>
+            </condicao:selecao_estado>
+            <div class="form-item validate required  w-70">
+                <label><span class="form-title">Endereço*</span>
+                [A3]</label>
+            </div>
+            <div class="form-item validate required  w-30">
+                <label><span class="form-title">Número*</span>
+                [A4]</label>
+            </div>
+            <div class="form-item validate required  w-60">
+                <label><span class="form-title">Bairro*</span>
+                [A6]</label>
+            </div>   
+            <div class="form-item  w-40">
+                <label><span class="form-title">Complemento</span>
+                [A5]</label>
+            </div>             
+            <div class="form-item  w-100">
+                <label><span class="form-title">Pontos de Referência</span>
+                [A9]</label>
+            </div>    
+            <div class="form-item validate required w-50 register-phone">
+                  <span class="form-title">Telefone Principal*</span>
+                  <label class="w-15">[A10]</label> <label class="w-5 align-center">-</label> <label class="w-80">[A11]</label>
+            </div>
+            <div class="form-item w-50 register-phone">
+                <span class="form-title">Telefone Alternativo</span> 
+                <label class="w-15">[A12]</label><label class="w-5 align-center">-</label><label class="w-80">[A13]</label>
+            </div>                    
+        </div>
+        <div class="form-box-bt">
+            <a href="javascript: void(0)" class="fakeButtom bt-big-special to-right">Continuar</a>
+            <input type="button" onclick="[A15]" class="realButtom hide" value="Continuar" />
+        </div>
+    </div>
+</div>]]></EnderecoEntregaHTML><EnderecoEntregaMensagemAlertaHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> [B0]
+  	<ul>
+        <repeticao:erro>
+          <li>[B1]</li>
+        </repeticao:erro>
+    </ul>
+</div>]]></EnderecoEntregaMensagemAlertaHTML><MensagemCamposObrigatorios value="Esses campos são obrigatórios e não foram preenchidos corretamente:" /><MensagemProdutosComEstoqueAlteradoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O estoque do produto [E0] mudou. Quantidade solicitada [E1], quantidade disponível [E2].
+</div>]]></MensagemProdutosComEstoqueAlteradoHTML><MensagemProdutosComPrecoAlteradoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O preço do produto [D0] mudou de [D1] para [D2].
+</div>
+]]></MensagemProdutosComPrecoAlteradoHTML><MensagemProdutosSemPrecoRemovidosHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O produto <strong>[F0]</strong> não esta mais disponível.
+</div>]]></MensagemProdutosSemPrecoRemovidosHTML><MensagemSelecionarEndereco value="Selecione um dos endereços para continuar." /><MensagensOcorrenciasCarrinhoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> [C0]
+</div>]]></MensagensOcorrenciasCarrinhoHTML></EnderecoEntrega></EnderecoEntregas><Banners><Banner ID="header_full" /></Banners><SEOs><SEO ID="seo" /></SEOs><Carrinhos><Carrinho ID="cart_items"><CarrinhoHTML><![CDATA[<div class="heading-primary">
+  <h2><strong>Itens</strong> do Pedido</h2>
+</div>
+<div class="miniCart-table">
+  <div class="miniCart-items">
+    <table class="table">
+      <tbody>
+        <repeticao:produtos>
+            <tr class="table-item">
+                <td class="cart-product-image" width="90"><img class="photo-product" src="[A3]?width=80&height=80" alt="[A4]" width="60" height="60" /></td>
+              	<td class="cart-product-name"><strong>[A4]</strong><div class="miniCart-product-quantity">Quantidade: [A5]</div></td> 
+                <td class="cart-product-subtotalPrice">[A9]</td>
+            </tr>
+        </repeticao:produtos>
+      </tbody>
+    </table>
+  </div>
+  <table class="table" style="margin: 0;">
+    <tbody>
+      <tr class="miniCart-subtotal">
+        <th>Subtotal</th>
+        <td>[A23]</td>
+      </tr>
+      <condicao:cupom_valor>
+        <tr class="miniCart-coupom">
+          <th>Cupom de Desconto</th>
+          <td>- [A12]</td>
+        </tr>
+      </condicao:cupom_valor>
+      <!--  TOTAL  -->
+      <tr class="miniCart-total">
+        <th>Total</th>
+        <td>[A21]</td>
+      </tr>   
+     </tbody>
+  </table>
+</div>]]></CarrinhoHTML><CarrinhoItensEditavel value="False" /><CarrinhoVazioHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> Seu carrinho expirou.
+</div>]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong> NNão entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
+</div>]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[Cupom não é válido para o comprador atual.]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[Cupom fora do prazo de validade.]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[Cupom não encontrado.]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[O cupom não é válido para o(s) departamento(s) selecionado(s).]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[O cupom não é válido para o(s) produto(s) selecionado(s).]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[A compra não atingiu o valor mínimo para ativação do cupom.]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[O cupom já foi usado.]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[O produto [L0] não está mais disponível para pronta entrega na quantidade solicitada. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[O preço do produto [F0] mudou de [F1] para [F2].]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[O produto <strong>[K0]</strong> não esta mais disponível.]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Gigantes" /></Carrinho></Carrinhos><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

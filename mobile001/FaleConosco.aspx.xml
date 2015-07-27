@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><FaleConoscos><FaleConosco ID="FaleConosco1"><FaleConoscoHTML><![CDATA[<div class="box_faleconosco">
+    <div class="faleconosco">
+        <ul class="formulario form">
+            <div class="info">Campos indicados com * são de preenchimento obrigatório.</div>
+            <li class="list obrigatorio">
+                <label class="larg_100"><span class="tit_label pt">Nome*</span>[A1]</label>
+            </li>
+            <li class="list obrigatorio">
+                <label class="larg_75"><span class="tit_label pt">Email*</span>[A2]</label>
+            </li>
+            <li class="list">
+                <label class="larg_75"><span class="tit_label pt">Telefone <small>(DDD + XXXX-XXXX)</small></span>[A3]</label>
+            </li>
+            <li class="list">
+                <label class="larg_50"><span class="tit_label pt">Número do Pedido <small>(Caso a dúvida seja de uma compra já realizada)</small></span>[A4]</label>
+            </li>
+            <li class="list">
+                <label class="larg_75"><span class="tit_label pt">Empresa</span>[A5]</label>
+            </li>
+            <li class="list obrigatorio">
+              <label><span class="tit_label pt">Qual sua dúvida?*</span>[A6]</label>
+            </li>
+            <li class="list">
+                <label>
+                  <span class="tit_label">&nbsp;</span> 
+                  <a href="[A8]" class="bt-continuar text-center btn-primary">Enviar</a>
+                </label>
+            </li>
+        </ul>
+    </div>
+</div>]]></FaleConoscoHTML><ObrigatorioCPFCNPJ value="True" /><tipoFormulario value="Dúvidas" /></FaleConosco></FaleConoscos><Banners><Banner ID="header" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,50 @@
+#checkout-header{
+	height: 110px;
+}
+
+.checkout-header-content{
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.checkout-header-logo{
+	position: absolute;
+    left: 0;
+    top: 5px;
+    width: 210px;
+    height: 100px;
+    background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.checkout-header-logo a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.checkout-header-step{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	background-position: 100px 100px;
+	width: 505px;
+	height: 46px;
+}
+
+.step-identification .checkout-header-step{
+	background-position: 0 -200px;
+}
+
+.step-shipping .checkout-header-step{
+	background-position: 0 -250px;
+}
+
+.step-gift .checkout-header-step{
+	background-position: 0 -350px;
+}
+
+.step-payment .checkout-header-step{
+	background-position: 0 -300px;
+}

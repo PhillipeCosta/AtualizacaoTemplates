@@ -1,0 +1,38 @@
+/*topo*/
+
+.header{
+    height: 95px;
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+}
+.containertopo {
+    width: 100%;
+    border-bottom: 2px solid #cfcfcf;
+}
+.topo_esquerda{
+    float: left;
+}
+.logo h1{
+    display: block;
+    height: 94px;
+    left: 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: 13px;
+    width: 326px;
+    background-size: 100%;
+}
+
+.logo h1 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.passos {
+    float: right;
+    margin: 12px 0 0;
+    overflow: hidden;
+    text-align: right;
+}

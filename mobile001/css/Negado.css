@@ -1,0 +1,12 @@
+.box-bt a,
+.box-bt a:hover{
+    background: none repeat scroll 0 0 #FF6600;
+    border: 0 none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 17px;
+    margin: 1em auto;
+    padding: 1em;
+    width: 94%;
+}

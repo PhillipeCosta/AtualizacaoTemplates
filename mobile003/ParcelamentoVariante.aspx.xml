@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ParcelamentoProdutos><ParcelamentoProduto ID="ParcelamentoProduto1"><CssComponente><![CDATA[]]></CssComponente><ParcelamentoProdutoHTML><![CDATA[]]></ParcelamentoProdutoHTML></ParcelamentoProduto></ParcelamentoProdutos><PrecoProdutos><PrecoProduto ID="PrecoProduto1"><ParcelamentoProdutoHTML><![CDATA[<div style="display:none">
+    <div id="product-splitPrice-details">
+        <div class="heading-primary">
+            <h2>Formas de Parcelamento</h2>
+        </div>
+        <div class="product-splitPrice-details-info">
+            <ul>
+                <repeticao:metodo_pagamento>
+                <li>
+                    <div class="product-splitPrice-details-image"><img src="[B1]" alt="Parcelamento" /></div>
+                    <div class="product-splitPrice-details-list">
+                        <table border="0" cellpadding="2" cellspacing="1">
+                            <thead>
+ 
+                                <tr>
+                                    <th>Número de Parcelas</th>
+                                    <th>Valor das Parcelas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <repeticao:parcelas>
+                                <tr>
+                                    <td>[B2]</td>
+                                    <td>[B3]</td>
+                                </tr>
+                                </repeticao:parcelas>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                </repeticao:metodo_pagamento>
+            </ul>
+        </div>
+    </div>
+</div>]]></ParcelamentoProdutoHTML><PrecoProdutoHTML><![CDATA[<div class="product-price-content" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+  <meta content="BRL" itemprop="priceCurrency" />
+    <div class="product-oldPrice">
+      <del class="produt-oldPrice-price">[A1]</del>
+    </div>
+    <div class="product-price">
+      <span itemprop="price" class="product-price-price">[A3]</span> 
+    </div>
+    <condicao:desconto_vista>
+      <div class="product-payInFullPrice">
+        <span class="product-payInFullPrice-title">(ou <strong class="product-payInFullPrice-price">[A13]</strong> para pagamentos à vista)</span>
+      </div>
+    </condicao:desconto_vista>
+    <condicao:parcelamento>
+      <div class="product-splitPrice">
+        <span class="product-splitPrice-title">ou </span><span class="product-splitPrice-quantity">[A6]x </span><span class="product-splitPrice-title"> de </span> <span class="product-splitPrice-price">[A7]</span>
+        <span class="product-splitPrice-title">sem juros</span>      
+      </div> 
+    </condicao:parcelamento>
+</div> ]]></PrecoProdutoHTML></PrecoProduto></PrecoProdutos></controles></page>

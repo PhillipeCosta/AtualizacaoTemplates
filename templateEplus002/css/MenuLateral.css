@@ -1,0 +1,104 @@
+/*Menu*/
+
+
+#menu_lateral{
+    background: url('../imagens/bg_categoria.png') no-repeat top center;
+    padding:36px 0 0 0;
+    margin: 7px 0 0 5px;
+    width: 190px;
+}
+
+#menu_lateral ul{
+    list-style: none;
+    background-image: url("../imagens/bg_categoria_final.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 11px;
+}
+
+#menu_lateral ul li{
+    border:1px solid #d4d4d4;
+    border-top: none;
+}
+
+#menu_lateral ul li a{
+    color: #062a59;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    background: #E6E6E6;
+}
+
+#menu_lateral ul li a:hover{
+    color: #FF6701;
+}
+
+#menu_lateral .depts_filho{
+    background-image: none;
+    padding:0px;
+}
+
+#menu_lateral .depts_filho li{
+    border: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#menu_lateral .depts_filho li a{
+    color: #717171;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 10px 10px 15px;
+    display: block;
+    background: none;
+    font-weight: normal;
+}
+
+#menu_lateral .depts_filho li a:hover{
+    background: url('../imagens/seta_menu.png') #fafafa no-repeat left center;
+    background-position: 4px center;
+    font-weight: bold;
+    color: #FF6701;
+}
+
+.boletim_bg {
+background: url('../imagens/bg_news.png') no-repeat top center;
+padding: 0 0 0 0;
+margin: 7px 0 0 5px;
+width: 190px;
+height: 255px;
+}
+
+.caixadetextoboletim ul li {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 2px 2px 2px;
+    text-decoration: none;
+    display: block;
+}
+
+.caixadetextoboletim ul {
+    list-style: none;
+    background-repeat: no-repeat;
+}
+
+.caixadetextoboletim {
+    padding:50px 10px 10px 10px;
+}
+
+.caixadetextoboletim a{
+    color: #fff;
+    font-weight: normal;
+    font-size:11px;
+    padding-left:5px;
+}
+
+.ultimalinha {
+    height: 25px;
+    padding-top: 10px;
+}
+.botao {
+    float: right;
+}

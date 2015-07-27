@@ -1,0 +1,13 @@
+.gift-package .characters{
+    margin-top: 10px;
+}
+
+.gift-package .characters span{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.gift-package ul li input[type="radio"]{
+	margin-right: 5px;
+}

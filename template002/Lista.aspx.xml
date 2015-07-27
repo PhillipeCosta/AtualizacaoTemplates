@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><FiltroGruposs><FiltroGrupos ID="departamentGroups"><FiltroGruposHTML><![CDATA[<div class="form">
+  <repeticao:tipo_filtro>
+    <h6 class="text-uppercase main-padding"><strong>[A0]</strong></h6>
+  	<select class="departmentGroups">
+      <option value="" selected="">Selecione o filtro</option>
+      <repeticao:filtro>
+        <option value="[A3]">[A1]</option>
+      </repeticao:filtro>
+  	</select>
+  </repeticao:tipo_filtro>
+</div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.departmentGroups').change(function(){ 
+            var filtersGroup = $(this).val();
+            window.location = filtersGroup;
+      });        
+    });
+    
+    
+  </script>]]></FiltroGruposHTML></FiltroGrupos></FiltroGruposs><FiltroFaixaPrecos><FiltroFaixaPreco ID="departamentPriceRange"><FiltroFaixaPrecoHTML><![CDATA[<div class="form">
+    <h6 class="text-uppercase main-padding"><strong>Preço</strong></h6>
+  	[A0]
+	[A1]
+    <a href="[A2]" class="bt btn-secondary text-center text-uppercase pull-right" style="margin: 12px;">Filtrar</a>  
+</div>]]></FiltroFaixaPrecoHTML></FiltroFaixaPreco></FiltroFaixaPrecos><ProdutoBarraNavegacaos><ProdutoBarraNavegacao ID="breadCrumb"><ProdutoBarraNavegacaoHTML><![CDATA[<div class="bread-crumb text-lowercase">
+  <a href="[A0]">Início</a><a href="[A1]">&nbsp;//&nbsp;listagem de produtos</a> 
+</div>]]></ProdutoBarraNavegacaoHTML></ProdutoBarraNavegacao></ProdutoBarraNavegacaos><FiltrosUtilizadoss><FiltrosUtilizados ID="departamentFilterBy"><FiltrosUtilizadosHTML><![CDATA[<div class="main-overflow main-padding20 text-left department-filterBy">
+	<strong class="text-uppercase pull-left">Filtrado por&nbsp;</strong>
+	<repeticao:parametros_utilizados>
+  		<div class="pull-left main-overflow"><a href="[A1]" class="btn-secondary text-uppercase" style="border-radius: 0">[A0]</a><a href="[A1]" class="btn-secondary text-uppercase" style="border-radius: 0; padding: 6px 6px 6px 0">x</a></div>
+	</repeticao:parametros_utilizados>
+</div>  ]]></FiltrosUtilizadosHTML></FiltrosUtilizados></FiltrosUtilizadoss><ListagemCompletas><ListagemCompleta ID="departamentCollection"><Comparar value="Sim" /><HTMLComparacao><![CDATA[]]></HTMLComparacao><HTMLDestaque><![CDATA[]]></HTMLDestaque><HTMLListagem><![CDATA[<h4 class="text-left heading-collection main-padding">// [D0]</h4>
+<h6 class="main-padding" style="line-height:20px;">[D5]</h6>
+<ul class="collection main-overflow">
+  <repeticao:produtos>
+    <li class="col-md-3">
+      <div class="text-center collection-photo <condicao:produto_indisponivel>container-unavailable</condicao:produto_indisponivel>">
+        <condicao:promocao_express>
+            <a href="[D30]" class="collection-product-express link-modal-iframe"><img src="[D28]" alt="[D6]" title="Clique e Saiba Mais!" /></a>
+        </condicao:promocao_express>
+        <condicao:produto_indisponivel>
+          <div class="collection-product-unavailable">        
+            <a href="[D1]" class="btn-unavailable text-uppercase">Indisponível</a>
+          </div>
+        </condicao:produto_indisponivel>
+        <a href="[D1]" class="collection-product-photo"><img src="[D2]?width=200&height=200" alt="[D6]" /></a>
+        <condicao:lancamento>
+          <div class="collection-product-release text-uppercase">
+            <a href="[D1]" class="btn-release">Lançamento</a>
+          </div>
+        </condicao:lancamento>
+        <condicao:promocao_frete>
+            <a href="[D37]" class="collection-product-shippingPromo link-modal-iframe"><img src="[D29]" alt="" title="Clique e Saiba Mais!" /></a>
+        </condicao:promocao_frete>
+        <condicao:promocao_brinde>
+          <a href="[D56]" class="collection-product-gift link-modal-iframe" target="_blank"><img src="[D57]" alt="[D6]" title="Clique e Saiba Mais!" /></a>
+        </condicao:promocao_brinde>         
+      </div>      
+      <div class="text-center">
+      <condicaofalsa:sob_orcamento>
+          <div class="collection-buyFast main-overflow">
+           <condicao:comprar_direto>            
+            <div class="collection-buyFast-quantity main-overflow pull-left">
+              <a href="[D26]"><span class="fa fa-caret-left"></span></a>
+              [D23]
+              <a href="[D25]"><span class="fa fa-caret-right"></span></a>
+            </div>
+            <div class="collection-buyFast-btn main-overflow pull-left">
+              <a href="[D24]" class="btn-buyFast btn-primary">comprar</a>
+            </div>
+           </condicao:comprar_direto>          
+          </div>
+        </condicaofalsa:sob_orcamento>
+        <condicao:sob_orcamento>
+          <div class="text-center">
+            <a href="[A1]" class="collection-quoteRequest btn btn-primary">Sob Orçamento</a>
+          </div> 
+        </condicao:sob_orcamento>    
+        <a href="[D1]" class="collection-name collection-nameMargin text-left">[D6]</a>
+        <condicaofalsa:sob_orcamento> 
+        <condicao:preco_antigo>
+          <h6 class="collection-price text-left">de [D19]</h6>
+        </condicao:preco_antigo>            
+        	<h5 class="collection-adjustedPrice collection-adjustedPrice-margin text-left">por [D15]</h5>   
+        <condicao:parcelamento>
+        	<h6 class="collection-instalments text-left">[D13] de [D12] s/juros</h6>
+        </condicao:parcelamento>
+        <h6 class="collection-payInFullPrice text-left collection-adjustedPrice-margin">
+        	<condicao:desconto_vista><a href="[D1]">ou <strong>[D27]</strong> à vista</a></condicao:desconto_vista>
+        </h6> 
+        </condicaofalsa:sob_orcamento>             
+      </div>    
+    </li>
+  </repeticao:produtos>
+</ul>]]></HTMLListagem><HTMLModelo><![CDATA[<div class="collection-top main-overflow">
+  <div class="collection-pagination pull-left form col-md-6 main-clearPadding">[A4]</div>
+  <div class="collection-ordenation pull-right text-right col-md-6 main-clearPadding">[A1]</div>
+</div>
+<div class="main-clear main-overflow">
+	[A2]
+</div>
+<div class="collection-bottom main-padding main-overflow">
+  <div class="collection-pagination pull-left form col-md-6 main-clearPadding">[A4]</div>
+  <div class="collection-ordenation pull-right text-right col-md-6 main-clearPadding">[A1]</div>
+</div>]]></HTMLModelo><HTMLOrdenarPor><![CDATA[<strong class="text-uppercase">Ordenar por&nbsp;&nbsp;</strong>[E0]]]></HTMLOrdenarPor><HTMLPaginacao><![CDATA[<condicao:paginacao>
+  <div class="collection-pagination-pages">
+        <condicao:pagina_anterior>
+            <a href="[F5]"><span class="fa fa-angle-left"></span> </a>
+        </condicao:pagina_anterior>
+    	<span class="text-uppercase collection-pagination-title">Páginas&nbsp;</span>
+        <repeticao:paginas quantidade="6">
+          <a href="[F7]" class="page <condicao:pagina_selecionada> active </condicao:pagina_selecionada>"><strong>[F8]</strong></a>
+        </repeticao:paginas>
+        <condicao:proxima_pagina>
+          	<a href="[F6]"><span class="fa fa-angle-right"></span></a>
+        </condicao:proxima_pagina>
+  </div>  
+</condicao:paginacao>]]></HTMLPaginacao><HTMLPesquisaInvalida><![CDATA["<strong>A pesquisa por [G1] possúi termos inválidos. Seus termos de pesquisa devem possuír pelo menos três caracteres.</strong>"]]></HTMLPesquisaInvalida><HTMLSemResultados><![CDATA[<h4 class="text-left heading-collection main-padding">// Desculpe</h4>
+<h6 class="main-padding" style="line-height:20px;">Departamentos sem produtos cadastrados</h6>]]></HTMLSemResultados><ImagemAvaliacaoDeselecionado value="" /><ImagemAvaliacaoSelecionado value="" /><MostraDestaque value="Não" /><Ordenar value="Sim" /><Paginacao value="Sim" /><TamanhoImagem value="Gigantes" /><TipoExibicao value="Listagem" /></ListagemCompleta></ListagemCompletas><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

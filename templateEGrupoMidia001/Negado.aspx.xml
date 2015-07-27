@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Negados><Negado ID="denied"><NegadoHTML><![CDATA[<div class="sorry">
+	<div class="sorry-content ops">
+      	<div class="sorry-info">
+          	<h2>O pedido não pode ser <strong>autorizado</strong></h2>
+      		<h3>O que aconteceu?</h3>
+          	<p>O pedido [A0] não foi autorizado pela operadora.<br />
+			   O motivo citado pela mesma foi: [A1]
+          	</p>
+            <p>Aconselhamos a você clicar no botão <strong>"Tentar Novamente"</strong> e, se possível, fechar o pedido com outro<br /> método de pagamento.</p>
+          	<a href="[A2]" class="bt-big-primary tryAgain-bt">Tentar Novamente</a>
+  		</div>
+  	</div>
+ </div>]]></NegadoHTML></Negado></Negados></controles></page>

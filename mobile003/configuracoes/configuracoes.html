@@ -1,0 +1,284 @@
+<fieldset>
+	<h1>Geral</h1>
+	<table>
+		<tr>
+			<td><label>Cor do fundo</label><small>Cor do fundo da loja.</small></td>
+			<td>
+				<input type="text" name="main_backgroundColor" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Favicon</label><small>Favicon é o ícone que aparece ao lado do nome da página na aba do navegador. Por conta do cache do navegador, essa alteração poderá demorar até 48 horas para ser aplicada.</small></td>
+			<td>
+				<input type="file" name="main_faviIcon" value="favicon.ico" data-max-width="16" data-max-height="16" data-max-weight="204800" />
+				<small>Formato Obrigatório: .ico - Tamanho Obrigatório: 16x x 16px</small>
+			</td>
+		</tr> 
+		<tr>
+			<td><label>Cor principal</label><small>Cor principal da loja. Ela será aplicada em diversas locais e será a com maior destaque entre outros elementos.</small></td>
+			<td>
+				<input type="text" name="main_primaryColor_color" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor de texto geral</label><small>Cor de textos padrão. Caso o texto não tenha nenhuma formatação de cor ela pegará essa cor. Recomenda-se utilizar variações de cinza/preto.</small></td>
+			<td>
+				<input type="text" name="main_darkText_color" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor das barras</label><small>Cor de fundo das barras de tabelas de pedido, título da ajuda etc.</small></td>
+			<td>
+				<input type="text" name="main_bar_color" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor de destaque das barras</label><small>Cor de fundo de destaque de tabelas de pedido, título da ajuda, etc. exemplo: Menu "Ver todos departamentos"</small></td>
+			<td>
+				<input type="text" name="main_darkBar_color" class="color"/>
+			</td>
+		</tr>
+	</table>
+
+	<h1>Títulos</h1>
+	<table>
+		<tr>
+			<td><label>Cor dos títulos</label></td>
+			<td>
+				Background: <input type="text" name="heading_primary_backgroundColor" class="color"/>
+			</td>
+			<td>
+				Cor do Texto: <input type="text" name="heading_primary_color" class="color"/>
+			</td>
+		</tr>
+	</table>
+
+	<h1>Box</h1>
+	<table>
+		<tr>
+			<td><label>Cores</label></td>
+			<td>
+				Background: <input type="text" name="box_backgroundColor" class="color"/>
+			</td>
+			<td>
+				Cor do Texto: <input type="text" name="box_color" class="color"/>
+			</td>
+		</tr>
+	</table>
+
+	<h1>Topo</h1>
+	<table>
+		<tr>
+			<td><label>Cor de fundo</label><small>Cor de fundo do topo.</small></td>
+			<td>
+				<input type="text" name="header_backgroundColor" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Imagem da marca</label></td>
+			<td>
+				<input type="file" name="header_logo_image" value="logo_custom.png" data-max-width="300" data-max-height="100" data-max-weight="204800" />
+				<small>Tamanho recomendado: 275px x 85px</small>
+			</td>
+		</tr> 
+		<tr>
+			<td><label>Cor de fundo da busca</label></td>
+			<td>
+				<input type="text" name="header_search_backgroundColor" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor do texto da busca</label></td>
+			<td>
+				<input type="text" name="header_search_color" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor da borda da busca</label></td>
+			<td>
+				<input type="text" name="header_search_borderColor" class="color"/>
+			</td>
+		</tr>
+	</table>
+
+	<h1>Vitrines</h1>
+	<table>
+		<tr>
+			<td colspan="3"><h2>Página Inicial</h2></td>
+		</tr>
+		<tr>
+			<td><label>Vitrine 1</label></td>
+			<td colspan="2">
+				<select name="collections_home1_collection" class="collection" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Vitrine 2</label></td>
+			<td colspan="2">
+				<select name="collections_home2_collection" class="collection" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3"><h2>Cores</h2></td>
+		</tr>
+		<tr>
+			<td><label>Cor de Fundo</label></td>
+			<td colspan="2">
+				<input type="text" name="collections_prodtuct_backgroundColor" class="color" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Nome do Produto</label></td>
+			<td colspan="2">
+				<input type="text" name="collections_prodtuctName_color" class="color" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Preço Antigo do Produto</label></td>
+			<td colspan="2">
+				<input type="text" name="collections_prodtuctOldPrice_color" class="color" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Preço do Produto</label></td>
+			<td colspan="2">
+				<input type="text" name="collections_prodtuctPrice_color" class="color" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Preço Parcelado do Produto</label></td>
+			<td colspan="2">
+				<input type="text" name="collections_prodtuctSplitPrice_color" class="color" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor da tag de pré-venda e lançamento</label><small>Cor do fundo e cor do texto da tag de pré-venda e de lançamento que aparecem nas vitrines.</small></td>
+			<td>
+				Background: <input type="text" name="collections_releaseTag_backgroundColor" class="color"/>
+			</td>
+			<td>
+				Cor do Texto: <input type="text" name="collections_releaseTag_color" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor da tag oferta</label><small>Cor do fundo e cor do texto da tag de oferta que aparecem nas vitrines.</small></td>
+			<td>
+				Background: <input type="text" name="collections_offerTag_backgroundColor" class="color"/>
+			</td>
+			<td>
+				Cor do Texto: <input type="text" name="collections_offerTag_color" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor da tag indisponibilidade</label><small>Cor do fundo e cor do texto da tag de produto indisponível que aparecem nas vitrines.</small></td>
+			<td>
+				Background: <input type="text" name="collections_unavailableTag_backgroundColor" class="color"/>
+			</td>
+			<td>
+				Cor do Texto: <input type="text" name="collections_unavailableTag_color" class="color"/>
+			</td>
+		</tr>
+	</table>
+
+	<h1>Botões</h1>
+	<table>
+		<tr>
+			<td><label>Botões Normais</label><small>Cor do fundo e cor do texto da maioria dos botões da loja.</small></td>
+			<td>
+				Background: <input type="text" name="button_primary_backgroundColor" class="color"/>
+			</td>
+			<td>
+				Cor do Texto: <input type="text" name="button_primary_color" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Botões Especiais</label><small>Cor do fundo e cor do texto dos botões de ação como o botão comprar e o botão finalizar pedido.</small></td>
+			<td>
+				Background: <input type="text" name="button_special_backgroundColor" class="color"/>
+			</td>
+			<td>
+				Cor do Texto: <input type="text" name="button_special_color" class="color"/>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Botões Discretos</label><small>Cor do fundo e cor do texto dos botões de ações discretas como o avise-me.</small></td>
+			<td>
+				Background: <input type="text" name="button_disabled_backgroundColor" class="color"/>
+			</td>
+			<td>
+				Cor do Texto: <input type="text" name="button_disabled_color" class="color"/>
+			</td>
+		</tr>
+	</table>
+
+	<h1>Rodapé</h1>
+	<table>
+		<tr>
+			<td><label>Texto de informações da loja</label></td>
+			<td>
+				<textarea name="footer_storeInfo_text" style="width: 665px; height: 45px;"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor do fundo</label></td>
+			<td>
+				<input type="text" name="footer_backgroundColor" class="color" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor da borda</label></td>
+			<td>
+				<input type="text" name="footer_borderColor" class="color" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor dos links institucionais</label></td>
+			<td>
+				<input type="text" name="footer_institutionalLink_color" class="color" />
+			</td>
+		</tr>
+		<tr>
+			<td><label>Cor do texto</label></td>
+			<td>
+				<input type="text" name="footer_text_color" class="color" />
+			</td>
+		</tr>
+	</table>
+  <h1>Avançado</h1>
+  <table>
+  <tr>
+      <td>
+    <small>Insira no campo abaixo o código CSS que desejar para alterar cores, posições e elementos. Essa opção só deve ser usada por quem possui conhecimento em CSS.</small>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    CSS<br/>
+        <textarea name="advanced_css" rows="50" cols="4" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <small>Insira nos campos abaixo o códigos javascript que você deseja que apareçam em todas as páginas. É necessário colocar as tags &lt;script&gt;&lt;/script&gt; quando for códigos em javascript.</small>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        &lt;head&gt;<br/>
+        <textarea name="advanced_script_headBottom" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Após o &lt;body&gt; <br/>
+        <textarea name="advanced_script_bodyTop" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Antes do &lt;/body&gt;<br/>
+        <textarea name="advanced_script_bodyBottom" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>    
+  </table> 
+</fieldset>

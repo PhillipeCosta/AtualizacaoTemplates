@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><OpiniaoProdutos><OpiniaoProduto ID="order_products_rate"><ImagemAvaliacaoDeselecionado value="rate-star-off.png" /><ImagemAvaliacaoSelecionado value="rate-star-on.png" /><OpiniaoProdutoHTML><![CDATA[<div class="rate">
+    <div class="heading-primary">
+      <h1>
+        <strong>Opine</strong> sobre os produtos que você comprou
+      </h1>
+    </div>
+  	<div class="form">
+      <div class="form-item validate required w-50">
+            <label><span class="form-title">Nome*</span>[A0]</label>
+      </div>
+  	  <div class="form-item validate required w-50" data-type="email">
+            <label><span class="form-title">Email*</span>[A1]</label>
+      </div>
+      <div class="form-item w-50">
+            <label><span class="form-title">Cidade</span>[A3]</label>
+      </div>
+  	  <div class="form-item w-50">
+        <label><span class="form-title">Estado <small>(sigla)</small></span>[A4]</label>
+      </div>
+      <div style="display: none;">
+            [A2]
+      </div>
+    </div>
+    <div class="rate-content">
+        <ul class="rate-products">
+            <repeticao:produtos>
+                <li class="rate-products-iten">
+                  <div class="heading-secundary"><h2>[A6]</h2></div>
+                  <div class="rate-product-image to-left w-20">
+                    <img src="[A5]?width=150&height=150" width="180" height="180" alt="[A6]" />
+                  </div>
+                  <div class="rate-product-rate to-left w-30 form">
+                      <div class="form-item">
+                        <label><span class="form-title">Avaliação*</span>[A7]</label>
+                      </div>
+                      <div class="form-item">
+                        <label><span class="form-title">Comentário*</span>[A8]</label>
+                      </div>
+                  </div>
+                </li>
+            </repeticao:produtos>
+        </ul>
+        <a href="[A9]" class="bt-big-primary rate-bt">Avaliar Todos</a>
+    </div>
+</div>
+]]></OpiniaoProdutoHTML><ProdutosAvaliadosHTML><![CDATA[<div class="alert">
+  	<strong>Antenção!</strong> Você já avaliou os produtos desse pedido!
+</div>]]></ProdutosAvaliadosHTML><TamanhoImagem value="Gigantes" /></OpiniaoProduto></OpiniaoProdutos><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

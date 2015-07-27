@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresentesListagems><ListaPresentesListagem ID="giftList_list"><ListaPresentesListagemHTML><![CDATA[<h4 class="heading-collection">// Minhas listas</h4>
+<div class="main-overflow main-padding20">
+    <table width="100%;" cellspacing="0" cellpadding="0" border="0" class="table table-striped">
+        <thead>
+            <tr class="text-uppercase">
+              <th>Nome da Lista</th>
+              <th>Tipo de Lista</th>
+              <th>Nome dos Noivos</th>
+              <th>Data/Hora do Evento</th>
+              <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+          <repeticao:listagem>
+            <tr>
+              <td><a href="[A3]">[A19]</a></td>
+              <td><a href="[A3]">[A0]</a></td>
+              <td><a href="[A3]">[A2]</a></td>
+              <td><a href="[A3]">[A1]</a></td>
+              <td><a href="[A16]" style="text-decoration: underline;">remover</a></td>
+            </tr>                                                       
+          </repeticao:listagem>
+        </tbody>
+    </table>
+</div>
+<ul class="pagination">
+  <repeticao:pagina>
+    <li class="<condicao:pagina_selecionada>active</condicao:pagina_selecionada>"><a href="[A6]">[A5]</a></li>
+  </repeticao:pagina>
+</ul>
+
+[A17]
+
+
+]]></ListaPresentesListagemHTML><ListaPresentesUsuarioSemListagemHTML><![CDATA[<div class="alert alert-warning" role="alert">
+   <h5>Não existem listas de presentes criadas por você.</h5>
+</div>
+
+]]></ListaPresentesUsuarioSemListagemHTML><QuantidadeItensPorPagina value="5" /></ListaPresentesListagem></ListaPresentesListagems></controles></page>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><PedidoDadoss><PedidoDados ID="PedidoDados" NomeAmigavel="" Visible="True"><PedidoDadosHTML><![CDATA[<div align="center">
+							<table class="tab_interna" width="620" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<th background="imagens/tab_bg.gif" colspan="2">
+										<img hspace="0" class="img_left" src="imagens/tit_confira.gif"/>
+										<img hspace="0" class="img_right" src="imagens/tab_dir.gif"/>
+									</th>
+								</tr>
+								<tr>
+									<td align="center">
+										<br/>
+										<div id="PedidoDados_Boleto">
+											<p class="cod">{0}</p>
+											<div class="mail">{1}</div>
+										</div>
+									</td>
+									<td align="center">
+										<!-- Gerar_boleto -->
+										<a href="{2}" target="_blank">
+											<img src="imagens/bt_imp_boleto.gif" alt="Gerar Boleto" width="302" height="53" border="0">
+										</a>
+										<!-- Fim_Gerar_boleto -->
+										<!-- Conveniados -->
+										<a href="{3}" target="_blank">
+											<img src="imagens/conveniados_s.gif" border="0">
+										</a>
+										<!-- Fim_Conveniados -->
+									</td>					   
+								</tr>
+								<tr>
+									<th background="imagens/tab_bg_inf.gif" colspan="2">
+										<img hspace="0" class="img_left" src="imagens/tab_esq_inf.gif"/>
+										<img hspace="0" class="img_right" src="imagens/tab_dir_inf.gif"/>
+									</th>
+								</tr>
+							</table>
+						</div><!-- CSS_Inicio -->]]></PedidoDadosHTML><PedidoDadosNaoCadastradoHTML><![CDATA[<h1>Pedido não cadastrado</h1> teste<!-- CSS_Inicio -->]]></PedidoDadosNaoCadastradoHTML></PedidoDados><PedidoDados ID="PedidoDados1"><PedidoDadosHTML><![CDATA[<div class="box-confirmacao-dados">
+  <div class="tit-box-carrinho-checkout heading-secondary">
+    <h2><strong>Pedido [A0]</strong></h2>     
+  </div>  
+  <condicao:boleto>
+         <a href="javascript: window.open('[A2]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);" class="text-center bt-principal btn-secondary">Re-imprimir boleto</a>
+  </condicao:boleto>
+</div>]]></PedidoDadosHTML><PedidoDadosNaoCadastradoHTML><![CDATA[<div class="box-confirmacao-dados">
+  <div class="tit-box-carrinho-checkout">
+      <h2>Pedido não encontrado</h2>
+  </div>  
+</div>]]></PedidoDadosNaoCadastradoHTML></PedidoDados><PedidoDados ID="Afiliado_Info"><CssComponente><![CDATA[]]></CssComponente><PedidoDadosHTML><![CDATA[<condicao:afiliado>
+<div class="escolha_afiliado">
+    <h2>Dados do Afiliador</h2>
+    <span class="meu_afiliado">Meu Afiliado:</span> <span class="meu_afiliado_info">[A5] - [A6]</span>
+</div>
+</condicao:afiliado>
+]]></PedidoDadosHTML><PedidoDadosNaoCadastradoHTML><![CDATA[]]></PedidoDadosNaoCadastradoHTML></PedidoDados></PedidoDadoss><PedidoPagamentos><PedidoPagamento ID="PedidoPagamento" NomeAmigavel="" Visible="True"><MetodoPagamentoBradescoHTML><![CDATA[]]></MetodoPagamentoBradescoHTML><MetodoPagamentoCartaoOfflineHTML><![CDATA[]]></MetodoPagamentoCartaoOfflineHTML><MetodoPagamentoContraEntregaHTML><![CDATA[]]></MetodoPagamentoContraEntregaHTML><MetodoPagamentoDepositoHTML><![CDATA[[A0]<!-- CSS_Inicio -->]]></MetodoPagamentoDepositoHTML><MetodoPagamentoItauHTML><![CDATA[]]></MetodoPagamentoItauHTML><MetodoPagamentoRedeCardHTML><![CDATA[]]></MetodoPagamentoRedeCardHTML><MetodoPagamentoVisanetHTML><![CDATA[]]></MetodoPagamentoVisanetHTML><PedidoPagamentoHTML><![CDATA[						<div align="center">
+							<table class="tab_interna" width="620" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<th background="imagens/tab_bg.gif">
+										<img hspace="0" class="img_left" src="imagens/tit_dados_pagamento.gif"/>
+										<img hspace="0" class="img_right" src="imagens/tab_dir.gif"/>
+									</th>
+								</tr>
+								<tr>
+									<td>
+										[A0]
+									</td>
+								</tr>
+								<tr>
+									<th background="imagens/tab_bg_inf.gif">
+										<img hspace="0" class="img_left" src="imagens/tab_esq_inf.gif"/>
+										<img hspace="0" class="img_right" src="imagens/tab_dir_inf.gif"/>
+									</th>
+								</tr>
+							</table>
+						</div>
+						<!-- CSS_Inicio -->]]></PedidoPagamentoHTML></PedidoPagamento><PedidoPagamento ID="PedidoPagamento1"><MetodoPagamentoAccesstageHTML><![CDATA[]]></MetodoPagamentoAccesstageHTML><MetodoPagamentoBradescoHTML><![CDATA[<div>
+  <p><strong>Forma de Pagamento:</strong> Bradesco - [H6]</p>
+</div>  
+<div>
+<p><strong>Valor do pedido:</strong> [H4]</p>
+</div>
+<div>
+<p><strong>Vencimento:</strong> [H7]</p>
+</div>
+<div>  
+<p><strong>Autenticação:</strong> [H12]</p>
+</div>]]></MetodoPagamentoBradescoHTML><MetodoPagamentoCartaoOfflineHTML><![CDATA[<div>
+  <p><strong>Forma de Pagamento:</strong> Cartão [D0]</p>
+</div>
+<div>
+  <p><strong>Valor do pedido:</strong> [D3] de [D1]</p>
+</div>
+<div>
+  <condicao:taxa_juros>
+   <p><strong>Taxa de juros:</strong> [D4]</p>
+  </condicao:taxa_juros>
+</div>  
+]]></MetodoPagamentoCartaoOfflineHTML><MetodoPagamentoContraEntregaHTML><![CDATA[<div>
+  <p><strong>Forma de Pagamento:</strong> Pagamento na entrega</p>
+</div>
+<div>
+  <p><strong>Valor do pedido:</strong> [C0]</p>
+</div>  ]]></MetodoPagamentoContraEntregaHTML><MetodoPagamentoDepositoHTML><![CDATA[<div>
+  <p><strong>Forma de Pagamento:</strong> Depósito Bancário</p>
+</div>
+<div>
+  <p><strong>Valor a ser depositado:</strong> [B0]</p>
+</div>
+<div>
+  <p><strong>Favorecido:</strong> [B6] - [B7]</p>
+</div>
+<div>
+  <p><strong>Código do Banco:</strong> [B3]</p>
+</div>
+<div>
+  <p><strong>Agência:</strong> [B4]</p>
+</div>
+<div>
+  <p><strong>Conta:</strong> [B5]</p>
+</div>
+<div>
+  <p><strong>Prazo de pagamento:</strong> [B2]</p>
+</div>  
+
+]]></MetodoPagamentoDepositoHTML><MetodoPagamentoItauHTML><![CDATA[<div>
+  <p><strong>Forma de Pagamento:</strong> Itaú</p>
+
+</div>  
+<div>
+  <p><strong>Descrição do Método:</strong> [G0]</p>
+</div>  
+<div>
+  <p><strong>Descrição do pagamento:</strong> [G1]</p>
+
+</div>  
+<div>
+  <p><strong>Valor do pedido:</strong> [G2]</p>
+</div>  ]]></MetodoPagamentoItauHTML><MetodoPagamentoMoipHTML><![CDATA[]]></MetodoPagamentoMoipHTML><MetodoPagamentoPadraoHTML><![CDATA[<div>
+  <p><strong>Forma de Pagamento: </strong>[K0]</p>
+</div>
+<div>
+  <p><strong>Valor:</strong> [K4]</p>
+</div>  ]]></MetodoPagamentoPadraoHTML><MetodoPagamentoRedeCardHTML><![CDATA[<div>
+  <p><strong>Forma de Pagamento:</strong> Cartão de crédito - Redecard</p>
+</div>    
+<div>  
+  <p><strong>Descrição do Método: </strong> [F0]</p>
+</div>    
+<div>  
+  <p><strong>Código de Autorização:</strong> [F4]</p>
+</div>    
+<div>  
+  <p><strong>Comprovante de Venda:</strong> [F5]</p>
+</div>    
+<div>  
+  <p><strong>Valor do pedido:</strong> [F3]x de [F1]</p>
+</div>  ]]></MetodoPagamentoRedeCardHTML><MetodoPagamentoVisanetHTML><![CDATA[<div>
+  <p><strong>Forma de Pagamento:</strong> Cartão de crédito - Cielo</p>
+</div>
+<div>
+  <p><strong>Identificação do pedido:</strong> [E4]</p>
+</div>
+<div>
+  <p><strong>Código de Autorização:</strong> [E5]</p>
+</div>  
+<div>
+  <condicao:taxa_juros>
+    <p><strong>Taxa de Juros:</strong> [E3]</p>
+  </condicao:taxa_juros>
+</div>
+<div>
+  <p><strong>Valor do pedido:</strong> [E2] de [E0]</p>
+</div>  ]]></MetodoPagamentoVisanetHTML><PedidoPagamentoHTML><![CDATA[<div class="pedido_dados">        
+    [A0] 
+</div>]]></PedidoPagamentoHTML></PedidoPagamento></PedidoPagamentos><PedidoItenss><PedidoItens ID="PedidoItens" NomeAmigavel="" Visible="True"><PedidoItensHTML><![CDATA[sssssssssssssssss<!-- CSS_Inicio -->]]></PedidoItensHTML></PedidoItens><PedidoItens ID="PedidoItens1"><CssComponente><![CDATA[]]></CssComponente><PedidoItensHTML><![CDATA[<h2 class="confira">Confira seu Pedido</h2>
+<div id="carrinho">
+        <table class="tab_carrinho" cellpadding="0" cellspacing="0" border="0" width="100%;">
+            <thead>
+                <tr>
+                    <th style="width: 80px; text-align:center; background-position:left top;"></th>
+                    <th style="text-align: left;">Produto</th>
+                    <th>Quantidade</th>
+                    <th>Presente</th>
+                    <th>Preço Unitário</th>
+                    <th style="background-position:right top">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <repeticao:produtos>
+                <tr class="item_carrinho">
+                    <td style="width: 80px">
+                        <condicao:promocao_express>
+                        <script language="javascript">
+                        var win = null;
+                        function NovaJanela(pagina,nome,w,h,scroll){
+                        	LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+                        	TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+                        	settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+                        	win = window.open(pagina,nome,settings);
+                        }
+                        </script>
+                        <a href="[A24]" onclick="NovaJanela(this.href,'nomeJanela','680','600','yes');return false"><img src="[A21]" alt="[A1] em promoção" /></a>
+                        </condicao:promocao_express>
+                      <div style="width: 166px;"><img src="[A4]?width=150&height=150" alt="Produto1" border="0" /></div>
+                    </td>
+                  	<td style="text-align: left;">
+                      	<condicao:promocao_frete>
+                               <a href="[A23]"><img src="[A22]" alt="Frete Grátis" /></a>
+                        </condicao:promocao_frete>
+                    	<div>[A1]</div>
+                  	</td>
+                    <td>[A5]</td>
+                    <td>[A17]</td>
+                    <td>[A6]</td>
+                    <td>[A8]</td>
+                </tr>
+                  <condicao:customizacao_carrinho>
+                      <repeticao:customizacao_carrinho>
+                          <tr class="item_customizacao">
+                              <th colspan="6">[A28]</th>
+                          </tr>
+                        <repeticao:customizacao_campos_carrinho>
+                        <tr class="item_customizacao">
+                            <td colspan="5" style="text-align: left;">[A29]:<span>[A31]</span></td>
+                            <td>[A30]</td>
+                        </tr>
+                        </repeticao:customizacao_campos_carrinho>
+
+                      </repeticao:customizacao_carrinho>
+                  </condicao:customizacao_carrinho>
+                </repeticao:produtos>
+                <tr>
+                  <td colspan="4" rowspan="3" class="frete">
+                  </td>
+                  <th class="frete_valor">Frete:</th>
+                  <td class="frete_valor"><del>[A32]</del> [A14]</td>
+                </tr>
+                <condicao:cupom_desconto>
+                    <tr>
+                        <th class="cupom">Cupom de Desconto:</th>
+                        <td class="cupom">- [A18]</td>
+                    </tr>
+                </condicao:cupom_desconto>
+                <condicao:desconto>
+                    <tr class="desconto">
+                      <th class="cupom">Desconto ([A10]%):</th>
+                      <td class="cupom">- [A11]</td>
+                    </tr>
+                </condicao:desconto>
+                <condicao:bonus>
+                    <tr>
+                      <th class="cupom">Bônus:</th>
+                      <td class="cupom">- [A13]</td>
+                    </tr>
+                </condicao:bonus>
+                <tr>
+                  <th class="total">Total:</th>
+                  <td class="total">[A16]</td>
+                </tr>
+            </tbody>
+        </table>
+</div>]]></PedidoItensHTML><TamanhoImagem value="Pequenas" /></PedidoItens></PedidoItenss><PedidoEntregas><PedidoEntrega ID="PedidoEntrega" NomeAmigavel="" Visible="True"><PedidoEntregaHTML><![CDATA[<div class="">
+sw
+</div><!-- CSS_Inicio -->]]></PedidoEntregaHTML></PedidoEntrega><PedidoEntrega ID="PedidoEntrega1"><PedidoEntregaHTML><![CDATA[<div class="duvidas dadosEntrega"> 
+    <div>
+      <p><strong>Nome do recebedor:</strong> [A0]</p>
+    </div>
+    <div> 
+      <p><strong>CEP:</strong>[A7]</p>
+    </div>
+    <div>
+      <p><strong>Endereço:</strong> [A1],[A2]</p>
+    </div>
+    <div>
+      <p><strong>Complemento:</strong> [A3]</p>
+    </div>      
+    <div>
+      <p><strong>Bairro:</strong> [A4]</p>
+    </div>      
+    <div>
+      <p><strong>Cidade:</strong> [A5], [A6] - [A8]</p>
+    </div>       
+    <div>
+      <p><strong>Trasportadora:</strong> [A9]</p>
+    </div>
+    <div>
+      <p><strong>Prazo de Entrega:</strong> [A10]</p>
+    </div>
+</div>]]></PedidoEntregaHTML></PedidoEntrega></PedidoEntregas><PedidoContatos><PedidoContato ID="PedidoContato" NomeAmigavel="" Visible="True"><PedidoContatoHTML><![CDATA[<div class="box">
+<div class="tit_box">
+                      <h2>Dúvidas</h2>
+                      </div>
+<div class="box_conteudo">
+<div class="respiro">
+<strong>Em caso de dúvida ou consulta, poderá contatar a [A0] no: </strong>
+<p>Telefone: [A1]</p>
+<p>Email: [A2]</p>
+<p></p>
+</div>
+</div>
+</div><!-- CSS_Inicio -->]]></PedidoContatoHTML></PedidoContato><PedidoContato ID="PedidoContato1"><PedidoContatoHTML><![CDATA[<div class="duvidas">
+    <div class="tit-box-carrinho-checkout heading-secondary" style="margin-top: 1em;">
+      <h2><strong>Dúvidas</strong></h2>
+    </div>
+    <p>Em caso de dúvida ou consulta, poderá contatar a [A0] no:</p>
+    <p>&nbsp;</p>
+    <div>
+      <p class="pull-left"><strong>Telefone:</strong></p>
+      <p class="pull-right text-right">[A1]</p>
+    </div>
+    <div>
+      <p class="pull-left"><strong>Email:</strong></p>
+      <p class="pull-right text-right">[A2]</p>
+    </div>
+</div>]]></PedidoContatoHTML></PedidoContato></PedidoContatos><IdentificacaoCompradors><IdentificacaoComprador ID="Comprador" NomeAmigavel="" Visible="True"><FormularioNovoCadastroEnderecoHTML><![CDATA[]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[]]></MensagemAlertaHTML><NovaCompraHTML><![CDATA[]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><EbitBannerPedidos><Widget ID="EbitBannerPedido1"><WidgetUsado value="2" /></Widget></EbitBannerPedidos><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /><UsarHTTPS value="False" /></Link><Link ID="Voltar_Principal"><CssComponente><![CDATA[]]></CssComponente><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="bt_voltar_inicial.png" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Voltar para página principal" /><UsarHTTPS value="False" /></Link><Link ID="linkPrincipal"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="&lt;span class=&quot;bt-principal text-center btn-primary&quot;&gt;&lt;span class=&quot;fa fa-caret-left&quot;&gt;&lt;/span&gt; Página Principal&lt;/span&gt;" /><UsarHTTPS value="False" /></Link></Links><GoogleAnalyticss><GoogleAnalytics ID="googleanalytitcs1"><AnalyticsConfirmadoHTML><![CDATA[<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol ) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{
+  var pageTracker = _gat._getTracker("[B14]");
+  pageTracker._trackPageview();
+  pageTracker._addTrans(
+      "[B0]", 
+      "[B1]", 
+      "[B2]", 
+      "[B3]", 
+      "[B4]", 
+      "[B5]", 
+      "[B6]", 
+      "[B7]"  
+    );
+
+
+   <repeticao:produtos>
+   pageTracker._addItem(
+      "[B8]", 
+      "[B9]", 
+      "[B10]",
+      "[B11]",
+      "[B12]",          
+      "[B13]"
+   );
+   </repeticao:produtos>
+   pageTracker._trackTrans(); //submits transaction to the Analytics servers
+} catch(err) {}
+</script>]]></AnalyticsConfirmadoHTML><AnalyticsHTML><![CDATA[]]></AnalyticsHTML><CssComponente><![CDATA[]]></CssComponente></GoogleAnalytics></GoogleAnalyticss><Banners><Banner ID="header" /></Banners><MensagemServicoArs><MensagemServicoAr ID="MensagemServicoAR"><CssComponente><![CDATA[]]></CssComponente><MensagemServicoArHTML><![CDATA[<div id="erro">
+    <div class="lista_erro">
+        <h2>[A0]</h2>
+    </div>
+</div>
+]]></MensagemServicoArHTML></MensagemServicoAr></MensagemServicoArs><SEOs><SEO ID="seo" /></SEOs><AlterarSenhas><AlterarSenha ID="AlterarSenha"><AlterarSenhaHTML><![CDATA[<div id="alterar_senha">
+	<div class="alterar_esquerda">
+		<p>Login e senha para <br /> acompanhamento do pedido</p>	
+	</div>
+	<div class="alterar_direita">
+		@if (!Model.Saved){
+			using (Html.BeginForm()) {
+				<div class="alterar_formulario parent-validation">
+					<span class="alteara_formulario_titulo">Trocar Senha</span>
+					<fieldset>
+						<label><span>Digite a nova senha</span> @Html.InputPassword("NewPassword")</label>
+						<label><span>Repita a nova senha</span> @Html.InputPassword("PasswordConfirm")</label>
+					</fieldset>
+					<p>A senha deve conter o mínimo de 5 caracteres.</p>
+					<div class="bt_alterar_senha">
+						@Html.ImageSubmit("Enviar", "imagens/bt_alterar_senha_guest.png?1")
+					</div>
+				</div>
+			}
+		}else{
+			<div class="alterar_sucesso">
+				<img src="imagens/alterar_senha_sucesso.png?1" alt="Senha Salva" />
+				<p>Nova senha salva com sucesso!</p>
+                <small>Sua nova senha foi enviada por email</small>
+			</div>
+		}
+	</div>
+	<div class="alterar_meio">
+		<div class="alterar_login_senha">
+			<span><strong>Login:</strong> @Model.Email</span>	
+			<span><strong>Senha:</strong> Enviada para o email acima</span>	
+		</div>
+      <p>Uma senha foi gerada automaticamente e enviada para o seu email. Caso deseja trocar a senha utilize a caixa ao lado.<img src="imagens/arrow_senha.png?1" alt="Utilize a caixa ao lado para trocar sua senha" style="padding-bottom: 3px;" /> </p>
+	</div>
+  	   
+</div>]]></AlterarSenhaHTML><CssComponente><![CDATA[]]></CssComponente></AlterarSenha></AlterarSenhas><BoletimNoticiass><BoletimNoticias ID="newsletter"><BoletimNoticiasHTML><![CDATA[<div id="newsletter">
+<fieldset>
+    <p>Cadastre seu e-mail e receba novidades, promoções e ofertas da loja.</p>
+    <label class="news_nome">[A0]</label>
+    <condicao:nascimento>
+        <label class="news_nasc">[A1]</label>
+    </condicao:nascimento>
+</fieldset>
+<condicao:sexo>
+    <fieldset>
+        <div class="sexo">Sexo:<br />[A3] [A6]</div>
+    </fieldset>
+</condicao:sexo>
+<fieldset>
+    <label class="news_email">[A2]</label>
+    <label class="bt"><a href="[A5]" class="descadastrar">Descadastrar</a><img onclick="[A4]" src="imagens/bt_newsletter_enviar.png?19" style="cursor:pointer" /></label>
+</fieldset>
+</div>]]></BoletimNoticiasHTML><CssComponente><![CDATA[]]></CssComponente></BoletimNoticias></BoletimNoticiass><Widgets><Widget ID="ItensCarrinho"><WidgetUsado value="18" /></Widget><Widget ID="campoExtraPedido"><WidgetUsado value="138" /></Widget></Widgets><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

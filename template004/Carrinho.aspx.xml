@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Carrinhos><Carrinho ID="cart"><CarrinhoContratoHTML><![CDATA[	<div class="modal-header">
+      <h4 class="modal-title text-left" id="myModalLabel"><strong>Contrato do produto</strong></h4>
+      </div> 
+      <div class="modal-body text-left">
+        <div class="cart-contractText">
+          [H0]
+        </div>
+      </div>
+  	  <div class="modal-footer">
+        <label class="to-left">[H1] <span>Aceito os termos do contrato</span></label>
+        <a href="[H2]" class="to-right contrato_aceito bt-big-secundary">Continuar</a>
+      </div>]]></CarrinhoContratoHTML><CarrinhoHTML><![CDATA[<div class="heading-primary"><h2><strong>Meu</strong> Carrinho</h2></div>
+<div class="error">[A28][A29][A41][A42][A45][A66]</div>
+
+<div class="cart-links align-right">
+  <a href="[A0]" class="bt-big-secundary bt-buyMore">Continuar Comprando</a>
+  <a href="[A2]" class="bt-big-special bt-goToCheckout">Concluir Compra</a>
+</div>
+
+<div class="cart-table">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="table-title align-left" colspan="2" width="100%">Produto</th>
+        <th class="table-title">Presente</th>
+        <th class="table-title">Disponibilidade</th>
+        <th class="table-title">Preço</th>
+        <th class="table-title">Quantidade</th>
+        <th class="table-title">Subtotal</th>
+        <th class="table-title">&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <repeticao:produtos>
+          <tr class="table-item">
+              <td class="cart-product-image" width="90"><a href="[A24]"><img class="photo-product" src="[A3]?width=80&height=80" alt="[A4]" width="80" height="80" /></a></td>
+              <td class="cart-product-name"><a href="[A24]">[A4]</a>
+            <span class="cart-variantSelect">[A65]</span>
+            <!-- Contrato do produto -->
+            <condicao:contrato>
+              <condicao:contrato_aceito>
+                <div class="cart-contract alert alert-success custom-paddingV3 custom-paddingH3">
+                  <span onclick="[A44]"></span>&nbsp;<span>Contrato aceito</span>
+                  <div class="cart-contractInfo">
+                    <a href="[A43]"><small>(Ver contrato)</small></a>&nbsp;<small><a href="[A44]">(Cancelar)</a></small>
+                  </div>
+                </div>                
+              </condicao:contrato_aceito>
+            
+              <condicao:contrato_nao_aceito>
+                <div class="cart-contract alert alert-warning custom-paddingV3 custom-paddingH3">
+                  <span onclick="[A43]"></span>&nbsp;<span>É necessário aceitar o contrato para comprar.</span>
+                  <div class="cart-contractInfo">
+                    <a href="[A43]"><small>(Ver contrato)</small></a>                    
+                  </div>
+                </div>
+              </condicao:contrato_nao_aceito>              
+            </condicao:contrato>  
+        <!-- -->  
+        <condicao:customizacao_carrinho>
+            <repeticao:customizacao_carrinho>
+                <div class="cart-box" style="margin-top: 5px;">
+                  <p class="custom-paddingV5"><strong>Personalização do produto</strong></p>
+                  <repeticao:customizacao_campos_carrinho>
+                    <div class="cart-box">
+                      <p style="padding-left: 15px;">[AC43]: <strong>[AC41]</strong></p>
+                      <p style="padding-left: 15px;"><strong>[AC44]</strong></p>
+                    </div>
+                  </repeticao:customizacao_campos_carrinho>
+                </div>                  
+            </repeticao:customizacao_carrinho>
+          </condicao:customizacao_carrinho>
+            </td>
+              <td class="cart-product-gift align-center"><condicao:imagem_presente>[A6]</condicao:imagem_presente></td>
+              <td class="cart-product-availbility">[A32]</td>
+              <td class="cart-product-price">[A8]</td>
+              <td class="cart-product-quantity form">
+                  [A5] <span class="cart-product-quantity-refresh sprite">Atualizar</span>
+              </td>   
+              <td class="cart-product-subtotalPrice">[A9]</td>
+              <td class="cart-product-remove"><a href="[A7]" class="sprite">Remover</a></td>
+          </tr>
+      </repeticao:produtos>
+
+      <tr class="cart-subtotal">
+        <th colspan="6">Subtotal:</th>
+        <td colspan="2">
+          [A23]
+        </td>
+      </tr>
+
+      <tr class="cart-shipping">
+        <th colspan="6">
+            <h4>Calcular o Frete <a href="javascript:callSearchZipCode('carttxtCep')">Não sei o CEP</a></h4>
+            <span class="cart-shipping-input form">[A14]</span> <a href="[A15]" class="bt-small-primary cart-shipping-bt">Calcular</a>      
+        </th>
+        <td colspan="2">
+          [A16]
+        </td>
+      </tr>
+      <condicao:frete_calculado>
+        <tr>
+          <td colspan="8">
+            <table class="cart-shipping-methods" cellpadding="0" cellspacing="0" border="0" width="97%" align="center">
+              <repeticao:frete>
+                <tr class="<condicao:frete_selecionado>active</condicao:frete_selecionado>">
+                  <td class="align-left" style="border-left: 1px solid #EAEAEA"><strong>[A18]</strong></td>
+                  <td class="align-center"><strong>Prazo:</strong> [A19]</td>
+                  <td class="align-center"><strong>Valor:</strong> [A20]</td>
+                  <td class="align-right" style="border-right: 1px solid #EAEAEA">[A17]</td>
+                </tr>
+              </repeticao:frete>
+            </table>
+          </td>
+        </tr>
+      </condicao:frete_calculado>
+      
+      <tr class="cart-coupom">
+        <th colspan="6">
+            <h4>Cupom de Desconto</h4>
+            <span class="cart-coupom-input form">
+              [A10] 
+            </span>
+            <a href="[A11]" class="bt-small-primary cart-coupom-bt">Calcular</a>
+        </th>
+        <td colspan="2">
+          <condicao:cupom_valor>
+             - [A12]
+          </condicao:cupom_valor>
+        </td>
+      </tr>
+
+      <!--  TOTAL  -->
+      <tr class="cart-total">
+        <th colspan="6">
+              Total<small>da compra</small>
+        </th>
+        <td colspan="2">
+          [A21]
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="cart-links align-right">
+  <a href="[A0]" class="bt-big-secundary bt-buyMore">Continuar Comprando</a>
+  <a href="[A2]" class="bt-big-special bt-goToCheckout">Concluir Compra</a>
+</div>]]></CarrinhoHTML><CarrinhoItensEditavel value="True" /><CarrinhoVazioHTML><![CDATA[<div class="error">[B1][B2]</div>
+<div class="sorry">
+	<div class="sorry-content ops">
+      	<div class="sorry-info">
+          <h2>Seu carrinho de compras está <strong>vazio</strong>!</h2>
+      		<h3>Para inserir produtos no seu carrinho</h3>
+      		<ul>
+              	<li>» Navegue pelos departamentos ou utilize a busca do site.</li>
+              	<li>» Ao encontrar os itens desejados, clique no botão "Comprar"</li>
+              	<li>» Volte para a página inicial e confira nossas incríveis ofertas</li>
+      		</ul>
+          	<a href="[B0]" class="bt-big-primary cartEmpty-bt">Continuar Comprando</a>
+  		</div>
+  	</div>
+</div>]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> Produto sem estoque
+</div>]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong> NNão entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
+</div>]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O valor mínimo da compra é de [C0].
+</div>]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[<div class="alert alert-success" style="overflow: hidden;">  	
+  <div class="to-right">
+  	<repeticao:brindes>      	
+     	<img src="[O1]?width=70&height=70" title="[O0]" class="" />
+  	</repeticao:brindes>
+</div>  	    
+  	<div class="to-left w-40" style="margin-top: 18px">
+  		<h2>PARABÉNS</h2>
+      	<p>Você acaba de ganhar o(s) brinde(s) ao lado!</p>
+  	</div>
+</div>]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.
+</div>]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível
+</div>]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.
+</div>]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> Cupom não é válido para o comprador atual.
+</div>]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> Cupom fora do prazo de validade.
+</div>]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> Cupom não encontrado.
+</div>]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O cupom não é válido para o(s) departamento(s) selecionado(s).
+</div>]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O cupom não é válido para o(s) produto(s) selecionado(s).
+</div>]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> A compra não atingiu o valor mínimo para ativação do cupom.
+</div>]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O cupom já foi usado.
+</div>]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.
+</div>
+]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> 
+  O produto [L0] não está disponível para pronta-entrega. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.
+</div>
+]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.
+</div>]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].
+</div>
+]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.
+</div>]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O preço do produto [F0] mudou de [F1] para [F2].
+</div>]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O produto <strong>[K0]</strong> não esta mais disponível.
+</div>]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> Para comprar por esse template é necessário permissão.
+</div>]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Gigantes" /></Carrinho></Carrinhos><Banners><Banner ID="header_full" /></Banners><SEOs><SEO ID="seo" /></SEOs><Widgets><Widget ID="rmtk"><WidgetUsado value="10" /></Widget><Widget ID="remarketing"><WidgetUsado value="10" /></Widget></Widgets><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

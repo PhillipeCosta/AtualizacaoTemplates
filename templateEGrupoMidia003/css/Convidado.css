@@ -1,0 +1,271 @@
+.container .conteudo_fixo{
+    margin: 24px auto 100px auto;
+    
+}
+
+.entrega_oculta {
+}
+.parent-validation-error {
+    background: none repeat scroll 0 0 #FFFDCD;
+    border: 1px solid #D2CF82 !important;
+}
+.list_entrega .input-validation-error {
+    border: 1px solid #FF2200;
+}
+.ja_sou_cliente {
+    float: right;
+    margin: 72px 0px 25px;
+    width: 40%;
+    font-size: 20px;
+}
+#entrega_guest {
+    clear: both;
+    margin: 0 10px;
+    overflow: hidden;
+}
+#container_formularios_entrega {
+    clear: both;
+    height: auto;
+    margin-top: 15px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    position: relative;
+}
+.form_esq, .form_dir {
+    height: auto;
+    overflow: hidden;
+    width: 450px;
+}
+.form_esq {
+    float: left;
+    margin: 0 0 0 15px;
+}
+.form_dir {
+    float: right;
+}
+.tit_form_entrega {
+    overflow: hidden;
+}
+#container_formularios_entrega h1 {
+    color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    font-family: "Arial";
+    font-size: 27px;
+    font-weight: bold;
+    padding: 2px 30px 2px 20px;
+}
+
+.form_entrega {
+    min-height: 210px;
+}
+
+.list_entrega {
+    border: 1px solid transparent;
+    color: #343434;
+    font-size: 12px;
+    margin: 2px 0;
+    overflow: hidden;
+    padding: 2px 0;
+    text-align: left;
+}
+.tipo_pessoa {
+    padding-left: 80px;
+    text-align: center;
+}
+.centro {
+    text-align: center;
+}
+.centro input, .tipo_pessoa input {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    width: auto !important;
+}
+.centro label, .tipo_pessoa label {
+    margin-right: 10px;
+}
+.centro span, .tipo_pessoa span {
+    margin-left: 2px;
+    vertical-align: middle;
+}
+.centro *, .tipo_pessoa * {
+    vertical-align: middle;
+}
+.list_entrega .tit_label_entrega {
+    clear: left;
+    float: left;
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 7px 0;
+    text-align: right;
+    width: 145px;
+}
+.list_entrega .obrigatorio {
+}
+.list_entrega small {
+    font-size: 12px;
+    margin-left: 3px;
+}
+.list_entrega input, .list_entrega select {
+    padding: 4px 7px;
+    vertical-align: middle;
+    width: 210px;
+    border: 1px solid #ccc;
+}
+.list_entrega .larg_20 input {
+    margin-right: 6px;
+    text-align: center;
+    width: 30px;
+}
+.list_entrega .larg_30 input {
+    width: 100px;
+}
+.list_entrega .larg_50 input {
+    width: 140px;
+}
+.presente_entrega {
+    background: url("../imagens/bg_presente_entrega.png") no-repeat scroll 15px center #ACD8E3;
+    border-radius: 5px 5px 5px 5px;
+    height: auto;
+    margin: 35px auto;
+    padding: 10px 0;
+    width: 430px;
+}
+.presente_entrega .dados_presente {
+    padding: 15px 0 0 100px;
+}
+.presente_entrega span {
+    color: #343434;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+.presente_entrega strong.usuario {
+    color: #005380;
+    display: block;
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: center;
+}
+.presente_entrega strong {
+    color: #005380;
+    display: block;
+    font-size: 14px;
+    padding: 0 5px 5px;
+    text-align: center;
+}
+.cep {
+    background: #f1f1f1;
+    padding: 15px 22px;
+}
+.cep * {
+    vertical-align: middle;
+}
+.list_entrega.cep .tit_label_entrega {
+    font-size: 15px;
+    margin: 0;
+    padding: 7px 0px 0;
+    text-align: left;
+    width: 154px;
+}
+.cep a {
+    font-size: 12px;
+}
+.cep input{
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 4px 7px;
+    width: 130px;
+}
+#cobranca {
+    background: none repeat scroll 0 0 #DCDCDC;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 254px;
+}
+#cobranca span {
+    color: #343434;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+#cobranca strong {
+    color: #343434;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+.bt_continuar_entrega {
+    clear: both;
+    float: right;
+    margin-right: 18px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 463px;
+}
+.enderecoCobranca {
+    clear: right;
+    display: none;
+    margin-top: 50px;
+}
+.mostra {
+    display: block !important;
+}
+.tooltip span {
+    display: none;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    margin: -64px 3px 12px -284px;
+    padding: 2px 3px;
+    width: 130px;
+}
+.tooltip:hover span {
+    background: none repeat scroll 0 0 #ACD8E3;
+    border: 1px solid #005380;
+    color: #005380;
+    display: inline;
+    padding: 5px;
+    position: absolute;
+    text-align: left;
+    width: 269px;
+}
+
+.compra_express {
+    margin-top: 50px;
+    overflow: hidden;
+}
+.compra_express h1 {
+    float: left;
+    font-family: helvetica;
+    font-size: 25.83px;
+    font-weight: bold;
+    padding: 22px 0 27px 26px;
+}
+.compra_express h2 {
+    float: right;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 18px 0;
+    text-align: left;
+    width: 615px;
+}
+
+.bt-sou-cliente{
+    padding: 1px 15px;
+    font-size: 20px;
+}
+.bt-sou-cliente:hover{
+    text-decoration: underline;
+}
+.bt-calcular{
+    font-size: 16px !important;
+    padding: 4px;
+    display: inline-block;    
+    margin-left: 3px;
+}
+
+#chkIsentoInscricaoEstadual{
+	width: 25px !important;
+}

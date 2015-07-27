@@ -1,0 +1,37 @@
+.shipping-methods{
+}
+
+.shipping-methods li{
+    border-radius: 4px;
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.shipping-method{
+    border-radius: 4px;
+    width: 100%;
+}
+
+.shipping-method td{
+    padding: 15px;
+    color: inherit;
+	font-size: 12px;
+}
+
+.shipping-method td strong{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.shipping-address{
+}
+
+.shipping-address-content{
+    padding: 1rem;
+	font-size: 12px;
+}
+
+.alter-shipping-address{
+	margin-top: 1rem;
+}

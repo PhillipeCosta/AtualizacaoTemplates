@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CategoriasListas><CategoriasLista ID="CategoriaLista"><CategoriasListaHTML><![CDATA[<h4 class="heading-collection"><strong>Encontre sua lista:</strong></h4>
+<ul class="main-clearPadding main-padding">
+  <repeticao:categorias>
+    <li>
+      <h6>
+        <a href="[A1]" style="display: block;">[A0]</a>
+      </h6>
+    </li>
+  </repeticao:categorias>
+</ul>]]></CategoriasListaHTML></CategoriasLista></CategoriasListas><ScriptRazors><ScriptRazor ID="giftlist_text"><ScriptRazorHTML><![CDATA[<h3 class="heading-collection main-padding20 text-uppercase text-left">Listas prontas</h3>
+<p class="main-padding20">@TemplateSettings.giftList_text</p>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

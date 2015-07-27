@@ -1,0 +1,378 @@
+.pedido_dados{
+    float: left;
+    margin-left: 15px;
+}
+.tit-box-checkout .conf{
+    color: #64a11f !important;
+}
+
+.pedido_dados p{
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin: 3px 0;
+}
+
+.pedido_dados p.boleto{
+    font-size: 13px;
+}
+
+.pedido_dados p.status{
+    font-size: 14px;
+}
+
+.pedido_dados p.status img{
+    margin: 0;
+    vertical-align: middle;
+}
+
+.pedido_dados img{
+    margin: 5px 0;
+}
+
+
+.tab_carrinho .subtotal th, .tab_carrinho .cupom th, .tab_carrinho .total th, .tab_carrinho .frete th{
+    text-align: right;
+}
+
+.tab_carrinho th{
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+.tab_carrinho .item_carrinho td{
+    height: 65px;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0 5px;
+}
+
+.tab_carrinho td{
+    text-align: center;
+    font-size:13px;
+}
+
+.tab_carrinho{
+}
+
+.tab_carrinho tr{
+    font-size: 13px;
+}
+
+.tab_carrinho a{
+    text-decoration: none;
+}
+
+.tab_carrinho a:hover{
+    text-decoration: underline;
+}
+
+
+.tab_carrinho thead th {
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.tab_carrinho .frete{
+    text-align: left;
+    padding: 5px;
+}
+
+.tab_carrinho th.frete_valor{
+    font-size: 15px;
+    text-align: right;
+}
+
+.tab_carrinho td.frete_valor{
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0 10px;
+    line-height: 25px;
+}
+.tab_carrinho th.desconto{
+    font-size: 15px;
+    text-align: right;
+}
+.tab_carrinho td.desconto{
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0 10px;
+    line-height: 25px;
+
+}
+.tab_carrinho th.cupom{
+    font-size: 15px;
+    text-align: right;
+}
+
+.tab_carrinho td.cupom{
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tab_carrinho th.total{
+    font-family: 'source_sans_prosemibold';
+    font-size: 15px;
+    text-align: right;
+}
+
+.tab_carrinho td.total{
+    font-family: 'source_sans_prosemibold';
+    white-space: nowrap;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+
+.bt_esquerda{
+    text-align: left;
+}
+
+.bt_esquerda a{
+    margin: 5px 0px;
+}
+
+.duvidas{
+    margin-top: 15px;
+}
+
+.duvidas .duvidas_conteudo{
+    overflow: hidden;
+}
+
+.duvidas .duvidas_conteudo p{
+    margin: 5px 10px;
+    font-size: 13px;
+}
+
+/* Alterar Senha */
+
+#alterar_senha {
+    background: none repeat scroll 0 0 #DCDCDC;
+    height: 130px;
+    margin-bottom: 15px;
+}
+#alterar_senha .alterar_esquerda {
+   background: url("../imagens/alterar_ico.png") no-repeat scroll center 2px transparent;
+    float: left;
+    margin: 12px 0 0;
+    padding: 56px 0 0;
+    text-align: center;
+    width: 195px;
+}
+#alterar_senha .alterar_esquerda p {
+    color: #0F3B69;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+#alterar_senha .alterar_meio {
+    background: url("../imagens/alterar_meio_bg.png") no-repeat scroll left center transparent;
+    height: 130px;
+    overflow: hidden;
+    padding: 0 0 0 30px;
+}
+#alterar_senha .alterar_meio .alterar_login_senha {
+    margin-top: 20px;
+}
+#alterar_senha .alterar_meio .alterar_login_senha span {
+    color: #3D3D3D;
+    display: block;
+    font-size: 13.5px;
+}
+#alterar_senha .alterar_meio .alterar_login_senha span strong {
+    color: #0f3b69;
+    font-size: 13.5px;
+    font-weight: normal;
+    margin-right: 5px;
+}
+#alterar_senha .alterar_meio p {
+    color: #4c4c4c;
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+}
+#alterar_senha .alterar_meio p * {
+    vertical-align: middle;
+}
+#alterar_senha .alterar_direita {
+    float: right;
+    width: 319px;
+}
+#alterar_senha .alterar_direita .alterar_formulario {
+    background: none repeat scroll 0 0 #BBBBBB;
+    height: 130px;
+    text-align: center;
+}
+#alterar_senha .alterar_direita .alterar_formulario .alteara_formulario_titulo {
+    color: #0F3B69;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 5px 10px;
+}
+#alterar_senha .alterar_direita .alterar_formulario fieldset {
+    border: medium none;
+    padding: 5px 7px 0 5px;
+}
+#alterar_senha .alterar_direita .alterar_formulario fieldset label {
+    display: block;
+    margin-bottom: 5px;
+}
+#alterar_senha .alterar_direita .alterar_formulario fieldset label span {
+    color: #3D3D3D;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 4px;
+    text-align: right;
+    width: 100px;
+}
+#alterar_senha .alterar_direita .alterar_formulario fieldset label input {
+    border: 1px solid transparent;
+    font-size: 11px;
+    padding: 2px 0;
+    width: 192px;
+}
+#alterar_senha .alterar_direita .alterar_formulario span {
+    color: #3D3D3D;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+}
+#alterar_senha .alterar_direita .alterar_formulario.parent-validation-error {
+    background: none repeat scroll 0 0 #FFFADE;
+    border: 1px solid #101763;
+}
+#alterar_senha .alterar_direita .alterar_formulario.parent-validation-error .alteara_formulario_titulo {
+    color: #C20000;
+}
+#alterar_senha .alterar_direita .alterar_formulario.parent-validation-error fieldset label span {
+    color: #C20000;
+}
+#alterar_senha .alterar_direita .alterar_formulario.parent-validation-error fieldset label input {
+    border: 1px solid #C20000;
+}
+#alterar_senha .alterar_direita .alterar_formulario.parent-validation-error p {
+    color: #101763;
+}
+#alterar_senha .alterar_direita .alterar_formulario .bt_alterar_senha {
+    padding: 5px 10px 0 0;
+    text-align: right;
+}
+#alterar_senha .alterar_direita .alterar_sucesso {
+    background: none repeat scroll 0 0 #BBBBBB;
+    height: 130px;
+    text-align: center;
+}
+
+#alterar_senha .alterar_direita .alterar_sucesso img {
+    float: left;
+    margin: 40px 0 0 22px;
+}
+
+
+#alterar_senha .alterar_direita .alterar_sucesso p {
+    color: #3D3D3D;
+    font-size: 19.71px;
+    line-height: 20px;
+    padding-left: 85px;
+    padding-top: 34px;
+    text-align: left;
+}
+
+#alterar_senha .alterar_direita .alterar_sucesso p span {
+    font-size: 31px;
+}
+
+
+#alterar_senha .alterar_direita .alterar_sucesso small {
+    color: #3D3D3D;
+    display: block;
+    font-size: 14.78px;
+    padding-left: 85px;
+    text-align: left;
+}
+
+/*Mensagem Lista Presentes*/
+
+.envia_mensagem{
+    padding: 10px 5px 0 150px;
+    background: url("../imagens/ico_lista_presente_mensagem.png") no-repeat 20px 20px #eaeaea;
+    text-align: left;
+    margin: 10px 0 40px;
+    overflow: hidden;
+}
+
+.envia_mensagem_conteudo{
+	float: left;
+            margin-top: 10px;
+            width: 350px;   
+}
+
+.envia_mensagem_conteudo h4{
+	font-size: 22px;
+	color: #FF6600;
+	font-family: "Trebuchet MS"; 
+	margin: 0 0 15px;   
+}
+
+.envia_mensagem_conteudo p{
+	font-size: 12px;
+	color: #666;
+	font-family: "Trebuchet MS";    
+}
+
+.envia_mensagem fieldset{
+	display: block;
+	border: none;
+	padding: 5px 0; 
+	float: left;
+	width: 300px;
+	margin-left: 30px;
+}
+
+.envia_mensagem label{
+	display: block;
+	padding: 5px 0; 
+	font-size: 11px;
+	color: #333;
+}
+
+.envia_mensagem label textarea{
+	width: 300px;
+	height: 50px;
+	color: #666;
+	font-size: 11px;
+	border: 1px solid #ccc;
+	margin-top: 3px;
+}
+
+.bt_envia_mensagem{
+	display: table;
+	padding: 8px 15px;
+	background: #227C0F;
+	font-weight: bold;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 3px;
+}
+
+.bt_envia_mensagem_salvar{
+	text-align: right;
+}
+
+.bt_envia_mensagem_limpar{
+	font-size: 11px;
+	color: #666;
+	margin: 5px 0;
+	float: left;
+}

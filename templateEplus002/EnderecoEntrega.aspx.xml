@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CarrinhoPassoss><CarrinhoPassos ID="Passos" NomeAmigavel="Passo da compra" Visible="True"><Passo value="3" /></CarrinhoPassos></CarrinhoPassoss><EnderecoEntregas><EnderecoEntrega ID="EnderecoEntrega1"><ComponenteLista value="False" /><EnderecoEntregaHTML><![CDATA[<div class="heading-primary">
+  <h2>Entrega</h2>
+</div>
+    <div id="entrega">
+        <ul class="enderecos">
+            <repeticao:enderecos_cadastrados>
+            <li class="borda-produto">
+            <div class="endereco_conteudo">
+                <h3>[A17]</h3>
+                <p>[A18]</p>
+                <p>[A19], [A20]- [A21] - [A22] - [A23]<br />
+                    CEP: [A24]
+                </p>
+                <div class="bt">
+                    <a href="[A25]" class="box-bt btn-tertiary">Editar</a>
+                    <a href="[A26]" class="box-bt btn-special">Usar este endereço</a>
+                </div>
+            </div>
+            </li>
+        </repeticao:enderecos_cadastrados>
+        </ul>
+        <div class="bt_direita">
+            <div class="respiro">
+                <a href="[A27]" class="box-bt btn-secondary">
+                  Continuar
+                </a>
+            </div>
+        </div>
+
+        [A16]
+
+        <div class="heading-special">
+            <h2>Cadastrar novo Endereço</h2>
+        </div>
+        <div class="formulario_conteudo">
+            <div class="info pt">Campos marcados com * são obrigatórios.</div>
+            <div class="formulario">
+                <div class="list obrigatorio cep">
+                    <label class="form">
+                      <span class="tit_label form-field-nameRequired">Digite Primeiro o CEP*</span>
+                      [A0] <a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">Esqueceu o CEP?</a>   
+                    </label>
+                </div>
+                <div class="list obrigatorio">
+                    <label class="form">
+                      <span class="tit_label form-field-nameRequired">País*</span>
+                      [A14]
+                    </label>
+                </div>
+                <div class="list obrigatorio form">
+                 <label class="larg_100">
+                    <span class="tit_label form-fieldName">Nome para Entrega*</span>
+                    [A1] <small>(Nome de quem irá receber o produto)</small>
+                 </label>
+                </div>
+                <div class="list obrigatorio form">
+                    <label class="larg_75">
+                     <span class="tit_label form-field-nameRequired">Nome do Local*</span>
+                     [A2] <small>(Casa, Trabalho, etc)</small>
+                    </label>
+                </div>
+                <div class="list obrigatorio form">
+                    <label class="larg_100 form-field-nameRequired">
+                      <span class="tit_label">Endereço*</span>
+                      [A3]
+                    </label>
+                </div>
+                <div class="list obrigatorio form">
+                    <label class="larg_25">
+                      <span class="tit_label form-field-nameRequired">Número*</span>
+                      [A4]
+                    </label>
+                </div>
+                <div class="list form">
+                    <label class="larg_50 form-fieldName">
+                      <span class="tit_label">Complemento</span>
+                      [A5]
+                    </label>
+                </div>
+                <div class="list obrigatorio form">
+                    <label class="larg_75 form-field-nameRequired">
+                      <span class="tit_label">Bairro*</span>
+                      [A6]
+                    </label>
+                </div>
+                <div class="list obrigatorio form">
+                    <label class="larg_75 form-field-nameRequired">
+                      <span class="tit_label">Cidade*</span>
+                      [A7]
+                     </label>
+                </div>
+                <condicao:selecao_estado>
+                <div class="list obrigatorio form">
+                    <label>
+                      <span class="tit_label form-field-nameRequired">Estado*</span>
+                      [A8]
+                    </label>
+                </div>
+                </condicao:selecao_estado>
+                <div class="list form">
+                    <label class="larg_100">
+                      <span class="tit_label form-fieldName">Pontos de Referência</span>
+                      [A9]
+                    </label>
+                </div>
+                <div class="list obrigatorio form">
+                    <label class="larg_25">
+                      <span class="tit_label form-field-nameRequired">Telefone Principal*</span>
+                      [A10]</label> - <label class="larg_50">[A11] <small>(DDD + XXXX-XXXX)</small>
+                    </label>
+                </div>
+                <div class="list form">
+                    <label class="larg_25">
+                      <span class="tit_label form-fieldName">Telefone Alternativo</span>
+                      [A12]
+                    </label> - <label class="larg_50 form-fieldName">[A13] <small>(DDD + XXXX-XXXX)</small> </label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bt_direita">
+        <div class="respiro">
+            <a href="[A15]" class="box-bt btn-secondary">
+              Continuar
+            </a>
+        </div>
+    </div>]]></EnderecoEntregaHTML><EnderecoEntregaMensagemAlertaHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>[B0]</h2>
+        <ul>
+            <repeticao:erro>
+                <li>[B1]</li>
+            </repeticao:erro>
+        </ul>
+    </div>
+</div>			]]></EnderecoEntregaMensagemAlertaHTML><MensagemCamposObrigatorios value="Esses campos são obrigatórios e não foram preenchidos corretamente:" /><MensagemProdutosComEstoqueAlteradoHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Atenção</h2>
+            <repeticao:erro>
+                O estoque do produto [E0] mudou. Quantidade solicitada [E1], quantidade disponível [E2].
+            </repeticao:erro>
+    </div>
+</div>			]]></MensagemProdutosComEstoqueAlteradoHTML><MensagemProdutosComPrecoAlteradoHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Atenção</h2>
+            <repeticao:erro>
+                O preço do produto [D0] mudou de [D1] para [D2].
+            </repeticao:erro>
+    </div>
+</div>			]]></MensagemProdutosComPrecoAlteradoHTML><MensagemProdutosSemPrecoRemovidosHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Atenção</h2>
+            <repeticao:erro>
+                O produto <strong>[F0]</strong> não esta mais disponível.
+            </repeticao:erro>
+    </div>
+</div>			]]></MensagemProdutosSemPrecoRemovidosHTML><MensagemSelecionarEndereco value="Selecione um dos endereços para continuar." /></EnderecoEntrega></EnderecoEntregas><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><Links><Link ID="Alterar_Pedido"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Alterar Pedido" /><UsarHTTPS value="False" /></Link><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="Fullzao_Topo" /><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

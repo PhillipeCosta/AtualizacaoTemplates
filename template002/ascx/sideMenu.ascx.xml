@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Menus><Menu ID="menu"><ApenasDepartamento value="True" /><MenuHTML><![CDATA[<repeticao:pais>
+<h4 class="text-left text-uppercase heading-collection"><strong>[A1]</strong></h4>
+<condicao:filho>
+  <ul class="main-clearPadding main-padding20">
+    <repeticao:filhos>
+      <li>
+        <h6 class="text-left text-uppercase"><a href="[A0]" style="display: block;">[A1]</a></h6>
+      </li>
+    </repeticao:filhos>
+  </ul>
+</condicao:filho>
+</repeticao:pais>  ]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><FiltroGruposs><FiltroGrupos ID="departamentGroups"><FiltroGruposHTML><![CDATA[<div class="form">
+  <repeticao:tipo_filtro>
+    <h6 class="text-uppercase main-padding"><strong>[A0]</strong></h6>
+  	<select>
+      <option value="" selected="">Escolha a marca</option>
+      <repeticao:filtro>
+        <option value="[A3]">[A1]</option>
+      </repeticao:filtro>
+  	</select>
+  </repeticao:tipo_filtro>
+</div>]]></FiltroGruposHTML></FiltroGrupos></FiltroGruposs><FiltroFaixaPrecos><FiltroFaixaPreco ID="departamentPriceRange"><FiltroFaixaPrecoHTML><![CDATA[<div class="form">
+    <h6 class="text-uppercase main-padding"><strong>Preço</strong></h6>
+  	[A0]
+	[A1]
+    <a href="[A2]" class="bt btn-secondary text-center text-uppercase pull-right" style="margin: 12px;">Filtrar</a>  
+</div>]]></FiltroFaixaPrecoHTML></FiltroFaixaPreco></FiltroFaixaPrecos></controles></page>

@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+.heading-primary{
+    width: 660px;
+    margin: auto;
+    text-align: center;
+}
+
+.entrega_conteudo{
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+#entrega .bt_direita{
+    text-align: right;
+    width: 667px;
+    display: block;
+    float: left;
+}
+#entrega  .heading-special{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+#entrega  .heading-special h2{
+}
+#entrega p{
+    margin: 15px;
+    font-size: 11px;
+}
+
+.enderecos{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    display: block;
+    width: 654px;
+    position: relative;
+    height: auto;
+    float: left;
+}
+
+.enderecos li{
+    float: left;
+    height: auto;
+	
+    display: block;
+    border: 1px solid #CDC1C1;
+    background-color: #E6E7E8;
+    padding: 7px;
+    width: 100%;
+}
+
+.enderecos li h3{
+    font-weight: normal;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+#entrega  .enderecos li p{
+    font-size: 12px;
+    margin: 10px 0;
+    font-weight:normal;
+}
+
+.enderecos li.selecionado{
+}
+
+#entrega  .enderecos li .bt{
+    margin-top: 10px;
+    text-align: center;
+    margin: 0 12px;
+}
+#entrega .box-bt{
+    display: block;
+    width: auto;
+    float: right;
+    position: relative;
+    margin: 0 10px;
+}
+
+#entrega .box-bt a{
+    color: #939393;
+
+}
+.bt_direita .box-bt{
+    margin-top: -10px;
+}
+.box-bt{
+    width: auto!important;
+    display: block;
+    position: relative;
+    float: right;
+}
+#entrega{
+    background-color: #ffffff;
+    
+    width: 669px;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+.formulario_conteudo{
+    width: 668px;
+    
+    margin: auto;
+    float: left;
+}
+
+.formulario.formulario .list{
+    width:100%;
+}

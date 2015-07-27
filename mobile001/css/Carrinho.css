@@ -1,0 +1,264 @@
+.subtotal{
+  display: block;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.subtotal-baixo{   
+    border: none;
+    clear: both;
+}
+
+.subtotal-valores{
+    padding: 0.5em 0 1em;
+    overflow: hidden;
+}
+
+.subtotal h3{
+  text-transform: uppercase;
+  font-family: "trebuchet ms",Arial,sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.subtotal h4{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "trebuchet ms",Arial,sans-serif;  
+  margin: 0;
+  padding: 0;
+}
+
+.container-produto-carrinho{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.lista-produto-carrinho{
+  display: block;
+  overflow: hidden;
+}
+
+.box-produto-carrinho{
+  padding: 0.5em 0;
+}
+
+.img-produto-carrinho{
+  padding: 0.5em;
+  display: block;
+  margin: 0.5em;
+}
+
+.info-produto-carrinho{
+    padding: 0 0 0 0.5em;
+    overflow: hidden;
+}
+
+.presente-carrinho{
+  display: block;
+}
+
+.presente-carrinho *{
+    vertical-align: middle;
+}
+
+.presente-carrinho input{
+    height: 40px;
+    width: 25px;
+    color: #666666;
+    font-size: 12px;
+    position: relative;
+
+}
+
+.presente-produto-carrinho{
+  font-size: 13px;  
+}
+
+.qtd-produto-carrinho{
+    padding: 1em;
+}
+
+.qtd-produto-carrinho span input{
+    height: 40px;
+    width: 45px !important;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+}
+
+.remover-produto-carrinho{
+    display: block;
+    clear: both;
+}
+
+.remover-produto-carrinho a{
+    padding: 1em;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+}
+
+.remover-produto-carrinho a span{
+    font-size: 18px;
+}
+
+.cep-produto-carrinho{
+    overflow: hidden;
+    display: block;
+    clear: both;
+    padding: 0.5em 0.5em 1em;
+}
+
+.cep-produto-carrinho span:first-child{
+    display: block;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.cep-produto-carrinho span input{
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 1em;
+    position: relative;
+}
+
+.total{
+  display: block;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.total-valores{
+    padding: 0.5em 0 0;
+    overflow: hidden;
+}
+
+.total h3{
+  text-transform: uppercase;
+  font-family: "trebuchet ms",Arial,sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.total h4{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "trebuchet ms",Arial,sans-serif;  
+  margin: 0;
+  padding: 0;
+}
+
+.total div{
+    display: block;
+    overflow: hidden;
+}
+
+.valor-frete{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.tab_transportadoras td{
+    font-size: 11px;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.tab_transportadoras tr:last-child td{
+    border: none;
+}
+
+.finalizar-compra{
+    border: 0 none;
+    border-radius: 5px;
+    display: block;
+    font-size: 17px;
+    margin: 0.5em;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.bt-comprar-mais,
+.bt-finalizar{
+    display: block;
+    overflow: hidden;
+    clear: both;
+    margin: 1em 0;
+}
+
+.bt-comprar-mais a{
+    border: 0 none;
+    display: block;
+    font-size: 14px;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.bt-comprar-mais a span{
+    font-size: 16px;
+    margin-right: 1em;
+}
+
+.cupom-desconto{
+    overflow: hidden;
+    display: block;
+    clear: both;
+    padding: 1em 0.5em 1em;  
+}
+
+.cupom-desconto input{
+    height: 40px;
+    width: 50% !important;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 1em;
+    position: relative;
+}
+
+.cupom-desconto span.fa-tag{
+    font-size: 20px;
+    color: #333; 
+    padding: 0.5em 0 0 0.5em;      
+}
+
+.cupom-desconto *{
+    vertical-align: middle;
+}
+
+.tit-cupom{
+    display: block;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+.carrinho-vazio h5{
+    color: #13abe1;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.btn-calcular{
+  width: 48%;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

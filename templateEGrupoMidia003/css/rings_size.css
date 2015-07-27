@@ -1,0 +1,513 @@
+.rings_size{
+display:none; 
+width: 184px;
+float: left;
+margin-left: 5px;
+}
+.background{
+height: 300%;
+position: fixed;
+width: 100%;
+left: 0;
+overflow: visible;
+position: absolute;
+top: 0px;
+z-index: 99999;
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.66);
+display :none;
+}
+
+.modal_rings{
+display: none;
+position: fixed;
+top: 30px;
+z-index: 99999999;
+margin: auto;
+}
+.modal_rings > div{
+width: 1060px;
+height: 570px;
+border-radius: 10px;
+background-color: #ffffff;
+display: block;
+position: relative;
+z-index: 99998;
+margin: auto;
+background-image: url(../imagens/maozi.png);
+background-repeat: no-repeat;
+background-position: 5px 9px;
+}
+
+
+@import url('http://fonts.googleapis.com/css?family=Balthazar');
+
+li{
+  height: auto;
+  /* margin: 0; */
+  padding: 0;
+  border: 0;
+  /* vertical-align: baseline; */
+  /* outline: none; */
+  /* -webkit-font-smoothing: antialiased; */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* -webkit-box-sizing: border-box; */
+  -moz-box-sizing: border-box;
+  /* box-sizing: border-box; */
+}
+.footer{
+text-align:center;  
+}
+.helpmodalstyle label
+{
+font-size:13px;
+}
+
+html { overflow-y: scroll; }
+body { 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%; 
+
+  color: #414141;
+ 
+  
+}
+select option 
+{
+  margin:40px;
+  text-shadow:0 1px 0 rgba(0,0,0,0.4);
+}
+label {
+font-size:20px
+}
+
+input, 
+select, 
+textarea,{
+font-size: 17px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: normal;
+height: 28px;
+width:160px;
+color: #FFFFFF;
+margin-left: 22px;
+background: rgba(230, 217, 217, 0.45);
+border-radius: 3px;
+box-shadow: 5px 5px 9px rgba(0, 0, 0, 1) inset;
+}
+button{
+  width: 80px;
+height: 41px;
+font-size: 22px;
+color: #fff;
+border-radius: 4px;
+border: solid #fff 3px;
+display: block;
+background-color: rgba(135, 197, 0, 1);
+}
+.inputcalc{
+  border: 1px solid #EDEDED;
+  background: rgba(255, 248, 248, 0.28);
+  border-radius: 3px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.77) inset;
+  color: #FFF;
+  font-weight: bold;
+}
+
+input[type=text], 
+input[type=password], 
+input[type=email], 
+textarea {
+/* border: 1.0px solid #fff; */
+/* padding: 3px 5px; */
+/* width: 152px; */
+/* border-radius: 3px; */
+/* margin: 3px; */
+}
+
+br { display: block;} 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+input, textarea { 
+  /* -webkit-font-smoothing: antialiased; */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* -webkit-box-sizing: border-box; */
+  -moz-box-sizing: border-box;
+  /* box-sizing: border-box; */
+  /* outline: none; */ 
+}
+
+.butunes{
+background-color: #FF3600;
+color: #ffffff;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+
+text-transform: uppercase;
+font-weight: 400;
+-webkit-transition: background-color 200ms ease;
+-moz-transition: background-color 200ms ease;
+-o-transition: background-color 200ms ease;
+transition: background-color 200ms ease;
+float: none;
+padding: 7px 8px 9px;
+border: solid 1.5px #fff;
+
+cursor: pointer;
+z-index:1;
+}
+
+#slider { width: 505px; }
+
+#slider li { width: 250.5px; }
+    
+#overlay_form2{
+position: absolute;
+border: 5px solid gray;
+padding: 10px;
+background: white;
+width: 300px;
+height: 380px;
+}
+.optionvalue{
+background-color: rgba(0, 0, 0, 0.76);
+font-weight: bold;
+font-size: 27px;
+  
+}
+.optionvalueorange{
+color:#fff;
+background-color: rgba(255, 138, 60, 0.77);
+font-weight: bold;
+font-size: 27px;
+  
+}
+.thebigimage {
+    
+border: none;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+position:absolute; /* and this has to be relative */
+width:100%;
+
+  
+  
+} 
+.overlapthis {
+   
+height:auto;
+left:0px; /* play around with this */
+position:relative;
+top:5px; /* and play around with this */
+width:100%; 
+}
+
+.overlapthisCon {
+   
+height:350px;
+left:5px; /* play around with this */
+position:relative;
+top:-5px; /* and play around with this */
+width:700px;
+}
+
+.overlapthisInd {
+
+   
+height:350px;
+left:6px; /* play around with this */
+position:relative;
+top:2px; /* and play around with this */
+width:700px;
+}
+
+#preco{
+font-family: "Times New Roman";
+font-size: 30px;
+margin-left: 0px;
+margin-top: -10px;
+color: #fff;
+font-weight: bold;
+width:201px;
+}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; }
+
+h1 {
+  font-family: Arial, Tahoma, sans-serif;
+  color: #676767;
+font-size: 20px;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+  letter-spacing: -0.05em;
+
+}
+
+h2 {
+
+  font-size: 19PX;
+  line-height: 1.3em;
+  
+
+  margin-bottom: 0px;
+  letter-spacing: 0.4px;
+  text-align:center;
+  font-weight: 100;
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 1.1em;
+  margin-bottom: 15px;
+}
+.bthelp{
+  cursor:pointer;
+  
+}
+.helpmodalstyle{
+
+width: 150px;
+height: 80px;
+margin-top: 54px;
+margin-left: -3px;
+border-radius: 2px;
+z-index: 89;
+background-color: rgb(255, 255, 255);
+color: rgb(152, 145, 145);
+position: absolute;
+display: none;
+  
+}
+
+
+
+
+/** page structure **/
+#w {
+  display: block;
+  width: 500px;
+  margin-left: 100px;
+  background: #fff;
+  padding: 5px 11px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 3px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 3px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+.idResposta{
+width: 80px;
+position:absolute;
+height: 80px;
+float:left;
+display:inline-block;
+background-color:#87c500;
+margin-left: 0px;
+margin-top: 0px;
+
+background-size:80% 80%;
+background-repeat:no-repeat;
+background-position:center;  
+}
+.idResposta:nth-child(1) {
+width: 80px;
+height: 80px;
+display:block;
+background-color: #ffffff;
+background-image: url(https://www9.ciashop.com.br/egrupomidia/Assets/Templates/30009/Imagens/credit-card.png);
+margin: 43px;
+margin-left: 110px;
+display:block;
+position:relative;
+border: 1px solid rgb(236, 31, 80);
+border-radius: 4px;
+float:left;
+
+background-size: 64px;
+}
+
+.idResposta:nth-child(2) {
+width: 80px;
+height: 80px;
+display:block;
+background-color:rgba(255, 255, 255, 0.53);
+background-image: url(https://www9.ciashop.com.br/egrupomidia/Assets/Templates/30009/Imagens/ruler.png);
+margin: 43px;
+margin-left: 110px;
+display:block;
+position:relative;
+float:left;
+border-radius: 4px;
+background-size: 64px;
+border: 1px solid rgb(236, 31, 80);
+}
+
+.idResposta:nth-child(3) {
+width: 80px;
+height: 80px;
+display:block;
+background-color: #ffffff;
+border: solid  1px #dedede;
+background-image: url(https://www9.ciashop.com.br/egrupomidia/Assets/Templates/30009/Imagens/printer.png);
+margin: 43px;
+margin-left: 110px;
+display:block;
+position:relative;
+float:left;
+background-size: 64px;
+border: 1px solid rgb(236, 31, 80);
+border-radius: 4px;
+}
+
+
+.component{
+width:650px;
+margin:auto;
+height:450px;
+background-color:#FEFCFC  ;
+}
+.text_op {
+  margin-top:-10px;
+}
+.card_method{
+    width: 800px;
+  
+    float: left;
+    position: relative;
+    height: 320px;
+    background-color: rgb(226, 226, 226);
+}
+
+.gif{
+    width: 309px;
+    float: left;
+    height: 242px;
+    background-image: url(http://www.poesie.com.br/aro-de-anel/img/monitor2.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: -4px 24px;
+    border-radius: 8px;
+}
+.explication{
+    width: 413px;
+    height: 170px;
+    margin: 24px 10;
+    float: right;
+    position: relative;
+    display: block;
+    color: #EC2050;
+}
+.explication span{
+    width: 400px;
+    display: block;
+    float: left;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 23px;
+}
+.button{
+    width: 200px;
+    display: block;
+    position: relative;
+    float: right;
+    height: 40px;
+    border: solid 2px rgb(236, 32, 80);
+    border-radius: 6px;
+    margin-right: 131px;
+    margin-top: 19px;
+    cursor: pointer;
+    color: #EC2050;
+}
+.button a{
+    color: #EC2050 !important;
+    font-size: 19px!important;
+    padding: 12px;
+    padding-left: 39px;
+    background: none!important;
+    LINE-HEIGHT: 39px;
+    text-decoration: none;
+}
+.button:hover{
+  zoom:130%;
+  margin-right: 64px;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;      
+  transition:width 2s, height 2s, background-color 2s, transform 2s;
+  margin-top: 12px;
+}
+.title{
+    WIDTH: 100%;
+  
+    float: left;
+    position: relative;
+    height: 46px;
+}
+.title h2{
+    color: #EC2050;
+}
+.rule_method{
+  display: none;
+      width: 800px;
+  
+    float: left;
+    position: relative;
+    height: 320px;
+    background-color: rgb(226, 226, 226);
+}
+.print_method{
+  display:none;
+      width: 800px;
+  
+    float: left;
+    position: relative;
+    height: 320px;
+    background-color: rgb(226, 226, 226);
+}
+.image{
+    width: 318px;
+    float: left;
+    
+     
+    height: 237px;
+    
+    background-repeat: no-repeat;
+    margin: 19px 24px;
+    
+     background-size: 100%;
+     border-radius: 8px;
+    position: absolute;
+    top: 28px;
+}
+.rule_method .image{     background-image: url(../Imagens/maozi.png);
+}
+.print_method .image{
+       background-image: url(../Imagens/tamanozis.png);
+
+}
+
+
+
+.image:hover .modal_rings > div {}
+#conteudo{
+    overflow: visible!important;
+  
+}
+
+.verify{
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 14px;
+}

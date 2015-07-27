@@ -1,0 +1,35 @@
+
+.tabela-listas table {
+    font-family: Arial;
+    padding: 20px 10px;
+    width: 100%;
+}
+.tabela-listas table thead tr th {
+    border-right: 1px solid #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    text-align: center;
+}
+.tabela-listas table tbody tr {
+
+}
+.tabela-listas table tbody tr td {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 10px 5px;
+    text-align: center;
+}
+.tabela-listas table tbody tr td.nome_lista a {
+    color: #6B6B6B;
+}
+.tabela-listas table tbody tr td.preco {
+    font-size: 15px;
+    padding-left: 7px;
+    text-align: left;
+}
+.tabela-listas table tbody tr td.preco span.preco-de {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: line-through;
+}

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><OpiniaoProdutos><OpiniaoProduto ID="OpiniaoProduto1"><ImagemAvaliacaoDeselecionado value="rating-star-off.png" /><ImagemAvaliacaoSelecionado value="rating-star-on.png" /><OpiniaoProdutoHTML><![CDATA[<div class="col-md-6">
+      <h4 class="heading-collection">// Opine sobre os produtos que você comprou</h4>
+  <div class="main-overflow main-padding main-clear form-guest">
+
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Nome</label>
+      <span class="col-md-7">
+        [A0]
+      </span>
+    </div>  
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Email</label>
+      <span class="col-md-7">
+        [A1]
+      </span>
+    </div>
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Cidade</label>
+      <span class="col-md-7">
+        [A3]
+      </span>
+    </div> 
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Estado</label>
+      <span class="col-md-7">
+        [A4]
+      </span>
+    </div> 
+    <div class="form parent-validation main-clear main-overflow">
+      <label class="col-md-3 text-right main-clearPadding main-padding">&nbsp;</label>
+      <span class="col-md-7">
+          <span class="col-md-1 pull-left form-inscEstadual main-clearPadding">[A2]</span>
+          <span class="col-md-11">Sim</span>
+      </span>
+    </div>          
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="opiniao">
+    <ul class="produto_avaliar">
+      <repeticao:produtos>
+        <li>
+          <h3>[A6]</h3>
+          <div class="opiniao_foto">
+          <img src="[A5]?width=150&height=150" alt="[A6]" />
+          </div>
+          <div class="form">
+          <div class="">Avaliação<br />[A7]</div>
+          <div class="">
+          Comentário:<br />[A8]
+          </div>
+          </div>
+        </li>
+      </repeticao:produtos>
+    </ul>
+    <div class="main-overflow main-clear">
+      <a href="[A9]" class="bt btn-secondary">Enviar</a>
+    </div>
+    </div>
+</div>      
+]]></OpiniaoProdutoHTML><ProdutosAvaliadosHTML><![CDATA[<h4 class="heading-collection">// Oops</h4>
+<br />
+<div class="alert alert-warning" role="alert">
+  Você já opiniou sobre este produto!
+</div>]]></ProdutosAvaliadosHTML><TamanhoImagem value="Gigantes" /></OpiniaoProduto></OpiniaoProdutos><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

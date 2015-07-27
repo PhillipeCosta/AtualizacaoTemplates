@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CadastroDeAfiliados><CadastroDeAfiliado ID="changeAffiliateRegistration"><CadastroAfiliadoHTML><![CDATA[<p class="subtitulo_afiliados">O cadastro está sujeito a aprovação. Você receberá um email com a confirmação do seu cadastro.</p>
+<div class="form register-form form-content">
+  <div class="form-box">
+    <h2 class="form-box-heading"><span class="register-info">Campos marcados com * são obrigatórios.</span>Dados bancários</h2>
+    <div class="alert">              
+      <ul>
+        <li>Atenção não vamos solicitar dados confidências, apenas dados da sua conta para depósito de sua comissão.</li>
+        <li>Preencha os campos abaixo com seus dados bancários para que a comissão sobre a venda realizada seja creditada em sua conta.</li>
+      </ul>
+    </div>      
+    <fieldset class="register-content">
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Banco*</span> [A3]</label>
+      </div> 
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Agência*</span> [A4]</label>
+      </div> 
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Conta*</span> [A5]</label>
+      </div>            
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Titular da conta*</span> [A6]</label>
+      </div>
+    </fieldset>
+  </div>
+  <div class="form-box">
+    <h2 class="form-box-heading">URL do Site</h2>  
+    <fieldset class="register-content">
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">URL(s) de seu(s) site(s)/blog(s)*</span> [A2]<small>(Separado por vírgulas)</small></label>
+      </div>   
+    </fieldset> 
+  </div>
+  <div class="form-box"> 
+    <h2 class="form-box-heading">Termo de adesão</h2>         
+    <fieldset class="register-content">
+      <div class="form-item validate required w-100">
+        <div style="border: 2px solid #cfcfcf; color: #707070; font-size: 12px; width: 100%; height: 200px; overflow: auto; padding: 10px; box-sizing: border-box;">
+          [K0]
+        </div>
+      </div>
+      <div class="form-item w-100">
+        <label class="checkbox">[K1]Concordo com o termo de adesão de programa de afiliados e quero participar!</label>
+      </div>    
+    </fieldset>
+    <div class="form-box-bt">
+      <a class="bt-big-primary to-right" href="#" onclick="[A7]" class="box-bt btn-primary">Cadastrar</a>
+    </div>        
+  </div> 
+</div>]]></CadastroAfiliadoHTML><FormatacaoAfiliadoHTML><![CDATA[<div class="heading-primary">
+  <h2><strong>Cadastro </strong> de Afiliados</h2>
+</div>
+<div id="afiliados">
+	[C0][C1][C2]
+</div>]]></FormatacaoAfiliadoHTML><SucessoCadastroAfiliadoHTML><![CDATA[<div class="alert success">
+  	<strong>Sucesso!</strong> Cadastro alterado com sucesso!
+</div>]]></SucessoCadastroAfiliadoHTML><TermoAfiliadoHTML><![CDATA[]]></TermoAfiliadoHTML><ValidacaoCadastroAfiliadoHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong>
+  	<ul>
+        <repeticao:erro>
+          <li>[B0]</li>
+        </repeticao:erro>
+    </ul>
+</div>]]></ValidacaoCadastroAfiliadoHTML></CadastroDeAfiliado></CadastroDeAfiliados></controles></page>

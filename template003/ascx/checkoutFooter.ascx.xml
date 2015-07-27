@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Links><Link ID="home"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Dental Cremer" /><UsarHTTPS value="False" /></Link></Links><IconesRodapes><IconesRodape ID="paymentMethodsIcons"><IconesRodapeHTML><![CDATA[<ul>
+	<!--repeticao:icone>
+        <li class="paymentMethodsIcons-li"><img src="[A2]" alt="[A1]" /></li>
+    </repeticao:icone-->
+    <li class="paymentMethodsIcons-li"><img alt="Cartão MasterCard Online" src="imagens/rodape_pag_master.png" /></li>
+    <li class="paymentMethodsIcons-li"><img alt="Cartão Visa Online" src="imagens/rodape_pag_visa.png" /></li>
+    <li class="paymentMethodsIcons-li"><img alt="Cartão Diners Online" src="imagens/rodape_pag_dinners.png" /></li> 
+    <li class="paymentMethodsIcons-li"><img alt="Depósito Bancário" src="imagens/rodape_pag_deposito.png" /></li>   
+    <li class="paymentMethodsIcons-li"><img alt="Faturado" src="imagens/rodape_pag_faturamento.png" /></li>          
+</ul>]]></IconesRodapeHTML></IconesRodape></IconesRodapes></controles></page>

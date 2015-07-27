@@ -1,0 +1,49 @@
+.entrega_conteudo{
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+.bt_direita{
+    text-align: right;
+}
+
+#entrega p{
+    margin: 15px;
+    font-size: 11px;
+}
+
+.enderecos{
+    list-style: none;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.enderecos li{
+    width: 220px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    height: 165px;
+	border: 1px solid #f4f4f4;
+}
+
+.enderecos li h3{
+    font-weight: normal;
+    font-family: 'source_sans_prosemibold';
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+#entrega  .enderecos li p{
+    font-size: 12px;
+    margin: 10px 0;
+    font-weight:normal;
+}
+
+.enderecos li.selecionado{
+}
+
+#entrega  .enderecos li .bt{
+    margin-top: 10px;
+    text-align: center;
+}

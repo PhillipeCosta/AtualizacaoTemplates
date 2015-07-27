@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ComprarDiretos><ComprarDireto ID="ComprarDireto"><ComprarDiretoHTML><![CDATA[<div>
+    <div class="mensagem_compra_direta">
+        [A0]
+    </div>
+    <br />
+    <div class="bt_compra_direta" style="text-align: center;">
+        <a href="[A2]" class="box-bt btn-secondary">Continuar comprando</a>
+        <a href="[A1]" class="box-bt btn-secondary">Ir para o carrinho</a>
+    </div>
+</div>]]></ComprarDiretoHTML><MensagemSemPermissaoDeAdicionarNoTemplateHTML><![CDATA[]]></MensagemSemPermissaoDeAdicionarNoTemplateHTML></ComprarDireto></ComprarDiretos></controles></page>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /><Banner ID="content_right" /></Banners><FiltroGruposs><FiltroGrupos ID="departamentGroups"><FiltroGruposHTML><![CDATA[<div class="form custom-paddingV5">
+  <repeticao:tipo_filtro>
+    <div class="custom-paddingV10">
+      <h6 class="text-uppercase heading-primary custom-paddingV5">[A0]</h6>
+      <select id="departmentGroups">
+        <option value="" selected="">Selecione o filtro</option>
+        <repeticao:filtro>
+          <option value="[A3]">[A1]</option>
+        </repeticao:filtro>
+      </select>
+    </div>
+  </repeticao:tipo_filtro>
+</div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#departmentGroups').change(function(){ 
+            var filtersGroup = $(this).val();
+            window.location = filtersGroup;
+      });        
+    });
+    
+    
+  </script>]]></FiltroGruposHTML></FiltroGrupos></FiltroGruposs><FiltroFaixaPrecos><FiltroFaixaPreco ID="departamentPriceRange"><FiltroFaixaPrecoHTML><![CDATA[<div class="form custom-paddingV10">
+    <h6 class="text-uppercase heading-primary">Faixa de preço</h6>
+    <div class="custom-paddingV5">
+  		[A0]
+  	</div>
+  	<div class="custom-paddingV5">
+		[A1]	
+  	</div>
+    <a href="[A2]" class="btn-secondary text-center text-uppercase pull-right custom-paddingV5 custom-paddingH10">Filtrar</a>  
+</div>]]></FiltroFaixaPrecoHTML></FiltroFaixaPreco></FiltroFaixaPrecos><ProdutoBarraNavegacaos><ProdutoBarraNavegacao ID="breadCrumb"><ProdutoBarraNavegacaoHTML><![CDATA[<div class="bread-crumb text-lowercase">
+  <a href="[A0]">Início</a><a href="[A1]">&nbsp;//&nbsp;listagem de produtos</a> 
+</div>]]></ProdutoBarraNavegacaoHTML></ProdutoBarraNavegacao></ProdutoBarraNavegacaos><FiltrosUtilizadoss><FiltrosUtilizados ID="departamentFilterBy"><FiltrosUtilizadosHTML><![CDATA[<div class="custom-overflow custom-paddingV20 text-left department-filterBy">
+	<strong class="text-lowercase pull-left custom-paddingV3">Filtrado por&nbsp;&nbsp;</strong>
+	<repeticao:parametros_utilizados>
+  		<div class="pull-left custom-overflow department-filterByItens">
+          <div class="btn-secondary text-lowercase custom-paddingV3 custom-paddingH10 custom-overflow" style="margin: 0 10px;">
+            <span class="pull-left" style="padding-right: 10px;">[A0]</span>
+            <a href="[A1]" class="pull-right btn-secondary">x</a>
+          </div>
+        </div>
+	</repeticao:parametros_utilizados>
+</div>  
+]]></FiltrosUtilizadosHTML></FiltrosUtilizados></FiltrosUtilizadoss><ListagemCompletas><ListagemCompleta ID="departamentCollection"><Comparar value="Sim" /><HTMLComparacao><![CDATA[]]></HTMLComparacao><HTMLDestaque><![CDATA[]]></HTMLDestaque><HTMLListagem><![CDATA[<h4 class="text-uppercase text-left heading-primary custom-paddingV20"><strong><i>[D0]</i></strong></h4>
+<p>[D5]</p>
+<ul class="custom-overflow custom-paddingV30">
+  <repeticao:produtos>
+    <li class="col-xs-3 collection-box custom-paddingH10">
+      <div class="text-center collection-photo">     
+        <condicao:produto_indisponivel>
+          <span class="collection-sealUnavailable btn-Unavailable custom-paddingV5 custom-paddingH10 text-center"><strong>Indisponível</strong></span>
+        </condicao:produto_indisponivel>
+        <a href="[D1]" class="<condicao:produto_indiponivel>photoUnavailable</condicao:produto_indisponivel>"><img src="[D2]?width=125&height=125" alt="[D6]" /></a>       
+        <condicao:lancamento>
+          <span class="collection-sealRelease"><img src="imagens/lancamento.png" alt="Tag Lançamento" /></span>
+        </condicao:lancamento>   
+      <condicao:promocao_brinde>
+        <div class="collection-sealGift"><a href="[D56]" data-toggle="modal" target="_blank" data-target="#promoBrinde"><img src="[D57]" alt="Promocao Brinde" /></a>
+          <div class="modal fade" id="promoBrinde" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    </div>
+                </div>
+              </div> 
+        </div>
+      </condicao:promocao_brinde>               
+      </div>
+      <div class="text-leftcustom-paddingH5">
+          <div class="collection-buyFast custom-overflow custom-paddingV5">   
+          <condicaofalsa:sob_orcamento>     
+          <condicao:comprar_direto>
+              <div class="collection-buyFast-quantity main-overflow pull-left custom-paddingV5">
+                <a href="[D26]"><span class="fa fa-caret-left"></span></a>
+                [D23]
+                <a href="[D25]"><span class="fa fa-caret-right"></span></a>
+              </div>
+              <div class="collection-buyFast-btn main-overflow pull-left custom-paddingH5 custom-paddingV5">
+                <a href="[D24]" class="custom-paddingH10 custom-paddingV3 text-uppercase text-center btn btn-primary">comprar</a>
+              </div>
+          </condicao:comprar_direto>
+          </condicaofalsa:sob_orcamento>
+          <condicao:sob_orcamento>
+            <div class="text-center custom-paddingV5 collection-quoteRequest">
+             <a href="[D1]" class="btn btn-primary custom-paddingH15 custom-paddingV3">Sob Orçamento</a>
+            </div> 
+          </condicao:sob_orcamento>              
+          </div>            
+        <h5 class="collection-name custom-overflow text-center"><a href="[D1]">[D6]</a></h5>
+        <div class="custom-paddingV15">                   
+            <h6 class="collection-price text-center">
+              <condicao:preco_antigo>[D19]</condicao:preco_antigo>    
+            </h6>              
+            <h5 class="collection-adjustedPrice custom-paddingV5 text-center">
+              <strong>[D15]</strong>
+            </h5>
+          <h6 class="collection-instalments custom-paddingH5 text-center">
+              <condicao:parcelamento>ou [D13] [D12]</condicao:parcelamento>            
+          </h6>          
+          <h6 class="collection-payInFullPrice custom-paddingH5 text-center">
+              <condicao:desconto_vista><a href="[D1]">ou <strong>[D27]</strong> à vista</a></condicao:desconto_vista>
+          </h6>              
+        </div>
+      </div>
+        <condicao:promocao_express>
+            <a class="collection-sealExpress external" data-toggle="modal" href="[D30]" data-target="#promoExpress1"><img src="[D28]" alt="[D6]" title="Clique e Saiba Mais!" /></a>
+            <div class="modal fade" id="promoExpress1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  </div>
+              </div>
+            </div>     
+        </condicao:promocao_express> 
+        <condicao:promocao_frete>
+            <a href="[D31]" class="collection-sealShipping external" data-toggle="modal" data-target="#promoFrete1"><img src="[D29]" alt="[D6]" title="Clique e Saiba Mais!" /></a>
+            <div class="modal fade" id="promoFrete1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  </div>
+              </div>
+            </div>                 
+        </condicao:promocao_frete> 
+    </li>
+  </repeticao:produtos>
+</ul> ]]></HTMLListagem><HTMLModelo><![CDATA[<div class="collection-top custm-overflow">
+  <div class="collection-pagination pull-left form col-md-6 custom-clearPadding">[A4]</div>
+  <div class="collection-ordenation pull-right text-right col-md-6 custom-clearPadding">[A1]</div>
+</div>
+<div class="custom-overflow" style="clear: both;">
+	[A2]
+</div>
+<div class="collection-bottom custom-padding custom-overflow">
+  <div class="collection-pagination pull-left form col-md-6 custom-clearPadding">[A4]</div>
+  <div class="collection-ordenation pull-right text-right col-md-6 custom-clearPadding">[A1]</div>
+</div>]]></HTMLModelo><HTMLOrdenarPor><![CDATA[<strong class="text-lowercase custom-paddingV5 pull-left">Ordenar por&nbsp;&nbsp;</strong><div class="pull-left" style="width: 50%;">[E0]</div>]]></HTMLOrdenarPor><HTMLPaginacao><![CDATA[<condicao:paginacao>
+  <div class="collection-pagination-pages custom-paddingV5">
+    	<strong class="text-uppercase collection-pagination-title">Páginas&nbsp;</strong>
+        <condicao:pagina_anterior>
+            <a href="[F5]"><span class="fa fa-angle-left"></span> </a>
+        </condicao:pagina_anterior>    
+        <repeticao:paginas quantidade="5">
+          <a href="[F7]" class="custom-paddingH5 collection-page page <condicao:pagina_selecionada> collection-pageActive </condicao:pagina_selecionada>"><strong>[F8]</strong></a>
+        </repeticao:paginas>
+        <condicao:proxima_pagina>
+          	<a href="[F6]"><span class="fa fa-angle-right"></span></a>
+        </condicao:proxima_pagina>
+  </div>  
+</condicao:paginacao>]]></HTMLPaginacao><HTMLPesquisaInvalida><![CDATA[<h4 class="heading-primary">"<strong>A pesquisa por [G1] possúi termos inválidos. Seus termos de pesquisa devem possuír pelo menos três caracteres.</strong>"</h4>]]></HTMLPesquisaInvalida><HTMLSemResultados><![CDATA[<h4 class="text-left heading-primary custom-paddingV10">Desculpe</h4>
+<h6 class="custom-paddingV10" style="line-height:20px;">Departamentos sem produtos cadastrados</h6>]]></HTMLSemResultados><ImagemAvaliacaoDeselecionado value="" /><ImagemAvaliacaoSelecionado value="" /><MostraDestaque value="Não" /><Ordenar value="Sim" /><Paginacao value="Sim" /><TamanhoImagem value="Gigantes" /><TipoExibicao value="Listagem" /></ListagemCompleta></ListagemCompletas></controles></page>

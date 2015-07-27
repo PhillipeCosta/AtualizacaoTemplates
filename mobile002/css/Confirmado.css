@@ -1,0 +1,163 @@
+.pedido_dados{
+    float: left;
+    margin-left: 15px;
+}
+
+.pedido_dados p{
+    color:#333;
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin: 3px 0;
+}
+
+.pedido_dados p.boleto{
+    color: #464646;
+    font-size: 13px;
+}
+
+.pedido_dados p.status{
+    font-size: 14px;
+    color: #000;
+}
+
+.pedido_dados p.status img{
+    margin: 0;
+    vertical-align: middle;
+}
+
+.pedido_dados img{
+    margin: 5px 0;
+}
+
+
+.tab_carrinho .subtotal th, .tab_carrinho .cupom th, .tab_carrinho .total th, .tab_carrinho .frete th{
+    text-align: right;
+}
+
+.tab_carrinho th{
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    font-weight: normal;
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+.tab_carrinho .item_carrinho td{
+    height: 65px;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0 5px;
+}
+
+.tab_carrinho td{
+    text-align: center;
+    font-size:12px;
+}
+
+.tab_carrinho{
+}
+
+.tab_carrinho tr{
+    color: #575757;
+    font-size: 13px;
+}
+
+.tab_carrinho a{
+    color: #575757;
+    text-decoration: none;
+}
+
+.tab_carrinho a:hover{
+    text-decoration: underline;
+}
+
+
+.tab_carrinho thead th {
+    background: url('../imagens/tit_box_bg.png') repeat-x center top;
+    line-height: 36px;
+    color: #fff;
+}
+
+.tab_carrinho .frete{
+    text-align: left;
+    padding: 5px;
+    color: #666;
+}
+
+.tab_carrinho th.frete_valor{
+    color:#666;
+    font-weight: bold;
+    text-align: right;
+}
+
+.tab_carrinho td.frete_valor{
+    color:#666;
+    white-space: nowrap;
+    padding: 0 10px;
+    line-height: 25px;
+}
+
+.tab_carrinho th.cupom{
+    color:#666;
+    font-weight: bold;
+    text-align: right;
+}
+
+.tab_carrinho td.cupom{
+    color:#000;
+    white-space: nowrap;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tab_carrinho th.total{
+    color:#666;
+    font-weight: bold;
+    text-align: right;
+}
+
+.tab_carrinho td.total{
+    color:#145FA6;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+
+.bt_esquerda{
+    text-align: left;
+}
+
+.bt_esquerda a{
+    margin: 5px 0px;
+}
+
+h2.confira{
+    font-size: 18px;
+    color:#052547;
+    margin: 5px 0 15px 10px;
+}
+
+.duvidas{
+    margin-top: 15px;
+}
+
+.duvidas .duvidas_conteudo{
+    overflow: hidden;
+}
+
+.duvidas .duvidas_conteudo p{
+    color: #052547;
+    margin: 5px 10px;
+    font-size: 12px;
+}
+
+.banner_ebit{
+	margin: 0.5em 0;
+	text-align: center;
+}

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><LoginConvidados><Convidado ID="Convidado1"><LoginConvidadoHTML><![CDATA[<div class="form">
+	@using (Html.BeginForm()) {  
+      <div class="box-item-carrinho-checkout">
+          <a href="javascript:void(0);" class="aba-item-carrinho checkout-tab">
+              <div class="pull-left">
+                  <h2>Dados Pessoais</h2>
+              </div>
+          </a>
+          <div class="lista-itens-checkout">
+              <div class="list_entrega tipo_pessoa">
+                  <label>
+                   @Html.InputRadio("Customer.CustomerType", "Person").AddClass("radio").TabIndex("1") <span>Pessoa Física</span>
+               </label>
+               <label>
+                  @Html.InputRadio("Customer.CustomerType", "Company").AddClass("radio").TabIndex("2") <span>Pessoa Jurídica</span>
+              </label>
+          </div>
+          <div class="list_entrega parent-validation">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Nome Completo</span>
+                  @Html.InputText("Customer.Name").Maxlength("100").TabIndex("3")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>
+          <div class="list_entrega parent-validation">
+              <label class="larg_50">
+                  <span class="tit_label_entrega obrigatorio documentid">CPF <small class="exampledocumentid">(000.000.000-00)</small></span>
+                  @Html.TextBoxFor(m => m.Customer.DocumentId,  new {@type = "tel"}).AddClass("documento").Maxlength("14").TabIndex("4")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>   
+          <div class="list_entrega parent-validation inscricaoEstadual campo_inscricao_estadual" style="display: none;">
+            <label><span class="form-title">Inscrição Estadual*</span> @Html.InputText("Customer.RegionalDocumentId").Maxlength("20") @Html.ValidationMessage("Customer.RegionalDocumentId")</label>
+            <label class="register-isent" style="width: auto; display: inline-block;"><input id="chkIsentoInscricaoEstadual" type="checkbox" /> <span>Isento</span></label>            
+          </div>             
+          <div class="list_entrega parent-validation">
+              <label><span class="tit_label_entrega obrigatorio">Telefone Principal</span></label>
+              <label class="larg_25">
+                  @Html.TextBoxFor(m => m.Customer.PhoneAreaCode,  new {@type = "tel"}).AddClass("ddd").TabIndex("5")
+              </label>
+              <label class="larg_73">
+                  @Html.TextBoxFor(m => m.Customer.PhoneNumber,  new {@type = "tel"}).AddClass("telefone").TabIndex("6")
+              </label>
+              <span class="mostra-erro">Verifique este item</span>                  
+          </div> 
+          <div class="list_entrega ">
+              <label><span class="tit_label_entrega">Telefone Alternativo</span></label>
+              <label class="larg_25">
+                  @Html.TextBoxFor(m => m.Customer.PhoneAreaCodeAlternative,  new {@type = "tel"}).AddClass("ddd").TabIndex("7")
+              </label>
+              <label class="larg_73">
+                  @Html.TextBoxFor(m => m.Customer.PhoneNumberAlternative,  new {@type = "tel"}).AddClass("telefone").TabIndex("8")
+              </label>
+          </div>
+          <div class="list_entrega parent-validation">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Email</span>
+                  @Html.TextBoxFor(m => m.Customer.Email,  new {@type = "email"}).TabIndex("9")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>
+          <div class="list_entrega centro recebe_email">
+              @Html.InputCheckBox("Customer.AcceptsMarketing")
+              @Html.LabelText("Customer.AcceptsMarketing", "Gostaria de receber emails com lançamentos e promoções")
+          </div> 
+      </div>
+  </div>     
+  <div class="box-item-carrinho-checkout">
+      <a href="javascript:void(0);" class="aba-item-carrinho checkout-tab">
+          <div class="pull-left">
+              <h2>Dados de Entrega</h2>
+          </div>
+      </a>
+      <div class="lista-itens-checkout">
+          <div class="list_entrega">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Digite primeiro o CEP</span>
+                  @Html.TextBoxFor(m => m.ShippingAddresses.ZipCode,  new {@type = "tel"}).AddClass("cep").TabIndex("10")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>
+          <div class="list_entrega parent-validation entrega_oculta">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Endereço</span>
+                  @Html.InputText("ShippingAddresses.Street").Maxlength("200").TabIndex("11")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div> 
+          <div class="list_entrega parent-validation entrega_oculta">
+              <label class="larg_50">
+                  <span class="tit_label_entrega obrigatorio">Número</span>
+                  @Html.TextBoxFor(m => m.ShippingAddresses.StreetNumber,  new {@type = "tel"}).TabIndex("12")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>
+          <div class="list_entrega entrega_oculta">
+              <label class="larg_30">
+                  <span class="tit_label_entrega">Complemento <small>Opcional</small></span>
+                  @Html.InputText("ShippingAddresses.StreetComplement").Maxlength("50").TabIndex("13")
+              </label>
+          </div>   
+          <div class="list_entrega parent-validation entrega_oculta">
+              <label class="larg_30">
+                  <span class="tit_label_entrega obrigatorio">Bairro</span>
+                  @Html.InputText("ShippingAddresses.District").Maxlength("80").TabIndex("14")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>  
+          <div class="list_entrega parent-validation entrega_oculta">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Cidade</span>
+                  @Html.InputText("ShippingAddresses.City").Maxlength("100").TabIndex("15")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>
+          <div class="list_entrega parent-validation entrega_oculta">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Estado</span>
+                  @Html.InputDropdown("ShippingAddresses.State", "States", "Selecione um estado").TabIndex("16")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>   
+          <div id="cobranca" class="entrega_oculta">
+              <strong>Este é seu endereço de cobrança?</strong>
+              <div class="list_entrega centro" style="padding: 3px 0 0">
+                  <label>
+                      @Html.InputRadio("IsSameBillingAddress", "True").AddClass("radio").TabIndex("17") <span>Sim</span>
+                  </label>
+                  <label>
+                      @Html.InputRadio("IsSameBillingAddress", "False").AddClass("radio").TabIndex("18") <span>Não</span>
+                  </label>
+              </div>
+          </div>  
+      </div>
+  </div>  
+  
+  <div class="box-item-carrinho-checkout enderecoCobranca">
+      <a href="javascript:void(0);" class="aba-item-carrinho checkout-tab">
+          <div class="pull-left">
+              <h2>Dados de Cobrança</h2>
+          </div>
+      </a>
+      <div class="lista-itens-checkout">
+          <div class="list_entrega">
+              <div class="dados">
+                  <label>
+                      <span class="tit_label_entrega obrigatorio">Digite primeiro o CEP</span>
+                      @Html.TextBoxFor(m => m.Customer.BillingAddress.ZipCode,  new {@type = "tel"}).AddClass("cep").TabIndex("19")
+                  </label>
+              </div>
+          </div>
+          <div class="list_entrega parent-validation">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Endereço</span>
+                  @Html.InputText("Customer.BillingAddress.Street").Maxlength("200").TabIndex("20")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div> 
+          <div class="list_entrega parent-validation">
+              <label class="larg_50">
+                  <span class="tit_label_entrega obrigatorio">Número</span>
+                  @Html.TextBoxFor(m => m.Customer.BillingAddress.StreetNumber,  new {@type = "tel"}).TabIndex("21")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>
+          <div class="list_entrega">
+              <label class="larg_30">
+                  <span class="tit_label_entrega">Complemento <small>Opcional</small></span>
+                  @Html.InputText("Customer.BillingAddress.StreetComplement").Maxlength("50").TabIndex("22")
+              </label>
+          </div>   
+          <div class="list_entrega parent-validation">
+              <label class="larg_30">
+                  <span class="tit_label_entrega obrigatorio">Bairro</span>
+                  @Html.InputText("Customer.BillingAddress.District").Maxlength("80").TabIndex("23")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>  
+          <div class="list_entrega parent-validation">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Cidade</span>
+                  @Html.InputText("Customer.BillingAddress.City").Maxlength("100").TabIndex("24")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div>
+          <div class="list_entrega parent-validation">
+              <label>
+                  <span class="tit_label_entrega obrigatorio">Estado</span>
+                  @Html.InputDropdown("Customer.BillingAddress.State", "States", "Selecione um estado").TabIndex("25")
+                  <span class="mostra-erro">Verifique este item</span>
+              </label>
+          </div> 
+      </div>
+  </div>
+  <div> 
+      <a href="#" class="bt-principal text-center btn-primary" id="enviar" name="enviar">Continuar</a>
+  </div>
+  }
+</div>]]></LoginConvidadoHTML></Convidado></LoginConvidados><Links><Link ID="Identificacao"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="destino=EnderecoEntrega" /><Target value="MesmaPagina" /><Texto value="Já sou cliente!" /><UsarHTTPS value="True" /></Link><Link ID="Cadastro"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Criar Cadastro" /><UsarHTTPS value="True" /></Link></Links><Banners><Banner ID="header" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

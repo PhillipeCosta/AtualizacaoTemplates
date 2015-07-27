@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoRelatorioVisitass><AfiliadoRelatorioVisitas ID="affiliateVisits"><AfiliadoRelatorioVisitasHTML><![CDATA[<div class="main-overflow main-padding20">
+  [A3]
+</div>
+<div class="main-overflow main-padding20">
+  <div class="col-md-6 form">
+    Organizar por: <span style="width: 200px; display: inline-block;">[A2]</span>
+    <a href="javascript:void(0);" onclick="[A5]" class="bt btn-secondary">Filtrar</a>
+  </div>
+  <div class="col-md-6 form text-right">
+    <condicao:mes>
+      <span style="width: 100px; display: inline-block;">[A0]</span>
+    </condicao:mes>
+    <span style="width: 100px; display: inline-block;">[A1]</span>
+    <a href="javascript:void(0);" onclick="[A5]" class="bt btn-secondary">Filtrar</a>      
+  </div>
+</div>
+<div class="main-overflow main-padding">
+  [A4]
+</div>  
+
+]]></AfiliadoRelatorioVisitasHTML><AfiliadosRelatorioVisitasMensagemSemDadosHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <h5>Sem dados para visualizar</h5>
+</div>]]></AfiliadosRelatorioVisitasMensagemSemDadosHTML><AlturaGrafico value="200" /><AlturaGraficoMes value="200" /><CorLinha value="#145FA6" /><CorLinhaMes value="#145FA6" /><DadosAfiliadosRelatorioVisitasAnualHTML><![CDATA[<div class="main-overflow main-padding">
+    [E0]
+</div>]]></DadosAfiliadosRelatorioVisitasAnualHTML><DadosAfiliadosRelatorioVisitasMensalHTML><![CDATA[<div class="main-overflow main-padding">
+    [C0]
+</div>]]></DadosAfiliadosRelatorioVisitasMensalHTML><GraficoAfiliadosRelatorioVisitasAnualHTML><![CDATA[<div class="main-overflow main-padding">
+    [D0]
+</div>]]></GraficoAfiliadosRelatorioVisitasAnualHTML><GraficoAfiliadosRelatorioVisitasMensalHTML><![CDATA[<div class="main-overflow main-padding">
+    [B0]
+</div>]]></GraficoAfiliadosRelatorioVisitasMensalHTML><LarguraGrafico value="990" /><LarguraGraficoMes value="990" /><TituloGrafico value="Visitas dia" /><TituloGraficoMes value="Visitas mês" /></AfiliadoRelatorioVisitas></AfiliadoRelatorioVisitass></controles></page>

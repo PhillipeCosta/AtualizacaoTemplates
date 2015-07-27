@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresentesListagems><ListaPresentesListagem ID="giftList_list"><ListaPresentesListagemHTML><![CDATA[<div>
+    <table width="100%;" cellspacing="0" cellpadding="0" border="0" class="table">
+        <thead>
+            <tr>
+                <th class="table-title">Nome da Lista</th>
+                <th class="table-title">Tipo de Lista</th>
+                <th class="table-title">Nome dos Noivos</th>
+                <th class="table-title">Data/Hora do Evento</th>
+                <th class="table-title">Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+          <repeticao:listagem>
+            <tr class="table-item">
+                <td class="align-center"><a href="[A3]">[A19]</a></td>
+                <td class="align-center"><a href="[A3]">[A0]</a></td>
+                <td class="align-center"><a href="[A3]">[A2]</a></td>
+                <td class="align-center"><a href="[A3]">[A1]</a></td>
+                <td class="align-center"><a href="[A16]"><span class="giftList-del"></span></a></td>
+            </tr>                                                       
+          </repeticao:listagem>
+        </tbody>
+    </table>
+</div>
+<div class="collection-bottom">
+  <div class="collection-pagination">
+    <div class="collection-pagination-pages">
+      <repeticao:pagina>
+          <a href="[A6]" class="page <condicao:pagina_selecionada>active</condicao:pagina_selecionada>">[A5]</a>
+      </repeticao:pagina>
+    </div>
+  </div>
+</div>
+
+[A17]
+<style>
+.collection-bottom{ padding: 0 10px; }  
+.active{ margin: 6px 2px !important; }  
+</style>]]></ListaPresentesListagemHTML><ListaPresentesUsuarioSemListagemHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong> Não existem listas de presentes criadas por você.
+</div>
+
+<style>
+  .table{ display: none }
+  .collection-bottom{ display: none; }
+</style>]]></ListaPresentesUsuarioSemListagemHTML><QuantidadeItensPorPagina value="10" /></ListaPresentesListagem></ListaPresentesListagems></controles></page>

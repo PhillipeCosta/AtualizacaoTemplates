@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><Convidados><Convidado ID="guest"><LoginConvidadoHTML><![CDATA[@using (Html.BeginForm()) {  
+    <div class="identification form">
+      <div class="register-form form-content">
+          <div class="form-box w-49 to-left">
+            <h2 class="form-box-heading"><span class="register-info">Campos marcados com * são obrigatórios.</span>Dados Pessoais</h2>
+            <fieldset class="register-content">
+                  <condicao:tipo_pessoa>
+                      <div class="form-item w-100 register-personType">
+                            @Html.InputRadio("Customer.CustomerType", "Person").AddClass("radio") <label for="Person">Pessoa Física</label>
+                          @Html.InputRadio("Customer.CustomerType", "Company").AddClass("radio") <label for="Company">Pessoa Jurídica</label>
+                      </div>
+                  </condicao:tipo_pessoa>
+                  <div class="form-item validate required w-100" data-type="name">
+                      <label><span class="form-title">Nome Completo*</span> @Html.InputText("Customer.Name").Maxlength("100") @Html.ValidationMessage("Customer.Name")</label>
+                  </div>     
+                  <div class="form-item validate required w-50">
+                      <label><span class="form-title regionalDocumentId-name">RG</span> @Html.InputText("Customer.RegionalDocumentId").Maxlength("20") @Html.ValidationMessage("Customer.RegionalDocumentId")</label>
+                      <label class="register-isent checkComplemento" style="display: none;">
+                          <input id="chkIsentoInscricaoEstadual" type="checkbox" /> <span>Isento</span>
+                      </label>
+                  </div>                               
+                  <div class="form-item validate required w-50">
+                      <label><span class="form-title labelCPF">CPF*</span> @Html.InputText("Customer.DocumentId").Maxlength("18") @Html.ValidationMessage("Customer.DocumentId")</label>
+                  </div> 
+                  <div class="form-item validate required w-50 register-phone">
+                        <span class="form-title">Telefone Principal*</span>
+                        <label class="w-15">@Html.InputText("Customer.PhoneAreaCode").Maxlength("2").AddClass("txtDDD")</label> <label class="w-5 align-center">-</label> <label class="w-80"> @Html.InputText("Customer.PhoneNumber").Maxlength("10") @Html.ValidationMessage("Customer.PhoneNumber")</label>
+                  </div>
+                  <div class="form-item w-50 register-phone">
+                        <span class="form-title">Telefone Alternativo</span>
+                        <label class="w-15">@Html.InputText("Customer.PhoneAreaCodeAlternative").Maxlength("2").AddClass("txtDDD")</label> <label class="w-5 align-center">-</label> <label class="w-80">@Html.InputText("Customer.PhoneNumberAlternative").Maxlength("10") @Html.ValidationMessage("Customer.PhoneNumberAlternative")</label>
+                  </div>
+                  <div class="form-item validate required w-100">
+                      <label><span class="form-title">Email*</span> @Html.InputText("Customer.Email").Maxlength("100") @Html.ValidationMessage("Customer.Email")</label>
+                  </div>                   
+                  <div class="form-item w-100">
+                        <label class="checkbox"><span class="form-title">&nbsp;</span>@Html.InputCheckBox("Customer.AcceptsMarketing") Gostaria de receber e-mails com lançamentos e promoções</label>
+                  </div>
+            </fieldset>
+          </div>
+          <div class="form-box w-49 to-right">
+            <h2 class="form-box-heading">Endereço de Entrega</h2>
+            <fieldset class="register-content">
+                    <div class="form-item validate required cep  w-100">
+                        <label><span class="form-title">Digite Primeiro o CEP*</span>
+                        @Html.InputText("ShippingAddresses.ZipCode").Maxlength("9") @Html.ValidationMessage("ShippingAddresses.ZipCode") <a href="javascript:callSearchZipCode('ShippingAddresses_ZipCode')" class="register-forgotZipCode link-default">Esqueceu o CEP?</a></label>
+                    </div>
+                    <div class="form-item validate required  w-60">
+                        <label><span class="form-title">Cidade*</span>
+                        @Html.InputText("ShippingAddresses.City").Maxlength("100") @Html.ValidationMessage("ShippingAddresses.City")</label>
+                    </div>
+                    <div class="form-item validate required  w-40">
+                        <label><span class="form-title">Estado*</span>
+                        @Html.InputDropdown("ShippingAddresses.State", "States", "Selecione um estado") @Html.ValidationMessage("ShippingAddresses.State")</label>
+                    </div>
+                    <div class="form-item validate required  w-70">
+                        <label><span class="form-title">Endereço*</span>
+                        @Html.InputText("ShippingAddresses.Street").Maxlength("200") @Html.ValidationMessage("ShippingAddresses.Street")</label>
+                    </div>
+                    <div class="form-item validate required  w-30">
+                        <label><span class="form-title">Número*</span>
+                        @Html.InputText("ShippingAddresses.StreetNumber").Maxlength("10") @Html.ValidationMessage("ShippingAddresses.StreetNumber")</label>
+                    </div>
+                    <div class="form-item validate required  w-60">
+                        <label><span class="form-title">Bairro*</span>
+                        @Html.InputText("ShippingAddresses.District").Maxlength("80") @Html.ValidationMessage("ShippingAddresses.District")</label>
+                    </div>   
+                    <div class="form-item  w-40">
+                        <label><span class="form-title">Complemento</span>
+                        @Html.InputText("ShippingAddresses.StreetComplement").Maxlength("50")</label>
+                    </div>  
+                  <div id="isSameAddress">
+                        <strong>Este é seu endereço de cobrança?</strong>
+                        <div class="isSameAddress">
+                            <label>
+                                @Html.InputRadio("IsSameBillingAddress", "True").AddClass("radio") <span>Sim</span>
+                            </label>
+                            <label>
+                                @Html.InputRadio("IsSameBillingAddress", "False").AddClass("radio") <span>Não</span>
+                            </label>
+                        </div>
+                    </div>  
+                </fieldset>
+                <div class="form-box-bt align-right">
+                    @Html.ButtonSubmit("Enviar").AddClass("bt-big-special")
+                </div>
+            </div>
+            <div class="form-box w-49 to-right billingAddress hide">
+            <h2 class="form-box-heading">Endereço de Cobrança</h2>
+            <fieldset class="register-content">
+                    <div class="form-item validate required cep  w-100">
+                        <label><span class="form-title">Digite Primeiro o CEP*</span>
+                        @Html.InputText("Customer.BillingAddress.ZipCode").Maxlength("9") @Html.ValidationMessage("Customer.BillingAddress.ZipCode") <a href="javascript:callSearchZipCode('Customer_BillingAddress_ZipCode')" class="register-forgotZipCode link-default">Esqueceu o CEP?</a></label>
+                    </div>
+                    <div class="form-item validate required  w-60">
+                        <label><span class="form-title">Cidade*</span>
+                        @Html.InputText("Customer.BillingAddress.City").Maxlength("100") @Html.ValidationMessage("Customer.BillingAddress.City")</label>
+                    </div>
+                    <div class="form-item validate required  w-40">
+                        <label><span class="form-title">Estado*</span>
+                        @Html.InputDropdown("Customer.BillingAddress.State", "States", "Selecione um estado") @Html.ValidationMessage("Customer.BillingAddress.State")</label>
+                    </div>
+                    <div class="form-item validate required  w-70">
+                        <label><span class="form-title">Endereço*</span>
+                        @Html.InputText("Customer.BillingAddress.Street").Maxlength("200") @Html.ValidationMessage("Customer.BillingAddress.Street")</label>
+                    </div>
+                    <div class="form-item validate required  w-30">
+                        <label><span class="form-title">Número*</span>
+                        @Html.InputText("Customer.BillingAddress.StreetNumber").Maxlength("10") @Html.ValidationMessage("Customer.BillingAddress.StreetNumber")</label>
+                    </div>
+                    <div class="form-item validate required  w-60">
+                        <label><span class="form-title">Bairro*</span>
+                        @Html.InputText("Customer.BillingAddress.District").Maxlength("80") @Html.ValidationMessage("Customer.BillingAddress.District")</label>
+                    </div>   
+                    <div class="form-item  w-40">
+                        <label><span class="form-title">Complemento</span>
+                        @Html.InputText("Customer.BillingAddress.StreetComplement").Maxlength("50") @Html.ValidationMessage("Customer.BillingAddress.StreetComplement")</label>
+                    </div>              
+                </fieldset>
+                <div class="form-box-bt align-right">
+                    @Html.ButtonSubmit("Enviar").AddClass("bt-big-special")
+                </div>
+            </div>
+      </div>
+    </div>
+}]]></LoginConvidadoHTML></Convidado></Convidados><Links><ScriptRazor ID="identification"><ScriptRazorHTML><![CDATA[<a href="~/identificacao/t/@(Cart.TemplateId)/destino/enderecoentrega" class="bt-small-secundary">Eu já sou cliente e sei meu email e senha</a>]]></ScriptRazorHTML></ScriptRazor></Links><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

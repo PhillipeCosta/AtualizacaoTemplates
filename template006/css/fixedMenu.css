@@ -1,0 +1,35 @@
+#container_menu_fixo{
+    position: fixed;
+    left: 8px;
+    top: 20%;
+    width: 170px;
+    z-index: 8888;
+}
+
+.navFixed{
+    float: left;
+    width: 98px;
+    display: none;
+}
+
+.btnFixed{
+	text-indent: -9999px;
+	float: left;
+	display: block;
+	width: 39px;
+	height: 103px;
+}
+
+.btnFixed.selecionado{
+	float: right;		
+}
+
+.navFixed .navFixed-fixedLink{
+	border-bottom: 1px solid #e8e8e8;
+	display: block;  
+    font-size: 14px;	
+}
+
+.navFixed .navFixed-fixedLink:hover{
+	font-weight: bold;
+}

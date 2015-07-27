@@ -1,0 +1,89 @@
+.footer,
+.footer a{
+}
+
+.footer-container{
+  background-size: 100%;
+  width: 100%;
+}
+
+.footer-containerTwo{
+  padding: 4em 0; 
+  width: 100%;
+}
+
+.footer-logoPe{
+  width: 148px;
+  height: 27px;
+  display: block;
+  text-indent: -9999px;
+}
+
+.heading-footer{
+  text-transform: uppercase;
+  font-family: 'montserratbold';
+}
+
+.footer-institutional li{
+  padding: 0 !important;
+}
+
+.footer-institutional li a{
+  font-size: 12px;
+}
+
+.footer-institutional li a:hover{
+	text-decoration: underline;
+}
+
+.footer-seals{
+  margin-top: 0.5em;
+  overflow: hidden;
+}
+
+.footer-seals div{
+  padding: 0 0.4em;
+  display: inline-block;
+}
+
+.footer-sealsMargin img{
+  padding-top: 1.8em;
+}
+
+.footer-downmargin{
+  margin-top: 3em;
+}
+
+.footer-containerNetworks *{
+  vertical-align: top;
+}
+
+.footer-payments *{
+  vertical-align: middle;
+}
+
+.footer-payments ul{
+  margin-left: 1em;
+}
+
+.footer-socialNetwork{
+  font-size: 17px;
+  padding: 0 0.5em;
+  display: inline-block;
+}
+
+.paymentMethodsIcons-li{
+  padding: 0 0.2em !important;
+}
+
+.footer-down{
+  padding: 2em 0 1.5em;
+}
+
+.footer-down *{
+  vertical-align: middle;
+}
+
+.footer-down p{
+  margin: 0 !important;
+}

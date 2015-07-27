@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CadastroAvisemes><CadastroAviseme ID="cmpCadastroAviseme"><CadastroAvisemeHTML><![CDATA[<div class="box">
+<div class="tit_box_roxo heading-primary">
+  <h3>
+    <strong>Avise-me</strong>
+  </h3>
+</div>
+<div class="aviseme">
+    <p> A <strong>[A0]</strong> avisa você quando este produto estiver disponível, é só preencher
+    os campos abaixo com seus dados e assim que possível lhe enviaremos um e-mail.</p>
+    
+    <div class="aviseme_info">
+      <img src="[A8]" alt="[A7]" align="left" />
+      <h3 class="tit_prod_aviseme">[A7]</h3>      
+    </div>
+    <br />
+    [A4][A5][A6]
+    <br />
+    <div class="aviseme_formulario form">
+      <fieldset>
+          <label style="width: 100%;">Nome:<br />
+        [A1]
+          </label><br />
+          <label style="width: 100%;">Email:<br />
+        [A2]
+          </label><br />
+          <label style="width: 100%; padding: 10px 0;">
+            <a href="[A3]" class="btn-secondary" style="padding: 10px; border-radius: 4px;">enviar</a>
+          </label>
+      </fieldset>
+    </div>    
+</div>
+</div>]]></CadastroAvisemeHTML><CadastroAvisemeProdutoNaoSelecionadoHTML><![CDATA[<div class="alert-warning" style="padding: 5px;">
+    <p><strong>Código da variante do produto inválida ou inexistente.</strong></p>
+</div>]]></CadastroAvisemeProdutoNaoSelecionadoHTML><MensagemAlertaCadastroAvisemeHTML><![CDATA[    <div class="alert-warning" style="padding: 5px;">
+        <h5>[B0]</h5>
+        <ul>
+            <repeticao:erro>
+                <li>[B1]</li>
+            </repeticao:erro>
+        </ul>
+    </div>
+]]></MensagemAlertaCadastroAvisemeHTML><MensagemEmailCadastradoAvisemeHTML><![CDATA[    <div class="alert-warning" style="padding: 5px;">
+        <h5>Email já cadastrado. Quando o produto retornar ao estoque enviaremos um email para você.</h5>
+    </div>
+]]></MensagemEmailCadastradoAvisemeHTML><MensagemSucessoCadastroAvisemeHTML><![CDATA[    <div class="alert-success" style="padding: 5px;">
+        <h5>Cadastro realizado com sucesso. Aguarde, quando o produto retornar ao estoque iremos enviar um email.</h5>
+    </div>
+]]></MensagemSucessoCadastroAvisemeHTML><TamanhoImagem value="Pequenas" /></CadastroAviseme></CadastroAvisemes><Banners><Banner ID="Banner_Fullzao" /><Banner ID="Fullzao_Topo" /><Banner ID="mobile_enderecoEntrega" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

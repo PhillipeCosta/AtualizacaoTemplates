@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AcessoPendentes><AcessoPendente ID="AcessoPendente"><AcessoPendenteGeralHTML><![CDATA[[A0] <a href="[A1]">Solicitar acesso</a> ]]></AcessoPendenteGeralHTML></AcessoPendente><AcessoPendente ID="Acessopendente"><AcessoPendenteGeralHTML><![CDATA[<div class="box-acesso-pendente">
+    <div class="to-left">
+      <img src="imagens/acesso-pendente.png" alt="Acesso Pendente" />
+    </div>
+    <div class="to-left">
+      <div class="heading-quartiary">
+      	<h2>Usuário pendente de aprovação</h2>
+      </div>      
+      <p class="msg-acesso-pedente">[B0]</p>
+    </div>
+
+</div> ]]></AcessoPendenteGeralHTML><AcessoPosCadastroGeralHTML><![CDATA[<div class="box-acesso-pendente">
+    <div class="to-left">
+      <img src="imagens/acesso-pendente.png" alt="Acesso Pendente" />
+    </div>
+    <div class="to-left">
+      <div class="heading-quartiary">
+      	<h2>Cadastro realizado com sucesso!</h2>
+      </div>      
+      <p class="msg-acesso-pedente">[A0]</p>
+    </div>
+
+</div> ]]></AcessoPosCadastroGeralHTML></AcessoPendente></AcessoPendentes><LabelVisitantes><LabelVisitante ID="login"><HTMLModeloLogado><![CDATA[<a href="[A0]" style="background: url('imagens/btn_ident.png') no-repeat left -1px scroll transparent; padding-left: 15px;"> [A2] <small>(sair)</small></a>]]></HTMLModeloLogado><HTMLModeloNaoLogado><![CDATA[<a href="[B0]"><img src="imagens/btn_ident.png" />LOGIN</a>]]></HTMLModeloNaoLogado></LabelVisitante></LabelVisitantes><Links><Link ID="btn_cadastro"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="btn_cadastro.png" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Cadastrar-se" /><UsarHTTPS value="True" /></Link></Links><Banners><Banner ID="Fullzao_Topo" /><Banner ID="header_full" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

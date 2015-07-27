@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoDivulgaEmails><AfiliadoDivulgaEmail ID="affiliateEmail"><AfiliadoDivulgaEmailHTML><![CDATA[[A4] [A10]
+<div class="main-overflow main-padding form form-guest">
+    <repeticao:novocadastro>
+        <div class="col-md-6">    
+          <div class="form main-clear main-overflow required">
+            <label class="col-md-3 text-right main-clearPadding main-padding">Nome</label>
+            <span class="col-md-7">
+              [A0]
+            </span>
+          </div>    
+        </div>
+        <div class="col-md-6">
+          <div class="form main-clear main-overflow required">
+            <label class="col-md-3 text-right main-clearPadding main-padding">E-mail</label>
+            <span class="col-md-7">
+              [A1]
+            </span>
+          </div>            
+        </div>        
+    </repeticao:novocadastro>
+</div>    
+<div class="main-overflow col-md-12 text-right">
+        <a href="[A2]" class="bt btn-secondary text-uppercase text-center">Adicionar email</a>
+        <a href="[A9]" class="bt btn-primary text-uppercase text-center">Enviar emails</a>
+</div>
+]]></AfiliadoDivulgaEmailHTML><MensagemAlertaAfiliadoEnvioEmailHTML><![CDATA[<div class="main-padding20 main-overflow">
+  <div class="alert alert-warning" role="alert">
+    <h5>[B0]</h5>
+    <ul class="main-clearPadding">
+      <repeticao:erro>
+        <li>[B1]</li>
+      </repeticao:erro>
+    </ul>
+  </div>
+</div>
+]]></MensagemAlertaAfiliadoEnvioEmailHTML><MensagemSucessoAfiliadoEnvioEmailHTML><![CDATA[<div class="main-padding20 main-overflow">
+  <div class="alert alert-success" role="alert">
+     <h5>Seus e-mails foram enviados com sucesso!</h5>
+  </div>
+</div>
+          
+          ]]></MensagemSucessoAfiliadoEnvioEmailHTML></AfiliadoDivulgaEmail></AfiliadoDivulgaEmails></controles></page>

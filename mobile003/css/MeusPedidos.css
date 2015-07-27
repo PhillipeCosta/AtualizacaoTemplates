@@ -1,0 +1,51 @@
+.last-order-number{
+}
+
+.order-payment{
+    color: inherit;
+    font-size: 13px;
+}
+
+.order-payment-title{
+    color: inherit;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.order-payment-bt{
+    margin-top: 5px;
+}
+
+.orders-search{
+}
+
+.orders-search fieldset{
+    border: none;
+    margin: 8px 0 0 0;
+    padding: 0 0 0 0;
+    display: block;
+}
+
+.orders-search fieldset label{
+    display: inline-block;
+    margin: 0 0 0px 5px;
+    color: inherit;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.orders-search fieldset label span{
+    vertical-align: middle;
+}
+
+.orders-search-bt{
+    margin-top: 10px;
+}
+
+.orders{
+    padding: 20px 0;
+}
+
+.orders .table-item a{
+    color: inherit;
+}

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /></Link></Links><PagOnlines><PagOnline ID="PagOnline1"><PagOnlineHTML><![CDATA[    <script src="[A1]../js/jquery.js"></script>   
+    <!-- Bootstrap -->
+    <link href="[A1]../css/geral.css" rel="stylesheet" />
+    <link href="[A1]../css/bootstrap.css" rel="stylesheet" />
+    <link href="[A1]../css/font-awesome.css" rel="stylesheet" />
+    <link href="[A1]../css/templateSettings.css.razor" rel="stylesheet" />
+
+    <header class="headerCheckout">
+      <div class="container ciashop-mobileHeader">       
+          <div class="logo header-logo">
+            <a href="javascript:void(0);"><img src="[A1]logo.png" alt="logo Checkout" /></a>
+          </div>        
+        <div class="ciashop-stepsCheckout headerCheckout pull-right">
+          <ul class="header-stepsCheckout">
+            <li class="active">Identifica&ccedil;&atilde;o&nbsp;&nbsp;></li>
+            <li>Entrega&nbsp;&nbsp;></li>
+            <li>Pagamento</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="container containerContent2">
+      <div class="ciashop-titBox heading-primary">
+        <h2 style="font-family: Arial; font-size: 15px;">Pagamento&nbsp;<span class="fa"></span></h2>      
+        <span class="ciashop-cantoTit" style="border-top: 1.6em solid transparent !important; border-bottom: 1.5em solid transparent !important;"></span>      
+        <hr />
+      </div>      
+      [A0]
+    </section>
+
+  <link href="[A1]../css/media-queries.css" rel="stylesheet" />
+<style>
+  .tit_dept{ display: none;}
+</style>]]></PagOnlineHTML></PagOnline></PagOnlines></controles></page>

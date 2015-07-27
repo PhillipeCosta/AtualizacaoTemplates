@@ -1,0 +1,53 @@
+/*topo*/
+
+.topo{
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+}
+
+
+.topo_direita{
+    float: right;
+    margin: 10px 0 0;
+}
+
+.topo_esquerda{
+    float: left;
+}
+
+.logo{
+ 	display: block;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: 25px;
+    width: 270px
+}
+
+.logo h1 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/*Botões topo*/
+
+.border_top {
+    border:1px solid #777777;
+*margin-top: -7px;
+}
+
+.nav_bar {
+
+}
+
+.nav_bar span{
+}
+
+.nav_bar a{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 15px;
+}

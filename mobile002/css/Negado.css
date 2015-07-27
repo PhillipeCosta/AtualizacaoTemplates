@@ -1,0 +1,29 @@
+#negado{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+
+.lista_negado {
+    margin: 0 auto;
+    text-align: left;
+    width: 500px;
+    background-color: #E8E8E8;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    font-size:12px;
+}
+
+.lista_negado h2{
+    color: #B81935;
+    font-size: 14px;
+    margin: 7px 0 15px 0;
+}
+
+.lista_negado p{
+    color: #555;
+    display: block;
+    margin-top: 5px;
+}

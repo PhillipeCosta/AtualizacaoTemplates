@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListaPresenteLogins><ListaPresenteLogin ID="ListaPresenteLogin1"><CssComponente><![CDATA[]]></CssComponente><ListaPresentesLoginCadastradoHTML><![CDATA[<div class="lista_login_direita">
+	<div class="respiro">
+      <fieldset>
+        <label>
+          Tipo de Lista:<br />
+          [C0]
+        </label>
+        <label>
+          Digite seu Email:<br />
+          [C1]
+        </label>
+        <label>
+          Digite sua Senha:<br />
+          [C2]
+        </label>
+        <label class="bt">
+          <a href="[C3]"><img src="imagens/bt_continuar.jpg?1" alt="Continuar" border="0" /></a>
+          <a href="[C4]" style="float: left;">Esqueci minha senha</a>
+        </label>
+      </fieldset>
+  </div>
+</div>            ]]></ListaPresentesLoginCadastradoHTML><ListaPresentesLoginCaixaHTML><![CDATA[<div class="lista_login">
+  	[A2]
+    [A0]
+	[A1]
+  	[A3]
+</div>          ]]></ListaPresentesLoginCaixaHTML><ListaPresentesLoginNaoCadastradoHTML><![CDATA[<div class="lista_login_esquerda">
+	<div class="respiro">
+      <fieldset>
+        <label>
+          Tipo de Lista:<br />
+          [B0]
+        </label>
+        <label>
+          Digite seu Email:<br />
+          [B1]
+        </label>
+        <label class="bt">
+          <a href="[B2]"><img src="imagens/bt_continuar.jpg?1" alt="Continuar" border="0" /></a>
+        </label>
+      </fieldset>
+  </div>
+</div>
+          ]]></ListaPresentesLoginNaoCadastradoHTML><ListaPresentesLoginRecuperarSenhaHTML><![CDATA[<fieldset>
+  <label>
+    Forneça seu e-mail e enviaremos sua senha por e-mail:<br />
+    [E0]
+  </label>
+  <label class="bt">
+    <a href="[E1]"><img src="imagens/bt_continuar.jpg?1" alt="Continuar" border="0" /></a>
+    <a href="[E2]" style="float: left;">Voltar para o login</a>
+  </label>
+</fieldset>          ]]></ListaPresentesLoginRecuperarSenhaHTML><MensagemAlertaListaPresentesLoginHTML><![CDATA[<div id="erro">
+  <div class="lista_erro">
+    <h2>[D0]</h2>
+    <ul>
+      <repeticao:erro>
+        <li>[D1]</li>
+      </repeticao:erro>
+    </ul>
+  </div>
+</div>
+          ]]></MensagemAlertaListaPresentesLoginHTML></ListaPresenteLogin></ListaPresenteLogins><SEOs><SEO ID="seo" /></SEOs><Banners><Banner ID="Fullzao_Topo" /></Banners></controles></page>

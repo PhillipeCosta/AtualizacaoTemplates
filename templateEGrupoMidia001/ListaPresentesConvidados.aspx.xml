@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresentesInfos><ListaPresentesInfo ID="giftList_info"><ListaPresentesInformacoesHTML><![CDATA[<condicao:aceitaevento>
+  <div class="heading-primary" style="margin: 10px 0;">
+      <h2>Lista de presentes - [A20]</h2>
+  </div>
+  <condicao:comevento>
+    <p>Homenageados: [A0]</p>
+    <p>Data: [A1]</p>
+    <p>Local: [A15], [A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="[A3]" target="_blanc">(ver mapa)</a></strong></condicao:mapa></p>
+  </condicao:comevento>  
+</condicao:aceitaevento>
+<condicao:naoaceitaevento>
+  <div class="heading-primary" style="margin-top: 10px;">
+      <h2>Lista de presentes - [A20]</h2>
+  </div>  
+</condicao:naoaceitaevento>
+<condicao:semevento>
+  <div class="alert">
+    <strong>Atenção!</strong> Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.
+  </div>
+</condicao:semevento>
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInfo ID="giftList_menu"><ListaPresentesInformacoesHTML><![CDATA[<condicao:aceitaevento>
+<div class="nav-primary dept-menu">
+	<ul>
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A13]">Produtos da lista</a>
+			</h3>
+			<ul>
+				<li><a href="javascript: void(0)" class="bt-addProduct"><span class="nav-primary-bullet">•</span>&nbsp;Adicionar produtos</a></li>
+				<li><a href="[A21]"><span class="nav-primary-bullet">•</span>&nbsp;Escolher lista pronta</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A8]">Lista de convidados</a>
+			</h3>
+		</li>			
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A9]">Enviar mensagem</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A11]">Álbum de fotos</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A10]">Editar evento</a>
+			</h3>
+		</li>					
+	</ul>
+</div>
+</condicao:aceitaevento>
+<condicao:naoaceitaevento>
+<div class="nav-primary dept-menu">
+	<ul>				
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A10]">Produtos da lista</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="javascript: void(0)" class="bt-addProduct">Adicionar produtos</a>
+			</h3>
+		</li>							
+	</ul>
+</div>
+</condicao:naoaceitaevento>
+
+<div style="display: none;">
+  <div class="list-addProduct">
+    <img src="imagens/animacao.gif" alt="Animação" /><br /><br />
+    <a href="[A7]" class="bt-big-special">adicionar produto</a>
+  </div>
+</div>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ListaPresentesListasProntass><ListaPresentesListasProntas ID="giftList_readyList"><ModeloListaPresentesListasProntasHTML><![CDATA[]]></ModeloListaPresentesListasProntasHTML></ListaPresentesListasProntas></ListaPresentesListasProntass><ListaPresentesConvidadoss><ListaPresentesConvidados ID="giftList_listGuests"><ListaPresentesConvidadosHTML><![CDATA[<div> 
+<div class="lista_convidados_titulo">
+      <h4>Lista de convidados</h4>
+      <p>Monte agora sua lista de convidados para seu evento</p>
+      <p>Cadastre o nome e o email e seus convidados. Basta clicar no botão "Adicionar convidado" e preencher os campos. Após o preenchimento salve su lista de convidados clicando em "Salvar Lista".</p>
+      <p>Através da sua lista de convidados você poderá enviar email a todos quando quiser através do link "Enviar Mensagem".</p>			
+  </div>
+  <div style="padding: 15px 0;">
+  	[A5][A6]
+  </div>
+  <div>
+    	<div class="w-35 to-left" style="margin-right: 10px;">
+          <h4>Nome</h4>
+    	</div>
+    	<div class="w-35 to-left">
+          <h4>E-mail</h4>
+    	</div>    	
+        <repeticao:convidados>
+          <fieldset style="border: 0; display: block; clear: both; padding: 10px 0;" class="form">
+              <label class="w-35 to-left" style="margin-right: 10px;">
+                  [A0]
+              </label>
+              <label class="w-35 to-left">
+                  [A1]
+              </label>
+              <label class="w-5 to-left">
+                <a href="[A2]"><span class="giftList-del">deletar convidado</span></a>
+              </label>
+          </fieldset>
+        </repeticao:convidados>
+		<div>
+        	<a href="javascript:void(0);" onclick="[A3]" class="bt-small-special"> + Adicionar convidado</a>
+        </div>	
+
+        <div class="to-right" style="margin: 15px 0;">
+          <a href="javascript:void(0);" onclick="[A4]" class="bt-big-primary">Salvar lista</a>
+        </div>
+    </div>
+  </div>
+]]></ListaPresentesConvidadosHTML><MensagemErroListaPresentesConvidadosHTML><![CDATA[<div class="alert">
+  <strong>[C0]</strong>
+  <ul>
+    <repeticao:erro>
+      <li>[C1]</li>
+    </repeticao:erro>
+  </ul>
+</div>]]></MensagemErroListaPresentesConvidadosHTML><MensagemSucessoListaPresentesConvidadosHTML><![CDATA[<div class="alert success">
+  <strong>Lista de convidados salva com sucesso!</strong>
+</div>]]></MensagemSucessoListaPresentesConvidadosHTML></ListaPresentesConvidados></ListaPresentesConvidadoss></controles></page>

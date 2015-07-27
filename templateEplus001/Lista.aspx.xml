@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListagemCompletas><ListagemCompleta ID="CaixaListagem_Conteudo"><Comparar value="Sim" /><HTMLComparacao><![CDATA[<div class="comparacao">Compare os produtos. Selecione até [B0] produtos e clique no botão ao lado para compará-los.
+  <a href="[B1]" class="box-bt btn-secondary">Comparar</a></div>]]></HTMLComparacao><HTMLDestaque><![CDATA[]]></HTMLDestaque><HTMLListagem><![CDATA[<div class="vitrine_geral">
+<ul>
+  <repeticao:produtos>
+    <li>
+      <div class="produto">
+        <div class="foto" style="height=270px;">
+             <div class="promocao-express">
+              <condicao:promocao_express>
+                <script language="javascript">
+                var win = null;
+                function NovaJanela(pagina,nome,w,h,scroll){
+                  LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+                  TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+                  settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+                  win = window.open(pagina,nome,settings);
+                }
+                </script>
+                <div class="ofertaLabel2"><a href="javascript:void(0);" onclick='window.open("[D30]", "popupwindow", "scrollbars=yes,width=550,height=520");return true'>Promoção</a></div>
+              </condicao:promocao_express>
+               <condicao:promocao_brinde>
+                  <a href="javascript:void(0);" onclick='window.open("[D56]", "popupwindow", "scrollbars=yes,width=550,height=520");return true' class="tagBrinde">Brinde</a>
+              </condicao:promocao_brinde>
+               <condicao:oferta>
+                <div class="ofertaLabel"></div>
+              </condicao:oferta>
+             </div>          
+            <condicao:produto_indisponivel>
+                <div class="box-tag collection-product-unavailableTag">              
+                    Indisponível
+                </div>                  
+            </condicao:produto_indisponivel>
+          <a href="[D1]">
+            <img alt="[D6]" src="[D2]?width=200&height=200" data-otherimages="[D36]" />
+          </a>
+          <condicao:lancamento>
+            <div class="box-tag collection-product-releaseTag">            
+                Lançamento
+            </div>              
+          </condicao:lancamento>
+          <condicao:pre_venda>
+                <div class="box-tag collection-product-prevendaTag">                          
+                  Pré-Venda
+                </div>                  
+              </condicao:pre_venda>
+          <div class="collection-product-shippingTag"> 
+              <condicao:promocao_frete>
+                  <a href="javascript:void(0);" onclick='window.open("[D31]", "popupwindow", "scrollbars=yes,width=550,height=520");return true'>Frete Grátis</a>
+              </condicao:promocao_frete> 
+           </div> 
+        </div>
+        <h3 class="titulo collection-productName"><a href="[D1]">[D6]</a></h3>
+        <div class="descricao">
+        	<a href="[D1]">[D22]</a>
+        </div>
+        <div class="preco_antigo collection-productPrice">
+          <condicao:preco_antigo>
+            <div>[D8] <span class="vitrinePrecoDe">[D19]</span></div>
+          </condicao:preco_antigo>
+        </div>
+        <div class="preco preco_por collection-product-adjustedPrice">
+           <div>[D11] <span class="vitrinePrecoPor">[D15]</span></div>
+        </div>
+        <div class="preco_parcelado ollection-productInstallments">
+          <condicao:parcelamento>
+            <span>[D14] [D13] de [D12]</span>
+          </condicao:parcelamento>
+        </div>
+        <div class="collection-product-payInFullPrice">           
+          <condicao:desconto_vista>
+            à vista [D27]
+          </condicao:desconto_vista>
+        </div>
+        <div class="vitrine_variantes_imagem">
+          <condicao:variante_imagem>
+            <repeticao:variantes quantidade="8">
+              <a href="[D34]"><img src="[D33]?width=15" alt="[D32]" /></a>
+            </repeticao:variantes>
+          </condicao:variante_imagem>
+        </div>
+      </div>
+      <!-- Compra Rapida -->
+              <condicao:comprar_direto>
+                <div class="maisdetalhe">
+                  <div class="cont_quantidadeCont">
+                  <div class="input_quantidade_espiar">[D23]</div>
+                    <div class="seletores_quantidade">
+                      <a href="[D25]" class="vitrine_adicionar"><!--img src="imagens/gen-vitrine-count-mais.png" alt="Adicionar" /--></a>
+                      <a href="[D26]" class="vitrine_remover"><!--img src="imagens/gen-vitrine-count-menos.png" alt="Remover" /--></a>
+                    </div>
+                  </div>
+                  
+                    <a href="[D24]" class="bt-compra-rapida box-bt btn-primary"><!--Comprar--></a>
+                  </div>                   
+              </condicao:comprar_direto>
+      <div class="comparar">
+          <label>[D18]</label>
+        </div>
+    </li>
+  </repeticao:produtos>
+</ul>
+</div>]]></HTMLListagem><HTMLModelo><![CDATA[<div class="ordenar box-paginacao">
+    <div class="ordenar_esquerda">[A1]</div>
+    <div class="ordenar_direita">[A4]</div>
+</div>
+[A2]
+<div class="ordenar box-paginacao">
+    <div class="ordenar_esquerda">[A1]</div>
+    <div class="ordenar_direita">[A4]</div>
+</div>
+[A0]]]></HTMLModelo><HTMLOrdenarPor><![CDATA[<label>ORDENAR: [E0]</label>]]></HTMLOrdenarPor><HTMLPaginacao><![CDATA[<condicao:paginacao>
+    <div class="paginacao">    
+        <condicao:pagina_anterior>
+        </condicao:pagina_anterior>
+        <repeticao:paginas quantidade="5">
+            <a href="[F7]" class="paginas main-pagination<condicao:pagina_selecionada> main-paginationSelected </condicao:pagina_selecionada>">[F8]</a>
+        </repeticao:paginas>
+        <condicao:proxima_pagina>
+            <a href="[F6]" class="prox_ant box-paginacao"> > </a>
+        </condicao:proxima_pagina>    
+    </div>          
+</condicao:paginacao>]]></HTMLPaginacao><HTMLPesquisaInvalida><![CDATA[
+"<strong>A pesquisa por [G1] possúi termos inválidos. Seus termos de pesquisa devem possuír pelo menos três caracteres.</strong>"]]></HTMLPesquisaInvalida><HTMLSemResultados><![CDATA[<div class="heading-primary">
+    <h2>[G1]</h2>
+</div>
+<div class="dept_vazio">
+    Departamento sem produtos cadastrados.
+</div>]]></HTMLSemResultados><ImagemAvaliacaoDeselecionado value="" /><ImagemAvaliacaoSelecionado value="" /><MostraDestaque value="Não" /><Ordenar value="Sim" /><Paginacao value="Sim" /><TamanhoImagem value="Gigantes" /><TipoExibicao value="Listagem" /></ListagemCompleta></ListagemCompletas><Banners><Banner ID="fullzao" /><Banner ID="Lateral" /><Banner ID="lateral" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="custom_prog01"><ScriptRazorHTML><![CDATA[@TemplateSettings.custom_prog01]]></ScriptRazorHTML></ScriptRazor></ScriptRazors><ProdutoBarraNavegacaos><ProdutoBarraNavegacao ID="BarraNavegacaoDepartamento" /></ProdutoBarraNavegacaos><FiltroGruposs><FiltroGrupos ID="FiltroGrupos"><FiltroGruposHTML><![CDATA[    <repeticao:tipo_filtro>
+      <div class="filtros-tipo">
+        <h2 class="filtros-tipo-tit">[A0]</h2>
+        <ul class="filtros-tipo-list">
+            <repeticao:filtro>
+                <li class="filtros-tipo-item">
+                    <a class="filtros-tipo-link" href="[A3]">[A1] ([A2])</a>
+                </li>
+            </repeticao:filtro>
+        </ul>
+      </div>
+    </repeticao:tipo_filtro>]]></FiltroGruposHTML></FiltroGrupos></FiltroGruposs><FiltroFaixaPrecos><FiltroFaixaPreco ID="FiltroFaixaPreco"><FiltroFaixaPrecoHTML><![CDATA[<div class="filtros-tipo">
+  <fieldset>
+    <h2 class="filtros-tipo-tit">Faixa de Preço</h2>
+    <div class="left-filter">
+      <label>[A0]</label>
+      <label>[A1]</label>
+    </div>
+    <label class="botao_filtrar">
+      <a href="[A2]" class="btn-special">filtrar</a>
+    </label>
+  </fieldset>
+</div>]]></FiltroFaixaPrecoHTML></FiltroFaixaPreco></FiltroFaixaPrecos><FiltrosUtilizadoss><FiltrosUtilizados ID="FiltrosUtilizados"><FiltrosUtilizadosHTML><![CDATA[<div class="filtros_utilizados">
+<h2>Busca filtrada por:</h2>
+<ul>
+<repeticao:parametros_utilizados>
+<li>
+[A0] <a href="[A1]"><img src="imagens/filtro_del.png?40" alt="Remover filtro" border="0" hspace="0" vspace="0" /></a>
+</li>
+</repeticao:parametros_utilizados>
+</ul>
+</div>]]></FiltrosUtilizadosHTML></FiltrosUtilizados></FiltrosUtilizadoss></controles></page>

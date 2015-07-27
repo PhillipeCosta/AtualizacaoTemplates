@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CadastroDeAfiliados><CadastroDeAfiliado ID="CadastroDeAfiliado"><CadastroAfiliadoHTML><![CDATA[ 
+        <p>O cadastro está sujeito a aprovação. Você receberá um email com a confirmação do seu cadastro.</p>
+        <div class="afiliados_conteudo">
+            <fieldset class="cep">
+                <label>
+                    Digite primeiro o CEP:<br />
+                    [A25] <a href="http://www.correios.com.br/servicos/cep/cep_default.cfm" target="_blank">
+                        Esqueceu o CEP? Então clique aqui.</a></label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Tipo de Afiliado:<br /> [A26]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Nome Completo/Razão Social:<br /> [A0]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Email:<br /> [A19]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label style="width: 50%;">
+                    Senha:<br />
+                    [A1]
+                </label>
+                <label style="width: 49%;">
+                    Repita a Senha:<br />
+                    [A3]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    URL(s) de seu(s) site(s)/blog(s): <small>(Separado por vírgulas)</small>:<br />
+                    [A5]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Ramo/Profissão:<br />
+                    [A6]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    CPF/CNPJ:<br />
+                    [A7]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    País:<br />
+                    [A8]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label style="width: 60%;">
+                    Cidade:<br />
+                    [A13]
+                </label>
+                <label style="width: 39%;">
+                    Estado:<br />
+                    [A14]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label style="width: 70%;">
+                    Endereço:<br />
+                    [A9]
+                </label>
+                <label style="width: 29%;">
+                    Número:<br />
+                    [A10]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label style="width: 60%;">
+                    Complemento:<br />
+                    [A11]
+                </label>
+                <label style="width: 39%;">
+                    Bairro:<br />
+                    [A12]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label style="width: 100%;">
+                    Telefone 1 (DDD + Telefone):<br />
+                </label>
+                <label class="width15">
+                    [A15]</label>
+                <label class="width78">
+                    [A16]</label>
+            </fieldset>
+            <fieldset>
+                <label style="width: 100%;">
+                    Telefone 2 (DDD + Telefone):<br />
+                </label>
+                <label class="width15">
+                    [A17]</label>
+                <label class="width78">
+                    [A18]</label>
+            </fieldset>
+            <h5>Dados para Depósito do seu Faturamento</h5>
+            <fieldset>
+                <label>
+                    Banco:<br />
+                    [A20]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label style="width: 30%;">
+                    Agência:<br />
+                    [A21]
+                </label>
+            </fieldset>
+            <fieldset>
+                <label style="width: 30%;">
+                    Conta:<br />
+                    [A22]
+                </label>
+             </fieldset>
+            <fieldset>
+                <label>
+                    Nome do Títular da Conta:<br />
+                    [A23]
+                </label>
+            </fieldset>
+        </div>
+    <div class="bt_direita">
+        <div class="respiro">
+            <a href="#" onclick="[A24]"><img src="imagens/bt_continuar.png?15" alt="Continuar" border="0" /></a>
+        </div>
+    </div>
+]]></CadastroAfiliadoHTML><CssComponente><![CDATA[]]></CssComponente><FormatacaoAfiliadoHTML><![CDATA[<div class="respiro">
+    <h2 class="titulo_pedido">
+       <img src="imagens/tit_afiliados.png?15" alt="Afiliados">
+</h2>
+    <div id="afiliados">
+    [C0][C1][C2]
+    </div>
+</div>
+]]></FormatacaoAfiliadoHTML><SucessoCadastroAfiliadoHTML><![CDATA[<div class="tit_box">
+            <h2>Cadastro</h2>
+        </div>
+<div id="sucesso">
+    <div class="lista_sucesso">
+        Seus dados foram enviados para nossa equipe.<br/>
+        Estaremos verificando seu cadastro e retornaremos  com uma posi&ccedil;&atilde;o sobre o seu pedido de cadastro.
+    </div>
+</div>]]></SucessoCadastroAfiliadoHTML><ValidacaoCadastroAfiliadoHTML><![CDATA[<div id="erro">
+    <div class="lista_erro">
+        <h2>Ocorreu os seguintes erros:</h2>
+        <ul>
+            <repeticao:erro>
+                <li>[B0]</li>
+            </repeticao:erro>
+        </ul>
+    </div>
+</div>]]></ValidacaoCadastroAfiliadoHTML></CadastroDeAfiliado></CadastroDeAfiliados></controles></page>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListagemSimpless><ListagemSimples ID="collections_1"><ModeloHTMLVitrine><![CDATA[<div class="heading-primary">
+	<h2>[A0]</h2>
+</div>
+<div class="collection">  
+  <ul>
+  <repeticao:produtos>
+    <li class="collection-li w-50">      
+      <div class="collection-product">
+          <div class="collection-product-image">                
+              <condicao:lancamento>
+              		<a href="[A1]" class="collection-product-release">Lançamento</a>
+              </condicao:lancamento>
+              <condicao:pre_venda>
+              		<a href="[A1]" class="collection-product-preSale">Pré-Venda</a>
+              </condicao:pre_venda>
+              <condicao:preco_antigo>
+              		<a href="[A1]" class="collection-product-offer">[A53]% Off</a>
+              </condicao:preco_antigo>
+              <a href="[A1]"><img src="[A3]?width=250&height=250" width="100%" alt="[A6]" /></a>
+              <condicao:promocao_frete>
+                <div class="collection-product-shippingPromo">
+                  	<a href="[A1]"><img src="[A27]" alt="Promoção de Frete" /></a>
+                </div>
+              </condicao:promocao_frete>   
+              <condicao:produto_indisponivel>
+                  <div class="collection-product-unavailable">
+                        <a href="[A1]">Produto Indisponível</a>
+                  </div>
+              </condicao:produto_indisponivel>              
+          </div>
+          <h3 class="collection-product-name"><a href="[A1]">[A6]</a></h3>
+          <div class="collection-product-price-content">
+            <p class="collection-product-price">
+              <condicao:preco_antigo><del>[A19]</del></condicao:preco_antigo>                            
+              <a href="[A1]">[A15]</a>
+              <condicao:desconto_vista>
+                	<a href="[A1]" style="display:inline-block;" class="collection-product-splitPrice">([A25] à vista)</a>
+              </condicao:desconto_vista>
+            </p>
+            <p class="collection-product-splitPrice"><condicao:parcelamento><a href="[A1]">[A13] de <strong>[A12]</strong></a></condicao:parcelamento></p>            
+          </div>                            
+      </div>
+    </li>
+  </repeticao:produtos>
+  </ul>
+  <a href="[A20]" class="collection-allProducts bt-big-primary w-100 align-center">Ver Todos</a>
+</div>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="1" /></ListagemSimples><ListagemSimples ID="collections_2"><ModeloHTMLVitrine><![CDATA[<div class="heading-primary">
+	<h2>[A0]</h2>
+</div>
+<div class="collection">  
+  <ul>
+  <repeticao:produtos>
+    <li class="collection-li w-50">      
+      <div class="collection-product">
+          <div class="collection-product-image">                
+              <condicao:lancamento>
+              		<a href="[A1]" class="collection-product-release">Lançamento</a>
+              </condicao:lancamento>
+              <condicao:pre_venda>
+              		<a href="[A1]" class="collection-product-preSale">Pré-Venda</a>
+              </condicao:pre_venda>
+              <condicao:preco_antigo>
+              		<a href="[A1]" class="collection-product-offer">[A53]% Off</a>
+              </condicao:preco_antigo>
+              <a href="[A1]"><img src="[A3]?width=250&height=250" width="100%" alt="[A6]" /></a>
+              <condicao:promocao_frete>
+                <div class="collection-product-shippingPromo">
+                  	<a href="[A1]"><img src="[A27]" alt="Promoção de Frete" /></a>
+                </div>
+              </condicao:promocao_frete>   
+              <condicao:produto_indisponivel>
+                  <div class="collection-product-unavailable">
+                        <a href="[A1]">Produto Indisponível</a>
+                  </div>
+              </condicao:produto_indisponivel>              
+          </div>
+          <h3 class="collection-product-name"><a href="[A1]">[A6]</a></h3>
+          <div class="collection-product-price-content">
+            <p class="collection-product-price">
+              <condicao:preco_antigo><del>[A19]</del></condicao:preco_antigo>                            
+              <a href="[A1]">[A15]</a>
+              <condicao:desconto_vista>
+                	<a href="[A1]" style="display:inline-block;" class="collection-product-splitPrice">([A25] à vista)</a>
+              </condicao:desconto_vista>              
+            </p>
+            <p class="collection-product-splitPrice"><condicao:parcelamento><a href="[A1]">[A13] de <strong>[A12]</strong></a></condicao:parcelamento></p>            
+          </div>                            
+      </div>
+    </li>
+  </repeticao:produtos>
+  </ul>
+  <a href="[A20]" class="collection-allProducts bt-big-primary w-100 align-center">Ver Todos</a>
+</div>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="2" /></ListagemSimples></ListagemSimpless><Banners><Banner ID="header_jquery" /><Banner ID="header_full" /><Banner ID="middle" /><Banner ID="bottom" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

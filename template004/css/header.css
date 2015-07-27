@@ -1,0 +1,322 @@
+#header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 175px;
+    z-index: 100;
+}
+
+.header-content{
+    width: 990px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+.header-top{
+    overflow: hidden;
+    padding: 3px 0;
+	border-bottom: 1px solid #cfcfcf;
+	background: #fff;
+}
+
+.header-greeting{
+    float: left;
+}
+
+.header-greeting a:hover{
+    text-decoration: underline;
+}
+
+.header-links{
+    float: right;	
+}
+
+.header-links a{
+	padding: 0 7px;	
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.header-links a:first-child{
+	border: none;
+}
+
+.header-links a:hover{
+    text-decoration: underline;
+}
+
+.header-middle{
+	height: 110px;
+}
+
+.header-logo{
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 300px;
+    height: 100px;
+    background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.header-logo a, .header-fixedLogo a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header-h1{
+	position: absolute;
+	top: 85px;
+	right: 0;
+	color: #ccc;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.header-search{
+    position: absolute;
+    top: 40px;
+    right: 250px;
+}
+
+.header-search fieldset{
+    border: none; 
+    overflow: hidden;
+}
+
+.header-search fieldset label{
+    float: left;
+}
+
+.header-search fieldset label input{
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 10px;
+    width: 345px;
+	background: #eee;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) inset;
+	border-radius: 3px;
+}
+
+.header-search-buttom{
+    background-position: -100px -100px;
+    height: 21px;
+    line-height: 0;
+    width: 21px;
+    float: left;  
+	margin: 8px 0 0 -30px;
+}
+
+.header-cart{
+    border-radius: 3px;
+    overflow: hidden;    
+    position: absolute;
+    right: 0;
+    text-indent: 0;
+    top: 39px;
+}
+
+.header-cart a{
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+	padding: 10px 20px 10px 50px;
+	position: relative;
+}
+
+.header-cart a:before{
+    content: "";
+    display: block;
+	background: url("../imagens/sprite.png") no-repeat -100px -150px;
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	left: 12px;
+	top: 7px;
+}
+
+.header-menu{
+    top: 135px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+}
+
+.header-menu-content{
+    display: table;
+}
+
+.header-menu-allDepartments{    
+    line-height: 11px;
+    float: left;
+    list-style: none;
+    width: 122px;
+}
+
+.header-menu-allDepartments-a{
+    padding: 7px 12px;
+    color: #fff;
+    display: block;
+    text-indent: 0;
+}
+
+.header-menu-allDepartments span{
+    font-size: 14px;
+	display: block;
+	padding: 1px 0;
+}
+
+.header-menu-subMenu{
+    display: none;
+    position: absolute;
+    background: #fff;    
+    text-align: left;
+    box-sizing: border-box;
+	width: 250px;
+  	padding: 10px;
+}
+
+.header-menu-li:hover .header-menu-subMenu, .header-menu-allDepartments:hover .header-menu-subMenu{
+    display: block;
+}
+
+
+.header-menu-subMenu li{
+    list-style: none;
+}
+
+.header-menu-allDepartments-ul > li{
+	float: left;
+	width: 25%;
+}
+
+.header-menu-subMenu li a{
+    display: block;
+    padding: 5px;
+    color: #838383;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.header-menu-allDepartments .header-menu-subMenu li a{
+    padding: 8px 5px;
+}
+
+.header-menu-subMenu li a:hover{
+    background: #F57710;
+    color: #fff;
+}
+
+.header-menu-banner {
+	display: block;
+}
+	
+.header-menu-viewAll {
+    background: none repeat scroll 0 0 #f4f0ed;
+    clear: both;
+    color: #838383;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px -10px -10px -10px;
+    padding: 5px 12px 5px 0;
+    text-align: right;
+}
+	
+.header-menu-viewAll:hover {
+    color: #fff;
+    background: #F57710;
+}
+
+.header-menu-allDepartments .header-menu-subMenu{
+    width: 100%;
+	padding: 20px;
+}
+
+.header-menu-allDepartments .header-menu-subMenu li{
+    list-style: none;
+}
+
+.header-menu-allDepartments .header-menu-subMenu li a{
+    display: block;
+    padding: 8px 5px;
+    color: #838383;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.header-menu-allDepartments .header-menu-subMenu a:hover{
+    color: #fff;
+}
+
+.header-menu-li{
+    float: left;
+    list-style: none;
+	border-right: 1px solid #fff;
+	position: relative;
+}
+
+.header-menu-li:last-child{
+	border-right: none;
+}
+
+.header-menu-a{
+    padding: 0 17px;
+    color: #fff;
+    font-size: 13px;
+	line-height: 14px;
+    display: block;
+	display: table-cell;
+	width: 122px;
+	box-sizing: border-box;
+	text-align: center;
+    vertical-align: middle;
+	height: 40px;
+}
+
+.header-menu-li:hover .header-menu-a, .header-menu-a:hover{
+    background: #fff;
+}
+
+.header-division{
+    background: transparent;
+    border: none;
+    padding-top: 175px;
+}
+
+/*Fixo*/
+
+#header.fixed{
+    height: 75px;
+    position: fixed;
+}
+
+.fixed .header-navbar, .fixed .header-menu, .fixed .header-logo{
+    display: none;
+}
+
+.fixed .header-middle{
+	height: 50px
+}
+
+.fixed .header-search{
+    left: 0;
+	top: 5px;
+}
+
+.fixed .header-search fieldset label input{
+	width: 600px;
+}
+
+.fixed .header-cart{
+	top: 5px;
+}
+
+.fixed .header-menu{
+    display: none;
+}

@@ -1,0 +1,59 @@
+.menu_lateral{
+  padding: 10px  0 10px 10px;
+        margin-bottom: 15px;
+}
+
+.lista_menu_lat{
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+  z-index: 8888;
+}
+
+.lista_menu_lat a{
+  padding: 8px;
+}
+
+.lista_menu_lat:last-child{
+  margin-bottom: 0;
+}
+
+.lista_menu_lat:hover{
+
+}
+
+.lnk_menu_lat{
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  font-weight: normal;  
+}
+
+.lista_menu_lat:hover .drop_filho_lat{
+  display: block;
+}
+
+.drop_filho_lat{
+  display: none;
+  width: 545px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 228px;
+}
+
+.lista_filho_lat{
+  margin: 5px 10px;
+  width: 150px;
+  display: block;
+  float: left;
+}
+
+
+.lnk_filho_lat{
+  padding: 5px;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  transition: 0.200s linear;
+}

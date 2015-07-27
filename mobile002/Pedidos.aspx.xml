@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><VisualizacaoPedidos><VisualizacaoPedido ID="VisualizacaoPedido1"><TamanhoImagem value="Gigantes" /><VisualizacaoPedidoHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Meus Pedidos&nbsp;<span class="fa fa-heart"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+<div class="ciashop-infoRequest">
+  <div class="ciashop-containerInfoRequest ciashop-display">
+        <p>Último Pedido:</p>
+        <h3 class="ciashop-numberRequest"><strong>[A0]</strong></h3>
+    <p>A confirmação do pedido foi enviada a seu endereço de e-mail</p>
+    <p><strong>[A1]</strong></p>
+  </div>
+  
+  <div class="ciashop-display ciashop-dataPurchase">
+    <h5><strong>Dados da Compra</strong></h5>
+      <p>Status: [A2]</p>
+      <p>Valor: [A3]</p>
+      <p>Data: [A4]</p>
+      <p>Forma de Pagamento: [A5]</p>
+      <condicao:boleto>
+        <p><a href="[A7]" class="btn btn-primary">Imprimir Boleto</a></p>
+      </condicao:boleto>
+  </div>
+</div>
+<div class="ciashop-titBox heading-primary">
+  <h2>Detalhes do Pedido&nbsp;<span class="fa fa-shopping-cart"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+<div id="ciashop-cart">
+    <div class="col-md-8 ciashop-containerProductsCart">
+        <repeticao:produtos>  
+            <div class="ciashop-boxProductsCart">
+                <div class="ciashop-imgCart ciashop-display">
+                    <img src="[A8]?width=285&height=381" alt="[A7]" class="img-responsive" />
+                </div>
+                <div class="ciashop-infoCart ciashop-display">
+                    <h4 class="ciashop-nameProductCart text-left"><strong>[A7]</strong></h4>
+                    <p class="ciashop-infoProductCart">Quantidade: [A10]</p>
+                    <p class="ciashop-infoProductCart">
+                        <condicao:imagem_presente><span class="fa fa-check-square"></span>&nbsp;Sim</condicao:imagem_presente>
+                    </p>
+                    <p class="ciashop-infoProductCart">Preço Unitário: [A11]</p>
+                    <p class="ciashop-subtotalPriceProductCart"><small>Total:</small> <strong>[A12]</strong></p>
+                </div>
+            </div> 
+        </repeticao:produtos>
+    </div>
+    <div class="col-md-4 ciashop-containerDataCart">
+        <h4><strong>Dados da sua compra</strong></h4>
+        <div class="ciashop-infoDataCart">
+            <div class="ciashop-addressBuyer">
+              <h5><strong>Endereço de Entrega</strong></h5>
+                <p>[A13] - [A14], [A15], [A16] - [A17]</p>
+                <p>[A18]</p>
+            </div>
+            <div class="ciashop-shippingAndCouponCart">
+                <h5>
+                    <span class="fa fa-truck"></span>&nbsp;Frete: <strong>[A19]</strong>
+                </h5>
+                <h5>
+                    <span class="fa fa-tags"></span>&nbsp;Cupom: <strong>[A20]</strong>
+                </h5>                
+            </div>
+            <div class="ciashop-totalCart">
+                <h3 class="ciashop-display">
+                  <small>Total:</small> <strong>[A21]</strong>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+</div>]]></VisualizacaoPedidoHTML></VisualizacaoPedido></VisualizacaoPedidos><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresentesInfos><ListaPresentesInfo ID="giftList_info"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+      <div class="custom-overflow custom-paddingV20"> 
+        <div class="col-md-4 custom-clearPadding">
+			<h4 class="text-left heading-primary custom-paddingV10"><strong>[A20]</strong></h4>
+        </div>
+        <div class="col-md-8" style="border-left: 1px dotted #ccc;">
+          <div class="custom-clear custom-overflow custom-paddingV20">
+              <condicao:comevento>
+                <p>[A0] - [A1]</p>
+                <p>Homenageado(s):[A0]</p>
+                <p>Data: [A1]</p>
+                <p>Local: [A15],[A16] - [A17] - [A18] - [A19]</p>
+                <p><strong><condicao:mapa><strong><a href="javascript:void(0);" style="text-decoration: underline;" data-toggle="modal" data-target="#myModalmapa">Clique aqui para ver mapa</a></strong></condicao:mapa></strong></p>
+                <p>Texto de boas-vindas: [A4]</p>
+              </condicao:comevento>
+          </div>
+        </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+
+      <div class="container_descricao_lista fechado heading-primary"> 
+          <div class="container_descricao_lista_conteudo">
+            <div class="descricao_lista">            
+              <h3>[A20]</h3>
+            </div>
+          </div>
+      </div>
+
+      </condicao:naoaceitaevento>  
+<condicao:semevento>
+  <div id="erro">
+      <div class="lista_erro alert-warning">
+            <h2>Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.</h2>
+        </div>
+    </div>
+</condicao:semevento>
+
+<div class="modal fade" id="myModalmapa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mapa do evento</h4>
+      </div>
+      <div class="modal-body">
+        [A3]
+      </div>
+    </div>
+  </div>
+</div>
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInfo ID="giftList_info2"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+      <div class="custom-overflow sideMenu" style="padding-top: 0;">
+           <h6 class="text-left heading-primary custom-paddingV5"><a href="[A13]"><strong>Produtos da lista</strong></a></h6>
+           <h6 class="text-left heading-primary"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="custom-paddingV3">&nbsp;&nbsp;Adicionar produtos</a></h6> 
+           <h6 class="text-left heading-primary"><a href="[A21]" class="custom-paddingV3">&nbsp;&nbsp;Escolher lista pronta</a></h6> 
+           <h6 class="text-left heading-primary"><a href="[A8]" class="custom-paddingV3">&nbsp;&nbsp;Lista de convidados</a></h6>
+          <h6 class="text-left heading-primary custom-paddingV5"><a href="[A9]"><strong>Enviar mensagem</strong></a></h6>           
+          <h6 class="text-left heading-primary custom-paddingV5"><a href="[A11]"><strong>Álbum de fotos</strong></a></h6>                     
+          <h6 class="text-left heading-primary custom-paddingV5"><a href="[A10]"><strong>Editar evento</strong></a></h6>                  
+      </div>
+    </condicao:aceitaevento>
+    <condicao:naoaceitaevento>
+
+      <div class="custom-overflow sideMenu">
+           <h6 class="text-left heading-primary custom-paddingV5"><a href="[A13]"><strong>Produtos da lista</strong></a></h6>
+           <h6 class="text-left heading-primary"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="custom-paddingV3">&nbsp;&nbsp;Adicionar produtos</a></h6>                    
+      </div>      
+
+  </condicao:naoaceitaevento>  
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h5>Adicionar produto</h5>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/animacao.gif" alt="Animação" />
+        <div class="main-overflow main-padding text-right">
+          <a href="[A7]" class="btn btn-secondary text-center text-uppercase custom-paddingV5 custom-paddingH10">Adicionar produto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ListaPresentesConvidadoss><ListaPresentesConvidados ID="ListaPresentesConvidados1"><ListaPresentesConvidadosHTML><![CDATA[<div class="custom-overflow"> 
+  <div>
+    <div class="col-md-12">
+      <h4 class="text-left heading-primary custom-paddingV10"><strong>Lista de convidados</strong></h4>
+      <p class="custom-paddingV5">
+      Monte agora sua lista de convidados para seu evento<br />
+      Cadastre o nome e o email e seus convidados. Basta clicar no botão "Adicionar convidado" e preencher os campos. Após o preenchimento salve su lista de convidados clicando em "Salvar Lista".<br />
+      Através da sua lista de convidados você poderá enviar email a todos quando quiser através do link "Enviar Mensagem".</p>            
+    </div>
+  </div>
+    [A5][A6]
+    <div class="col-md-12">
+      <div class="custom-overflow custom-paddingV5 form form-guest">
+        <div class="col-md-4">
+          <label class="text-left custom-clearPadding"><strong>Nome</strong></label>  
+        </div>
+        <div class="col-md-4">
+          <label class="text-leftcustom-clearPadding"><strong>Email</strong></label>  
+        </div>      
+        <div class="col-md-4">
+          <label class="text-leftcustom-clearPadding">&nbsp;</label>  
+        </div>      
+      </div>
+      <div class="custom-clear custom-overflow custom-paddingV5 form form-guest">
+        <repeticao:convidados>
+         <div class="custom-overflow custom-paddingV5">  
+          <div class="col-md-4">
+            <span>
+              [A0]
+            </span>    
+          </div>    
+          <div class="col-md-4">
+            <span>
+              [A1]
+            </span>    
+          </div> 
+          <div class="col-md-4 custom-paddingV5">
+            <a href="[A2]" class="text-center" style="text-decoration: underline">excluir</a>  
+          </div>
+        </div>
+        </repeticao:convidados>
+      </div>  
+    </div> 
+    <div class="custom-overflow custom-clear text-left" style="padding: 10px 30px;">
+      <a href="javascript:void(0);" onclick="[A3]" style="text-decoration: underline;">Adicionar convidado</a>
+    </div> 
+    <div class="custom-overflow custom-paddingV20 text-right">
+      <a href="[A4]" class="btn btn-primary text-center text-uppercase custom-paddingV5 custom-paddingH10">Salvar lista</a>
+    </div>
+</div>
+]]></ListaPresentesConvidadosHTML><MensagemErroListaPresentesConvidadosHTML><![CDATA[<div id="erro" class="alert alert-warning custom-overflow" role="alert">
+  <h5>[C0]</h5>
+  <ul>
+    <repeticao:erro>
+      <li>[C1]</li>
+    </repeticao:erro>
+  </ul>
+</div>
+]]></MensagemErroListaPresentesConvidadosHTML><MensagemSucessoListaPresentesConvidadosHTML><![CDATA[<div class="alert alert-success custom-overflow" role="alert">
+  	<h5>Lista de convidados salva com sucesso!</h5>
+</div>]]></MensagemSucessoListaPresentesConvidadosHTML></ListaPresentesConvidados></ListaPresentesConvidadoss></controles></page>

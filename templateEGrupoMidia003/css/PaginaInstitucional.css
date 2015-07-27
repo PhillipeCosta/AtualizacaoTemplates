@@ -1,0 +1,33 @@
+.conteudo_fixo{
+    background-color: #ffffff!important;
+    
+    margin-top: -17px!important;
+    margin-bottom: 60px!important;
+}
+
+.box{
+    padding: 50px 0;
+    
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+.box h2{
+    font-size: 25px;
+    
+    margin-left: -20px;
+}
+.box div{
+    float: left;
+    
+    text-align: left;
+    font-weight: normal;
+    margin: 8px 0;
+    font-size: 16px;
+}
+.respiro_conteudo{
+    background-color: rgba(255, 255, 255, 0);
+    
+}

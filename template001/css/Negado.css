@@ -1,0 +1,31 @@
+#negado{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.tit-box-checkout h2{
+}
+
+
+.lista_negado {
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: left;
+    width: 500px;
+}
+
+.lista_negado h2{
+    font-family: 'source_sans_prosemibold';
+    font-size: 18px;
+    font-weight: normal;
+    margin: 7px 0 15px;
+}
+
+.lista_negado p{
+    display: block;
+    margin-top: 5px;
+}

@@ -1,0 +1,382 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+
+.container_descricao_lista {
+	margin-bottom: 0 !important;
+}
+
+#erro {
+	margin: 20px 0 20px 0 !important;
+}
+
+.bemvindo_listapresente{
+	font-size: 14px;
+	color: #fff;
+	float: left;
+	font-weight: normal;
+	margin-top: 2px;
+}
+
+.lp-cadastro{
+	overflow: hidden;
+}
+
+
+.lp_cadastro-mensagem{
+    overflow: hidden;
+    background: url('../imagens/topo_lista_presente.png') no-repeat 0 0 transparent;
+    padding: 20px 0;    
+    width: 990px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.lp_cadastro-mensagem h2{
+    color: #062A59;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 20px 0 20px 140px;
+}
+
+.lp-cadastro-formulario{
+	overflow: hidden;
+}
+
+.lp-cadastro-formulario-linha {
+	padding: 20px 0;
+	text-align: center;	
+	margin-top: 20px;
+	background-color: #ddd;
+}
+
+.lp-cadastro-formulario-linha-z{
+
+}
+
+.lp-cadastro-formulario-linha-conteudo{
+	width: 970px;
+	margin: 0 auto;
+	text-align: left;
+	overflow: hidden;
+}
+
+	.lp-cadastro-formulario-linha-z .lp-formulario-label-titulo {
+		font-weight: bold;
+	}
+
+	.lp-cadastro-formulario-linha-z .lp-formulario-label-titulo small {
+		font-weight: normal !important;
+	}
+
+.lp_tit_box{
+	padding: 0 0 30px 0;
+}
+
+.lp_tit_box h3{
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.lp_tit_box p{
+	display: block;
+	color: #3c3c3c;
+	font-size: 13px;
+	padding-top: 4px;
+}
+
+.lp-cadastro-formulario-linha-conteudo fieldset{
+	border: none;
+}
+
+.lp-formulario-label{
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	zoom: 1;
+	margin-bottom: 15px;
+	width: 100%;
+}
+.lp-formulario-label a{
+	
+}
+.lp-linha-2colunas .lp-formulario-label{
+	width: 47%;
+}
+
+.lp-formulario-select select{
+	font-size: 12px;
+	color: #666;
+	padding: 4px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-top: 3px;
+	width: 95%;
+}
+
+.lp-formulario-select-big select{
+	padding: 10px;
+	width: 500px;
+	margin-top: 0;
+}
+
+.lp-formulario-textarea textarea{
+	color: #666;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-top: 10px;
+	width: 90%;
+	vertical-align: middle;
+	height: 50px;
+}
+
+.lp-formulario-input input{
+	font-size: 12px;
+	color: #666;
+	padding: 5px;
+	border: 1px solid #ccc;
+	margin-top: 3px;
+	width: 90%;
+	vertical-align: middle;
+}
+
+.lp-formulario-input-imagem input{
+	width: 77%;
+}
+
+.lp-formulario-input-link input{
+	width: 40%;
+}
+
+.lp-formulario-input-imagem img{
+	vertical-align: middle;
+	margin: 3px 0 0 3px;
+        cursor: pointer;
+}
+
+.lp-formulario-input-link a{
+	font-size: 12px;
+    margin-left: 10px;
+    
+	padding: 3px 5px 0px 6px;
+    vertical-align: middle;
+	width: auto!important;
+	background: none!important;
+}
+
+.lp-dados-reponsavel{
+	padding-top: 30px;
+}
+
+.lp-formulario-input-texto{
+	margin-bottom: 10px;
+}
+
+.lp-formulario-input-texto input{
+	border: none;
+	background:transparent;
+	padding: 0;
+}
+
+.lp-formulario-input-texto .lp-formulario-label-titulo{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.lp-formulario-input-texto .lp-formulario-input-ddd input{
+	width: 20px;
+}
+
+.lp-formulario-input-texto .lp-formulario-input-telefone input{
+	width: 90px;
+}
+
+
+.lp-formulario-label-titulo{
+	font-size: 13px;
+	color: #333333;
+	display: block;
+}
+
+.lp-formulario-label-titulo small{
+	font-size: 12px;
+	color: #666666;
+	display: block;
+}
+
+.lp-formulario-label-titulo small.lp-formulario-label-titulo-exemplo-lateral{
+	display: inline;
+	font-size: 11px;
+	margin-left: 10px;
+}
+
+.lp-cadastro-formulario-esquerda{
+	float: left;
+	width: 55%;
+}
+.salvar_lista .box-bt
+{
+	width:auto;
+	float:left;
+}
+.lp-cadastro-formulario-direita{
+	float: right;
+	width: 41%;
+}
+.lp-cadastro-formulario-esquerda .box-bt{
+    width: auto;
+	
+    background: none;
+    color: #818080;
+}
+
+.lp-box-destaque{
+	position: relative;
+}
+
+.lp-box-destaque h4{
+	font-size: 19px;
+	font-weight: bold;
+	padding: 25px 0 3px 28px;
+}
+
+.lp-box-destaque-ico{
+	position: absolute;
+	top: 15px;
+	left: 30px;
+}
+
+.lp-box-destaque-conteudo{
+	padding: 10px 30px 15px 30px
+}
+
+.lp-box-destaque-conteudo p{
+	font-size: 12px;
+}
+
+.lp-mapa-escolha{
+	margin: 30px 0;
+	overflow: hidden;
+}
+
+.lp-mapa-escolha label{
+	float: left;
+	margin-right: 11px;
+	font-weight: bold;
+}
+
+.lp-mapa-escolha label *{
+	vertical-align: middle;
+	margin-right: 1px;
+}
+
+.lp-mapa-script label{
+	display: block;
+	color: #333;
+}
+
+.lp-mapa-script textarea{
+	border: 1px solid #ccc;
+	color: #666;
+	width: 100%;
+	height: 50px;
+	margin-top: 3px;
+}
+
+.lp-mapa-script-help{
+	display: block;
+	text-align: right;
+	margin-top: 3px;
+}
+
+.lp-mapa-script-help a{
+	color: #062A59;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+#thumbnailMapa{
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Regras */
+
+.regras{
+    width: 98%;
+    height: 220px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #fff;
+}
+
+.acao_regras{
+    padding: 5px;
+    width: 98%;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.acao_regras span.imprimir_regra{
+    float: left;
+    margin-left: 5px;    
+}
+
+.acao_regras .aceite{
+    float: right;
+    font-size: 15px;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.acao_regras .aceite *{
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.acao_regras span.aceite input{
+    float: left;
+    margin-right: 3px;
+    border: 0 none;
+}
+
+/* Salvar Lista */
+
+.salvar_lista{
+    clear: both;
+    text-align: right;
+    width: 970px;
+    margin: 20px auto;
+}
+
+.qq-upload-button {
+	background: #1f6eb7 !important;
+}
+
+.ui-widget-header {
+	border: 1px solid #1f6eb7 !important;
+	background: #1f6eb7 !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active,
+.ui-widget-header .ui-state-default:hover {
+	color: #fff !important;
+	background: #1f6eb7 !important;
+	border: 1px solid #1f6eb7 !important;
+}
+
+#ui-datepicker-div {
+	background: #f1f1f1 !important;
+	border: solid 1px #ccc !important;
+}
+
+.ui-datepicker-calendar {
+	background: #f1f1f1 !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 1px solid #D1D1D1;
+	background: #E6E6E6;
+}

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Menus><Menu ID="MenuFixo"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<repeticao:pais>
+	<li>
+		<a href="[A0]" class="custom-paddingV3 navFixed-fixedLink">[A1]</a>
+	</li>	
+</repeticao:pais>		]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><Links><Link ID="Nos_look"><Destino value="Nenhum" /><PaginaLoja value="AfiliadoPrincipal" /><Target value="NovaPagina" /><UsarHTTPS value="False" /></Link></Links></controles></page>

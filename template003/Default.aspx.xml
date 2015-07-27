@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="bannerSlide" /><Banner ID="rightColumn" /><Banner ID="leftLow" /></Banners><ListagemSimpless><ListagemSimples ID="home_collectionAnimated"><ModeloHTMLVitrine><![CDATA[<h4 class="text-uppercase text-left heading-primary custom-paddingV20"><strong>[A0]</strong></h4>
+<ul class="collectionJquery" id="collectionAnimated">
+  <repeticao:produtos>
+    <li class="col-xs-6 custom-clearPadding custom-paddingH20">
+      <div class="col-xs-6 text-center pull-left custom-clearPadding" style="width: 160px;">
+        <a href="[A1]"><img src="[A3]?width=160&height=160" alt="[A6]" /></a>
+      </div>
+      <div class="col-md-6 text-left pull-left custom-clearPadding custom-paddingH5">
+        <h5 class="collection-name custom-overflow"><a href="[A1]"><strong>[A6]</strong></a></h5>
+        <p class="collection-shortDescription custom-paddingV10 custom-overflow"><i>[A18]</i></p>
+         <condicaofalsa:sob_orcamento>
+        <div class="custom-paddingV15">                   
+            <h6 class="collection-price">
+              <condicao:preco_antigo>
+                [A19]
+              </condicao:preco_antigo>    
+      </h6>              
+            <h5 class="collection-adjustedPrice custom-paddingV5">
+              <strong>[A15]</strong> <condicao:parcelamento><small class="collection-instalments custom-paddingV5 custom-paddingH5">ou [A13] [A12]</small></condicao:parcelamento>
+            </h5>
+        </div>
+        <condicao:comprar_direto>
+          <div class="collection-buyFast custom-overflow custom-paddingV5">
+            <div class="collection-buyFast-quantity main-overflow pull-left">
+              <a href="[A24]"><span class="fa fa-caret-left"></span></a>
+              [A21]
+              <a href="[A23]"><span class="fa fa-caret-right"></span></a>
+            </div>
+            <div class="collection-buyFast-btn main-overflow pull-left custom-paddingH5">
+              <a href="[A22]" class="custom-paddingH15 custom-paddingV3 text-uppercase text-center btn btn-primary">comprar</a>
+            </div>
+          </div>
+        </condicao:comprar_direto>
+        </condicaofalsa:sob_orcamento>
+        <condicao:sob_orcamento>
+          <div class="text-center">
+            <a href="[A1]" class="btn-orcamento btn btn-primary text-uppercase custom-paddingH15 custom-paddingV3">Sob Orçamento</a>
+          </div> 
+        </condicao:sob_orcamento>         
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul> ]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="7" /></ListagemSimples><ListagemSimples ID="home_collection"><ModeloHTMLVitrine><![CDATA[<h4 class="text-left heading-collection">// [A0]</h4>
+<ul class="collection main-overflow">
+  <repeticao:produtos>
+    <li class="col-md-3">
+      <div class="text-center collection-photo <condicao:produto_indisponivel>container-unavailable</condicao:produto_indisponivel>">
+        <condicao:promocao_express>
+          <script language="javascript">
+              var win = null;
+              function NovaJanela(pagina,nome,w,h,scroll){
+              LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+              TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+              settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+              win = window.open(pagina,nome,settings);
+              }
+          </script>          
+          <span class="collection-product-express">
+            <a href="[A29]" onclick="NovaJanela(this.href,'nomeJanela','680','600','yes');return false"><img src="[A26]" alt="[A6]" /></a>
+          </span>
+        </condicao:promocao_express>
+        <condicao:produto_indisponivel>
+          <div class="collection-product-unavailable">        
+            <a href="[A1]" class="btn btn-secondary text-uppercase">Indisponível</a>
+          </div>
+        </condicao:produto_indisponivel>
+        <a href="[A1]" class="collection-product-photo"><img src="[A3]?width=230&height=230" alt="[A6]" /></a>
+        <condicao:lancamento>
+          <div class="collection-product-release text-uppercase">
+            <a href="[A1]" class="btn btn-tertiary">Lançamento</a>
+          </div>
+        </condicao:lancamento>
+        <condicao:promocao_frete>
+            <a href="[A35]" class="collection-product-shippingPromo link-modal-iframe"><img src="[A27]" alt="" title="Clique e Saiba Mais!" class="tooltip" /></a>
+        </condicao:promocao_frete>
+      </div>      
+      <div class="text-center">
+          <div class="collection-buyFast main-overflow">
+           <condicao:comprar_direto>            
+            <div class="collection-buyFast-quantity main-overflow pull-left">
+              <a href="[A24]"><span class="fa fa-caret-left"></span></a>
+              [A21]
+              <a href="[A23]"><span class="fa fa-caret-right"></span></a>
+            </div>
+            <div class="collection-buyFast-btn main-overflow pull-left">
+              <a href="[A22]" class="btn-buyFast btn-primary">comprar</a>
+            </div>
+           </condicao:comprar_direto>          
+          </div>
+        <a href="[A1]" class="collection-name collection-nameMargin text-left">[A6]</a>
+        <condicao:preco_antigo>
+          <h6 class="collection-price text-left">de [A19]</h6>
+        </condicao:preco_antigo>            
+        <h5 class="collection-adjustedPrice collection-adjustedPrice-margin text-left">por [A15]</h5>   
+        <condicao:parcelamento>
+        <h6 class="collection-instalments text-left">[A13] de [A12] s/juros</h6>
+        </condicao:parcelamento>
+      </div>    
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="3" /></ListagemSimples><ListagemSimples ID="home_collection_2"><ModeloHTMLVitrine><![CDATA[<h6 class="text-left heading-collection heading-collection-special text-uppercase"><strong>// [A0]</strong></h6>
+<ul class="collection-special main-clearPadding">
+  <repeticao:produtos quantidade="4">
+    <li class="main-overflow main-clear">
+      <div class="text-center col-md-5 text-center">
+        <a href="[A1]"><img src="[A3]?width=100&height=100" alt="[A6]" /></a>
+      </div>
+      <div class="text-left col-md-7">
+        <br />
+        <a href="[A1]" class="text-left collection-name">[A6]</a>
+        <h5 class="collection-adjustedPrice"><condicao:preco_antigo><small class="collection-price">[A19]</small></condicao:preco_antigo>[A15]</h5>
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="2" /></ListagemSimples><ListagemSimples ID="home_collection_3"><ModeloHTMLVitrine><![CDATA[<h6 class="text-left heading-collection heading-collection-special text-uppercase"><strong>// [A0]</strong></h6>
+<ul class="collection-special main-clearPadding">
+  <repeticao:produtos quantidade="4">
+    <li class="main-overflow main-clear">
+      <div class="text-center col-md-5 text-center">
+        <a href="[A1]"><img src="[A3]?width=100&height=100" alt="[A6]" /></a>
+      </div>
+      <div class="text-left col-md-7">
+        <br />
+        <a href="[A1]" class="text-left collection-name">[A6]</a>
+        <h5 class="collection-adjustedPrice"><condicao:preco_antigo><small class="collection-price">[A19]</small></condicao:preco_antigo>[A15]</h5>
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="8" /></ListagemSimples><ListagemSimples ID="home_collection_4"><ModeloHTMLVitrine><![CDATA[<h6 class="text-left heading-collection heading-collection-special text-uppercase"><strong>// [A0]</strong></h6>
+<ul class="collection-special main-clearPadding">
+  <repeticao:produtos quantidade="4">
+    <li class="main-overflow main-clear">
+      <div class="text-center col-md-5 text-center">
+        <a href="[A1]"><img src="[A3]?width=100&height=100" alt="[A6]" /></a>
+      </div>
+      <div class="text-left col-md-7">
+        <br />
+        <a href="[A1]" class="text-left collection-name">[A6]</a>
+        <h5 class="collection-adjustedPrice"><condicao:preco_antigo><small class="collection-price">[A19]</small></condicao:preco_antigo>[A15]</h5>
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="4" /></ListagemSimples><ListagemSimples ID="collection_primary"><ModeloHTMLVitrine><![CDATA[<h4 class="text-uppercase text-left heading-primary custom-paddingV20"><strong>[A0]</strong></h4>
+<ul class="custom-overflow">
+  <repeticao:produtos>
+    <li class="col-xs-3 collection-box">
+      <div class="text-center collection-photo">
+        <condicao:promocao_express>
+            <a class="collection-sealExpress external" data-toggle="modal" href="[A29]" data-target="#promoExpress1"><img src="[A26]" alt="" title="Clique e Saiba Mais!" /></a>
+            <div class="modal fade" id="promoExpress1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  </div>
+              </div>
+            </div>     
+        </condicao:promocao_express>      
+        <condicao:produto_indisponivel>
+          <span class="collection-sealUnavailable btn-secondary custom-paddingV5 custom-paddingH10 text-center text-uppercase">Indisponível</span>
+        </condicao:produto_indisponivel>
+        <a href="[A1]" class="<condicao:produto_indiponivel>photoUnavailable</condicao:produto_indisponivel>"><img src="[A3]?width=125&height=125" alt="[A6]" /></a>  
+      <condicao:promocao_brinde>
+        <div class="collection-sealGift"><a href="[A56]" data-toggle="modal" target="_blank" data-target="#promoBrinde"><img src="[A55]" alt="Promocao Brinde" /></a>
+          <div class="modal fade" id="promoBrinde" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    </div>
+                </div>
+              </div> 
+        </div>
+      </condicao:promocao_brinde>                       
+      </div>
+      <div class="text-leftcustom-paddingH5">
+          <div class="collection-buyFast custom-overflow custom-paddingV5">      
+            <condicaofalsa:sob_orcamento>
+          <condicao:comprar_direto>
+              <div class="collection-buyFast-quantity main-overflow pull-left custom-paddingV5">
+                <a href="[A24]"><span class="fa fa-caret-left"></span></a>
+                [A21]
+                <a href="[A23]"><span class="fa fa-caret-right"></span></a>
+              </div>
+              <div class="collection-buyFast-btn main-overflow pull-left custom-paddingH5 custom-paddingV5">
+                <a href="[A22]" class="custom-paddingH15 custom-paddingV3 text-uppercase text-center btn btn-primary">comprar</a>
+              </div>
+          </condicao:comprar_direto>
+            </condicaofalsa:sob_orcamento>
+              <condicao:sob_orcamento>
+              <div class="text-center collection-quoteRequest">
+                <a href="[A1]" class="btn btn-primary text-uppercase custom-paddingH15 custom-paddingV3">Sob Orçamento</a>
+               </div> 
+              </condicao:sob_orcamento>            
+          </div>            
+        <h5 class="collection-name custom-overflow text-center"><a href="[A1]"><strong>[A6]</strong></a></h5>
+        <condicaofalsa:sob_orcamento>
+        <div class="custom-paddingV15">                   
+            <h6 class="collection-price text-center">
+              <condicao:preco_antigo>[A19]</condicao:preco_antigo>    
+            </h6>              
+            <h5 class="collection-adjustedPrice custom-paddingV5 text-center">
+              <strong>[A15]</strong>
+            </h5>
+          <h6 class="collection-instalments custom-paddingH5 text-center">
+              <condicao:parcelamento>ou [A13] [A12]</condicao:parcelamento>            
+          </h6>     
+          <h6 class="collection-payInFullPrice custom-paddingH5 text-center">
+              <condicao:desconto_vista><a href="[A1]">ou <strong>[A25]</strong> à vista</a></condicao:desconto_vista>
+          </h6>                  
+        </div>
+        </condicaofalsa:sob_orcamento>
+        <div class="collection-sealRelease custom-paddingV10">
+        <condicao:lancamento>   
+          <span class="btn-tertiary custom-paddingV5 custom-paddingH15 text-center text-uppercase">Lançamento</span>
+         </condicao:lancamento>
+        </div>
+        <div class="collection-sealShipping">
+          <condicao:promocao_frete>
+              <a href="[A35]" data-toggle="modal" data-target="#promoFrete1"><img src="[A27]" alt="" title="Clique e Saiba Mais!" /></a>
+              <div class="modal fade" id="promoFrete1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    </div>
+                </div>
+              </div>                 
+          </condicao:promocao_frete>             
+        </div>      
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul> ]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="5" /></ListagemSimples><ListagemSimples ID="collection_secondary"><ModeloHTMLVitrine><![CDATA[<h4 class="text-uppercase text-left heading-primary custom-paddingV20"><strong>[A0]</strong></h4>
+<ul class="custom-overflow">
+  <repeticao:produtos>
+    <li class="col-xs-3 collection-box">
+      <div class="text-center collection-photo">
+        <condicao:promocao_express>
+            <a class="collection-sealExpress external" data-toggle="modal" href="[A29]" data-target="#promoExpress1"><img src="[A26]" alt="" title="Clique e Saiba Mais!" /></a>
+            <div class="modal fade" id="promoExpress1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  </div>
+              </div>
+            </div>     
+        </condicao:promocao_express>      
+        <condicao:produto_indisponivel>
+          <span class="collection-sealUnavailable btn-secondary custom-paddingV5 custom-paddingH10 text-center text-uppercase">Indisponível</span>
+        </condicao:produto_indisponivel>
+        <a href="[A1]" class="<condicao:produto_indiponivel>photoUnavailable</condicao:produto_indisponivel>"><img src="[A3]?width=125&height=125" alt="[A6]" /></a>  
+      <condicao:promocao_brinde>
+        <div class="collection-sealGift"><a href="[A56]" data-toggle="modal" target="_blank" data-target="#promoBrinde"><img src="[A55]" alt="Promocao Brinde" /></a>
+          <div class="modal fade" id="promoBrinde" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    </div>
+                </div>
+              </div> 
+        </div>
+      </condicao:promocao_brinde>                       
+      </div>
+      <div class="text-leftcustom-paddingH5">
+          <div class="collection-buyFast custom-overflow custom-paddingV5">      
+            <condicaofalsa:sob_orcamento>
+          <condicao:comprar_direto>
+              <div class="collection-buyFast-quantity main-overflow pull-left custom-paddingV5">
+                <a href="[A24]"><span class="fa fa-caret-left"></span></a>
+                [A21]
+                <a href="[A23]"><span class="fa fa-caret-right"></span></a>
+              </div>
+              <div class="collection-buyFast-btn main-overflow pull-left custom-paddingH5 custom-paddingV5">
+                <a href="[A22]" class="custom-paddingH15 custom-paddingV3 text-uppercase text-center btn btn-primary">comprar</a>
+              </div>
+          </condicao:comprar_direto>
+            </condicaofalsa:sob_orcamento>
+              <condicao:sob_orcamento>
+              <div class="text-center collection-quoteRequest">
+                <a href="[A1]" class="btn btn-primary text-uppercase custom-paddingH15 custom-paddingV3">Sob Orçamento</a>
+               </div> 
+              </condicao:sob_orcamento>            
+          </div>            
+        <h5 class="collection-name custom-overflow text-center"><a href="[A1]"><strong>[A6]</strong></a></h5>
+        <condicaofalsa:sob_orcamento>
+        <div class="custom-paddingV15">                   
+            <h6 class="collection-price text-center">
+              <condicao:preco_antigo>[A19]</condicao:preco_antigo>    
+            </h6>              
+            <h5 class="collection-adjustedPrice custom-paddingV5 text-center">
+              <strong>[A15]</strong>
+            </h5>
+          <h6 class="collection-instalments custom-paddingH5 text-center">
+              <condicao:parcelamento>ou [A13] [A12]</condicao:parcelamento>            
+          </h6>  
+          <h6 class="collection-payInFullPrice custom-paddingH5 text-center">
+              <condicao:desconto_vista><a href="[A1]">ou <strong>[A25]</strong> à vista</a></condicao:desconto_vista>
+          </h6>           
+        </div>
+        </condicaofalsa:sob_orcamento>
+        <div class="collection-sealRelease custom-paddingV10">
+        <condicao:lancamento>   
+          <span class="btn-tertiary custom-paddingV5 custom-paddingH15 text-center text-uppercase">Lançamento</span>
+         </condicao:lancamento>
+        </div>
+        <div class="collection-sealShipping">
+          <condicao:promocao_frete>
+              <a href="[A35]" data-toggle="modal" data-target="#promoFrete1"><img src="[A27]" alt="" title="Clique e Saiba Mais!" /></a>
+              <div class="modal fade" id="promoFrete1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    </div>
+                </div>
+              </div>                 
+          </condicao:promocao_frete>             
+        </div>      
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul> ]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="5" /></ListagemSimples></ListagemSimpless><BoletimNoticiass><BoletimNoticias ID="newsletter"><BoletimNoticiasHTML><![CDATA[<div class="main-clear main-overflow newsletter text-center">
+  <h4 class="text-uppercase"><strong><span class="fa fa-envelope-o"></span>&nbsp;Newsletter</strong></h4>
+  <br />
+  <p class="text-uppercase">Cadastre-se e receba em seu e-mail, novidades, promoções e ofertas da loja</p>
+  <div class="form-newsletter form">
+    <span class="newsletter-name">[A0]</span>
+    <span class="newsletter-email">[A2]</span>
+    <a href="[A4]" class="bt btn-secondary text-uppercase text-center">Enviar</a>    
+    <a href="[A5]" class="text-uppercase float-right main-clear main-overflow newsletter-cancel">Descadastrar-se</a>
+  </div>  
+  
+  <condicao:sexo>
+    [A3] [A6]
+  </condicao:sexo>
+  <condicao:nascimento>
+    [A1]
+  </condicao:nascimento>
+</div>
+
+
+]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass><ScriptRazors><ScriptRazor ID="sampleBanner"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.main_sampleBanner == "true"){
+  <img src="imagens/banner01.png" alt="SampleBanner" class="img-responsive img-bannerSlider" />
+  <img src="imagens/banner02.png" alt="SampleBanner" class="img-responsive img-bannerSlider" />
+}          ]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="scriptMobile"><ScriptRazorHTML><![CDATA[]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

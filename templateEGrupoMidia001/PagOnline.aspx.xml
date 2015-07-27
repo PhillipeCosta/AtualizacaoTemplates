@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /></Link></Links><PagOnlines><PagOnline ID="PagOnline1"><PagOnlineHTML><![CDATA[<link rel="stylesheet" href="[A1]../css/geral.css" />  
+<link rel="stylesheet" href="[A1]../css/templatesettings.css.razor" /> 
+<script type="text/javascript" src="[A1]../js/global.js"></script>  
+<style>
+#checkout-header{
+	height: 110px;
+}
+
+.checkout-header-content{
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.checkout-header-logo{
+	position: absolute;
+    left: 0;
+    top: 5px;
+    width: 300px;
+    height: 100px;
+    background-position: left center;
+	background-image: url("https://www9.ciashop.com.br/egrupomidia/Assets/Templates/30008/imagens//logo.png");
+	background-repeat: no-repeat;
+}
+
+.checkout-header-logo a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.checkout-header-step{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	background-position: 100px 100px;
+	width: 505px;
+	height: 46px;
+}
+
+.step-payment .checkout-header-step{
+	background-position: 0 -25px;
+}  
+</style>
+<style type="text/css">
+#content{
+	padding: 30px 0;  
+}  
+  
+.tab_interna {
+    text-align:left;
+    color:#444444;
+    font-size:11px;
+}
+
+.tab_interna td {
+    border-left:#c0c0c0 1px solid;
+    border-right:#c0c0c0 1px solid;
+}
+
+.tab_interna2 {
+    width:100%;
+    padding:2px;
+}
+
+.tab_interna2 th {
+    background-color:#fafafa;
+    text-align:center;
+    font-weight:normal;
+    color:#444444;
+    line-height:20px;
+    border:none;
+    font-size:11px;
+    padding:4px;
+}
+
+.tab_interna2 td {
+    background-color:#ffffff;
+    color:#444444;
+    line-height:20px;
+    border:none;
+    padding:4px;
+    border-bottom:#cccccc 1px dashed;
+    font-size:11px;
+    text-align:center;
+}
+
+.tab_interna3 {
+    width:100%;
+    padding:5px;
+    line-height:20px;
+}
+
+.tab_interna3 .fontV1 {
+    font-size:10px;
+    display:inline;
+}
+
+.tab_interna3 td {
+    border:none;
+}
+
+.tab_interna3 p {
+    border:none;
+    line-height:20px;
+    padding:1px 0;
+}
+
+.tab_interna4 {
+    width:100%;
+    padding:5px;
+    text-align:left;
+}
+
+.tab_interna4 td {
+    border:none;
+    text-align:left;
+}
+
+.img_left {
+    float:left;
+    _margin-left:-3px;
+}
+
+.img_right {
+    float:right;
+    _margin-right:-3px;
+}
+
+.payment_card {
+    text-align:left;
+    font-size:11px;
+    vertical-align:middle;
+    line-height:25px;
+}
+
+#boleto {
+    padding-top:40px;
+    color:#3E3E3E;
+    text-align:center;
+    background-image:url(num_pedido.gif);
+    background-repeat:no-repeat;
+    width:266px;
+    height:80px;
+    _height:122px;
+    display:block;
+    position:relative;
+}
+
+#boleto .cod {
+    font-size:18px;
+    font-weight:bold;
+    line-height:22px;
+}
+
+#boleto .mail {
+    padding-top:30px;
+    font-size:11px;
+    text-decoration:underline;
+}
+  
+/* ---- Estilo do Gateway ----*/
+  
+.button_imagens{
+    width: 247px !important;  
+  	height: 34px !important;
+}
+  
+.tab_interna{
+    background: #fff;  
+} 
+  
+  
+</style>
+<div id="container">
+	<header id="checkout-header" class="step-payment">
+		<div class="checkout-header-content">
+		  <div class="checkout-header-logo sprite">
+		    <componente name="ciac:link" id="home"></componente>
+		  </div>
+		  <div class="checkout-header-step sprite">
+		  </div>
+		</div>
+	</header> 
+    <div id="content">
+      [A0]  
+	</div>  
+</div>  ]]></PagOnlineHTML></PagOnline></PagOnlines></controles></page>

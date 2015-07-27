@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><Links><Link ID="link_goBanners"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoBanners" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Banners" /><UsarHTTPS value="False" /></Link><Link ID="link_goSales"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoRelatorioVendas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Vendas" /><UsarHTTPS value="False" /></Link><Link ID="link_goVisits"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoRelatorioVisitas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Visitas" /><UsarHTTPS value="False" /></Link><Link ID="link_goClients"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoRelatorioClientes" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Clientes" /><UsarHTTPS value="False" /></Link><Link ID="link_goEmail"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoDivulgaEmail" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Email de divulgação do afiliado" /><UsarHTTPS value="False" /></Link></Links><AfiliadoLogados><AfiliadoLogado ID="affiliateLogged"><AfiliadoLogadoHTML><![CDATA[<h4 class="heading-primary text-uppercase text-left custom-paddingV20"><strong>Primeiros passos</strong></h4>
+      <div class="custom-overflow custom-paddingV5" style="border-bottom: 1px dotted #ececec">
+        <h6><strong>Como utilizar seu código de afiliado:</strong></h6>
+        <div class="custom-paddingV10">
+          Para divulgar seu link de afiliado, acrescente no final de cada URL a linha de código abaixo:<br />
+          <span style="display: block;">/?campanh_id=[A1]</span>
+        </div>
+      </div>
+      <div class="custom-overflow custom-paddingV5" style="border-bottom: 1px dotted #ececec">
+        <h6><strong>Exemplo de URL para página inicial:</strong></h6>
+        <div class="custom-paddingV10">
+          <span style="display: block;">http://www.loja.com.br/afiliados/Default/?campanha_id=[A1]</span>
+        </div>
+      </div> 
+      <div class="custom-overflow custom-paddingV5" style="border-bottom: 1px dotted #ececec">
+        <h6><strong>Exemplo de URL para departamento:</strong></h6>
+        <div class="custom-paddingV10">
+          <span style="display: block;">http://www.loja.com.br/afiliados/Departamento/902/NOME+DEPTO/?campanha_id=[A1]</span>
+        </div>
+      </div>   
+      <div class="custom-overflow custom-paddingV5" style="border-bottom: 1px dotted #ececec">
+        <h6><strong>Exemplo de URL para produto:</strong></h6>
+        <div class="custom-paddingV10">
+          <span style="display: block;">http://www.loja.com.br/afiliados/produto/160/NOME+PRODUTO/?campanha_id=[A1]</span>
+        </div>
+      </div> ]]></AfiliadoLogadoHTML></AfiliadoLogado></AfiliadoLogados></controles></page>

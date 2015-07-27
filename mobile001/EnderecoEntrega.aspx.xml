@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CarrinhoPassoss><CarrinhoPassos ID="Passos" NomeAmigavel="Passo da compra" Visible="True"><Passo value="3" /></CarrinhoPassos></CarrinhoPassoss><EnderecoEntregas><EnderecoEntrega ID="EnderecoEntrega1"><ComponenteLista value="False" /><EnderecoEntregaHTML><![CDATA[<div class="box-item-carrinho-checkout">
+    <div href="javascript:void(0);" class="aba-item-carrinho aba-ativa checkout-tab">
+      <div class="pull-left">
+        <h2>Endereço de entrega</h2>
+        <h4 class="recebe-end checkout-tabInfo">Selecione o endereço de entrega do seu pedido</h4>
+      </div>
+    </div>
+    <div class="lista-itens-checkout">
+			  <repeticao:enderecos_cadastrados>
+				  <div class="endereco_entrega">
+				    <div>
+				      <p><strong>[A18]</strong></p>
+				      <p class="end-entrega">[A19], [A20] [A21]</p>
+				      <p><small>[A22]-[A23], [A24]</small></p>       
+				      <a href="[A25]" class="alterar-endereco"><strong>Editar Endereço</strong></a>      
+                      <a href="[A26]" class="bt-padrao btn-primary text-center" style="margin:0;"><strong>Entregar neste endereço</strong></a>      
+				    </div>
+				  </div>
+			  </repeticao:enderecos_cadastrados>
+    </div>    
+</div>  
+[A16]
+<div class="box-item-carrinho-checkout">
+    <div href="javascript:void(0);" class="aba-item-carrinho checkout-tab">
+      <div class="pull-left">
+        <h2>Novo/Editar endereço</h2>
+        <h4 class="checkout-tabInfo">Adicione um novo endereço ou edite um existente</h4>
+      </div>
+    </div>
+    <div class="lista-itens-checkout">
+        <div class="formulario_conteudo form">
+            <div class="info pt">Campos marcados com * são obrigatórios.</div>
+            <div class="formulario">
+                <div class="list obrigatorio cep">
+                    <label><span class="tit_label pt">Digite Primeiro o CEP*</span>
+                    [A0]</label>
+                </div>
+                <div class="list obrigatorio">
+                    <label><span class="tit_label pt">País*</span>
+                    [A14] </label>
+                </div>
+                <div class="list obrigatorio">
+                    <label class="larg_100"><span class="tit_label pt">Nome para Entrega* <small class="pt">(Nome de quem irá receber o produto)</small></span>
+                    [A1] </label>
+                </div>
+                <div class="list obrigatorio">
+                    <label class="larg_75"><span class="tit_label pt">Nome do Local* <small class="pt">(Casa, Trabalho, etc)</small></span>
+                    [A2]</label>
+                </div>
+                <div class="list obrigatorio">
+                    <label class="larg_100"><span class="tit_label pt">Endereço*</span>
+                    [A3]</label>
+                </div>
+                <div class="list obrigatorio">
+                    <label class="larg_25"><span class="tit_label pt">Número*</span>
+                    [A4]</label>
+                    <label class="larg_73"><span class="tit_label pt">Complemento</span>
+                    [A5]</label>                    
+                </div>
+                <!-- <div class="list">
+                    <label class="larg_50"><span class="tit_label pt">Complemento</span>
+                    [A5]</label>
+                </div> -->
+                <div class="list obrigatorio">
+                    <label class="larg_75"><span class="tit_label pt">Bairro*</span>
+                    [A6]</label>
+                </div>
+                <div class="list obrigatorio">
+                    <label class="larg_75"><span class="tit_label pt">Cidade*</span>
+                    [A7]</label>
+                </div>
+                <condicao:selecao_estado>
+                <div class="list obrigatorio">
+                    <label><span class="tit_label pt">Estado*</span>
+                    [A8] </label>
+                </div>
+                </condicao:selecao_estado>
+                <div class="list">
+                    <label class="larg_100"><span class="tit_label pt">Pontos de Referência</span>
+                    [A9]</label>
+                </div>
+                <div class="list obrigatorio">
+                    <label><span class="tit_label pt">Telefone Principal* <small class="pt">(DDD + XXXX-XXXX)</small></span></label>                  
+                    <label class="larg_25">[A10]</label>
+                    <label class="larg_73">[A11] </label>
+                </div>
+                <div class="list">
+                    <label><span class="tit_label pt">Telefone Alternativo <small class="pt">(DDD + XXXX-XXXX)</small></span></label>                  
+                    <label class="larg_25">[A12]</label>
+                    <label class="larg_73">[A13] </label>                  
+                </div>
+            </div>
+        <div class="bt-identificacao bt-respiro">
+          <a href="[A15]" class="bt-continuar text-center btn-primary"><strong><span class="fa fa-caret-right"></span> Salvar e Continuar</strong></a>
+        </div>           
+        </div>    	
+    </div>    
+</div>   
+
+
+ ]]></EnderecoEntregaHTML><EnderecoEntregaMensagemAlertaHTML><![CDATA[<div class="alert alert-warning message-error">
+  <p><strong>[B0]</strong></p>
+  <ul>
+    <repeticao:erro>
+        <li>[B1]</li>
+    </repeticao:erro>
+  </ul>
+</div>]]></EnderecoEntregaMensagemAlertaHTML><MensagemCamposObrigatorios value="Esses campos são obrigatórios e não foram preenchidos corretamente:" /><MensagemProdutosComEstoqueAlteradoHTML><![CDATA[<div class="alert alert-warning message-error">
+  <h4>O estoque do produto [E0] mudou. Quantidade solicitada [E1], quantidade disponível [E2].</h4>
+</div>]]></MensagemProdutosComEstoqueAlteradoHTML><MensagemProdutosComPrecoAlteradoHTML><![CDATA[<div class="alert alert-warning message-error">
+  <h4>O preço do produto [D0] mudou de [D1] para [D2].</h4>
+</div>]]></MensagemProdutosComPrecoAlteradoHTML><MensagemProdutosSemPrecoRemovidosHTML><![CDATA[<div class="alert alert-warning message-error">
+  <h4>O produto <strong>[F0]</strong> não esta mais disponível.</h4>
+</div>]]></MensagemProdutosSemPrecoRemovidosHTML><MensagemSelecionarEndereco value="Selecione um dos endereços para continuar." /></EnderecoEntrega></EnderecoEntregas><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><Links><Link ID="Alterar_Pedido"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Alterar Pedido" /><UsarHTTPS value="False" /></Link><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="Banner_Fullzao" /><Banner ID="Fullzao_Topo" /><Banner ID="mobile_enderecoEntrega" /><Banner ID="header" /></Banners><SEOs><SEO ID="seo" /></SEOs><Widgets><Widget ID="ItensCarrinho"><WidgetUsado value="18" /></Widget></Widgets><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

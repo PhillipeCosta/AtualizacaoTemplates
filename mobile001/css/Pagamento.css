@@ -1,0 +1,795 @@
+
+/* Payment Style */
+
+.payment{
+  margin: 0 auto 40px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.pre{
+    display: none;
+}
+
+.paymentTitle{
+  border-bottom: 1px solid #DCDCDC;
+  background: url('../imagens/bullet_payment.png') no-repeat 15px 15px scroll transparent;
+  padding: 10px 0 10px 70px;
+  margin-bottom: 30px;
+}
+
+.paymentTitle h2{
+  color: #0c304b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.paymentTitle p{
+  color: #666;
+  font-size: 12px;
+  display: block;
+}
+
+.paymentLeft{
+  width: 74%;
+  float: left;
+  display: block;
+}
+
+.paymentMethodTit{
+
+}
+
+.paymentMethodTit .seta{
+  position: absolute;
+        bottom: -16px;
+        left: 50%;
+        margin-left: -10px;
+}
+
+.paymentMethodTit h4{
+  font-size: 25px;
+  color: #fff;
+  font-weight: normal;
+  font-family: 'HelveticaLightLight';
+        width: 260px;
+  display: block;
+  float: left;
+        padding-top: 18px;
+        margin-left: 25px;
+}
+
+.boxMethod-select{
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.boxMethod-select.selecionado{
+  opacity: 1;
+}
+
+.boxMethod-select .method-name{
+    font-size: 13px;
+    margin: 0.7em;  
+}
+
+.boxMethod-select.selecionado{
+
+}
+
+
+.boxMethod-select span.inputPayment{
+    background: url('../imagens/inputPayment.png') no-repeat center top scroll transparent;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    padding: 0 5px;
+    margin: 30px 0;
+}
+
+.boxMethod-select.selecionado .input-fake{
+    background: url('../imagens/bullet_input.png') no-repeat center center scroll #F6F6F6;
+}
+
+.paymentMethods{
+
+}
+
+.paymentMethod-box{
+    display: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.paymentMethod-box ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.paymentMethodsList ul li:first-child{
+    border: 0 none;
+}
+
+.paymentMethodsList ul li{
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    margin: 0.5em;
+}
+
+.paymentMethodsList ul li p{
+  display: block;
+  padding: 10px 0;
+}
+
+.paymentMethodsList ul li span img{
+    width: 45px;
+    float: left;
+    margin-right: 10px;
+}
+
+.paymentMethodsList ul li h3{
+  font-size: 13px;
+  color:  #00436b;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.paymentMethodsList ul li ul{
+  clear: both;
+        text-align: center;
+}
+
+.paymentMethodsList ul li ul li{
+  display: inline-block;  
+  height: auto;
+  text-align: center;
+  border: 0;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.paymentMethodsList ul li ul li:hover{
+
+}
+
+.paymentMethodsList ul li ul li img{
+    display: block;
+    margin: 0 auto;
+}
+
+.paymentMethodsList ul li ul li span{
+  color: #666;
+  font-size: 11px;
+  text-align: center;
+  margin: 5px 0;
+  display: block;
+        float: left;
+}
+
+.paymentMethodsList-method-discount{
+    color: #0e890b;
+    font-size: 11px;
+}
+
+.paymentMethod{
+  padding: 0;
+  overflow: hidden;
+  clear: both;
+  display: none;
+}
+
+.paymentMethod h3{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.paymentMethod h3 *{
+  vertical-align: middle;
+}
+
+.paymentMethod h3 span{
+  color: #0268a6;
+  font-size: 30px;
+  font-weight: normal;  
+}
+
+hr.paymentMethod-hr{
+  border-bottom: 0;
+  border-top: 1px solid #f6f6f6;
+  background: 0 none;
+  *margin-top: -9px;
+}
+
+.paymentMethod-form{
+    margin-top: 15px;
+  text-align: left;
+}
+
+.paymentMethod-field{
+    padding: 3px 0;
+    border: 1px solid transparent;
+}
+
+.paymentMethod-field label{
+    width: 100%
+}
+
+.paymentMethod-field label *{
+    vertical-align: middle;
+}
+
+.paymentMethod-fieldSpan{
+    display: block;
+    font-size: 13px;
+    padding: 0.5em 0;
+}
+
+.paymentMethod-field label input{
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+}
+
+.paymentMethod-field label select{
+    position: relative;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+.paymentMethod-field label input.SecurityCode{
+    width: 60px;
+}
+
+.paymentMethod-field label input.Number{
+    width: 230px;
+}
+
+.paymentMethod-field label input.HolderDateOfBirth{
+    width: 80px;
+}
+
+.paymentMethod-fieldExemplo{
+    color: #999;  
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.paymentMethod-fieldCodSeg{
+    color: #0268a6; 
+    font-size: 11px;
+    font-weight: normal;
+    margin-left: 5px; 
+}
+
+.paymentMethod-fieldCodSeg:hover{
+  text-decoration: underline;
+}
+
+.paymentMethod-fieldError{
+  display: none;
+}
+
+.paymentMethod-parcel{
+    margin:  20px 0 0 0;
+    display: block;
+  text-align: left;
+}
+
+.paymentMethod-parcel span{
+    color: #333333;
+    display: inline-block;
+    *float: left;
+    *display: block;
+    font-family: 'Arial';
+    font-size: 12px;
+    margin-right: 15px;
+    text-align: right;
+    width: 140px;
+}
+
+.paymentMethod-parcel select{
+    border: 1px solid #dfdfdf;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff),color-stop(100%, #efefef));
+    background-image: -webkit-linear-gradient(top, #fff,#efefef);
+    background-image: -moz-linear-gradient(top, #fff,#efefef);
+    background-image: -ms-linear-gradient(top, #fff,#efefef);
+    background-image: -o-linear-gradient(top, #fff,#efefef);
+    background-image: linear-gradient(top, #fff,#efefef);
+    padding: 0.5em;
+}
+
+.form .paymentMethod-buttom input{
+    border: 0 none;
+    box-shadow: none;
+    font-size: 17px;
+}
+
+.paymentMethod95 .paymentMethod-buttom{
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.paymentMethod-buttom:hover{
+    opacity: 0.9;
+}
+
+.paymentMethod-discount{
+    font-size: 14px;
+    display: block;
+    margin: 20px 0;
+    padding: 0 10px;
+    text-align: left;
+  color: green;
+}
+
+.paymentMethod-text{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.paymentMethodNote{
+  display: none;
+        padding: 0 25px;    
+        margin: 30px 0;
+        overflow: hidden;
+}
+
+.paymentMethodNote-box{
+    float: left;
+    margin-left: 8px;
+}
+
+.paymentMethodNote input{
+    display: block;
+    float: left;
+}
+
+.paymentMethodNote h3{
+    color: #585858;
+    font-size: 12px;
+}
+
+.paymentMethodNote p{
+    color: #585858;
+    font-size: 11px;
+}
+
+.paymentMethodNote p a{
+    color: #0268a6;
+}
+
+.paymentMethodNote p a:hover{
+  text-decoration: underline;
+}
+
+.paymentRight{
+  float: right;
+  width: 24.5%;
+}
+
+.paymentCart{
+    background: #e7e7e7;
+  padding-bottom: 2px;
+  *padding-bottom: 5px;
+}
+
+.paymentTitle-resumo{
+    color: #fff;
+    background: #0c72b0;
+    font-size: 25px;
+    padding: 27px;
+    font-weight: normal;
+    text-align: left;
+    font-family: helveticaltcom-bold;
+}
+
+.paymentCart-table{
+    padding: 15px 0;
+    background: url('../imagens/bullet_seta_preco.png') no-repeat center -1px scroll #dff2f9;
+    width: 100%;
+}
+
+.paymentCart-product{
+    background: #dff2f9;
+}
+
+.paymentCart-product:even{
+    background: #cbeff9;
+}
+
+.paymentCart-product td{
+    color: #333;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px 0;
+    vertical-align: top;
+}
+
+.paymentCart-productItens{
+    font-weight: bold;
+}
+
+.paymentCart-productPrice{
+    font-size: 13px;
+}
+
+.paymentCart-value{
+  background: #0c72b0;
+  width: 100%;
+}
+
+.paymentCart-sub th, .paymentCart-cupom th, .paymentCart-bonus th, .paymentCart-shipping th{
+  background: #fff;
+  color: #585858;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+  font-weight: normal;  
+  text-align: left;
+}
+
+.paymentCart-sub td{
+  background: #fff;
+  color: #585858;
+  border-bottom: 1px solid #e7e7e7; 
+  text-align: right;
+  padding: 10px;
+}
+
+.paymentCart-cupom td{
+  background: #fff;
+  color: #92BB28;
+  border-bottom: 1px solid #e7e7e7; 
+  text-align: right;
+  padding: 10px;
+}
+
+.paymentCart-bonus td{
+  background: #fff;
+  color: #92BB28;
+  border-bottom: 1px solid #e7e7e7; 
+  text-align: right;
+  padding: 10px;
+}
+
+.paymentCart-shipping td{
+  background: #fff;
+  color: #ff5500;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+  text-align: right;
+}
+
+.paymentCart-total th{
+  color: #fff;
+  padding: 10px 10px 10px 15px;
+        font-size: 17px;
+}
+
+.paymentCart-total td{
+  text-align: right;
+  padding: 10px;
+  color: #fff;
+  font-weight: normal;
+        font-size: 25px;
+        font-family: 'helveticaltcom-bold';
+}
+
+.paymentAddress{
+
+}
+
+.paymentAddress-box{
+  padding: 15px;
+  background: url('../imagens/bullet_seta_preco.png') no-repeat center -1px scroll #dff2f9;
+}
+
+.paymentAddress-box p{
+  color: #696868;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.paymentAddress-container{
+  margin: 5px 0;
+}
+
+.alterar_dados a{
+    background: url('../imagens/seta_comprar_mais.png') no-repeat center left scroll transparent;
+    color: #0C72B0;
+    font-family: arial;
+    font-size: 12px;
+    text-decoration: underline;
+    display: block;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+.tit_dados_comprador{
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+}
+
+.info_dados_comprador{
+  font-weight: normal;
+  font-size: 20px;
+  color: #333;  
+}
+
+.info_dados_comprador span{
+  font-size: 13px;
+}
+
+.paymentBonus{
+  margin-top: 10px;
+  background: #e7e7e7;
+  padding: 10px 7px;
+  *padding-bottom: 8px;
+}
+
+.paymentTitle-star{
+  background: url('../imagens/bullet_star.png') no-repeat left 2px scroll transparent;
+  padding-left: 17px;
+  color: #585858;
+  font-size: 14px;
+  border-bottom: 3px solid #0268a6;                             
+  padding-bottom: 2px;
+}
+
+.paymentBonus p{
+  color: #585858; 
+  margin: 10px 0 15px 3px;
+}
+
+.paymentBonus strong{
+  display: block;
+  margin: 5px 0 2px;
+  color: #585858;
+}
+
+.paymentBonus select{
+  padding: 4px;
+  width: 215px;
+  border: 1px solid #ccc;
+}
+
+.totalBonus{
+  color: #0268a6;
+  display: block;
+  font-weight: bold;
+  margin: 5px 0 0;
+  *padding-bottom: 5px;
+}
+
+#popup-codigo-seguranca{
+  width: 500px;
+  text-align: left;
+}
+
+#popup-codigo-seguranca{
+  width: 500px;
+  text-align: left;
+  padding: 10px;
+}
+
+#popup-codigo-seguranca h2{
+  color: #0268A6;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+}
+
+#popup-codigo-seguranca p{
+  color: #666;
+  font-size: 11px;
+}
+
+.image-text{
+  clear: both;
+  padding: 10px 0;
+}
+
+.image-text .image{
+  float: left;
+}
+
+.image-text .text{
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.image-text h3{
+  color: #666;
+}
+
+/*Erros*/
+
+.field-validation-valid{
+    display: none;
+}
+
+.field-validation-error{
+    color: red;
+    font-size: 11px;
+}
+
+.parent-validation-error{
+
+}
+
+.erros{
+    display: none;    
+    color: #FF0000!important;
+    font-size: 11px;
+    padding: 0.5em 0;
+}
+
+.parent-validation-error .erros{
+    display: block;
+}
+
+.input-validation-error{
+    border: 1px solid red !important;
+}
+
+.validation-summary-errors {
+    background-color: #FFF5E1;
+    background-image: url("../imagens/erro.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 1px solid #FCE7BB;
+    margin: 20px auto;
+    padding: 20px 5px 20px 65px;
+    text-align: left;
+    width: 580px;
+}
+
+.validation-summary-errors ul {
+    list-style: none outside none;
+}
+
+
+.validation-summary-errors ul li {
+    background-image: url("../imagens/seta_erro.gif");
+    background-position: left 8px;
+    background-repeat: no-repeat;
+    color: #444;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 2px 0 2px 12px;
+    font-weight: bold;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*Faturado*/
+
+.paymentMethod-faturado{
+}
+
+.paymentMethod-faturado h3{
+    border: none;
+    color: #666;
+    font-size: 12px;
+}
+
+.paymentMethod-faturado select{
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    color: #666;
+    margin-top: 3px;
+    width: 200px;
+}
+
+.paymentSelecione{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.paymentForm-list span{
+    width: 140px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    color: #333;
+    font-size: 12px;
+    font-family: 'Arial';
+    margin-top: 10px;
+}
+
+.paymentMethod-Title {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.paymentMethod .bt-principal, .paymentMethod .bt-principal:hover{
+  width: 100%; 
+}
+
+/* **** */
+
+.box-metodos-pagamento{
+    margin: 0.4em 0;
+    border-radius: 5px;
+}
+
+.border-box-pagamento{
+    border: 1px solid #efefef;
+}
+
+.endereco_entrega{
+    display: block;
+    overflow: hidden;
+}
+
+.endereco_entrega p{
+    font-size:13px;
+    margin: 0 0.5em;
+}
+
+.input-fake{
+    width: 3em;
+    height: 3em;
+    background: #f6f6f6;
+    border: 1px solid #d9eef7;
+    vertical-align: middle;
+    border-radius: 3px;
+    display: block;
+}
+
+
+.lista-itens-divisa{
+    display: block;
+    overflow: hidden;
+}
+
+.lista-itens-divisa:first-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.lista-itens-divisa p{
+    font-size: 12px;
+    padding: 0.5em 0;
+}
+
+.alterar-endereco{
+    display: block;
+    clear: both;
+    padding: 1em 0.5em 0.5em;
+    font-size: 12px;
+    text-decoration: underline;
+}

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><TagCloudss><TagClouds ID="TagClouds"><Classe1 value="cloud1" /><Classe2 value="cloud2" /><Classe3 value="cloud3" /><Classe4 value="cloud4" /><Classe5 value="cloud5" /><Classe6 value="cloud6" /><Classe7 value="cloud7" /><CssComponente><![CDATA[]]></CssComponente><LayoutHTML><![CDATA[ <div class="tit_box">
+<h2>[A0]</h2>
+</div>
+<div class="clouds">[A1]</div>]]></LayoutHTML><Titulo value="Mais Desejados" /></TagClouds></TagCloudss><HistoricoNavegacaos><HistoricoNavegacao ID="Navegacao"><CaracterSeparador value="" /><HistoricoNavegacaoHTML><![CDATA[<div class="tit_box_full heading-primary">
+    <h2>Produtos selecionados especialmente para você</h2>
+</div>
+<div class="navegacao bg-layout">
+    <div class="navegacao_direita">
+        <div class="navegacao_vitrine">
+            <div class="navegacao_vitrine_seta_voltar">
+                <condicao:imagem_anterior>
+                    <a onclick="[A3]" href="javascript:void(0)" class="voltarHist"></a>
+                </condicao:imagem_anterior>
+            </div>
+            <ul>
+                [A5]
+            </ul>
+            <div class="navegacao_vitrine_seta_avancar">
+                <condicao:imagem_proximo>
+                    <a onclick="[A4]" href="javascript:void(0)" class="passarHist"></a>
+                </condicao:imagem_proximo>
+            </div>
+        </div>
+        <div class="paginacao-navegacao texto-paginacao">
+            <repeticao:paginacao>
+              <a href="[A2]" id="[A1]" class="main-pagination <condicao:pagina_selecionada>main-paginationSelected</condicao:pagina_selecionada>">[A1]</a>
+            </repeticao:paginacao>
+        </div>        
+    </div>
+</div>
+]]></HistoricoNavegacaoHTML><ProdutoHTML><![CDATA[      <li>
+         <div class="produto">
+           <div class="foto" style="height=220px;">
+               <a href="[B0]">
+                   <img alt="[B3]" src="[B2]?width=300&height=566" />
+               </a>
+               <condicao:produto_indisponivel>
+                 <div class="box-tag collection-product-unavailableTag">                  
+                   Indisponível
+                 </div>                     
+               </condicao:produto_indisponivel>   
+            </div>                                        
+            <h3 class="titulo"><a href="[B0]" class="collection-productName">[B3]</a></h3>
+            <div class="preco_antigo collection-productPrice">
+              <condicao:preco_antigo>
+                <span> [B12] [B5]</span>
+              </condicao:preco_antigo>
+            </div>
+            <div class="preco preco_por collection-product-adjustedPrice">
+                 <span>Por: [B7]</span>
+            </div>
+            <div class="preco_parcelado collection-productInstallments">
+              <condicao:parcelamento>
+                <span>ou [B6] de [B17]</span>
+              </condicao:parcelamento>
+            </div>
+         </div>
+      </li>]]></ProdutoHTML><TamanhoImagem value="Gigantes" /><TotalProdutosPagina value="3" /></HistoricoNavegacao></HistoricoNavegacaos></controles></page>

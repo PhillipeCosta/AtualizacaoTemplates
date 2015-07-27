@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CadastroAvisemes><CadastroAviseme ID="back_stock"><CadastroAvisemeHTML><![CDATA[<div class="backStock">
+    <div class="heading-primary">
+       <h2>Avise-me</h2>
+    </div>
+    <div class="backStock-content">
+        <p> A <strong>[A0]</strong> avisa você quando este produto estiver disponível, é só preencher
+        os campos abaixo com seus dados e assim que possível lhe enviaremos um e-mail.</p>
+        [A4][A5][A6]
+        <div class="backStock-image to-left w-30 align-center" style="margin-bottom: 30px;">
+          <img src="[A8]" width="250" height="250" alt="[A7]" />      
+        </div>
+        <div class="backStock-form form to-left w-50">
+          	<h3 class="backStock-name">[A7]</h3>
+            <div class="form-item validate required w-100">
+                <label><span class="form-title">Nome*</span>[A1]</label>
+            </div>
+            <div class="form-item validate required w-100" data-type="email">
+                <label><span class="form-title">Email*</span>[A2]</label>
+            </div> 
+            <div class="form-item">
+                <input type="button" class="realButtom hide" onclick="[A3]" value="Cadastrar" />
+              	<a href="javascript: void(0);" class="bt-small-primary backStock-bt fakeButtom">Cadastrar</a>
+            </div>  
+        </div>
+        <div class="alert" style="clear: both">
+          <strong>Atenção:</strong> Este aviso não garante a reserva do produto, por isso, quanto mais
+          breve for seu acesso no site maior a possibilidade dele estar disponível.<br />
+          <strong>Valor do produto sujeito a alteração após reposição do item no estoque.</strong>
+        </div>
+    </div>
+</div>]]></CadastroAvisemeHTML><CadastroAvisemeProdutoNaoSelecionadoHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong> Produto não encontrado
+</div>]]></CadastroAvisemeProdutoNaoSelecionadoHTML><MensagemAlertaCadastroAvisemeHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong> [B0]
+  <ul>
+    <repeticao:erro>
+      <li>[B1]</li>
+    </repeticao:erro>
+  </ul>
+</div>]]></MensagemAlertaCadastroAvisemeHTML><MensagemEmailCadastradoAvisemeHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong> Email já cadastrado para receber o aviso sobre este produto!
+</div>]]></MensagemEmailCadastradoAvisemeHTML><MensagemSucessoCadastroAvisemeHTML><![CDATA[<div class="alert success">
+  	<strong>Sucesso!</strong> Cadastro realizado com sucesso. Aguarde, quando o produto retornar ao estoque iremos enviar um email.
+</div>]]></MensagemSucessoCadastroAvisemeHTML><TamanhoImagem value="Gigantes" /></CadastroAviseme></CadastroAvisemes><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

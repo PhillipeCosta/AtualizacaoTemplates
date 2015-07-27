@@ -1,0 +1,420 @@
+#footer{
+    clear: both;
+	
+    margin-top: 40px;
+}
+
+.footer-content{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+    text-align: left;
+    display: block;
+    position: relative;
+}
+
+.footer-search{
+    background: #F47710;
+    text-align: center;
+}
+
+.footer-search fieldset{
+    border: none; 
+    overflow: hidden;
+	padding: 7px;
+}
+
+.footer-search fieldset label{
+    float: left;
+}
+
+.footer-search-title{
+
+    font-size: 24px;
+    font-weight: bold;
+    margin: 9px 15px 0 0;
+}
+
+.footer-search fieldset label input{
+    border: none;
+
+    font-family: arial,times new roman;
+    font-size: 18px;
+    padding: 7px 10px;
+    width: 765px;
+}
+
+.footer-search-buttom{
+    background-position: 0 -100px;
+    height: 36px;
+    line-height: 0;
+    width: 42px;
+    float: left;    
+}
+
+.footer-top{
+   
+    text-align: center;
+	
+    background-size: 1517px;
+    padding: 25px 0;
+	
+    overflow: hidden;
+    height: 220px;
+}
+
+.footer-top h3{
+    font-size: 12.5px;
+    margin-bottom: 4px;
+
+    font-weight: bold;
+    text-align: left;
+}
+.footer-seals h3{
+
+  margin: 105px 0px 1px 654px;
+}
+.footer-institutional{
+    float: left !important;
+	
+    width: 586px !important;
+    margin-left: -80px;
+    padding-left: 162px;
+    padding-top: 19px;
+    height: 110px;
+}
+.footer-institutional > ul {
+    width: 590px;
+	
+    height: 58px;
+}
+.footer-institutional > ul > li{
+
+}
+
+.footer-institutional li{
+	list-style: none;
+	float: left;
+	width: 195px;
+}
+
+.footer-institutional li a{
+
+    display: inline-block;
+    font-size: 15px;
+    padding: 2px;
+    font-weight: 500;
+    transition: all 200ms ease-out 0s;
+}
+
+.footer-institutional li a:hover{
+
+}
+
+.coupom-rules{
+	width: 500px;
+	padding: 0 10px;
+}
+
+.coupom-rules-content{
+	margin: 15px 0;
+}
+
+.coupom-rules-content p{
+	display: block;
+	margin: 5px 0;
+	font-size: 11px;
+}
+.security_payment{
+    width: 396px;
+	
+    height: 54px;
+    margin-top: -140px;
+    float: right;
+    display: block;
+    position: relative;
+    z-index: 999;
+}
+.footer-paymentMethods{
+    overflow: hidden;
+	
+    width: 300px!important; 
+	
+    margin-top: -27px;
+}
+.footer-paymentMethods ul li  img {
+    width: 55px;
+	
+}
+.footer-paymentMethods ul{
+    border-radius: 6px;
+
+    background-image: url(http://www.maissaudeebeleza2.hospedagemdesites.ws/imagens/pagamentos.jpg);
+  height: 86px;
+  width: 358px;
+  margin-top: -6px;
+  background-repeat: no-repeat;
+}
+.paymentMethodsIcons-li:nth-child(1){
+	margin-left: 17px;
+}
+.paymentMethodsIcons-li{
+    display: none;
+    list-style: none;
+    margin: -1px -1px -3px 2px;
+}
+
+.footer-seals{
+	
+    width: 1000px!important;    margin: auto!important;    float: none!important;    display: block!important;    position: relative!important;    overflow: visible;
+}
+
+.footer-fcontrol{
+    background-position: 0 -50px;
+    display: block;
+    float: left;
+    height: 49px;
+    margin: 0 0 15px 0;
+    width: 119px;
+    margin-top: -54px;
+ 	margin-left: 655px;
+}
+
+
+
+.footer_thawte{
+    background-position: -150px -50px;
+    display: block;
+    float: left;
+    height: 43px;
+    margin: -63px 5px -14px 15px;
+    width: 122px;
+}
+
+.about_shop{
+	display: block;
+	width: 1100px;
+	float: left;
+	height: 47px;
+	position: relative;
+}
+.footer-middle{	
+	padding: 1px 0;
+
+}
+
+.footer-social{
+    width: 500px;
+}
+
+.footer-social-title{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+	vertical-align: middle;
+}
+
+.footer-social a{    
+    display: inline-block;
+    margin: -5px -1px -86px -2px;
+    transition: all 200ms ease-out 0s;
+	vertical-align:middle;
+    width: 32px;
+    height: 32px;
+      
+    background-position: -311px -1051px;
+}
+
+.footer-social a:hover{
+    opacity: 0.6;
+    transition: all 200ms ease-out 0s;
+}
+
+.footer-social-facebook{
+    background-position: 0 0;  
+	width: 16px;
+    height: 30px;
+}
+
+.footer-social-twitter{
+    background-position: -50px 0;
+	width: 28px;
+    height: 23px;
+}
+
+.footer-social-pinterest{
+    background-position: -100px 0;
+	width: 28px;
+    height: 28px;
+} 
+
+.footer-social-youtube{
+    background-position: -150px 0;
+	width: 24px;
+    height: 29px;
+}
+
+.footer-social-instagram{
+    background-position: -200px 0;
+	width: 28px;
+    height: 28px;
+}
+
+.footer-social-lastfm{
+    background-position: -250px 0;
+	width: 36px;
+    height: 21px;
+}
+
+.flag_phone .footer-contactUs{
+    margin: 34px  36px 0px -25px;
+	
+    width: 121px;
+    -webkit-transform: scale(1.3) rotate(180deg);  -moz-transform: scale(1.3) rotate(180deg);  -o-transform: scale(1.3) rotate(180deg);  
+    transform: rotate(-6deg);
+}
+
+.footer-contactUs{
+    width: 430px;
+	text-align: center;
+}
+
+.footer-contactUs p{
+
+    display: block; 
+    font-size: 20px; 
+	margin-bottom: 4px;
+}
+
+.footer-contactUs span{
+
+    display: block;
+    font-size: 15px; 
+}
+
+.footer-bottom{
+    text-align: center;
+	
+    padding-bottom: 0px;
+    margin: -58px -158px -14px 0;
+    width: AUTO;
+}
+
+.footer-text{
+    display: inline-block;
+   font-size: 11px;
+    padding: 2px;
+    font-weight: 500;
+    transition: all 200ms ease-out 0s;
+   
+    width: auto;
+  margin: 75px 0 0 366px;
+  position: absolute;
+    height: 17px;
+
+    overflow: hidden;
+
+}
+
+.footer-imgs{
+    /* float: right; */
+    margin-top: 145px;
+    position: absolute;
+}
+
+.footer-ciashop{
+    width: 627px;
+    height: 63px;
+    display: inline-block;
+    background-position: -300px 0; 
+    text-indent: -9999px;
+    margin-right: 10px;
+    background-image: url(../imagens/SpriteMais.png);  
+    background-position: -48px -1003px;
+}
+
+ .footer-imgs{
+    margin: 15px auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+
+    font-size: 11px;
+    text-align: center;
+}
+.footer-imgs ul{
+    display: block;
+	
+    position: relative;
+    width: 428px;
+    height: 71px;
+    margin: auto;
+}
+.footer-imgs li{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: -6px;
+    text-align: center;
+}
+
+.footer-imgs ul li h5{
+    font-size: 12px;
+    font-weight: normal;
+
+    height: 11px;
+    text-align: center;
+    line-height: 21px;
+}
+
+ .footer-imgs ul li .ciashop{
+    display: block;
+    width: 131px;
+    height: 71px;
+    text-indent: -9999px;
+    background: url('../imagens/SpriteMais.png') no-repeat -11px -2px;
+    margin: -10px 15px 0 0;
+}
+
+ .footer-imgs ul li .egm{
+    display: block;
+    width: 176px;
+    height: 56px;
+    text-indent: -9999px;
+       
+    margin: -10px 5px 0 0;
+    background: url('../imagens/SpriteMais.png') no-repeat -216px -2px;
+}
+.news_text{
+    display: block;
+
+    float: left;
+    position: absolute;
+    width: 341px;
+    height: 47px;
+    left: 355px;
+    z-index: 99;
+    margin: 12px 0px 0 26px;
+}
+.news_text > h1{
+    float: right;
+	
+    display: block;
+    position: relative;
+    width: 330px;
+    top: 9px;
+    text-align: right;
+    height: 27px;
+    padding-right: 2px;
+
+}
+.news_text > span{
+    font-size: 14px;
+	
+    text-align: right;
+    width: 300px;
+    display: block;
+    margin-left: 39px;
+    float: left;
+    position: relative;
+}

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListaPresenteBuscaResultados><ListaPresenteBuscaResultado ID="listaPresenteBuscaResultado1"><ListaPresenteBuscaSemResultadoHTML><![CDATA[<div id="erro">
+  <div class="lista_erro">
+  	<h2>Não foram encontradas listas com os critérios informados!</h2>
+  </div>
+</div>
+          ]]></ListaPresenteBuscaSemResultadoHTML><ListaPresentePrincipalBuscaResultadoHTML><![CDATA[<div class="lp-cadastro">
+  <div class="bg-box-topo-presentes">
+    <div class="container-box-topo-presentes">
+      <img src="imagens/bg-presente-interno-fixo.png" alt="Lista de Presentes" />
+    </div>
+  </div>
+  <div class="tit-box-presentes">
+  	<div class="container-tit-presentes">
+      <h2>
+      	Resultado da Busca
+      </h2>
+    </div>
+  </div> 
+</div>  
+<div class="lista_produtos">
+    	[A2]
+    	[A0]        
+        [A1]        
+</div>
+]]></ListaPresentePrincipalBuscaResultadoHTML><ListaPresentesBuscaResultadoFiltroHTML><![CDATA[]]></ListaPresentesBuscaResultadoFiltroHTML><ListaPresentesBuscaResultadoListasHTML><![CDATA[<div id="minha_lista_presente">
+  <table width="100%;" cellspacing="0" cellpadding="0" border="0" class="tab_lista_presente">
+        <thead>
+            <tr>
+                <th class="tit-secundario" style="width: 90px;"></th>
+                <th class="tit-secundario">Nome da Lista</th>
+                <th class="tit-secundario">Homenageado(s)</th>
+                <th class="tit-secundario">Tipo de Lista</th>
+                <th class="tit-secundario">Local</th>
+                <th class="tit-secundario" style="background-position: right top;">Data do Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <repeticao:lista_presentes>
+                <tr class="item_lista">
+                    <td style="width: 90px;"><a href="[B6]"><img border="0" alt="[B9]" height="70" src="[B0]" /></a></td>
+                    <td style="text-align: left;"><a href="[B6]">[B11]</a></td>
+                    <td><a href="[B6]">[B1]</a></td>
+                    <td><a href="[B6]">[B10]</a></td>
+                    <td><a href="[B6]">[B3] - [B4] - [B5]</a></td>
+                    <td><a href="[B6]">[B2]</a></td>
+                </tr>
+            </repeticao:lista_presentes>
+        </tbody>
+    </table>
+</div>]]></ListaPresentesBuscaResultadoListasHTML><ListaPresentesBuscaResultadoPaginacaoHTML><![CDATA[<div class="paginacao_lista">
+  <condicao:paginacao>
+
+    <repeticao:paginas quantidade="5">
+      <a href="[C7]" class="<condicao:pagina_selecionada>selecionado</condicao:pagina_selecionada>">[C8]</a>
+    </repeticao:paginas>
+
+  </condicao:paginacao>
+</div>]]></ListaPresentesBuscaResultadoPaginacaoHTML><QuantidadeItensPorPagina value="10" /></ListaPresenteBuscaResultado></ListaPresenteBuscaResultados><SEOs><SEO ID="seo" /></SEOs><Banners><Banner ID="Fullzao_Topo" /></Banners><ListaPresenteBuscas><ListaPresenteBusca ID="listaPresenteNovaBusca"><ListaPresenteBuscaHTML><![CDATA[[A4]
+<div class="lista_nova_busca">
+  <fieldset>
+    <label>
+      Tipo de Lista:<br />
+      [A2]
+    </label>
+    <label>
+      Homenageado(s):<br />
+      [A0]
+    </label>
+    <label>
+      Data do Evento:<br />
+      [A1]
+    </label>
+    <label style="width:50px;">
+      &nbsp;<br />
+      <a href="[A3]" class="box-bt bt-primario">Buscar</a>
+    </label>
+  </fieldset>
+</div>]]></ListaPresenteBuscaHTML><MensagemAlertaListaPresenteBuscaHTML><![CDATA[<div id="erro">
+  <div class="lista_erro">
+    <h2>[B0]</h2>
+    <ul>
+      <repeticao:erro>
+        <li>[B1]</li>
+      </repeticao:erro>
+    </ul>
+  </div>
+</div>
+          ]]></MensagemAlertaListaPresenteBuscaHTML></ListaPresenteBusca></ListaPresenteBuscas><ListaPresenteEnderecoEntregas><ListaPresenteEnderecoEntrega ID="listaPresenteEnderecoEntrega"><ListaPresenteEnderecoEntregaHTML><![CDATA[]]></ListaPresenteEnderecoEntregaHTML></ListaPresenteEnderecoEntrega></ListaPresenteEnderecoEntregas><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

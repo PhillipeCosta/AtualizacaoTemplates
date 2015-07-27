@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><RegraPromocaoBrindes><RegraPromocaoBrinde ID="regrapromocaobrinde"><RegraPromocaoBrindeHTML><![CDATA[<repeticao:promocoes>
+<div class="heading-special">
+    <h2><span>[A0]</span></h2>
+  </div>  
+  <div class="box_conteudo">
+    <div class="respiro">
+	  <p>[A1]</p>
+    </div>
+  </div>
+</repeticao:promocoes>]]></RegraPromocaoBrindeHTML></RegraPromocaoBrinde></RegraPromocaoBrindes></controles></page>

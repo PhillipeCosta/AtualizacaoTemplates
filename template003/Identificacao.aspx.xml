@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><IdentificacaoCompradors><IdentificacaoComprador ID="identification"><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="form form-guest custom-overflow custom-clear custom-paddingV10">
+  <h5 class="text-uppercase text-left heading-primary custom-paddingV20"><strong>Dados de entrega</strong></h5>
+  <div class="form cep custom-clear custom-overflow custom-paddingV5 main-box">
+          <label class="col-md-4 text-right custom-clearPadding custom-paddingV5">CEP: </label>
+          <span class="col-md-4" style="padding-right: 0;">
+            [I2]
+          </span>
+          <span class="col-md-4 custom-clearPadding">
+            <a href="javascript:void(0);" class="btn btn-secondary text-uppercase text-center custom-paddingV5 custom-paddingH5">OK</a>
+            <a href="javascript:callSearchZipCode('ShippingAddresses_ZipCode')"><small>(Esqueci meu CEP)</small></a>
+          </span>
+  </div>
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Local</label>
+    <span class="col-md-7">
+      [I5]
+    </span>
+  </div>  
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Cidade</label>
+    <span class="col-md-7">
+      [I15]
+    </span>
+  </div>
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Estado</label>
+    <span class="col-md-7">
+      [I17]
+    </span>
+  </div>  
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Endereço</label>
+    <span class="col-md-7">
+      [I7]
+    </span>
+  </div>  
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Número</label>
+    <span class="col-md-7">
+      [I9]
+    </span>
+  </div> 
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Bairro</label>
+    <span class="col-md-7">
+      [I13]
+    </span>
+  </div>  
+  <div class="form custom-clear custom-overflow custom-paddingV5">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Complemento</label>
+    <span class="col-md-7">
+      [I11]
+    </span>
+  </div>  
+  <div class="form custom-clear custom-overflow custom-paddingV5">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Referência</label>
+    <span class="col-md-7">
+      [I19]
+    </span>
+  </div>
+  <div class="form parent-validation custom-clear custom-overflow custom-paddingV5">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">&nbsp;</label>
+    <span class="col-md-7">
+        <span class="col-md-1 pull-left form-inscEstadual custom-clearPadding">[I28]</span>
+        <span class="col-md-11">Gostaria de receber e-mails com lançamentos e promoções</span>
+    </span>
+  </div>    
+    <div class="pull-right custom-paddingV20">
+      <div class="text-center custom-clear">
+        <a href="javascript:void(0);" onclick="[I31]" class="btn-primary text-uppercase text-center custom-paddingV5 custom-paddingH15" name="enviar" id="enviar">Continuar</a>
+      </div>
+    </div>
+</div>      ]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[<div class="form form-guest custom-overflow custom-clear custom-paddingV10">
+  <h4 class="text-uppercase text-left heading-primary custom-paddingV20"><strong>Dados pessoais</strong></h4>
+  <div class="form form-check form-checkPerson text-center custom-clear custom-overflow">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">&nbsp;</label>
+    <span class="col-md-7">
+          <condicao:tipo_pessoa>
+              <span class="pull-left" style="padding-right: 20px;">
+                    [H36]
+                  </span>
+                  <span class="pull-left">
+                  [H37]
+                </span>
+          </condicao:tipo_pessoa>     
+      </span> 
+  </div>
+  <condicao:exibe_pais>
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">País</label>
+    <span class="col-md-7">
+      [H1]
+    </span>
+  </div>
+  </condicao:exibe_pais>
+
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Nome Completo</label>
+    <span class="col-md-7">
+      [H7]
+    </span>
+  </div>  
+  <div class="form custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">E-mail</label>
+    <span class="col-md-7">
+      [H35]
+    </span>
+  </div>
+  <condicao:pessoa_fisica>
+    <div class="form custom-clear custom-overflow custom-paddingV5 required">
+      <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Sexo</label>
+      <span class="col-md-7">
+        [H18]
+      </span>
+    </div>    
+    <div class="form custom-clear custom-overflow custom-paddingV5 required">
+      <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Data de nascimento</label>
+      <span class="col-md-7">
+        [H16]
+      </span>
+    </div>    
+    <div class="form custom-clear custom-overflow custom-paddingV5 required">
+      <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">CPF</label>
+      <span class="col-md-5" style="padding-right: 0;">
+        [H21]
+      </span>
+      <span class="pull-left custom-clearPadding custom-paddingV5">
+        <small class="exampledocumentid">(000.000.000-00)</small>       
+      </span>      
+    </div>  
+    <div class="form custom-clear custom-overflow custom-paddingV5">
+      <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">RG</label>
+      <span class="col-md-5" style="padding-right: 0;">
+        [H26]
+      </span>
+    </div>     
+    </condicao:pessoa_fisica>
+    <condicao:pessoa_juridica>
+    <div class="form custom-clear custom-overflow custom-paddingV5 required">
+      <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">CNPJ</label>
+      <span class="col-md-6" style="padding-right: 0;">
+        [H31]
+      </span>
+      <span class="pull-left custom-clearPadding custom-paddingV5">
+        <small class="exampledocumentid custom-paddingH5">(000.000.000-00)</small>       
+      </span>            
+    </div>  
+    <div class="form custom-clear custom-overflow custom-paddingV5 required">
+      <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Inscrição estadual</label>
+      <span class="col-md-7">
+        [H33]
+      </span>
+      <span class="pull-left" style="padding-top: 8px;">
+        <span class="pull-left form-inscEstadual">[H47]</span> <span class="pull-left">Isento</span>
+      </span>
+    </div>                                
+  </condicao:pessoa_juridica>
+  <div class="form parent-validation custom-clear custom-overflow custom-paddingV5 required">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Telefone Principal</label>
+    <span class="col-md-2 text-center" style="width: 13%;">
+      [I22]
+    </span>
+    <span class="col-md-5 custom-clearPadding">
+      [I23]
+    </span>
+  </div>    
+  <div class="form parent-validation custom-clear custom-overflow custom-paddingV5">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Celular</label>
+    <span class="col-md-2 text-center" style="width: 13%;">
+      [I26]
+    </span>
+    <span class="col-md-5 custom-clearPadding">
+      [I27]
+    </span>
+    <span class="pull-left custom-paddingV5 custom-paddingH5">
+      <small>(opcional)</small>
+    </span>
+  </div>
+  <div class="form custom-clear custom-overflow custom-paddingV5 required" data-type="password" data-min-length="5">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Senha</label>
+    <span class="col-md-7">
+      [H9]
+    </span>
+  </div>  
+  <div class="form custom-clear custom-overflow custom-paddingV5 required" data-type="password" data-min-length="5">
+    <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Confirmar senha</label>
+    <span class="col-md-7">
+      [H11]
+    </span>
+  </div>                  
+</div>]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<div class="identification form form-guest">
+  [A4]
+  <div class="custom-overflow custom-paddingV10">
+    [A0] [A1] [A2] [A3]
+  </div>
+  <div class="custom-overflow custom-paddingV10">
+    [A5]
+  </div>
+  <div class="col-md-6 custom-clearPadding" style="padding-right: 10px;">
+    [A6]
+  </div>
+  <div class="col-md-6 custom-clearPadding" style="padding-left: 10px;">
+    [A7]
+  </div>
+</div>]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[<div class="col-md-8" style="border-right: 1px solid #e8e8e8;">
+  <h5 class="text-uppercase text-left custom-paddingV10">
+    <strong>Insira o seu e-mail para prosseguir com a sua identificação.</strong>
+  </h5>
+  <p>
+    <small>Se você já for cadastrado na loja virtual será solicitada a sua senha. Se você estiver fazendo o seu cadastro o formulário para preenchimento será carregado.</small>    
+  </p>
+  <fieldset class="custom-paddingV30">
+      <div class="form custom-clear custom-overflow required">
+            <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Digite seu email</label>
+            <span class="col-md-8">[D1]</span>
+      </div>
+      <div class="form custom-clear custom-paddingV5 required">
+            <label class="col-md-3 text-right main-clearPadding main-padding">Digite sua senha</label>
+            <span class="col-md-8">[D15]</span>
+      </div>            
+  </fieldset>
+  <div class="text-right custom-paddingH65">
+      <a href="javascript: void(0)" onclick="[D2]" class="btn-primary text-center text-uppercase custom-paddingV5 custom-paddingH15">Continuar</a>
+  </div>
+</div>
+<div class="col-md-4">
+  <h5 class="text-uppercase text-left custom-paddingV10"><strong class="custom-overflow custom-clear text-uppercase">Esqueceu a senha?</strong></h5>
+  <p><small>Para recuperar a senha do seu cadastro <a href="[D10]" style="text-decoration: underline;">(clique aqui)</a><br />
+    Você receberá a nova senha no e-mail de cadastro</small></p>
+</div>]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <strong>Atenção!</strong> [F0]
+  <ul class="custom-overflow">
+    <repeticao:erro>
+      <li class="custom-paddingV3"><strong>[F1]</strong></li>
+    </repeticao:erro>
+  </ul>
+</div>  ]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[<div class="alert alert-success" role="alert">
+  <strong>Senha recuperada!</strong> Enviamos para o seu email a senha cadastrada.
+</div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[<div class="btn-tertiary text-center custom-paddingV15 " role="alert">
+  <h4>Bem-Vindo, este email ainda não está cadastrado!</h4>
+  <br />
+  <p>Para prosseguir será necessário o preenchimento do formulário abaixo. É fácil e rápido.</p>
+  <p>Vendas exclusivas para profissionais, estudantes ou empresas da área odontológica. Caso tenha alguma dúvida entre em contato.</p>
+</div>  
+]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[<div class="col-md-8" style="border-right: 1px solid #e8e8e8;">
+  <h5 class="text-uppercase text-left custom-paddingV10">
+    <strong>Recuperar senha.</strong>
+  </h5>
+  <p>
+    <small>Digite as informações abaixo para recuperar sua senha.</small>    
+  </p>
+  <fieldset class="custom-paddingV30">
+      <div class="form custom-clear custom-overflow required">
+            <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Digite seu email</label>
+            <span class="col-md-7">[E1]</span>
+      </div>     
+  </fieldset>
+  <div class="text-right custom-overflow custom-clear custom-paddingV5">
+      <a href="[E3]" class="main-padding">Voltar</a>
+      <a href="javascript: void(0)" onclick="[E2]" class="btn-primary text-center text-uppercase custom-paddingV5 custom-paddingH15">Recuperar senha</a>
+  </div>
+</div>
+<div class="col-md-4">
+ &nbsp;
+</div>
+]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[<div class="col-md-8" style="border-right: 1px solid #e8e8e8;">
+  <h5 class="text-uppercase text-left custom-paddingV10">
+    <strong>Insira o seu e-mail para prosseguir com a sua identificação.</strong>
+  </h5>
+  <p>
+    <small>Se você já for cadastrado na loja virtual será solicitada a sua senha. Se você estiver fazendo o seu cadastro o formulário para preenchimento será carregado.</small>    
+  </p>
+  <fieldset class="custom-paddingV30">
+      <div class="form custom-clear custom-overflow required">
+            <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Digite seu email</label>
+            <span class="col-md-8">[B1]</span>
+      </div>     
+  </fieldset>
+  <div class="text-right custom-paddingH65">
+      <a href="javascript: void(0)" onclick="[B2]" class="btn-primary text-center text-uppercase custom-paddingV5 custom-paddingH15">Continuar</a>
+  </div>
+</div>
+<div class="col-md-4">
+  <h5 class="text-uppercase text-left custom-paddingV10"><strong class="custom-overflow custom-clear text-uppercase">Esqueceu a senha?</strong></h5>
+  <p><small>Para recuperar a senha do seu cadastro <a href="[B9]" style="text-decoration: underline;">(clique aqui)</a><br />
+    Você receberá a nova senha no e-mail de cadastro</small></p>
+</div>]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[<div class="col-md-8" style="border-right: 1px solid #e8e8e8;">
+  <h5 class="text-uppercase text-left custom-paddingV10">
+    <strong>Verificar email novamente.</strong>
+  </h5>
+  <p>
+    <small>Verifique novamente o email informado.</small>    
+  </p>
+  <fieldset class="custom-paddingV30">
+      <div class="form custom-clear custom-overflow required">
+            <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">Digite seu email</label>
+            <span class="col-md-8">[C1]</span>
+      </div>     
+  </fieldset>
+  <div class="text-right custom-paddingH65">
+      <a href="javascript: void(0)" onclick="[C10]" class="btn-primary text-center text-uppercase custom-paddingV5 custom-paddingH15">Verificar novamente</a>
+  </div>
+</div>
+<div class="col-md-4">
+  <h5 class="text-uppercase text-left custom-paddingV10"><strong class="custom-overflow custom-clear text-uppercase">Esqueceu a senha?</strong></h5>
+  <p><small>Para recuperar a senha do seu cadastro <a href="[C9]" style="text-decoration: underline;">(clique aqui)</a><br />
+    Você receberá a nova senha no e-mail de cadastro</small></p>
+</div>
+
+]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

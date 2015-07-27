@@ -1,0 +1,38 @@
+.entrega_oculta {
+    display: none;
+}
+.parent-validation-error {
+    background: none repeat scroll 0 0 #FFFDCD;
+    border: 1px solid #D2CF82 !important;
+}
+.list_entrega .input-validation-error {
+    border: 1px solid #FF2200;
+}
+
+.enderecoCobranca {
+    clear: right;
+    display: none;
+    margin-top: 50px;
+}
+.mostra {
+    display: block !important;
+}
+.tooltip span {
+    display: none;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    margin: -64px 3px 12px -284px;
+    padding: 2px 3px;
+    width: 130px;
+}
+.tooltip:hover span {
+    background: none repeat scroll 0 0 #ACD8E3;
+    border: 1px solid #005380;
+    color: #005380;
+    display: inline;
+    padding: 5px;
+    position: absolute;
+    text-align: left;
+    width: 269px;
+}
+

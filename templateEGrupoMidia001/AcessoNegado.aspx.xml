@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AcessoNegados><AcessoNegado ID="AcessoNegado"><AcessoNegadoGeralHTML><![CDATA[<div class="box-acesso">
+    <div class="acesso-esq">
+      <img src="imagens/lock-acesso.png" alt="Sem acesso" />
+    </div>
+    <div class="acesso-dir">
+      <h3 class="tit-acesso">
+        Seu usuário não tem acesso a esta área
+      </h3>
+      <p class="msg-acesso">[A0]</p>
+      <condicao:solicitar_acesso>    
+          <div class="bt-acesso">
+            <a href="[A1]" class="box-bt btn-primary">Solicitar acesso</a>
+          </div>
+      </condicao:solicitar_acesso>  
+        <condicaofalsa:solicitar_acesso>
+        <div class="bt-acesso">
+            <a href="javascript:history.go(-1)" class="box-bt btn-tertiary">Voltar</a>
+          </div>      
+        </condicaofalsa:solicitar_acesso>
+    </div>    
+</div>  
+]]></AcessoNegadoGeralHTML></AcessoNegado><AcessoNegado ID="AccessDenied"><AcessoNegadoGeralHTML><![CDATA[<div class="sorry">
+	<div class="sorry-content ops">
+      	<div class="sorry-info">
+          	<h2>Seu usuário não tem acesso a esta <strong>área</strong>!</h2>
+          	<p>[A0]</p>
+          	<condicao:solicitar_acesso>
+          		<a href="[B0]" class="bt-big-special">Solicitar Acesso</a>
+          	</condicao:solicitar_acesso>
+          	<condicaofalsa:solicitar_acesso>
+              	<a href="javascript:history.go(-1)" class="bt-big-secundary">Voltar</a>
+          	</condicaofalsa:solicitar_acesso>
+  		</div>
+  	</div>
+</div>]]></AcessoNegadoGeralHTML></AcessoNegado></AcessoNegados><Banners><Banner ID="header_full" /></Banners></controles></page>

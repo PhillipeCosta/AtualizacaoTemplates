@@ -1,0 +1,229 @@
+#header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    z-index: 100;
+}
+
+.header-content{
+    width: 990px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+.header-top{
+  overflow: hidden;
+  padding: 0;
+}
+
+.header-top .header-content{
+  height: 33px;
+}
+
+.header-contactUs{
+    float: left;
+}
+
+.header-contactUs p{
+  padding: 6px 7px 0; 
+  text-transform: uppercase;
+  font-size: 11px;   
+}
+
+.header-contactUs p strong{
+  font-size: 14px;
+}
+
+.header-links{
+  float: left; 
+  padding-top: 6px;
+}
+
+.header-links a{
+  padding: 0 15px; 
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.header-links a:first-child{
+  border: none;
+}
+
+.header-links a:hover{
+    text-decoration: underline;
+}
+
+.header-social{
+  float: right;
+}
+
+.header-social a{
+  display: inline-block;
+  margin: 3px 7px 0;
+  transition: all 200ms ease-out 0s;
+  vertical-align: middle;
+  float: left;
+}
+
+.header-social a:hover{
+  opacity: 0.6;
+}
+
+.header-middle{
+  height: 110px;
+}
+
+.header-middle .header-content{
+  height: 110px;
+}
+
+.header-logo{
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 210px;
+    height: 100px;
+    background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.header-logo a, .header-fixedLogo a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header-h1{
+  position: absolute;
+  top: 85px;
+  right: 0;
+  color: #ccc;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.header-search{
+    position: absolute;
+    top: 40px;
+    left: 210px;
+}
+
+.header-search fieldset{
+    border: none; 
+    overflow: hidden;
+}
+
+.header-search fieldset label{
+    float: left;
+}
+
+.header-search fieldset label input{
+    border: 1px solid transparent;
+    font-size: 14px;
+    padding: 10px;
+    width: 425px;
+    background: #eee;
+}
+
+.header-search-buttom{
+    background-position: -100px -100px;
+    height: 21px;
+    line-height: 0;
+    width: 21px;
+    float: left;  
+  margin: 8px 0 0 -30px;
+}
+
+.header-greeting{
+    position: absolute;
+    right: 150px;
+    top: 40px;
+    width: 155px;
+}
+
+.header-greeting a{
+  display: block;
+}
+
+.header-cart{
+    overflow: hidden;
+    position: absolute;
+    right: 15px;
+    text-indent: 0;
+    top: 30px;
+}
+
+.header-cart a:before{
+    background-position: left center;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 47px;
+    left: 12px;
+    position: absolute;
+    top: 4px;
+    width: 64px;
+}
+
+.header-cart a span{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 20px 20px 60px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header-division{
+    background: transparent;
+    border: none;
+    padding-top: 140px;
+}
+
+/*Fixo*/
+
+#header.fixed{
+    height: 75px;
+    position: fixed;
+}
+
+#header.fixed .header-middle .header-content{
+  height: 65px;
+}
+
+.fixed .header-navbar, .fixed .header-menu, .fixed .header-logo{
+    display: none;
+}
+
+.fixed .header-middle{
+  height: 65px;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.fixed .header-search{
+    left: 0;
+  top: 13px;
+}
+
+.fixed .header-search fieldset label input{
+  width: 600px;
+}
+
+.fixed .header-greeting{
+  top: 13px;
+}
+
+.fixed .header-cart{
+  top: 5px;
+}
+
+.fixed .header-menu{
+    display: none;
+}

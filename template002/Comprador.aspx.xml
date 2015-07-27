@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><IdentificacaoCompradors><IdentificacaoComprador ID="identification"><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="main-padding20 form form-guest main-overflow main-clear">
+  <h5 class="main-padding">// Dados de endereço</h5>
+	<div class="form cep main-clear main-overflow parent-validation">
+		<label class="col-md-5 text-right main-clearPadding main-padding">Digite primeiro o CEP: </label>
+		<span class="col-md-4" style="padding-right: 0;">
+			[I2]
+		</span>
+		<span class="col-md-3 main-clearPadding">
+			<a href="javascript:void(0);" class="bt btn-secondary text-uppercase text-center" style="padding: 6px 11px;">OK</a>
+			<a href="javascript:callSearchZipCode('ShippingAddresses_ZipCode')"><small>(Esqueci meu CEP)</small></a>
+		</span>
+	</div>
+	<div class="form main-clear main-overflow required">
+		<label class="col-md-3 text-right main-clearPadding main-padding">Local</label>
+		<span class="col-md-7">
+		  [I5]
+		</span>
+	</div>  
+	<div class="form main-clear main-overflow required">
+		<label class="col-md-3 text-right main-clearPadding main-padding">Cidade</label>
+		<span class="col-md-7">
+		  [I15]
+		</span>
+	</div>
+	<div class="form main-clear main-overflow required">
+		<label class="col-md-3 text-right main-clearPadding main-padding">Estado</label>
+		<span class="col-md-7">
+		  [I17]
+		</span>
+	</div>  
+	<div class="form main-clear main-overflow required">
+		<label class="col-md-3 text-right main-clearPadding main-padding">Endereço</label>
+		<span class="col-md-7">
+		  [I7]
+		</span>
+	</div>  
+	<div class="form main-clear main-overflow required">
+		<label class="col-md-3 text-right main-clearPadding main-padding">Número</label>
+		<span class="col-md-7">
+		  [I9]
+		</span>
+	</div> 
+	<div class="form main-clear main-overflow required">
+		<label class="col-md-3 text-right main-clearPadding main-padding">Bairro</label>
+		<span class="col-md-7">
+		  [I13]
+		</span>
+	</div>  
+	<div class="form main-clear main-overflow">
+		<label class="col-md-3 text-right main-clearPadding main-padding">Complemento</label>
+		<span class="col-md-7">
+		  [I11]
+		</span>
+	</div>  
+	<div class="form main-clear main-overflow">
+		<label class="col-md-3 text-right main-clearPadding main-padding">Pontos de referência</label>
+		<span class="col-md-7">
+		  [I19]
+		</span>
+	</div>
+	<div class="form parent-validation main-clear main-overflow">
+	  <label class="col-md-3 text-right main-clearPadding main-padding">&nbsp;</label>
+	  <span class="col-md-7">
+	      <span class="col-md-1 pull-left form-inscEstadual main-clearPadding">[I28]</span>
+	      <span class="col-md-11">Gostaria de receber e-mails com lançamentos e promoções</span>
+	  </span>
+	</div>    
+    <div class="pull-right main-padding20">
+      <div class="text-center main-overflow main-clear">
+        <a href="javascript:void(0);" onclick="[I31]" class="bt btn-primary text-uppercase text-center" name="enviar" id="enviar">Continuar</a>
+      </div>
+    </div>
+</div>]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[<div class="main-padding20 form form-guest main-overflow main-clear">
+  <h5 class="main-padding">// Dados pessoais</h5>
+  <div class="form form-check form-checkPerson text-center main-clear main-overflow">
+    <label class="col-md-3 text-right main-clearPadding main-padding">&nbsp;</label>
+    <span class="col-md-7">
+          <condicao:tipo_pessoa>
+              <span class="pull-left" style="padding-right: 20px;">
+                    [H36]
+                  </span>
+                  <span class="pull-left">
+                  [H37]
+                </span>
+          </condicao:tipo_pessoa>     
+      </span> 
+  </div>
+  <condicao:exibe_pais>
+  <div class="form main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">País</label>
+    <span class="col-md-7">
+      [H1]
+    </span>
+  </div>
+  </condicao:exibe_pais>
+
+  <div class="form main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Nome Completo</label>
+    <span class="col-md-7">
+      [H7]
+    </span>
+  </div>  
+  <div class="form main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">E-mail</label>
+    <span class="col-md-7">
+      [H35]
+    </span>
+  </div>
+  <condicao:pessoa_fisica>
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Sexo</label>
+      <span class="col-md-7">
+        [H18]
+      </span>
+    </div>    
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Data de nascimento</label>
+      <span class="col-md-7">
+        [H16]
+      </span>
+    </div>    
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">CPF</label>
+      <span class="col-md-6" style="padding-right: 0;">
+        [H21]
+      </span>
+      <span class="pull-left main-clearPadding main-padding">
+        <small class="exampledocumentid">(000.000.000-00)</small>       
+      </span>      
+    </div>  
+   <div class="form main-clear main-overflow">
+      <label class="col-md-3 text-right main-clearPadding main-padding">RG</label>
+      <span class="col-md-6" style="padding-right: 0;">
+        [H26]
+      </span>    
+    </div>     
+    </condicao:pessoa_fisica>
+    <condicao:pessoa_juridica>
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">CNPJ</label>
+      <span class="col-md-6" style="padding-right: 0;">
+        [H31]
+      </span>
+      <span class="pull-left main-clearPadding main-padding">
+        <small class="exampledocumentid">(000.000.000-00)</small>       
+      </span>            
+    </div>  
+    <div class="form main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Inscrição estadual</label>
+      <span class="col-md-7">
+        [H33]
+      </span>
+      <span class="pull-left" style="padding-top: 8px;">
+        <span class="pull-left form-inscEstadual">[H47]</span> <span class="pull-left">Isento</span>
+      </span>
+    </div>                                
+  </condicao:pessoa_juridica>
+  <div class="form parent-validation main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Telefone Principal</label>
+    <span class="col-md-1 text-center" style="padding-right: 0">
+      [I22]
+    </span>
+    <span class="col-md-2 main-clearPadding">
+      [I23]
+    </span>
+  </div>    
+  <div class="form parent-validation main-clear main-overflow">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Telefone Alternativo</label>
+    <span class="col-md-1 text-center" style="padding-right: 0;">
+      [I26]
+    </span>
+    <span class="col-md-2 main-clearPadding">
+      [I27]
+    </span>
+    <span class="pull-left main-padding">
+      <small>(opcional)</small>
+    </span>
+  </div>
+  <a href="[H40]" class="bt btn-secondary text-center text-uppercase register-alterPassword-bt">Clique aqui para alterar sua senha</a>
+  <condicao:senha>
+  <div class="register-alterPassword">
+    <div class="form main-clear main-overflow required" data-type="password" data-min-length="5">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Digite a senha atual</label>
+      <span class="col-md-7">
+        [H39]
+      </span>
+    </div>  
+    <div class="form main-clear main-overflow required" data-type="password" data-min-length="5">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Digite a nova senha</label>
+      <span class="col-md-7">
+        [H9]
+      </span>
+    </div>  
+    <div class="form main-clear main-overflow required" data-type="password" data-min-length="5">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Confirmar nova senha</label>
+      <span class="col-md-7">
+        [H11]
+      </span>
+    </div> 
+    <div class="form main-clear main-overflow">
+      <a href="javascript:void(0);" class="register-cancel-alterPassword-bt text-right" style="text-decoration: underline;"><i>cancelar</i></a>
+    </div>     
+  </div>
+  </condicao:senha>
+</div>]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<div class="identification form form-guest">
+  [A4]
+  <div class="col-md-6">
+    [A6]
+  </div>
+  <div class="col-md-6">
+    [A7]
+  </div>
+</div>]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[<div class="col-md-8" style="border-right: 1px solid #e8e8e8;">
+  <h6 class="main-padding">
+    <strong>// Insira o seu e-mail para prosseguir com a sua identificação.</strong>
+  </h6>
+  <p>
+    <small>Se você já for cadastrado na loja virtual será solicitada a sua senha. Se você estiver fazendo o seu cadastro o formulário para preenchimento será carregado.</small>    
+  </p>
+  <fieldset>
+      <div class="form main-clear main-overflow required">
+            <label class="col-md-3 text-right main-clearPadding main-padding">Digite seu email</label>
+            <span class="col-md-7">[D1]</span>
+      </div>
+      <div class="form main-clear main-overflow required">
+            <label class="col-md-3 text-right main-clearPadding main-padding">Digite sua senha</label>
+            <span class="col-md-7">[D15]</span>
+      </div>            
+  </fieldset>
+  <div class="text-right main-overflow main-clear main-padding">
+      <a href="javascript: void(0)" onclick="[D2]" class="bt btn-primary text-center text-uppercase">Continuar</a>
+  </div>
+</div>
+<div class="col-md-4">
+  <h6 class="main-padding"><strong class="main-padding main-overflow main-clear">// Esqueceu a senha?</strong></h6>
+  <p><small>Para recuperar a senha do seu cadastro <a href="[D10]" style="text-decoration: underline;">(clique aqui)</a><br />
+    Você receberá a nova senha no e-mail de cadastro</small></p>
+</div>]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <strong>Atenção!</strong> [F0]
+  <ul class="main-clear main-padding20 main-overflow main-clearPadding">
+    <repeticao:erro>
+      <li><strong>[F1]</strong></li>
+    </repeticao:erro>
+  </ul>
+</div>  ]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[<div class="alert alert-success" role="alert">
+  <strong>Sucesso!</strong> Enviamos para o seu email a senha cadastrada.
+</div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[<div class="col-md-8" style="border-right: 1px solid #e8e8e8;">
+  <h6 class="main-padding">
+    <strong>// Recuperar senha.</strong>
+  </h6>
+  <p>
+    <small>Digite as informações abaixo para recuperar sua senha.</small>    
+  </p>
+  <fieldset>
+      <div class="form main-clear main-overflow required">
+            <label class="col-md-3 text-right main-clearPadding main-padding">Digite seu email</label>
+            <span class="col-md-7">[E1]</span>
+      </div>     
+  </fieldset>
+  <div class="text-right main-overflow main-clear main-padding">
+      <a href="[E3]" class="main-padding">Voltar</a>
+      <a href="javascript: void(0)" onclick="[E2]" class="bt btn-primary text-center text-uppercase">Recuperar senha</a>
+  </div>
+</div>
+<div class="col-md-4">
+ &nbsp;
+</div>
+]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[<div class="col-md-8" style="border-right: 1px solid #e8e8e8;">
+  <h6 class="main-padding">
+    <strong>// Insira o seu e-mail para prosseguir com a sua identificação.</strong>
+  </h6>
+  <p>
+    <small>Se você já for cadastrado na loja virtual será solicitada a sua senha. Se você estiver fazendo o seu cadastro o formulário para preenchimento será carregado.</small>    
+  </p>
+  <fieldset>
+      <div class="form main-clear main-overflow required">
+            <label class="col-md-3 text-right main-clearPadding main-padding">Digite seu email</label>
+            <span class="col-md-7">[B1]</span>
+      </div>     
+  </fieldset>
+  <div class="text-right main-overflow main-clear main-padding">
+      <a href="javascript: void(0)" onclick="[B2]" class="bt btn-primary text-center text-uppercase">Continuar</a>
+  </div>
+</div>
+<div class="col-md-4">
+  <h6 class="main-padding"><strong class="main-padding main-overflow main-clear">// Esqueceu a senha?</strong></h6>
+  <p><small>Para recuperar a senha do seu cadastro <a href="[B9]" style="text-decoration: underline;">(clique aqui)</a><br />
+    Você receberá a nova senha no e-mail de cadastro</small></p>
+</div>]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[<div class="col-md-8" style="border-right: 1px solid #e8e8e8;">
+  <h6 class="main-padding">
+    <strong>// Verificar email novamente.</strong>
+  </h6>
+  <p>
+    <small>Verifique novamente o email informado.</small>    
+  </p>
+  <fieldset>
+      <div class="form main-clear main-overflow required">
+            <label class="col-md-3 text-right main-clearPadding main-padding">Digite seu email</label>
+            <span class="col-md-7">[C1]</span>
+      </div>     
+  </fieldset>
+  <div class="text-right main-overflow main-clear main-padding">
+      <a href="javascript: void(0)" onclick="[C10]" class="bt btn-primary text-center text-uppercase">Verificar novamente</a>
+  </div>
+</div>
+<div class="col-md-4">
+  <h6 class="main-padding"><strong class="main-padding main-overflow main-clear">// Esqueceu a senha?</strong></h6>
+  <p><small>Para recuperar a senha do seu cadastro <a href="[C9]" style="text-decoration: underline;">(clique aqui)</a><br />
+    Você receberá a nova senha no e-mail de cadastro</small></p>
+</div>
+]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

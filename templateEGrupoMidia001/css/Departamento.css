@@ -1,0 +1,60 @@
+.deptmnts_menu{
+    width: 270px;
+	
+}
+.deptmnts_menu > ul  > li > ul{list-style:none;margin-left: 82px;float: left;width: 200px;}
+.deptmnts_menu > ul > li > h3{
+    overflow: hidden;
+    margin: 7px -3px -1px 1px;
+    height: 35px;
+}
+
+.deptmnts_menu > ul > li > h3 > a {
+    border-right: solid 2.7px #2bb34b;
+
+	
+
+    border-bottom: solid 2.7px;
+    border-radius: 13px;
+    text-align: right;
+    height: 21px;
+    max-width: 327px;
+    max-height: 17px;
+    line-height: 27px;
+    overflow: hidden;
+    width: 270px;
+    font-size: 19px;
+    padding-right: 7px;
+    padding-top: 15px;
+    PADDING-bottom: 8px;
+    margin: -13px 0px 9px -13px;
+}
+#content  #col-left{
+    width: 266px;
+	
+    float: left;
+    position: relative;
+}
+
+#content  #col-content{
+    width: 853px;
+	
+    float: left;
+    position: relative;
+}
+#container >.breadCrumb{
+	
+}
+#container >.breadCrumb{
+	width:1100px;
+	display: block;
+	margin:auto;
+	float: none;
+	position: relative;
+}
+.breadCrumb-home a , .breadCrumb-departaments a{
+    font-weight: bold;
+	
+    font-size: 15px;
+}
+.col4 .collection-li{width: 33%!important;}

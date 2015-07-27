@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoRelatorioVendass><AfiliadoRelatorioVendas ID="affiliateSales"><AfiliadoRelatorioVendasHTML><![CDATA[<div class="padding-20">
+  [A3]
+</div>
+<div class="padding-20">
+  <div class="w-50 to-left form">
+    Organizar por: <span style="width: 200px; margin-right: 10px;" class="to-left">[A2]</span>
+    <a href="javascript:void(0);" onclick="[A5]" class="bt-small-primary">Filtrar</a>
+  </div>
+  <div class="w-50 to-right form align-right">
+    <condicao:mes>
+      <span style="width: 100px; margin-right: 5px;" class="inline-block">[A0]</span>
+    </condicao:mes>
+    <span style="width: 100px; margin-right: 10px;" class="inline-block">[A1]</span>
+    <a href="javascript:void(0);" onclick="[A5]" class="bt-small-primary">Filtrar</a>      
+  </div>
+</div>
+<div class="padding-20">
+  [A4]
+</div>  
+]]></AfiliadoRelatorioVendasHTML><AfiliadosRelatorioMensagemSemDadosHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong>Não existem dados para visualização
+</div>]]></AfiliadosRelatorioMensagemSemDadosHTML><AlturaGrafico value="200" /><AlturaGraficoMes value="200" /><CorLinha1 value="#145FA6" /><CorLinha2 value="980106" /><CorLinhaMes1 value="#145FA6" /><CorLinhaMes2 value="#980106" /><DadosAfiliadosRelatorioVendasAnualHTML><![CDATA[<div class="padding-15">
+    [E0]
+</div>]]></DadosAfiliadosRelatorioVendasAnualHTML><DadosAfiliadosRelatorioVendasMensalHTML><![CDATA[<div class="padding-15">
+    [C0]
+</div>]]></DadosAfiliadosRelatorioVendasMensalHTML><GraficoAfiliadosRelatorioVendasAnualHTML><![CDATA[<div class="padding-15">
+    [D0]
+</div>]]></GraficoAfiliadosRelatorioVendasAnualHTML><GraficoAfiliadosRelatorioVendasMensalHTML><![CDATA[<div class="padding-15">
+    [B0]
+</div>]]></GraficoAfiliadosRelatorioVendasMensalHTML><LarguraGrafico value="990" /><LarguraGraficoMes value="990" /><TituloGrafico value="Vendas por dia" /><TituloGraficoMes value="Vendas por mês" /></AfiliadoRelatorioVendas></AfiliadoRelatorioVendass></controles></page>

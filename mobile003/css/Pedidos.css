@@ -1,0 +1,35 @@
+.miniCart-table{
+}
+
+.order-info{
+    padding: 20px 0;
+    overflow: hidden;	
+}
+
+.order-number{
+    text-align: center;
+}
+
+.order-number h3{
+    color: #333;
+    font-size: 29px;
+    font-weight: normal;
+}
+
+.order-number p{
+    color: #fff;
+    display: block;
+    font-size: 50px;
+    padding: 20px 10px;
+	margin-top: 10px;
+}
+
+.go-back-bt{
+	padding-top: 1rem;
+}
+
+.order-shipping-content, .order-status-content, .order-payment-content{
+    font-size: 13px;
+	padding: 1rem !important;
+	line-height: 17px;
+}

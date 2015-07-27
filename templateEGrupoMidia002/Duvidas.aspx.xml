@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><Duvidass><Duvidas ID="faq"><AssuntoRespostasHTML><![CDATA[<div class="heading-quartiary">
+  <h3>[D1]</h3>
+</div>]]></AssuntoRespostasHTML><DuvidasHTML><![CDATA[<div class="faq">
+  	<div class="heading-primary">
+      	<h2>Perguntas Frequentes</h2>
+  	</div>
+    [C1]
+</div>
+<script>
+	$(function(){
+  		$(".ask").click(function(){            
+ 			if($(this).hasClass("active")){
+              $(".answer").slideUp();
+              $(".ask.active").removeClass("active");
+  			}else{
+  			  $(".answer").slideUp();
+              $(".ask.active").removeClass("active");
+              $(this).next(".answer").slideDown();
+              $(this).addClass("active");
+  			}
+  		})
+  	})
+</script>
+]]></DuvidasHTML><RespostasHTML><![CDATA[<div class="faq-item">
+    <h4 class="ask">[B0]</h4>
+  	<div class="answer">  
+  		<p>[B1]</p>
+  	</div>
+</div>
+          ]]></RespostasHTML></Duvidas></Duvidass><FaleConoscos><FaleConosco ID="contactUsForm"><FaleConoscoHTML><![CDATA[<div class="heading-primary heading-contact">
+  <h2>Ainda com dúvidas? Entre em contato conosco</h2>
+</div>
+<div class="contact form">
+  <div class="w-80 ">
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Nome*</span> [A1]</label>
+      </div>
+      <div class="form-item validate required w-50" data-type="email">
+        <label><span class="form-title">Email*</span> [A2]</label>
+      </div>
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Telefone*</span> [A3]</label>
+      </div>
+      <div class="form-item w-50">
+        <label><span class="form-title">Empresa</span>[A5]</label>
+      </div>
+      <div class="form-item w-50">
+        <label><span class="form-title">Número do<br /> Pedido <small>(Se houver)</small></span> [A4]</label>
+      </div> 
+    <div class="w-100 to-right">
+          <div class="form-item validate required w-100">
+            <label><span class="form-title">Mensagem*</span> [A6] <div style="display: none;">[A7]</div></label>
+          </div>
+          <div class="form-item w-50">
+            <a href="javascript: void(0)" onclick="[A8]" class="bt-small-primary to-right fakeButtom">Enviar</a>
+            <input type="button" onclick="[A8]" class="realButtom hide" value="Enviar" />
+          </div>
+      </div>    
+    
+  </div>
+  
+</div>]]></FaleConoscoHTML><ObrigatorioCPFCNPJ value="False" /><tipoFormulario value="Dúvidas" /></FaleConosco></FaleConoscos><BoletimNoticiass><BoletimNoticias ID="tidings"><BoletimNoticiasHTML><![CDATA[<h3>ASSINE NOSSA NEWS LETTER</h3>
+<label class="keep_informed">Mantenha-se Informado!</label>
+<fieldset class="form">
+  <span class="news-email">
+    <label> <i></i>Email:</label>[A2]    
+    </span>
+  <span class="news-name"><label>Nome:</label>[A0]</span>
+
+  
+  <condicao:nascimento>    
+    <span class="news-birth"><label><small>Data de<br />nascimento</small></label>[A1]</span>
+  </condicao:nascimento>
+
+  <condicao:sexo>
+    <span class="news-gender "><label>Gênero</label>[A3][A6]</span>
+  </condicao:sexo>
+  
+  <a href="[A4]" class="bt-small-special w-15 to-right align-center">enviar</a>
+</fieldset>
+]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass></controles></page>

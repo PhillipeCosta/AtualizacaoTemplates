@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><TagCloudss><TagClouds ID="TagClouds"><Classe1 value="cloud1" /><Classe2 value="cloud2" /><Classe3 value="cloud3" /><Classe4 value="cloud4" /><Classe5 value="cloud5" /><Classe6 value="cloud6" /><Classe7 value="cloud7" /><CssComponente><![CDATA[]]></CssComponente><LayoutHTML><![CDATA[ <div class="tit_box">
+<h2>[A0]</h2>
+</div>
+<div class="clouds">[A1]</div>]]></LayoutHTML><Titulo value="Mais Desejados" /></TagClouds></TagCloudss><HistoricoNavegacaos><HistoricoNavegacao ID="Navegacao"><CaracterSeparador value="" /><CssComponente><![CDATA[]]></CssComponente><HistoricoNavegacaoHTML><![CDATA[<div class="tit_box">
+    <h2>Minhas Navegações</h2>
+</div>
+<div class="navegacao">
+    <div class="navegacao_esquerda">
+        <div class="paginacao">
+            <h3>
+                Últimos produtos visitados <span>([A0])</span></h3>
+            <span>Pagina:</span>
+            <repeticao:paginacao>
+                <a href="[A2]" id="[A1]">[A1]</a>
+            </repeticao:paginacao>
+        </div>
+        <div class="navegacao_vitrine">
+            <div class="navegacao_vitrine_seta_voltar">
+                <condicao:imagem_anterior>
+                    <a onclick="[A3]" href="javascript:void(0)"><img src="imagens/navegacao_vitrine_seta_voltar.png?1" alt="voltar página" border="0" /></a>
+                </condicao:imagem_anterior>
+            </div>
+            <ul>
+                [A5]
+            </ul>
+            <div class="navegacao_vitrine_seta_avancar">
+                <condicao:imagem_proximo>
+                    <a onclick="[A4]" href="javascript:void(0)"><img src="imagens/navegacao_vitrine_seta_avancar.png?1" alt="Avançar página" border="0" /></a>
+                </condicao:imagem_proximo>
+            </div>
+        </div>
+    </div>
+    <div class="navegacao_direita">
+        <div class="navegacao_direita_item">
+            <h3>Produtos adicionado ao carrinho</h3>
+            <ul>
+                <repeticao:itens_carrinho quantidade="4">
+                    <li><a href="[A6]">[A7]</a></li>
+                </repeticao:itens_carrinho>
+            </ul>
+        </div>
+        <div class="navegacao_direita_item">
+            <h3>
+                &Uacute;ltimas pesquisas efetuadas</h3>
+            <ul>
+                <repeticao:itens_pesquisa quantidade="4">
+                    <li><a href="[A8]">[A9]</a></li>
+                </repeticao:itens_pesquisa>
+            </ul>
+        </div>
+        <div class="navegacao_direita_item">
+            <h3>
+                Categorias Visitadas</h3>
+            <ul>
+                <repeticao:itens_departamento quantidade="4">
+                    <li><a href="[A10]">[A11]</a></li>
+                </repeticao:itens_departamento>
+            </ul>
+        </div>
+    </div>
+</div>
+]]></HistoricoNavegacaoHTML><ProdutoHTML><![CDATA[<li>
+       <div class="produto">
+         <div class="tag_oferta">
+             <condicao:oferta>
+                 <a href="[B0]"><img src="imagens/tag_oferta.png?1" alt="Oferta"></a>
+              </condicao:oferta>
+         </div>
+         <div class="foto">
+             <a href="[B0]">
+                 <img  alt="[B3]" src="[B2]">
+             </a>
+
+             <div class="tag_lancamento">
+                <condicao:lancamento>
+                   <a href="[B0]"><img src="imagens/tag_lancamento.png?1" alt="Lançamento"></a>
+                </condicao:lancamento>
+            </div>
+          </div>
+          <h3 class="titulo"><a href="[B0]">[B3]</a></h3>
+          <condicao:produto_indisponivel>
+            <p class="indisponivel">Produto fora de estoque</p>
+          </condicao:produto_indisponivel>
+          <condicao:preco_antigo>
+            <div class="preco_antigo">
+              <a href="[B0]"><span class="preco_de">[B12]</span> <span class="preco_antigo_preco">[B5]</span> </a>
+            </div>
+          </condicao:preco_antigo>
+          <div class="preco">
+               <a href="[B0]"><span class="preco_por">[B13]</span> <span class="preco_preco">[B7]</span> </a>
+          </div>
+          <condicao:parcelamento>
+                 <div class="preco_parcelado">
+                     <a href="[B0]"> <span class="preco_ou">[B14]</span> <span class="preco_parcelado_vezes">[B6] de</span> <span class="preco_parcelado_preco">[B17]</span> </a>
+                 </div>
+          </condicao:parcelamento>
+
+          <condicao:desconto_vista>
+                <div class="no_boleto">
+                    <a href="[B0]">ou [B8] à vista</a>
+                </div>
+          </condicao:desconto_vista>
+          <condicao:frete_gratis>
+            <div class="frete_gratis"><a href="[B0]"><img src="imagens/tag_frete_gratis.png?1" alt="Frete Gratis"></a></div>
+         </condicao:frete_gratis>
+       </div>
+</li>
+]]></ProdutoHTML><TamanhoImagem value="Grandes" /><TotalProdutosPagina value="4" /></HistoricoNavegacao></HistoricoNavegacaos></controles></page>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /><Banner ID="left_top" /><Banner ID="right_top" /><Banner ID="content_bottom" /><Banner ID="header_jquery" /></Banners><FiltroDepartamentoss><FiltroDepartamentos ID="searchDepartaments"><FiltroDepartamentosHTML><![CDATA[<nav class="nav-primary search-menu">
+  	<ul>
+      <li>
+        <h2 class="nav-primary-heading-primary">Departamentos</h2>
+        <ul>
+          <repeticao:pais>
+            <li><a href="[A0]">[A1]</a></li>
+          </repeticao:pais>
+        </ul>
+      </li>
+  	</ul>
+</nav>]]></FiltroDepartamentosHTML></FiltroDepartamentos></FiltroDepartamentoss><FiltroGruposs><FiltroGrupos ID="searchGroups"><FiltroGruposHTML><![CDATA[<nav class="nav-primary dept-groups">
+  	<ul>
+  		<repeticao:tipo_filtro>
+          	<li>
+              	<h2 class="nav-primary-heading-primary">[A0]</h2>
+                <ul>
+                  <repeticao:filtro>
+                    	<li><a href="[A3]">[A1] <small>([A2])</small></a></li>
+                  </repeticao:filtro>
+                </ul>
+
+            </li>
+      	</repeticao:tipo_filtro>
+  	</ul>
+</nav>]]></FiltroGruposHTML></FiltroGrupos></FiltroGruposs><FiltroFaixaPrecos><FiltroFaixaPreco ID="searchPriceRange"><FiltroFaixaPrecoHTML><![CDATA[<fieldset class="nav-PriceRange form">
+	<h2 class="nav-primary-heading-primary">Faixa de Preço</h2>
+  	<label>[A0]</label>
+  	<label>[A1]</label>
+  	<a href="[A2]" class="bt-small-primary dept-PriceRange-bt to-right">Filtrar</a>
+</fieldset>]]></FiltroFaixaPrecoHTML></FiltroFaixaPreco></FiltroFaixaPrecos><ProdutoBarraNavegacaos><ProdutoBarraNavegacao ID="breadCrumb"><ProdutoBarraNavegacaoHTML><![CDATA[<div class="breadCrumb-home"><a href="[A0]">Página Inicial</a></div>
+<div class="breadCrumb-search"><small>|</small><span></span></div>]]></ProdutoBarraNavegacaoHTML></ProdutoBarraNavegacao></ProdutoBarraNavegacaos><FiltrosUtilizadoss><FiltrosUtilizados ID="searchFilterBy"><FiltrosUtilizadosHTML><![CDATA[<repeticao:parametros_utilizados>
+    <div class="filterBy-item">
+      	<small>|</small><a href="[A1]">[A0]</a>
+    </div>
+</repeticao:parametros_utilizados>]]></FiltrosUtilizadosHTML></FiltrosUtilizados></FiltrosUtilizadoss><ListagemCompletas><ListagemCompleta ID="searchCollection"><Comparar value="Não" /><HTMLComparacao><![CDATA[]]></HTMLComparacao><HTMLDestaque><![CDATA[]]></HTMLDestaque><HTMLListagem><![CDATA[<script>
+    $(".breadCrumb-search span").text("Busca por: [D0]");
+</script>
+<div class="heading-primary">
+  <h2>Busca por: [D0]</h2>
+</div>
+<div class="collection col3">
+  <ul>
+    <repeticao:produtos>
+      <li class="collection-li">
+        <div class="collection-product">
+            <div class="collection-product-image">                
+                <condicao:promocao_express>
+                  <div class="collection-product-promoExpress">
+                    <a href="[D30]" class="link-modal-iframe"><img src="[D28]" alt="" /></a>
+                  </div>
+                </condicao:promocao_express>    
+                <condicao:promocao_frete>
+                  <div class="collection-product-shippingPromo">
+                    <a href="[D37]" class="link-modal-iframe"><img src="[D29]" alt="" /></a>
+                  </div>
+                </condicao:promocao_frete>   
+                <a href="[D1]"><img src="[D2]?width=250&height=250" width="100%" alt="[D6]" /></a>
+                <condicao:produto_indisponivel>
+                    <div class="collection-product-unavailable">
+                          <a href="[D1]">Produto Indisponível</a>
+                    </div>
+                </condicao:produto_indisponivel> 
+                <condicao:lancamento>
+                      <a href="[D1]" class="collection-product-release">Lançamento</a>
+                </condicao:lancamento>
+                <condicao:pre_venda>
+                      <a href="[D1]" class="collection-product-preSale">Pré-Venda</a>
+                </condicao:pre_venda>
+                <condicao:promocao_brinde>
+                  <a href="[D56]" class="link-modal-iframe collection-product-sealGift"><img src="[D57]" alt="Promocao Brinde" /></a>
+                </condicao:promocao_brinde>                
+                <condicao:oferta>
+                      <a href="[D1]" class="collection-product-offer">[D54]% Off</a>
+                </condicao:oferta>
+                <condicao:espiar><a href="[D17]" class="collection-product-quickView sprite">Espiar</a></condicao:espiar>
+            </div>
+            <h3 class="collection-product-name"><a href="[D1]">[D6]</a></h3>
+            <p class="collection-product-description"><a href="[D1]">[D22]</a></p>     
+            <condicaofalsa:sob_orcamento>     
+            <div class="collection-product-price-content">
+              <p class="collection-product-price">                
+                <condicao:preco_antigo><del>[D19]</del></condicao:preco_antigo>
+                <a href="[D1]">[D15]</a>
+              </p>
+              <p class="collection-product-payInFullPrice"><condicao:desconto_vista><a href="[A1]"><strong>[D27]</strong> à vista</a></condicao:desconto_vista></p>
+              <p class="collection-product-splitPrice"><condicao:parcelamento><a href="[D1]">ou [D13] de <strong>[D12]</strong> sem juros</a></condicao:parcelamento></p>          
+            </div>     
+              <condicao:produto_disponivel>
+                  <condicao:comprar_direto>
+                     <div class="collection-product-buy">
+                        <div class="collection-product-buyInput spin form"><a href="[D26]" class="collection-product-buy-remove spin-bt spin-remove">&lsaquo;</a>[D23]<a href="[D25]" class="collection-product-buy-add spin-bt spin-add">&rsaquo;</a></div><a href="[D24]" class="collection-product-buy-bt bt-big-secundary">Comprar</a>
+                     </div>
+                  </condicao:comprar_direto>
+              </condicao:produto_disponivel>
+            </condicaofalsa:sob_orcamento> 
+            <condicao:sob_orcamento>
+              <a href="[D1]" class="bt-big-secundary collection-product-quoteRequest">Sob Orçamento</a>
+            </condicao:sob_orcamento>                      
+        </div>
+      </li>
+    </repeticao:produtos>
+  </ul>
+</div>]]></HTMLListagem><HTMLModelo><![CDATA[<div class="collection-top">
+  <div class="collection-pagination">[A1]</div>
+  <div class="collection-ordenation">[A4]</div>
+</div>
+[A2]
+<div class="collection-bottom">
+  <div class="collection-pagination">[A1]</div>
+  <div class="collection-ordenation">[A4]</div>
+</div>]]></HTMLModelo><HTMLOrdenarPor><![CDATA[<label>Ordenar por:</label> [E0]]]></HTMLOrdenarPor><HTMLPaginacao><![CDATA[<condicao:paginacao>
+  <div class="collection-pagination-pages">
+        <condicao:pagina_anterior>
+            <a href="[F5]" class="prev-page">Anterior </a>
+        </condicao:pagina_anterior>
+        <repeticao:paginas quantidade="6">
+            <a href="[F7]" class="page <condicao:pagina_selecionada> active </condicao:pagina_selecionada>">[F8]</a>
+        </repeticao:paginas>
+        <condicao:proxima_pagina>
+            <a href="[F6]" class="next-page">Próxima</a>
+        </condicao:proxima_pagina>
+  </div>  
+</condicao:paginacao>]]></HTMLPaginacao><HTMLPesquisaInvalida><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> "<strong>A pesquisa por [G1] possúi termos inválidos. Seus termos de pesquisa devem possuír pelo menos três caracteres.</strong>"
+</div>]]></HTMLPesquisaInvalida><HTMLSemResultados><![CDATA[<script>
+	$("#col-left").hide();
+</script>
+<div class="collection-noResults sorry">
+	<div class="search-noResults sorry-content ops">
+      	<div class="search-noResults-info sorry-info">
+      		<h2>Sua pesquisa por <strong>"[G1]"</strong> não encontrou resultados</h2>
+      		<h3>Refaça sua busca seguindo nossas orientações:</h3>
+      		<ul>
+              	<li>» Verifique se escreveu corretamente a palavra</li>
+              	<li>» Tente usar palavras únicas (ex: dente, agulha, resina)</li>
+              	<li>» Tente ser menos específico na sua busca</li>
+      		</ul>
+  		</div>
+  	</div>
+</div>]]></HTMLSemResultados><ImagemAvaliacaoDeselecionado value="" /><ImagemAvaliacaoSelecionado value="" /><MostraDestaque value="Não" /><Ordenar value="Sim" /><Paginacao value="Sim" /><TamanhoImagem value="Gigantes" /><TipoExibicao value="Pesquisa" /></ListagemCompleta></ListagemCompletas><Menus><Menu ID="sideMenu"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<nav class="nav-primary dept-menu">
+  	<ul>
+  		<repeticao:pais>
+          	<li class="dept-christmas-li">
+              	<h3 class="nav-primary-heading-primary"><a href="[A0]/t/4">[A1]</a></h3>
+                <condicao:filho>
+                    <ul>
+                        <repeticao:filhos>
+                          <li><a href="[A0]/t/4"><span class="nav-primary-bullet">•</span> [A1]</a></li>
+                        </repeticao:filhos>
+                    </ul>
+                </condicao:filho>
+            </li>
+      	</repeticao:pais>
+  	</ul>
+</nav>]]></MenuHTML><TipoMenu value="Vertical" /></Menu><Menu ID="currentDeptMenu"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

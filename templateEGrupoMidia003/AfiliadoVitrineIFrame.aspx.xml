@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AfiliadoVitrineIFrames><AfiliadoVitrineIFrame ID="AfiliadoVitrineIFrame1"><CssComponente><![CDATA[]]></CssComponente><ModeloHTML><![CDATA[<div class="box">
+	<div class="vitrine_geral">
+		<table>
+			<tbody>
+				<condicao:horizontal>
+					<tr>
+						<condicao:vertical>
+							<repeticao:produtos>
+								<td>
+									<div class="produto">
+										<div class="tag"></div>
+										<div class="foto">
+											<a href="[A1]">
+												<img src="[A3]" alt="[A4]" border="0" />
+												<condicao:frete_gratis>
+													<div class="frete_gratis">
+														<img src="imagens/tag_frete_gratis.png?15" alt="Frete Grátis"/>
+													</div>
+												</condicao:frete_gratis>
+											</a>
+										</div>
+										<div class="info">
+											<div class="tit_descri">
+												<div class="titulo">
+													<a href="[A1]">[A6]</a>
+												</div>
+												<div class="descricao">
+													<p>
+														<a href="[A1]">[A18]</a>
+													</p>
+												</div>
+											</div>
+											<div class="preco">
+												[A11] 
+												<span class="preco_por">[A15]</span>
+											</div>
+										</div>
+									</div>
+								</td>
+							</repeticao:produtos>
+						</condicao:vertical>
+					</tr>
+				</condicao:horizontal>
+			</tbody>
+		</table>
+    </div>
+</div>
+					]]></ModeloHTML><TamanhoImagem value="Grandes" /></AfiliadoVitrineIFrame></AfiliadoVitrineIFrames></controles></page>

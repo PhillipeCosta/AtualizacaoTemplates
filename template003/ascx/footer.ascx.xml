@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><PaginasInstitucionaiss><PaginasInstitucionais ID="institutional"><PaginasInstitucionaisHTML><![CDATA[<repeticao:pagina_institucional>
+  <li class="col-xs-6 text-left custom-clearPadding"><a href="[A1]">[A0]</a></li>
+</repeticao:pagina_institucional>]]></PaginasInstitucionaisHTML></PaginasInstitucionais></PaginasInstitucionaiss><IconesRodapes><IconesRodape ID="paymentMethodsIcons"><IconesRodapeHTML><![CDATA[<repeticao:icone>
+    <img src="[A2]" alt="[A1]" class="custom-paddingV5 custom-paddingH5" />
+</repeticao:icone>      ]]></IconesRodapeHTML></IconesRodape></IconesRodapes><BoletimNoticiass><BoletimNoticias ID="newsletter"><BoletimNoticiasHTML><![CDATA[<h5 class="heading-footer custom-paddingV10">Receba novidades e ofertas em seu email!</h5>
+<div class="col-xs-12-custom-clearPadding footer-newsletter">
+  <fieldset class="footer-form">
+	<label class="col-xs-6 custom-clearPadding footer-newsletterName">[A0]</label>
+	<label class="col-xs-6 custom-clearPadding footer-newsletterEmail">[A2]</label>
+  <condicao:nascimento><label class="col-xs-6 custom-clearPadding footer-newsletterNascimento">[A1]</label></condicao:nascimento>
+  <condicao:sexo><label class="col-xs-12 custom-clearPadding footer-newsletterSexo">[A3] [A6]</label></condicao:sexo>
+  </fieldset>
+  <div class="pull-right custom-paddingV10 custom-paddingH5">
+	<a href="[A5]" class="custom-paddingH10"><strong><u>descadastrar</u></strong></a>
+	<a href="[A4]" class="text-uppercase text-center custom-paddingV5 custom-paddingH5 btn-secondary">cadastrar</a>
+  </div>
+</div>  ]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass><ScriptRazors><ScriptRazor ID="socialNetwork"><ScriptRazorHTML><![CDATA[]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="ebit"><ScriptRazorHTML><![CDATA[@TemplateSettings.footer_ebit]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="copyrigth"><ScriptRazorHTML><![CDATA[@TemplateSettings.footer_copyright]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="sealsFooter"><ScriptRazorHTML><![CDATA[<div class="col-xs-6 custom-clearPadding">
+  @if(TemplateSettings.footer_fControl != ""){
+  	<a href="http://www.fcontrol.com.br" target="_blank" lass="custom-paddingV5" style="display: block;"><img src="imagens/fcontrol.png" alt="Fcontrol" /></a>
+  }@if(TemplateSettings.footer_thawte != ""){
+    <script language="JavaScript">
+        function OpenCertDetails(){thewindow = window.open('https://sealinfo.thawte.com/thawtesplash?form_file=fdf/thawtesplash.fdf&dn=@TemplateSettings.footer_thawte', 'anew', config='height=580,width=516,toolbar=no,menubar=no,scrollbars=yes,resizable=no,location=no,directories=no,status=no');}
+    </script>            
+    <a href="javascript:OpenCertDetails()" class="custom-paddingV5" style="display: block;"><img src="imagens/selo_thawte.png" alt="Loja 100% Segura" /></a>      
+  }
+</div>
+<div class="col-xs-6">
+  @TemplateSettings.footer_ebit
+</div>
+<div class="col-xs-6">
+  @TemplateSettings.footer_blindado
+</div>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="socialFooter"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.footer_facebook_link!="" || TemplateSettings.footer_twitter_link!="" || TemplateSettings.footer_pinterest_link!="" || TemplateSettings.footer_youtube_link!="" || TemplateSettings.footer_instagran_link!="" || TemplateSettings.footer_lastfm_link!="" || TemplateSettings.footer_google_link!=""){
+   <h5 class="heading-footer custom-paddingV10">Fique conectado(a)!</h5>
+    if(TemplateSettings.footer_facebook_link!=""){
+      <a href="@TemplateSettings.footer_facebook_link" target="_blank"><img src="imagens/social_facebook.png" alt="Facebook" /></a>
+    }
+    if(TemplateSettings.footer_twitter_link!=""){
+      <a href="@TemplateSettings.footer_twitter_link" target="_blank"><img src="imagens/social_twitter.png" alt="Twitter" /></a>
+    }
+    if(TemplateSettings.footer_pinterest_link!=""){
+      <a href="@TemplateSettings.footer_pinterest_link" target="_blank"><img src="imagens/social_pinterest.png" alt="Pinterest" /></a>
+    }
+    if(TemplateSettings.footer_youtube_link!=""){
+      <a href="@TemplateSettings.footer_youtube_link" target="_blank"><img src="imagens/social_youtube.png" alt="Youtube" /></a>
+    }
+    if(TemplateSettings.footer_instagran_link!=""){
+      <a href="@TemplateSettings.footer_instagran_link" target="_blank"><img src="imagens/social_instagran.png" alt="Instagran" /></a>
+    }
+    if(TemplateSettings.footer_lastfm_link!=""){
+      <a href="@TemplateSettings.footer_lastfm_link" target="_blank"><img src="imagens/social_lastfm.png" alt="Last Fm" /></a>
+    }
+    if(TemplateSettings.footer_google_link!=""){
+      <a href="@TemplateSettings.footer_google_link" target="_blank"><img src="imagens/social_google.png" alt="Google" /></a>
+    }        
+}]]></ScriptRazorHTML></ScriptRazor></ScriptRazors><Links><Link ID="affiliate"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="destino=AfiliadoPrincipal" /><Target value="MesmaPagina" /><Texto value="Afiliados" /><UsarHTTPS value="False" /></Link><Link ID="readyList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="CategoriasLista" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Listas prontas" /><UsarHTTPS value="False" /></Link><Link ID="giftList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="ListaPresentesPrincipal" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Lista de presentes" /><UsarHTTPS value="True" /></Link><Link ID="ciashop"><Destino value="Nenhum" /><EnderecoLinkExterno value="http://www.ciashop.com.br" /><Imagem value="ciashop.png" /><PaginaLoja value="AfiliadoPrincipal" /><Parametros value="" /><Target value="NovaPagina" /><Texto value="Ciashop E-commerce evolution" /><UsarHTTPS value="False" /></Link></Links></controles></page>

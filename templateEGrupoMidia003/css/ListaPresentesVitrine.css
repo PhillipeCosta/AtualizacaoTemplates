@@ -1,0 +1,333 @@
+.lista_produtos{
+    float: left;
+    width: 800px;
+    margin-top: 10px;
+}
+
+.encontrar{
+  overflow: hidden;
+}
+
+.encontrar_esquerda{
+  float: left;
+}
+
+.encontrar_direita{
+  float: right;
+}
+
+.encontrar_esquerda fieldset{
+  border: 0 none;
+  padding: 5px 7px;
+}
+
+.encontrar_esquerda fieldset *{
+  float: left;
+  vertical-align: middle;
+}
+
+.encontrar_esquerda fieldset span{
+  font-size: 13px;
+  padding-top: 2px;
+  margin-right: 5px;
+}
+
+.encontrar_esquerda fieldset input{
+  border: 1px solid #ccc;
+  padding: 3px;
+  font-size: 11px;
+  color: #666;
+  width: 180px;
+  margin-right: 10px;
+}
+
+.encontrar_esquerda fieldset a,
+.encontrar_esquerda fieldset a img{
+  display: block;
+}
+
+.encontrar_esquerda fieldset img {
+  display: none;
+}
+
+.encontrar_direita fieldset{
+  border: 0 none;
+  background: #2e6eae;
+  margin: 5px 0 0;
+  padding: 3px 3px 3px 8px;
+}
+
+.encontrar_direita fieldset label{
+  color: #fff;
+  font-size: 12px;
+}
+
+.encontrar_direita fieldset label select{
+  color: #062a59;
+  border: 1px solid #062a59;
+  background: #fff;
+  width: 90px;
+  font-size: 11px;
+}
+
+.tab_carrinho th{
+  text-align: center;
+  color: #666666;
+  font-weight: normal;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+.tab_carrinho .item_carrinho td{
+  border-bottom: 1px dotted #999;
+  padding: 10px 5px;
+}
+
+.tab_carrinho td{
+  text-align: center;
+}
+
+.tab_carrinho{
+  margin-top: 15px;
+}
+
+.tab_carrinho tr{
+  color: #575757
+}
+
+.tab_carrinho td.qtd input{
+  width: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  font-size: 11px;
+  padding: 2px;
+}
+
+.tab_carrinho td.qtd *{
+  vertical-align: middle;
+}
+
+.tab_carrinho td.qtd img{
+  cursor: pointer;
+}
+
+.tab_carrinho thead th {
+  line-height: 33px;
+  color: #fff;
+  font-weight: normal;
+  background: #2e6eae;
+}
+
+.tab_transportadoras{
+  border: 1px solid #E8E8E8;
+  border-top: none;
+  margin: 0 auto;
+  border-bottom: none;
+  color: #575757;
+}
+
+.tab_transportadoras .alternada1 td{
+  border-bottom: 1px solid #E8E8E8;
+  height:32px;
+  background-color: #F9F9F9;
+}
+
+.tab_transportadoras .alternada2 td{
+  border-bottom: 1px solid #E8E8E8;
+  height:32px;
+  background-color: #fff;
+}
+
+.tab_transportadoras .selecionada td{
+  border-bottom: 1px solid #E8E8E8;
+  height:32px;
+  background-color: #E6F5FF;
+}
+
+
+.tab_carrinho tbody tr.subtotal{
+  height: 50px;
+}
+
+.lista_navegacao{
+  margin: 10px 0;
+}
+
+.lista_navegacao a{
+  margin: 0 5px;
+}
+
+a.ver_compradores{
+  display: block;
+  font-size: 11px;
+  color: #062A59;
+  text-decoration: underline;
+}
+
+.paginacao_lista{
+  text-align: center;
+  margin: 30px 0;
+}
+
+.paginacao_lista a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #052547;
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.paginacao_lista a:hover{
+  text-decoration: underline;
+}
+
+.paginacao_lista a.selecionado{
+  border: 1px solid #052547;
+  color: #052547;
+  padding: 2px 5px;
+}
+
+/* Ver Compradores */
+
+.compradores-oculta{
+  display: none;
+}  
+
+.compradores{
+  width:  450px;
+  margin: 0 auto;
+  padding: 4px;
+}  
+
+.compradores .tit_compradores{
+  overflow: hidden;
+  padding:5px 0 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.tit_compradores h2{
+  font-size: 18px;
+  color: #062A59;
+  text-align: left;
+  padding: 0 35px 5px 0;
+}
+
+.info_compradores{
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px dotted #999;
+}
+
+.info_compradores span{
+  font-size: 12px;
+  display: block;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.info_compradores span strong{
+}
+
+.msg_comprador{
+  width: 370px;
+  max-height: 150px;
+  float: right;
+  overflow: auto;
+  background: #fff;
+  padding: 0 5px;
+}
+
+/*lista pre pronta*/
+
+.conteudo_listas_preprontas{
+float: left;
+display: none;
+position: relative;
+width: 804px;
+margin: 20px 0;
+}
+
+.listapresente_pronta{
+    border-right: 3px solid #f1f1f1;
+    float: left;
+    padding-right: 20px;
+    width: 478px !important;
+}
+
+.title_presentepronta, .title_presentepersona{
+    line-height: 25px;
+}
+
+.msg_presentepronta, .msg_personalizada{
+}
+
+.listapresente_persona{
+float: left;
+margin-left: 20px;
+height: 281px;
+width: 280px;
+}
+
+.listaprepronta_content{
+    margin-top: 35px;
+}
+
+.listaprepronta_iten{
+    padding: 12px 6px;
+    overflow: hidden;
+}
+
+.listaprepronta_iten:nth-child(odd){
+    background: #f4f4f4;
+}
+
+.listaprepronta_tiulo_qtd{
+    float: left;
+}
+
+.listaprepronta_links{
+    float: right;
+    text-align: right;
+}
+
+.listaprepronta_links a{
+    display: block;
+    margin: 5px 0;
+}
+
+.titulo_listaprepronta{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.qtd_listaprepronta{
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.bt_ou{
+    background: none repeat scroll 0 0 #FFFFFF;
+    left: 50%;
+    margin-left: -50px;
+    padding: 10px 0;
+    position: absolute;
+    top: 164px;
+}
+
+.listapresente_persona a{
+    display: block;
+    margin-top: 20px;
+    text-align: left !important;
+}
+
+.abrir_produtos_lista {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.encontrar a{
+	padding: 2px 5px;
+}

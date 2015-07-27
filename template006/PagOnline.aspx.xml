@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /></Link></Links><PagOnlines><PagOnline ID="PagOnline1"><PagOnlineHTML><![CDATA[<link rel="stylesheet" href="[A1]../css/bootstrap.css" />
+<link rel="stylesheet" href="[A1]../css/geral.css" /> 
+<link rel="stylesheet" href="[A1]../css/checkoutHeader.css" /> 
+<link rel="stylesheet" href="[A1]../css/TemplateSettings.css.razor" />
+<style type="text/css">
+#content{
+	padding: 30px 0;  
+}  
+  
+.tab_interna {
+    text-align:left;
+    color:#444444;
+    font-size:11px;
+}
+
+.tab_interna td {
+    border-left:#c0c0c0 1px solid;
+    border-right:#c0c0c0 1px solid;
+}
+
+.tab_interna2 {
+    width:100%;
+    padding:2px;
+}
+
+.tab_interna2 th {
+    background-color:#fafafa;
+    text-align:center;
+    font-weight:normal;
+    color:#444444;
+    line-height:20px;
+    border:none;
+    font-size:11px;
+    padding:4px;
+}
+
+.tab_interna2 td {
+    background-color:#ffffff;
+    color:#444444;
+    line-height:20px;
+    border:none;
+    padding:4px;
+    border-bottom:#cccccc 1px dashed;
+    font-size:11px;
+    text-align:center;
+}
+
+.tab_interna3 {
+    width:100%;
+    padding:5px;
+    line-height:20px;
+}
+
+.tab_interna3 .fontV1 {
+    font-size:10px;
+    display:inline;
+}
+
+.tab_interna3 td {
+    border:none;
+}
+
+.tab_interna3 p {
+    border:none;
+    line-height:20px;
+    padding:1px 0;
+}
+
+.tab_interna4 {
+    width:100%;
+    padding:5px;
+    text-align:left;
+}
+
+.tab_interna4 td {
+    border:none;
+    text-align:left;
+}
+
+.img_left {
+    float:left;
+    _margin-left:-3px;
+}
+
+.img_right {
+    float:right;
+    _margin-right:-3px;
+}
+
+.payment_card {
+    text-align:left;
+    font-size:11px;
+    vertical-align:middle;
+    line-height:25px;
+}
+
+#boleto {
+    padding-top:40px;
+    color:#3E3E3E;
+    text-align:center;
+    background-image:url(num_pedido.gif);
+    background-repeat:no-repeat;
+    width:266px;
+    height:80px;
+    _height:122px;
+    display:block;
+    position:relative;
+}
+
+#boleto .cod {
+    font-size:18px;
+    font-weight:bold;
+    line-height:22px;
+}
+
+#boleto .mail {
+    padding-top:30px;
+    font-size:11px;
+    text-decoration:underline;
+}
+  
+/* ---- Estilo do Gateway ----*/
+  
+.button_imagens{
+    width: 247px !important;  
+  	height: 34px !important;
+}
+  
+.tab_interna{
+    background: #fff;  
+} 
+  
+</style>
+    <div class="header">
+          <div class="container-fluid checkoutHeader">
+            <div class="container">
+              <div class="col-md-3 pull-left header-logo">
+                <a href="javascript:void(0);"></a>
+              </div>
+              <div class="col-md-9 pull-right">
+                <span class="checkoutHeader-step checkoutHeader-step-payment">
+                  &nbsp;
+                </span>
+              </div>
+            </div>
+          </div>
+    </div>    
+	<div id="container">
+ 
+		<div id="content">
+          	[A0]  
+		</div>
+
+	</div>]]></PagOnlineHTML></PagOnline></PagOnlines></controles></page>

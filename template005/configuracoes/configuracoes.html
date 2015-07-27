@@ -1,0 +1,501 @@
+<fieldset>
+  <h1>Geral</h1>
+  <table>
+        <tr>
+          <td><label>Favicon</label><small>Favicon é o ícone que aparece ao lado do nome da página na aba do navegador. Por conta do cache do navegador, essa alteração poderá demorar até 48 horas para ser aplicada.</small></td>
+          <td>
+            <input type="file" name="main_faviIcon" value="favicon.ico" data-max-width="16" data-max-height="16" data-max-weight="204800" />
+            <small>Formato Obrigatório: .ico - Tamanho Obrigatório: 16x x 16px</small>
+          </td>
+        </tr> 
+        <tr>
+          <td><label>Exibir banners de exemplo</label><small>Exibir banners de exemplo na sua loja virtal. Ex: Banner jquery, banners na página principal.</small></td>
+          <td>
+            <input type="checkbox" name="main_sampleBanner" value="true" />
+          </td>
+        </tr>     
+    <tr>
+      <td><label>Cor principal</label><small>Cor principal da loja. Ela será aplicada em diversas locais e será a com maior destaque entre outros elementos.</small></td>
+      <td>
+      <input type="text" name="main_primaryColor_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Cor secundária</label><small>Cor secundária da loja. Ela será aplicada em diversas locais sempre em elementos sem muito destaque.</small></td>
+      <td>
+      <input type="text" name="main_secundaryColor_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Cor de texto escuro</label><small>Cor de textos mais escuros. Recomenda-se utilizar variações de cinza/preto.</small></td>
+      <td>
+      <input type="text" name="main_darkText_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Cor de texto claro</label><small>Cor de textos mais claros. Recomenda-se utilizar variações de cinza/preto.</small></td>
+      <td>
+      <input type="text" name="main_lightText_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Cor das barras</label><small>Cor de fundo das barras de carrinho, tabelas de pedido, etc.</small></td>
+      <td>
+      <input type="text" name="main_bar_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Botões especiais</label><small>Cor de fundo de botões mais importantes como o botão comprar e botão finalizar pedido</small></td>
+      <td>
+      <input type="text" name="main_specialColor_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h2>Redes Sociais</h2>
+        <small>Ao inserir a URL o ícone irá pararecer automaticamente. Para não mostrar o ícone deixe o campo em branco</small>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Url da Página do Facebook</label></td>
+      <td>
+        <input type="text" name="main_facebook_link" />
+      </td>
+    </tr>     
+    <tr>
+      <td><label>Script like box para o Facebook</label></td>
+      <td>
+        <textarea rows="50" cols="4" name="footer_facebookBox_text" style="width: 400px; height: 100px;"/>
+      </td>
+    </tr>     
+    <tr>
+      <td><label>Url da Página do Twitter</label></td>
+      <td>
+        <input type="text" name="main_twitter_link" />
+      </td>
+    </tr>
+    <tr>
+      <td><label>URL da Página do Pinterest</label></td>
+      <td>
+        <input type="text" name="main_pinterest_link" />
+      </td>
+    </tr>
+    <tr>
+      <td><label>URL do Canal do YouTube</label></td>
+      <td>
+        <input type="text" name="footer_youtube_link" />
+      </td>
+    </tr>
+    <tr>
+      <td><label>URL da Página do Instagran</label></td>
+      <td>
+        <input type="text" name="main_instagran_link" />
+      </td>
+    </tr>
+    <tr>
+      <td><label>URL da Página do Last FM</label></td>
+      <td>
+        <input type="text" name="footer_lastfm_link" />
+      </td>
+    </tr>
+    <tr>
+      <td><label>URL da Página do Google Plus</label></td>
+      <td>
+        <input type="text" name="footer_google_link" />
+      </td>
+    </tr>    
+    <tr>
+      <td colspan="2">
+        <h2>Título Negado</h2>
+      </td>
+    </tr> 
+    <tr>
+      <td>
+        <label>Título da página de pedido negado</label>
+      </td>
+      <td>
+       <input type="text" name="heading_Denied" />
+      </td>      
+    </tr> 
+    <tr>
+      <td colspan="2">
+        <h2>Ebit</h2>
+      </td>
+    </tr>       
+    <tr>
+      <td>
+        <label>Ebit Banner</label><small>Código do script que gera o banner do Ebit na página de confirmação</small>
+      </td>
+      <td>
+       <textarea rows="50" cols="4" name="main_ebitBanner" />
+      </td>      
+    </tr> 
+    <tr>
+      <td colspan="2">
+        <h2>Orçamento</h2>
+      </td>
+    </tr>  
+    <tr>
+      <td><label>Mensagem página de orçamento</label></td>
+      <td>
+        <textarea rows="50" cols="4" name="quoterequest_info" style="width: 400px; height: 100px;"/>
+      </td>
+    </tr>            
+  </table>
+  <h1>Cabeçalho</h1>
+  <table>
+  <tr>
+      <td colspan="2"><h2>Ícones redes sociais</h2></td>
+  </tr>  
+  <tr>
+      <td><label>Facebook</label></td>
+      <td>
+        <input type="file" name="header_facebook_icon" value="header_facebookIcon.png" data-max-width="28" data-max-height="28" data-max-weight="405040" />
+        <small>Tamanho recomendado: 28px x 28px</small>
+      </td>
+  </tr>
+  <tr>
+      <td><label>Instagram</label></td>
+      <td>
+        <input type="file" name="header_instagram_icon" value="header_instagramIcon.png" data-max-width="28" data-max-height="28" data-max-weight="405040" />
+        <small>Tamanho recomendado: 28px x 28px</small>
+      </td>
+  </tr> 
+  <tr>
+      <td><label>Twitter</label></td>
+      <td>
+        <input type="file" name="header_twitter_icon" value="header_twitterIcon.png" data-max-width="28" data-max-height="28" data-max-weight="405040" />
+        <small>Tamanho recomendado: 28px x 28px</small>
+      </td>
+  </tr>   
+  <tr>
+    <td><label>Cor de fundo secundária</label><small>Cor de fundo para as informações da navbar e redes sociais</small></td>
+    <td>
+    <input type="text" name="header_secundary_backgroundColor" class="color"/>
+    </td>
+  </tr> 
+    <td><label>Cor de texto secundário</label><small>Cor de textos para as informações da navbar. Ex: Central de atendimento, Meu cadastro, etc.</small></td>
+    <td>
+    <input type="text" name="header_secundary_color" class="color"/>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Cor de fundo primária</label><small>Cor de fundo principal para o cabeçalho da loja.</small></td>
+    <td>
+    <input type="text" name="header_primary_backgroundColor" class="color"/>
+    </td>
+  </tr> 
+  <tr>
+    <td><label>Cor de texto primária</label><small>Cor de textos para as informações de saudação</small></td>
+    <td>
+    <input type="text" name="header_primary_color" class="color"/>
+    </td>
+  </tr>  
+  <tr>
+      <td><label>Imagem da marca</label></td>
+      <td>
+        <input type="file" name="header_logo_image" value="logo_custom.png" data-max-width="210" data-max-height="100" data-max-weight="405040" />
+        <small>Tamanho recomendado: 210px x 100px</small>
+      </td>
+  </tr>
+  <tr>
+      <td><label>Imagem do carrinho</label></td>
+      <td>
+        <input type="file" name="header_cart_image" value="cart_custom.png" data-max-width="100" data-max-height="100" data-max-weight="405040" />
+        <small>Tamanho recomendado: 38px x 31px</small>
+      </td>
+  </tr>
+  <tr>
+      <td colspan="2"><h2>Central de Atendimento</h2></td>
+  </tr>
+  <tr>
+      <td><label>Telefone da Central de Atendimento</label></td>
+      <td>
+        <input type="text" name="header_helpDeskPhone_text"/>
+      </td>
+  </tr>     
+  </table>
+  <h1>Menu</h1>
+  <table>
+  <tr>
+      <td><label>Imagem destaque</label><small>Imagem que será mostrado antes do texto "Navegue pela loja"</small></td>
+      <td>
+        <input type="file" name="nav_primary_bulletImage" value="bullet-menu.png" data-max-width="31" data-max-height="31" data-max-weight="405040" />
+        <small>Tamanho máximo: 31px x 31px</small>
+      </td>
+  </tr>  
+    <tr>
+      <td><label>Cor de fundo</label><small>Cor de fundo para o título "Navegue pela loja"</small></td>
+      <td>
+      <input type="text" name="nav_primary_backgroundColor" class="color"/>
+      </td>
+    </tr>  
+    <tr>
+      <td><label>Cor dos textos</label><small>Cor do texto para o título "Navegue pela loja"</small></td>
+      <td>
+      <input type="text" name="nav_primary_color" class="color"/>
+      </td>
+    </tr>      
+  </table>  
+  <h1>Vitrines</h1>
+  <table>
+    <tr>
+      <td colspan="3"><h2>Página Inicial</h2></td>
+    </tr>
+    <tr>
+      <td><label>Vitrine 1</label></td>
+      <td colspan="2">
+      <select name="collections_home1_collection" class="collection" />
+      </td>
+    </tr>
+    <tr>
+      <td><label>Vitrine 2</label><small>(animada)</small></td>
+      <td colspan="2">
+      <select name="collections_home2_collection" class="collection" />
+      </td>
+    </tr>    
+    <tr>
+      <td><label>Vitrine 3</label><small>(animada)</small></td>
+      <td colspan="2">
+      <select name="collections_home3_collection" class="collection" />
+      </td>
+    </tr>        
+    <tr>
+      <td><label>Vitrine 4</label><small>(animada)</small></td>
+      <td colspan="2">
+      <select name="collections_home4_collection" class="collection" />
+      </td>
+    </tr>        
+    <tr>
+      <td><label>Vitrine 5</label></td>
+      <td colspan="2">
+      <select name="collections_home5_collection" class="collection" />
+      </td>
+    </tr>
+    <tr>
+      <td><label>Vitrine 6</label></td>
+      <td colspan="2">
+      <select name="collections_home6_collection" class="collection" />
+      </td>
+    </tr>    
+    <tr>
+      <td colspan="3"><h2>Cores</h2></td>
+    </tr>
+    <tr>
+      <td><label>Cor da tag de pré-venda e lançamento</label><small>Cor do fundo e cor do texto da tag de pré-venda e de lançamento que aparecem nas vitrines.</small></td>
+      <td>
+      Background: <input type="text" name="collections_releaseTag_backgroundColor" class="color"/>
+      </td>
+      <td>
+      Cor do Texto: <input type="text" name="collections_releaseTag_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Cor da tag oferta</label><small>Cor do fundo e cor do texto da tag de oferta que aparecem nas vitrines.</small></td>
+      <td>
+      Background: <input type="text" name="collections_offerTag_backgroundColor" class="color"/>
+      </td>
+      <td>
+      Cor do Texto: <input type="text" name="collections_offerTag_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Cor da tag indisponibilidade</label><small>Cor do fundo e cor do texto da tag de produto indisponível que aparecem nas vitrines.</small></td>
+      <td>
+      Background: <input type="text" name="collections_unavailableTag_backgroundColor" class="color"/>
+      </td>
+      <td>
+      Cor do Texto: <input type="text" name="collections_unavailableTag_color" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Exibir espiar</label></td>
+      <td colspan="2">
+       <input type="checkbox" name="collections_quickView_enabled" value="true"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Exibir compra rápida</label></td>
+      <td colspan="2">
+       <input type="checkbox" name="collections_buy_enabled" value="true"/>
+      </td>
+    </tr>
+  </table>
+  <h1>Produtos</h1>
+  <table>
+    <tr>
+      <td><label>Compartilhamento</label><small>Selecione ao lados quais botões de compartilhamento você deseja exibir na página do produto.</small></td>
+      <td>
+      <input type="checkbox" name="product_shareFacebook_enabled" value="true"/> Facebook
+      </td>
+      <td>
+      <input type="checkbox" name="product_shareTwitter_enabled" value="true"/> Twitter
+      </td>
+      <td>
+      <input type="checkbox" name="product_shareGooglePlus_enabled" value="true"/> Google+
+      </td>
+    </tr>
+  </table>
+  
+  <h1>Rodapé</h1>
+  <table>
+    <tr>
+      <td><label>Texto de informações da loja</label></td>
+      <td>
+        <textarea name="footer_storeInfo_text" style="width: 665px; height: 45px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><h2>Selos de Segurança</h2></td>
+    </tr>
+    <tr>
+      <td>
+        <label>Ebit</label><small>Código do selo</small>
+      </td>
+      <td>
+       <textarea rows="50" cols="4" name="footer_ebit" />
+      </td>      
+    </tr>     
+    <tr>
+      <td>
+        <label>FControl</label><small>Exibir selo</small>
+      </td>
+      <td>
+        <input type="checkbox" name="footer_fControl" value="true" /> 
+      </td>    
+    </tr>      
+    <tr>
+      <td>
+        <label>Thawte</label><small>Insira a url segura da sua loja</small>
+      </td>
+      <td>
+       <input type="text" name="footer_thawte" />
+      </td>      
+    </tr>
+    <tr>
+      <td>
+        <label>Site Blindado</label><small>Código do selo</small>
+      </td>
+      <td>
+       <textarea rows="50" cols="4" name="footer_blindado" />
+      </td>      
+    </tr>      
+  
+    <tr>
+      <td colspan="2"><h2>Central de Atendimento</h2></td>
+    </tr>
+    <tr>
+      <td><label>Telefone da Central de Atendimento</label></td>
+      <td>
+        <input type="text" name="footer_helpDeskPhone_text"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Horário de Atendimento da Central de Atendimento</label></td>
+      <td>
+        <input type="text" name="footer_helpDeskOfficeHours_text" />
+      </td>
+    </tr>
+  </table>
+  <h1>Módulos</h1>
+  <table>
+  <tr>
+      <td colspan="2"><h2>Listas Prontas</h2></td>
+    </tr>
+    <tr>
+      <td><label>Exibir listas prontas</label></td>
+      <td>
+        <input type="checkbox" name="quickLists_show" value="false" />
+      </td>
+    </tr>    
+  <tr>
+      <td><label>Título da página inicial das listas prontas</label></td>
+      <td>
+        <input type="text" name="quickLists_homeTitle_text" />
+      </td>
+    </tr>
+  <tr>
+      <td><label>Texto de boas vindas das listas prontas</label></td>
+      <td>
+        <textarea name="quickLists_homeDescription_text"></textarea>
+      </td>
+    </tr>
+  <tr>
+      <td><label>Imagem da página inicial das listas prontas</label></td>
+      <td>
+        <input type="file" name="quickLists_homeImage_backgroundImage" value="quickLists_homeImage_custom.png" data-max-width="780" data-max-height="350" data-max-weight="204800" />
+        <small>Tamanho recomendado: 450px x 320px</small>
+      </td>
+    </tr>
+  <tr>
+      <td colspan="2"><h2>Listas de presente</h2></td>
+    </tr>
+    <tr>
+      <td><label>Exibir listas de presente</label></td>
+      <td>
+        <input type="checkbox" name="giftList_show" value="false" />
+      </td>
+    </tr>  
+  <tr>
+      <td colspan="2"><h2>Afiliados</h2></td>
+    </tr>
+    <tr>
+      <td><label>Exibir sessão de afiliados</label></td>
+      <td>
+        <input type="checkbox" name="affiliate_show" value="false" />
+      </td>
+    </tr> 
+    <tr>
+      <td colspan="2">
+        <h2>Carrinho</h2>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Exibir campo de seleção para troca de variante</label></td>
+      <td>
+        <select name="main_cart_variantSelect">
+          <option value="naoExibir" selected>Não exibir</option>
+          <option value="exibirTodos">Exibir para todos os produtos</option>
+          <option value="exibirBrindes">Exibir apenas para os brindes</option>
+        </select>
+      </td>
+    </tr>     
+  </table>
+  <h1>Avançado</h1>
+  <table>
+  <tr>
+      <td>
+    <small>Insira no campo abaixo o código CSS que desejar para alterar cores, posições e elementos. Essa opção só deve ser usada por quem possui conhecimento em CSS.</small>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    CSS<br/>
+        <textarea name="advanced_css" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <small>Insira nos campos abaixo o códigos javascript que você deseja que apareçam em todas as páginas. É necessário colocar as tags &lt;script&gt;&lt;/script&gt; quando for códigos em javascript.</small>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        &lt;head&gt;<br/>
+        <textarea name="advanced_script_headBottom" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Após o &lt;body&gt; <br/>
+        <textarea name="advanced_script_bodyTop" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Antes do &lt;/body&gt;<br/>
+        <textarea name="advanced_script_bodyBottom" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>    
+  </table>
+</fieldset>

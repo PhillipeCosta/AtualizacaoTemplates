@@ -1,0 +1,84 @@
+.aviseme{
+    margin: 20px;
+    font-size: 13px;
+}
+
+.aviseme p{ 
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.aviseme_info{
+    overflow: hidden;
+    padding: 5px;
+    background-color: rgba(221, 221, 221, 0);
+    width: 300px;
+    margin: auto;
+}
+
+w {}
+
+.aviseme_info img{
+    margin: 0 5px;
+}
+
+.aviseme_info h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.tit_prod_aviseme {
+  font-size: 16px;
+  
+
+}
+
+.img_prod_aviseme {
+    widht:150px;
+    height:150px;
+}
+
+
+.aviseme_formulario {
+    clear: both;
+    margin-top: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+
+
+.aviseme fieldset{ 
+    border:none;
+}
+
+.aviseme fieldset label{ 
+    display:block;
+    margin-top: 4px;
+    font-size:15px;
+}
+
+.aviseme fieldset label input{ 
+    margin-top: 3px;
+    border:1px solid #ccc;
+    padding: 4px;
+    font-size: 11px;
+    width: 200px;
+}
+
+.aviseme fieldset label img{ 
+    margin: 10px 0 0 140px;
+    cursor:pointer;
+}
+
+.depts_filho{
+    display:none;
+}
+.respiro_conteudo{
+    background-color: rgba(221, 221, 221, 0);
+}
+
+label .box-bt{
+    float: left;
+    
+}

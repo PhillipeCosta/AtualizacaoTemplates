@@ -1,0 +1,14 @@
+.gift-message{
+	margin: 15px 0;
+}
+
+.gift-item{
+	font-size: 12px; 
+	display: block; 
+	padding: 0.4rem 0;
+	color: #666;
+}
+
+.gift-giftCard{
+	margin-bottom: 15px;
+}

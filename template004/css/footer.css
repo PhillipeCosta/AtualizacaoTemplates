@@ -1,0 +1,261 @@
+#footer{
+    clear: both;
+  border-top: 3px solid #ccc;
+}
+
+.footer-content{
+    width: 990px;
+    margin: 0 auto;
+    text-align: left;
+    display: table;
+}
+
+.footer-search{
+    background: #F47710;
+    text-align: center;
+}
+
+.footer-search fieldset{
+    border: none; 
+    overflow: hidden;
+  padding: 7px;
+}
+
+.footer-search fieldset label{
+    float: left;
+}
+
+.footer-search-title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 9px 15px 0 0;
+}
+
+.footer-search fieldset label input{
+    border: none;
+    color: #f47710;
+    font-family: arial,times new roman;
+    font-size: 18px;
+    padding: 7px 10px;
+    width: 765px;
+}
+
+.footer-search-buttom{
+    background-position: 0 -100px;
+    height: 36px;
+    line-height: 0;
+    width: 42px;
+    float: left;    
+}
+
+.footer-top{
+    background: #ffffff;
+    text-align: center;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.footer-top h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-institutional{
+    margin-right: 3%;
+    width: 37%;
+}
+
+.footer-institutional li{
+  list-style: none;
+  float: left;
+  width: 50%;
+}
+
+.footer-institutional li a{
+    color: #171717;
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px;
+    transition: all 200ms ease-out 0s;
+}
+
+.footer-institutional li a:hover{
+    color: #444;
+}
+
+.coupom-rules{
+  width: 500px;
+  padding: 0 10px;
+}
+
+.coupom-rules-content{
+  margin: 15px 0;
+}
+
+.coupom-rules-content p{
+  display: block;
+  margin: 5px 0;
+  font-size: 11px;
+}
+
+.footer-paymentMethods{
+    margin-bottom: 15px;
+    margin-right: 3%;
+}
+
+
+.paymentMethodsIcons-li{
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 3px 3px;
+}
+
+.footer-seals {
+    float: left;
+    overflow: hidden;
+}
+
+.footer-fcontrol{
+    background-position: 0 -50px;
+    display: block;
+    height: 18px;
+    margin: 0 0 15px 0;
+    width: 119px;
+}
+
+.footer_thawte{
+    background-position: -150px -50px;
+    display: block;
+    height: 30px;
+    margin: 0 0 15px 0;
+    width: 122px;
+}
+
+.footer-ebit{
+  margin: 0 0 15px 0;
+}
+
+.footer-blindado{
+  margin: 0 0 15px 0;
+}
+
+.footer-facebookBox{
+width: 30%;
+}
+
+.footer-middle{ 
+  padding: 20px 0;
+}
+
+.footer-social{
+    width: 500px;
+}
+
+.footer-social-title{
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.footer-social a{    
+    display: inline-block;
+    margin: 3px 7px;
+    transition: all 200ms ease-out 0s;
+  vertical-align:middle;
+}
+
+.footer-social a:hover{
+    opacity: 0.6;
+    transition: all 200ms ease-out 0s;
+}
+
+.footer-social-facebook{
+    background-position: 0 0;  
+  width: 16px;
+    height: 30px;
+}
+
+.footer-social-twitter{
+    background-position: -50px 0;
+  width: 28px;
+    height: 23px;
+}
+
+.footer-social-pinterest{
+    background-position: -100px 0;
+  width: 28px;
+    height: 28px;
+} 
+
+.footer-social-youtube{
+    background-position: -150px 0;
+  width: 24px;
+    height: 29px;
+}
+
+.footer-social-instagram{
+    background-position: -200px 0;
+  width: 28px;
+    height: 28px;
+}
+
+.footer-social-lastfm{
+    background-position: -250px 0;
+  width: 36px;
+    height: 21px;
+}
+
+.footer-social-google{
+    background-position: -469px 0;
+    height: 32px;
+    width: 22px;
+}
+
+.footer-contactUs{
+    width: 430px;
+  text-align: center;
+}
+
+.footer-contactUs p{
+    color: #fff;
+    display: block; 
+    font-size: 20px; 
+  margin-bottom: 4px;
+}
+
+.footer-contactUs span{
+    color: #ffffff;
+    display: block;
+    font-size: 15px; 
+}
+
+.footer-bottom{
+    text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-text{
+    float: left;
+    width: 720px;
+    text-align: justify;
+    font-size: 13px; 
+  margin-top: 20px;
+  color: #999;
+}
+
+.footer-imgs{
+    float: right;
+    margin-top: 20px;
+}
+
+.footer-ciashop{
+    width: 130px;
+    height: 34px;
+    display: inline-block;
+    background-position: -300px 0; 
+    text-indent: -9999px;
+    margin-right: 10px;
+}

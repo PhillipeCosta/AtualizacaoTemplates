@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><Links><Link ID="link_goBanners"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoBanners" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Banners" /><UsarHTTPS value="False" /></Link><Link ID="link_goSales"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoRelatorioVendas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Vendas" /><UsarHTTPS value="False" /></Link><Link ID="link_goVisits"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoRelatorioVisitas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Visitas" /><UsarHTTPS value="False" /></Link><Link ID="link_goClients"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoRelatorioClientes" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Clientes" /><UsarHTTPS value="False" /></Link><Link ID="link_goEmail"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="AfiliadoDivulgaEmail" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Email de divulgação do afiliado" /><UsarHTTPS value="False" /></Link></Links><AfiliadoLogados><AfiliadoLogado ID="affiliateLogged"><AfiliadoLogadoHTML><![CDATA[<div class="affiliate-firstSteps">
+          <div class="affiliate-firstSteps-heading affiliate-heading-primary">
+            <h2>Primeiros passos</h2>
+          </div>
+          <div class="affiliate-firstSteps-content">
+            <ul>
+              <li>
+                <h3>Como utilizar seu código de afiliado:</h3>
+                <p>Para divulgar seu link de afiliado, acrescente no final de cada URL a linha de código abaixo:<br />/?campanha_id=[A1]</p>
+              </li>
+              <li>
+                <h3>Exemplo de URL para página inicial:</h3>
+                <p>http://www.loja.com.br/?campanha_id=[A1]</p>
+              </li>
+              <li>
+                <h3>Exemplo de URL para departamento:</h3>
+                <p>http://www.loja.com.br/departamento/902/DEPTO/?campanha_id=[A1]</p>
+              </li>
+              <li>
+                <h3>Exemplo de URL para produto:</h3>
+                <p>http://www.loja.com.br/produto/160/PRODUTO/?campanha_id=[A1]</p>
+              </li>
+            </ul>
+          </div>
+        </div>]]></AfiliadoLogadoHTML></AfiliadoLogado></AfiliadoLogados></controles></page>

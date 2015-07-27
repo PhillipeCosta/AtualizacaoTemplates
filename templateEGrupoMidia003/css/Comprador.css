@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+.list a{
+    width: auto!important;
+    background-image: none!important;
+}
+.dados_comprador{
+    width: 600px;
+    
+    margin: auto;
+}
+.formulario .list label a{
+    border: none;
+    
+    font-weight: bold;
+}

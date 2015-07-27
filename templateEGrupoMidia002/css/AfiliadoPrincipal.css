@@ -1,0 +1,53 @@
+.affiliate-firstSteps{
+	margin: 40px 0 30px;
+}
+
+.affiliate-firstSteps-heading{
+	padding: 15px 5px;
+}
+
+.affiliate-heading-primary{
+	color: #fff;
+	margin: 0 0 5px;
+}
+
+.affiliate-firstSteps-content > ul{
+	padding: 3px 5px 3px 10px;
+	box-sizing: border-box;
+}
+
+.affiliate-firstSteps-content > ul li{
+	font-size: 11px;
+	margin: 10px 0;
+}
+
+.affiliate-box{
+	padding: 40px 0 30px;
+}
+
+.affiliate-container{
+	display: block;
+	overflow: hidden;
+}
+
+.affiliate-access{
+	background: url('../imagens/sprite-affiliate.png') no-repeat 0 0 scroll transparent;
+	display: block;
+	width: 55px;
+	height: 55px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 0 20px;
+}
+
+.affiliate-imgBanners{
+	background-position: 0 0;
+}
+
+.affiliate-imgSales, .affiliate-imgClients, .affiliate-imgVisits{
+	background-position: -100px 0;
+}
+
+.affiliate-imgEmail{
+	background-position: -200px 0;
+}

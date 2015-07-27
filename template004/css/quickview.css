@@ -1,0 +1,183 @@
+.quickView-product{
+    overflow: hidden;
+    padding: 10px;
+    text-align: left;
+}
+
+/*Imagem do Produto*/
+
+.quickView-product .quickView-product-image-big{
+    border: 1px solid #E7E7E7;
+    text-align: center;
+	min-height: 400px;
+}
+
+.quickView-product .quickView-product-image-small{
+  text-align: center;
+  margin-top: 10px;
+  min-height: 56px;
+}
+
+.quickView-product .quickView-product-image-small img{
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 2px;
+}
+
+/*Nome do Produto*/
+
+.quickView-product .quickView-product-name-code{
+    overflow: hidden;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #CECECE;
+}
+
+.quickView-product .quickView-product-name h1{
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+/*Código do Produto*/
+
+.quickView-product .quickView-product-code{
+    color: #666;
+    float: left;
+}
+
+/*Avaliação*/
+
+.quickView-product .quickView-product-rating{
+    float: right;
+}
+
+.quickView-product .quickView-product-rating a{
+    color: #999;
+    font-size: 11px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.quickView-product .quickView-product-rating img{
+    vertical-align: middle;
+    margin-left: 1px;
+}
+
+/*Preço do Produto*/
+
+.quickView-product-price-variants .product-price-content {
+    padding: 10px 0;
+}
+.quickView-product-price-variants .product-oldPrice {
+    font-size: 12px;
+}
+.quickView-product-price-variants .product-price {
+    margin-top: 5px;
+}
+.quickView-product-price-variants .product-price-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+.quickView-product-price-variants .product-price-price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quickView-product-price-variants .product-splitPrice-bt{
+    display: none !important;
+}
+
+/*Variantes*/
+
+.quickView-product .quickView-product-variant-name{
+	color: #666;
+	font-weight: bold;
+	margin-bottom: 3px;
+	font-size: 13px;
+}
+
+.quickView-product .quickView-product-variant-select{
+	padding: 5px 0;
+	width: 300px;
+}
+
+.quickView-product .quickView-product-variant-select .variante_imagem_disponivel{
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 2px;
+	margin: 2px;
+}
+
+.quickView-product .quickView-product-variant-select .variante_imagem_disponivel:hover{
+	border: 1px solid #999;
+}
+
+.quickView-product .quickView-product-variant-select .variante_imagem_indisponivel{
+	border: 1px solid red;
+	position: relative;
+}
+
+.quickView-product .quickView-product-variant-select .variante_imagem_indisponivel:after{
+	content: "";
+	background: url("../imagens/sprite.png") no-repeat -150px -150px;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: -7px;
+	right: -7px;
+}
+
+.quickView-product .quickView-product-variant-select .variante_imagem_disponivel img, .quickView-product .quickView-product-variant-select .variante_imagem_indisponivel img{
+	display: block;
+}
+
+.quickView-product .quickView-product-variant-select .variante_texto_disponivel{
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 2px 5px;
+	margin: 2px;
+	font-size: 12px;
+}
+
+.quickView-product .quickView-product-variant-select .variante_texto_disponivel:hover{
+	border: 1px solid #999;
+}
+
+.quickView-product .quickView-product-variant-select .variante_texto_indisponivel{
+	border: 1px solid red;
+	color: red;
+	position: relative;
+}
+
+.quickView-product .quickView-product-variant-select .variante_texto_indisponivel:after{
+	content: "";
+	background: url("../imagens/sprite.png") no-repeat -150px -150px;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: -7px;
+	right: -7px;
+}
+
+.quickView-product .quickView-product-variants-bt{
+	margin-top: 10px;
+}
+
+.quickView-product .quickView-product-variants-bt-buy{
+	display: inline-block;
+	padding: 20px 100px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.quickView-product .quickView-product-variants-bt-unavailable{
+	display: inline-block;
+	padding: 20px 50px;
+	font-size: 20px;
+	font-weight: bold;
+}

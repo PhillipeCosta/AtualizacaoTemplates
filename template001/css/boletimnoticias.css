@@ -1,0 +1,78 @@
+
+#newsletter {
+    background: url("../imagens/bg_news.png") no-repeat scroll center top transparent;
+    margin-top: 10px;
+    padding: 73px 0 57px;
+    width: 190px;
+}
+#newsletter p {
+    color: #FFFFFF;
+    display: block;
+    font-size: 11px;
+    margin: 0 10px;
+}
+#newsletter fieldset {
+    border: medium none;
+}
+#newsletter fieldset label {
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 0 0 7px;
+    padding: 0 5px;
+}
+#newsletter fieldset label input {
+    border: medium none transparent;
+    color: #343434;
+    font-size: 11px;
+    margin-top: 2px;
+    padding: 3px;
+    width: 155px;
+}
+#newsletter .sexo {
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+#newsletter .sexo input {
+    vertical-align: middle;
+}
+#newsletter fieldset .sexo label {
+    color: #FFFFFF;
+    float: none;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0 4px 0 2px;
+    vertical-align: middle;
+}
+#newsletter span {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+#newsletter .bt {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 85%;
+}
+#newsletter .bt a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 10px;
+    text-align: left;
+}
+#newsletter .bt .descadastrar {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 3px 0;
+}

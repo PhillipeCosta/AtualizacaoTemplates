@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CategoriasListas><CategoriasLista ID="QuickLists_Categories"><CategoriasListaHTML><![CDATA[<nav class="nav-quickList">
+  <h3 class="nav-quickList-heading">Categorias</h3>
+  <ul>
+    <repeticao:categorias>
+      <li class="nav-primary-heading-primary"><a href="[A1]">[A0]</a></li>
+    </repeticao:categorias>
+  </ul>
+</nav>]]></CategoriasListaHTML></CategoriasLista></CategoriasListas><ProdutosListas><ProdutosLista ID="QuickLists_Products"><ListaVaziaHTML><![CDATA[<div class="sorry">
+	<div class="sorry-content ops">
+      	<div class="sorry-info">
+          <h2>Não há produtos cadastrados nesta <strong>lista</strong>!</h2>
+      		<h3>Veja abaixo o que posso fazer</h3>
+      		<ul>
+              	<li>» Escolha outras listas.</li>
+              	<li>» Acesse mais tarde para ver se já há produtos cadastrados nesta lista</li>
+      		</ul>
+  		</div>
+  	</div>
+</div>]]></ListaVaziaHTML><ProdutosListaHTML><![CDATA[<h1 class="quickLists-title">[A16]</h1>
+
+<div class="quickList-products-bt">
+    <a href="[A14]" class="bt-big-special to-right">Comprar Lista</a>
+</div>   
+
+<div class="quickList-products">
+    <table class="table" cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th class="table-title align-left" colspan="2">Produto</th>
+          <th class="table-title nowrap">Preço Unit.</th>
+          <th class="table-title">Quantidade</th>
+          <th class="table-title">Preço</th>
+        </tr>
+      </thead>
+      <tbody>      
+        <repeticao:produtos>  
+          <tr class="table-item">             
+            <td><a href="[A2]"><img src="[A1]?width=85&height=70" alt="[A0]" /></a></td>
+            <td class="w-100">
+              <a href="[A2]">[A0]</a>
+              <condicao:variante>
+                <div class="quickList-product-variants">[B]</div>
+              </condicao:variante>         
+            </td>
+            <td class="align-center nowrap">[A5]</td>
+            <td class="align-center">
+              <span class="form align-center">[A4]</span>
+              <a href="[A21]" style="display: block">
+                <small>remover</small>
+              </a>
+            </td>
+            <td class="align-center nowrap">[A20]</td>
+          </tr>
+        </repeticao:produtos>              
+      </tbody>
+  </table>
+</div>
+
+<div class="quickList-products-bt">
+    <a href="[A14]" class="bt-big-special to-right">Comprar Lista</a>
+</div>     ]]></ProdutosListaHTML><VariantesProdutosListaHTML><![CDATA[<div class="form to-left w-33" style="margin-right: 10px;">[B0]</div>
+<div class="form to-left w-33">[B1]</div>]]></VariantesProdutosListaHTML></ProdutosLista></ProdutosListas></controles></page>

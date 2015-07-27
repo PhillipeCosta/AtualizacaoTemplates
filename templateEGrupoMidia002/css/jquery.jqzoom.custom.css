@@ -1,0 +1,50 @@
+/*
+Folha de Estilos que define a formatação do jQzoom customizada para a Loja
+*/
+
+/*Estilo do Container da imagem*/
+#divImagemPrincipalZoom
+{    
+    margin:0px auto; display: block;
+    width: 240px!important;
+}
+
+
+/* Estilo da foto principal */
+
+/* Estilo do container DIV da lista de miniaturas, que envolve a lista UL de thumbs */
+.containerMiniaturas .clearfix
+{    
+    text-align: center;    
+}
+
+/* Estilo para formatação da lista de thumbnails da galeria */
+ul#thumblist
+{
+    list-style:none;
+    float:left;
+    position: relative;    
+    margin: 2px 0;
+}
+ul#thumblist li  img{
+    width: 50px;
+    
+}
+
+ul#thumblist li
+{
+    float:left;
+    position: relative;
+    margin-right:2px;
+}
+
+ul#thumblist li a
+{
+    display:block;
+}
+
+ul#thumblist li a.zoomThumbActive
+{
+       
+}        
+/* #### Fim - Estilos da galeria de imagens ### */

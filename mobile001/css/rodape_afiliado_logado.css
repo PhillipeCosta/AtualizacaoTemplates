@@ -1,0 +1,21 @@
+#rodape_afiliado{
+  clear: both;
+  border-top: 5px solid #0D2852;
+  text-align: right;
+  padding: 20px 100px;
+  margin-top: 50px;
+}
+
+#rodape_afiliado a{
+  font-size: 11px;
+  color: #555;
+}
+
+#rodape_afiliado a:hover{
+  text-decoration: underline;
+  color: #0D2852;
+}
+
+#rodape_afiliado img{
+  margin: 0 15px;
+}

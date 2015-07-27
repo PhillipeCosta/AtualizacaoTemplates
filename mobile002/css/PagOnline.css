@@ -1,0 +1,158 @@
+/*topo*/
+
+.topo{
+    background-image: url("https://www7.ciashop.com.br/lojaformav5/assets/templates/1/imagens/topo_bg.png");
+    background-position: center top;
+    height: 129px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+
+.topo_direita{
+    float: right;
+}
+
+.topo_esquerda{
+    float: left;
+}
+
+.logo{
+    width:150px;
+    margin-left: 5px;
+}
+
+.logo h1{
+    width: 257px;
+    height: 65px;
+    background: url('https://www7.ciashop.com.br/lojaformav5/assets/templates/1/imagens/logo.png') repeat-x top center;
+    text-indent: -9999px;
+    cursor: pointer;
+    margin: 40px 0 0 0;
+}
+
+.logo h1 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.passos{
+  float: right;
+  text-align: right;
+  overflow: hidden;
+  margin: 60px 10px 22px 0;
+}
+
+.tab_interna {
+	text-align:left;
+	color:#444444;
+	font-size:11px;
+}
+
+.tab_interna td {
+	border-left:#c0c0c0 1px solid;
+	border-right:#c0c0c0 1px solid;
+}
+
+.tab_interna2 {
+	width:100%;
+	padding:2px;
+}
+
+.tab_interna2 th {
+	background-color:#fafafa;
+	text-align:center;
+	font-weight:normal;
+	color:#444444;
+	line-height:20px;
+	border:none;
+	font-size:11px;
+	padding:4px;
+}
+
+.tab_interna2 td {
+	background-color:#ffffff;
+	color:#444444;
+	line-height:20px;
+	border:none;
+	padding:4px;
+	border-bottom:#cccccc 1px dashed;
+	font-size:11px;
+	text-align:center;
+}
+
+.tab_interna3 {
+	width:100%;
+	padding:5px;
+	line-height:20px;
+}
+
+.tab_interna3 .fontV1 {
+	font-size:10px;
+	display:inline;
+}
+
+.tab_interna3 td {
+	border:none;
+}
+
+.tab_interna3 p {
+	border:none;
+	line-height:20px;
+	padding:1px 0;
+}
+
+.tab_interna4 {
+	width:100%;
+	padding:5px;
+	text-align:left;
+}
+
+.tab_interna4 td {
+	border:none;
+	text-align:left;
+}
+
+.img_left {
+	float:left;
+	_margin-left:-3px;
+}
+
+.img_right {
+	float:right;
+	_margin-right:-3px;
+}
+
+.payment_card {
+	text-align:left;
+	font-size:11px;
+	vertical-align:middle;
+	line-height:25px;
+}
+
+#boleto {
+	padding-top:40px;
+	color:#3E3E3E;
+	text-align:center;
+	background-image:url(num_pedido.gif);
+	background-repeat:no-repeat;
+	width:266px;
+	height:80px;
+	_height:122px;
+	display:block;
+	position:relative;
+}
+
+#boleto .cod {
+	font-size:18px;
+	font-weight:bold;
+	line-height:22px;
+}
+
+#boleto .mail {
+	padding-top:30px;
+	font-size:11px;
+	text-decoration:underline;
+}

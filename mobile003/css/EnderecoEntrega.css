@@ -1,0 +1,33 @@
+.shipping-addreses{
+}
+
+.shipping-address{
+    margin: 0 0 10px 0;
+    list-style: none;
+    border-radius: 4px;
+}
+
+
+.shipping-address:hover{
+    background: #eee;
+}
+
+.shipping-address-content{
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.shipping-address h3{
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.shipping-address p{
+    color: inherit;
+	font-size: 12px;
+}
+
+.shipping-address-bt{
+    margin-top: 10px;
+}

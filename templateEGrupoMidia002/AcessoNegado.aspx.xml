@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AcessoNegados><AcessoNegado ID="AcessoNegado"><AcessoNegadoGeralHTML><![CDATA[<div class="box-acesso-pendente">
+    <div class="to-left">
+      <img src="imagens/lock-acesso.png" alt="Sem acesso" />
+    </div>
+    <div class="to-left">
+      <div class="heading-quartiary">
+      <h2>
+        Seu usuário não tem acesso a esta área
+      </h2>
+        </div>
+      <p class="msg-acesso-pedente">[A0]</p>
+      <condicao:solicitar_acesso>    
+          <div class="bt-acesso">
+            <a href="[A1]" class="bt-big-primary">Solicitar acesso</a>
+          </div>
+      </condicao:solicitar_acesso>  
+        <condicaofalsa:solicitar_acesso>
+        <div class="bt-acesso">
+            <a href="javascript:history.go(-1)" class="bt-big-primary">Voltar</a>
+          </div>      
+        </condicaofalsa:solicitar_acesso>
+    </div>    
+</div> ]]></AcessoNegadoGeralHTML></AcessoNegado></AcessoNegados><Banners><Banner ID="header_full" /></Banners><BoletimNoticiass><BoletimNoticias ID="tidings"><BoletimNoticiasHTML><![CDATA[<h3>ASSINE NOSSA NEWS LETTER</h3>
+<label class="keep_informed">Mantenha-se Informado!</label>
+<fieldset class="form">
+  <span class="news-email">
+    <label> <i></i>Email:</label>[A2]    
+    </span>
+  <span class="news-name"><label>Nome:</label>[A0]</span>
+
+  
+  <condicao:nascimento>    
+    <span class="news-birth"><label><small>Data de<br />nascimento</small></label>[A1]</span>
+  </condicao:nascimento>
+
+  <condicao:sexo>
+    <span class="news-gender "><label>Gênero</label>[A3][A6]</span>
+  </condicao:sexo>
+  
+  <a href="[A4]" class="bt-small-special w-15 to-right align-center">enviar</a>
+</fieldset>
+]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass></controles></page>

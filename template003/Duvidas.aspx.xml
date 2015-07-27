@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><Duvidass><Duvidas ID="faq"><AssuntoRespostasHTML><![CDATA[<div class="heading-tertiary">
+  <h5 class="custom-paddingV5"><strong>[D1]</strong></h5>
+</div>]]></AssuntoRespostasHTML><DuvidasHTML><![CDATA[<div class="heading-special">
+<h4 class="custom-paddingV10 custom-overflow heading-primary text-uppercase text-left"><strong>Perguntas frequentes</strong></h4>
+  </div>
+<div class="faq">
+    [C1]
+</div>
+<script>
+	$(function(){
+  		$(".ask").click(function(){            
+ 			if($(this).hasClass("btn-secondary")){
+              $(".answer").slideUp();
+              $(".ask.btn-secondary").removeClass("btn-secondary");
+  			}else{
+  			  $(".answer").slideUp();
+              $(".ask.btn-secondary").removeClass("btn-secondary");
+              $(this).next(".answer").slideDown();
+              $(this).addClass("btn-secondary");
+  			}
+  		})
+  	})
+</script>
+]]></DuvidasHTML><RespostasHTML><![CDATA[<div class="faq-item">
+    <h4 class="ask btn-primary">
+      [B0]
+      <span class="fa fa-chevron-down"></span>
+    </h4>
+  	<div class="answer">  
+  		<p>[B1]</p>
+  	</div>
+</div>
+          ]]></RespostasHTML></Duvidas></Duvidass><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

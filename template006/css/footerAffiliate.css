@@ -1,0 +1,25 @@
+.footer,
+.footer a{
+}
+
+.footer-container{
+  background-size: 100%;
+  width: 100%;
+}
+
+.footer-containerTwo{
+  padding: 4em 0; 
+  width: 100%;
+}
+
+.footer-down{
+  padding: 2em 0 1.5em;
+}
+
+.footer-down *{
+  vertical-align: middle;
+}
+
+.footer-down p{
+  margin: 0 !important;
+}

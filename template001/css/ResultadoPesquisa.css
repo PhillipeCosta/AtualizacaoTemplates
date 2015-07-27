@@ -1,0 +1,12 @@
+.busca_vazio{
+    color: #145FA6;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+    width: 930px;
+}
+
+.busca_vazio span{
+    color: #333;
+    font-weight: bold;
+}

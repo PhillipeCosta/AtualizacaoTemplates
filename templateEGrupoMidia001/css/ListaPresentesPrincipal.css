@@ -1,0 +1,18 @@
+content{
+    width:800px;
+    margin:auto;
+    display: block;
+}
+
+
+#content .giftList > div > .w-40{
+  width: 40%;
+}
+.w-40 .inline-block{
+  width: 392px;
+}
+
+#content .giftList .w-50{
+  width: 50%;
+  margin:  0;
+}

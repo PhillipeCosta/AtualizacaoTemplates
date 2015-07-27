@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresentesInfos><ListaPresentesInfo ID="giftList_info"><ListaPresentesInformacoesHTML><![CDATA[<condicao:aceitaevento>
+  <div class="heading-primary" style="margin: 10px 0;">
+      <h2>Lista de presentes - [A20]</h2>
+  </div>
+  <condicao:comevento>
+    <p>Homenageados: [A0]</p>
+    <p>Data: [A1]</p>
+    <p>Local: [A15], [A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="#" class="ver_mapa">(ver mapa)</a></strong></condicao:mapa></p>
+  </condicao:comevento>  
+</condicao:aceitaevento>
+<condicao:naoaceitaevento>
+  <div class="heading-primary" style="margin-top: 10px;">
+      <h2>Lista de presentes - [A20]</h2>
+  </div>  
+</condicao:naoaceitaevento>
+<condicao:semevento>
+  <div class="alert">
+    <strong>Atenção!</strong> Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.
+  </div>
+</condicao:semevento>
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInfo ID="giftList_menu"><ListaPresentesInformacoesHTML><![CDATA[<condicao:aceitaevento>
+<div class="nav-primary dept-menu">
+	<ul>
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A13]">Produtos da lista</a>
+			</h3>
+			<ul>
+				<li><a href="javascript: void(0)" class="bt-addProduct"><span class="nav-primary-bullet">•</span>&nbsp;Adicionar produtos</a></li>
+				<li><a href="[A21]"><span class="nav-primary-bullet">•</span>&nbsp;Escolher lista pronta</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A8]">Lista de convidados</a>
+			</h3>
+		</li>			
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A9]">Enviar mensagem</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A11]">Álbum de fotos</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A10]">Editar evento</a>
+			</h3>
+		</li>					
+	</ul>
+</div>
+</condicao:aceitaevento>
+<condicao:naoaceitaevento>
+<div class="nav-primary dept-menu">
+	<ul>				
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A10]">Produtos da lista</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="javascript: void(0)" class="bt-addProduct">Adicionar produtos</a>
+			</h3>
+		</li>							
+	</ul>
+</div>
+</condicao:naoaceitaevento>
+
+<div style="display: none;">
+  <div class="list-addProduct">
+    <img src="imagens/animacao.gif" alt="Animação" /><br /><br />
+    <a href="[A7]" class="bt-big-special">adicionar produto</a>
+  </div>
+</div>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ListaPresentesInfoListaProntas><ListaPresentesInfoListaPronta ID="giftList_infoReadyList"><ListaPresentesInfoListaProntaHTML><![CDATA[  <div class="heading-primary" style="margin: 10px 0;">
+      <h2>Lista de presentes - [A0]</h2>
+  </div>]]></ListaPresentesInfoListaProntaHTML></ListaPresentesInfoListaPronta></ListaPresentesInfoListaProntas><ListaPresentesProdutosListaProntas><ListaPresentesProdutosListaPronta ID="giftList_readyListProducts"><ModeloListaPresentesProdutosListaProntaHTML><![CDATA[<div class="to-right" style="margin: 15px 0;">
+    <a href="[A0]" class="bt-big-special">Adicionar todos os produtos</a>
+</div>
+<div>
+  <table width="100%;" cellspacing="0" cellpadding="0" border="0" class="table">
+        <thead>
+            <tr>
+                <th class="table-title"></th>
+                <th class="table-title">Produtos</th>
+                <th class="table-title">Valor</th>
+                <th class="table-title">Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <repeticao:produtos>
+                <tr class="table-item">
+                    <td class="align-center"><img src="[A2]?width=100&height=100" alt="[A1]" /></td>
+                    <td class="align-center">[A1]</td>
+                    <td class="align-center">[A4]</td>
+                    <td class="align-center">[A3]</td>
+                </tr>
+            </repeticao:produtos>
+        </tbody>
+    </table>
+</div>
+<div class="to-right" style="margin: 15px 0;">
+    <a href="[A0]" class="bt-big-special">Adicionar todos os produtos</a>
+</div>]]></ModeloListaPresentesProdutosListaProntaHTML></ListaPresentesProdutosListaPronta></ListaPresentesProdutosListaProntas></controles></page>

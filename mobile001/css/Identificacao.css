@@ -1,0 +1,29 @@
+.identificacao_conteudo{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.bt-respiro{
+    margin: 0 1em;
+}
+
+.identificacao label{
+    width: 100%;
+}
+
+.identificacao label span{
+    font-size: 13px;
+    padding: 0.5em 0;
+    display: block;
+}
+
+.identificacao label input,
+.identificacao label select{
+    font-size: 12px;
+    position: relative;
+    padding: 1em;
+    border-radius: 5px;
+    width: 100%;
+}

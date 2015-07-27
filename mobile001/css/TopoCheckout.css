@@ -1,0 +1,58 @@
+/*topo*/
+
+.topo{
+    background-image: url("../imagens/topo_bg.png");
+    background-position: center top;
+    height: 107px;
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+}
+
+
+.topo_direita{
+    position: absolute;
+    right: 10px;
+    top: 75px;
+}
+
+.topo_esquerda{
+    float: left;
+}
+
+.logo{
+    width:150px;
+    margin-left: 5px;
+}
+
+.logo h1{
+    width: 257px;
+    height: 65px;
+    background: url('../imagens/logo.png') repeat-x top center;
+    text-indent: -9999px;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+}
+
+.logo h1 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.passos{
+  position: absolute;
+  overflow: hidden;
+  right: 10px;
+  top: 30px;
+}
+
+.topo_direita h2{
+    color: #FFF;
+    font-size: 19px;
+}
+
+.topo_direita h2 span{ 
+    color: #ff9401;
+    font-size: 19px;
+}

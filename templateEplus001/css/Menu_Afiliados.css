@@ -1,0 +1,76 @@
+/*Menu*/
+
+#menu {
+    clear: both;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 990px;
+}
+
+#menu .menu_conteudo{
+    display: inline-block;
+}
+
+#menu ul {
+    list-style: none outside none;
+}
+
+#menu ul li {
+    display: inline-block;
+    *display: block;
+    *float: left;
+    margin: 0 11px;
+    margin: 0 10px\0/;
+	border: 0 none;
+}
+
+#menu ul li a{
+	border: 0;
+}
+
+#menu ul li:first-child{
+    margin-left: 7px;
+}
+
+#menu ul li:last-child{
+    margin-right: 2px;
+}
+
+#menu ul li a {
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+}
+
+#menu ul li a span{
+	border: 0 none;
+}
+
+#menu ul li ul {
+    display:none;
+    width:160px;
+    position:absolute;
+    padding:0;
+    z-index:9999;
+    width:160px;
+}
+
+#menu ul li ul li {
+    display:block;
+    clear:both;
+    float: none;
+}
+
+#menu ul li ul li a {
+    padding: 6px 0;
+    text-transform: none;
+}
+
+#menu ul li:hover ul, #menu ul li.over ul {
+    display:block;
+}
+
+.box_menu_topo_filhos{
+	padding: 5px;
+}

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoRelatorioVisitass><AfiliadoRelatorioVisitas ID="affiliateVisits"><AfiliadoRelatorioVisitasHTML><![CDATA[<div class="padding-20">
+  [A3]
+</div>
+<div class="padding-20">
+  <div class="w-50 to-left form">
+    Organizar por: <span style="width: 200px; margin-right: 10px;" class="to-left">[A2]</span>
+    <a href="javascript:void(0);" onclick="[A5]" class="bt-small-primary">Filtrar</a>
+  </div>
+  <div class="w-50 to-right form align-right">
+    <condicao:mes>
+      <span style="width: 100px; margin-right: 5px;" class="inline-block">[A0]</span>
+    </condicao:mes>
+    <span style="width: 100px; margin-right: 10px;" class="inline-block">[A1]</span>
+    <a href="javascript:void(0);" onclick="[A5]" class="bt-small-primary">Filtrar</a>      
+  </div>
+</div>
+<div class="padding-20">
+  [A4]
+</div>  
+]]></AfiliadoRelatorioVisitasHTML><AfiliadosRelatorioVisitasMensagemSemDadosHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong>Não existem dados para visualização
+</div>]]></AfiliadosRelatorioVisitasMensagemSemDadosHTML><AlturaGrafico value="200" /><AlturaGraficoMes value="200" /><CorLinha value="#145FA6" /><CorLinhaMes value="#145FA6" /><DadosAfiliadosRelatorioVisitasAnualHTML><![CDATA[<div class="padding-15">
+    [E0]
+</div>]]></DadosAfiliadosRelatorioVisitasAnualHTML><DadosAfiliadosRelatorioVisitasMensalHTML><![CDATA[<div class="padding-15">
+    [C0]
+</div>]]></DadosAfiliadosRelatorioVisitasMensalHTML><GraficoAfiliadosRelatorioVisitasAnualHTML><![CDATA[<div class="padding-15">
+    [D0]
+</div>]]></GraficoAfiliadosRelatorioVisitasAnualHTML><GraficoAfiliadosRelatorioVisitasMensalHTML><![CDATA[<div class="padding-15">
+    [B0]
+</div>]]></GraficoAfiliadosRelatorioVisitasMensalHTML><LarguraGrafico value="990" /><LarguraGraficoMes value="990" /><TituloGrafico value="Visitas dia" /><TituloGraficoMes value="Visitas mês" /></AfiliadoRelatorioVisitas></AfiliadoRelatorioVisitass></controles></page>

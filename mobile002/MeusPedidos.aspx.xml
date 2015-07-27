@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><MeusPedidoss><MeusPedidos ID="cmpMeusPedidos"><DadosUltimoPedidoHTML><![CDATA[<div class="ciashop-infoRequest">
+  <div class="ciashop-containerInfoRequest ciashop-display">
+        <p>Último Pedido:</p>
+        <h3 class="ciashop-numberRequest"><strong>[C0]</strong></h3>
+    <p>A confirmação do pedido foi enviada a seu endereço de e-mail</p>
+    <p><strong>[C1]</strong></p>
+  </div>
+  
+  <div class="ciashop-display ciashop-dataPurchase">
+    <h5><strong>Dados da Compra</strong></h5>
+      <p>Status: [C2]</p>
+      <p>Valor: [C3]</p>
+      <p>Data: [C4]</p>
+      <p>Forma de Pagamento: [C5]</p>
+      <condicao:boleto>
+      	<p><a href="[C7]" class="btn btn-secondary">Imprimir Boleto</a></p>
+      </condicao:boleto>
+      <p><a href="[C6]" class="btn btn-secondary">Veja a descrição completa do pedido.</a></p>
+  </div>
+
+</div>]]></DadosUltimoPedidoHTML><ListagemPedidosPesquisadosHTML><![CDATA[<div class="ciashop-resultsSearch">
+   <repeticao:pedidos>
+   		<aside class="ciashop-containerResultsSearch">         
+            <p>Pedido:<strong>[E0]</strong></p>
+            <p>Data do pedido: [E1]</p>
+            <p>Método de Pagamento: [E3]</p>
+            <p>Status: [E4]</p>
+            <span class="ciashop-lnkResultsSearch">
+                <h4><span>Total:</span> <strong>[E2]</strong></h4>
+                <a href="[E5]" class="btn btn-primary pull-right">Visualizar Pedido</a>
+            </span>
+   		</aside>         
+   </repeticao:pedidos>
+</div>
+]]></ListagemPedidosPesquisadosHTML><ListagemPedidosPesquisadosSemResultadoHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Oops...&nbsp;<span class="fa fa-search"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+<h4>Nenhum Pedido Encontrado</h4>
+]]></ListagemPedidosPesquisadosSemResultadoHTML><MeusPedidosInicialHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Meus Pedidos&nbsp;<span class="fa fa-heart"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+[A0]
+[A1]
+]]></MeusPedidosInicialHTML><MeusPedidosPesquisaHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Meus Pedidos&nbsp;<span class="fa fa-heart"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+[B1]
+[B2]
+]]></MeusPedidosPesquisaHTML><PesquisarOutrosPedidosHTML><![CDATA[<section class="containerContent2">
+<div class="ciashop-titBox heading-primary">
+  <h2>Consultar outros Pedidos&nbsp;<span class="fa fa-search"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+    <div class="ciashop-searchRequest ciashop-form form">
+        <fieldset>
+            <label>
+                <span class="ciashop-display">[D1]</span> Pedidos Abertos</label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <span class="ciashop-display">[D0]</span> Todos Pedidos</label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <span class="ciashop-display">[D2]</span> Pesquisa por Número do Pedido:
+            </label>
+            <label style="margin-top: 2px">[D3]</label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <span class="ciashop-display">[D4]</span> Por Data (Mês/Ano) de:</label>
+            <label>
+              [D5]
+            </label>
+            <label>
+              [D6]
+            </label>
+            <span>&nbsp;a&nbsp;</span>
+            <label>
+              [D7]
+            </label>
+            <label>
+              [D8]
+            </label>
+        </fieldset>
+        <a href="[D9]" class="btn btn-primary pull-left">
+          Pesquisar <span class="fa fa-search"></span>
+        </a>
+    </div>
+</section>]]></PesquisarOutrosPedidosHTML></MeusPedidos></MeusPedidoss><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

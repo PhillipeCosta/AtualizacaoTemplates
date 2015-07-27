@@ -1,0 +1,628 @@
+.menu_topo{
+    display: none!important;
+}
+
+.box_menu {
+    margin-top: 156px !important;
+}
+
+.banner {
+    margin: 15px 0 5px !important;
+}
+
+#containerconteudo {
+    width: 100% !important;
+    position: inherit !important;
+}
+
+.logo_listapresente{
+float: left;
+margin-top: 4px;
+margin-right: 35px;
+margin-left: 13px;
+}
+
+.conteudo_lista_presente_left{
+    float: left;
+    width: 770px;
+}
+
+.tit_lista_presente{
+	background: url('../imagens/tit_lista_presente.png') no-repeat 5px center transparent;
+    overflow: hidden;
+    padding: 18px 0 7px 5px;
+    margin: 0px 0 0;
+}
+
+.sub_title_geral{
+    color: #323232;
+    margin: 0 0 2px 80px;
+    font-size: 14px;
+    display: block;
+}
+
+.tit_lista_presente h2{
+    margin: 0 0 10px 80px;
+    color: #3e4d60;
+    font-size: 21px;
+}
+
+.container_descricao_lista{
+    margin: 0;
+    text-align: center;
+    background: #004181;
+    margin-bottom: 10px;
+}
+
+.descricao_convidado{
+    float: left !important;
+}
+
+.container_descricao_lista_conteudo{
+    overflow: hidden;
+    text-align: left;
+    padding: 14px 0;
+    width: 990px;
+    margin: 0 auto;
+}
+
+.container_descricao_lista .foto_lista{
+	float: left;
+	margin: 5px 10px 5px 5px;
+	width: 160px;
+        min-height: 120px;
+        background: url("../imagens/lista_presente_sem_foto.png") no-repeat center center;
+}
+
+.container_descricao_lista.fechado .foto_lista{
+	display: none;
+}
+
+.container_descricao_lista .descricao_lista{
+	float: left;
+	margin: 0 5px;
+	width: 579px;
+}
+
+.container_descricao_lista .descricao_lista h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container_descricao_lista .descricao_lista h3 small{
+color: #fff;
+font-size: 11px;
+cursor: pointer;
+margin-left: 5px;
+vertical-align: middle;
+font-weight: normal;
+text-decoration: underline;
+}
+
+.container_descricao_lista .descricao_lista p{
+color: #fff;
+font-size: 13px;
+margin-top: 5px;
+display: none;
+}
+
+.container_descricao_lista.fechado .descricao_lista p{
+        display: block;
+}
+
+.container_descricao_lista .descricao_lista span{
+	display: block;
+        font-size: 12px;
+        color: #fff;
+        line-height: 18px;
+        margin-top: 7px;
+}
+
+.container_descricao_lista.fechado .descricao_lista span{
+	display: none;
+}
+
+.container_descricao_lista .descricao_lista span strong{
+	color: #fff;
+}
+
+.container_descricao_lista .descricao_lista span strong a{
+	color: #fff;
+	font-size: 12px;
+    text-decoration: underline;
+}
+
+.container_descricao_lista .descricao_lista span strong a:hover{
+	text-decoration: underline;
+}
+
+.lista_mapa img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* menu */
+
+.acoes_lista{
+    text-align: left;
+    float: left;
+    width: 170px;
+    margin-right: 15px;
+    margin-top: 10px;
+    height: 300px;
+}
+
+.acoes_lista_conteudo{
+    background: #f1f1f1;
+    padding: 1px 5px;
+}
+
+.acoes_lista_conteudo ul{
+    list-style: none; 
+}
+
+.acoes_lista_conteudo ul li{
+    position: relative;
+    background: #f6f6f6;
+}
+
+.acoes_lista_conteudo ul li:hover, .acoes_lista_conteudo ul li.menu_selected{
+    background: #fff;
+}
+
+.acoes_lista ul li a{
+    color: #004181;
+    font-size: 15px;
+    display: block;
+    padding: 10px 6px;
+    font-weight: normal;
+    margin: 4px 0;
+}
+
+.acoes_lista ul li:hover a.link_pai_presente, .acoes_lista ul li a.link_selected{
+    color: #004181;
+}
+
+.acoes_lista_conteudo ul li:hover ul{
+    display: block;
+}
+
+.acoes_lista_conteudo ul li ul{
+    display: none;
+    position: absolute;
+    border: 1px solid #e5e5e5;
+    background: #f1f1f1;
+    top: 0;
+    z-index: 9999;
+    left: 160px;
+    width: 173px;
+    padding: 1px 5px;
+}
+
+.acoes_lista_conteudo ul li ul li{
+
+}
+.acoes_lista_conteudo ul li ul li:hover{
+    background: none;
+}
+
+.acoes_lista_conteudo ul li ul li a{
+    border: 0 none;
+    color: #004181;
+}
+
+.acoes_lista_conteudo ul li ul li a:hover{
+    color: #004181;
+    background: #ffffff;
+}
+
+#erro {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ***** */
+
+
+.container_descricao_lista {
+	margin-bottom: 0 !important;
+}
+
+#erro {
+	margin: 20px 0 20px 0 !important;
+}
+
+.bemvindo_listapresente{
+	font-size: 14px;
+	color: #fff;
+	float: left;
+	font-weight: normal;
+	margin-top: 2px;
+}
+
+.lp-cadastro{
+	overflow: hidden;
+}
+
+
+.lp_cadastro-mensagem{
+    overflow: hidden;
+    background: url('../imagens/topo_lista_presente.png') no-repeat 0 0 transparent;
+    padding: 20px 0;    
+    width: 990px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.lp_cadastro-mensagem h2{
+    color: #062A59;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 20px 0 20px 140px;
+}
+
+.lp-cadastro-formulario{
+	overflow: hidden;
+}
+
+.lp-cadastro-formulario-linha {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.lp-cadastro-formulario-linha-z{
+	background: #1f6eb7;
+	border-bottom: 2px solid #034484;
+	border-top: 2px solid #034484;
+}
+
+.lp-cadastro-formulario-linha-conteudo{
+	width: 970px;
+	margin: 0 auto;
+	text-align: left;
+	overflow: hidden;
+}
+
+	.lp-cadastro-formulario-linha-z .lp_tit_box h3,
+	.lp-cadastro-formulario-linha-z .lp_tit_box p,
+	.lp-cadastro-formulario-linha-z .lp-formulario-label-titulo,
+	.lp-cadastro-formulario-linha-z .lp-formulario-label-titulo small {
+		color: #fff !important;
+	}
+
+	.lp-cadastro-formulario-linha-z .lp-formulario-label-titulo {
+		font-weight: bold;
+	}
+
+	.lp-cadastro-formulario-linha-z .lp-formulario-label-titulo small {
+		font-weight: normal !important;
+	}
+
+.lp_tit_box{
+	padding: 0 0 30px 0;
+}
+
+.lp_tit_box h3{
+	font-size: 19px;
+	color: #3c3c3c;
+	font-weight: bold;
+}
+
+.lp_tit_box p{
+	display: block;
+	color: #3c3c3c;
+	font-size: 13px;
+	padding-top: 4px;
+}
+
+.lp-cadastro-formulario-linha-conteudo fieldset{
+	border: none;
+}
+
+.lp-formulario-label{
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	zoom: 1;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.lp-linha-2colunas .lp-formulario-label{
+	width: 47%;
+}
+
+.lp-formulario-select select{
+	font-size: 12px;
+	color: #666;
+	padding: 4px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-top: 3px;
+	width: 95%;
+}
+
+.lp-formulario-select-big select{
+	padding: 10px;
+	width: 500px;
+	margin-top: 0;
+}
+
+.lp-formulario-textarea textarea{
+	color: #666;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-top: 10px;
+	width: 90%;
+	vertical-align: middle;
+	height: 50px;
+}
+
+.lp-formulario-input input{
+	font-size: 12px;
+	color: #666;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-top: 3px;
+	width: 90%;
+	vertical-align: middle;
+}
+
+.lp-formulario-input-imagem input{
+	width: 77%;
+}
+
+.lp-formulario-input-link input{
+	width: 40%;
+}
+
+.lp-formulario-input-imagem img{
+	vertical-align: middle;
+	margin: 3px 0 0 3px;
+        cursor: pointer;
+}
+
+.lp-formulario-input-link a{
+	font-size: 12px;
+	color: #666;
+	vertical-align: middle;
+	margin-left: 10px;
+	text-decoration: underline;
+}
+
+.lp-dados-reponsavel{
+	padding-top: 30px;
+}
+
+.lp-formulario-input-texto{
+	margin-bottom: 10px;
+}
+
+.lp-formulario-input-texto input{
+	border: none;
+	background:transparent;
+	padding: 0;
+}
+
+.lp-formulario-input-texto .lp-formulario-label-titulo{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.lp-formulario-input-texto .lp-formulario-input-ddd input{
+	width: 20px;
+}
+
+.lp-formulario-input-texto .lp-formulario-input-telefone input{
+	width: 90px;
+}
+
+
+.lp-formulario-label-titulo{
+	font-size: 13px;
+	color: #333333;
+	display: block;
+}
+
+.lp-formulario-label-titulo small{
+	font-size: 12px;
+	color: #666666;
+	display: block;
+}
+
+.lp-formulario-label-titulo small.lp-formulario-label-titulo-exemplo-lateral{
+	display: inline;
+	font-size: 11px;
+	margin-left: 10px;
+}
+
+.lp-cadastro-formulario-esquerda{
+	float: left;
+	width: 55%;
+}
+
+.lp-cadastro-formulario-direita{
+	float: right;
+	width: 41%;
+}
+
+.lp-box-destaque{
+	background: #f3f3f3;
+	position: relative;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+.lp-box-destaque h4{
+	font-size: 19px;
+	color: #3c3c3c;
+	font-weight: bold;
+	padding: 25px 0 3px 57px;
+}
+
+.lp-box-destaque-ico{
+	position: absolute;
+	top: 15px;
+	left: 30px;
+}
+
+.lp-box-destaque-conteudo{
+	padding: 10px 30px 15px 30px
+}
+
+.lp-box-destaque-conteudo p{
+	color: #3c3c3c;
+	font-size: 12px;
+}
+
+.lp-mapa-escolha{
+	margin: 30px 0;
+	overflow: hidden;
+}
+
+.lp-mapa-escolha label{
+	float: left;
+	margin-right: 11px;
+	color: #333;
+	font-weight: bold;
+}
+
+.lp-mapa-escolha label *{
+	vertical-align: middle;
+	margin-right: 1px;
+}
+
+.lp-mapa-script label{
+	display: block;
+	color: #333;
+}
+
+.lp-mapa-script textarea{
+	border: 1px solid #ccc;
+	color: #666;
+	width: 100%;
+	height: 50px;
+	margin-top: 3px;
+}
+
+.lp-mapa-script-help{
+	display: block;
+	text-align: right;
+	margin-top: 3px;
+}
+
+.lp-mapa-script-help a{
+	color: #062A59;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+#thumbnailMapa{
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Regras */
+
+.regras{
+    width: 98%;
+    height: 220px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #fff;
+}
+
+.acao_regras{
+    padding: 5px;
+    width: 98%;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.acao_regras span.imprimir_regra{
+    float: left;
+    margin-left: 5px;    
+}
+
+.acao_regras .aceite{
+    color: #036400;
+    float: right;
+    font-size: 15px;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.acao_regras .aceite *{
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.acao_regras span.aceite input{
+    float: left;
+    margin-right: 3px;
+    border: 0 none;
+}
+
+/* Salvar Lista */
+
+.salvar_lista{
+    clear: both;
+    text-align: right;
+    width: 970px;
+    margin: 20px auto;
+}
+
+.qq-upload-button {
+	background: #1f6eb7 !important;
+}
+
+.ui-widget-header {
+	border: 1px solid #1f6eb7 !important;
+	background: #1f6eb7 !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active,
+.ui-widget-header .ui-state-default:hover {
+	color: #fff !important;
+	background: #1f6eb7 !important;
+	border: 1px solid #1f6eb7 !important;
+}
+
+#ui-datepicker-div {
+	background: #f1f1f1 !important;
+	border: solid 1px #ccc !important;
+}
+
+.ui-datepicker-calendar {
+	background: #f1f1f1 !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 1px solid #D1D1D1;
+	background: #E6E6E6;
+}
+
+div[name=linha-homenageado]{
+	clear: both;
+}

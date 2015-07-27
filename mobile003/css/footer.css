@@ -1,0 +1,40 @@
+#footer{
+    clear: both;
+	border-top: 3px solid #ccc;
+	margin-top: 30px;
+}
+
+.footer-content{
+    margin: 0.9rem 0.8rem 0.8rem;
+	overflow: hidden;
+}
+
+.footer-top{
+    text-align: center;
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.footer-institutional{
+}
+
+.footer-institutional li{
+	list-style: none;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+.footer-institutional li a{
+    font-size: 12px;
+    padding: 2px;
+}
+
+.footer-bottom{
+    text-align: center;
+	padding-bottom: 20px;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: 12px; 
+}

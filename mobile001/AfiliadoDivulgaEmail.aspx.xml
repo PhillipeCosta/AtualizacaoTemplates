@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AfiliadoDivulgaEmailss><AfiliadoDivulgaEmail ID="AfiliadoEmail"><AfiliadoDivulgaEmailHTML><![CDATA[<div class="respiro">
+     <h2 class="titulo_pedido titulo_afiliados_email">
+        Email de divulgação
+    </h2>
+    <div id="afiliados">
+        <div class="respiro">
+          <ul class="subtitulo_afiliados">
+            <li>Divulge sua loja para sua rede de contatos.</li>
+          </ul>
+          <div class="emails">
+              [A4]
+              [A10]
+              <repeticao:novocadastro>
+                  <div class="esquerda_email">
+                      <span class="tit_label">Nome</span>
+                      [A0]
+                  </div>
+                  <div class="direita_email">
+                      <span class="tit_label">Email</span>
+                      [A1]
+                  </div>
+              </repeticao:novocadastro>
+              <div class="bt_mais_email">
+                  <a href="[A2]"><img src="imagens/bt_mais_email.png?1" alt="adicionar" /></a>
+              </div>
+              <div class="bt_enviar_email">
+                  <a href="[A9]"><img src="imagens/bt_enviar_emails.png?1" alt="adicionar" /></a>
+              </div>
+              <label style="display: none;">[A8]</label>
+          </div>
+        </div>
+    </div>
+</div>
+]]></AfiliadoDivulgaEmailHTML><CssComponente><![CDATA[]]></CssComponente><MensagemAlertaAfiliadoEnvioEmailHTML><![CDATA[<div id="erro">
+    <div class="lista_erro">
+        <h2>[B0]</h2>
+        <ul>
+            <repeticao:erro>
+                <li>[B1]</li>
+            </repeticao:erro>
+        </ul>
+    </div>
+</div>
+]]></MensagemAlertaAfiliadoEnvioEmailHTML><MensagemSucessoAfiliadoEnvioEmailHTML><![CDATA[    <div id="sucesso">
+        <div class="lista_sucesso">
+            <h2>Seus e-mails foram enviados com sucesso!</h2>
+        </div>
+     </div>
+          
+          ]]></MensagemSucessoAfiliadoEnvioEmailHTML></AfiliadoDivulgaEmail></AfiliadoDivulgaEmailss></controles></page>

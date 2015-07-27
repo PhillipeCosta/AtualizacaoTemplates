@@ -1,0 +1,33 @@
+.ask{
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 45px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ask:after{
+    content: "";
+    float: right;
+    width: 15px;
+    height: 10px; 
+    margin: 17px 10px;
+}
+
+.faq{
+    margin-top: 25px !important;
+}
+
+.answer{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #4e4e4e;
+    display: none;
+    line-height: 22px;
+    margin: 10px 0;
+    padding: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}

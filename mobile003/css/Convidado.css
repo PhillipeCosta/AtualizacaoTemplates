@@ -1,0 +1,22 @@
+#isSameAddress{
+	padding: 10px;
+	margin: 10px;
+	font-size: 12px;
+}
+
+#isSameAddress strong{
+	display: block;
+	margin-top: 5px;
+}
+
+#isSameAddress label{
+	margin-right: 10px;
+}
+
+#isSameAddress label *{
+	vertical-align: middle;
+}
+
+.bt-gotoIdentification{
+	padding: 0.5rem 0;
+}

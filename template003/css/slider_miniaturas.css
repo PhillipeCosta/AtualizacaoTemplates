@@ -1,0 +1,187 @@
+
+.miniaturas_slider .jcarousel-direction-rtl {
+    direction: rtl;
+}
+
+.miniaturas_slider .jcarousel-container-horizontal {
+    width: 330px;
+    padding: 0 40px;
+}
+
+.miniaturas_slider .jcarousel-container-vertical {
+    width: 69px;
+    height: 331px;
+    padding: 29px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.miniaturas_slider .jcarousel-clip {
+    overflow: hidden;
+}
+
+.miniaturas_slider .jcarousel-clip-horizontal {
+    width:  215px;
+    height: 75px;
+    margin-left: 5px;
+}
+
+.miniaturas_slider .jcarousel-clip-vertical {
+    width: 70px;
+    height: 275px;
+}
+
+.miniaturas_slider .jcarousel-item {
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+}
+
+.miniaturas_slider .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.miniaturas_slider .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.miniaturas_slider .jcarousel-item-vertical {
+}
+
+.miniaturas_slider .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.miniaturas_slider .jcarousel-next-horizontal {
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url('../imagens/next-horizontal.png') no-repeat 0 0;
+}
+
+.miniaturas_slider .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url('../imagens/prev-horizontal.png');
+}
+
+.miniaturas_slider .jcarousel-next-horizontal:hover,
+.miniaturas_slider .jcarousel-next-horizontal:focus {
+}
+
+.miniaturas_slider .jcarousel-next-horizontal:active {
+}
+
+.miniaturas_slider .jcarousel-next-disabled-horizontal,
+.miniaturas_slider .jcarousel-next-disabled-horizontal:hover,
+.miniaturas_slider .jcarousel-next-disabled-horizontal:focus,
+.miniaturas_slider .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+}
+
+.miniaturas_slider .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url('../imagens/prev-horizontal.png') no-repeat 0 0;
+}
+
+.miniaturas_slider .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url('../imagens/next-horizontal.png');
+}
+
+.miniaturas_slider .jcarousel-prev-horizontal:hover, 
+.miniaturas_slider .jcarousel-prev-horizontal:focus {
+
+}
+
+.miniaturas_slider .jcarousel-prev-horizontal:active {
+
+}
+
+.miniaturas_slider .jcarousel-prev-disabled-horizontal,
+.miniaturas_slider .jcarousel-prev-disabled-horizontal:hover,
+.miniaturas_slider .jcarousel-prev-disabled-horizontal:focus,
+.miniaturas_slider .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+
+}
+
+/**
+ *  Vertical Buttons
+ */
+.miniaturas_slider .jcarousel-next-vertical {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    width: 42px;
+    height: 26px;
+    cursor: pointer;
+    background: transparent url('../imagens/next-vertical.png') no-repeat 0 0;
+}
+
+.miniaturas_slider .jcarousel-next-vertical:hover,
+.miniaturas_slider .jcarousel-next-vertical:focus {
+
+}
+
+.miniaturas_slider .jcarousel-next-vertical:active {
+
+}
+
+.miniaturas_slider .jcarousel-next-disabled-vertical,
+.miniaturas_slider .jcarousel-next-disabled-vertical:hover,
+.miniaturas_slider .jcarousel-next-disabled-vertical:focus,
+.miniaturas_slider .jcarousel-next-disabled-vertical:active {
+    cursor: default;
+
+}
+
+.miniaturas_slider .jcarousel-prev-vertical {
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    width: 42px;
+    height: 19px;
+    cursor: pointer;
+    background: transparent url('../imagens/prev-vertical.png') no-repeat 0 0;
+}
+
+.miniaturas_slider .jcarousel-prev-vertical:hover,
+.miniaturas_slider .jcarousel-prev-vertical:focus {
+
+}
+
+.miniaturas_slider .jcarousel-prev-vertical:active {
+
+}
+
+.miniaturas_slider .jcarousel-prev-disabled-vertical,
+.miniaturas_slider .jcarousel-prev-disabled-vertical:hover,
+.miniaturas_slider .jcarousel-prev-disabled-vertical:focus,
+.miniaturas_slider .jcarousel-prev-disabled-vertical:active {
+    cursor: default;
+
+}
+
+
+/* Custom Buttons */
+
+.jcarousel-next-disabled-vertical,
+.jcarousel-prev-disabled-vertical{
+	opacity: 0.3;
+}

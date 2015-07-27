@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="Fullzao_Topo" /></Banners><ListaPresentesInfos><ListaPresentesInfo ID="ListaPresentesInformacoes"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+           <div class="container_descricao_lista heading-primary"> 
+        <div class="container_descricao_lista_conteudo">
+          <div class="foto_lista">
+              <condicao:fotoprincipal>
+                  <img alt="" src="[A5]?width=155&height=120" />
+              </condicao:fotoprincipal>
+          </div>
+          <div class="descricao_lista">
+              <h3>[A20]</h3>
+              <condicao:comevento>
+                <span>
+                  <strong>Homenageado(s):</strong> [A0]<br />
+                  <strong>Data:</strong> [A1]<br />
+                  <strong>Local:</strong> [A15],[A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="#" class="ver_mapa">(ver mapa)</a></strong></condicao:mapa></span>
+                <span>
+                    [A4]
+                </span>
+              </condicao:comevento>
+          </div>
+ </div>     
+ </div> 
+</condicao:aceitaevento>
+
+      <condicao:naoaceitaevento>
+          <div class="container_descricao_lista_conteudo">
+            <div class="descricao_lista">            
+              <h3>[A20]</h3>
+            </div>
+          </div>
+     </condicao:naoaceitaevento> 
+<div style="display: none;">
+  <div class="lista_mapa">
+        <div class="tit_box_full"><h2>Mapa</h2></div> 
+      [A3]
+    </div>
+</div>
+
+<script>
+  $(function(){
+      $('.ver_mapa').live('click', function() {
+            $.fn.colorbox({inline:true, href:".lista_mapa"});
+            return false;
+        }); 
+    })
+</script>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInfo ID="ListaPresentesInformacoesMenu"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+              <div class="acoes_lista nav-vertical">
+          <div class="acoes_lista_conteudo">
+            <ul>
+              <li class="menu_selected"><a class="link_pai_presente link_selected" href="[A14]">Produtos da lista</a></li>
+              <condicao:albumdefotos>
+              <li><a class="link_pai_presente" href="[A12]" class="box-bt btn-secondary">Álbum de Fotos</a></li>
+              </condicao:albumdefotos>
+            </ul>
+          </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+
+
+              <div class="acoes_lista">
+            <div class="acoes_lista_conteudo">
+            <ul>
+              <li><a class="link_pai_presente box-bt bt-secundario" href="[A13]">Produtos da Lista</a></li>
+              <li><a class="link_pai_presente bt_add_produto box-bt btn-primary" href="javascript: void(0)">Adicionar Produto</a></li>
+            </ul>
+            </div>
+      </div>
+      </condicao:naoaceitaevento>  
+
+<div style="display: none;">
+  <div class="lista_add_produto">
+    <img src="imagens/animacao.gif" alt="Animação" /><br /><br />
+    <a href="[A7]" class="box-bt btn-primary">Adicionar Produto</a>
+  </div>
+</div>
+
+
+<script>
+  $(function(){
+
+  
+      $('.bt_add_produto').live('click', function() {
+            $.fn.colorbox({inline:true, href:".lista_add_produto", overlayClose:false, escKey:false});
+            return false;
+      }); 
+
+
+    });
+</script>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ListaPresentesVitrines><ListaPresentesVitrine ID="ListaPresentesVitrine1"><ListaPresentesVitrineHTML><![CDATA[  <div class="lista_produtos">        
+    	[A1]        
+        [A2]
+        [A3]
+    </div>]]></ListaPresentesVitrineHTML><ListaPresentesVitrinePaginacaoHTML><![CDATA[<div class="paginacao_lista">
+  <condicao:paginacao>
+
+    <repeticao:paginas quantidade="5">
+      <a href="[E7]" class="<condicao:pagina_selecionada>selecionado</condicao:pagina_selecionada>">[E8]</a>
+    </repeticao:paginas>
+
+  </condicao:paginacao>
+</div>]]></ListaPresentesVitrinePaginacaoHTML><ListaPresentesVitrinePesquisaHTML><![CDATA[<div class="encontrar">
+  <div class="encontrar_esquerda formulario">
+    <fieldset class="form">
+      <span>Encontrar Produto</span>
+      [B0]
+      <a href="[B2]" class="box-bt btn-primary">
+        buscar
+      </a>
+    </fieldset>
+  </div>
+  <div class="encontrar_direita formulario"> 
+    <fieldset class="form">
+      <label>Ordenar:
+        [B3]
+      </label>
+    </fieldset>
+  </div>
+</div>]]></ListaPresentesVitrinePesquisaHTML><ListaPresentesVitrineProdutosHTML><![CDATA[<table width="100%;" cellspacing="0" cellpadding="0" border="0" class="table tab_carrinho">
+  <thead>
+    <tr>
+      <th class="heading-secondary" style="width: 70px;"></th>
+      <th class="heading-secondary" style="text-align: left;">Produtos</th>
+      <th class="heading-secondary">Quantidade Desejada</th>
+      <th class="heading-secondary">Quantidade Comprada</th>
+      <th class="heading-secondary"></th>
+    </tr>
+  </thead>
+  <tbody>    
+    <repeticao:produto>
+      <tr class="item_carrinho">        
+          <td style="width: 70px;"><a href="[C13]" class="modal_info_produto"><img border="0" alt="[C1]" src="[C0]?width=50" /></a></td>
+          <td style="text-align: left;"><a href="[C13]" class="modal_info_produto">[C1]</a><div class="lp-preco-produto">[C11]</div></td>          
+          <td class="qtd">[C2]</td>
+          <td>
+            <condicao:comprado>
+              [C3]            
+            </condicao:comprado>
+            <condicao:nao_comprado>
+              0
+            </condicao:nao_comprado>            
+          </td>          
+          <td>
+            <condicao:botao_comprar>
+              <a href="[C5]" class="box-bt bt-primario">Comprar lista</a>
+            </condicao:botao_comprar>
+            <condicao:indisponivel>
+              <span class="box-bt bt-terciario">
+              	Indisponivel
+              </span>
+            </condicao:indisponivel>
+          </td>
+        </tr>
+      </repeticao:produto>  
+  </tbody>
+</table>
+<script>
+  $('.ver_compradores').live('click', function() {
+      var divCompradores = $(this).next(".compradores-oculta").children(".compradores");
+      $.fn.colorbox({inline:true, href:divCompradores});
+      return false;
+  }); 
+</script>
+[C6]]]></ListaPresentesVitrineProdutosHTML><ListaPresentesVitrineSemProdutoEncontradaHTML><![CDATA[<div id="erro">
+<div class="lista_erro message-error">
+  <h2>Nenhum produto encontrado para a palavra e/ou filtro selecionado.</h2>
+</div>
+</div>
+
+<style>
+.tab_carrinho{
+	display: none;  
+}
+</style>]]></ListaPresentesVitrineSemProdutoEncontradaHTML><ListaPresentesVitrineSemProdutoHTML><![CDATA[<div id="erro">
+<div class="lista_erro message-error">
+  <h2>Nenhum produto adicionado a lista</h2>
+  <p>O Anfitrião ainda não adicionou nenhum produto em sua lista</p>
+</div>
+</div>
+
+<style>
+.tab_carrinho{
+	display: none;  
+}
+  
+.encontrar{
+	display: none;  
+}
+</style>]]></ListaPresentesVitrineSemProdutoHTML><MensagemProdutosRemovidosSemPrecoListaHTML><![CDATA[]]></MensagemProdutosRemovidosSemPrecoListaHTML><QuantidadeItensPorPagina value="20" /><VisaoDoConvidado value="True" /></ListaPresentesVitrine></ListaPresentesVitrines></controles></page>

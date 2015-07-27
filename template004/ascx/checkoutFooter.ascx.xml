@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><IconesRodapes><IconesRodape ID="paymentMethodsIcons"><IconesRodapeHTML><![CDATA[<ul>
+	<repeticao:icone>
+        <li class="paymentMethodsIcons-li"><img src="[A2]" alt="[A1]" /></li>
+    </repeticao:icone>         
+</ul>]]></IconesRodapeHTML></IconesRodape></IconesRodapes><ScriptRazors><ScriptRazor ID="footer_social_helpDesk"><ScriptRazorHTML><![CDATA[<div class="checkout-footer-top">
+  	<div class="checkout-footer-content">
+      	@if(TemplateSettings.footer_facebook_link!="" || TemplateSettings.footer_twitter_link!="" || TemplateSettings.footer_pinterest_link!="" || TemplateSettings.footer_youtube_link!="" || TemplateSettings.footer_instagran_link!="" || TemplateSettings.footer_lastfm_link!=""){
+            <div class="checkout-footer-social to-left">
+                <span class="checkout-footer-social-title">Redes Sociais</span>
+              	@if(TemplateSettings.footer_facebook_link!=""){
+                	<a href="@TemplateSettings.footer_facebook_link" target="_blank" class="checkout-footer-social-facebook sprite">Facebook</a>
+              	}
+      			@if(TemplateSettings.footer_twitter_link!=""){
+                	<a href="@TemplateSettings.footer_twitter_link" target="_blank" class="checkout-footer-social-twitter sprite">Twitter</a>
+      			}
+      			@if(TemplateSettings.footer_pinterest_link!=""){
+                	<a href="@TemplateSettings.footer_pinterest_link" target="_blank" class="checkout-footer-social-pinterest sprite">Pinterest</a>
+      			}
+      			@if(TemplateSettings.footer_youtube_link!=""){
+                	<a href="@TemplateSettings.footer_youtube_link" target="_blank" class="checkout-footer-social-youtube sprite">Youtube</a>
+      			}
+      			@if(TemplateSettings.footer_instagran_link!=""){
+                	<a href="@TemplateSettings.footer_instagran_link" target="_blank" class="checkout-footer-social-instagram sprite">Instagram</a>  
+      			}
+      			@if(TemplateSettings.footer_lastfm_link!=""){
+                	<a href="@TemplateSettings.footer_lastfm_link" target="_blank" class="checkout-footer-social-lastfm sprite">Last FM</a>
+      			}
+            </div>
+      	}
+		@if(TemplateSettings.footer_helpDeskPhone_text!="" || TemplateSettings.footer_helpDeskOfficeHours_text!=""){
+            <div class="checkout-footer-contactUs to-right">
+              <p>Central de Atendimento: <strong>@TemplateSettings.footer_helpDeskPhone_text</strong></p>
+              <span>@TemplateSettings.footer_helpDeskOfficeHours_text</span>
+            </div>
+		}
+  	</div>
+</div>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

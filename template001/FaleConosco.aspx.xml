@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><FaleConoscos><FaleConosco ID="FaleConosco1"><FaleConoscoHTML><![CDATA[<div class="box_faleconosco">
+  <div class="heading-special">
+    <h2>
+      Fale Conosco
+    </h2>
+  </div>
+    <div class="faleconosco">
+        <ul class="formulario">
+            <div class="info">Campos indicados com * são de preenchimento obrigatório.</div>
+            <li class="list obrigatorio form">
+                <label class="larg_100"><span class="tit_label form-field-nameRequired">Nome*</span>[A1]</label>
+            </li>
+            <li class="list obrigatorio form">
+                <label class="larg_75"><span class="tit_label form-field-nameRequired">Email*</span>[A2]</label>
+            </li>
+            <li class="list form">
+                <label class="larg_75"><span class="tit_label form-fieldNameRequired">Telefone*</span>[A3] <small>(DDD + XXXX-XXXX)</small></label>
+            </li>
+            <li class="list form">
+                <label class="larg_50"><span class="tit_label form-fieldName">Número do Pedido</span>[A4] <small>(Caso a dúvida seja de uma compra já realizada)</small></label>
+            </li>
+            <li class="list form">
+                <label class="larg_75"><span class="tit_label form-fieldName">Empresa</span>[A5]</label>
+            </li>
+            <li class="list obrigatorio form">
+                <label><span class="tit_label form-field-nameRequired">Qual sua dúvida?*</span>[A6] <small class="contador">[A7]<span class="pt">caracteres</span><span class="en">characters</span></small></label>
+            </li>
+            <li class="list form">
+                <label><span class="tit_label">&nbsp;</span> <a href="[A8]" class="box-bt btn-secondary">enviar</a></label>
+            </li>
+        </ul>
+    </div>
+</div>]]></FaleConoscoHTML><ObrigatorioCPFCNPJ value="True" /><tipoFormulario value="Dúvidas" /></FaleConosco></FaleConoscos><Banners><Banner ID="Fullzao" /></Banners><ListagemSimpless><ListagemSimples ID="listagemsimples"><CssComponente><![CDATA[/* Vitrine */
+
+.vitrine_certificacao ul {
+    list-style:none;
+    text-align:left;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 1024px;
+}
+
+.vitrine_certificacao ul li {
+    float:left;
+    height: 390px;
+    padding: 20px 0;
+    width:220px;
+    text-align: left;
+    border-top: 1px solid #c7c7c7;
+    margin: -1px 0 0 0;
+    *display: inline;
+    *float: none;
+    *zoom:1;
+    vertical-align: top;
+}
+
+.vitrine_certificacao ul li.first {
+    clear: left;
+}
+
+.vitrine_certificacao ul li .produto{
+    margin:0 auto;
+    width:170px;
+    padding-top: 4px;
+    position: relative;
+}
+
+.vitrine_certificacao ul li .titulo{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    max-height: 67px;
+    _height: 67px;
+    overflow: hidden;
+}
+
+.vitrine_certificacao ul li .titulo a{
+    color: #062a59;
+}
+
+.vitrine_certificacao ul li .titulo a:hover{
+    color: #9c0004;
+}
+
+.vitrine_certificacao ul li .descricao{
+    color: #3A3A3A;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    max-height: 83px;
+    _max-height: 83px;
+    *max-height: 83px;
+    -max-height: 83px;
+    overflow: hidden;
+    line-height: 16px;
+}
+
+.vitrine_certificacao ul li .descricao a{
+    color: #3A3A3A;
+}
+
+.vitrine_certificacao ul li .descricao a:hover{
+    color: #9c0004;
+}
+
+.vitrine_certificacao ul li .preco_antigo{
+}
+
+.vitrine_certificacao ul li .preco_de{
+    color: #145fa6;
+    font-size: 11px;
+    text-decoration: line-through;
+}
+
+.vitrine_certificacao ul li .preco_antigo_preco{
+    font-size: 12px;
+    color: #145fa6;
+    text-decoration: line-through;
+}
+
+.vitrine_certificacao ul li .preco{
+}
+
+.vitrine_certificacao ul li .preco_preco{
+    color: #a40000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vitrine_certificacao ul li .preco_por{
+    font-size: 12px;
+    color: #a40000;
+    font-weight: bold;
+}
+
+.vitrine_certificacao ul li .preco_parcelado{
+}
+
+.vitrine_certificacao ul li .preco_ou{
+    color: #A40000;
+    font-size: 12px;
+}
+
+.vitrine_certificacao ul li .preco_parcelado_vezes{
+    color: #a40000;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.vitrine_certificacao ul li .preco_parcelado_preco{
+    color: #a40000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.vitrine_certificacao ul li .foto{
+    position: relative;
+    margin-bottom: 5px;
+    height: 160px;
+    text-align: center;
+}
+
+.vitrine_certificacao ul li .comparar{
+    font-size: 11px;
+    color: #062A59;
+    margin: 10px 0;
+}
+
+.vitrine_certificacao ul li .comparar input{
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.vitrine_certificacao ul li .frete_gratis{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 2;
+    display: none;
+}
+
+.vitrine_certificacao ul li .tags{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.vitrine_certificacao ul li .maisdetalhe{
+    margin-top: 10px;
+}
+
+.vitrine_certificacao ul li .btn_comprar{
+    margin: 14px 0 0 0;
+}
+/* fim */]]></CssComponente><ModeloHTMLVitrine><![CDATA[<div class="tit_box">
+    <h2>[A0]<a href="[A20]" class="ver_todos">Ver Todos</a></h2>
+</div>
+
+<div class="vitrine_certificacao">
+  <ul>
+      <repeticao:produtos>
+          <li>
+              <div class="produto">
+                  <condicao:frete_gratis>
+                      <div  class="frete_gratis"><a href="[A1]"><img src="imagens/tag_frete_gratis.png?1" alt="Frete Gratis"></a></div>
+                  </condicao:frete_gratis>
+                  <div class="foto">
+                      <a href="[A1]">
+                          <img alt="[A4]" src="[A3]">
+                      </a>
+                      <div class="tags">
+                          <condicao:produto_indisponivel>
+                              <a href="[A1]"><img src="imagens/indisponivel.png?1" alt="Produto Indisponivel"></a>
+                          </condicao:produto_indisponivel>
+                          <condicao:lancamento>
+                              <a href="[A1]"><img src="imagens/tag_lancamento.png?1" alt="Lançamento"></a>
+                          </condicao:lancamento>
+                          <condicao:oferta>
+                              <a href="[A1]"><img src="imagens/tag_oferta.png?1" alt="Oferta"></a>
+                          </condicao:oferta>
+                      </div>
+                  </div>
+                  <h3 class="titulo"><a href="[A1]">[A6]</a></h3>
+                  <div class="descricao"><a href="[A1]">[A18]</a></div>
+                  <condicao:preco_antigo>
+                      <div class="preco_antigo">
+                          <span  class="preco_de">[A8]</span> <span class="preco_antigo_preco">[A19]</span>
+                      </div>
+                  </condicao:preco_antigo>
+
+                  <div class="preco">
+                      <span class="preco_por">[A11]</span> <span class="preco_preco">[A15]</span>
+                  </div>
+
+                  <condicao:parcelamento>
+                      <div class="preco_parcelado">
+                          <span class="preco_ou">[A14]</span> <span class="preco_parcelado_vezes">[A13] de</span> <span class="preco_parcelado_preco">[A12]</span>
+                      </div>
+                  </condicao:parcelamento>
+                  <a href="[A1]"><img src="imagens/bt_detalhes.png?1" class="btn_comprar" alt="comprar"></a>
+              </div>
+          </li>
+      </repeticao:produtos>
+  </ul>
+</div>]]></ModeloHTMLVitrine><TamanhoImagem value="Grandes" /><TipoListagem value="1" /></ListagemSimples></ListagemSimpless><BoletimNoticiass><BoletimNoticias ID="id_qualquer"><BoletimNoticiasHTML><![CDATA[]]></BoletimNoticiasHTML></BoletimNoticias><BoletimNoticias ID="newsletter"><BoletimNoticiasHTML><![CDATA[<div class="newsletter">
+    <div class="container">
+        <label>Seu Nome</label>
+         <span class="campo">[A0]</span>
+      <condicao:nascimento>
+        <label class="align">Data de Nascimento</label>
+         <span class="campo">[A1]</span>
+      </condicao:nascimento>
+      <condicao:sexo>
+        <label class="align">Sexo</label>
+          <div class="radio"><span>[A3]</span> [A6]</div>
+      </condicao:sexo>
+        <label class="align">Seu Email</label>
+           <span class="campo">[A2]</span>
+         <span class="descadastrar"><a href="[A5]">Descadastrar</a></span>
+         <a href="[A4]"><img src="imagens/bt_newsletter_enviar.png?1" alt="enviar"></a>
+    </div>
+</div>]]></BoletimNoticiasHTML><CssComponente><![CDATA[.newsletter{
+    width: 189px;
+    height: 255px;
+    float: left;
+    background: url('imagens/bg_news.png') no-repeat;
+    margin: 7px 0 0 5px;
+}
+.newsletter .container{
+    float: left;
+    overflow:hidden;
+    margin: 53px 0 0 7px;
+    width: 173px;
+}
+.newsletter label, .newsletter .descadastrar a{
+    color:#FFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+.newsletter .align{
+    clear: both;
+    float: left;
+}
+.newsletter .campo{
+    float: left;
+    margin-bottom:3px;
+}
+.newsletter .campo input{
+    height: 20px;
+    width: 170px;
+    color: #333;
+}
+.newsletter .radio{
+    width: 170px;
+    float: left;
+    margin-bottom:3px;
+}
+.newsletter .radio span{
+    margin-right: 3px;
+}
+.newsletter .descadastrar{
+    float: left;
+    margin: 13px 0 0;
+}
+.newsletter .descadastrar a{
+    text-decoration: none;
+    color: #FFF;
+    float: left;
+    clear: both;
+}
+.newsletter .descadastrar a:hover{
+    text-decoration: underlainer;
+}
+.newsletter img{
+    float: right;
+    margin: 5px 0 0 0;
+}]]></CssComponente></BoletimNoticias></BoletimNoticiass><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

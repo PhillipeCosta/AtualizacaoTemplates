@@ -1,0 +1,64 @@
+.acesso-esq{
+    float: left;
+    padding: 10px;
+}
+
+.acesso-dir{
+    float: left;
+    padding: 10px;
+    width: 405px;
+}
+
+    .tit_box_acesso{
+        background: #B8B8B8;
+        width: auto;
+        text-align: left;
+    }
+    
+    
+    .tit_box_acesso h2{
+        list-style: none;
+        width: auto;
+        line-height: 29px;
+        padding: 3px 0 5px 15px;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: normal;
+    }  
+  
+    .box-acesso{
+        margin: 40px auto;
+        overflow: hidden;
+        width: 595px;
+    }
+
+    .conteudo-acesso{
+        padding: 50px 10px 20px;
+        height: 150px;
+    }
+
+    .tit-acesso{
+        font-weight: normal;
+        text-align: left;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    .ico-acesso{
+        margin-right: 10px;
+        display: inline-block;
+        *display: block;
+        *float: left;        
+    }
+
+    .msg-acesso{
+        font-size: 18px;  
+        line-height: 38px;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    .bt-acesso{
+        margin: 20px 0 10px;
+        text-align: left;
+    }  

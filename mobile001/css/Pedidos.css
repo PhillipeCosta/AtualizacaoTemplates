@@ -1,0 +1,15 @@
+.info_pedido{
+	overflow: hidden;
+}
+
+.pedido_dados_compra{
+	padding: 10px 0;
+}	
+
+.pedido_dados_compra a{
+	text-decoration: underline;
+}
+
+.radio{
+	display: inline-block !important;
+}

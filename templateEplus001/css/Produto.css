@@ -1,0 +1,1295 @@
+.atributos{
+    font-size: 12px;
+}
+
+.produto_cima{
+    clear: both;
+}
+
+.produto_esquerda{
+    float: left;
+    text-align: center;
+    width: 400px;
+}
+
+.produto_esquerda .produto_foto{
+    height: auto;
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.produto_esquerda .produto_mini_fotos{
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.produto_esquerda .produto_mini_fotos img{
+    border: 1px solid #CED4DB;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 10px;
+    width: 55px;
+    height: 50px;
+}
+
+.produto_direita{
+    float: left;
+    padding: 10px 0 0 20px;
+    width: 549px;
+}
+
+/*Nome Produto*/
+
+.nome_produto h2 {
+    font-size: 22px;
+    font-weight: 800;
+    padding: 0 0 5px;
+}
+
+.produto_codigo {
+    font-size: 13px;
+    font-weight: normal;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+/*Avaliação do Produto*/
+
+.produto_direita .avaliacao .avaliacao_estrela{
+    display:inline;
+}
+
+.produto_direita .avaliacao .avaliacao_estrela img{
+    margin: 0 1px;
+}
+
+.produto_direita .avaliacao {
+    margin: 10px 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.produto_direita .avaliacao *{
+    vertical-align: middle;
+}
+
+.produto_direita .avaliacao .ir_avaliar{
+    color: #7C7878;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+.avaliar {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.avaliar_conteudo {
+    width: auto;
+}
+.avaliar_esquerda {
+    float: left;
+    width: 356px;
+}
+.avaliar_direita {
+    float: left;
+    width: 313px;
+}
+.avaliar_conteudo .info {
+    float: left;
+    font-size: 12px;
+    margin: 0;
+}
+.avaliar_conteudo fieldset {
+    border: medium none;
+    padding: 10px;
+}
+.avaliar_conteudo fieldset label {
+    float: left;
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 99%;
+}
+.avaliar_conteudo fieldset label.checkbox {
+    font-weight: normal;
+}
+.avaliar_conteudo fieldset .avaliar_estrelas {
+    float: left;
+    font-size: 15px;
+    margin-right: 44px;
+    margin-top: 36px;
+    width: 17%;
+}
+.avaliar_conteudo fieldset label input {
+    border: 1px solid #CCCCCC;
+    font-size: 11px;
+    margin-top: 3px;
+    padding: 4px;
+    width: 90%;
+}
+.avaliar_conteudo fieldset label.checkbox input {
+    border: medium none transparent;
+    color: #585858;
+    font-size: 11px;
+    margin-right: 5px;
+    margin-top: 0;
+    padding: 0;
+    vertical-align: middle;
+    width: auto;
+}
+.avaliar_conteudo fieldset label.checkbox span {
+    vertical-align: middle;
+}
+.avaliar_conteudo fieldset label textarea {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    color: #585858;
+    font-size: 11px;
+    margin-top: 5px;
+    padding: 3px;
+    width: 94%;
+}
+.avaliar_conteudo .avaliacao_estrela {
+    clear: both;
+    float: left;
+    list-style: none outside none;
+    margin: 5px 0 0;
+    text-decoration: none;
+}
+.avaliar_conteudo .avaliacao_estrela li {
+    cursor: pointer;
+    float: left;
+}
+.avaliar_conteudo .avaliacao_estrela li img {
+    padding-right: 5px;
+}
+.avaliar_conteudo .avaliar_sucesso {
+    color: #008000;
+    margin: 20px 10px;
+}
+.avaliar_conteudo .avaliar_erro {
+    color: #FF0000;
+    margin: 20px 10px;
+}
+
+/*Preço do Produto*/
+
+.produto_direita .preco_de {
+    font-size: 14px;
+}
+
+.produto_direita .preco_antigo_preco {
+    color: #5A5A5A;
+    font-size: 14px;
+}
+
+
+.produto_direita .produto_preco {
+    clear: both;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.produto_direita .produto_preco .produto_preco_total{
+    padding: 7px 0 10px 10px;
+}
+
+.produto_direita .produto_preco .produto_preco_total .preco_de {
+    font-size: 11px;
+    color: #545454;
+}
+.produto_direita .produto_preco .produto_preco_total .preco_de_preco {
+    font-size: 11px;
+    color: #545454;
+}
+
+.produto_direita .produto_preco_antigo {
+    display: block;
+    padding-top: 5px;
+}
+
+.preco_por_titulo {
+    
+}
+
+.preco_produto{
+    
+    
+}
+
+.preco_por_texto{
+    display: block;
+    font-weight: normal;
+    margin: 13px 0;
+}
+
+.produto_direita .produto_preco .produto_preco_parcelado{
+    color: #0f3b69;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.preco_parcelado{
+    font-weight: bold;
+}
+
+.produto_direita .produto_preco .produto_preco_parcelado .preco_parcelado_texto{
+    font-size: 11px;
+    font-weight: bold;
+    color: #062A59;
+}
+
+.produto_direita .produto_preco .produto_bt_parcelamento {
+    float: right;
+    margin-right: 20px;
+    margin-top: 51px;
+}
+
+.produto_direita .produto_preco .produto_bt_parcelamento img{
+    margin: 2px 0;
+}
+
+/*Variantes do Produto*/
+
+.produto_direita .produto_comprar {
+    clear: both;
+    overflow: hidden;
+}
+
+.bt_comprar {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+
+.box-bt-comprar{
+    font-size: 24px;
+    font-family: 'source_sans_prosemibold';
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.bt-encomendar{
+    font-size: 24px;
+    font-family: 'source_sans_prosemibold';
+    display: block;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+.bt-encomendar span{
+    font-size: 13px;
+    display: block;
+    font-family: 'source_sans_proregular';
+}
+
+.produto_direita .disponibilidade * {
+    vertical-align: middle;
+}
+.produto_direita .disponibilidade {
+    color: #252525;
+    padding: 5px 0 10px;
+    text-align: right;
+}
+
+.produto_direita .produto_comprar .variante .tit_variante{
+    display:block;
+    padding-bottom: 10px;
+    color: #585858;
+    font-size: 11px;
+}
+
+.variante-conteudo {
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.tit-variante {
+    display: block;
+    font-size: 14px;
+    font-family: 'source_sans_prosemibold';
+    margin-bottom: 20px;
+}
+
+.produto_direita .produto_comprar .variante{
+    clear: both;
+}
+
+.produto_direita .produto_comprar .variante select{
+    border: 1px solid #CCCCCC;
+    color: #000;
+    font-size: 11px;
+    padding: 5px;
+    width: 145px;
+}
+
+.produto_direita .produto_comprar .variante img{
+    margin-right: 3px;
+}
+
+.produto_direita .produto_comprar .variante .variante_ativa{
+    border: 1px solid #FDA719;
+}
+
+.produto_direita .produto_comprar img{
+    cursor: pointer;
+}
+
+
+/*Compatilhar*/
+
+.compartilhar {
+    overflow: hidden;
+}
+
+.compartilhar h3{
+  margin-right: 10px;
+  float: left;
+  color: #0E4EAD;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.compartilhar .facebook{
+    float: left;
+    width: 95px;
+}
+
+.compartilhar .google-mais{
+  float: left;
+}
+
+.compartilhar .bt_indicar{
+    float: left;
+    margin-left: 5px; 
+}
+
+.compartilhar .twitter {
+    float: left;
+    width: 82px;
+}
+/*Produto Baixo*/
+
+
+.produto_baixo{
+    overflow: hidden;
+    clear: both;
+    margin-top: 15px;
+}
+
+
+.vitrine_interna{
+    overflow: hidden;
+}
+
+.vitrine_interna ul{
+    text-align: center;
+    list-style: none;
+}
+
+.vitrine_interna ul li{
+    width: 25%;
+    float: left;
+    padding-top: 10px;
+}
+
+.vitrine_interna ul li div.produto{
+    padding: 5px;
+}
+
+.vitrine_interna ul li .foto{
+    height: 155px;
+    text-align: center;
+    margin:10px 0;
+}
+
+.vitrine_interna ul li .titulo{
+    height: 40px;
+}
+
+.vitrine_interna ul li .titulo a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/*Indique o Produto*/
+
+.indique {
+    text-align: left;
+    width: auto;
+}
+.indique .info {
+    color: #999999;
+    font-size: 11px;
+    margin: 10px;
+}
+.indique fieldset {
+    border: medium none;
+    font-family: verdana;
+    padding: 10px;
+    width: 450px;
+}
+.indique input {
+    border: 1px solid #CCCCCC;
+    color: #585858;
+    font-size: 11px;
+    margin-top: 3px;
+    padding: 4px;
+    width: 90%;
+}
+.indique label {
+
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+.indique label.seguranca {
+    display: block;
+    float: left;
+    width: 24%;
+}
+.indique .seguranca input {
+    border: medium none;
+    height: 25px;
+    padding: 0 8px 0 0;
+    vertical-align: middle;
+    width: auto;
+}
+.indique .seguranca img {
+    margin-top: 5px;
+    vertical-align: middle;
+}
+.indique textarea {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    color: #585858;
+    font-size: 11px;
+    margin-top: 5px;
+    padding: 3px;
+    width: 99%;
+}
+/*Parcelamento*/
+
+#box_parcelamento{
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+#box_parcelamento .conteudo{
+    border-top: none;
+    overflow: hidden;
+    height: auto;
+    margin-top: -15px;
+}
+
+#box_parcelamento ul{
+    list-style: none;
+    overflow: hidden;
+    height: auto;
+    margin-top: 15px;
+}
+
+#box_parcelamento ul li{
+    list-style: none;
+    background-color: #DFDFDF;
+    overflow: hidden;
+    height: auto;
+    margin: 10px;
+}
+
+#box_parcelamento ul li .img_parc{
+    float: left;
+    width: 70px;
+    padding: 15px;
+}
+
+#box_parcelamento ul li .formas_parc{
+    float: left;
+    width: 325px;
+}
+
+#box_parcelamento ul li .formas_parc table{
+    background-color: #fcfcfc;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#box_parcelamento ul li .formas_parc table th{
+    background-color: #818181;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+}
+
+#box_parcelamento ul li .formas_parc table td{
+    background-color: #DFDFDF;
+    text-align: center;
+    color: #363636;
+    padding: 3px;
+}
+
+/*Avaliar*/
+
+.box_avaliar .avaliacao_estrela{
+    float: left;
+    list-style: none outside none;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+
+.box_avaliar .avaliacao_estrela li{
+    float: left;
+    cursor: pointer;
+}
+
+/*Comentários*/
+
+.comentarios_realizados{
+    list-style: none;
+    width: auto;
+    padding: 10px;
+}
+
+.comentarios_realizados div{
+    float:left;
+    margin-right: 15px;
+}
+
+.comentarios_realizados li {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.comentarios_realizados li p{
+    font-size: 12px;
+}
+
+.comentarios_realizados li h2 strong{
+    font-size: 15px;
+}
+
+.comentarios_realizados li h2{
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.comentarios_realizados li h2 a{
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.comentarios_realizados li h2 img{
+    vertical-align: middle;
+}
+
+/*Abas*/
+
+
+ul.produto_abas{
+    height: 30px;
+    list-style: none outside none;
+}
+
+ul.produto_abas li{
+    float: left;
+}
+
+
+ul.produto_abas li a {
+    display: block;
+    font-size: 15px;
+    padding: 0 15px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+ul.produto_abas a.selecionado {
+    background: #0f3b69;
+    color: #fff;
+}
+
+
+/*Decrição*/
+
+.descricao{
+    margin: 20px auto 20px auto;
+    text-align: left;
+}
+
+.descricao .descricao_texto {
+    background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    color: #929292;
+    font-size: 12px;
+}
+
+.descricao .descricao_texto_conteudo{
+    padding: 10px;
+}
+
+.descricao .descricao_texto_conteudo ul, .descricao .descricao_texto_conteudo ol{
+    margin: 20px;
+}
+
+/*Comentários*/
+
+.comentarios{
+    margin: 20px auto 20px auto;
+    text-align: left;
+}
+
+.produto_avaliar .avaliacao_estrela{
+    overflow: hidden;
+    margin-top: 3px;
+    padding-left: 3px;
+}
+
+.produto_avaliar .avaliacao_estrela li{
+    float: left;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* COmpre Junto */
+
+.compre_junto{
+    list-style: none;
+}
+
+.compre_junto li{
+    overflow:hidden;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.compre_junto .fotos_info{
+    overflow: hidden;
+    *padding-bottom: 110px;
+
+}
+
+.compre_junto .compre_junto_selecionar {
+    color: #303030;
+    font-size: 14px;
+    text-align: center;
+}
+
+.compre_junto .foto_principal .compre_junto_selecionar{
+    color: #00669E;
+}
+
+.compre_junto .compre_junto_selecionar *{
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+.compre_junto .fotos_info .fotos{
+    float: left;
+}
+
+.compre_junto .fotos_info .fotos .compre_junto_foto{
+    float: left;
+    height: 251px;
+    margin: 10px 0;
+    text-align: center;
+    width: 150px;
+}
+
+.compre_junto .fotos_info .fotos .compre_junto_mais{
+    float: left;
+    margin: 130px 13px 0;
+}
+
+.compre_junto .fotos_info .fotos .compre_junto_foto .compre_junto_foto_foto{
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 150px;
+    margin: 5px auto;
+    width: 150px;
+}
+
+.compre_junto .fotos_info .fotos .compre_junto_foto .compre_junto_foto_foto img{
+}
+
+
+.compre_junto .fotos_info .fotos .compre_junto_foto .compre_junto_foto_variantes select{
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 11px;
+    padding: 2px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+.compre_junto .fotos_info .fotos .compre_junto_foto .compre_junto_foto_quantidade{
+    margin: 0 auto;
+    padding-top: 2px;
+}
+
+.compre_junto .fotos_info .fotos .compre_junto_foto .compre_junto_foto_quantidade span.qtd{
+    color: #333333;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.compre_junto .fotos_info .fotos .compre_junto_foto .compre_junto_foto_quantidade input{
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 11px;
+    padding: 2px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.compre_junto .fotos_info .fotos .compre_junto_foto .compre_junto_foto_quantidade img{
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.compre_junto .fotos_info .infos{
+    font-size: 12px;
+    margin-top: 32px;
+    overflow: hidden;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.compre_junto .fotos_info .produto_info{
+    float: left;
+    width: 190px;
+}
+
+.compre_junto .fotos_info .infos p{
+    display: block;
+    font-size: 14px;
+}
+
+.compre_junto .fotos_info .infos p a{
+    display: block;
+    font-size: 14px;
+}
+
+.compre_junto .fotos_info .infos .preco_comprar {
+    border-left: 1px solid #D6D6D6;
+    float: right;
+    margin: 0 0 0 15px;
+    padding: 20px 0 20px 15px;
+}
+
+
+.compre_junto .fotos_info .infos .preco{
+    font-size: 24px;
+    font-family: 'source_sans_prosemibold';
+}
+
+.compre_junto .fotos_info .infos .preco strong{
+    color: #A20209;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.compre_junto .parcelamento{
+    font-size: 12px;
+    color: #13537F;
+    margin-top: 5px;
+    display: none;
+}
+
+.compre_junto .fotos_info .infos .economize{
+    color: #333333;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.compre_junto .fotos_info .infos .no_boleto{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.bt-compre-junto{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: 'source_sans_prosemibold';
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+
+.bt-compre-junto span{
+    font-size: 20px;
+    display: block;
+}
+
+/*Simulador de frete*/
+
+
+#simulador_frete{
+  overflow: hidden;
+  font-family: Arial;
+  margin: 20px 0;
+}
+
+.simular_frete {
+
+}
+
+.simular_frete .titulo-simular img {
+    display: block;
+    float:left;
+}
+
+.simular_frete fieldset label.simular_bt {
+    margin: 15px 0 0 7px;
+}
+.simular_frete fieldset {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 3px 0 3px 4px;
+}
+
+.simular_frete fieldset .frete_ico{
+  float: left;
+  margin: 0 20px 0 10px;
+}
+
+.simular_frete fieldset label.titulo-simular {
+    margin: 0;
+}
+
+.simular_frete fieldset label {
+    color: #252525;
+    float: left;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+.simular_frete fieldset label span{
+    display: block;
+    float: left;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.simular_bt a {
+    padding: 6px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.simular_frete fieldset label.titulo-simular span{
+    float: left;
+    margin-left: 10px;
+    margin-top: 19px;
+    font-size: 18px;
+}
+
+.simular_frete fieldset label input {
+    border: 1px solid #CCCCCC;
+    font-size: 11px;
+    padding: 7px;
+    width: 118px;
+}
+
+.simular_frete fieldset label.qtd{
+    display: none;
+}
+
+.simular_frete fieldset label.qtd input{
+  width: 30px;
+}
+
+.simular_frete_resultado table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top:5px;
+}
+
+.simular_frete_resultado table th{
+  background: #e6e6e6;
+  text-align: center;
+  color: #333;
+  font-size: 11px;
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  font-weight: bold;
+}
+
+.simular_frete_resultado table td{
+  text-align: center;
+  color: #333;
+  font-size: 11px;
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+}
+
+/*Lista de Presentes*/
+
+.bt_add_lista img {
+    cursor: pointer;
+}
+
+.box_listas{
+    width: 390px;
+    background: #FCFCFC;
+    position: absolute;
+    display: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.box_listas h6{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.box_listas_listas{
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.box_listas_listas fieldset{
+    border: 0
+}
+
+.box_listas_listas fieldset label{
+    display: block;
+    padding: 3px 0;
+    font-size: 12px;
+    color: #333;
+}
+
+.box_listas_listas fieldset label *{
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.box_lista_criar{
+    padding: 5px 10px;
+}
+
+.box_lista_criar .criar_lista{
+    color: #326AA9;
+    display: table;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.box_lista_criar_formulario{
+    padding: 5px 0;
+    display: none;
+}
+
+.box_lista_criar_formulario label{
+    color: #333;
+        padding-bottom: 5px;
+        display: block;
+}
+
+.box_lista_criar_formulario label span{
+    display: block;
+}
+
+.box_lista_criar_formulario label input{
+    padding: 2px;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 11px;
+    width: 200px;
+    margin-top: 2px;
+}
+
+
+.box_lista_criar_formulario label select{
+    padding: 2px;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 11px;
+    width: 150px;
+    margin-top: 2px;
+}
+
+.box_lista_bt_criar{
+    padding-top: 5px;
+}
+
+.box_lista_bt_criar a{
+    display: table;
+    padding: 3px 10px;
+        border-radius: 3px;
+}
+
+.box_lista_salvar{
+    margin: 10px 0 5px 0; 
+}
+
+/* .box_lista_salvar a{
+    display: table;
+    color: #fff;
+    background: #1A9300;
+    padding: 3px 10px;
+        border-radius: 3px;
+}
+
+.box_lista_salvar a:hover{
+    background: #0F8200;
+} */
+
+.msg_add_lista{
+    background: #F8EFD3;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #BCA250;
+    color: #715015;
+    text-align: left;
+    display: table;
+}
+
+.msg_add_lista a{
+    color: #715015;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.migalha {
+    border-bottom: 1px solid #dbe2e9;
+}
+
+.produto_imagem_grande{
+    width: 400px;
+}
+
+.variante-conteudo1 {
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.variante-conteudo2 {
+    float: left;
+}
+
+.variante_imagem_disponivel{
+    border: 1px solid #E0E4E8;
+    display: block;
+    float: left;
+    margin-right: 3px;
+    height: 50px;
+    padding: 1px;
+    width: 50px;
+}
+
+.variante_imagem_disponivel.variante_imagem_disponivel_selecionada{
+    border: 1px solid #93b4d6;
+}
+
+/*Comentarios/Avaliar*/
+
+.comentarios_avaliar{
+  clear: both;
+  overflow: hidden;
+  text-aling: center;
+}
+
+.comentarios_avaliar_conteudo{
+    width: 100%;
+    text-align: left;
+}
+
+.comentarios_avaliar_titulo h2{
+    text-indent: -9999px;
+    width: 140px;
+    height: 13px;
+    background: url('../imagens/sprite_loja.png') no-repeat -300px -1100px;
+}
+
+
+.comentarios_avaliar_abas ul{
+    list-style: none outside none;
+    height: 30px;
+}
+
+.comentarios_avaliar_abas li{
+    float: left;
+}
+
+.comentarios_avaliar_abas li a{
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+
+.comentarios_avaliar_abas li a.selecionado{
+    background: none repeat scroll 0 0 #0F3B69;
+    color: #FFFFFF;
+}
+
+.container-preco-comprar{
+    position: relative;
+}
+
+
+ul.produto_abas li.selected .bulletdescript, .comentarios_avaliar_abas li.selected .bulletdescript{
+    display: block;
+}
+
+.bulletdescript{
+    display: none;
+    text-align: center;
+}
+
+.variante_texto_disponivel{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 10px 0 0;
+}
+
+.variante_texto_disponivel:hover{
+    border: 1px solid #aaa;
+    background: #f1f1f1;
+}
+
+.variante_texto_disponivel_selecionada{
+    border: 1px solid #aaa;
+}
+
+.variante_texto_disponivel_indisponivel,
+.variante_texto_indisponivel{
+    opacity: 0.6;
+}
+
+.img-comprar{
+    padding: 10px 26px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fotoPrincipalProduto{
+    width: 400px;
+}
+
+/* Customização do produto */
+
+/*Customização*/
+
+
+.opcionais{
+  overflow: hidden;
+  text-align: left;
+}
+
+.opcionais .opcional_item{
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.opcionais .opcional_item h4{
+    font-size: 15px;
+    margin: 0 0 5px 10px;
+}
+
+.opcionais .opcional_conteudo{
+    background:#fff;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.opcionais .opcional_conteudo .opcional_esquerda{
+    float: left;
+    text-align: center;
+    padding: 10px 10px 10px 0;
+}
+
+.opcionais .opcional_conteudo .opcional_direita{
+    float: left;
+    padding: 10px 0;
+}
+
+.opcionais .opcional_conteudo .opcional_direita fieldset{
+    border: none;
+}
+
+.opcionais .opcional_conteudo .opcional_direita label{
+    display: block;
+    font-size: 12px;
+    padding: 3px 0
+}
+
+.opcionais .opcional_conteudo .opcional_direita label input{
+    margin: 3px 0 0 0;
+    border: 1px solid #ccc;
+    padding: 3px;
+    font-size: 11px;
+    color: #666;
+    width: 140px;
+    display: block;
+}
+
+.opcionais .opcional_conteudo .opcional_direita label select{
+    margin: 3px 0 0 0;
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 11px;
+    color: #666;
+    width: 150px;
+    display: block;
+}
+
+.opcionais .opcional_conteudo .opcional_direita .aceite{
+    font-size: 11px;
+    padding: 3px 0 8px 0;
+}
+
+.opcionais .opcional_conteudo .opcional_direita .aceite span{
+    vertical-align: middle;
+}
+
+.opcionais .opcional_conteudo .opcional_direita .aceite input{
+    margin:  0 5px 0 0;
+    width: auto;
+    border: none 0;
+    padding: 0;
+    vertical-align: middle;
+    display: inline;
+}
+
+.opcionais .opcional_conteudo .opcional_direita .opcional_regulamento{
+    display: block;
+    margin-top: 5px;
+}
+
+.opcionais .opcional_conteudo .opcional_direita .opcional_regulamento a{
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.opcionais .opcional_preco{
+    margin: 5px 0 0 10px;
+}
+
+.opcionais .opcional_preco .opcional_preco_texto{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.opcionais .opcional_preco .opcional_preco_preco{
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ImagensProdutos><ImagensProduto ID="quickView_product_images"><ImagensProdutoHTML><![CDATA[<div class="produto_foto">
+<div class="quickView-product-image-big produto_imagem_grande">[A0]</div>   
+<condicao:imagens_pequenas>
+  <div class="quickView-product-image-small produto_mini_fotos">
+    <repeticao:imagem>[A1]</repeticao:imagem>
+  </div>
+</condicao:imagens_pequenas>       
+</div>]]></ImagensProdutoHTML><TamanhoImagemEspiar value="Gigantes" /><TamanhoImagemProdutos value="Gigantes" /><TamanhoImagemZoomEspiar value="SuperZoom" /><TamanhoImagemZoomProdutos value="SuperZoom" /><ZoomAtivado value="True" /></ImagensProduto></ImagensProdutos><ProdutoNomes><ProdutoNome ID="quickView_product_name"><ProdutoNomeHTML><![CDATA[<div class="quickView-product-name">
+  <h1>[A0]</h1>
+</div>
+<div class="quickView-product-code">
+  Cod. de Referência: [A3]
+</div>]]></ProdutoNomeHTML></ProdutoNome></ProdutoNomes><ProdutoAvaliars><ProdutoAvaliar ID="quickView_product_rating"><AvaliacaoHTML><![CDATA[]]></AvaliacaoHTML><ImagemAvaliacaoDeselecionado value="rating-star-off.png" /><ImagemAvaliacaoSelecionado value="rating-star-on.png" /><MensagemAlertaProdutoAvaliarHTML><![CDATA[]]></MensagemAlertaProdutoAvaliarHTML><MensagemSucessoProdutoAvaliarHTML><![CDATA[]]></MensagemSucessoProdutoAvaliarHTML><ProdutoAvaliarHTML><![CDATA[]]></ProdutoAvaliarHTML><ProdutoPrimeiraAvaliacaoHTML><![CDATA[]]></ProdutoPrimeiraAvaliacaoHTML><ReadOnly value="True" /></ProdutoAvaliar></ProdutoAvaliars><PrecoProdutos><PrecoProduto ID="quickView_product_price"><ParcelamentoProdutoHTML><![CDATA[]]></ParcelamentoProdutoHTML><PrecoProdutoHTML><![CDATA[<div class="quickView-product-price-content" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+  <meta content="BRL" itemprop="priceCurrency" />
+    <div class="quickView-product-oldPrice">
+      <del class="quickView-produt-oldPrice-price">[A1]</del>
+    </div>
+    <div class="quickView-product-price">
+      <span class="quickView-product-price-title">Por:</span>
+      <span itemprop="price" class="quickView-product-price-price">[A3]</span> 
+    </div>
+    <condicao:desconto_vista>
+      <div class="quickView-product-payInFullPrice">
+        <span class="quickView-product-payInFullPrice-title">(ou <strong class="quickView-product-payInFullPrice-price">[A13]</strong> para pagamentos por depósito bancário ou boleto)</span>
+      </div>
+    </condicao:desconto_vista>
+    <condicao:parcelamento>
+      <div class="quickView-product-splitPrice">
+        <span class="quickView-product-splitPrice-title">ou </span><span class="quickView-product-splitPrice-quantity">[A6]x </span><span class="quickView-product-splitPrice-title"> de </span> <span class="quickView-product-splitPrice-price">[A7]</span>
+        <span class="quickView-product-splitPrice-title">sem juros</span>      
+        <span class="quickView-product-splitPrice-bt sprite">Formas de Parcelamento</span>
+      </div> 
+    </condicao:parcelamento>
+</div> 
+[A10]]]></PrecoProdutoHTML></PrecoProduto></PrecoProdutos><VariantesProdutos><VariantesProduto ID="quickView_product_variant"><ClasseCssImagemSelecionada value="" /><TamanhoImagemVariantes value="30" /><VariantesProdutoHTML><![CDATA[<condicao:variante1>
+  <span class="quickView-product-variant-name">[A0]</span>
+  <div class="quickView-product-variant-select variante variante1 form">    
+    [A1]
+  </div>
+</condicao:variante1>
+<condicao:variante2>
+  <span class="quickView-product-variant-name">[A0]</span>
+  <div class="quickView-product-variant-select variante2 variante form">
+    [A1]
+  </div>
+</condicao:variante2>
+<div class="quickView-product-variants-bt">
+  <condicao:botao_comprar_direto>
+    <a href="[A6]" class="quickView-product-variants-bt-buy bt-big-special">Comprar</a>
+  </condicao:botao_comprar_direto>
+  <condicao:botao_encomendar>
+    <a href="[A4]" class="quickView-product-variants-bt-unavailable bt-big-disabled">Avise-me</a>
+  </condicao:botao_encomendar>
+</div>
+]]></VariantesProdutoHTML></VariantesProduto></VariantesProdutos></controles></page>

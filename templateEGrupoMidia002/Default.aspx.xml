@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_jquery" /><Banner ID="header_full" /><Banner ID="left_top" /><Banner ID="content_top" /><Banner ID="content_middle" /><Banner ID="content_bottom" /></Banners><ListagemSimpless><ListagemSimples ID="collections_1"><ModeloHTMLVitrine><![CDATA[<div class="collection">
+  <div class="heading-primary" style="margin-top: 10px;">
+      <h2><a href="[A20]">[A0]</a></h2>
+  </div>
+  <ul>
+  <repeticao:produtos>
+    <li class="collection-li w-25">      
+      <div class="collection-product">
+          <div class="collection-product-image">              
+              <condicao:promocao_brinde>
+                  <div class="collection-product-sealGift">
+                    <a href="[A56]" class="link-modal-iframe">
+                      <img src="[A55]" alt="Promocao Brinde" />
+                    </a>
+                  </div>
+              </condicao:promocao_brinde>    
+              <condicao:promocao_express>
+                <div class="collection-product-promoExpress">
+                  <a href="[A29]" class="link-modal-iframe"><img src="[A26]" alt="" /></a>
+                </div>
+              </condicao:promocao_express>      
+              <condicao:promocao_frete>
+                <div class="collection-product-shippingPromo">
+                  <a href="[A35]" class="link-modal-iframe"><img src="[A27]" alt="" /></a>
+                </div>
+              </condicao:promocao_frete>                  
+              <a href="[A1]"><img src="[A3]?width=250&height=250" width="100%" alt="[A6]" /></a>
+              <condicao:produto_indisponivel>
+                  <div class="collection-product-unavailable">
+                        <a href="[A1]">Produto Indisponível</a>
+                  </div>
+              </condicao:produto_indisponivel>
+              <condicao:lancamento>
+                  <a href="[A1]" class="collection-product-release">Lançamento</a>
+              </condicao:lancamento>
+              <condicao:pre_venda>
+                  <a href="[A1]" class="collection-product-preSale">Pré-Venda</a>
+              </condicao:pre_venda>
+              <condicao:oferta>
+                  <a href="[A1]" class="collection-product-offer">-[A53]% </a>
+              </condicao:oferta>
+              
+          </div>
+        
+  			<div class="details">
+              <h3 class="titulo"><a href="[A1]" class="collection-productName">[A6] - </a>[A18] </h3>
+            
+  			</div>
+            <div class="preco preco_por collection-product-adjustedPrice">
+                <del>
+                  <condicao:preco_antigo>de: [A19]</condicao:preco_antigo>    
+                </del>
+                 <span>por: [A15]</span>
+            </div>
+        	<condicao:comprar_direto>
+               <div class="collection-product-buy">
+                  <div class="collection-product-buyInput spin form">
+                    <a href="[A24]" class="collection-product-buy-remove spin-bt spin-remove">-</a>[A21] <a href="[A23]" class="collection-product-buy-add spin-bt spin-add">+</a></div>
+                 <div class="buy_button"><a href="[A22]" class="collection-product-buy-bt bt-big-secundary">Comprar</a></div>
+               </div>
+            </condicao:comprar_direto>
+      
+      </div>
+    </li>
+  </repeticao:produtos>
+  </ul>
+</div>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="5" /></ListagemSimples><ListagemSimples ID="collections_2"><ModeloHTMLVitrine><![CDATA[<div class="collection">
+  <div class="heading-primary" style="margin-top: 10px;">
+      <h2><a href="[A20]">[A0]</a></h2>
+  </div>
+  <ul>
+  <repeticao:produtos>
+    <li class="collection-li w-25">      
+      <div class="collection-product">
+          <div class="collection-product-image">              
+              <condicao:promocao_express>
+                <div class="collection-product-promoExpress">
+                  <a href="[A29]" class="link-modal-iframe"><img src="[A26]" alt="" /></a>
+                </div>
+              </condicao:promocao_express>      
+              <condicao:promocao_frete>
+                <div class="collection-product-shippingPromo">
+                  <a href="[A35]" class="link-modal-iframe"><img src="[A27]" alt="" /></a>
+                </div>
+              </condicao:promocao_frete>                  
+              <a href="[A1]"><img src="[A3]?width=250&height=250" width="100%" alt="[A6]" /></a>
+              <condicao:produto_indisponivel>
+                  <div class="collection-product-unavailable">
+                        <a href="[A1]">Produto Indisponível</a>
+                  </div>
+              </condicao:produto_indisponivel>
+              <condicao:lancamento>
+                  <a href="[A1]" class="collection-product-release">Lançamento</a>
+              </condicao:lancamento>
+              <condicao:pre_venda>
+                  <a href="[A1]" class="collection-product-preSale">Pré-Venda</a>
+              </condicao:pre_venda>
+              <condicao:oferta>
+                  <a href="[A1]" class="collection-product-offer">[A53]% Off</a>
+              </condicao:oferta>
+              <condicao:espiar><a href="[A17]" class="collection-product-quickView sprite">Espiar</a></condicao:espiar>
+          </div>
+        
+  			<div class="details">
+              <h3 class="titulo"><a href="[A1]" class="collection-productName">[A6] - </a>[A18] </h3>
+            
+  			</div>
+            <div class="preco preco_por collection-product-adjustedPrice">
+                 <span> [A15]</span>
+            </div>
+        
+          <condicao:promocao_brinde>
+            <div class="collection-product-sealGift">
+              <a href="[A56]" class="link-modal-iframe">
+                <img src="[A55]" alt="Promocao Brinde" />
+              </a>
+            </div>
+          </condicao:promocao_brinde>          
+      </div>
+    </li>
+  </repeticao:produtos>
+  </ul>
+</div>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="5" /></ListagemSimples><ListagemSimples ID="VitrineJquery"><ModeloHTMLVitrine><![CDATA[<div class="tit-box heading-secondary">
+  <h2>[A0]</h2>
+</div>
+
+<div class="vitrine_geral">
+ <ul id="scroller">
+    <repeticao:produtos>
+      <li>
+         <a href="[A1]" class="bt-compra-vjquery">
+        <div class="thumnail">
+        
+<div class="produto">
+           <div class="foto" style="height=270px;">
+
+               <a href="[A1]">
+                   <img alt="[A4]" src="[A3]?width=250&height=250" data-otherimages="[A34]" />
+               </a>
+
+                  <condicao:produto_indisponivel>
+                
+                    <div class="box-tag collection-product-unavailableTag">                  
+                      Produto Indisponível
+                    </div>        
+                   
+                  </condicao:produto_indisponivel>
+ 
+             
+            </div>     
+  			<div class="details">
+              <h3 class="titulo"><a href="[A1]" class="collection-productName">[A6]</a> </h3>
+            
+  			</div>
+            <div class="preco preco_por collection-product-adjustedPrice">
+                  <del>
+                    <condicao:preco_antigo>de: [A19]</condicao:preco_antigo>    
+                  </del>
+                 <span> por: [A15]</span>
+            </div>
+ 
+          
+         </div>
+        </div>	
+		</a>
+      </li>
+    </repeticao:produtos>
+ </ul>
+</div>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="5" /></ListagemSimples></ListagemSimpless><Menus><Menu ID="sideMenu"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<nav class="nav-primary dept-menu">
+  	<ul>
+  		<repeticao:pais>
+          	<li>
+              	<h3 class="nav-primary-heading-primary"><a href="[A0]">[A1]</a></h3>
+                <condicao:filho>
+                    <ul>
+                        <repeticao:filhos>
+                          <li><a href="[A0]"><span class="nav-primary-bullet">•</span> [A1]</a></li>
+                        </repeticao:filhos>
+                    </ul>
+                </condicao:filho>
+            </li>
+      	</repeticao:pais>
+  	</ul>
+</nav>]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><BoletimNoticiass><BoletimNoticias ID="tidings"><BoletimNoticiasHTML><![CDATA[<h3>ASSINE NOSSA NEWS LETTER</h3>
+<label class="keep_informed">Mantenha-se Informado!</label>
+<fieldset class="form">
+  <span class="news-email">
+    <label> <i></i>Email:</label>[A2]    
+    </span>
+  <span class="news-name"><label>Nome:</label>[A0]</span>
+
+  
+  <condicao:nascimento>    
+    <span class="news-birth"><label><small>Data de<br />nascimento</small></label>[A1]</span>
+  </condicao:nascimento>
+
+  <condicao:sexo>
+    <span class="news-gender "><label>Gênero</label>[A3][A6]</span>
+  </condicao:sexo>
+  
+  <a href="[A4]" class="bt-small-special w-15 to-right align-center">enviar</a>
+</fieldset>
+]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass></controles></page>

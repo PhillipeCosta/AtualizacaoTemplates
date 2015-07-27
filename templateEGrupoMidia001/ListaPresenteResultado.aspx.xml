@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresenteBuscaResultados><ListaPresenteBuscaResultado ID="giftList_searchResult"><ListaPresenteBuscaSemResultadoHTML><![CDATA[<div class="alert">
+  <strong>Não foram encontradas listas com os critérios informados!</strong>
+</div>]]></ListaPresenteBuscaSemResultadoHTML><ListaPresentePrincipalBuscaResultadoHTML><![CDATA[    	[A2]
+    	[A0]        
+        [A1] ]]></ListaPresentePrincipalBuscaResultadoHTML><ListaPresentesBuscaResultadoFiltroHTML><![CDATA[]]></ListaPresentesBuscaResultadoFiltroHTML><ListaPresentesBuscaResultadoListasHTML><![CDATA[<div>
+  <table width="100%;" cellspacing="0" cellpadding="0" border="0" class="table">
+        <thead>
+            <tr>
+                <th class="table-title"></th>
+                <th class="table-title">Nome da Lista</th>
+                <th class="table-title">Nome dos Noivos</th>
+                <th class="table-title">Tipo de Lista</th>
+                <th class="table-title">Local</th>
+                <th class="table-title">Data do Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <repeticao:lista_presentes>
+                <tr class="table-item">
+                    <td class="align-center"><a href="[B6]"><img src="[B0]?width=100&height=100" alt="[B9]" /></a></td>
+                    <td class="align-center"><a href="[B6]">[B11]</a></td>
+                    <td class="align-center"><a href="[B6]">[B1]</a></td>
+                    <td class="align-center"><a href="[B6]">[B10]</a></td>
+                    <td class="align-center"><a href="[B6]">[B3] - [B4] - [B5]</a></td>
+                    <td class="align-center"><a href="[B6]">[B2]</a></td>
+                </tr>
+            </repeticao:lista_presentes>
+        </tbody>
+    </table>
+</div>]]></ListaPresentesBuscaResultadoListasHTML><ListaPresentesBuscaResultadoPaginacaoHTML><![CDATA[<condicao:paginacao>
+  <div class="collection-bottom">
+    <div class="collection-pagination">
+      <div class="collection-pagination-pages">
+        <repeticao:paginas quantidade="5">
+            <a href="[C7]" class="page <condicao:pagina_selecionada>active</condicao:pagina_selecionada>">[C8]</a>
+        </repeticao:paginas>
+      </div>
+    </div>
+  </div>
+</condicao:paginacao>]]></ListaPresentesBuscaResultadoPaginacaoHTML><QuantidadeItensPorPagina value="1" /></ListaPresenteBuscaResultado></ListaPresenteBuscaResultados><ListaPresenteBuscas><ListaPresenteBusca ID="giftList_search"><ListaPresenteBuscaHTML><![CDATA[[A4]
+<div class="giftList-searchList">
+  <fieldset>
+    <label class="w-30 to-left">
+      <h5>Tipo de Lista:</h5>
+      <span class="form">[A2]</span>
+    </label>
+    <label class="w-30 to-left">
+      <h5>Nome dos Noivos:</h5>
+      <span class="form">[A0]</span>
+    </label>
+    <label class="w-30 to-left">
+      <h5>Data do Evento:</h5>
+      <span class="form">[A1]</span>
+    </label>
+    <label class="w-10 to-right align-right">
+      <h5>&nbsp;</h5>
+      <a href="[A3]" class="bt-small-primary">buscar</a>
+    </label>
+  </fieldset>
+</div>]]></ListaPresenteBuscaHTML><MensagemAlertaListaPresenteBuscaHTML><![CDATA[<div class="alert">
+  <strong>[B0]</strong>
+    <ul>
+      <repeticao:erro>
+        <li>[B1]</li>
+      </repeticao:erro>
+    </ul>  
+</div>]]></MensagemAlertaListaPresenteBuscaHTML></ListaPresenteBusca></ListaPresenteBuscas></controles></page>

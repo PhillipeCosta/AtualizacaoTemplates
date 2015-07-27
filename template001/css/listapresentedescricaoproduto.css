@@ -1,0 +1,258 @@
+.produto_baixo{
+    clear: both;
+    padding-top: 20px;
+}
+
+.produto_esquerda{
+    float: left;
+}
+
+.produto_esquerda .produto_foto{
+    height: auto;
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.produto_esquerda .produto_mini_fotos{
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.produto_esquerda .produto_mini_fotos img{
+    margin: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.produto_direita{
+    float: left;
+    padding: 10px 0 0 20px;
+    width: 400px;
+}
+
+
+.nome_produto h2 {
+    color: #6c9a70;
+    font-size: 21px;
+    padding: 0 0 5px;
+}
+
+
+.produto_codigo {
+    color: #CCCCCC;
+    font-size: 12px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+/*PreÃ§o do Produto*/
+
+.produto_direita .produto_preco_antigo{
+    display:block;
+    padding-left: 10px;
+}
+
+.produto_direita .preco_de {
+    color: #0E4EAD;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.produto_direita .preco_antigo_preco {
+    color: #0E4EAD;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.produto_direita .produto_preco{
+    margin-top: 30px;
+}
+
+.produto_direita .produto_preco .produto_preco_total{
+    padding: 7px 0 10px 10px;
+}
+
+.preco_por_titulo {
+    font-size: 19px;
+    color: #323232;
+    font-weight: bold;
+}
+
+.produto_direita .produto_preco .produto_preco_total .preco_de {
+    font-size: 11px;
+    color: #545454;
+}
+.produto_direita .produto_preco .produto_preco_total .preco_de_preco {
+    font-size: 11px;
+    color: #545454;
+}
+
+.preco_por {
+    font-size: 26px;
+    color: #6c9a70;
+    font-weight: bold;
+}
+
+.preco_por_texto {
+    font-size: 11px;
+    font-weight: normal;
+    display: block;
+    color: #323232;
+    margin-top: 3px;
+}
+
+.produto_direita .produto_preco .produto_preco_parcelado {
+    color: #fb6900;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.produto_direita .produto_preco .produto_preco_parcelado .preco_parcelado_titulo {
+    font-size: 18px;
+    color: #323232;
+}
+
+.preco_parcelado{
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c9a70;
+}
+
+.produto_direita .produto_preco .produto_preco_parcelado .preco_parcelado_texto{
+    font-size: 11px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.produto_direita .produto_preco .produto_bt_parcelamento{
+    padding-left: 10px;
+}
+
+.produto_direita .produto_preco .produto_bt_parcelamento img{
+    margin: 2px 0;
+}
+
+/*Abas*/
+
+
+ul.produto_abas{
+    list-style: none;
+    *height: 29px;
+    overflow: hidden;
+}
+
+ul.produto_abas li{
+    float: left;
+    margin-right: 5px;
+}
+
+ul.produto_abas li a{
+    display: block;
+    background: #ccc;
+    padding-left: 15px;
+    line-height:28px;
+    color: #062A59;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+ul.produto_abas li a span{
+    display: block;
+    background: #ccc;
+    padding: 0 15px 0 0px;
+    line-height: 28px;
+}
+
+ul.produto_abas a.selecionado{
+    background: #6c9a70;
+}
+
+ul.produto_abas a.selecionado span{
+    background: #6c9a70;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/*DecriÃ§Ã£o*/
+
+.descricao{
+    margin: 20px auto 20px auto;
+    text-align: left;
+}
+
+.descricao .descricao_texto{
+    background: #fff;
+    clear: both;
+    font-size: 12px;
+    color:#0a0a0a;
+    border-top: 3px solid #6c9a70;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.descricao .descricao_texto_conteudo{
+    padding: 10px;
+}
+
+.descricao .descricao_texto_conteudo ul, .descricao .descricao_texto_conteudo ol{
+    margin: 20px;
+}
+
+.produto_direita .produto_secundario{
+    border: 1px solid #CBE4FE;
+    margin: 20px 0;
+    padding: 10px;
+    background: #ECFCFF;
+}
+
+.produto_direita .produto_secundario h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #062A59;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.produto_direita .produto_secundario .produto_preco_antigo{
+    color: #666;
+    font-size: 11px;
+    padding: 5px 0;
+    text-decoration: line-through;
+}
+
+.produto_direita .produto_secundario .preco_por_titulo{
+    color: #062A59;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.produto_direita .produto_secundario .preco_por{
+    color: #FB6900;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.produto_direita .produto_secundario .preco_por_texto{
+    color: #062A59;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 3px 0;
+}
+
+.produto_direita .produto_secundario .preco_parcelado_titulo{
+    color: #062A59;
+    font-size: 12px;
+}
+
+.produto_direita .produto_secundario .preco_parcelado{
+    color: #FB6900;
+    font-size: 14px;
+    font-weight: bold;
+}

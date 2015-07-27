@@ -1,0 +1,711 @@
+<fieldset>
+  <h1>Geral</h1>
+  <table>     
+    <tr>
+      <td><label>FavIcon</label></td>
+      <td>
+        <input type="file" name="main_faviIcon" value="favicon.ico" data-max-width="16" data-max-height="16" data-max-weight="16384" />
+        <small>Tamanho recomendado: 16x16px</small>
+      </td>
+    </tr>          
+    <tr>
+      <td><label>Exibir banners de exemplo</label></td>
+      <td>
+        <input type="checkbox" name="main_sampleBanner" value="true" />
+      </td>
+    </tr>    
+    <tr>
+      <td><label>Cor de fundo da loja</label></td>
+      <td>
+        <input type="text" name="main_backgroundColor" class="color" value="#f2f2f2"/>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Cor de fundo do conteúdo</label></td>
+      <td>
+        <input type="text" name="main_container_backgroundColor" class="color" value="#f2f2f2"/>
+      </td>
+    </tr>    
+    <tr>
+      <td><label>Tamanho de fonte padrão</label></td>
+      <td>
+        <select name="main_fontSize">
+          <option value="10px">10px</option>
+          <option value="12px">12px</option>
+          <option value="14px" selected>14px</option>
+        </select>        
+      </td>
+    </tr> 
+    <tr>
+      <td><label>Cor de texto e links padrões</label></td>
+      <td>
+        <input type="text" name="main_color" class="color" value="#333"/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h2>Página de confirmação do pedido </h2>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Script para o banner do Ebit</label></td>
+      <td>
+        <textarea rows="50" cols="4" name="main_ebitBanner" style="width: 400px; height: 100px;"/>
+      </td>
+    </tr> 
+    <tr>
+      <td colspan="2">
+        <h2>Orçamento</h2>
+      </td>
+    </tr>  
+    <tr>
+      <td><label>Mensagem página de orçamento</label></td>
+      <td>
+        <textarea rows="50" cols="4" name="quoterequest_info" style="width: 400px; height: 100px;"/>
+      </td>
+    </tr>     
+  </table>
+</fieldset>   
+<fieldset>
+  <h1>Cabeçalho</h1>
+  <table>
+    <tr> 
+     <td><label>Cor sólida como fundo</label></td> 
+      <td>
+        <input type="text" name="header_backgroundColor" class="color" value="#8d8d8d"/>
+      </td>     
+    </tr> 
+    <tr>
+      <td><label>Imagem como fundo da loja</label></td>
+      <td>
+        <input type="file" name="header_background-custom" value="headerBackground.png" />
+      </td>
+    </tr>
+    <tr>
+      <td><label>Imagem da marca</label></td>
+      <td>
+        <input type="file" name="header_logoImage" value="logo_custom.png" data-max-width="200" data-max-height="70" data-max-weight="173056" />
+        <small>Tamanho recomendado: 200x70px</small>
+      </td>
+    </tr>  
+    <tr> 
+     <td><label>Cor de fundo para marca <i>(Versão mobile)</i></label></td> 
+      <td>
+        <input type="text" name="header_logo_backgroundColor" class="color" value="#373737"/>
+      </td>     
+    </tr>    
+    <tr> 
+     <td><label>Cor do texto e icone no campo de busca</label></td> 
+      <td>
+        <input type="text" name="header_search_color" class="color" value="#d0d0d0"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor de fundo no campo de busca</label></td> 
+      <td>
+        <input type="text" name="header_search_backgroundColor" class="color" value="#fff"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor de fundo do menu acesso rápido</label></td> 
+      <td>
+        <input type="text" name="header_navBar_backgroundColor" class="color" value="#373737"/>
+      </td>     
+    </tr>  
+    <tr> 
+     <td><label>Cor do texto do menu acesso rápido</label></td> 
+      <td>
+        <input type="text" name="header_navBar_color" class="color" value="#fff"/>
+      </td>     
+    </tr> 
+    <tr>
+      <td colspan="2"><h2>Mini-carrinho</h2></td>
+    </tr>   
+    <tr> 
+     <td><label>Cor texto com a quantidade</label></td> 
+      <td>
+        <input type="text" name="header_miniCart_color" class="color" value="#fff"/>
+      </td>     
+    </tr> 
+    <tr>
+      <td><label>Imagem do mini-carrinho</label></td>
+      <td>
+        <input type="file" name="header_miniCartImage" value="bullet_bag.png" />
+        <small>Tamanho recomendado: 176x56px</small>
+      </td>
+    </tr> 
+    <tr>
+      <td><label>Imagem do mini-carrinho <i>(Versão mobile)</i></label></td>
+      <td>
+        <input type="file" name="header_miniCartImage2" value="bullet_bag2.png" />
+        <small>Tamanho recomendado: 97x56px</small>
+      </td>
+    </tr>  
+    <tr>
+      <td><label>Cor de fundo para exibição do mini carrinho</label></td>
+      <td>
+        <input type="text" name="header_miniCartContainer_backgroundColor" class="color" value="#9d9c9c"/>
+      </td>
+    </tr> 
+    <tr>
+      <td><label>Cor do texto para informações do produto no mini carrinho</label></td>
+      <td>
+        <input type="text" name="header_miniCartContainer_color" class="color" value="#fff"/>
+      </td>
+    </tr> 
+    <tr>
+      <td><label>Cor de fundo para botão "ir para o carrinho"</label></td>
+      <td>
+        <input type="text" name="header_goCart_backgroundColor" class="color" value="#33302d"/>
+      </td>
+    </tr> 
+    <tr>
+      <td><label>Cor do texto para botão "ir para o carrinho"</label></td>
+      <td>
+        <input type="text" name="header_goCart_color" class="color" value="#fff"/>
+      </td>
+    </tr>                                                   
+  </table>
+</fieldset>
+<fieldset>
+  <h1>Cabeçalho Checkout</h1>
+  <table>
+    <tr> 
+        <td><label>Cor de fundo</label></td>
+        <td><input type="text" name="headerCheckout_backgroundColor" class="color" value="#373737"/></td>
+    </tr>
+    <tr> 
+        <td><label>Cor do texto para página visualizada</label></td>
+        <td><input type="text" name="headerCheckoutActive_color" class="color" value="#97b714"/></td>
+    </tr>    
+    <tr> 
+        <td><label>Cor do texto padrão</label></td>
+        <td><input type="text" name="headerCheckout_color" class="color" value="#fff"/></td>
+    </tr>      
+  </table>
+</fieldset>
+
+<fieldset>
+  <h1>Menu Horizontal</h1>
+  <table>
+    <tr>
+      <td colspan="2"><h2>Versão Desktop</h2></td>
+    </tr>
+    <tr> 
+     <td><label>Cor de fundo</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_backgroundColor" class="color" value="#fff"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor do título do departamento</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_color" class="color" value="#373737"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor da borda para menu selecionado</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_borderColor" class="color" value="#749810"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor de fundo para dropdown</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_children_backgroundColor" class="color" value="#000"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor do texto para dropdown</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_children_color" class="color" value="#fff"/>
+      </td>     
+    </tr> 
+    <tr>
+      <td colspan="2"><h2>Versão Mobile</h2></td>
+    </tr>                        
+    <tr> 
+     <td><label>Cor de fundo</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBar_backgroundColor" class="color" value="#373737"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor do texto "Menu"</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBar_color" class="color" value="#fff"/>
+      </td>     
+    </tr>
+    <tr> 
+     <td><label>Cor de fundo do ícone de menu</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBarToggle_backgroundColor" class="color" value="#fff"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor do texto do ícone de menu</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBarToggle_color" class="color" value="#888"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor de fundo para o menu aberto</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBarCollapse_backgroundColor" class="color" value="#f2f2f2"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor do texto para a lista de menu</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBarCollapse_color" class="color" value="#777"/>
+      </td>     
+    </tr> 
+    <tr> 
+     <td><label>Cor de fundo para a caixa de pesquisa</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBarCollapse_search_backgroundColor" class="color" value="#373737"/>
+      </td>     
+    </tr>  
+    <tr> 
+     <td><label>Cor de fundo para o campo de pesquisa</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBarCollapse_searchInput_backgroundColor" class="color" value="#fff"/>
+      </td>     
+    </tr>  
+    <tr> 
+     <td><label>Cor do texto para o campo de pesquisa</label></td> 
+      <td>
+        <input type="text" name="navHorizontal_navBarCollapse_searchInput_color" class="color" value="#555"/>
+      </td>     
+    </tr>                                    
+  </table>
+</fieldset>
+<fieldset>
+  <h1>Títulos</h1>
+  <table>
+    <tr>
+      <td colspan="2"><h2>Títulos principais</h2></td>
+    </tr>
+    <tr> 
+      <td><label>Cor de fundo</label></td>
+      <td>
+        <input type="text" name="heading_primary_backgroundColor" class="color" value="#373737"/>        
+      </td>
+    </tr>
+    <tr> 
+      <td><label>Cor do texto</label></td>
+      <td>
+        <input type="text" name="heading_primary_color" class="color" value="#fff"/>      
+      </td>
+    </tr> 
+    <tr>
+      <td colspan="2"><h2>Títulos Rodapé</h2></td>
+    </tr>
+    <tr> 
+      <td><label>Cor do texto</label></td>
+      <td>
+        <input type="text" name="heading_footer_color" class="color" value="#807454"/>      
+      </td>
+    </tr>        
+  </table>
+</fieldset>
+<fieldset>
+  <h1>Vitrine</h1>
+  <table>
+    <tr>
+      <td><label>Vitrine Utilizada na home</label></td>
+      <td><select name="collection_primary" class="collection" /></td>
+    </tr>
+    <tr>
+      <td><label>Cor de fundo para informações do produto</label></td>
+      <td><input type="text" name="collection_info_backgroundColor" class="color" value="#000"/></td>
+    </tr>
+    <tr>
+      <td><label>Cor do texto para informações do produto</label></td>
+      <td><input type="text" name="collection_info_color" class="color" value="#fff"/></td>
+    </tr>
+    <tr>
+      <td><label>Cor de fundo para o preço</label></td>
+      <td><input type="text" name="collection_price_backgroundColor" class="color" value="#fff"/></td>
+    </tr> 
+    <tr>
+      <td><label>Cor do texto para o preço</label></td>
+      <td><input type="text" name="collection_price_color" class="color" value="#373737"/></td>
+    </tr>    
+    <tr>
+      <td><label>Cor de fundo para o preço ajustado</label></td>
+      <td><input type="text" name="collection_adjustedPrice_backgroundColor" class="color" value="#97b714"/></td>
+    </tr> 
+    <tr>
+      <td><label>Cor do texto para o preço ajustado</label></td>
+      <td><input type="text" name="collection_adjustedPrice_color" class="color" value="#fff"/></td>
+    </tr> 
+    <tr>
+      <td colspan="2">
+        <h2>Caixa para filtrar produtos</h2>
+      </td>
+    </tr>   
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="collection_filter_backgroundColor" class="color" value="#373737"/></td>
+    </tr>
+    <tr>
+      <td><label>Cor dos textos</label></td>
+      <td><input type="text" name="collection_filter_color" class="color" value="#fff"/></td>
+    </tr> 
+    <tr>
+      <td><label>Cor da borda para o campo de filtrar por preço</label></td>
+      <td><input type="text" name="collection_filterSelect_borderColor" class="color" value="#fff" /></td>
+    </tr> 
+    <tr>
+      <td><label>Cor de fundo para o campo de filtrar por preço</label></td>
+      <td><input type="text" name="collection_filterSelect_backgroundColor" class="color" value="#fff" /></td>
+    </tr> 
+    <tr>
+      <td><label>Cor do texto para o campo de filtrar por preço</label></td>
+      <td><input type="text" name="collection_filterSelect_color" class="color" value="#373737" /></td>
+    </tr> 
+    <tr>
+      <td colspan="2">
+        <h2>Campos filtrados</h2>
+      </td>
+    </tr>  
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="collection_filterUsed_backgroundColor" class="color" value="#373737"/></td>
+    </tr>
+    <tr>
+      <td><label>Cor dos textos</label></td>
+      <td><input type="text" name="collection_filterUsed_color" class="color" value="#fff"/></td>
+    </tr> 
+    <tr>
+      <td colspan="2">
+        <h2>Paginação</h2>
+      </td>
+    </tr>  
+    <tr>
+      <td><label>Cor da borda</label></td>
+      <td><input type="text" name="pagination_borderColor" class="color" value="#dddddd"/></td>
+    </tr>
+    <tr>
+      <td><label>Cor do fundo</label></td>
+      <td><input type="text" name="pagination_backgroundColor" class="color" value="#ffffff"/></td>
+    </tr>    
+    <tr>
+      <td><label>Cor dos textos</label></td>
+      <td><input type="text" name="pagination_color" class="color" value="#333333"/></td>
+    </tr>
+    <tr>
+      <td><label>Cor da borda selecionada</label></td>
+      <td><input type="text" name="pagination_active_borderColor" class="color" value="#373737"/></td>
+    </tr>
+    <tr>
+      <td><label>Cor do fundo selecionado</label></td>
+      <td><input type="text" name="pagination_active_backgroundColor" class="color" value="#373737"/></td>
+    </tr>    
+    <tr>
+      <td><label>Cor do texto selecionado</label></td>
+      <td><input type="text" name="pagination_active_color" class="color" value="#ffffff"/></td>
+    </tr>  
+  </table>
+</fieldset>
+<fieldset>
+  <h1>Rodapé</h1>
+  <table>
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="footer_backgroundColor" class="color" value="#ececec"/></td>
+    </tr>  
+    <tr>
+      <td><label>Cor padrão dos texto</label></td>
+      <td><input type="text" name="footer_color" class="color" value="#777"/></td>
+    </tr> 
+    <tr>
+      <td colspan="2"><h2>Selos de Segurança</h2></td>
+    </tr>
+    <tr>
+      <td>
+        <label style="margin-right: 2px;">Ebit</label><small>(Código do selo)</small>
+      </td>
+      <td>
+       <textarea rows="50" cols="4" name="footer_ebit" style="width: 400px; height: 100px;"/>
+      </td>      
+    </tr>     
+    <tr>
+      <td>
+        <label style="margin-right:2px;">Site Blindado</label><small>(Código do selo)</small>
+      </td>
+      <td>
+       <textarea rows="50" cols="4" name="footer_blindado" style="width:400px;height:100px;"/>
+      </td>      
+    </tr> 
+    <tr>
+      <td>
+        <label style="margin-right: 2px;">Thawte</label><small>(Insira a url segura da sua loja)</small>
+      </td>
+      <td>
+       <input type="text" name="footer_thawte" />
+      </td>      
+    </tr>    
+    <tr>
+      <td>
+        <label style="margin-right: 2px;">FControl</label><small>(Exibir selo)</small>
+      </td>
+      <td>
+        <input type="checkbox" name="footer_fControl" value="true" /> 
+      </td>    
+    </tr>
+    <tr>
+      <td>
+        <label style="margin-right:2px;">HTML para selo personalizado</label><small>(Código do(s) selo(s))</small>
+      </td>
+      <td>
+       <textarea rows="50" cols="4" name="footer_custom_seal" style="width:400px;height:100px;"/>
+      </td>      
+    </tr>                
+    <tr>
+      <td colspan="2">
+       <h2>Newsletter</h2>
+      </td>
+    </tr>   
+    <tr>
+      <td><label>Cor da borda</label></td>
+      <td><input type="text" name="footer_newsletter_borderColor" class="color" value="#717171"/></td>
+    </tr>   
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="footer_newsletter_backgroundColor" class="color" value="#fff"/></td>
+    </tr>
+    <tr>
+      <td><label>Cor do texto</label></td>
+      <td><input type="text" name="footer_newsletter_color" class="color" value="#c6c6c6"/></td>
+    </tr>   
+    <tr>
+      <td><label>Cor de fundo do icone</label></td>
+      <td><input type="text" name="footer_newsletterIcon_backgroundColor" class="color" value="#717171"/></td>
+    </tr>   
+    <tr>
+      <td><label>Cor do icone</label></td>
+      <td><input type="text" name="footer_newsletterIcon_color" class="color" value="#fff"/></td>
+    </tr> 
+    <tr>
+      <td colspan="2">
+       <h2>Redes sociais</h2>
+      </td>
+    </tr> 
+    <tr>
+      <td><label>Exibir redes sociais</label></td>
+      <td>
+        <input type="checkbox" name="footer_facebook" value="true" />&nbsp;Facebook&nbsp;&nbsp;
+        <input type="checkbox" name="footer_twitter" value="true" />&nbsp;Twitter&nbsp;&nbsp;
+        <input type="checkbox" name="footer_pinterest" value="true" />&nbsp;Pinterest&nbsp;&nbsp;
+        <input type="checkbox" name="footer_instagram" value="true" />&nbsp;Instagram&nbsp;&nbsp;
+        <input type="checkbox" name="footer_youtube" value="true" />&nbsp;Youtube&nbsp;&nbsp;
+        <input type="checkbox" name="footer_google" value="true" />&nbsp;Google&nbsp;&nbsp;
+      </td>
+    </tr>                        
+    <tr>
+      <td><label>Cor de fundo para os icones</label></td>
+      <td><input type="text" name="footer_social_backgroundColor" class="color" value="#aaa"/></td>
+    </tr>  
+    <tr>
+      <td><label>Cor do icone</label></td>
+      <td><input type="text" name="footer_social_color" class="color" value="#ececec"/></td>
+    </tr>    
+    <tr>
+      <td><label>URl para Facebook</label></td>
+      <td><input type="text" name="footer_facebook_url" /></td>
+    </tr>   
+    <tr>
+      <td><label>URl para twitter</label></td>
+      <td><input type="text" name="footer_twitter_url" /></td>
+    </tr>                                        
+    <tr>
+      <td><label>URl para Pinterest</label></td>
+      <td><input type="text" name="footer_pinterest_url" /></td>
+    </tr>                                     
+    <tr>
+      <td><label>URl para Instagram</label></td>
+      <td><input type="text" name="footer_instagram_url" /></td>
+    </tr>                            
+    <tr>
+      <td><label>URl para Youtube</label></td>
+      <td><input type="text" name="footer_youtube_url" /></td>
+    </tr>                            
+    <tr>
+      <td><label>URl para Google</label></td>
+      <td><input type="text" name="footer_google_url" /></td>
+    </tr> 
+    <tr>
+      <td><label>Script Like Box Facebook</label></td>
+      <td><textarea rows="50" cols="4" name="footer_scriptFacebook_text" /></td>
+    </tr>     
+    <tr>
+      <td colspan="2"><h2>Informações da empresa</h2></td>
+    </tr>                           
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="footer_secondary_backgroundColor" class="color" value="#e4e4e4"/></td>
+    </tr>  
+    <tr>
+      <td><label>Cor padrão dos texto</label></td>
+      <td><input type="text" name="footer_secondary_color" class="color" value="#999"/></td>
+    </tr> 
+    <tr>
+      <td><label>Informações da loja</label></td>
+      <td><textarea rows="50" cols="4" name="footer_secondary_text" /></td>
+    </tr>        
+  </table>  
+</fieldset>
+<fieldset>
+  <h1>Botões</h1>
+  <table>
+    <tr>
+      <td colspan="2"><h2>Botões principais</h2></td>
+    </tr>
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="btn_primary_backgroundColor" class="color" value="#97b714" /></td>
+    </tr>
+    <tr>
+      <td><label>Cor do texto</label></td>
+      <td><input type="text" name="btn_primary_color" class="color" value="#fff" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><h2>Botões secundários</h2></td>
+    </tr>
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="btn_secondary_backgroundColor" class="color" value="#ababab" /></td>
+    </tr>
+    <tr>
+      <td><label>Cor do texto</label></td>
+      <td><input type="text" name="btn_secondary_color" class="color" value="#fff" /></td>
+    </tr>    
+    <tr>
+      <td colspan="2"><h2>Botão comprar</h2></td>
+    </tr>
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="btn_buy_backgroundColor" class="color" value="#749810" /></td>
+    </tr>
+    <tr>
+      <td><label>Cor do texto</label></td>
+      <td><input type="text" name="btn_buy_color" class="color" value="#fff" /></td>
+    </tr>        
+  </table>
+</fieldset>
+<fieldset>
+  <h1>Formulários</h1>
+  <table>
+    <tr>
+      <td><label>Cor da borda</label></td>
+      <td>
+        <input type="text" name="form_borderColor" class="color" value="#373737" />
+      </td>      
+    </tr>
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td>
+        <input type="text" name="form_backgroundColor" class="color" value="#fff" />
+      </td>      
+    </tr>    
+    <tr>
+      <td><label>Cor do texto</label></td>
+      <td>
+        <input type="text" name="form_color" class="color" value="#373737" />
+      </td>      
+    </tr>    
+  </table>
+</fieldset>
+<fieldset>
+  <h1>Produtos</h1>
+  <table>
+    <tr>
+      <td><label>Cor para nome do produto</label></td>
+      <td><input type="text" name="product_name_color" class="color" value="#686868" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><h2>Campo para os preços</h2></td>
+    </tr>
+    <tr>
+      <td><label>Cor de fundo para a caixa de informações</label></td>
+      <td><input type="text" name="product_boxPrice_backgroundColor" class="color" value="#eaeaea" /><</td>
+    </tr>
+    <tr>
+      <td><label>Cor padrão dos texto</label></td>
+      <td><input type="text" name="product_boxPrice_color" class="color" value="#373737" /></td>
+    </tr>    
+    <tr>
+      <td><label>Cor para o preço</label></td>
+      <td><input type="text" name="product_adjustedPrice_color" class="color" value="#807454" /><</td>
+    </tr> 
+    <tr>
+      <td colspan="2"><h2>Variantes</h2></td>
+    </tr>  
+    <tr>
+      <td><label>Cor de fundo para a caixa de variantes</label></td>
+      <td><input type="text" name="product_variants_backgroundColor" class="color" value="#fff" /><</td>
+    </tr>
+    <tr>
+      <td><label>Cor da borda para a caixa de variantes</label></td>
+      <td><input type="text" name="product_variants_borderColor" class="color" value="#dde4e8" /><</td>
+    </tr>  
+    <tr>
+      <td colspan="2"><h2>Simular frete</h2></td>
+    </tr>              
+    <tr>
+      <td><label>Cor de fundo</label></td>
+      <td><input type="text" name="product_shipping_backgroundColor" class="color" value="#e8e8e8" /><</td>
+    </tr> 
+    <tr>
+      <td><label>Compartilhamento</label><small>Selecione ao lados quais botões de compartilhamento você deseja exibir na página do produto.</small></td>
+      <td>
+      <input type="checkbox" name="product_shareFacebook_enabled" value="true"/> Facebook
+      </td>
+      <td>
+      <input type="checkbox" name="product_shareTwitter_enabled" value="true"/> Twitter
+      </td>
+      <td>
+      <input type="checkbox" name="product_shareGooglePlus_enabled" value="true"/> Google+
+      </td>
+    </tr>         
+  </table>
+<h1>Avançado</h1>
+  <table>
+  <tr>
+      <td>
+    <small>Insira no campo abaixo o código CSS que desejar para alterar cores, posições e elementos. Essa opção só deve ser usada por quem possui conhecimento em CSS.</small>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    CSS<br/>
+        <textarea name="advanced_css" rows="50" cols="4" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>    
+    <tr>
+      <td>
+        <small>Insira nos campos abaixo o códigos javascript que você deseja que apareçam em todas as páginas. É necessário colocar as tags &lt;script&gt;&lt;/script&gt; quando for códigos em javascript.</small>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        &lt;head&gt;<br/>
+        <textarea name="advanced_script_headBottom" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Após o &lt;body&gt; <br/>
+        <textarea name="advanced_script_bodyTop" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Antes do &lt;/body&gt;<br/>
+        <textarea name="advanced_script_bodyBottom" style="width: 950px; height: 100px;"></textarea>
+      </td>
+    </tr>
+  </table>      
+</fieldset>

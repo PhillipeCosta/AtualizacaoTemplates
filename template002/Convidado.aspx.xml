@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><Links><Link ID="identification"><Destino value="DestinoAtual" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Já sou cliente e sei meu login e senha" /><UsarHTTPS value="True" /></Link></Links><Convidados><Convidado ID="guest"><LoginConvidadoHTML><![CDATA[@using (Html.BeginForm()) { 
+  <div class="col-md-6 form form-guest main-overflow main-clear">
+    <h5 class="main-padding">// Dados cadastrais</h5>
+    <div class="form form-check form-checkPerson text-center main-clear main-overflow">
+      <label class="col-md-3 text-right main-clearPadding main-padding">&nbsp;</label>
+      <span class="col-md-7">
+        <label class="col-md-6 main-clearPadding">
+          <span class="pull-left">
+          @Html.InputRadio("Customer.CustomerType", "Person").AddClass("radio").TabIndex("1")
+          </span>
+          <span class="pull-left" style="padding-top: 5px;">Pessoa Física</span>
+        </label>
+              <label class="col-md-6 main-clearPadding">
+                <span class="pull-left">
+                    @Html.InputRadio("Customer.CustomerType", "Company").AddClass("radio").TabIndex("2")
+                  </span>
+                  <span class="pull-left" style="padding-top: 5px;">Pessoa Jurídica</span>
+              </label>      
+          </span> 
+    </div>
+    <div class="form parent-validation main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Nome completo</label>
+      <span class="col-md-7">
+        @Html.InputText("Customer.Name").Maxlength("100").TabIndex("3")
+      </span>
+    </div>
+    <div class="form parent-validation main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding  documentid">CPF</label>
+      <span class="col-md-6" style="padding-right: 0;">
+        @Html.InputText("Customer.DocumentId").Maxlength("18").TabIndex("4")
+      </span>
+      <span class="pull-left main-padding">
+        <small class="exampledocumentid">(000.000.000-00)</small>       
+      </span>
+    </div>  
+    <div class="form parent-validation custom-clear custom-overflow custom-paddingV5 regionalDocumentId">
+      <label class="col-md-3 text-right custom-clearPadding custom-paddingV5">RG</label>
+      <span class="col-md-6" style="padding-right: 0;">
+        @Html.InputText("Customer.RegionalDocumentId").Maxlength("18")
+      </span>
+    </div>     
+    <div class="form parent-validation main-clear main-overflow required stateRegistration" style="display: none;">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Inscrição estadual</label>
+      <span class="col-md-7">
+        @Html.InputText("Customer.RegionalDocumentId").Maxlength("20").TabIndex("5")
+      </span>
+      <span class="pull-left" style="padding-top: 8px;">
+        <input id="chkIsentoInscricaoEstadual" type="checkbox" class="pull-left" style="width: 15px;" /> <span class="pull-left">Isento</span>
+      </span>
+    </div>
+    <div class="form parent-validation main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Telefone Principal</label>
+      <span class="col-md-1 text-center" style="padding-right: 0">
+        @Html.InputText("Customer.PhoneAreaCode").Maxlength("2").AddClass("txtDDD").TabIndex("5")
+      </span>
+      <span class="col-md-2 main-clearPadding">
+        @Html.InputText("Customer.PhoneNumber").Maxlength("10").TabIndex("6")
+      </span>
+    </div>                  
+    <div class="form parent-validation main-clear main-overflow">
+      <label class="col-md-3 text-right main-clearPadding main-padding">Telefone Alternativo</label>
+      <span class="col-md-1 text-center" style="padding-right: 0;">
+        @Html.InputText("Customer.PhoneAreaCodeAlternative").Maxlength("2").AddClass("txtDDD").TabIndex("7")
+      </span>
+      <span class="col-md-2 main-clearPadding">
+        @Html.InputText("Customer.PhoneNumberAlternative").Maxlength("10").TabIndex("8")
+      </span>
+      <span class="pull-left main-padding">
+        <small>(opcional)</small>
+      </span>
+    </div>  
+    <div class="form parent-validation main-clear main-overflow required">
+      <label class="col-md-3 text-right main-clearPadding main-padding">E-mail</label>
+      <span class="col-md-7">
+        @Html.InputText("Customer.Email").Maxlength("100").TabIndex("9")
+      </span>
+    </div>  
+    <div class="form parent-validation main-clear main-overflow">
+      <label class="col-md-3 text-right main-clearPadding main-padding">&nbsp;</label>
+      <span class="col-md-7">
+          <span class="col-md-1 pull-left main-clearPadding">@Html.InputCheckBox("Customer.AcceptsMarketing")</span>
+          <span class="col-md-11">@Html.LabelText("Customer.AcceptsMarketing", "Gostaria de receber emails com lançamentos e promoções")</span>
+      </span>
+    </div>        
+  </div>
+  <div class="col-md-6 form form-guest main-overflow">
+    @if(Model.IsGiftList) {
+      <h5>// Onde entregamos?</h5>
+      <div class="form text-center main-clear main-overflow">
+        <strong>Este produto vai ser entregue para:</strong>
+        <p>@Model.ShippingAddresses.RecipientName</p>
+        <p>@Model.ShippingAddresses.Street, @Model.ShippingAddresses.StreetNumber</p>
+        <p>@Model.ShippingAddresses.District - @Model.ShippingAddresses.City,@Model.ShippingAddresses.State</p>
+      </div>
+    }else{
+      <h5 class="main-padding">// Dados de entrega</h5>
+      <div class="form cep main-clear main-overflow parent-validation">
+        <label class="col-md-5 text-right main-clearPadding main-padding">Digite primeiro o CEP: </label>
+        <span class="col-md-4" style="padding-right: 0;">
+          @Html.InputText("ShippingAddresses.ZipCode").Maxlength("9").TabIndex("10")
+        </span>
+        <span class="col-md-3 main-clearPadding">
+          <a href="javascript:void(0);" class="bt btn-secondary text-uppercase text-center" style="padding: 6px 11px;">OK</a>
+          <a href="javascript:callSearchZipCode('ShippingAddresses_ZipCode')"><small>(Esqueci meu CEP)</small></a>
+        </span>
+      </div>
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Endereço</label>
+        <span class="col-md-7">
+          @Html.InputText("ShippingAddresses.Street").Maxlength("200").TabIndex("11")
+        </span>
+      </div>
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Número</label>
+        <span class="col-md-7">
+          @Html.InputText("ShippingAddresses.StreetNumber").Maxlength("10").TabIndex("12")
+        </span>
+      </div>  
+      <div class="form parent-validation main-clear main-overflow entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Complemento</label>
+        <span class="col-md-7">
+          @Html.InputText("ShippingAddresses.StreetComplement").Maxlength("50").TabIndex("13")
+        </span>
+        <span class="pull-left main-padding">
+          <small>(opcional)</small>
+        </span>       
+      </div>
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Bairro</label>
+        <span class="col-md-7">
+          @Html.InputText("ShippingAddresses.District").Maxlength("80").TabIndex("14")
+        </span>
+      </div>  
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Cidade</label>
+        <span class="col-md-7">
+          @Html.InputText("ShippingAddresses.City").Maxlength("100").TabIndex("15")
+        </span>
+      </div>  
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Estado</label>
+        <span class="col-md-7">
+          @Html.InputDropdown("ShippingAddresses.State", "States", "Selecione um estado").TabIndex("16")
+        </span>
+      </div>  
+      <div class="form form-check main-clear main-overflow entrega_oculta text-center" id="cobranca">
+        <strong style="display:block;">Este é seu endereço de cobrança?</strong>
+                <label>
+                  <span class="pull-left">
+                      @Html.InputRadio("IsSameBillingAddress", "True").AddClass("radio").TabIndex("17")
+                  </span>
+                    <span class="pull-left" style="padding-top: 5px;">Sim</span>
+                </label>
+                <label>
+                  <span class="pull-left">
+                      @Html.InputRadio("IsSameBillingAddress", "False").AddClass("radio").TabIndex("18")
+                    </span>
+                    <span class="pull-left" style="padding-top: 5px;">Não</span>
+                </label>
+      </div>                          
+    }
+
+      <div class="enderecoCobranca @if (Model.IsGiftList)
+        {
+        @:mostra
+        }
+    ">    
+        <h5 class="main-padding">// Dados de cobrança</h5>
+
+      <div class="form cep main-clear main-overflow parent-validation">
+        <label class="col-md-5 text-right main-clearPadding main-padding">Digite primeiro o CEP: </label>
+        <span class="col-md-4" style="padding-right: 0;">
+          @Html.InputText("Customer.BillingAddress.ZipCode").Maxlength("9").TabIndex("19")
+        </span>
+        <span class="col-md-3 main-clearPadding">
+          <a href="javascript:void(0);" class="bt btn-secondary text-uppercase text-center" style="padding: 6px 11px;">OK</a>
+          <a href="javascript:callSearchZipCode('ShippingAddresses_ZipCode')"><small>(Esqueci meu CEP)</small></a>
+        </span>
+      </div>
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Endereço</label>
+        <span class="col-md-7">
+          @Html.InputText("Customer.BillingAddress.Street").Maxlength("200").TabIndex("20")
+        </span>
+      </div>
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Número</label>
+        <span class="col-md-7">
+          @Html.InputText("Customer.BillingAddress.StreetNumber").Maxlength("10").TabIndex("21")
+        </span>
+      </div>  
+      <div class="form parent-validation main-clear main-overflow entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Complemento</label>
+        <span class="col-md-7">
+          @Html.InputText("Customer.BillingAddress.StreetComplement").Maxlength("50").TabIndex("22")
+        </span>
+        <span class="pull-left main-padding">
+          <small>(opcional)</small>
+        </span>       
+      </div>
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Bairro</label>
+        <span class="col-md-7">
+          @Html.InputText("Customer.BillingAddress.District").Maxlength("80").TabIndex("23")
+        </span>
+      </div>  
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Cidade</label>
+        <span class="col-md-7">
+          @Html.InputText("Customer.BillingAddress.City").Maxlength("100").TabIndex("24")
+        </span>
+      </div>  
+      <div class="form parent-validation main-clear main-overflow required entrega_oculta">
+        <label class="col-md-3 text-right main-clearPadding main-padding">Estado</label>
+        <span class="col-md-7">
+          @Html.InputDropdown("Customer.BillingAddress.State", "States", "Selecione um estado").TabIndex("25")
+        </span>
+      </div>          
+      </div>
+  </div>
+  <div class="main-overflow main-clear @if (!Model.IsGiftList)
+    { 
+        @:entrega_oculta
+    } 
+    ">
+    <div class="col-md-6">&nbsp;</div>
+    <div class="col-md-6 main-padding20">
+      <div class="text-center main-overflow main-clear">
+        <a href="javascript:void(0)" class="bt btn-primary text-uppercase text-center" name="enviar" id="enviar">Enviar</a>
+      </div>
+    </div>
+  </div>      
+
+}
+]]></LoginConvidadoHTML></Convidado></Convidados><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

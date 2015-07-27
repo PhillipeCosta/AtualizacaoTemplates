@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CategoriaListas><CategoriaLista ID="CategoriaLista"><Listas><![CDATA[ 	<div class="main-overflow col-md-4 sideMenu">
+      <h4 class="heading-collection"><strong>Encontre sua lista:</strong></h4>
+      <ul class="main-clearPadding main-padding">
+        <repeticao:categorias>
+          <li>
+            <h6>
+              <a href="[A8]" style="display: block;">[A5]</a>
+            </h6>
+          </li>
+        </repeticao:categorias>
+      </ul>
+ 	</div>
+    <div class="main-overflow col-md-8">
+      <h3 class="heading-collection main-padding"><span class="fa fa-list"></span>&nbsp; [A5]</h3>
+      <div class="main-clear main-overflow main-padding20">
+          <ul class="main-clearPadding">
+            <li> > Confira abaixo a lista escolar de acordo com a escolaridade de seus filhos</li>
+            <li> > Clique no nome da lista para ver os produtos. </li>
+          </ul>        
+      </div>
+      <div class="main-clear">
+        <table border="0" cellpadding="0" cellspacing="0" class="table">
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Lista</th>
+                    <th class="text-center">Nº de Produtos</th>
+                    <th class="text-center">Preço Total</th>
+                    <th>Comprar lista</th>
+                </tr>
+            </thead>
+            <tbody>
+              <repeticao:listas>
+                <tr>
+                  <td><a href="[A4]"><img src="[A2]" alt="[A0]" /></a></td>
+                  <td>><a href="[A4]">[A0]</a></td>
+                  <td class="text-center">[A3]</td>
+                  <td class="text-center"><span style="text-decoration:line-through">[A9]</span><br /><strong>[A6]</strong></td>
+                  <td><a href="[A7]" class="bt btn-primary text-uppercase text-center">Comprar lista</a></td>
+                </tr>
+              </repeticao:listas>
+            </tbody>
+        </table>        
+      </div>
+    </div>]]></Listas><ListaVaziaHTML><![CDATA[ 	<div class="main-overflow col-md-4 sideMenu">
+      <h4 class="heading-collection"><strong>Encontre sua lista:</strong></h4>
+      <ul class="main-clearPadding main-padding">
+        <repeticao:categorias>
+          <li>
+            <h6>
+              <a href="[A8]" style="display: block;">[A5]</a>
+            </h6>
+          </li>
+        </repeticao:categorias>
+      </ul>
+ 	</div>
+    <div class="main-overflow col-md-8 main-padding20">
+      <h4 class="heading-collection"><span class="fa fa-list"></span>&nbsp; Categoria vazia</h4>
+    </div>]]></ListaVaziaHTML></CategoriaLista></CategoriaListas></controles></page>

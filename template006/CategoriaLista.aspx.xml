@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CategoriaListas><CategoriaLista ID="CategoriaLista"><Listas><![CDATA[    <div class="custom-overflow ">
+      <h4 class="text-uppercase text-left heading-primary custom-paddingV20"><strong>[A5]</strong></h4>
+      <div class="custom-clear custom-overflow custom-paddingV20">
+          <ul>
+            <li> > Confira abaixo a lista escolar de acordo com a escolaridade de seus filhos</li>
+            <li> > Clique no nome da lista para ver os produtos. </li>
+          </ul>        
+      </div>
+      <div class="custom-clear">
+        <table border="0" cellpadding="0" cellspacing="0" class="table">
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Lista</th>
+                    <th class="text-center">Nº de Produtos</th>
+                    <th class="text-center">Preço Total</th>
+                    <th>Comprar lista</th>
+                </tr>
+            </thead>
+            <tbody>
+              <repeticao:listas>
+                <tr>
+                  <td><a href="[A4]"><img src="?width120&height=120" alt="[A0]" /></a></td>
+                  <td>><a href="[A4]">[A0]</a></td>
+                  <td class="text-center">[A3]</td>
+                  <td class="text-center"><span style="text-decoration:line-through">[A9]</span><br /><strong>[A6]</strong></td>
+                  <td><a href="[A7]" class="btn btn-primary text-uppercase text-center custom-paddingV5 custom-paddingH10">Comprar lista</a></td>
+                </tr>
+              </repeticao:listas>
+            </tbody>
+        </table>        
+      </div>
+    </div>]]></Listas><ListaVaziaHTML><![CDATA[<div class="custom-overflow sideMenu" style="padding-top: 0;">
+  <h3 class="text-left heading-primary" style="padding-bottom: 15px;">Encontre sua lista:</h3>
+  <repeticao:categorias>
+    <h6 class="text-left text-uppercase heading-primary custom-paddingV5 custom-paddingH5"><a href="[A8]"><strong>[A5]</strong></a></h6>
+  </repeticao:categorias>
+</div>
+    <div class="custom-overflow custom-paddingV20">
+      <h4 class="text-uppercase text-left heading-primary custom-paddingV20"><strong>Categoria vazia</strong></h4>
+    </div>
+
+]]></ListaVaziaHTML></CategoriaLista></CategoriaListas><CategoriasListas><CategoriasLista ID="MenuCategoriaLista"><CategoriasListaHTML><![CDATA[<div class="custom-overflow sideMenu" style="padding-top: 0;">
+  <h3 class="text-left heading-primary" style="padding-bottom: 15px;">Encontre sua lista:</h3>
+  <repeticao:categorias>
+    <h6 class="text-left text-uppercase heading-primary custom-paddingV5 custom-paddingH5"><a href="[A1]"><strong>[A0]</strong></a></h6>
+  </repeticao:categorias>
+</div>]]></CategoriasListaHTML></CategoriasLista></CategoriasListas></controles></page>

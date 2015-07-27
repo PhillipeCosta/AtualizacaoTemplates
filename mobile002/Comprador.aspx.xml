@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><IdentificacaoCompradors><IdentificacaoComprador ID="Comprador1"><CssComponente><![CDATA[]]></CssComponente><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="tit_box_full">
+    <h2><span class="pt">Dados Residênciais</span><span class="en">Address Informations</span></h2>
+</div>
+<div class="formulario_conteudo">
+    <div class="formulario">
+        <div class="list obrigatorio cep">
+            <label><span class="tit_label pt">Digite Primeiro o CEP*</span><span class="tit_label en">Type First CEP*</span>
+            [I2] <a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">Esqueceu o CEP?</a>   </label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Nome do Local*</span><span class="tit_label en">Local Name*</span>
+            [I5] <small class="pt">(Casa, Trabalho, etc)</small> <small class="en">(Home, Work, etc)</small></label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_100"><span class="tit_label pt">Endereço*</span><span class="tit_label en">Address*</span>
+            [I7]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_25"><span class="tit_label pt">Número*</span><span class="tit_label en">Number*</span>
+            [I9]</label>
+        </div>
+        <div class="list">
+            <label class="larg_50"><span class="tit_label pt">Complemento</span><span class="tit_label en">Complement</span>
+            [I11]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Bairro*</span><span class="tit_label en">District*</span>
+            [I13]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Cidade*</span><span class="tit_label en">City*</span>
+            [I15]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label><span class="tit_label pt">Estado*</span><span class="tit_label en">State*</span>
+            [I17] </label>
+        </div>
+        <div class="list">
+            <label class="larg_100"><span class="tit_label pt">Pontos de Referência</span><span class="tit_label en">Reference</span>
+            [I19]</label>
+        </div>
+    </div>
+</div>
+<div class="bt_direita">
+    <div class="respiro">
+        <span class="pt"><input type="image" src="imagens/bt_salvar.png?24" alt="Salvar" onclick="[I31]" /> </span>
+        <span class="en"><input type="image" src="imagens/bt_salve.png?24" alt="Save" onclick="[I31]" /> </span>
+    </div>
+</div>]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[<div class="tit_box_full">
+    <h2><span class="pt">Dados Pessoais</span><span class="en">Your Informations</span></h2>
+</div>
+<div class="formulario_conteudo">
+    <div class="info pt">Campos marcados com * são obrigatórios.</div>
+    <div class="info en">Fields with * are required.</div>
+    <div class="formulario">
+        <condicao:tipo_pessoa>
+            <div class="list radio">
+                <label><span class="tit_label">&nbsp;</span></label>
+                [H36][H37]
+            </div>
+        </condicao:tipo_pessoa>
+        <condicao:exibe_pais>
+            <div class="list">
+                <label><span class="tit_label pt">País</span><span class="tit_label en">Country</span>
+                [H1]</label>
+            </div>
+        </condicao:exibe_pais>
+        <div class="list obrigatorio">
+            <label class="larg_100"><span class="tit_label pt">Nome Completo*</span><span class="tit_label en">Complete Name*</span>
+            [H7]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label><span class="tit_label pt">Email*</span><span class="tit_label en">Mail*</span>
+            [H35]</label>
+       </div>
+        <condicao:pessoa_fisica>
+            <div class="list obrigatorio">
+                <label><span class="tit_label pt">Sexo*</span><span class="tit_label en">Gender*</span>
+                [H18]</label>
+            </div>
+            <div class="list obrigatorio">
+                <label class="larg_50"><span class="tit_label pt">Data de Nascimento*</span><span class="tit_label en">Birth Date*</span>
+                [H16] <small class="pt">(DD/MM/AAAA)</small> <small class="en">(DD/MM/YYYY)</small></label>
+            </div>
+            <div class="list">
+                <label><span class="tit_label pt">Estado Civil</span><span class="tit_label en">Marital Status</span>
+                [H23]</label>
+            </div>
+            <div class="list">
+                <label class="larg_50"><span class="tit_label pt">Profissão</span><span class="tit_label en">Occupation</span>
+                [H14]</label>
+            </div>
+            <div class="list obrigatorio">
+                <label class="larg_75"><span class="tit_label pt">CPF*</span><span class="tit_label en">ID Card*</span>
+                [H21] <small class="pt">(XXX.XXX.XXX-XX)</small></label>
+            </div>
+            <div class="list">
+                <label class="larg_50"><span class="tit_label pt">RG</span><span class="tit_label en">RG</span>
+                [H26]</label>
+            </div>
+            <div class="list">
+                <label><span class="tit_label pt">Estado Emissor</span><span class="tit_label en">State Emissor</span>
+                [H28]</label>
+            </div>
+        </condicao:pessoa_fisica>
+
+        <condicao:pessoa_juridica>
+            <div class="list obrigatorio">
+                <label class="larg_75"><span class="tit_label pt">CNPJ*</span><span class="tit_label en">CNPJ*</span>
+                [H31]</label>
+            </div>
+            <div class="list obrigatorio">
+                <label class="larg_50"><span class="tit_label pt">Inscrição Estadual*</span><span class="en">Inscrição Estadual*</span>
+                [H31]</label>
+            </div>
+        </condicao:pessoa_juridica>
+
+        <div class="list obrigatorio">
+            <label class="larg_25"><span class="tit_label pt">Telefone Principal*</span><span class="tit_label en">Phone*</span>
+            [I22]</label> - <label class="larg_50">[I23] <small class="pt">(DDD + XXXX-XXXX)</small> <small class="en">(Country Code + Area Code + Phone)</small></label>
+        </div>
+        <div class="list">
+            <label class="larg_25"><span class="tit_label pt">Telefone Alternativo</span><span class="tit_label en">Alternative Phone</span>
+            [I26]</label> - <label class="larg_50">[I27] <small class="pt">(DDD + XXXX-XXXX)</small> <small class="en">(Country Code + Area Code + Phone)</small></label>
+        </div>
+        <div class="list">
+            <label> <span class="tit_label">&nbsp;</span>
+            <a href="#" onclick="[H40]" class="pt">Clique aqui para alterar sua senha</a> <a href="#" onclick="[H40]" class="en">Click here to change your password</a> </label>
+        </div>
+        <condicao:alterar_senha>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Digite a senha atual*</span><span class="tit_label en">Type de current password*</span>
+            [H39]</label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Digite a nova Senha*</span><span class="tit_label en">Type new Password*</span>
+            [H9] <small class="pt">(Mínimo 4 caracteres)</small> <small class="en">(4 caracters or more.)</small></label>
+        </div>
+        <div class="list obrigatorio">
+            <label class="larg_75"><span class="tit_label pt">Digite Novamente a nova Senha*</span><span class="tit_label en">Type your new Password Again*</span>
+            [H11] </label>
+        </div>
+        </condicao:alterar_senha>
+        <div class="list">
+            <label class="checkbox"><span class="tit_label pt">Gostaria de receber E-mail informando sobre lançamentos e promoções da Loja?</span><span class="tit_label en">It would like to receive email informing on launchings and promotions from the Store?</span>
+           [I28] <span class="pt">Sim</span><span class="en">Yes</span>
+            </label>
+        </div>
+    </div>
+</div>]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<h2 class="titulo_pedido"><img src="imagens/tit_meucadastro.png?24" alt="Meu Cadastro"/></h2>
+<div class="dados_comprador">
+    [A4]
+    [A6]
+    [A7]
+</div>]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div id="erro">
+    <div class="lista_erro">
+        <h2>[F0]</h2>
+        <ul>
+            <repeticao:erro>
+                <li>[F1]</li>
+            </repeticao:erro>
+        </ul>
+    </div>
+</div>]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[<div id="sucesso">
+    <div class="lista_sucesso">
+        <h2>Sucesso</h2>
+    </div>
+</div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[]]></VerificarNovamenteEmailHTML></IdentificacaoComprador><IdentificacaoComprador ID="Comprador" NomeAmigavel="" Visible="True"><FormularioNovoCadastroEnderecoHTML><![CDATA[]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[]]></MensagemAlertaHTML><NovaCompraHTML><![CDATA[]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[]]></VerificarNovamenteEmailHTML></IdentificacaoComprador><IdentificacaoComprador ID="DadosComprador"><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Dados de entrega&nbsp;&nbsp;<span class="fa fa-truck"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div> 
+<div class="ciashop-form">
+<div class="form-group ciashop-overflow text-center" style="width: 100%">
+      <label>&nbsp;</label>
+      &nbsp;
+</div>  
+<div class="form-group col-md-12">
+  <label>CEP <small><a href="javascript:callSearchZipCode('txtCep')">(Esqueceu o CEP?)</a></small></label>
+  [I2]
+</div>   
+<div class="form-group col-md-6">
+  <label>Nome do local *<small> (Ex: casa, apto, etc)</small></label>
+  [I5]
+</div>      
+<div class="form-group col-md-6">
+  <label>Endereço *</label>
+  [I7]
+</div>        
+<div class="form-group col-md-6">
+  <label>Número</label>
+  [I9]
+</div>        
+<div class="form-group col-md-6">
+  <label>Complemento</label>
+  [I11]
+</div>   
+<div class="form-group col-md-6">
+  <label>Bairro *</label>
+  [I13]
+</div>
+<div class="form-group col-md-6">
+  <label>Cidade *</label>
+  [I15]
+</div>   
+<div class="form-group col-md-6">
+  <label>Estado *</label>
+  [I17]
+</div>        
+<div class="form-group col-md-6">
+  <label>Ponto de referência *</label>
+  [I19]
+</div>   
+  <div class="form-group col-md-12">
+     <label>&nbsp;</label>
+     <a href="javascript:void(0);" onclick="[I31]" type="submit" class="btn btn-primary pull-right" style="margin: 0 !important; width: 100%;">Salvar e Continuar</a>  
+  </div>
+</div>]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[      <div class="ciashop-titBox heading-primary">
+        <h2>Dados Pessoais&nbsp;&nbsp;<span class="fa fa-user"></span></h2>      
+        <span class="ciashop-cantoTit"></span>      
+        <hr />
+      </div>
+<div class="ciashop-form">
+<div class="form-group ciashop-overflow text-center col-md-12">
+  <condicao:tipo_pessoa>        
+      <div class="radio-inline">[H36]</div>
+      <div class="radio-inline">[H37]</div>
+  </condicao:tipo_pessoa>
+</div>  
+<div class="form-group col-md-12">
+  <label>Nome Completo *</label>
+  [H7]
+</div>     
+<condicao:pessoa_fisica>               
+  <div class="form-group col-md-6">
+    <label>Data de Nascimento *</label>
+    [H16]
+  </div>
+  <div class="form-group col-md-6">
+    <label>Estado Civil</label>
+    [H23]
+  </div> 
+  <div class="form-group col-md-6">
+    <label>Sexo *</label>
+    [H18]
+  </div>            
+  <div class="form-group col-md-6">
+    <label>CPF *</label>
+    [H21]
+  </div>
+  <div class="form-group col-md-6">
+    <label>RG *</label>
+    [H26]
+  </div> 
+  <div class="form-group col-md-6">
+    <label>Estado Emissor</label>
+    [H28]
+  </div>      
+</condicao:pessoa_fisica>
+<condicao:pessoa_juridica>
+  <div class="form-group col-md-6">
+    <label>CNPJ *</label>
+    [H31]
+  </div> 
+  <div class="form-group col-md-6">
+    <label>Inscrição Estadual *</label>
+    [H33]
+  </div>   
+</condicao:pessoa_juridica>
+<div class="form-group ciashop-overflow col-md-6">
+  <label style="display: block;">Telefone Principal *</label>
+  <div class="col-md-2 ciashop-paddingNone ciashop-formTelDDD">[I22]</div>
+  <div class="col-md-10 ciashop-formTel" style="padding-right: 0;">[I23]</div>
+</div>
+<div class="form-group ciashop-overflow col-md-6">
+  <label style="display: block;">Telefone Secundário</label>
+  <div class="col-md-2 ciashop-paddingNone ciashop-formTelDDD">[I26]</div>
+  <div class="col-md-10 ciashop-formTel" style="padding-right: 0;">[I27]</div>  
+</div> 
+<div class="form-group ciashop-overflow col-md-6">
+    <label>&nbsp;</label>
+    <a href="[H40]" class="pt">Clique aqui para alterar sua senha</a>
+</div>  
+<condicao:senha>
+  <div class="form-group col-md-6">
+    <label>Digite a senha atual *</label>
+    [H39]
+  </div>  
+  <div class="form-group col-md-6">
+    <label>Digite a nova senha *</label>
+    [H9]
+    <span class="help-block">(Mínimo 5 caracteres)</span>  
+  </div>   
+  <div class="form-group col-md-6">
+    <label>Digite novamente a nova senha *</label>
+    [H11]
+    <span class="help-block">(Mínimo 5 caracteres)</span>  
+  </div>     
+</condicao:senha>  
+</div>  ]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<div class="identification form">
+    [A4]
+        <div class="ciashop-form ciashop-formCenter">
+            [A0] [A1] [A2] [A3]
+        </div>
+        [A5]
+        <div>
+            <div class="col-md-6">
+                [A6]
+            </div>
+            <div class="col-md-6">
+                [A7]
+            </div>
+        </div>
+</div>  
+]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[<div class="form-group">
+        <label>Digite seu Email</label>
+      [D1]
+</div>  
+<div class="form-group">
+        <label>Digite sua senha</label>
+      [D15]
+</div>  
+<div class="ciashop-overflow ciashop-clear pull-right">
+  <a href="[D10]"><small>Esqueceu a senha?</small></a>
+  <a href="javascript:void(0);" onclick="[D2]" type="submit" class="btn btn-primary">Acessar</a>
+</div>
+            <h2><a href="[D11]">[D5]</a></h2>
+            <p><a href="[D11]">[D6]</a></p>
+            <h2><a href="[D12]">[D7]</a></h2>
+            <p><a href="[D12]">[D8]</a></p>]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;[F0]</strong>
+  <ul>
+     <repeticao:erro>
+       <li><span class="fa fa-angle-right"></span>[F1]</li>
+     </repeticao:erro>
+  </ul>
+</div>]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[    <div class="alert alert-success">
+         <strong><span class="fa fa-thumbs-up"></span>&nbsp;[J0]</strong>
+    </div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[<div class="form-group">
+        <label>Digite seu email e enviaremos sua senha por email.</label>
+      [E1]
+</div>   
+<div class="ciashop-overflow">
+  <a href="[E2]" type="submit" class="btn btn-primary pull-right">Recuperar senha</a>
+</div>   ]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[<div class="form-group">
+        <label>Digite seu Email</label>
+      [B1]
+</div>  
+<div class="ciashop-overflow ciashop-clear pull-right">
+  <a href="[B9]"><small>Esqueceu a senha?</small></a>
+  <a href="javascript:void(0);" onclick="[B2]" type="submit" class="btn btn-primary">Acessar</a>
+</div>]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[<div class="form-group">
+        <label>Digite seu Email</label>
+      [C1]
+</div>  
+<div class="ciashop-overflow ciashop-clear">
+  <a href="[C10]" type="submit" class="btn btn-primary pull-right">Verificar email novamente</a>
+</div> 
+]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

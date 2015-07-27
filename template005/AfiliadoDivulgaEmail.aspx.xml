@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><AfiliadoDivulgaEmails><AfiliadoDivulgaEmail ID="affiliateEmail"><AfiliadoDivulgaEmailHTML><![CDATA[[A4] [A10]
+<div class="padding-20">
+	<div class="w-45 to-left">    
+        <h3>Nome</h3>
+  	</div>
+	<div class="w-45 to-right">    
+        <h3>E-mail</h3>
+  	</div>  
+    <repeticao:novocadastro>
+        <div class="w-45 to-left form">    
+           <div style="padding: 10px 0;">
+              [A0]
+          </div>
+        </div>
+        <div class="w-45 to-right form">
+          <div style="padding: 10px 0;">
+              [A1]
+           </div>
+        </div>        
+    </repeticao:novocadastro>
+</div>    
+<div class="padding-15 inline-block">
+        <a href="[A2]" class="bt-small-primary to-left" style="margin-right: 10px;">Adicionar email</a>
+        <a href="[A9]" class="bt-small-secundary to-left">Enviar emails</a>
+</div>
+]]></AfiliadoDivulgaEmailHTML><MensagemAlertaAfiliadoEnvioEmailHTML><![CDATA[<div class="padding-15">
+  <div class="alert">
+    <strong>[B0]</strong>
+    <ul>
+      <repeticao:erro>
+        <li>[B1]</li>
+      </repeticao:erro>
+    </ul>
+  </div>
+</div>
+]]></MensagemAlertaAfiliadoEnvioEmailHTML><MensagemSucessoAfiliadoEnvioEmailHTML><![CDATA[<div class="alert success">
+  <strong>Seus e-mails foram enviados com sucesso!</strong>
+</div>]]></MensagemSucessoAfiliadoEnvioEmailHTML></AfiliadoDivulgaEmail></AfiliadoDivulgaEmails></controles></page>

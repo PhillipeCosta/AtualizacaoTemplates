@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><PacotePresentes><PacotePresente ID="gift"><PacotePresenteHTML><![CDATA[<div class="heading-primary">
+  <h2>Pacote Presente</h2>
+</div>
+<div class="gift-content">
+  <p class="gift-message">
+    Escolha uma opção de Pacote de presente e preencha a mensagem que será posta no
+    cartão!. Caso não queira que o produto seja embrulhado escolha a opção "Não enviar
+    para presente" e clique em continuar.
+  </p>
+  <ul>
+    <repeticao:pacote_presente>
+      <li>
+        <div class="heading-secundary"><h2>[A0]</h2></div>
+        <div class="form">
+          <label class="form-title">[A1]</label>            
+          <repeticao:opcoes><span class="gift-item">[A2]</span></repeticao:opcoes>            
+        </div>
+        <condicao:mensagem>
+          <div class="gift-giftCard form">
+            <label class="form-title">Mensagem do Cartão <small>(Máximo de 250 caracteres)</small></label>
+            [A3]
+            <div class="hide">[A4]</div>
+          </div>
+        </condicao:mensagem>
+      </li>
+    </repeticao:pacote_presente>
+  </ul>
+</div>
+<a href="[A5]" class="bt-big-special gift-button to-right">Continuar</a>
+
+]]></PacotePresenteHTML><TextoExibicaoOpcao1 value="Embrulho de presente e cartão " /><TextoExibicaoOpcao2 value="Somente embrulho de presente " /><TextoExibicaoOpcao3 value="Somente cartão " /><TextoNaoEnviarPresente value="Não enviar para presente " /></PacotePresente></PacotePresentes><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

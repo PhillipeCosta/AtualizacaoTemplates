@@ -1,0 +1,24 @@
+.box_dptmnt{
+    width: 850px;
+    float: left;
+    margin: 0 0px;
+}
+
+.conteudo_fixo{
+    width: 1143px!important;
+    margin: 15px auto 0;
+    overflow: hidden;
+    position: relative;
+    padding-top: 19px!important;
+    margin-top: -17px!important;
+    margin-bottom: 40px!important;
+}
+.tit-box{
+    background-color: rgba(221, 221, 221, 0);
+    display:none;   
+}
+.menupgs .drop_filho_lat{
+    float: left;
+
+    position: relative;
+}

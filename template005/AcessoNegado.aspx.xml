@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AcessoNegados><AcessoNegado ID="AcessoNegado"><AcessoNegadoGeralHTML><![CDATA[<div class="box-acesso-pendente">
+    <div class="to-left">
+      <img src="imagens/lock-acesso.png" alt="Sem acesso" />
+    </div>
+    <div class="to-left">
+      <div class="heading-quartiary">
+      <h2>
+        Seu usuário não tem acesso a esta área
+      </h2>
+        </div>
+      <p class="msg-acesso-pedente">[A0]</p>
+      <condicao:solicitar_acesso>    
+          <div class="bt-acesso">
+            <a href="[A1]" class="bt-big-primary">Solicitar acesso</a>
+          </div>
+      </condicao:solicitar_acesso>  
+        <condicaofalsa:solicitar_acesso>
+        <div class="bt-acesso">
+            <a href="javascript:history.go(-1)" class="bt-big-primary">Voltar</a>
+          </div>      
+        </condicaofalsa:solicitar_acesso>
+    </div>    
+</div>  ]]></AcessoNegadoGeralHTML></AcessoNegado></AcessoNegados><Banners><Banner ID="header_full" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

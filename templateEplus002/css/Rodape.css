@@ -1,0 +1,222 @@
+#rodape {
+    margin-top: 40px;
+}
+
+/* Rodape */
+
+.newsletter{
+    padding: 0 0 5px;
+    position: relative; 
+   z-index: 8888;
+}
+
+.container_newsletter{
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.container_chat{
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bt_enviar_news{
+    padding: 6px 16px;
+    display: inline-block;
+    font-weight: bold;
+    text-indent: -9999px;
+}
+
+.tit_news{
+    display: block;
+    float: left;
+    width: 208px;
+    height: 66px;
+}
+
+.box_news{
+	overflow: hidden;
+}
+
+.desc_news{
+	font-size: 11px;
+	display: block;
+	float: left;
+	margin: 20px 25px 10px 15px;
+	font-family: 'source_sans_prosemibold';
+	font-weight: normal;
+}
+
+.bt-buscar-rodape{
+	padding: 5px 10px;
+}
+
+.box_newsletter{
+	margin: 20px 10px 0;
+	border: 0 none;
+}
+
+.lbl_news{
+	display: block;
+	float: left;
+}
+
+.lbl_news input{
+	width: 193px;
+	margin-left: 10px;
+	padding: 6px 5px;
+	font-size: 12px;
+	text-align: left;
+}
+
+.descadastrar_news{
+	float: right;
+	margin-right: 70px;
+	color: #fff;
+	text-decoration: underline;
+	font-size: 12px;	
+        *width: 85px;
+}
+
+/* Rodape Baixo */
+
+.tit_rodape{
+	font-size: 18px;
+	text-align: left;
+	margin: 0 0 5px;
+        font-weight: normal;
+}
+
+.tit_pe{
+	font-size: 18px;
+	text-align: left;
+	margin: 0 0 5px;
+         font-family: 'source_sans_prosemibold';
+}
+
+.tit_sec_rodape{
+	font-size: 24px;
+	text-align: left;
+        font-weight: normal;
+	margin-bottom: 7px;
+}
+
+.rodape_baixo{
+	clear: both;
+	width: 100%;
+	position: relative;
+	z-index: 8888;
+}
+
+.container_pe_baixo{
+	width: 990px;
+	margin: 0 auto;
+	overflow: hidden;	
+}
+
+.rodape_esquerda{
+	overflow: hidden;
+	width: 655px;
+	float: left;
+	margin-right: 35px;
+}
+
+.rodape_direita{
+	overflow: hidden;
+	float: left;
+	margin-top: 30px;
+}
+
+.box_institucionais{
+	width: 250px;
+	overflow: hidden;
+	float: left;
+	margin-top: 30px;
+}
+
+.lista_institucionais{
+	display: block;
+	margin: 0 0 10px;
+}
+
+.lista_institucionais a{
+	font-size: 12px;
+	line-height: 15px;
+	text-align: left;	
+}
+
+.box_televendas{
+	border-left: 1px solid #eaeaea;
+	float: left;
+	padding: 0 0 0 30px;
+	width: 170px;
+	height: 170px;
+	margin-top: 30px;
+}
+
+.box_televendas p{
+	font-size: 11px;
+	line-height: 18px;	
+}
+
+.box_pagamento{
+	clear: both;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	padding: 10px 0;
+}
+
+.box_pagamento img{
+	margin: 0 3px;
+}
+
+.box_social_pe{
+	margin: 10px 0;
+}
+
+.box_seguranca{
+	clear: both;
+	padding: 10px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.blindado, .fcontrol{
+	display: inline-block;
+	*display: block;
+        *float: left;
+	padding: 20px 10px;
+}
+
+.ebit{
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+.direitos{
+	clear: both;
+	padding: 15px 0;
+	position: relative;
+	z-index: 8888;
+}
+
+.container_direitos{
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.desenvolvimento{
+	position: absolute;
+	top: 14px;
+	right: 0;
+}
+
+.container_direitos p{
+	text-align: left;
+	font-size: 11px;
+	line-height: 16px;
+}

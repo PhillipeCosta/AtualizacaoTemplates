@@ -1,0 +1,89 @@
+.bt_esquerda{
+    text-align: left;
+    margin:  10px 0 10px 0;
+}
+
+.bt_esquerda a{
+    margin: 0 5px;
+}
+
+.endereco_entrega{
+    margin: 0px 0 0 5px;
+}
+
+.endereco_entrega p{
+    color: #052547;
+    font-size:13px;
+}
+
+.endereco_entrega p.local{
+    color: #A40000;
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    font-size:14px;
+}
+
+.tab_transportadoras{
+    border: none !important;
+}
+
+.tab_carrinho .selecione_frete th{
+    background-color: #052547;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.tab_transportadoras td{
+    padding: 15px;
+}
+
+.tab_transportadoras  .tipos_frete {
+    border: 1px solid #ccc;
+    height: 110px;
+    width: 100%;
+    background: #f1f1f1;
+}
+
+.tab_transportadoras .alternada1 .tipos_frete td {
+    background: #E8E8E8;
+    padding: 0;
+}
+
+.tab_transportadoras .tipos_frete h3{
+    color: #A40000;
+    font-size: 14px;
+    display: block;
+    padding: 0 10px;
+}
+
+.tab_transportadoras .tipos_frete p{
+    font-size: 13px;
+    font-weight: normal;
+    display: block;
+    padding: 0 10px;
+    color: #052547;
+}
+
+.tab_transportadoras .tipos_frete .frete_titulo{
+    width: 200px;
+}
+
+.tab_transportadoras .tipos_frete .frete_valor{
+    width: 150px;
+}
+
+.tab_transportadoras .tipos_frete td.frete_input{
+    width: 100px;
+    background: #052547;
+}
+
+.tab_transportadoras .tipos_frete td.frete_input label {
+    color:#fff;
+    display: block;
+    font-size:11px;
+}

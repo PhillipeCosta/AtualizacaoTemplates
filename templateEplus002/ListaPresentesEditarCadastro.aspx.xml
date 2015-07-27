@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="Fullzao_Topo" /></Banners><ListaPresentesCadastros><ListaPresentesCadastro ID="ListaPresentesCadastro1"><FormularioListaPresentesDadosGeraisHTML><![CDATA[<div class="lp-cadastro-formulario">
+
+	<div class="lp-cadastro-formulario-linha lp-cadastro-formulario-linha-z">
+		<div class="lp-cadastro-formulario-linha-conteudo">
+			<div class="lp_tit_box">
+				<h3>O que você irá comemorar?</h3>
+				<p>Casamento, aniversário ou qualquer outro evento, basta selecionar que iremos lhe ajudar a montar sua lista de presentes!</p>
+			</div>
+			<div class="lp-cadastro-formulario-esquerda">
+				<fieldset>
+					<label class="lp-formulario-label lp-formulario-select lp-formulario-select-big">
+						[B0]
+					</label>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+
+	<div class="lp-cadastro-formulario-linha">
+		<div class="lp-cadastro-formulario-linha-conteudo">
+			<div class="lp_tit_box">
+				<h3>Onde será o evento?</h3>
+				<p>Preencha abaixo algumas informações sobre o evento. São perguntas simples como a data e local do evento.</p>
+			</div>
+			<div class="lp-cadastro-formulario-esquerda">
+              	<fieldset>
+					<label class="lp-formulario-label lp-formulario-input">
+						<span class="lp-formulario-label-titulo">Nome para o Evento  <small>Dê um nome para seu evento. Exemplo "Meu Casamento", "Aniversário da Maria", etc.</small></span>
+						[B43]
+					</label>
+				</fieldset>	
+				<fieldset class="lp-linha-2colunas">
+					<label class="lp-formulario-label lp-formulario-input lp-formulario-input-imagem">
+						<span class="lp-formulario-label-titulo">Data do Evento <small class="lp-formulario-label-titulo-exemplo-lateral">(DD/MM/AAAA)</small></span>
+						[B1] <img src="imagens/bt_abre_calendario.png" alt="" />
+					</label>
+					<label class="lp-formulario-label lp-formulario-input lp-formulario-input-imagem">
+						<span class="lp-formulario-label-titulo">Hora do Evento <small class="lp-formulario-label-titulo-exemplo-lateral">(HH:MM)</small></span>
+						[B41] <img src="imagens/bt_abre_relogio.png" alt="" />
+					</label>
+				</fieldset>		
+				<fieldset>
+					<label class="lp-formulario-label lp-formulario-input">
+						<span class="lp-formulario-label-titulo">Nome do Local <small>Onde o evento será realizado? Exemplo “Centro de eventos”, “Catedral”, "Não definido", etc.</small></span>
+						[B2]
+					</label>
+				</fieldset>	
+				<fieldset>
+					<label class="lp-formulario-label lp-formulario-input lp-formulario-input-link lp-formulario-input-imagem">
+						<span class="lp-formulario-label-titulo">CEP do local do evento</span>
+						[B14] <img alt="" src="imagens/bt_ok_lista_presentes.png" /> <a href="javascript:callSearchZipCode('ListaPresentesCadastro1_txtCepEvento')">Não sei o CEP! Desejo localizar o CEP.</a>
+					</label>
+				</fieldset>	
+				<fieldset class="lp-linha-2colunas">
+					<label class="lp-formulario-label lp-formulario-input" style="width: 75%">
+						<span class="lp-formulario-label-titulo">Rua</span>
+						[B3]
+					</label>
+					<label class="lp-formulario-label lp-formulario-input" style="width: 16%">
+						<span class="lp-formulario-label-titulo">Número</span>
+						[B4] 
+					</label>
+				</fieldset>	
+				<fieldset class="lp-linha-2colunas">
+					<label class="lp-formulario-label lp-formulario-input">
+						<span class="lp-formulario-label-titulo">Cidade</span>
+						[B6]
+					</label>
+					<label class="lp-formulario-label lp-formulario-select">
+						<span class="lp-formulario-label-titulo">Estado</span>
+						[B7]
+					</label>
+				</fieldset>	
+				<fieldset class="lp-linha-2colunas">
+					<label class="lp-formulario-label lp-formulario-input">
+						<span class="lp-formulario-label-titulo">Bairro</span>
+						[B5]
+					</label>
+					<label class="lp-formulario-label lp-formulario-input">
+						<span class="lp-formulario-label-titulo">Complemento</span>
+						[B13]
+					</label>
+				</fieldset>	
+			</div>
+			<div class="lp-cadastro-formulario-direita">
+				<div class="lp-box-destaque heading-secondary">
+					<h4>Mapa do Local do Evento</h4>
+					<img src="imagens/ico_mapa_local_evento.png" alt="" class="lp-box-destaque-ico" />
+					<div class="lp-box-destaque-conteudo">
+						<p>Mostre a seus convidados onde será o evento. Você poderá enviar o código do google maps ou enviar uma imagem com o mapa. Se não possuir o mapa, não se preocupe, você poderá enviar o mapa a qualquer momento após o cadastro.</p>
+						<fieldset class="lp-mapa-escolha">
+							<label>[B44] <span>Não tenho mapa</span></label>
+							<label>[B39] <span>Google Maps</span></label>
+							<label>[B37] <span>Enviar Imagem</span></label>
+						</fieldset>
+						<condicao:googlemaps>	
+							<fieldset class="lp-mapa-script">
+								<label>Script do Google Maps<br />[B9]</label>
+								<span class="lp-mapa-script-help"><a href="http://support.google.com/maps/bin/answer.py?hl=pt-BR&answer=72644" target="_blank">Como obter o script do Google Maps?</a></span>
+							</fieldset>
+						</condicao:googlemaps>
+						<condicao:enviarimagem>
+                          	<div class="lp-mapa-imagem">
+								[B38]
+                        		[B42]  
+                          	</div>
+						</condicao:enviarimagem>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="lp-cadastro-formulario-linha lp-cadastro-formulario-linha-z">
+		<div class="lp-cadastro-formulario-linha-conteudo">
+			<div class="lp_tit_box">
+				<h3>Dados dos Noivos</h3>
+				<p>Nessa etapa você irá informar quem são os noivos e mensagem de boas vindas a seus convidados.</p>
+			</div>
+			<div class="lp-cadastro-formulario-esquerda">
+				<fieldset>
+					<label class="lp-formulario-label" style="width:410px">
+						<span class="lp-formulario-label-titulo">Nome dos Noivos <small>Escreva o nome completo dos Noivos</small></span>
+					</label>
+					<repeticao:homenageados>
+						<label class="lp-formulario-label lp-formulario-input lp-formulario-input-imagem">
+							[B20] <a href="[B21]"><img src="imagens/bt_lista_presentes_remover.png" alt="" /></a>
+						</label>
+					</repeticao:homenageados>
+					<label class="lp-formulario-label lp-formulario-input lp-formulario-input-imagem">
+						<a href="[B22]"><img src="imagens/bt_adicionar_homenageado.png?v001" alt="" /></a>
+					</label>
+				</fieldset>
+			</div>
+			<div class="lp-cadastro-formulario-direita">
+				<fieldset>
+					<label class="lp-formulario-label lp-formulario-textarea">
+						<span class="lp-formulario-label-titulo">Texto de boas vindas <small>Esse texto é exibido na página inicial da sua lista, dando as boas vindas a seus convidados!</small></span>
+						[B11]
+					</label>
+				</fieldset>	
+			</div>
+		</div>
+	</div>
+
+	<div class="lp-cadastro-formulario-linha">
+		<div class="lp-cadastro-formulario-linha-conteudo">
+			<div class="lp_tit_box">
+				<h3>Onde quer que entregue os presentes?</h3>
+				<p>Diga-nos o endereço onde você deseja que os presentes comprados através da sua lista de presentes sejam entregues.</p>
+			</div>
+			<div class="lp-cadastro-formulario-esquerda">
+
+				<fieldset>
+					<label class="lp-formulario-label lp-formulario-input lp-formulario-input-link lp-formulario-input-imagem">
+						<span class="lp-formulario-label-titulo">CEP do endereço de entrega dos presentes</span>
+                      [B23] <img alt="" src="imagens/bt_ok_lista_presentes.png" /> <a href="javascript:callSearchZipCode('txtCepResponsavel')">Não sei o CEP! Desejo localizar o CEP.</a>
+					</label>
+				</fieldset>	
+				<fieldset class="lp-linha-2colunas">
+					<label class="lp-formulario-label lp-formulario-input" style="width: 75%">
+						<span class="lp-formulario-label-titulo">Rua</span>
+						[B24]
+					</label>
+					<label class="lp-formulario-label lp-formulario-input" style="width: 16%">
+						<span class="lp-formulario-label-titulo">Número</span>
+						[B25]
+					</label>
+				</fieldset>	
+				<fieldset class="lp-linha-2colunas">
+					<label class="lp-formulario-label lp-formulario-input">
+						<span class="lp-formulario-label-titulo">Cidade</span>
+						[B28]  
+					</label>
+					<label class="lp-formulario-label lp-formulario-select">
+						<span class="lp-formulario-label-titulo">Estado</span>
+						[B29]  
+					</label>
+				</fieldset>	
+				<fieldset class="lp-linha-2colunas">
+					<label class="lp-formulario-label lp-formulario-input">
+						<span class="lp-formulario-label-titulo">Bairro</span>
+						[B27]
+					</label>
+					<label class="lp-formulario-label lp-formulario-input">
+						<span class="lp-formulario-label-titulo">Complemento</span>
+						[B26] 
+					</label>
+				</fieldset>	
+			</div>
+
+			<div class="lp-cadastro-formulario-direita">
+				<div class="lp-box-destaque heading-secondary">
+					<h4>Dados do Responsável</h4>
+					<img src="imagens/ico_dados_responsavel.png" alt="" class="lp-box-destaque-ico" />
+					<div class="lp-box-destaque-conteudo">
+						<p>Essas informações são somemente para conferência. Caso deseja que outra pessoa seja responsável pela lista realize o login com outra conta.</p>
+						<div class="lp-dados-reponsavel">
+							<fieldset>
+								<label class="lp-formulario-label lp-formulario-input lp-formulario-input-texto">
+									<span class="lp-formulario-label-titulo">Nome</span>
+									[B15]
+								</label>							
+							</fieldset>
+							<fieldset class="lp-linha-2colunas">
+								<label class="lp-formulario-label lp-formulario-input lp-formulario-input-texto">
+									<span class="lp-formulario-label-titulo">CPF/CNPJ</span>
+									[B16]
+								</label>	
+								<label class="lp-formulario-label lp-formulario-input lp-formulario-input-texto">
+									<span class="lp-formulario-label-titulo">Telefone</span>										
+									<span class="lp-formulario-input-ddd">[B17]</span><span class="lp-formulario-input-telefone">[B18]</span>
+								</label>						
+							</fieldset>
+							<fieldset>
+								<label class="lp-formulario-label lp-formulario-input lp-formulario-input-texto">
+									<span class="lp-formulario-label-titulo">Email</span>
+									[B19]
+								</label>							
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<condicao:regra>
+	<div class="lp-cadastro-formulario-linha lp-cadastro-formulario-linha-z">
+		<div class="lp-cadastro-formulario-linha-conteudo">
+			<div class="lp_tit_box">
+				<h3>Regulamento</h3>
+				<p>Antes de cadastrar sua lista é necessário que você concorde com os termos abaixo.</p>
+			</div>
+			<div class="regras" id="regras">
+				[B33] 
+			</div>
+			<div class="acao_regras">
+				<span class="imprimir_regra">
+					<a href="javascript: printDiv('regras', 'Regas')">
+						<img src="imagens/bt_imprimir_lista.png" alt="Imprimir Lista" />
+					</a>
+				</span>
+				<label class="aceite">
+                  	[B35] <span>Li e estou de acordo com o regulamento</span>
+				</label>
+			</div>
+		</div>
+	</div>
+	</condicao:regra>
+	<div class="salvar_lista">
+		<a href="[B40]" class="box-bt btn-special">
+			Salvar lista
+		</a>
+	</div>
+
+</div>]]></FormularioListaPresentesDadosGeraisHTML><ListaPresentesCadastroHTML><![CDATA[<div class="lp-cadastro">
+    [A2]
+    [A1]
+    [A0]
+</div>
+
+<script>
+  
+function printDiv(id, pg) {
+    var oPrint, oJan;
+    oPrint = window.document.getElementById(id).innerHTML;
+    oJan = window.open(pg,'_blank','width=300,height=400');
+    oJan.document.write(oPrint);
+    oJan.focus();
+    oJan.window.print();
+    window.onafterprint(setTimeout("oJan.document.close()",50));
+}
+  
+</script>]]></ListaPresentesCadastroHTML><MensagemAlertaListaPresentesCadastroHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>[C0]</h2>
+        <ul>
+          <repeticao:erro>
+            <li>[C1]</li>
+          </repeticao:erro>
+        </ul>
+    </div>
+</div>
+]]></MensagemAlertaListaPresentesCadastroHTML><MensagemSucessoListaPresentesCadastroHTML><![CDATA[<div id="sucesso">
+	<div class="lista_sucesso message-success">
+		<h2>Seu cadastro foi realizado com sucesso.</h2>
+		<div style="float:right;">
+          <a href="[D0]" class="box-bt bt-special">Continuar</a>
+		</div>
+	</div>
+</div>
+]]></MensagemSucessoListaPresentesCadastroHTML><QuantidadeLinhasCampoMensagem value="10" /><TamanhoImagemAltura value="150" /><TamanhoImagemLargura value="200" /></ListaPresentesCadastro></ListaPresentesCadastros><ListaPresentesInformacoess><ListaPresentesInfo ID="ListaPresentesInformacoes"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+      <div class="container_descricao_lista fechado tit-principal"> 
+        <div class="container_descricao_lista_conteudo">
+          <div class="logo_listapresente"><img src="imagens/logo_lista_presente.png" /></div>
+          <div class="foto_lista">
+              <condicao:fotoprincipal>
+                  <img alt="" src="[A5]?width=155&height=120" />
+              </condicao:fotoprincipal>
+          </div>
+          <div class="descricao_lista">
+            <h3>[A20] <img src="imagens/bullet_verinfo.png" /><small class="abre_header">Exibir informações</small></h3>
+              <condicao:comevento>
+                <p>[A0] - [A1]</p>
+                <span>
+                  <strong>Homenageado(s):</strong> [A0]<br />
+                  <strong>Data:</strong> [A1]<br />
+                  <strong>Local:</strong> [A15],[A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="#" class="ver_mapa">(ver mapa)</a></strong></condicao:mapa></span>
+                <span>
+                    [A4]
+                </span>
+              </condicao:comevento>
+          </div>
+        </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+
+      <div class="container_descricao_lista fechado tit-principal"> 
+          <div class="container_descricao_lista_conteudo">
+            <div class="descricao_lista">            
+              <h3>[A20]</h3>
+            </div>
+          </div>
+      </div>
+
+      </condicao:naoaceitaevento>  
+<condicao:semevento>
+  <div id="erro">
+      <div class="lista_erro">
+            <h2>Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.</h2>
+        </div>
+    </div>
+</condicao:semevento>
+
+<div style="display: none;">
+  <div class="lista_mapa">
+      <div class="tit_box_full"><h2>Mapa</h2></div> 
+      [A3]
+  </div>
+</div>
+
+
+<script>
+  $(function(){
+      $('.ver_mapa').live('click', function() {
+            $.fn.colorbox({inline:true, href:".lista_mapa"});
+            return false;
+      });
+
+      $('.abre_header').click(function() {
+            if($(".container_descricao_lista").hasClass("fechado")){
+                $(".container_descricao_lista").removeClass("fechado");
+                $(this).text("Ocultar informações")
+            }else{
+                $(".container_descricao_lista").addClass("fechado");
+                $(this).text("Exibir informações")
+            };
+      });  
+    });
+</script>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInformacoess><ListaPresentesInfos><ListaPresentesInfo ID="ListaPresentesInformacoesMenu"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+              <div class="acoes_lista menu-vertical">
+          <div class="acoes_lista_conteudo">
+            <ul>
+              <li><a class="link_pai_presente" href="[A13]">Produtos da lista</a>
+                <ul>
+                  <li><a href="[A13]">Produtos da Lista</a></li>
+                  <li><a href="javascript: void(0)" class="bt_add_produto">Adicionar Produtos</a></li>
+                  <li><a href="[A21]">Escolher lista Pronta</a></li>
+                </ul>
+              </li>
+              <li><a class="link_pai_presente" href="[A8]">Lista de Convidados</a></li>
+              <li><a class="link_pai_presente" href="[A9]">Enviar Mensagem</a></li>
+              <li><a class="link_pai_presente" href="[A11]">Álbum de Fotos</a></li>
+              <li class="menu_selected"><a class="link_pai_presente link_selected" href="[A10]">Editar Evento</a></li>
+            </ul>
+          </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+
+
+              <div class="acoes_lista">
+            <div class="acoes_lista_conteudo">
+            <ul>
+              <li><a class="link_pai_presente" href="[A13]">Produtos da Lista</a></li>
+              <li><a class="link_pai_presente bt_add_produto" href="javascript: void(0)">Adicionar Produto</a></li>
+            </ul>
+            </div>
+      </div>
+      </condicao:naoaceitaevento>  
+
+<div style="display: none;">
+  <div class="lista_add_produto">
+    <img src="imagens/animacao.gif" alt="Animação" /><br /><br />
+    <a href="[A7]"><img alt="Adicionar Produto" src="imagens/adicionar_produto.png" /></a>
+  </div>
+</div>
+
+
+<script>
+  $(function(){
+
+  
+      $('.bt_add_produto').live('click', function() {
+            $.fn.colorbox({inline:true, href:".lista_add_produto", overlayClose:false, escKey:false});
+            return false;
+      }); 
+
+
+    });
+</script>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

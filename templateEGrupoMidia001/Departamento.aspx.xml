@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /><Banner ID="left_top" /><Banner ID="right_top" /><Banner ID="content_bottom" /><Banner ID="filters" /><Banner ID="content_top" /><Banner ID="header_jquery" /></Banners><Menus><Menu ID="currentDeptMenu"><ApenasDepartamento value="True" /><MenuHTML><![CDATA[
+<nav class="nav-primary dept-menu">
+  	<ul>
+  		<repeticao:pais>
+          	<li>
+              <h3 class="nav-primary-heading-primary"><span><a href="[A0]">[A1]</a></span></h3>
+                <condicao:filho>
+                    <ul>
+                        <repeticao:filhos>
+                          <li><a href="[A0]"><span class="nav-primary-bullet"> [A1]</span></a></li>
+                        </repeticao:filhos>
+                    </ul>
+                </condicao:filho>
+            </li>
+      	</repeticao:pais>
+  	</ul>
+</nav>]]></MenuHTML><TipoMenu value="Vertical" /></Menu><Menu ID="sideMenu"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<nav class="nav-primary dept-menu">
+  	<ul>
+  		<repeticao:pais>
+          	<li class="dept-christmas-li">
+              <h3 class="nav-primary-heading-primary"><a href="[A0]/t/4">[A1]</a></h3>
+                <condicao:filho>
+                    <ul>
+                        <repeticao:filhos>
+                            <li><a href="[A0]/t/4"><span class="nav-primary-bullet">•</span> [A1]</a></li>
+                        </repeticao:filhos>
+                    </ul>
+                </condicao:filho>
+            </li>
+      	</repeticao:pais>
+  	</ul>
+</nav>]]></MenuHTML><TipoMenu value="Vertical" /></Menu><Menu ID="currentDeptMenuImg"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<nav class="dept-menu-mosaic">  
+<ul>
+  <repeticao:pais>
+  <li>
+    <ul class="depto_filho">
+      <condicao:filho>
+      <repeticao:filhos>
+      <li>
+        <a href="[A0]"><img class="img_cat" src="[A2]" alt="[A1]" /><span>[A1]</span></a>
+      </li>
+      </repeticao:filhos>
+        <script>
+          $(document).ready(function(){
+            $("#divCaixaListagemCaixaListagem_Conteudo").css("display","none");
+            $(".title_filtre_por").css("display","none");  
+            $("#filtro_departamentos").css("display","none");
+            $(".filtro_preco").css("display","none");
+            $(".depto_filho li:nth-child(3n+5)").css("clear","both");
+          
+            $(".img_cat").each(function() {
+              if($(this).attr("src") === "") {
+                $(this).attr("src", "http://www.dentalapss.com.br/Assets/Departamentos/cat-padrao.jpg");
+              }
+            });
+          });
+        </script>
+        <script>
+          
+        </script>
+      </condicao:filho>  
+    </ul>
+  </li>
+  </repeticao:pais>
+</ul>
+  <div style="clear: both;"></div>
+</nav>]]></MenuHTML><TipoMenu value="Vertical" /></Menu><Menu ID="currentDeptMenuMosaic"><ApenasDepartamento value="True" /><MenuHTML><![CDATA[<nav>
+  <ul>
+    <repeticao:pais> 
+    <li>
+        <condicao:filho>
+          <div class="heading-primary heading-subMenu">
+            <h1>[A1]</h1>
+          </div> 
+            <ul class="dept-menu-mosaic">
+                <repeticao:filhos>
+                    <li class="dept-child">
+                      <a href="[A0]/t/4"><img class="dept-img" src="[A2]" alt="[A1]" />[A1]</a>
+                    </li>
+                </repeticao:filhos>
+            </ul>
+        </condicao:filho>  
+    </li>
+    </repeticao:pais>
+  </ul>
+  <div style="clear: both;"></div>
+</nav>]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><ListagemCompletas><ListagemCompleta ID="deptCollection"><Comparar value="Não" /><HTMLComparacao><![CDATA[]]></HTMLComparacao><HTMLDestaque><![CDATA[]]></HTMLDestaque><HTMLListagem><![CDATA[<div class="heading-primary">
+  <h1>[D0]</h1>
+</div>
+<div class="collection">
+  <script>
+ 	 $(".collection").adjustCollection();
+  </script>
+  <ul>
+    <repeticao:produtos>
+      <li class="collection-li">
+        <div class="collection-product">
+            <div class="collection-product-image">              	
+                <condicao:promocao_brinde>
+                      <a href="[D56]" class="link-modal-iframe"><img src="[D57]" /></a>
+                </condicao:promocao_brinde>
+                <condicao:promocao_express>
+                  <div class="tag_promo">
+                    <a href="[D30]" class="link-modal-iframe"><img src="[D28]" alt="" /></a>
+                  </div>
+                </condicao:promocao_express>    
+              	<condicao:promocao_frete>
+                  <div class="collection-product-shippingPromo">
+                    <a href="[D37]" class="link-modal-iframe"><img src="[D29]" alt="" /></a>
+                  </div>
+                </condicao:promocao_frete>  
+              
+                <a href="[D1]" class="produtct_link">
+                  <img src="[D2]?width=250&height=250" width="100%" alt="[D6]" />
+              	</a>
+              
+              <condicao:produto_indisponivel>
+                    <div class="collection-product-unavailable">
+                          <a href="[D1]">Produto Indisponível</a>
+                    </div>
+                </condicao:produto_indisponivel> 
+              	<condicao:lancamento>
+                      <a href="[D1]" class="collection-product-release">Lançamento</a>
+                </condicao:lancamento>
+              	<condicao:pre_venda>
+                      <a href="[D1]" class="collection-product-preSale">Pré-Venda</a>
+                </condicao:pre_venda>
+                <condicao:oferta>
+                      <a href="[D1]" class="collection-product-offer">[D54]% Off</a>
+                </condicao:oferta>
+                <condicao:espiar><a href="[D1]" class="collection-product-quickView sprite">Espiar</a></condicao:espiar>
+            </div>
+            <h3 class="collection-product-name"><a href="[D1]">[D6]</a></h3>
+            <p class="collection-product-description"><a href="[D1]">[D22]</a></p>
+            <div class="collection-product-variants">
+                <condicao:variante_imagem>
+                    <repeticao:variantes quantidade="8">
+                          <a href="[D34]"><img src="[D33]?width=15" alt="[D32]" /></a>
+                    </repeticao:variantes>
+                </condicao:variante_imagem>
+                <condicao:variante_texto>
+                    <repeticao:variantes quantidade="8">
+                          <a href="[D34]" class="collection-product-variants-text">[D32]</a>
+                    </repeticao:variantes>
+                </condicao:variante_texto>             
+            </div>          
+          	<div class="collection-product-price-content">
+              <p class="collection-product-price">                
+                <del><condicao:preco_antigo>[D19]</condicao:preco_antigo></del>
+                
+                <p class="collection-product-payInFullPrice"><strong><a href="[D1]">[D15]</a></strong></p>
+
+              </p>
+<!--
+              <p class="collection-product-payInFullPrice"><condicao:desconto_vista><a href="[A1]"><strong>[D27]</strong></a></condicao:desconto_vista></p>
+-->
+
+              <p class="collection-product-splitPrice"><condicao:parcelamento><a href="[D1]">ou [D13] de <strong>[D12]</strong> sem juros</a></condicao:parcelamento></p>          
+            </div>            
+          	<condicao:produto_disponivel>
+                <condicao:comprar_direto>
+                   <div class="collection-product-buy">
+                        <div class="collection-product-buyInput spin form">[D23] <a href="[D25]" class="spin-bt spin-add collection-product-buy-add">+</a><a href="[D26]" class="spin-bt spin-remove collection-product-buy-remove">-</a></div><a href="[D24]" class="collection-product-buy-bt bt-big-secundary">Comprar</a>
+                   </div>
+                </condicao:comprar_direto>
+            </condicao:produto_disponivel>        
+        </div>
+      </li>
+    </repeticao:produtos>
+  </ul>
+</div>]]></HTMLListagem><HTMLModelo><![CDATA[<div class="collection-top">
+  <div class="collection-pagination">[A1]</div>
+  <div class="collection-ordenation">[A4]</div>
+</div>
+[A2]
+<div class="collection-bottom">
+  <div class="collection-pagination">[A1]</div>
+
+</div>]]></HTMLModelo><HTMLOrdenarPor><![CDATA[<label>Ordenar por:</label> [E0]]]></HTMLOrdenarPor><HTMLPaginacao><![CDATA[<condicao:paginacao>
+  <div class="collection-pagination-pages">
+        <condicao:pagina_anterior>
+            <a href="[F5]?" class="prev-page">Anterior </a>
+        </condicao:pagina_anterior>
+        <repeticao:paginas quantidade="6">
+            <a href="[F7]?" class="page <condicao:pagina_selecionada> active </condicao:pagina_selecionada>">[F8]</a>
+        </repeticao:paginas>
+        <condicao:proxima_pagina>
+            <a href="[F6]?" class="next-page">Próxima</a>
+        </condicao:proxima_pagina>
+  </div>  
+</condicao:paginacao>]]></HTMLPaginacao><HTMLPesquisaInvalida><![CDATA["<strong>A pesquisa por [G1] possúi termos inválidos. Seus termos de pesquisa devem possuír pelo menos três caracteres.</strong>"]]></HTMLPesquisaInvalida><HTMLSemResultados><![CDATA[<div class="collection-noResults sorry">
+	<div class="dept-noResults sorry-content ops">
+      	<div class="dept-noResults-info sorry-info">
+      		<h2>Este departamento ainda não possui produtos</h2>
+      		<h3>O que posso fazer?</h3>
+      		<ul>
+              	<li>» Utilize nossa busca para encontrar o que deseja</li>
+              	<li>» Acesse nossos demais departamentos</li>
+              	<li>» Volte para a página inicial e confira nossas incríveis ofertas</li>
+      		</ul>
+  		</div>
+  	</div>
+</div>]]></HTMLSemResultados><ImagemAvaliacaoDeselecionado value="" /><ImagemAvaliacaoSelecionado value="" /><MostraDestaque value="Não" /><Ordenar value="Sim" /><Paginacao value="Sim" /><TamanhoImagem value="Gigantes" /><TipoExibicao value="Departamento" /></ListagemCompleta></ListagemCompletas><ProdutoBarraNavegacaos><ProdutoBarraNavegacao ID="breadCrumb"><ProdutoBarraNavegacaoHTML><![CDATA[<div class="breadCrumb-home"><a href="[A0]">Página Inicial</a></div>
+<repeticao:departamentos>
+  <div class="breadCrumb-departaments"><small>|</small><a href="[A1]?">[A2]</a></div>
+</repeticao:departamentos>]]></ProdutoBarraNavegacaoHTML></ProdutoBarraNavegacao></ProdutoBarraNavegacaos><FiltroGruposs><FiltroGrupos ID="departamentGroups"><FiltroGruposHTML><![CDATA[<nav class="nav-primary dept-groups">
+  	<ul>
+  		<repeticao:tipo_filtro>
+          	<li>
+              	<h2 class="nav-primary-heading-primary">[A0]</h2>
+                <ul>
+                  <repeticao:filtro>
+                    	<li><a href="[A3]"><span class="nav-primary-bullet">•</span> [A1] <small>([A2])</small></a></li>
+                  </repeticao:filtro>
+                </ul>
+
+            </li>
+      	</repeticao:tipo_filtro>
+  	</ul>
+</nav>]]></FiltroGruposHTML></FiltroGrupos></FiltroGruposs><FiltroFaixaPrecos><FiltroFaixaPreco ID="departamentPriceRange"><FiltroFaixaPrecoHTML><![CDATA[<fieldset class="nav-PriceRange">
+	<h2 class="nav-primary-heading-primary">Faixa de Preço</h2>
+  	<label>[A0]</label>
+  	<label>[A1]</label>
+  	<a href="[A2]" class="bt-small-primary dept-PriceRange-bt to-right">Filtrar</a>
+</fieldset>]]></FiltroFaixaPrecoHTML></FiltroFaixaPreco></FiltroFaixaPrecos><FiltrosUtilizadoss><FiltrosUtilizados ID="departamentFilterBy"><FiltrosUtilizadosHTML><![CDATA[<repeticao:parametros_utilizados>
+    <div class="filterBy-item">
+      	<small>|</small>[A0]
+    </div>
+</repeticao:parametros_utilizados>]]></FiltrosUtilizadosHTML></FiltrosUtilizados></FiltrosUtilizadoss><Widgets><Widget ID="remarketing"><WidgetUsado value="9" /></Widget></Widgets><DepartamentoDescricaos><DepartamentoDescricao ID="deptDescription"><DepartamentoDescricaoHTML><![CDATA[[A0]]]></DepartamentoDescricaoHTML></DepartamentoDescricao></DepartamentoDescricaos><ScriptRazors><Widget ID="hotSite"><WidgetUsado value="13" /></Widget></ScriptRazors></controles></page>

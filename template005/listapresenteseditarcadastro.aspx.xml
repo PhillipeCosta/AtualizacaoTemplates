@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresentesInfos><ListaPresentesInfo ID="giftList_info"><ListaPresentesInformacoesHTML><![CDATA[<condicao:aceitaevento>
+  <div class="heading-primary" style="margin: 10px 0;">
+      <h2>Lista de presentes - [A20]</h2>
+  </div>
+  <condicao:comevento>
+    <p>Homenageados: [A0]</p>
+    <p>Data: [A1]</p>
+    <p>Local: [A15], [A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="[A3]" target="_blanc">(ver mapa)</a></strong></condicao:mapa></p>
+  </condicao:comevento>  
+</condicao:aceitaevento>
+<condicao:naoaceitaevento>
+  <div class="heading-primary" style="margin-top: 10px;">
+      <h2>Lista de presentes - [A20]</h2>
+  </div>  
+</condicao:naoaceitaevento>
+<condicao:semevento>
+  <div class="alert">
+    <strong>Atenção!</strong> Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.
+  </div>
+</condicao:semevento>
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInfo ID="giftList_menu"><ListaPresentesInformacoesHTML><![CDATA[<condicao:aceitaevento>
+<div class="nav-primary dept-menu">
+	<ul>
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A13]">Produtos da lista</a>
+			</h3>
+			<ul>
+				<li><a href="javascript: void(0)" class="bt-addProduct"><span class="nav-primary-bullet">•</span>&nbsp;Adicionar produtos</a></li>
+				<li><a href="[A21]"><span class="nav-primary-bullet">•</span>&nbsp;Escolher lista pronta</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A8]">Lista de convidados</a>
+			</h3>
+		</li>			
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A9]">Enviar mensagem</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A11]">Álbum de fotos</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A10]">Editar evento</a>
+			</h3>
+		</li>					
+	</ul>
+</div>
+</condicao:aceitaevento>
+<condicao:naoaceitaevento>
+<div class="nav-primary dept-menu">
+	<ul>				
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A10]">Produtos da lista</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="javascript: void(0)" class="bt-addProduct">Adicionar produtos</a>
+			</h3>
+		</li>							
+	</ul>
+</div>
+</condicao:naoaceitaevento>
+
+<div style="display: none;">
+  <div class="list-addProduct">
+    <img src="imagens/animacao.gif" alt="Animação" /><br /><br />
+    <a href="[A7]" class="bt-big-special">adicionar produto</a>
+  </div>
+</div>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ListaPresentesCadastros><ListaPresentesCadastro ID="giftList_edit"><FormularioListaPresentesDadosGeraisHTML><![CDATA[<div class="giftList-container">
+  <div class="giftList-boxForm">
+      <div>
+        <h3>O que você irá comemorar?</h3>
+        <small>Casamento, aniversário ou qualquer outro evento, basta selecionar que iremos lhe ajudar a montar sua lista de presentes!</small>
+      </div>
+      <div>
+        <fieldset>
+          <label>
+            <span class="form">[B0]</span>
+          </label>
+        </fieldset>               
+      </div>
+  </div>
+  <div style="overflow: hidden; padding: 15px 0;">
+    <div class="giftList-boxForm w-55 to-left">
+        <div class="giftList-padding-15">
+          <h3>Onde será o evento?</h3>
+          <small>Preencha abaixo algumas informações sobre o evento. São perguntas simples como nome, data e local do evento.</small>
+        </div>
+          <fieldset>
+            <label class="giftList-boxField">
+              <h4>Nome para o evento</h4>
+              <span class="form">[B43]</span>
+              <small>Dê um nome para seu evento. Exemplo: "Meu casamento", "Aniversário da maria", etc.</small>
+            </label>
+            <label class="giftList-boxField">
+              <h4>Data do evento</h4>
+              <span class="form w-70 to-left">[B1]</span>
+              <div class="w-30 to-left"><span class="giftList-calendar">calendário</span> <small>(DD/MM/AAAA)</small></div>
+            </label> 
+            <label class="giftList-boxField">
+              <h4>Hora do evento</h4>
+              <span class="form w-70 to-left">[B41]</span>
+              <div class="w-30 to-left"><span class="giftList-hour">horário</span> <small>(HH:MM)</small></div>
+            </label>   
+            <label class="giftList-boxField">
+              <h4>Nome do local</h4>
+              <span class="form">[B2]</span>
+              <small>Onde o evento será realizado? Exemplo: "Centro de eventos, "Catedral", "Não definido", etc.</small>
+            </label>    
+            <label class="giftList-boxField">
+              <h4>CEP do local</h4>
+              <span class="form w-40 to-left">[B14]</span>
+              <span class="w-50 to-left">
+              <a href="javascript:void(0);" class="bt-small-special" style="margin-left: 5px;">ok</a>
+              <a href="javascript:callSearchZipCode('ListaPresentesCadastro1_txtCepEvento')"><small>(não sei o CEP)</small></a>
+              </span>
+            </label> 
+            <label class="giftList-boxField w-55 to-left">
+              <h4>Rua</h4>
+              <span class="form">[B3]</span>
+            </label>                
+            <label class="giftList-boxField w-40 to-right">
+              <h4>Número</h4>
+              <span class="form">[B4]</span>
+            </label>                
+            <label class="giftList-boxField w-55 to-left">
+              <h4>Cidade</h4>
+              <span class="form">[B6]</span>
+            </label>                
+            <label class="giftList-boxField w-40 to-right">
+              <h4>Estado</h4>
+              <span class="form">[B7]</span>
+            </label>  
+            <label class="giftList-boxField w-55 to-left">
+              <h4>Bairro</h4>
+              <span class="form">[B5]</span>
+            </label>  
+            <label class="giftList-boxField w-40 to-right">
+              <h4>Complemento</h4>
+              <span class="form">[B13]</span>
+            </label>                                                                       
+          </fieldset>     
+    </div>
+    <div class="giftList-boxForm w-40 to-right">
+      <div class="giftList-padding-15">
+        <h3>Mapa do local do evento</h3>
+        <small>Mostre a seus convidados onde será o evento. Você pode enviar o código do google maps ou enviar uma imagem com o mapa. Se não possuir o mapa, não se preocupe, você poderá enviar o mapa a qualquer momento após o cadastro.</small>
+        <fieldset class="padding-15">
+          <label class="giftList-boxField w-35 to-left">
+            [B44] <span>Não tenho mapa</span>
+          </label>
+          <label class="giftList-boxField w-30 to-left">
+            [B39] <span>Google maps</span>
+          </label>       
+          <label class="giftList-boxField w-30 to-left">
+            [B37] <span>Enviar imagem</span>
+          </label>         
+        </fieldset>
+        <condicao:googlemaps> 
+          <fieldset>
+            <label>
+              <h4>Script do Google Maps</h4>
+              <span class="form">[B9]</span>
+            </label>
+            <span class="lp-mapa-script-help"><a href="http://support.google.com/maps/bin/answer.py?hl=pt-BR&answer=72644" target="_blank">Como obter o script do Google Maps?</a></span>
+          </fieldset>
+        </condicao:googlemaps>
+        <condicao:enviarimagem>
+            <div>
+              [B38]
+              [B42]  
+            </div>
+        </condicao:enviarimagem>       
+      </div>
+    </div>
+  </div>
+  <div style="overflow: hidden; padding: 15px 0;">
+    <div class="giftList-boxForm w-55 to-left">
+        <div class="giftList-padding-15">
+          <h3>Quem serão os homenageados?</h3>
+          <small>Nessa etapa você irá informar quem são os homenageados e mensagem de boas vindas a seus convidados.</small>
+        </div>
+          <fieldset>
+            <repeticao:homenageados>          
+              <label class="giftList-boxField">
+                <h4>Nome(s) do(s) homenageados</h4>
+                <span class="form w-95 to-left">[B20]</span>
+                <div class="w-5 to-left">
+                  <span class="giftList-del" style="margin-left: 5px;">excluir homenageado</span>
+                </div>
+              </label>                                                            
+            </repeticao:homenageados>
+            <div class="to-right" style="margin-top: 10px;">
+              <a href="[B22]" class="bt-small-special">Adicionar homenageado</a>    
+            </div>
+          </fieldset>     
+    </div>
+    <div class="giftList-boxForm w-40 to-right">
+      <div class="giftList-padding-15">
+        <h3>Texto de boas-vindas</h3>
+        <small>Esse texto é exibido na página inicial da sua lista, dando as boas vindas a seus convidados!</small>
+        <fieldset>
+          <label class="giftList-boxField form">
+            [B11]
+          </label>        
+        </fieldset>     
+      </div>
+    </div>
+  </div>  
+  <div style="overflow: hidden; padding: 15px 0;">
+    <div class="giftList-boxForm w-55 to-left">
+        <div class="giftList-padding-15">
+          <h3>Onde quer que entregue os presentes?</h3>
+          <small>Diga-nos o endereço onde você deseja que os presentes comprados através da sua lista sejam entregues.</small>
+        </div>
+          <fieldset>
+            <label class="giftList-boxField">
+              <h4>CEP do local</h4>
+              <span class="form w-40 to-left">[B23]</span>
+              <span class="w-50 to-left">
+              <a href="javascript:void(0);" class="bt-small-special" style="margin-left: 5px;">ok</a>
+              <a href="javascript:callSearchZipCode('txtCepResponsavel')"><small>(não sei o CEP)</small></a>
+              </span>
+            </label> 
+            <label class="giftList-boxField w-55 to-left">
+              <h4>Rua</h4>
+              <span class="form">[B24]</span>
+            </label>                
+            <label class="giftList-boxField w-40 to-right">
+              <h4>Número</h4>
+              <span class="form">[B25]</span>
+            </label>                
+            <label class="giftList-boxField w-55 to-left">
+              <h4>Cidade</h4>
+              <span class="form">[B28]</span>
+            </label>                
+            <label class="giftList-boxField w-40 to-right">
+              <h4>Estado</h4>
+              <span class="form">[B29]</span>
+            </label>  
+            <label class="giftList-boxField w-55 to-left">
+              <h4>Bairro</h4>
+              <span class="form">[B27]</span>
+            </label>  
+            <label class="giftList-boxField w-40 to-right">
+              <h4>Complemento</h4>
+              <span class="form">[B26]</span>
+            </label>
+          </fieldset>     
+    </div>
+    <div class="giftList-boxForm w-40 to-right">
+      <div class="giftList-padding-15">
+        <h3>Dados do responsável</h3>
+        <small>Essas informações são somemente para conferência. Caso deseja que outra pessoa seja responsável pela lista realize o login com outra conta.</small>
+        <p class="giftList-resetInput"><strong>Nome:</strong> [B15]</p>
+        <p class="giftList-resetInput"><strong>CPF/CNPJ:</strong> [B16]</p>
+        <p class="giftList-resetInput"><strong>Telefone:</strong> [B17-[B18]</p>
+        <p class="giftList-resetInput"><strong>Email:</strong> [B19]</p>
+      </div>
+    </div>
+  </div>
+  <condicao:regra>
+    <div style="overflow: hidden; padding: 15px 0;">
+      <div class="giftList-boxForm">
+          <div class="giftList-padding-15">
+            <h3>Regulamento</h3>
+            <small>Antes de cadastrar sua lista é necessário que você concorde com os termos abaixo.</small>
+          </div>
+          <div class="form" id="regras">
+            [B33]
+          </div>    
+          <div class="w-40 to-left">
+            <a href="javascript: printDiv('regras', 'Regas')" class="bt-small-secundary">Imprimir regras</a>
+          </div>
+          <div class="w-40 to-right">
+            <span class="to-left">[B35]</span>
+            <h5 class="to-left" style="margin-left: 5px;">Li e estou de acordo com o regulamento</h5>
+          </div>
+      </div>
+    </div> 
+  </condicao:regra>     
+  <div class="to-right" style="padding: 15px 0">
+    <a href="[B40]" class="bt-big-primary">salvar lista</a>
+  </div>
+</div>]]></FormularioListaPresentesDadosGeraisHTML><ListaPresentesCadastroHTML><![CDATA[
+    [A2]
+    [A1]
+    [A0]
+
+
+<script>
+  
+function printDiv(id, pg) {
+    var oPrint, oJan;
+    oPrint = window.document.getElementById(id).innerHTML;
+    oJan = window.open(pg,'_blank','width=300,height=400');
+    oJan.document.write(oPrint);
+    oJan.focus();
+    oJan.window.print();
+    window.onafterprint(setTimeout("oJan.document.close()",50));
+}
+  
+$(function(){
+  $("#ListaPresentesCadastro1txtMensagemInicial").val("Seja bem-vindo(a) à minha lista de presentes. Por aqui você pode escolher um presente para mim e comprá-lo com conforto e segurança. E no final ainda pode mandar-me uma mensagem!")  
+})
+  
+</script>]]></ListaPresentesCadastroHTML><MensagemAlertaListaPresentesCadastroHTML><![CDATA[<div class="alert" id="erro">
+        <strong>[C0]</strong>
+        <ul>
+          <repeticao:erro>
+            <li>[C1]</li>
+          </repeticao:erro>
+        </ul>
+</div>]]></MensagemAlertaListaPresentesCadastroHTML><MensagemSucessoListaPresentesCadastroHTML><![CDATA[<div class="alert success">
+  <strong>Alteração de cadastro realizada com sucesso!</strong>
+</div>
+]]></MensagemSucessoListaPresentesCadastroHTML><QuantidadeLinhasCampoMensagem value="0" /><TamanhoImagemAltura value="150" /><TamanhoImagemLargura value="200" /></ListaPresentesCadastro></ListaPresentesCadastros></controles></page>

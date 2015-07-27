@@ -1,0 +1,11 @@
+#cia_scroll_loader{
+    background: url('../imagens/infiniteScrollLoader.gif') no-repeat center top;
+    height: 30px;
+    display: none;
+    text-indent: -9999px;
+	margin-top: 20px;
+}
+
+.products_loading #cia_scroll_loader{
+    display: block;
+}

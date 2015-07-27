@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Menus><Menu ID="menu"><ApenasDepartamento value="True" /><MenuHTML><![CDATA[<repeticao:pais>
+<h5 class="text-left text-uppercase heading-primary custom-paddingV5"><strong>[A1]</strong></h5>
+<condicao:filho>
+  <repeticao:filhos>
+   <div class="sideMenu-list">
+    <a href="[A0]" class="sideMenu-link text-left custom-paddingV5" data-toggle="collapse" data-target="#navGrandson">
+      <span class="fa fa-chevron-right">&nbsp;&nbsp;</span>[A1]
+    </a>
+    <condicao:neto>
+          <ul id="navGrandson" class="navGrandson collapse custom-paddingV5 custom-paddingH30">      
+      <repeticao:netos>
+        	<li><a href="#">[A1]</a></li>
+      </repeticao:netos>
+          </ul>              
+    </condicao:neto>
+  
+  </div></repeticao:filhos>
+</condicao:filho>
+</repeticao:pais>
+
+<script>
+  
+    $('.fa-chevron-right').hide();
+    $('.sideMenu-list').each(function(){
+      if($(this).find('.navGrandson').length > 0){
+        $(this).find('.fa-chevron-right').show();
+        $('.sideMenu-link').click(function(event){
+            $(this).find('span').toggleClass('fa-chevron-down');
+  			event.preventDefault();
+        });
+      };
+    })  
+
+</script>
+
+]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><FiltroGruposs><FiltroGrupos ID="departamentGroups"><FiltroGruposHTML><![CDATA[<div class="form">
+  <repeticao:tipo_filtro>
+    <h6 class="text-uppercase main-padding"><strong>[A0]</strong></h6>
+  	<select>
+      <option value="" selected="">Escolha a marca</option>
+      <repeticao:filtro>
+        <option value="[A3]">[A1]</option>
+      </repeticao:filtro>
+  	</select>
+  </repeticao:tipo_filtro>
+</div>]]></FiltroGruposHTML></FiltroGrupos></FiltroGruposs><FiltroFaixaPrecos><FiltroFaixaPreco ID="departamentPriceRange"><FiltroFaixaPrecoHTML><![CDATA[<div class="form">
+    <h6 class="text-uppercase main-padding"><strong>Preço</strong></h6>
+  	[A0]
+	[A1]
+    <a href="[A2]" class="bt btn-secondary text-center text-uppercase pull-right" style="margin: 12px;">Filtrar</a>  
+</div>]]></FiltroFaixaPrecoHTML></FiltroFaixaPreco></FiltroFaixaPrecos></controles></page>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><FaleConoscos><FaleConosco ID="contactUsForm"><FaleConoscoHTML><![CDATA[<div class="heading-primary heading-contact">
+  <h2>Entre em contato conosco</h2>
+</div>
+<div class="contact form">
+      <div class="form-item validate required w-100">
+        <label><span class="form-title">Nome*</span> [A1]</label>
+      </div>
+      <div class="form-item validate required w-50" data-type="email">
+        <label><span class="form-title">Email*</span> [A2]</label>
+      </div>
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Telefone*</span> [A3]</label>
+      </div>
+      <div class="form-item w-50">
+        <label><span class="form-title">Empresa</span>[A5]</label>
+      </div>
+      <div class="form-item w-50">
+        <label><span class="form-title">Número do Pedido</span> [A4]</label>
+      </div>      	
+      <div class="form-item validate required w-100">
+        <label><span class="form-title">Mensagem*</span> [A6] <div style="display: none;">[A7]</div></label>
+      </div>
+      <div class="form-item w-100">
+        <a href="javascript: void(0)" onclick="[A8]" class="bt-big-primary w-100 fakeButtom">Enviar</a>
+        <input type="button" onclick="[A8]" class="realButtom hide" value="Enviar" />
+      </div>
+</div>]]></FaleConoscoHTML><ObrigatorioCPFCNPJ value="True" /><tipoFormulario value="Dúvidas" /></FaleConosco></FaleConoscos><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,1113 @@
+/* Main */
+
+.main {
+  background-color: @TemplateSettings.main_backgroundColor;
+  
+  @if(TemplateSettings.main_backgroundImage_display == "true"){
+      <text>
+          background-image: url(../imagens/@TemplateSettings.main_backgroundImage);
+      </text>
+  }
+  @if(TemplateSettings.main_backgroundImage_fixed == ""){
+    <text>
+        background-attachment: scroll;
+      </text>
+  }
+  @if(TemplateSettings.main_backgroundImage_fixed == "true"){
+    <text>
+          background-attachment: fixed;
+      </text>
+  }
+  @if(TemplateSettings.main_backgroundImage_position == "center"){
+    <text>
+      background-position: center 0px;
+      </text>
+  }
+  @if(TemplateSettings.main_backgroundImage_position == "left"){
+    <text>
+          background-attachment: left 0px;
+      </text>
+  }
+  @if(TemplateSettings.main_backgroundImage_position == "right"){
+    <text>
+          background-attachment: right 0px;
+      </text>
+  }
+  @if(TemplateSettings.main_backgroundImage_repeat == ""){
+    <text>
+        background-repeat: no-repeat;
+      </text>
+  }
+  @if(TemplateSettings.main_backgroundImage_repeat == "true"){
+    <text>
+          background-repeat: repeat;
+      </text>
+  }
+  
+  color: @TemplateSettings.main_color;
+  font-size: @TemplateSettings.main_fontSize;
+}
+
+.main-container, .conteudo_fixo{
+  background: @TemplateSettings.main_container_backgroundColor;
+}
+
+a{ 
+    color: @TemplateSettings.main_link_color;
+}
+
+.main-border{ 
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.main_borderColor;    
+}
+
+.main-pagination{ 
+    color: @TemplateSettings.main_pagination_color;
+}
+
+.main-paginationSelected,
+.navegacao_direita .paginacao-navegacao a.selecionado{ 
+    background: @TemplateSettings.main_paginationSelected_backgroundColor;
+    color: @TemplateSettings.main_paginationSelected_color;   
+}
+
+.scrollup {   
+  background: url('../imagens/@TemplateSettings.main_back_to_top') no-repeat 0px 0px transparent;
+}
+
+@if(TemplateSettings.main_giftList == "true"){
+  <text>
+    .main-giftList {
+          display: block!important;
+      }
+  </text>
+}
+
+@if(TemplateSettings.main_affiliateLink == "true"){
+  <text>
+    .main-affiliateLink {
+          display: block!important;
+      }
+  </text>
+}
+
+@if(TemplateSettings.main_readyList == "true"){
+  <text>
+    .main-readyList {
+          display: block!important;
+      }
+  </text>
+}
+
+
+.fullzao_expansivel .nivo-controlNav a {
+  background: @TemplateSettings.nivo_controlNav_backgroundColor;
+}
+
+.carousel-control.left {
+  border-right: 20px solid @TemplateSettings.nivo_controlNav_backgroundColor;
+}
+
+.carousel-control.right {
+  border-left: 20px solid @TemplateSettings.nivo_controlNav_backgroundColor;
+}
+
+.fullzao_expansivel .nivo-controlNav a.active {
+  background: @TemplateSettings.nivo_controlNav_active_backgroundColor;
+}
+
+@if(TemplateSettings.history_display == "on"){
+  <text>
+    .histNavegacao {
+    display: block;
+  }
+  </text>
+}
+
+@if(TemplateSettings.history_display == "off"){
+  <text>
+    .histNavegacao {
+    display: none;
+  }
+  </text>
+}
+
+
+/* Header */
+
+#headerTopGeral{
+  background: @TemplateSettings.headerTopGeral_backgroundColor;
+}
+
+
+.header {
+    background: @TemplateSettings.header_backgroundColor_centro;
+}
+
+#headerTopo {
+    background-color: @TemplateSettings.header_backgroundColor;
+}
+
+.header-logo{
+    background: url('../imagens/@TemplateSettings.header_logo_image') no-repeat 0px center scroll transparent;
+}
+
+.topoCheckout {
+    background-color: @TemplateSettings.header_backgroundColor_checkout;
+}
+
+.header-link,
+.header-link a,
+#headerTopDir p{ 
+    color: @TemplateSettings.header_link_color;
+}
+
+.lnks_rapidos a {
+  border-right: 1px solid @TemplateSettings.header_link_color;
+}
+
+.header-inputSearch input{
+  background: @TemplateSettings.header_inputSearch_backgroundColor;
+  border-color: @TemplateSettings.header_inputSearch_borderColor;
+  border-width: 1px;
+  border-style: solid;    
+}
+
+.minhaSacola {
+  color: @TemplateSettings.header_miniCart_text_color;
+}
+
+.header-miniCart a{ 
+    background: url('../imagens/@TemplateSettings.header_miniCart_image') no-repeat 0px 0px scroll transparent;
+  color: @TemplateSettings.header_miniCart_color;
+}
+
+.bgColorFlu { 
+    background: none @TemplateSettings.header_flutuante_backgroundColor!important;
+}
+
+.bgColorFlu #headerTopo {
+    background-color: @TemplateSettings.header_flutuante_backgroundColor!important;
+}
+
+.bt-busca-topo {
+  background: url("../imagens/ep-busca-bt.png") no-repeat scroll center center  @TemplateSettings.header_bt_busca_topo_color; 
+}
+
+.topoInfoLink01 .topoInfoTxt01 {
+  color: @TemplateSettings.barra_frase_01_01_color;
+}
+
+.topoInfoLink01 {
+  background: url('../imagens/@TemplateSettings.barra_img_01') no-repeat 0px center scroll transparent;
+}
+
+.topoInfoLink02 {
+  background: url('../imagens/@TemplateSettings.barra_img_02') no-repeat 0px center scroll transparent;
+}
+
+.topoInfoLink01 .topoInfoTxt02 {
+  color: @TemplateSettings.barra_frase_01_02_color;
+}
+
+.topoInfoLink02 .topoInfoTxt01 {
+  color: @TemplateSettings.barra_frase_02_01_color;
+}
+
+.topoInfoLink02 .topoInfoTxt02 {
+  color: @TemplateSettings.barra_frase_02_02_color;
+}
+
+@if(TemplateSettings.barra_display_01 == ""){
+  <text>
+    .topoInfoLink01 {
+        display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.barra_display_02 == ""){
+  <text>
+    .topoInfoLink02 {
+        display: none;
+    }
+  </text>
+}
+
+/* Checkout Header */
+
+.checkoutHeader-step-identification{ 
+    background: url('../imagens/@TemplateSettings.checkoutHeader_step_identification_image') no-repeat 0 0 scroll transparent;
+}
+
+.checkoutHeader-step-delivery{ 
+    background: url('../imagens/@TemplateSettings.checkoutHeader_step_delivery_image') no-repeat 0 0 scroll transparent;
+}
+
+.checkoutHeader-step-payment{
+    background: url('../imagens/@TemplateSettings.checkoutHeader_step_payment_image') no-repeat 0 0 scroll transparent;
+}
+
+/* Footer */
+
+.footer, .rodape { 
+    background: @TemplateSettings.footer_backgroundColor;
+  color: @TemplateSettings.footer_color;
+}
+
+.container_pe_baixo { 
+    background: @TemplateSettings.container_pe_baixo_backgroundColor;
+}
+
+#rodapeCheck { 
+    background: @TemplateSettings.container_pe_baixo_backgroundColor_checkout;
+}
+
+.footer a, .rodape a {
+  color: @TemplateSettings.footer_color;
+}
+
+@if(TemplateSettings.footer_newsletter_display == ""){
+  <text>
+    .footer-newsletter{
+      display: none!important;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_newsletter_borderPosition == "full"){
+  <text>
+    .footer-newsletter { 
+      border: 1px dashed @TemplateSettings.container_newsletter_borderColor;    
+  }
+  .container_newsletter {
+    border: none;  
+  }
+  </text>
+}
+
+@if(TemplateSettings.footer_newsletter_borderPosition == "centro"){
+  <text>
+    .footer-newsletter { 
+    border: none;    
+  }
+    .container_newsletter {
+    border: 1px dashed @TemplateSettings.container_newsletter_borderColor; 
+  }
+  </text>
+}
+
+.footer-newsletter { 
+    background: @TemplateSettings.footer_newsletter_backgroundColor;   
+    color: @TemplateSettings.footer_newsletter_color;
+}
+
+.container_newsletter {
+  background: @TemplateSettings.container_newsletter_backgroundColor;
+}
+
+.footer-newsletter input{
+  color: @TemplateSettings.footer_newsletterInput_color;
+  background: @TemplateSettings.footer_newsletterInput_backgroundColor;
+  border-color: @TemplateSettings.footer_newsletterInput_borderColor;
+  border-style: solid;
+  border-width: 1px;    
+}
+
+.footer-rights{ 
+    background: @TemplateSettings.footer_rights_backgroundColor;
+  color: @TemplateSettings.footer_rights_color;
+}
+
+.container_direitos { 
+    background: @TemplateSettings.container_direitos_backgroundColor;
+}
+
+@if(TemplateSettings.footer_institutional_display == ""){
+  <text>
+    .box_institucionais{
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_redes_sociais_facebook_display == ""){
+  <text>
+    #redesSociaisFacebook {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_redes_sociais_twitter_display == ""){
+  <text>
+    #redesSociaisTwitter {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_redes_sociais_instagram_display == ""){
+  <text>
+    #redesSociaisInstagram {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_redes_sociais_youtube_display == ""){
+  <text>
+    #redesSociaisYoutube {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_redes_sociais_blog_display == ""){
+  <text>
+    #redesSociaisBlog {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_redes_sociais_pinterest_display == ""){
+  <text>
+    #redesSociaisPinterest {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_selos_fcontrol_display == ""){
+  <text>
+    #seloRodapeFControl {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_selos_thawte_display == ""){
+  <text>
+    #seloRodapeThawte {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_selos_ebit_display == ""){
+  <text>
+    #seloRodapeEBit {
+      display: none;
+    }
+  </text>
+}
+
+@if(TemplateSettings.footer_selos_blindado_display == ""){
+  <text>
+    #seloRodapeBlindado {
+      display: none;
+    }
+  </text>
+}
+
+.container_direitos p, .desenvolvimento p { 
+    color: @TemplateSettings.footer_selos_tilt_color;
+}
+
+@if(TemplateSettings.footer_chat_display == ""){
+  <text>
+    .footerChat {
+        display: none;
+    }
+  </text>
+}
+
+
+
+/* Nav Horizontal */
+
+@if(TemplateSettings.nav_horizontal_display == ""){
+  <text>
+    .nav-horizontal{
+      display: none;
+    }
+  </text>
+}
+
+
+
+.box_menu {
+  background: @TemplateSettings.box_menu_backgroundColor; 
+}
+
+.nav-horizontal {
+    background: @TemplateSettings.nav_horizontal_backgroundColor;       
+}
+
+.nav-horizontal-link{
+  color: @TemplateSettings.nav_horizontal_link_color;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.nav_horizontal_borderColor;    
+}
+
+.nav-horizontal-link:hover{ 
+    color: @TemplateSettings.nav_horizontal_linkHover_Color;
+}
+
+@if(TemplateSettings.nav_horizontalChildren_display == ""){
+  <text>
+    .menu_pai_ul{
+      display: none !important;
+    }
+  </text>
+}
+
+.nav-horizontalChildren{
+  background: @TemplateSettings.nav_horizontalChildren_backgroundColor;  
+}
+
+.nav-horizontalChildren-link{ 
+    color: @TemplateSettings.nav_horizontalChildren_link_color;
+}
+
+.departamento_destaque:hover {
+  background-color: @TemplateSettings.nav_horizontal_linkHover_backgroundColor;
+}
+
+@if(TemplateSettings.lnk_dpto_topo_textTransform == "true"){
+  <text>
+    #menu ul li a {
+    text-transform: uppercase;  
+  }
+  </text>
+} else {
+  <text>
+    #menu ul li a {
+    text-transform: none;  
+  }
+  </text>
+}
+
+
+/* Nav Vertical */
+
+@if(TemplateSettings.nav_vertical_display == ""){
+  <text>
+    .nav-verticalHome{
+      display: none;
+    }
+  .menu_lateral {
+    display: none;  
+  }
+  </text>
+}
+
+.nav-verticalHome{ 
+    background: @TemplateSettings.nav_verticalHome_backgroundColor;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @TemplateSettings.nav_verticalHome_borderColor;
+}
+
+.nav-verticalHome-link{
+    color: @TemplateSettings.nav_verticalHome_link_color;       
+}
+
+.nav-verticalHome-link:hover{ 
+    color: @TemplateSettings.nav_verticalHome_linkHover_color;   
+    background: @TemplateSettings.nav_verticalHome_linkHover_backgroundColor;
+}
+
+@if(TemplateSettings.nav_verticalHome_children_display == ""){
+  <text>
+    .nav-verticalHome-children{
+      display: none !important;
+    }
+  </text>
+}
+
+.nav-verticalHome-children{
+    background: @TemplateSettings.nav_verticalHome_children_backgroundColor;  
+}
+
+.nav-verticalHome-childrenLink{
+  color: @TemplateSettings.nav_verticalHome_childrenLink_color;
+}
+
+.nav-vertical{ 
+  background: @TemplateSettings.nav_vertical_backgroundColor;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.nav_vertical_borderColor;    
+}
+
+.nav-vertical-link{ 
+    background: @TemplateSettings.nav_vertical_link_backgroundColor;
+    color: @TemplateSettings.nav_vertical_link_color;     
+}
+
+.nav-vertical-link:hover{ 
+    color: @TemplateSettings.nav_vertical_linkHover_color;
+}
+
+.nav-vertical-childrenLink{ 
+    color: @TemplateSettings.nav_vertical_childrenLink_color;   
+}
+
+/* Buttons */
+
+.btn-primary, .btn-primary a{ 
+    color: @TemplateSettings.btn_primary_color;
+    background: @TemplateSettings.btn_primary_backgroundColor;
+}
+
+.btn-primary-background{ 
+    background: @TemplateSettings.btn_primary_backgroundColor;
+}
+
+.btn-primary-text{
+    color: @TemplateSettings.btn_primary_color;
+}
+
+.btn-secondary, .btn-secondary a{ 
+    color: @TemplateSettings.btn_secondary_color;
+    background: @TemplateSettings.btn_secondary_backgroundColor;    
+}
+
+.btn-secondary-background{ 
+     background: @TemplateSettings.btn_secondary_backgroundColor;       
+}
+
+.btn-secondary-text{ 
+    color: @TemplateSettings.btn_secondary_color;
+}
+
+.btn-tertiary, .btn-tertiary a{ 
+    color: @TemplateSettings.btn_tertiary_color !important;
+    background: @TemplateSettings.btn_tertiary_backgroundColor;        
+}
+
+.btn-tertiary-background{ 
+     background: @TemplateSettings.btn_tertiary_backgroundColor;        
+}
+
+.btn-tertiary-text{ 
+    color: @TemplateSettings.btn_tertiary_color;
+}
+
+.btn-special, .btn-special a{ 
+    color: @TemplateSettings.btn_special_color;
+    background: @TemplateSettings.btn_special_backgroundColor;            
+}
+
+.btn-special-background{ 
+     background: @TemplateSettings.btn_special_backgroundColor;       
+}
+
+.btn-special-text{ 
+    color: @TemplateSettings.btn_special_color;
+}
+
+/* Titles */
+
+.heading-primary { 
+    border-top: 1px solid @TemplateSettings.heading_primary_backgroundColor;
+    color: @TemplateSettings.heading_primary_color;
+    padding: 0px;
+}
+
+.heading-primary h2 {
+  border-top: 5px solid @TemplateSettings.heading_primary_color;
+}
+
+
+.heading-secondary { 
+    padding: 5px;
+    border-bottom: 1px solid @TemplateSettings.heading_secondary_borderBottom;
+}
+
+.tit-box h2 {
+  background: @TemplateSettings.heading_secondary_backgroundColor;
+  border: 1px solid @TemplateSettings.heading_secondary_border;
+}
+
+.tit-box h2 a {
+  color: @TemplateSettings.heading_secondary_color; 
+}
+
+.heading-tertiary{ 
+  background: @TemplateSettings.heading_tertiary_backgroundColor;
+  color: @TemplateSettings.heading_tertiary_color;
+  padding: 5px 10px;
+  font-weight: normal;    
+}
+
+.heading-special{ 
+    color: @TemplateSettings.heading_special_color;
+    border-bottom: 1px solid @TemplateSettings.heading_special_borderBottom!important;
+}
+
+/*.heading-navigation{
+    background: @TemplateSettings.heading_navigation_backgroundColor;
+    color:  @TemplateSettings.heading_navigation_color;
+}*/
+
+.heading-productName{ 
+    color: @TemplateSettings.heading_productName_color;
+}
+
+.heading-footer{ 
+    color: @TemplateSettings.heading_footer_color;
+}
+
+/* Products */
+
+.product-name{ 
+    color: @TemplateSettings.product_name_color;
+    font-size: @TemplateSettings.product_name_fontSize;
+}
+
+.produto_direita .nome_produto h1 {
+    color: @TemplateSettings.product_name_color;
+}
+
+.product-price{ 
+    color: @TemplateSettings.product_price_color;
+    font-size: @TemplateSettings.product_price_fontSize;
+}
+
+.product-adjustedPrice{
+    color: @TemplateSettings.product_adjustedPrice_color;
+    font-size: @TemplateSettings.product_adjustedPrice_fontSize;
+}
+
+.product-installments{
+    color: @TemplateSettings.product_installments_color;
+    font-size: @TemplateSettings.product_installments_fontSize;
+}
+
+.product-payInFullPrice{ 
+    color:  @TemplateSettings.product_payInFullPrice_color;
+    font-size: @TemplateSettings.product_payInFullPrice_fontSize;
+}
+
+
+
+/* Collections */
+
+.collection-productName{
+    color: @TemplateSettings.collection_productName_color;
+    font-size: @TemplateSettings.collection_productName_fontSize!important;
+}
+
+.collection-productDescription{
+    color: @TemplateSettings.collection_productDescription_color;
+}
+
+@if(TemplateSettings.collection_productDescription_display == ""){
+    <text>
+        .collection-productDescription{
+            display: none;
+        }
+    </text>
+}
+
+.collection-productPrice{
+    color: @TemplateSettings.collection_productPrice_color;
+    font-size: @TemplateSettings.collection_productPrice_fontSize;
+}
+
+.collection-product-adjustedPrice{ 
+    color: @TemplateSettings.collection_product_adjustedPrice_color;
+    font-size: @TemplateSettings.collection_product_adjustedPrice_fontSize;
+}
+
+.collection-productInstallments{ 
+    color: @TemplateSettings.collection_productInstallments_color;
+    font-size: @TemplateSettings.collection_productInstallments_fontSize;
+}
+
+.collection-product-payInFullPrice{ 
+    color:  @TemplateSettings.collection_product_payInFullPrice_color;
+    font-size: @TemplateSettings.collection_product_payInFullPrice_fontSize;
+}
+
+.collection-product-releaseTag{ 
+    background: @TemplateSettings.collection_product_releaseTag_backgroundColor;
+    color: @TemplateSettings.collection_product_releaseTag_color;
+}
+.boxOfertaQ {
+  background-color: @TemplateSettings.collection_product_saleTag_backgroundColor;
+  color: @TemplateSettings.collection_product_saleTag_color;
+}
+
+.boxOfertaT {
+  border-top: 20px solid @TemplateSettings.collection_product_saleTag_backgroundColor;  
+}
+
+.ofertaLabel2 a { 
+    background: @TemplateSettings.collection_product_expressTag_backgroundColor;
+    color: @TemplateSettings.collection_product_expressTag_color;
+}
+
+.collection-product-shippingTag a { 
+    background: @TemplateSettings.collection_product_shippingTag_backgroundColor;
+    color: @TemplateSettings.collection_product_shippingTag_color;
+}
+
+.collection-product-unavailableTag { 
+    background: @TemplateSettings.collection_product_unavailableTag_backgroundColor;
+    color: @TemplateSettings.collection_product_unavailableTag_color;
+}
+
+.tagBrinde {
+  background: @TemplateSettings.collection_product_brindeTag_backgroundColor;
+    color: @TemplateSettings.collection_product_brindeTag_color;
+}
+
+.collection-product-prevendaTag { 
+    background: @TemplateSettings.collection_product_prevendaTag_backgroundColor;
+    color: @TemplateSettings.collection_product_prevendaTag_color;
+}
+
+@if(TemplateSettings.collection_product_buyFast == ""){
+    <text>
+        .maisdetalhe{
+            display: none;
+        }
+    </text>
+}
+
+@if(TemplateSettings.collection_product_descricao == ""){
+    <text>
+        .vitrine_geral .produto .descricao {
+      display: none;
+    }
+    .vitrine_geral ul li {
+      height: 635px!important;  
+    }
+    </text>
+}
+
+.produto_esquerda .bx-next {
+  border-top: solid 12px @TemplateSettings.collection_bx_bt_backgroundColor;
+}
+
+.produto_esquerda .bx-prev {
+  border-bottom: solid 12px @TemplateSettings.collection_bx_bt_backgroundColor;
+}
+
+.bx-next, .passarHist, .carLogos .bx-wrapper .bx-next {
+  border-left: 20px solid @TemplateSettings.collection_bx_bt_backgroundColor;
+}
+
+.bx-prev, .voltarHist, .carLogos .bx-wrapper .bx-prev {
+  border-right: 20px solid @TemplateSettings.collection_bx_bt_backgroundColor;
+}
+
+.container_mini_carrinho {
+  border: 1px solid @TemplateSettings.header_miniCart_border;
+}
+
+.mini_carrinho .bt_ir_carrinho a {
+  background-color: @TemplateSettings.header_miniCart_bt_backgroundcolor;
+  color: @TemplateSettings.header_miniCart_bt_color;
+}
+
+.tab_carrinho_mini .mini_preco {
+  color: @TemplateSettings.header_miniCart_price_color!important;
+}
+
+ul.produto_abas li a, .comentarios_avaliar_abas li a {
+  background-color: @TemplateSettings.product_label_backgroundColor;
+  color: @TemplateSettings.product_label_text_backgroundColor;
+  border-top: 1px solid @TemplateSettings.product_label_border_color!important;
+}
+
+ul.produto_abas a.selecionado, .comentarios_avaliar_abas li.selected a {
+  background: @TemplateSettings.product_label_selected_backgroundColor!important;
+  color: @TemplateSettings.product_label_selected_text_backgroundColor!important;
+}
+
+.descricao .descricao_texto, .comentarios_avaliar_conteudo .comentarios, .comentarios_avaliar_conteudo .avaliar {
+  background: none repeat scroll 0 0 @TemplateSettings.product_label_box_backgroundColor!important;
+}
+
+
+
+
+/* Lista of errors and success */
+
+.message-error{
+  background: @TemplateSettings.message_error_backgroundColor;
+  color: @TemplateSettings.message_error_color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.message_error_borderColor;
+}
+
+.message-success{
+  background: @TemplateSettings.message_success_backgroundColor;
+  color: @TemplateSettings.message_success_color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.message_success_borderColor;
+}
+
+/* Gift List */
+
+.giftList-home{ 
+    background: url('../imagens/@TemplateSettings.gifList_home_image') no-repeat center center scroll transparent;
+}
+
+.conteudo_principal {
+    background: url('../imagens/@TemplateSettings.gifList_home_image') no-repeat center center!important;
+}
+
+
+/* Ready List */
+
+.readyList-home{ 
+    background: url("../imagens/@TemplateSettings.readyList_home_image") no-repeat scroll right top rgba(0, 0, 0, 0);
+}
+
+.conteudo-listas-principal {
+    background: url("../imagens/@TemplateSettings.readyList_home_image") no-repeat scroll right top rgba(0, 0, 0, 0)!important;
+}
+
+/* Tabelas */
+
+.table-heading{
+  background: @TemplateSettings.table_heading_backgroundColor;
+  color: @TemplateSettings.table_heading_color;
+}
+
+.table-information{
+  background: @TemplateSettings.table_information_backgroundColor;
+  color: @TemplateSettings.table_information_color;
+}
+
+.table-boxCep{
+  background: @TemplateSettings.table_cep_backgroundColor;
+}
+
+.table-boxCupom{
+  background: @TemplateSettings.table_discount_backgroundColor;
+}
+
+/* Formulários */
+
+.form-fieldName{
+  color: @TemplateSettings.form_fieldName_color;
+}
+
+.form-field-nameRequired{
+  color: @TemplateSettings.form_field_nameRequired_color;
+}
+
+.form input, .form select, .form textarea{
+  background: @TemplateSettings.form_input_backgroundColor;
+  color: @TemplateSettings.form_input_color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.form_input_borderColor;
+}
+
+/* Campos Extras */
+
+@if(TemplateSettings.campos_extras_01_display == "true"){
+  <text>
+    .campoExtra01 {
+          display: block!important;
+      }
+  </text>
+} else {
+  <text>
+    .campoExtra01 {
+          display: none;
+      }
+  </text>
+}
+
+@if(TemplateSettings.campos_extras_02_display == "true"){
+  <text>
+    .campoExtra02 {
+          display: block!important;
+      }
+  </text>
+} else {
+  <text>
+    .campoExtra02 {
+          display: none;
+      }
+  </text>
+}
+
+@if(TemplateSettings.campos_extras_03_display == "true"){
+  <text>
+    .campoExtra03 {
+          display: block!important;
+      }
+  </text>
+}
+
+else {
+  <text>
+    .campoExtra03 {
+          display: none;
+      }
+  </text>
+}
+
+@if(TemplateSettings.campos_extras_04_display == "true"){
+  <text>
+    .campoExtra04 {
+          display: block!important;
+      }
+  </text>
+}
+
+else {
+  <text>
+    .campoExtra04 {
+          display: none;
+      }
+  </text>
+}
+
+@if(TemplateSettings.campos_extras_05_display == "true"){
+  <text>
+    .campoExtra05 {
+          display: block!important;
+      }
+  </text>
+}
+
+else {
+  <text>
+    .campoExtra05 {
+          display: none;
+      }
+  </text>
+}
+
+.btEnviarPop a { 
+    background: no-repeat 0px 0px @TemplateSettings.popup_bt_backgroundColor;
+    color: @TemplateSettings.popup_bt_color;   
+}
+
+#box_pop {
+   background: url(../imagens/@TemplateSettings.popup_backgroundImage) no-repeat 5px 5px transparent;
+}
+
+.popNewsAux {
+  color: @TemplateSettings.popup_message_color; 
+}
+
+
+/*  Alteracoes */
+
+/*Menu horizontal*/
+
+.menu_conteudo .menu_pai a{
+  color:@TemplateSettings.leveloneMenucolor;
+}
+
+.menu_conteudo .menu_pai a:hover{
+  color:@TemplateSettings.leveloneMenucolorhover; 
+  border-bottom-color: @TemplateSettings.menufilhoBgBorda!important;
+}
+
+.menu_conteudo .menu_pai_ul{
+  background-color:@TemplateSettings.menu_pai_ul_bgcolor;
+}
+
+#menu ul li.over ul{
+  border-top-color: @TemplateSettings.menufilhoBgBorda;
+  color: @TemplateSettings.menufilhoBgBorda;
+}
+
+.setaMenudown{
+  border-top-color:@TemplateSettings.menufilhoBgBorda;
+  color: @TemplateSettings.menufilhoBgBorda;
+}
+
+/*Compra rapida*/
+.vitrine_adicionar, .vitrine_remover {
+    background-color: @TemplateSettings.Select_Qtd_bgColor;
+    color: @TemplateSettings.Select_Qtd_Color;
+}
+
+.cont_quantidadeCont{
+  border-color:@TemplateSettings.Select_Qtd_bgColor;
+}
+
+
+/* Filtros */
+
+
+.filtros_pai, .fds_faixaPreco {
+  background-color: @TemplateSettings.filter_arrow_bt_backgroundColor;
+  color: @TemplateSettings.filter_arrow_bt_color;
+}
+
+.downBox {
+  background-color: @TemplateSettings.filter_arrow_backgroundColor;
+}
+
+.arrowDown {
+  border-top: solid 6px @TemplateSettings.filter_arrow_color;
+}
+
+.itemPreco, .boxFiltros .myList {
+  background-color: @TemplateSettings.filter_arrow_itens_backgroundColor;
+}
+
+.boxFiltros .myList a {
+  color: @TemplateSettings.filter_arrow_itens_color;
+}
+
+/* Banners */
+
+@if(TemplateSettings.main_sampleBanner == ""){
+  <text>
+    .imagemBannerSample {
+          display: none!important;
+      }
+  </text>
+}
+
+/*@if(TemplateSettings.banner_sample_display_default == "off"){
+  <text>
+    .bannerDefault {
+          display: none;
+      }
+  </text>
+}
+
+@if(TemplateSettings.banner_sample_display_feminina == "off"){
+  <text>
+    .bannerFeminino {
+          display: none;
+      }
+  </text>
+}
+
+@if(TemplateSettings.banner_sample_display_fitness == "off"){
+  <text>
+    .bannerFitness {
+          display: none;
+      }
+  </text>
+}
+
+@if(TemplateSettings.banner_sample_display_infantil == "off"){
+  <text>
+    .bannerInfantil {
+          display: none;
+      }
+  </text>
+}*/

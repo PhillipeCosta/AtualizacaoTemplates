@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaPesquisas><CaixaPesquisa ID="Busca_Rodape"><CaixaPesquisaHTML><![CDATA[]]></CaixaPesquisaHTML></CaixaPesquisa></CaixaPesquisas><IconesRodapes><IconesRodape ID="Metodos_Pagamento"><IconesRodapeHTML><![CDATA[<ul class="rodape-met-list">
+    <repeticao:icone>
+        <li class="rodape-met-item"><img src="[A2]" border="0" alt="[A1]" /></li>
+    </repeticao:icone>
+</ul>
+]]></IconesRodapeHTML></IconesRodape></IconesRodapes><PaginasInstitucionaiss><PaginasInstitucionais ID="PaginasInstitucionais"><PaginasInstitucionaisHTML><![CDATA[]]></PaginasInstitucionaisHTML></PaginasInstitucionais></PaginasInstitucionaiss><Links><Link ID="lnkDuvidas"><Destino value="Nenhum" /><PaginaLoja value="AfiliadoPrincipal" /><Target value="NovaPagina" /><UsarHTTPS value="False" /></Link><Link ID="lnkFaleConosco"><Destino value="Nenhum" /><PaginaLoja value="AfiliadoPrincipal" /><Target value="NovaPagina" /><UsarHTTPS value="False" /></Link></Links><EbitBanners><EbitBanner ID="selo_rodape_ebit"><EbitBannerHTML><![CDATA[]]></EbitBannerHTML></EbitBanner></EbitBanners></controles></page>

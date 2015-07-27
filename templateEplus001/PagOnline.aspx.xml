@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /></Link></Links><PagOnlines><PagOnline ID="PagOnline1"><PagOnlineHTML><![CDATA[<style>
+/*topo*/
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Tahoma,Arial;
+    font-size: 12px;
+    min-width: 990px;
+    text-align: center;
+}
+
+.topo{
+    height: 125px;
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+}
+.containertopo {
+    background: none repeat scroll 0 0 #ffffff;
+    width: 100%;
+}
+.topo_esquerda{
+    float: left;
+}
+  /*.logo h1{
+    background: url("[A1]logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: 15px;
+    width: 270px;
+  }*/
+
+.logo h1 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.passos {
+    float: right;
+    margin: 12px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+  
+  hr{
+  	display: none;
+  }
+  
+.tit_dept{
+	display:none;
+ }
+  
+.text-topo-check {
+    color: #FFDE00;
+}
+
+.tab_interna {
+	text-align:left;
+	color:#444444;
+	font-size:11px;
+}
+
+.tab_interna td {
+	border-left:#c0c0c0 1px solid;
+	border-right:#c0c0c0 1px solid;
+}
+
+.tab_interna2 {
+	width:100%;
+	padding:2px;
+}
+
+.tab_interna2 th {
+	background-color:#fafafa;
+	text-align:center;
+	font-weight:normal;
+	color:#444444;
+	line-height:20px;
+	border:none;
+	font-size:11px;
+	padding:4px;
+}
+
+.tab_interna2 td {
+	background-color:#ffffff;
+	color:#444444;
+	line-height:20px;
+	border:none;
+	padding:4px;
+	border-bottom:#cccccc 1px dashed;
+	font-size:11px;
+	text-align:center;
+}
+
+.tab_interna3 {
+	width:100%;
+	padding:5px;
+	line-height:20px;
+}
+
+.tab_interna3 .fontV1 {
+	font-size:10px;
+	display:inline;
+}
+
+.tab_interna3 td {
+	border:none;
+}
+
+.tab_interna3 p {
+	border:none;
+	line-height:20px;
+	padding:1px 0;
+}
+
+.tab_interna4 {
+	width:100%;
+	padding:5px;
+	text-align:left;
+}
+
+.tab_interna4 td {
+	border:none;
+	text-align:left;
+}
+
+.img_left {
+	float:left;
+	_margin-left:-3px;
+}
+
+.img_right {
+	float:right;
+	_margin-right:-3px;
+}
+
+.payment_card {
+	text-align:left;
+	font-size:11px;
+	vertical-align:middle;
+	line-height:25px;
+}
+
+#boleto {
+	padding-top:40px;
+	color:#3E3E3E;
+	text-align:center;
+	background-image:url(num_pedido.gif);
+	background-repeat:no-repeat;
+	width:266px;
+	height:80px;
+	_height:122px;
+	display:block;
+	position:relative;
+}
+
+#boleto .cod {
+	font-size:18px;
+	font-weight:bold;
+	line-height:22px;
+}
+
+#boleto .mail {
+	padding-top:30px;
+	font-size:11px;
+	text-decoration:underline;
+}
+
+
+</style>
+
+<div id="container">
+  <div class="containertopo">
+      <div class="topo" id="topo">
+          <div class="topo_esquerda">
+              <div class="logo">
+                  <h1>
+                  </h1>
+              </div>
+          </div>
+          <div class="passos">
+                <div class="seletor"><img src="[A1]passo_pagamento.png?24" alt="Pagamento" border="0" /></div>
+          </div>
+      </div>
+  </div>
+
+
+  <div id="containerconteudo">
+
+      <div id="conteudo">
+
+          <div class="respiro_conteudo">
+
+              <div class="box">
+                   [A0]
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+</div>]]></PagOnlineHTML></PagOnline></PagOnlines><ScriptRazors><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

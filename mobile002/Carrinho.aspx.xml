@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Carrinhos><Carrinho ID="Carrinho1"><CarrinhoContratoHTML><![CDATA[]]></CarrinhoContratoHTML><CarrinhoHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Meu Carrinho&nbsp;<span class="fa fa-shopping-cart"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+[A28][A29][A41][A42]
+<div id="ciashop-cart" class="ciashop-overflow">
+    <div class="col-md-8 ciashop-containerProductsCart ciashop-paddingNone">
+        <repeticao:produtos>  
+            <div class="ciashop-boxProductsCart">
+                <div class="ciashop-imgCart ciashop-display">
+                    <a href="[A24]"><img src="[A3]?width=285&height=381" alt="[A4]" class="img-responsive" /></a>
+                </div>
+                <div class="ciashop-infoCart ciashop-display">
+                    <h4 class="ciashop-nameProductCart text-left"><strong>[A4]</strong></h4>
+                    <p class="ciashop-infoProductCart ">Quantidade: <span class="ciashop-form ciashop-display ciashop-inputCart form">[A5]</span></p>
+                    <condicao:imagem_presente><p class="ciashop-infoProductCart">[A6] Para Presente</p></condicao:imagem_presente>
+                    <p class="ciashop-infoProductCart">Preço Unitário: [A8]</p>
+                    <p class="ciashop-subtotalPriceProductCart"><small>Total:</small> <strong>[A9]</strong></p>
+                    <p class="ciashop-deleteProcuctCart"><a href="[A7]" class="ciashop-lnkCart"><span class="fa fa-trash-o"></span> remover do carrinho</a></p>
+                </div>
+            </div> 
+        </repeticao:produtos>
+    </div>
+    <div class="col-md-4 ciashop-containerDataCart">
+        <h4 class="ciashop-titDataCart"><strong>Informações da sua compra</strong></h4>       
+        <div class="ciashop-infoDataCart">
+          <div class="ciashop-shippingAndCouponCart">
+              <h5>
+                  Subtotal dos produtos: <strong>[A23]</strong>
+              </h5> 
+          </div>   
+            <div class="ciashop-addressBuyer">
+              <h5><span class="fa fa-tags"></span>&nbsp;<strong>Cupom de desconto</strong></h5>
+              <div class="ciashop-form ciashop-couponInput form">[A10]<a href="[A11]" class="btn btn-secondary">Calcular</a></div>
+            </div>                  
+            <div class="ciashop-addressBuyer">
+              <h5><span class="fa fa-truck"></span>&nbsp;<strong>Calcular frete</strong>&nbsp;<small><a class="ciashop-lnkCart" href="javascript:callSearchZipCode('Carrinho1txtCep')">(Esqueci meu CEP)</a></small></h5>
+              <div class="ciashop-form form">[A14]</div>
+              <div class="ciashop-tabShipping ciashop-overflow">
+                  <table class="table">
+                      <repeticao:frete>
+                      <tr>
+                          <td>[A18]</td>
+                          <td>[A19]</td>
+                          <td>[A20]</td>
+                          <td>[A17]</td>
+                      </tr>
+                       </repeticao:frete>
+                  </table>                
+              </div>
+             </div>         
+            <div class="ciashop-shippingAndCouponCart">
+                <condicao:cupom_valor>            
+                  <h5>
+                      <span class="fa fa-tags"></span>&nbsp;Cupom: <strong>[A12]</strong>
+                  </h5>                
+              </condicao:cupom_valor>
+            </div>
+            <div class="ciashop-totalCart">
+                <h3 class="ciashop-display">
+                  <small>Total:</small> <strong>[A21]</strong>
+                </h3>
+            </div>
+            <div class="ciashop-actionsCart">
+              <a href="[A0]" class="btn btn-secondary btn-sm">Comprar Mais Produtos</a>
+              <a href="[A2]" class="btn btn-primary btn-lg">Finalizar Compra</a>
+              <h5><a href="[A22]" class="ciashop-lnkCart"><span class="fa fa-trash-o"></span> esvaziar carrinho</a></h5>              
+            </div>
+        </div>
+
+    </div>
+</div>]]></CarrinhoHTML><CarrinhoItensEditavel value="True" /><CarrinhoVazioHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Meu Carrinho&nbsp;<span class="fa fa-shopping-cart"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+<h3><strong>Seu Carrinho de compras está vazio.</strong></h3>
+	<p>Para inserir produtos em seu carrinho de compras,</p>
+	<p>escolha um produto e clique no botão Comprar.</p>
+
+
+]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Aviso importante!</strong>
+   <ul>
+     <li>Não entregamos para sua região. Insira outro CEP</li>  
+   </ul>
+</div>
+]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;O valor mínimo da compra é de [C0]</strong>
+</div>]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Cupom inválido</strong>
+   <ul>
+     <li>Cupom não é válido para o comprador atual.</li>  
+   </ul>
+</div>
+]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Cupom inválido</strong>
+   <ul>
+     <li>Cupom fora do prazo de validade.</li>  
+   </ul>
+</div>
+]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Cupom inválido</strong>
+   <ul>
+     <li>Cupom não encontrado.</li>  
+   </ul>
+</div>
+]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Cupom inválido</strong>
+   <ul>
+     <li>O cupom de desconto utilizado não é válido para produtos deste departamento.</li>  
+   </ul>
+</div>
+]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Cupom inválido</strong>
+   <ul>
+     <li>O cupom de desconto utilizado não é válido para este produto.</li>  
+   </ul>
+</div>
+]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Cupom inválido</strong>
+   <ul>
+     <li>A compra não atingiu o valor mínimo para ativação do cupom.</li>  
+   </ul>
+</div>
+]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Cupom inválido</strong>
+   <ul>
+     <li>O cupom já foi usado.</li>  
+   </ul>
+</div>
+]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Aviso importante!</strong>
+   <ul>
+     <li>O produto <strong>[I0]</strong> possui customização obrigatória. Favor verificar.</li>  
+   </ul>
+</div>]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Aviso importante!</strong>
+   <ul>
+     <li>O produto [L0] não está disponível para pronta-entrega. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.</li>  
+   </ul>
+</div>]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Aviso importante!</strong>
+   <ul>
+     <li>O produto <strong>[H0]</strong> não teve seu contrato aceito, favor verificar.</li>  
+   </ul>
+</div>
+
+]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Aviso importante!</strong>
+   <ul>
+     <li>A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].</li>  
+   </ul>
+</div>
+
+]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Cupom inválido</strong>
+   <ul>
+     <li>Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.</li>  
+   </ul>
+</div>
+]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Aviso importante!</strong>
+   <ul>
+     <li>O preço do produto [F0] mudou de [F1] para [F2].</li>  
+   </ul>
+</div>
+
+]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosPorRestricaoDeTemplateHTML><![CDATA[Atenção! O produto [S0] foi removido do carrinho pois não está disponível para o template acessado.]]></MensagemProdutosRemovidosPorRestricaoDeTemplateHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;Aviso importante!</strong>
+   <ul>
+     <li>O produto <strong>[K0]</strong> não esta mais disponível.</li>  
+   </ul>
+</div>
+]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Gigantes" /></Carrinho></Carrinhos><Menus><Menu ID="MenuTopo" Visible="True"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><Banners><Banner ID="Fullzao" /></Banners><Links><Link ID="ContinuarCompra"><Destino value="Nenhum" /><PaginaLoja value="AfiliadoPrincipal" /><Target value="NovaPagina" /><UsarHTTPS value="False" /></Link></Links><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

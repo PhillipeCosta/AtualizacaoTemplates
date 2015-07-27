@@ -1,0 +1,22 @@
+.quickList-products-bt{
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.quickList-product-variants{
+	padding-top: 5px;
+}
+
+.quickLists-title{
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 15px;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.nav-quickList-heading{
+	font-size: 19px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}

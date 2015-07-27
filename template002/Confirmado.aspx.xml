@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><PedidoDadoss><PedidoDados ID="order_info"><PedidoDadosHTML><![CDATA[<div class="col-md-3">
+  <div class="order-number text-center">
+    <h4 class="text-uppercase main-padding">Número do Pedido</h4>
+    <h2>[A0]</h2>
+  </div>
+</div>
+<div class="col-md-7">
+  <condicao:boleto>
+  <div class="main-overflow text-left">
+    <p><strong>Forma de Pagamento:</strong> Boleto Bancário</p>  
+    <p style="display: block; margin: 10px 0;">
+        <a class="btn btn-primary" href="javascript: window.open('[A2]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);">
+          Imprimir Boleto
+      </a>
+    </p>
+      <p><strong>Atenção:</strong> Uma nova janela será aberta com o boleto.</p>
+      <p><strong>Atenção</strong> Ver data de vencimento no boleto, após o prazo seu pedido será cancelado.</p>
+  </div>
+  </condicao:boleto>
+  <condicao:afiliado>
+     <p class="main-affiliateLink"><strong>Nome do Afiliado: </strong>[A5]</p>  
+     <p class="main-affiliateLink"><strong>Email do Afiliado: </strong>[A6]</p>  
+   </condicao:afiliado>   
+</div>
+]]></PedidoDadosHTML><PedidoDadosNaoCadastradoHTML><![CDATA[<div class="alert alert-warning" role="alert">
+    <strong>Atenção!</strong>
+     <br />
+    <p>pedido não encontrado!</p>
+</div>]]></PedidoDadosNaoCadastradoHTML></PedidoDados></PedidoDadoss><PedidoPagamentos><PedidoPagamento ID="order_payment"><MetodoPagamentoAccesstageHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> [J3]</p>
+<p><strong>Código da Transação:</strong> [J0]</p>
+<p><strong>Token:</strong> [J1]</p>
+<p><strong>Status do Pagamento:</strong> [J2]</p>
+<p><strong>Valor do pedido:</strong> [J4]</p>
+<p><strong>Parcelamento:</strong> [J5]</p>
+<condicao:categoria_boleto>
+	    <p style="display: block; margin: 10px 0;">
+ <a class="btn btn-primary" href="javascript: window.open('[J6]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);">Imprimir Boleto</a>
+ </p>
+</condicao:categoria_boleto>
+]]></MetodoPagamentoAccesstageHTML><MetodoPagamentoBradescoHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> Bradesco</p>
+<p><strong>Valor do pedido:</strong> [H4]</p>]]></MetodoPagamentoBradescoHTML><MetodoPagamentoCartaoOfflineHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> Cartão [D0]</p>
+<p><strong>Valor do pedido:</strong> [D3] de [D1]</p>
+<condicao:taxa_juros>
+	<p><strong>Taxa de juros:</strong> [D4]</p>
+</condicao:taxa_juros>]]></MetodoPagamentoCartaoOfflineHTML><MetodoPagamentoContraEntregaHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> Pagamento na entrega</p>
+<p><strong>Valor do pedido:</strong> [C0]</p>]]></MetodoPagamentoContraEntregaHTML><MetodoPagamentoDepositoHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> Depósito Bancário</p>
+<p><strong>Valor a ser depositado:</strong> [B0]</p>
+<p><strong>Favorecido:</strong> [B6] - [B7]</p>
+<p><strong>Código do Banco:</strong> [B3]</p>
+<p><strong>Agência:</strong> [B4]</p>
+<p><strong>Conta:</strong> [B5]</p>
+<p><strong>Prazo de pagamento:</strong> [B12]</p>]]></MetodoPagamentoDepositoHTML><MetodoPagamentoItauHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> Itaú</p>
+<p><strong>Descrição do Método:</strong> [G0]</p>
+<p><strong>Descrição do pagamento:</strong> [G1]</p>
+<p><strong>Valor do pedido:</strong> [G2]</p>]]></MetodoPagamentoItauHTML><MetodoPagamentoMoipHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> [I2]</p>
+<p><strong>Código da Transação:</strong> [I0]</p>
+<p><strong>Status do Pagamento:</strong> [I1]</p>
+<p><strong>Valor do pedido:</strong> [I3]</p>
+<p><strong>Parcelamento:</strong> [I4]</p>
+<condicao:categoria_tef>
+	<p><strong>Código de Autorização:</strong> [I5]</p>
+</condicao:categoria_tef>
+<condicao:categoria_cartao>
+	<p><strong>Código de Autorização:</strong> [I5]</p>
+</condicao:categoria_cartao>
+<condicao:categoria_boleto> 
+    <p style="display: block; margin: 10px 0;">
+  		<a class="btn btn-primary" href="javascript: window.open('[I6]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);">Imprimir Boleto</a>
+	</p>
+  	<p><strong>Atenção:</strong> Uma nova janela será aberta com o boleto.</p>
+    <p><strong>Atenção</strong> Ver data de vencimento no boleto, após o prazo seu pedido será cancelado.</p>
+</condicao:categoria_boleto>
+]]></MetodoPagamentoMoipHTML><MetodoPagamentoPadraoHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> [K0]</p>
+<p><strong>Valor:</strong> <span id="orderValue">[K4]</span></p>]]></MetodoPagamentoPadraoHTML><MetodoPagamentoRedeCardHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+<p><strong>Descrição do Método:</strong> [F0]</p>
+<p><strong>Código de Autorização:</strong> [F4]</p>
+<p><strong>Comprovante de Venda:</strong> [F5]</p>
+<p><strong>Valor do pedido:</strong> [F3]x de [F1]</p>]]></MetodoPagamentoRedeCardHTML><MetodoPagamentoVisanetHTML><![CDATA[<p><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+<p><strong>Identificação do pedido:</strong> [E4]</p>
+<p><strong>Código de Autorização:</strong> [E5]</p>
+<p><strong>Código:</strong> [E6]</p>
+<p><strong>Valor do pedido:</strong> [E2]x de [E0]</p>
+<condicao:taxa_juros>
+	<p><strong>Taxa de Juros:</strong> [E3]</p>
+</condicao:taxa_juros>
+]]></MetodoPagamentoVisanetHTML><PedidoPagamentoHTML><![CDATA[<div class="order-payment pull-left col-md-7">        
+    [A0] 
+</div>]]></PedidoPagamentoHTML></PedidoPagamento></PedidoPagamentos><MensagemServicoArs><MensagemServicoAr ID="order_ar"><MensagemServicoArHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <strong>Atenção!</strong>
+  <br />
+  <p>[A0]</p>
+</div>
+]]></MensagemServicoArHTML></MensagemServicoAr></MensagemServicoArs><PedidoEntregas><PedidoEntrega ID="order_shipping"><PedidoEntregaHTML><![CDATA[<div class="order-shipping main-clear main-padding20">
+    <h4 class="main-padding20">//Prazo de Entrega</h4>
+       <h6><strong>[A10]</strong></h6>
+    <div class="main-padding20 main-overflow main-clear">
+      <h4 class="main-padding20">//Informações de entrega</h4>
+        <p><strong>Nome do recebedor: </strong>[A0]</p>
+        <p><strong>CEP: </strong>[A7]</p>
+        <p><strong>Endereço: </strong>[A1],[A2]</p>
+        <p><strong>Complemento: </strong>[A3]</p>
+        <p><strong>Bairro: </strong>[A4]</p>
+        <p><strong>Cidade: </strong>[A5], [A6] - [A8]</p>
+        <p><strong>Trasportadora: </strong>[A9]</p>
+      	<div class="main-padding20">
+            <a href="~/" class="bt btn-secondary">Voltar para a página inicial</a>
+        </div>
+    </div>
+</div>]]></PedidoEntregaHTML></PedidoEntrega></PedidoEntregas><PedidoItenss><PedidoItens ID="order_itens"><PedidoItensHTML><![CDATA[<div class="col-md-12">
+  <div class="col-md-2 main-clearPadding">&nbsp;</div>
+  <div class="col-md-5">&nbsp;</div>
+  <div class="col-md-2 text-center"><span class="fa fa-gift" style="font-size: 30px;"></span></div>
+  <div class="col-md-3">&nbsp;</div>
+  <repeticao:produtos>
+    <div class="main-clear main-overflow main-padding">
+      <div class="cart-image text-center col-md-2 main-clearPadding">
+        <img src="[A4]?width=100&height=100" alt="[A1]" />
+      </div>
+      <div class="text-left col-md-5 cart-margin" style="border-right: 1px solid #2f2f3f;">
+        <h6 style="margin-bottom: 5px;">[A1]</h6>
+        <div class="form cart-input-qtd">
+          <small>quantidade: </small> [A5]
+        </div>
+<condicao:customizacao_carrinho>
+            <repeticao:customizacao_carrinho>
+                <div class="cart-box" style="margin-top: 5px;">
+                  <p><strong>Personalização do produto</strong></p>
+                  <repeticao:customizacao_campos_carrinho>
+                    <div class="cart-box">
+                      <p>[A29]: <strong>[A31]</strong></p>
+                      <p><strong>[A30]</strong></p>
+                    </div>
+                  </repeticao:customizacao_campos_carrinho>
+                </div>                  
+            </repeticao:customizacao_carrinho>
+          </condicao:customizacao_carrinho>        
+      </div>
+      <div class="text-center col-md-2 cart-margin cart-gift">
+        <condicao:imagem_presente>        
+           <span class="fa fa-check-square-o" style="font-size: 20px;"></span>
+        </condicao:imagem_presente>          
+      </div>
+      <div class="text-center col-md-3 cart-margin" style="border-left: 1px solid #2f2f3f;">
+        <h5 class="cart-price">[A6]</h5>
+      </div>
+    </div>
+  </repeticao:produtos>
+</div>
+<div class="col-md-12 main-overflow main-clear">
+  <div class="cart-info pull-right text-right">
+    <p>Subtotal: [A9]</p>
+    <condicao:cupom_desconto><p>Desconto: [A11]</p></condicao:cupom_desconto>
+    <p>Frete: [A14]</p>
+  </div>
+  <div class="cart-total pull-right text-right">
+    <h4>Total: <span>[A16]</span></h4>
+  </div>
+</div>]]></PedidoItensHTML><TamanhoImagem value="Gigantes" /></PedidoItens></PedidoItenss><AlterarSenhas><AlterarSenha ID="passwordChange"><AlterarSenhaHTML><![CDATA[<h4 class="text-left heading-collection main-padding20">//Alterar senha</h4> 
+<div class="col-md-12">
+<div id="passwordChange" class="col-md-12 main-clearPadding">
+    <div class="pull-left col-xs-3 text-uppercase text-center" style="padding: 50px 0">
+        <strong>Login e senha para <br /> acompanhamento do pedido</strong>   
+    </div>
+    <div class="pull-right col-xs-4 passwordChange-form parent-validation">
+        @if (!Model.Saved){
+            using (Html.BeginForm()) {
+                <div class="alterar_formulario">
+                  <p class="alteara_formulario_titulo"><strong>TROCAR SENHA</strong> <small>(Deve conter no mínimo 5 caracteres)</small></p>
+                    <fieldset>
+                        <label><span>Digite a nova senha</span> @Html.InputPassword("NewPassword")</label>
+                        <label><span>Repita a senha</span> @Html.InputPassword("PasswordConfirm")</label>
+                    </fieldset>
+                    <div class="bt_alterar_senha text-right">
+                        <a href="#" class="btn btn-primary" name="enviar" id="enviar">Enviar</a>
+                        <!-- @Html.ImageSubmit("Enviar", "imagens/bt_alterar_senha_guest.png") -->
+                    </div>
+                </div>
+            }
+        }else{
+           <div class="passwordChange-success">
+                <img src="imagens/alterar_senha_sucesso.png" alt="Senha Salva" class="pull-left" style="padding:35px 5px;" />
+             <div class="">
+               <p class="passwordChange-successMsg">Nova senha salva<br /> com <span>sucesso!</span></p>
+               <small>Sua senha foi enviada por email</small>
+             </div>
+            </div>
+        }
+    </div>
+    <div class="pull-left col-xs-5" style="padding: 20px 0">
+        <div class="alterar_login_senha">
+            <p>LOGIN: <strong>@Model.Email</strong></p>   
+            <p>SENHA: <strong>Enviada para o email acima</strong></p> 
+        </div>
+      <p>Uma senha foi gerada automaticamente e enviada para o seu email. Caso deseja trocar a senha utilize a caixa ao lado. ></p>
+    </div>
+</div>
+  </div>
+]]></AlterarSenhaHTML></AlterarSenha></AlterarSenhas><ScriptRazors><ScriptRazor ID="ebitBanner"><ScriptRazorHTML><![CDATA[<div style="margin:10px 0; text-align: center;">@TemplateSettings.main_ebitBanner</div>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

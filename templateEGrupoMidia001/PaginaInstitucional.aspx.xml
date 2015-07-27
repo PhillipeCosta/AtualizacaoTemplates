@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ExibePaginaInstitucionals><ExibePaginaInstitucional ID="institutionalContent"><InstitucionalHTML><![CDATA[<div class="heading-primary">
+  	<h1>[A1]</h1>
+</div>
+<div class="padding-20" style="padding-left: 0; padding-right: 0;">
+  	[A2]
+</div>]]></InstitucionalHTML><InstitucionalNaoEncontradaHTML><![CDATA[<div class="institutional sorry">
+  <div class="institutional-content sorry-content ops">
+    <div class="institutional-info sorry-info">
+      <h2><strong>Oops,</strong> página não encontrada!</h2>
+      <h3>O que pode ter acontecido?</h3>
+      <ul>
+        <li>» Verifique se o endereço foi digitado corretamente</li>
+        <li>» O conteúdo pode ter sido removido ou não estar mais disponível</li>
+        <li>» O servidor pode estar fora do ar no momento</li>
+      </ul>
+    </div>
+  </div>
+</div>]]></InstitucionalNaoEncontradaHTML></ExibePaginaInstitucional></ExibePaginaInstitucionals></controles></page>

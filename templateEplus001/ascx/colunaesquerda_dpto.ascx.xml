@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Menus><Menu ID="Menu_lateral_esquerda"><ApenasDepartamento value="True" /><MenuHTML><![CDATA[<repeticao:pais>
+			<ul>
+				<li class="lista_menu_lat">
+					<a href="[A0]" class="lnk_menu_lat nav-vertical-link">[A1]</a>
+                    <condicao:filho>
+						<ul class="drop_filho_lat">
+                          <repeticao:filhos>
+							<li class="lista_filho_lat"><a href="[A0]" class="lnk_filho_lat nav-vertical-childrenLink">[A1]</a></li>											
+                          </repeticao:filhos>
+						</ul>
+                  	</condicao:filho>
+				</li>
+			</ul>
+</repeticao:pais>  ]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus></controles></page>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Menus><Menu ID="MenuVertical" NomeAmigavel="Menu Vertical" Visible="True"><TipoMenu value="Vertical" /></Menu><Menu ID="MenuTopo" Visible="True"><ApenasDepartamento value="False" /><CssComponente><![CDATA[]]></CssComponente><MenuHTML><![CDATA[         <ul>
+            <repeticao:pais>
+	       <li><a href="[A0]">[A1]</a>
+                <condicao:filho>
+                  <ul>
+                    <repeticao:filhos>
+                        <li><a href="[A0]">[A1]</a></li>
+                    </repeticao:filhos>
+                  </ul>
+                </condicao:filho>
+               </li>
+            </repeticao:pais>
+         </ul>]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus><ExibePaginaInstitucionals><ExibePaginaInstitucional ID="ExibePaginaIntitucional"><InstitucionalHTML><![CDATA[<div class="box">
+  <div class="heading-special">
+    <h2><span>[A1]</span></h2>
+  </div>
+  <div class="box_conteudo">
+      <div class="respiro">
+            [A2]
+      </div>
+  </div>
+</div>]]></InstitucionalHTML><InstitucionalNaoEncontradaHTML><![CDATA[Desculpe, Página institucional não encontrada!]]></InstitucionalNaoEncontradaHTML></ExibePaginaInstitucional></ExibePaginaInstitucionals><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="custom_prog01"><ScriptRazorHTML><![CDATA[@TemplateSettings.custom_prog01]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="bannerSlide" /><Banner ID="collection" /><Banner ID="footer" /></Banners><ListagemSimpless><ListagemSimples ID="home_collectionAnimated"><ModeloHTMLVitrine><![CDATA[<h4 class="text-uppercase text-left heading-collection heading-collectionBorder"><strong>// [A0]</strong></h4>
+<ul class="collectionJquery main-overflow">
+  <repeticao:produtos quantidade="2">
+    <li class="col-md-6">
+      <div class="col-md-6 text-center pull-left">
+        <a href="[A1]" class="collection-product-photo"><img src="[A3]?width=230&height=230" alt="[A6]" /></a>
+      </div>
+      <div class="col-md-6 text-left pull-left">
+        <h5 class="collection-name collectionJquery-nameMargin text-uppercase"><a href="[A1]"><strong>[A6]</strong></a></h5>
+        <p class="collection-shortDescription">[A18]</p>
+        <condicaofalsa:sob_orcamento>
+        <div class="collectionJquery-marginPrice">                   
+            <condicao:preco_antigo>
+              <h6 class="collection-price">[A19]</h6>
+            </condicao:preco_antigo>    
+          <h4 class="collection-adjustedPrice">[A15]</h4>
+        </div>        
+        <condicao:comprar_direto>
+          <div class="collection-buyFast main-overflow">
+            <div class="collection-buyFast-quantity main-overflow pull-left">
+              <a href="[A24]"><span class="fa fa-caret-left"></span></a>
+              [A21]
+              <a href="[A23]"><span class="fa fa-caret-right"></span></a>
+            </div>
+            <div class="collection-buyFast-btn main-overflow pull-left">
+              <a href="[A22]" class="btn-buyFast btn-primary">comprar</a>
+            </div>
+          </div>
+        </condicao:comprar_direto>
+        </condicaofalsa:sob_orcamento>
+        <condicao:sob_orcamento>
+            <a href="[A1]" class="collection-quoteRequest btn btn-primary">Sob Orçamento</a>
+        </condicao:sob_orcamento>           
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="7" /></ListagemSimples><ListagemSimples ID="home_collection"><ModeloHTMLVitrine><![CDATA[<h4 class="text-left heading-collection">// [A0]</h4>
+<ul class="collection main-overflow">
+  <repeticao:produtos>
+    <li class="col-md-3">
+      <div class="text-center collection-photo <condicao:produto_indisponivel>container-unavailable</condicao:produto_indisponivel>">
+        <condicao:promocao_express>
+          <a href="[A29]" class="collection-product-express link-modal-iframe"><img src="[A26]" alt="[A6]" title="Clique e Saiba Mais!" /></a>
+        </condicao:promocao_express>
+        <condicao:produto_indisponivel>
+          <div class="collection-product-unavailable">        
+            <a href="[A1]" class="btn btn-secondary text-uppercase">Indisponível</a>
+          </div>
+        </condicao:produto_indisponivel>
+        <a href="[A1]" class="collection-product-photo"><img src="[A3]?width=230&height=230" alt="[A6]" /></a>
+        <condicao:lancamento>
+          <div class="collection-product-release text-uppercase">
+            <a href="[A1]" class="btn btn-tertiary">Lançamento</a>
+          </div>
+        </condicao:lancamento>
+        <condicao:promocao_frete>
+            <a href="[A35]" class="collection-product-shippingPromo link-modal-iframe"><img src="[A27]" alt="[A6]" title="Clique e Saiba Mais!" /></a>
+        </condicao:promocao_frete>
+        <condicao:promocao_brinde>
+          <a href="[A56]" class="collection-product-gift link-modal-iframe" target="_blank"><img src="[A55]" alt="[A6]" title="Clique e Saiba Mais!" /></a>
+        </condicao:promocao_brinde> 
+      </div>      
+      <div class="text-center">
+      <condicaofalsa:sob_orcamento>
+          <div class="collection-buyFast main-overflow">           
+           <condicao:comprar_direto>            
+            <div class="collection-buyFast-quantity main-overflow pull-left">
+              <a href="[A24]"><span class="fa fa-caret-left"></span></a>
+              [A21]
+              <a href="[A23]"><span class="fa fa-caret-right"></span></a>
+            </div>
+            <div class="collection-buyFast-btn main-overflow pull-left">
+              <a href="[A22]" class="btn-buyFast btn-primary">comprar</a>
+            </div>
+           </condicao:comprar_direto>                      
+          </div>
+        </condicaofalsa:sob_orcamento>
+        <condicao:sob_orcamento>
+          <div class="text-center">
+            <a href="[A1]" class="collection-quoteRequest btn btn-primary">Sob Orçamento</a>
+          </div> 
+        </condicao:sob_orcamento>           
+        <a href="[A1]" class="collection-name collection-nameMargin text-left">[A6]</a>
+        <condicaofalsa:sob_orcamento>
+        <condicao:preco_antigo>
+          <h6 class="collection-price text-left">de [A19]</h6>
+        </condicao:preco_antigo>            
+          <h5 class="collection-adjustedPrice collection-adjustedPrice-margin text-left">por [A15]</h5>   
+        <condicao:parcelamento>
+          <h6 class="collection-instalments text-left">[A13] de [A12] s/juros</h6>
+        </condicao:parcelamento>
+        <h6 class="collection-payInFullPrice text-left collection-adjustedPrice-margin">
+          <condicao:desconto_vista><a href="[A1]">ou <strong>[A25]</strong> à vista</a></condicao:desconto_vista>
+        </h6>          
+        </condicaofalsa:sob_orcamento>
+      </div>    
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="3" /></ListagemSimples><ListagemSimples ID="home_collection_2"><ModeloHTMLVitrine><![CDATA[<h6 class="text-left heading-collection heading-collection-special text-uppercase"><strong>// [A0]</strong></h6>
+<ul class="collection-special main-clearPadding">
+  <repeticao:produtos quantidade="4">
+    <li class="main-overflow main-clear">
+      <div class="text-center col-md-5 text-center">
+        <a href="[A1]"><img src="[A3]?width=100&height=100" alt="[A6]" /></a>
+      </div>
+      <div class="text-left col-md-7">
+        <br />
+        <a href="[A1]" class="text-left collection-name">[A6]</a>
+        <h5 class="collection-adjustedPrice"><condicao:preco_antigo><small class="collection-price">[A19]</small></condicao:preco_antigo>[A15]</h5>
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="2" /></ListagemSimples><ListagemSimples ID="home_collection_3"><ModeloHTMLVitrine><![CDATA[<h6 class="text-left heading-collection heading-collection-special text-uppercase"><strong>// [A0]</strong></h6>
+<ul class="collection-special main-clearPadding">
+  <repeticao:produtos quantidade="4">
+    <li class="main-overflow main-clear">
+      <div class="text-center col-md-5 text-center">
+        <a href="[A1]"><img src="[A3]?width=100&height=100" alt="[A6]" /></a>
+      </div>
+      <div class="text-left col-md-7">
+        <br />
+        <a href="[A1]" class="text-left collection-name">[A6]</a>
+        <h5 class="collection-adjustedPrice"><condicao:preco_antigo><small class="collection-price">[A19]</small></condicao:preco_antigo>[A15]</h5>
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="8" /></ListagemSimples><ListagemSimples ID="home_collection_4"><ModeloHTMLVitrine><![CDATA[<h6 class="text-left heading-collection heading-collection-special text-uppercase"><strong>// [A0]</strong></h6>
+<ul class="collection-special main-clearPadding">
+  <repeticao:produtos quantidade="4">
+    <li class="main-overflow main-clear">
+      <div class="text-center col-md-5 text-center">
+        <a href="[A1]"><img src="[A3]?width=100&height=100" alt="[A6]" /></a>
+      </div>
+      <div class="text-left col-md-7">
+        <br />
+        <a href="[A1]" class="text-left collection-name">[A6]</a>
+        <h5 class="collection-adjustedPrice"><condicao:preco_antigo><small class="collection-price">[A19]</small></condicao:preco_antigo>[A15]</h5>
+      </div>
+    </li>
+  </repeticao:produtos>
+</ul>]]></ModeloHTMLVitrine><TamanhoImagem value="Gigantes" /><TipoListagem value="4" /></ListagemSimples></ListagemSimpless><BoletimNoticiass><BoletimNoticias ID="newsletter"><BoletimNoticiasHTML><![CDATA[<div class="main-clear main-overflow newsletter text-center">
+  <h4 class="text-uppercase"><strong><span class="fa fa-envelope-o"></span>&nbsp;Newsletter</strong></h4>
+  <br />
+  <p class="text-uppercase">Cadastre-se e receba em seu e-mail, novidades, promoções e ofertas da loja</p>
+  <div class="form-newsletter form">
+    <span class="newsletter-name">[A0]</span>
+    <span class="newsletter-email">[A2]</span>
+    <a href="[A4]" class="bt btn-secondary text-uppercase text-center">Enviar</a>    
+    <a href="[A5]" class="text-uppercase float-right main-clear main-overflow newsletter-cancel">Descadastrar-se</a>
+  </div>  
+  
+  <condicao:sexo>
+    [A3] [A6]
+  </condicao:sexo>
+  <condicao:nascimento>
+    [A1]
+  </condicao:nascimento>
+</div>
+
+
+]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass><ScriptRazors><ScriptRazor ID="sampleBanner"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.main_sampleBanner == "true"){
+<div class='item'>
+  <img src="imagens/banner01.png" alt="SampleBanner" class="img-responsive img-bannerSlider" />
+</div>  
+<div class='item'>
+  <img src="imagens/banner02.png" alt="SampleBanner" class="img-responsive img-bannerSlider" />
+</div>  
+
+}          ]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="scriptMobile"><ScriptRazorHTML><![CDATA[]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

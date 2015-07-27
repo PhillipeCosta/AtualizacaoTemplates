@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" /></CaixaAguardeLojas><OpiniaoProdutos><OpiniaoProduto ID="OpiniaoProduto1"><ImagemAvaliacaoDeselecionado value="estrela_off.png" /><ImagemAvaliacaoSelecionado value="estrela_on.png" /><OpiniaoProdutoHTML><![CDATA[<div class="box">
+    <div class="heading-primary">
+      <h2>
+        Opine sobre os produtos que você comprou
+      </h2>
+    </div>
+  <div class="box_opiniao">
+    <div class="info pt">Campos marcados com * são obrigatórios.</div>
+    <ul class="formulario">
+        <li class="list obrigatorio form">
+            <label class="larg_100"><span class="tit_label form-field-nameRequired">Nome*</span>
+            [A0] </label>
+        </li>
+        <li class="list obrigatorio form">
+            <label class="larg_75"><span class="tit_label form-field-nameRequired">Email*</span>
+            [A1]</label>
+        </li>
+        <li class="list obrigatorio form">
+            <label class="larg_50"><span class="tit_label form-field-nameRequired">Cidade*</span>
+            [A3]</label>
+        </li>
+        <li class="list obrigatorio form">
+            <label><span class="tit_label form-field-nameRequired">Estado*</span>
+            [A4]</label>
+        </li>
+        <li class="list form">
+            <label class="checkbox"><span class="tit_label form-fieldName">Exibir email no comentário?</span>
+            [A2] <span class="pt">Sim</span></label>
+        </li>
+    </ul>
+    <div class="opiniao">
+        <ul class="produto_avaliar">
+                    <repeticao:produtos>
+                          <li>
+                            <h3>[A6]</h3>
+                            <div class="opiniao_foto">
+                                <img src="[A5]?width=150&height=150" alt="[A6]" />
+                            </div>
+                            <div class="opiniao_conteudo">
+                                <div class="opiniao_avaliacao">Avaliação<br />[A7]</div>
+                                <div class="opiniao_comentario">
+                                    Comentário:<br />[A8]
+                                 </div>
+                            </div>
+                          </li>
+                        </repeticao:produtos>
+                     </ul>
+                     <div class="bt_opniao">
+                       <a href="[A9]" class="box-bt btn-secondary">Enviar</a>
+      				</div>
+                </div>
+          </div>
+</div>
+]]></OpiniaoProdutoHTML><ProdutosAvaliadosHTML><![CDATA[<div class="box">
+  <div class="heading-primary">
+      <h2>
+        Opine sobre os produtos que você comprou
+      </h2>
+  </div>
+  <div class="dept_vazio">Prezado Cliente, você já Avaliou este(s) produto(s).</div>
+</div>]]></ProdutosAvaliadosHTML><TamanhoImagem value="Gigantes" /></OpiniaoProduto></OpiniaoProdutos><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

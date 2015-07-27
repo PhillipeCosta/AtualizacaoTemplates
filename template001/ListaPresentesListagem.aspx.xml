@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListaPresentesListagems><ListaPresentesListagem ID="ListaPresentesListagem1"><CssComponente><![CDATA[
+          ]]></CssComponente><ListaPresentesListagemHTML><![CDATA[<div class="title_minhaslistas">
+	Minhas listas
+</div>
+<div id="minha_lista_presente">
+    <table width="100%;" cellspacing="0" cellpadding="0" border="0" class="tab_lista_presente">
+        <thead>
+            <tr>
+                <th class="table-heading">Nome da Lista</th>
+             	<th class="table-heading">Tipo de Lista</th>
+                <th class="table-heading">Homenageado</th>
+                <th class="table-heading">Data/Hora do Evento</th>
+                <th class="table-heading" style="width: 30px;">Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+          <repeticao:listagem>
+            <tr class="info_lista_presente">
+                <td class="table-information" style="text-align: left;"><a href="[A3]">[A19]</a></td>
+              	<td class="table-information"><a href="[A3]">[A0]</a></td>
+                <td class="table-information"><a href="[A3]">[A2]</a></td>
+                <td class="table-information"><a href="[A3]">[A1]</a></td>
+              	<td class="table-information"><a href="[A16]"><img src="imagens/bt_lista_presentes_remover.png" alt="deletar lista" /></a></td>
+            </tr>                                                       
+          </repeticao:listagem>
+        </tbody>
+    </table>
+</div>
+<div class="paginacao_lista">
+    <repeticao:pagina>
+        <a href="[A6]" class="<condicao:pagina_selecionada>selecionado</condicao:pagina_selecionada>">[A5]</a>
+    </repeticao:pagina>
+</div>
+
+[A17]]]></ListaPresentesListagemHTML><ListaPresentesUsuarioSemListagemHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+      <h2>Não existem listas de presentes criadas por você.</h2>
+    </div>  	
+</div>
+
+<style>
+	.paginacao_lista{
+  		display: none;
+  	}
+  
+    .tab_lista_presente{
+  		display: none;
+  	}
+  
+  	.criar_lista{
+  		display: block;
+  	}
+</style>
+]]></ListaPresentesUsuarioSemListagemHTML><QuantidadeItensPorPagina value="5" /></ListaPresentesListagem></ListaPresentesListagems><SEOs><SEO ID="seo" /></SEOs><Banners><Banner ID="Fullzao_Topo" /></Banners><Links><Link ID="ListaPresentesCriarLista"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="bt_criar_lista.png" /><PaginaLoja value="ListaPresentesCadastro" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Criar Lista" /><UsarHTTPS value="False" /></Link><Link ID="criar_lista"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="ListaPresentesCadastro" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Criar uma lista de presente" /><UsarHTTPS value="False" /></Link></Links><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

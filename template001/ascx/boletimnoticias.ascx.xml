@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><BoletimNoticiass><BoletimNoticias ID="boletim_lateral"><BoletimNoticiasHTML><![CDATA[<fieldset>
+  <label><span>Seu nome:</span><br />[A0]</label>
+  <label><span>Seu email:</span><br />[A2]</label>  
+</fieldset>
+<condicao:sexo>
+    <fieldset>
+        <div class="sexo">Sexo:<br />[A3] [A6]</div>
+    </fieldset>
+</condicao:sexo>
+<fieldset>
+  	<condicao:nascimento>
+        <label><span>Data de Nascimento:</span><br />[A1]</label>
+    </condicao:nascimento>
+    <label class="bt"><a class="descadastrar" href="[A5]">Descadastrar</a>
+    <img onclick="[A4]" style="cursor:pointer" src="imagens/bt_newsletter_enviar.png?19" /></label>
+</fieldset>]]></BoletimNoticiasHTML><CssComponente><![CDATA[]]></CssComponente></BoletimNoticias></BoletimNoticiass></controles></page>

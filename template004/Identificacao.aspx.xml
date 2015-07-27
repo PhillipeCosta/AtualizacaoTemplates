@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><IdentificacaoCompradors><IdentificacaoComprador ID="customerRegister"><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="form-box w-49 to-right">
+<h2 class="form-box-heading">Dados de Endereço</h2>
+<fieldset class="register-content">
+        <div class="form-item validate required cep  w-100">
+            <label><span class="form-title">Digite Primeiro o CEP*</span>
+            [I2] <a href="javascript:callSearchZipCode('txtCep')" class="register-forgotZipCode link-default">Esqueceu o CEP?</a></label>
+        </div>
+        <div class="form-item validate required  w-100">
+            <label><span class="form-title">Identifique este Endereço* (Consultório, Clínica e etc.)</span>
+            [I5]</label>
+        </div>
+        <div class="form-item validate required  w-60">
+            <label><span class="form-title">Cidade*</span>
+            [I15]</label>
+        </div>
+        <div class="form-item validate required  w-40">
+            <label><span class="form-title">Estado*</span>
+            [I17] </label>
+        </div>
+        <div class="form-item validate required  w-70">
+            <label><span class="form-title">Endereço*</span>
+            [I7]</label>
+        </div>
+        <div class="form-item validate required  w-30">
+            <label><span class="form-title">Número*</span>
+            [I9]</label>
+        </div>
+        <div class="form-item validate required  w-60">
+            <label><span class="form-title">Bairro*</span>
+            [I13]</label>
+        </div>   
+        <div class="form-item  w-40">
+            <label><span class="form-title">Complemento</span>
+            [I11]</label>
+        </div>             
+        <div class="form-item  w-100">
+            <label><span class="form-title">Pontos de Referência</span>
+            [I19]</label>
+        </div>  
+        <div class="form-item w-100">
+            <label class="checkbox"><span class="form-title">&nbsp;</span>[I28]Gostaria de receber e-mails com lançamentos e promoções</label>
+        </div>
+    </fieldset>
+  	<div class="form-box-bt">
+        <a href="javascript: void(0)" class="fakeButtom bt-big-primary to-right">Continuar</a>
+        <input type="button" onclick="[I31]" class="realButtom hide" value="Continuar" />
+    </div>
+</div>]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[<div class="form-box w-49 to-left">
+	<h2 class="form-box-heading"><span class="register-info">Campos marcados com * são obrigatórios.</span>Dados Pessoais</h2>
+	<fieldset class="register-content">
+        <condicao:tipo_pessoa>
+            <div class="form-item w-100 register-personType">
+                [H36][H37]
+            </div>
+        </condicao:tipo_pessoa>
+        <condicao:exibe_pais>
+            <div class="form-item">
+                <label><span class="form-title">País</span>
+                [H1]</label>
+            </div>
+        </condicao:exibe_pais>
+        <div class="form-item validate required w-100" data-type="name">
+            <label><span class="form-title">Nome Completo*</span> [H7]</label>
+        </div>
+      	<div class="form-item validate required w-100">
+            <label><span class="form-title">Email*</span> [H35] <a href="javascript:__doPostBack('btnVerificarEmail','')" class="register-changeEmail link-default">Alterar Email</a></label>
+        </div>
+        <condicao:pessoa_fisica>
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">Sexo*</span> [H18]</label>
+            </div>
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">Data de Nascimento*</span> [H16]</label>
+            </div>           
+            <div class="form-item validate required w-100">
+                <label><span class="form-title">CPF*</span> [H21]</label>
+            </div>
+        </condicao:pessoa_fisica>
+
+        <condicao:pessoa_juridica>
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">CNPJ*</span> [H31]</label>
+            </div>
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">Inscrição Estadual*</span> [H33] </label>
+              	<label class="register-isent">
+                  [H47]<span>Isento</span>
+              	</label>
+            </div>
+        </condicao:pessoa_juridica>
+
+        <div class="form-item validate required w-50 register-phone">
+              <span class="form-title">Telefone Principal*</span>
+              <label class="w-15">[I22]</label> <label class="w-5 align-center">-</label> <label class="w-80">[I23]</label>
+        </div>
+        <div class="form-item w-50 register-phone">
+            <span class="form-title">Telefone Alternativo</span> 
+          	<label class="w-15">[I26]</label><label class="w-5 align-center">-</label><label class="w-80">[I27]</label>
+        </div>
+        <div class="form-item validate required w-50" data-type="password" data-min-length="4">
+            <label><span class="form-title">Senha*</span>
+            [H9]</label>
+        </div>
+        <div class="form-item validate required w-50" data-type="repassword" data-min-length="4">
+            <label><span class="form-title">Confirmar Senha*</span>
+            [H11]</label>
+        </div>        
+   </fieldset>
+</div>]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<div class="heading-primary">
+  <h1>Identificação</h1>
+</div>
+<div class="identification form">
+  [A4]
+  <div class="identification-form form-content">
+    [A0] [A1] [A2] [A3]
+  </div>
+  [A5]
+  <div class="register-form form-content">
+      [A6]
+      [A7]
+  </div>
+</div>]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[<div class="form-box w-60">
+  <h2 class="form-box-heading">Verificar Senha</h2>
+  <fieldset>
+    	<div class="form-item w-100">
+            <label><span class="form-title">Digite seu Email</span> [D1]</label>
+    	</div>  
+    	<div class="form-item w-100">
+            <label><span class="form-title">Digite sua Senha</span> [D15]</label>
+    	</div>  
+  </fieldset>
+  <div class="form-box-bt">
+  	  <a href="[D10]" class="identification-forgotPassword link-default">Esqueci minha senha</a>
+  	  <a href="javascript: void(0)" onclick="[D2]" class="bt-big-primary to-right emailExistente">Continuar</a>
+  </div>
+</div>
+]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div class="alert w-60">
+	<strong>Atenção!</strong> [F0]
+  	<ul>
+        <repeticao:erro>
+          <li>[F1]</li>
+        </repeticao:erro>
+    </ul>
+</div>]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[<div class="alert success w-60">
+  	<strong>Sucesso!</strong> Enviamos para o seu email a senha cadastrada.
+</div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[<div class="first-buy">
+    <h2>Bem-Vindo, este email ainda não está cadastrado!</h2>
+    <p>Para prosseguir será necessário o preenchimento do formulário abaixo. É fácil e rápido.</p>
+</div>]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[<div class="form-box w-60">
+  <h2 class="form-box-heading"><strong style="font-weight: bold;">Insira o seu e-mail para prosseguir com a sua identificação.</strong> <br /><small>Se você já for cadastrado na loja virtual será solicitada a sua senha. Se você estiver fazendo o seu cadastro o formulário para preenchimento será carregado.</small></h2>
+  <fieldset>
+    	<div class="form-item w-100">
+            <label>[B1]</label>
+    	</div>   
+  </fieldset>
+  <div class="form-box-bt">
+  	  <a href="javascript: void(0)" onclick="[B2]" class="bt-big-primary to-right verificarExiste">Continuar</a>
+  </div>
+</div>]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[<!--div class="identification-form-content">
+  <h2><a href="javascript: void(0)" onclick="[C10]" class="bt-small-primary to-right">Verificar Outro Email</a> Novo Cadastro</h2>
+  <fieldset>
+    <label>
+      [C1]
+    </label>     
+  </fieldset>
+</div-->]]></VerificarNovamenteEmailHTML></IdentificacaoComprador><IdentificacaoComprador ID="identification"><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="form-box w-49 to-right">
+<h2 class="form-box-heading">Dados de Endereço</h2>
+<fieldset class="register-content">
+        <div class="form-item validate required cep  w-100">
+            <label><span class="form-title">Digite Primeiro o CEP*</span>
+            [I2] <a href="javascript:callSearchZipCode('txtCep')" class="register-forgotZipCode link-default">Esqueceu o CEP?</a></label>
+        </div>
+        <div class="form-item validate required  w-100">
+            <label><span class="form-title">Identifique este Endereço* (Consultório, Clínica e etc.)</span>
+            [I5]</label>
+        </div>
+        <div class="form-item validate required  w-60">
+            <label><span class="form-title">Cidade*</span>
+            [I15]</label>
+        </div>
+        <div class="form-item validate required  w-40">
+            <label><span class="form-title">Estado*</span>
+            [I17] </label>
+        </div>
+        <div class="form-item validate required  w-70">
+            <label><span class="form-title">Endereço*</span>
+            [I7]</label>
+        </div>
+        <div class="form-item validate required  w-30">
+            <label><span class="form-title">Número*</span>
+            [I9]</label>
+        </div>
+        <div class="form-item validate required  w-60">
+            <label><span class="form-title">Bairro*</span>
+            [I13]</label>
+        </div>   
+        <div class="form-item  w-40">
+            <label><span class="form-title">Complemento</span>
+            [I11]</label>
+        </div>             
+        <div class="form-item  w-100">
+            <label><span class="form-title">Pontos de Referência</span>
+            [I19]</label>
+        </div>  
+        <div class="form-item w-100">
+            <label class="checkbox"><span class="form-title">&nbsp;</span>[I28]Gostaria de receber e-mails com lançamentos e promoções</label>
+        </div>
+    </fieldset>
+  	<div class="form-box-bt">
+        <a href="javascript: void(0)" onclick="[I31]" class="fakeButtom bt-big-special to-right">Continuar</a>
+        <input type="button" onclick="[I31]" class="realButtom hide" value="Continuar" />
+    </div>
+</div>]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[<div class="form-box w-49 to-left">
+  <h2 class="form-box-heading"><span class="register-info">Campos marcados com * são obrigatórios.</span>Dados Pessoais</h2>
+  <fieldset class="register-content">
+        <condicao:tipo_pessoa>
+            <div class="form-item w-100 register-personType">
+                [H36][H37]
+            </div>
+        </condicao:tipo_pessoa>
+        <condicao:exibe_pais>
+            <div class="form-item">
+                <label><span class="form-title">País</span>
+                [H1]</label>
+            </div>
+        </condicao:exibe_pais>
+        <div class="form-item validate required w-100" data-type="name">
+            <label><span class="form-title">Nome Completo*</span> [H7]</label>
+        </div>
+        <div class="form-item validate required w-100">
+            <label><span class="form-title">Email*</span> [H35] <a href="javascript:__doPostBack('btnVerificarEmail','')" class="register-changeEmail link-default">Alterar Email</a></label>
+        </div>
+        <condicao:pessoa_fisica>
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">Sexo*</span> [H18]</label>
+            </div>
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">Data de Nascimento*</span> [H16]</label>
+            </div>           
+            <div class="form-item validate w-50">
+                <label><span class="form-title">RG</span> [H26]</label>
+            </div>            
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">CPF*</span> [H21]</label>
+            </div>
+        </condicao:pessoa_fisica>
+
+        <condicao:pessoa_juridica>
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">CNPJ*</span> [H31]</label>
+            </div>
+            <div class="form-item validate required w-50">
+                <label><span class="form-title">Inscrição Estadual*</span> [H33] </label>
+                <label class="register-isent">
+                  [H47]<span>Isento</span>
+                </label>
+            </div>
+        </condicao:pessoa_juridica>
+
+        <div class="form-item validate required w-50 register-phone">
+              <span class="form-title">Telefone Principal*</span>
+              <label class="w-15">[I22]</label> <label class="w-5 align-center">-</label> <label class="w-80">[I23]</label>
+        </div>
+        <div class="form-item w-50 register-phone">
+            <span class="form-title">Telefone Alternativo</span> 
+            <label class="w-15">[I26]</label><label class="w-5 align-center">-</label><label class="w-80">[I27]</label>
+        </div>
+        <div class="form-item validate required w-50" data-type="password" data-min-length="5">
+            <label><span class="form-title">Senha*</span>
+            [H9]</label>
+        </div>
+        <div class="form-item validate required w-50" data-type="repassword" data-min-length="5">
+            <label><span class="form-title">Confirmar Senha*</span>
+            [H11]</label>
+        </div>        
+   </fieldset>
+</div>]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<div class="heading-primary">
+  <h2>Identificação</h2>
+</div>
+<div class="identification form">
+  [A4]
+  <div class="identification-form form-content">
+    [A0] [A1] [A2] [A3]
+  </div>
+  [A5]
+  <div class="register-form form-content">
+      [A6]
+      [A7]
+  </div>
+</div>]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[<div class="form-box w-60">
+  <h2 class="form-box-heading">Verificar Senha</h2>
+  <fieldset>
+    	<div class="form-item w-100">
+            <label><span class="form-title">Digite seu Email</span> [D1]</label>
+    	</div>  
+    	<div class="form-item w-100">
+            <label><span class="form-title">Digite sua Senha</span> [D15]</label>
+    	</div>  
+  </fieldset>
+  <div class="form-box-bt">
+  	  <a href="[D10]" class="identification-forgotPassword link-default">Esqueci minha senha</a>
+  	  <a href="javascript: void(0)" onclick="[D2]" class="bt-big-special to-right emailExistente">Continuar</a>
+  </div>
+</div>
+]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div class="alert w-60">
+	<strong>Atenção!</strong> [F0]
+  	<ul>
+        <repeticao:erro>
+          <li>[F1]</li>
+        </repeticao:erro>
+    </ul>
+</div>]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[<div class="alert success w-60">
+  	<strong>Sucesso!</strong> Enviamos para o seu email a senha cadastrada.
+</div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[<div class="first-buy">
+    <h2>Bem-Vindo, este email ainda não está cadastrado!</h2>
+    <p>Para prosseguir será necessário o preenchimento do formulário abaixo. É fácil e rápido.</p>
+</div>]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[<div class="form-box w-60">
+  <h2 class="form-box-heading">Verificar Email</h2>
+  <fieldset>
+    	<div class="form-item w-100">
+            <label><span class="form-title">Digite seu Email</span>[B1]</label>
+    	</div>   
+  </fieldset>
+  <div class="form-box-bt">
+  	  <a href="javascript: void(0)" onclick="[B2]" class="bt-big-special to-right verificarExiste">Continuar</a>
+  </div>
+</div>
+]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[<!--div class="identification-form-content">
+  <h2><a href="javascript: void(0)" onclick="[C10]" class="bt-small-primary to-right">Verificar Outro Email</a> Novo Cadastro</h2>
+  <fieldset>
+    <label>
+      [C1]
+    </label>     
+  </fieldset>
+</div-->]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><Banners><Banner ID="header_full" /></Banners><SEOs><SEO ID="seo" /></SEOs><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

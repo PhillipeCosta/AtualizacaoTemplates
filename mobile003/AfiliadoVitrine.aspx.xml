@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AfiliadoVitrines><AfiliadoVitrine ID="AfiliadoVitrine"><AfiliadoVitrineHTML><![CDATA[<div class="respiro">
+    <h2 class="titulo_pedido">
+       <img src="imagens/tit_afiliados.png?15" alt="Afiliados">
+    </h2>
+    </div>
+    <div id="afiliados">
+        <div class="respiro">
+        <p>Monte uma vitrine para colocar em seu site. Basta escolher as configurações abaixo e depois clicar em "Gerar Vitrine". Caso fique de seu agrado, copie
+o código da vitrine e cole no HTML de seu site.<br/>
+O seu código de afiliado já está no código dos produtos, sendo assim não é necessário fazer nenhuma mudança no HTML gerado.</p>
+        <div class="afiliados_conteudo">
+             <h5>Layout</h5> 
+                <fieldset>
+                <label style="width: 50%">
+                    Número de Produtos na Horizontal:<br/>
+                    [A0]
+                </label>
+                <label style="width: 50%">
+                    Número de Produtos na Vertical:<br/>
+                    [A1]
+                </label>
+             </fieldset>
+            
+             <h5>Departamentos</h5> 
+             <fieldset>
+                <label>
+                    Escolha aqui o(s) departamento(s) que aparecerão na sua vitrine:<br/>
+                    [A2]
+                </label>
+             </fieldset>
+            <div class="bt_direita">
+                <a href="[A3]"><img src="imagens/bt_gerar_vitrine.png?15" alt="Gerar vitrine" border="0"/></a>
+            </div>
+            <condicao:iframe>
+            <div class="codigo">
+                Código
+                <div class="codigo_conteudo">
+                    [A4]
+                </div>    
+            </div>
+            [A5]
+            </condicao:iframe>
+        </div>
+        </div>
+   </div>
+</div>]]></AfiliadoVitrineHTML><CssComponente><![CDATA[]]></CssComponente></AfiliadoVitrine></AfiliadoVitrines></controles></page>

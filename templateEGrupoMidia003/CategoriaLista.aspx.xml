@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CategoriaListas><CategoriaLista ID="categoriaLista"><Listas><![CDATA[    <div id="container-listas">
+        <div id="menu-listas">
+          <h3 class="titulo-lista">Encontre sua lista:</h3>
+            <ul>
+              <repeticao:categorias>
+                <li><a href="[A8]" class="heading-secondary <condicao:menu_selecionado>heading-primary</condicao:menu_selecionado>"><span>[A5]</span></a></li>
+              </repeticao:categorias>
+            </ul>
+        </div>
+        <div id="conteudo-listas" class="tabela-listas">
+           <div class="texto_categoria">
+            <h3>[A5]</h3>
+            <span class="sub-listas">
+             
+                <ul>
+                    <li> > Confira abaixo a lista escolar de acordo com a escolaridade de seus filhos</li>
+                    <li class="last"> > Clique no nome da lista para ver os produtos. </li>
+ 
+                </ul>
+                
+             
+             </span>
+             </div>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="table-heading">&nbsp;</th>
+                        <th class="table-heading">Lista</th>
+                        <th class="table-heading">Nº de Produtos</th>
+                        <th class="table-heading">Preço Total</th>
+                        <th class="table-heading">Comprar lista</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <repeticao:listas>
+                <tr>
+                  <td class="table-information"><a href="[A4]"><img src="[A2]" alt="[A0]" /></a></td>
+                  <td class="table-information nome_lista"><a href="[A4]">[A0]</a></td>
+                  <td class="table-information">[A3]</td>
+                  <td class="table-information preco"><span class="preco-de">De: [A9]</span> <span>Por:</span> [A6]</td>
+                  <td class="table-information"><a href="[A7]" class="box-bt btn-primary">Comprar lista</a></td>
+                </tr>
+            </repeticao:listas>
+ 
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>]]></Listas><ListaVaziaHTML><![CDATA[<div id="container-listas">
+        <div id="menu-listas">
+          <div class="bg_listas"></div>
+            <ul>
+              <repeticao:categorias>
+                <li><a href="[A8]"><span>[A5]</span></a></li>
+              </repeticao:categorias>
+            </ul>
+        </div>
+        <div id="conteudo-listas" class="tabela-listas">
+          <h2>Categoria Vazia</h2>
+
+        </div>
+    </div>]]></ListaVaziaHTML></CategoriaLista></CategoriaListas><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

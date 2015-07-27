@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ComprarDiretos><ComprarDireto ID="ComprarDireto"><ComprarDiretoHTML><![CDATA[<div class="main-padding20 main-clear main-overflow">
+  <h5 class="text-center text-uppercase" style="width: 600px">[A0]</h5>
+</div>
+<div class="main-padding20 main-clear">
+  <div class="col-md-6 text-right">
+        <a href="[A2]" class="bt btn-primary text-center text-uppercase">Continuar Comprando</a>
+  </div>
+  <div class="col-md-6 text-left">
+        <a href="[A1]" class="bt btn-secondary text-center text-uppercase">Ir para o Carrinho</a>  
+  </div>
+</div>
+]]></ComprarDiretoHTML><MensagemSemPermissaoDeAdicionarNoTemplateHTML><![CDATA[<div class="main-padding20 main-clear main-overflow">
+  <h5 class="text-center text-uppercase">Você não tem permissão para comprar neste template</h5>
+</div>
+<div class="main-padding20 main-clear">
+  <div class="col-md-12 text-center">
+        <a href="[B0]" class="bt btn-primary text-center text-uppercase">Fazer login</a>
+  </div>
+</div>
+]]></MensagemSemPermissaoDeAdicionarNoTemplateHTML></ComprarDireto></ComprarDiretos></controles></page>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Menus><Menu ID="sideMenu"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<ul>
+  <repeticao:pais>
+    <li class="nav-primary-heading-primary">
+      <h3><a href="[A0]">[A1]<span class="to-right"> &rsaquo; </span></a></h3>
+      <condicao:filho>
+        <div class="submenu">
+          <div class="submenu-wrap">
+            <div>
+              <h4>
+                <a href="[A0]">[A1]</a>
+              </h4>
+              <ul>
+                <repeticao:filhos>
+                <li>
+                  <a href="[A0]">[A1]</a>
+                </li>
+                </repeticao:filhos>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </condicao:filho>
+    </li>
+  </repeticao:pais>
+</ul>]]></MenuHTML><TipoMenu value="Vertical" /></Menu></Menus></controles></page>

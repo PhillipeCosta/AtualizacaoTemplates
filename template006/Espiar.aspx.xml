@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ImagensProdutos><ImagensProduto ID="quickView_product_images"><ImagensProdutoHTML><![CDATA[<condicao:imagens_pequenas>
+  <div class="product-image-small main-overflow pull-left">
+    <ul id="mycarousel" class="jcarousel miniaturas_slider main-clearPadding">
+      <li>
+        <repeticao:imagem>[A1]</repeticao:imagem>
+      </li>
+    </ul>
+  </div>
+</condicao:imagens_pequenas>           
+<div class="pull-left">                    
+  [A0]
+</div>]]></ImagensProdutoHTML><TamanhoImagemEspiar value="Gigantes" /><TamanhoImagemProdutos value="Gigantes" /><TamanhoImagemZoomEspiar value="SuperZoom" /><TamanhoImagemZoomProdutos value="SuperZoom" /><ZoomAtivado value="True" /></ImagensProduto><ImagensProduto ID="product_images"><ImagensProdutoHTML><![CDATA[<condicao:imagens_pequenas>
+  <div class="product-image-small main-overflow pull-left">
+    <ul id="mycarousel" class="jcarousel miniaturas_slider main-clearPadding">
+      <li>
+        <repeticao:imagem>[A1]</repeticao:imagem>
+      </li>
+    </ul>
+  </div>
+</condicao:imagens_pequenas>           
+<div class="pull-left" style="width: 84%\9;">                    
+  [A0]
+</div>]]></ImagensProdutoHTML><TamanhoImagemEspiar value="Gigantes" /><TamanhoImagemProdutos value="Gigantes" /><TamanhoImagemZoomEspiar value="SuperZoom" /><TamanhoImagemZoomProdutos value="SuperZoom" /><ZoomAtivado value="True" /></ImagensProduto><ImagensProduto ID="ImagemProduto"><ImagensProdutoHTML><![CDATA[<condicao:imagens_pequenas>
+  <div class="product-image-small main-overflow pull-left">
+    <ul id="mycarousel" class="jcarousel miniaturas_slider main-clearPadding">
+      <li>
+        <repeticao:imagem>[A1]</repeticao:imagem>
+      </li>
+    </ul>
+  </div>
+</condicao:imagens_pequenas>           
+<div class="pull-left" style="width: 84%\9;">                    
+  [A0]
+</div>]]></ImagensProdutoHTML><TamanhoImagemEspiar value="Gigantes" /><TamanhoImagemProdutos value="Pequenas" /><TamanhoImagemZoomEspiar value="SuperZoom" /><TamanhoImagemZoomProdutos value="SuperZoom" /><ZoomAtivado value="False" /></ImagensProduto></ImagensProdutos><ProdutoNomes><ProdutoNome ID="quickView_product_name"><ProdutoNomeHTML><![CDATA[<h4><strong>[A0]</strong></h4>
+<br />
+<h6>Código [A3]</h6>]]></ProdutoNomeHTML></ProdutoNome><ProdutoNome ID="product_name"><ProdutoNomeHTML><![CDATA[<h4><strong>[A0]</strong></h4>
+<br />
+<h6>Código [A3]</h6>]]></ProdutoNomeHTML></ProdutoNome><ProdutoNome ID="ProdutoNome1"><ProdutoNomeHTML><![CDATA[<h4 class="text-uppercase text-left heading-primary">
+  <strong> [A0] [A1] [A2] </strong>
+</h4>]]></ProdutoNomeHTML></ProdutoNome></ProdutoNomes><ProdutoAvaliars><ProdutoAvaliar ID="quickView_product_rating"><AvaliacaoHTML><![CDATA[]]></AvaliacaoHTML><ImagemAvaliacaoDeselecionado value="" /><ImagemAvaliacaoSelecionado value="" /><MensagemAlertaProdutoAvaliarHTML><![CDATA[]]></MensagemAlertaProdutoAvaliarHTML><MensagemSucessoProdutoAvaliarHTML><![CDATA[]]></MensagemSucessoProdutoAvaliarHTML><ProdutoAvaliarHTML><![CDATA[]]></ProdutoAvaliarHTML><ProdutoPrimeiraAvaliacaoHTML><![CDATA[]]></ProdutoPrimeiraAvaliacaoHTML><ReadOnly value="False" /></ProdutoAvaliar><ProdutoAvaliar ID="product_rating"><AvaliacaoHTML><![CDATA[]]></AvaliacaoHTML><ImagemAvaliacaoDeselecionado value="rating-star-off.png" /><ImagemAvaliacaoSelecionado value="rating-star-on.png" /><MensagemAlertaProdutoAvaliarHTML><![CDATA[]]></MensagemAlertaProdutoAvaliarHTML><MensagemSucessoProdutoAvaliarHTML><![CDATA[]]></MensagemSucessoProdutoAvaliarHTML><ProdutoAvaliarHTML><![CDATA[[A0]]]></ProdutoAvaliarHTML><ProdutoPrimeiraAvaliacaoHTML><![CDATA[<a href="#go_rating">Seja o primeiro a avaliar</a>]]></ProdutoPrimeiraAvaliacaoHTML><ReadOnly value="False" /></ProdutoAvaliar><ProdutoAvaliar ID="ProdutoAvaliar1"><AvaliacaoHTML><![CDATA[]]></AvaliacaoHTML><ImagemAvaliacaoDeselecionado value="" /><ImagemAvaliacaoSelecionado value="" /><MensagemAlertaProdutoAvaliarHTML><![CDATA[]]></MensagemAlertaProdutoAvaliarHTML><MensagemSucessoProdutoAvaliarHTML><![CDATA[]]></MensagemSucessoProdutoAvaliarHTML><ProdutoAvaliarHTML><![CDATA[]]></ProdutoAvaliarHTML><ProdutoPrimeiraAvaliacaoHTML><![CDATA[]]></ProdutoPrimeiraAvaliacaoHTML><ReadOnly value="False" /></ProdutoAvaliar></ProdutoAvaliars><PrecoProdutos><PrecoProduto ID="quickView_product_price"><ParcelamentoProdutoHTML><![CDATA[]]></ParcelamentoProdutoHTML><PrecoProdutoHTML><![CDATA[<condicao:preco_antigo><p class="product-price"><small>de</small> [A1]</p></condicao:preco_antigo>
+<h1 class="product-adjustedPrice">[A3]</h1>
+<condicao:parcelamento><p class="product-instalments">[A6]x de [A7]</p></condicao:parcelamento>
+]]></PrecoProdutoHTML></PrecoProduto><PrecoProduto ID="product_price"><ParcelamentoProdutoHTML><![CDATA[<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h5>// Formas de pagamento</h5>
+      </div>
+      <div class="modal-body">
+            <ul class="main-clearPadding main-overflow main-clear">
+                <repeticao:metodo_pagamento>
+                <li>
+                    <div class="col-md-2"><img src="[B1]" alt="Parcelamento" /></div>
+                    <div class="col-md-10">
+                        <table border="0" cellpadding="2" cellspacing="1" class="table">
+                            <thead>
+ 
+                                <tr>
+                                    <th>Número de Parcelas</th>
+                                    <th>Valor das Parcelas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <repeticao:parcelas>
+                                <tr>
+                                    <td>[B2]</td>
+                                    <td>[B3]</td>
+                                </tr>
+                                </repeticao:parcelas>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                </repeticao:metodo_pagamento>
+            </ul>   
+      </div>
+    </div>
+  </div>
+</div>]]></ParcelamentoProdutoHTML><PrecoProdutoHTML><![CDATA[<condicao:preco_antigo><p class="product-price"><small>de</small> [A1]</p></condicao:preco_antigo>
+<h1 class="product-adjustedPrice">[A3]</h1>
+<condicao:parcelamento>
+  <p class="product-instalments">[A6]x de [A7]</p>
+  <a href="#" class="product-instalments" data-toggle="modal" data-target="#myModal2">veja opções de parcelamento <span class="fa fa-angle-right"></span></a>
+[A10]
+</condicao:parcelamento>
+]]></PrecoProdutoHTML></PrecoProduto><PrecoProduto ID="PrecoProduto1"><ParcelamentoProdutoHTML><![CDATA[<div class="container_parcelamento" style="display:none">
+    <div id="box_parcelamento">
+        <div class="heading-primary">
+            <h2>Parcelamento</h2>
+        </div>
+        <div class="conteudo">
+            <ul>
+                <repeticao:metodo_pagamento>
+                <li>
+                    <div class="img_parc"><img src="[B1]" alt="Parcelamento" /></div>
+                    <div class="formas_parc">
+                        <table border="0" cellpadding="2" cellspacing="1">
+                            <thead>
+ 
+                                <tr>
+                                    <th class="table-heading">Número de Parcelas</th>
+                                    <th class="table-heading">Valor das Parcelas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <repeticao:parcelas>
+                                <tr>
+                                    <td>[B2]</td>
+                                    <td>[B3]</td>
+                                </tr>
+                                </repeticao:parcelas>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                </repeticao:metodo_pagamento>
+            </ul>
+        </div>
+    </div>
+</div>]]></ParcelamentoProdutoHTML><PrecoProdutoHTML><![CDATA[<div class="produto_preco">
+    <condicao:preco_antigo>
+       <h6 style="text-decoration: line-through;">[A0] [A1]</h6>
+    </condicao:preco_antigo>
+    <div class="custom-paddingV15">
+      <h3><small>Por:</small> <strong>[A3]</strong></h3>
+    </div>
+    <condicao:parcelamento>
+        <div class="collection-productInstallments">
+          <h6>[A5] [A6]x de [A7]</h6>            
+        </div>
+    </condicao:parcelamento>
+</div>]]></PrecoProdutoHTML></PrecoProduto></PrecoProdutos><VariantesProdutos><VariantesProduto ID="quickView_product_variant"><ClasseCssImagemSelecionada value="" /><TamanhoImagemVariantes value="15" /><VariantesProdutoHTML><![CDATA[<div class="pull-left">
+  <condicao:variante1>
+    <div class="main-overflow product-box-variants form">
+      <strong class="text-uppercase">[A0]</strong>
+      <div>[A1]</div>
+    </div>
+  </condicao:variante1>
+  <condicao:variante2>
+    <div class="main-overflow product-box-variants form">
+      <strong class="text-uppercase">[A0]</strong>
+      <div>[A1]</div>
+    </div>
+  </condicao:variante2>
+</div>
+<div class="pull-left">
+  <condicao:botao_comprar>
+    <a href="[A3]" class="bt btn-buy text-uppercase text-center">
+      Comprar
+    </a>
+  </condicao:botao_comprar>
+  <condicao:botao_encomendar>
+    <a href="[A4]" class="bt btn-secondary text-uppercase text-center">Encomendar</a>
+  </condicao:botao_encomendar>
+</div>  ]]></VariantesProdutoHTML></VariantesProduto><VariantesProduto ID="product_variantsAndBuy"><ClasseCssImagemSelecionada value="" /><TamanhoImagemVariantes value="15" /><VariantesProdutoHTML><![CDATA[<div class="pull-left">
+  <condicao:variante1>
+    <div class="main-overflow product-box-variants form">
+      <strong class="text-uppercase">[A0]</strong>
+      <div>[A1]</div>
+    </div>
+  </condicao:variante1>
+  <condicao:variante2>
+    <div class="main-overflow product-box-variants form">
+      <strong class="text-uppercase">[A0]</strong>
+      <div>[A1]</div>
+    </div>
+  </condicao:variante2>
+</div>
+<div class="pull-left">
+  <condicao:botao_comprar>
+    <a href="[A3]" class="bt btn-buy text-uppercase text-center">
+      Comprar
+    </a>
+  </condicao:botao_comprar>
+  <condicao:botao_encomendar>
+    <a href="[A4]" class="bt btn-secondary text-uppercase text-center">Encomendar</a>
+  </condicao:botao_encomendar>
+</div>  ]]></VariantesProdutoHTML></VariantesProduto><VariantesProduto ID="Varianteproduto"><ClasseCssImagemSelecionada value="" /><TamanhoImagemVariantes value="25" /><VariantesProdutoHTML><![CDATA[<div class="pull-left col-xs-6">
+  <condicao:variante1>
+    <div class="col-xs-12 custom-paddingV10 custom-paddingH10 custom-overflow form">
+      <strong class="text-uppercase">[A0]</strong>
+      <div class="custom-paddingV15">[A1]</div>
+    </div>
+  </condicao:variante1>
+  <condicao:variante2>
+    <div class="col-xs-12 custom-paddingV10 custom-paddingH10 custom-overflow form">
+      <strong class="text-uppercase">[A0]</strong>
+      <div class="custom-paddingV15">[A1]</div>
+    </div>
+  </condicao:variante2>
+</div>
+<div class="pull-left col-xs-6 text-center custom-paddingV5">
+  <condicao:botao_comprar>
+    <a href="[A3]" class="btn btn-primary text-uppercase text-center custom-paddingV25 custom-paddingH50">
+      Comprar
+    </a>
+  </condicao:botao_comprar>
+  <condicao:botao_encomendar>
+    <a href="[A4]" class="btn btn-secondary text-uppercase text-center custom-paddingV25 custom-paddingH50">Encomendar</a>
+  </condicao:botao_encomendar>
+</div>  ]]></VariantesProdutoHTML></VariantesProduto></VariantesProdutos><ProdutoDescricoess><ProdutoDescricoes ID="product_descriptions"><ProdutoDescricoesHTML><![CDATA[<div class="product-descriptions">
+    <ul class="product-descriptions-titles main-clearPadding">
+        <repeticao:abas>
+           <li data-tab="[A0]"><strong>[A1]</strong></li>
+        </repeticao:abas>
+    </ul>
+    <div class="product-description" itemprop="description">
+        <repeticao:conteudo>
+            <div data-tab-content="[A0]" class="product-descriptions-content">
+                <p>[A2]</p>
+            </div>
+        </repeticao:conteudo>
+    </div>
+</div>
+
+<script>
+$(function(){
+	$(".product-descriptions-content:first").addClass("active");
+	$(".product-descriptions-titles li:first").addClass("active");  
+  	$(".product-descriptions-titles li").click(function(){
+  		$(".product-descriptions-titles li").removeClass("active"); 
+  		$(".product-descriptions-content").removeClass("active");
+  		$(this).addClass("active");
+  		$("[data-tab-content='"+$(this).attr("data-tab")+"']").addClass("active");
+  	});
+});
+</script>]]></ProdutoDescricoesHTML></ProdutoDescricoes></ProdutoDescricoess></controles></page>

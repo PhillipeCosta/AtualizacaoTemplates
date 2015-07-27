@@ -1,0 +1,1426 @@
+
+input, textarea, select{
+  outline: none;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+:selection{
+  background: #ef907c;
+  color: #fff;
+}
+
+:-moz-selection{
+  background: #ef907c;
+  color: #fff;
+}
+
+header{
+  width: 100%;
+  background-size: 100%;
+}
+
+.ciashop-widthFull{
+    width: 100% !important;
+}
+
+.ciashop-paddingNone{
+  padding: 0;
+}
+
+.ciashop-clear{
+  clear: both;
+}
+
+.ciashop-overflow{
+  overflow: hidden;
+}
+
+.ciashop-bannerRight{
+  display: none;
+}
+
+.ciashop-display{
+  display: inline-block;
+}
+
+.ciashop-positionRelative{
+  position: relative;
+}
+
+/* Paginacao */
+
+.pagination-iten{
+    display: inline-block;
+    line-height: 1.42857;
+    margin-left: 0;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+}
+.pagination-iten.active {
+    cursor: default;
+    z-index: 2;
+}
+.pagination-prev{
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0;
+}
+
+.pagination-next{
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px; 
+}
+
+/* Botões padrões */
+
+.btnCiashop-form{
+    background: #db9b8b;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btnCiashop-formEdit{
+    background: #ccc;
+    color: #333;
+}
+
+.btnCiashop-formEdit:hover,
+.btnCiashop-formEdit:focus,
+.btnCiashop-formEdit:active{
+    background: #6b6b6b !important;
+}
+
+.btnCiashop-form:hover,
+.btnCiashop-form:focus,
+.btnCiashop-form:active,
+.btnCiashop-form.active{
+    background: #c47d6c;
+    border: 1px solid #fff;
+    color: #fff;    
+}
+
+/* Inputs e TextArea padrões */
+
+.ciashop-formCenter{
+    margin: 0 auto;
+}
+
+.ciashop-form{
+  width: 100%;
+}
+
+.ciashop-form label{
+    font-size: 13px;
+    font-weight: normal;
+    color: #4c1e25;
+}
+
+.ciashop-form input[type='text'],
+.ciashop-form input[type='password'],
+.ciashop-form textarea,
+.ciashop-form select{
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+
+.ciashop-form .input-validation-error{
+  border-color: red;
+}
+
+.ciashop-form input:focus,
+.ciashop-form textarea:focus,
+.ciashop-form select:focus{
+  border-color: #4a738a;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(74, 115, 138, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(74, 115, 138, 0.6);  
+}
+
+.ciashop-form textarea{
+    height: 140px;
+}
+
+/* Topo Checkout */
+
+.headerCheckout{
+}
+
+.headerCheckout .logo a{
+    background: transparent;
+    border-radius: 0;
+    padding: 10px;
+    margin: 0;
+}
+
+.ciashop-stepsCheckout{
+    display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.ciashop-stepsCheckout ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0.3em;
+    text-align: center;
+    
+}
+
+.ciashop-stepsCheckout ul li{
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px;
+}
+
+.ciashop-stepsCheckout ul li.active{
+
+}    
+
+
+/* Login Menu Mobile */
+
+.labelLoginMobile a{
+  position: relative;
+  display: block;
+  padding: 10px 15px;  
+  line-height: 20px;  
+}
+
+/* Input Busca Mobile */
+
+.ciashop-searchMobile input{
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.ciashop-searchMobile input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Banner Principal Jquery */
+
+.ciashop-arrowBannerLeft{
+  left: 0% !important;
+  top: 43% !important;
+  background: #343434;
+  padding: 1em 0.6em 1em 0.2em;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  z-index: 5;
+  display: inline-block;
+}
+
+.ciashop-arrowBannerRight{
+  right: 0% !important;
+  top: 43% !important;  
+  background: #343434;
+  padding: 1em 0.2em 1em 0.6em;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: absolute;
+  z-index: 5;
+  display: inline-block;
+} 
+
+/* TitBox */
+
+.ciashop-titBox{
+  position: relative;
+  overflow: hidden;
+}
+
+.ciashop-titBox h2{
+  text-transform: uppercase;  
+  display: block;
+  float: left;    
+  font-size: 1em;
+  font-weight: normal;
+  font-family: "robotomedium";
+  z-index: 2;
+  position: relative; 
+  padding: 0.5em;
+}
+
+.ciashop-cantoTit{
+  width: 1px;
+  height: 1px;
+  position: relative;
+  z-index: 2;
+  border: solid 1.1em transparent;
+  border-right: none;
+  margin: 0.5em 0;
+  margin-top: 10px;
+  top: 10px;
+  display: block;
+  float: left;
+}
+
+.ciashop-titBox hr{
+  margin: 0;
+  position: absolute;
+  top: 57%;
+  height: 1px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border: 0 none;
+  background: 0 none; 
+  border-top: 1px solid #d8d8d8;
+}
+
+/* Vitrine Principal */
+
+.ciashop-showCase{
+  overflow: hidden;
+}
+
+.ciashop-adjustShowCase{
+  position: relative;
+  padding: 5px;
+}
+
+.ciashop-adjustShowCase img{
+  width: 100%;
+}
+
+.ciashop-boxPrice{
+  position: absolute;
+  right: 5px;
+  bottom: 45px;
+}
+
+.ciashop-boxPriceShowCase{
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+
+h3.ciashop-priceShowCase{
+  width: 85px;  
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.7em 0.3em 0.5em;
+  text-decoration: line-through;
+}
+
+.ciashop-cantoPrice{
+  width: 1px;
+  height: 1px;
+  position: relative;
+  z-index: 2;
+  border: solid 1.1em transparent;
+  border-left: none;
+  margin: 0.7em 0;
+  margin-top: 0.7em;
+  top: 10px;
+  display: block;
+  float: left;
+  margin-left: -10px;   
+}
+
+/* Preço Ajustado */
+
+h3.ciashop-adjustedPriceShowCase{
+  width: 105px; 
+  font-weight: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4em 0.3em 0.3em;
+  font-family: 'robotomedium';
+}
+
+.ciashop-cantoAdjustedPrice{
+  width: 1px;
+  height: 1px;
+  position: relative;
+  z-index: 2;
+  border: solid 1em transparent;
+  border-left: none;
+  margin: 0.5em 0;
+  margin-top: 0.2em;
+  top: 17px;
+  display: block;
+  float: left;
+  margin-left: -10px; 
+}
+
+/* Frete Grátis */
+
+.ciashop-boxShippingLabel{
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  padding-left: 5px;  
+}
+
+h4.ciashop-shippingLabel{
+  width: 85px;  
+  color: #fff;
+  font-weight: normal;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.7em 0.3em 0.5em;
+  background: #807454;  
+  float: left;
+  margin: 0;
+}
+
+.ciashop-cantoShippingLabel{
+  width: 1px;
+  height: 1px;
+  position: relative;
+  z-index: 2;
+  border: solid 0.9em transparent;
+  border-left: solid 10px #807454;
+  border-right: none;
+  top: 0;
+  display: block;
+  float: left;
+  margin-right: -10px;    
+}
+
+/* Lançamento */
+
+.ciashop-boxLaunch{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Vitrine Hover */
+
+.ciashop-infoShowCase{
+  width: 98%;
+  opacity: 1;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding-right: 5px;
+}
+
+.ciashop-infoShowCase > p{
+  font-size: 14px;
+  text-align: left;
+  opacity: 0.8;
+  margin: 0;
+  padding: 1em 1em 6em;
+}
+
+.ciashop-showCaseHover:hover .ciashop-infoShowCase{
+  opacity: 1;
+  transition-duration: 0.300s;
+}
+
+/* Dúvidas e Fale Conosco */
+
+.ciashop-questions{
+    overflow: hidden;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+.ciashop-questions h4{
+    color: #d9886f;
+}
+
+.ciashop-answers{
+    margin-left: 10px;
+}
+
+.ciashop-questions h5{
+    color: #4a738a;
+    font-family: 'robotomedium';
+    margin: 15px 0 5px 0;
+}
+
+.ciashop-questions p{
+    font-size: 12px;
+    color: #666;
+}
+
+/* Migalha de pão */
+
+.ciashop-breadCrumb{
+  overflow: hidden;
+  padding: 1em 0.5em;
+}
+
+.ciashop-crumbFirst{
+  display: inline-block;
+}
+
+.ciashop-crumbFirst a{
+  font-size: 11px;
+}
+
+.ciashop-crumbLast{
+  display: inline-block;  
+}
+
+.ciashop-crumbLast a{
+  font-size: 11px;  
+  text-transform: uppercase;
+}
+
+/* Ordenação das listagem */
+
+.order{
+  display: block; 
+}
+
+.orderPage{
+  margin: 20px 0;
+}
+
+.orderPage label{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.orderPage select{
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+/* Filtros Mobile */
+
+.ciashop-filters{
+    display: none;
+}
+
+.ciashop-filtersMobile{
+
+}
+
+.ciashop-filtersMobileView{
+
+}
+
+.lnkFiltrar{
+    padding: 0.5em;
+    border: 0 none;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.lnkFiltrar .fa-sort-down{
+  padding-left: 5px;
+  vertical-align: 2px;
+}
+
+.ciashop-groupFilters{
+  display: none;
+  margin: 0 0 0.5em;
+  padding: 0.6em 1em;
+  width: 100%;
+}
+
+.ciashop-titFilter{
+    font-size: 12px;
+}
+
+.ciashop-filtersMobile > .ciashop-titFilter{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.ciashop-filtersMobile{
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.ciashop-btnFiltersMobile{
+  background: #D9886F;
+  border: 0;
+  color: #fff;
+}
+
+.ciashop-btnFiltersMobile:hover,
+.ciashop-btnFiltersMobile:active,
+.ciashop-btnFiltersMobile:focus,
+.open .dropdown-toggle.btnFiltersMobile{
+  border: 0 !important;
+  color: #fff !important;
+  background: #be654a !important;
+  
+}
+
+/* Filtros Faixa de Preço */
+
+.ciashop-priceRange{
+
+}
+
+.ciashop-priceRange select{
+    padding: 0.3em 0;
+}
+
+.ciashop-btFiltros{
+    text-transform: uppercase;
+    padding: 0.6em 0.8em;
+    text-align: center; 
+    font-size: 11px;   
+}
+
+.ciashop-btFiltros:hover{
+    text-decoration: none;
+}  
+
+/* Filtros Utilizados */
+
+.ciashop-boxFilterUsed{
+  height: 30px;
+  margin-top: 0.3em;
+}
+
+.ciashop-filterUsed{
+  display: inline-block;
+  margin: 0 0.5em 0.5em 0;
+  padding: 0.5em;
+  font-size: 12px;
+}
+
+.ciashop-filterUsed a{
+  font-size: 12px;
+}
+
+/* Meus Pedidos */
+
+.ciashop-containerInfoRequest{
+  max-width: 300px;
+  text-align: center;
+  background: #333; 
+  padding: 0.5em;
+}
+
+.ciashop-containerInfoRequest p:first-child{
+    text-transform: uppercase;
+}
+
+.ciashop-containerInfoRequest > p{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.ciashop-numberRequest{
+  background: #fff;
+  padding: 0.5em 0;
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  font-family: 'robotomedium';
+}
+
+.ciashop-dataPurchase{
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+.ciashop-dataPurchase p{
+  margin: 0;
+  padding: 0;
+}
+
+.ciashop-searchRequest{
+
+}
+
+.ciashop-searchRequest label{
+  font-weight: normal;
+}
+
+.ciashop-searchRequest input[type='text'],
+.ciashop-searchRequest select{
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 7px;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+
+/* Listar todos os Pedidos */
+
+.ciashop-resultsSearch{
+  overflow: hidden;
+}
+
+.ciashop-containerResultsSearch{
+  display: inline-block;
+  width: 100%;
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  position: relative;
+  text-align: left;
+}
+
+.ciashop-containerResultsSearch:hover{
+  background: #333;
+  border: 1px solid #ccc;
+}
+
+.ciashop-containerResultsSearch p{
+  color: #333;
+  text-align: left;
+  margin: 0.3em 0;
+}
+
+.ciashop-containerResultsSearch p strong{
+    font-size: 18px;
+}
+
+.ciashop-containerResultsSearch:hover p,
+.ciashop-containerResultsSearch:hover .ciashop-lnkResultsSearch{
+  color: #fff;
+}
+
+/* Mensagem de erro */
+
+#msg-erro-carrinho > h2{
+  display: none;
+}
+
+/* Erro 404 e 500 */
+
+.ciashop-error{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.cishop-errorList ul{
+    list-style: none;
+}
+
+/* Carrinho de compras */
+
+.ciashop-containerProductsCart{
+  border-bottom: 1px dashed #ddd;
+}
+
+.ciashop-boxProductsCart{
+  overflow: hidden; 
+  margin: 1em 0;
+  padding: 1em 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.ciashop-boxProductsCart:last-child{
+  border-bottom: 0 none;
+}
+
+.ciashop-imgCart{
+  width: 37%;
+}
+
+.ciashop-infoCart{
+  vertical-align: top;
+  padding: 0 0.5em;
+  width: 61%;
+}
+
+.ciashop-infoCart p{
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.ciashop-nameProductCart{
+  margin-bottom: 1.2em;
+}
+
+.ciashop-infoProductCart{
+  font-size: 11px;
+}
+
+.ciashop-subtotalPriceProductCart{
+  font-size: 18px;
+}
+
+.ciashop-addressBuyer{
+  margin-top: 3em;
+}
+
+.ciashop-addressBuyer p{
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+
+.ciashop-shippingAndCouponCart{
+    margin: 2.5em 0 1em;
+}
+
+.ciashop-titDataCart{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.ciashop-containerDataCart{
+  margin-top: 2em;
+}
+
+.ciashop-inputCart{
+    width: auto !important;
+}
+
+.ciashop-inputCart input{
+    padding: 2px 12px !important;
+    width: 45px !important;
+    height: auto !important;
+    text-align: center;
+}
+
+.ciashop-tabShipping{
+    margin-top: 0.5em;
+}
+
+.ciashop-tabShipping td{
+    padding: 0.3em;
+}
+
+.ciashop-couponInput{
+    position: relative;
+}
+
+.ciashop-couponInput input{
+    width: 100% !important;
+}
+
+.ciashop-couponInput a{
+    padding: 4px 12px;
+    position: absolute;
+    right: -0.2em;
+    top: -0.2em;
+}
+
+/* Rodape */
+
+.ciashop-footerTop{
+  padding: 2em 0 2.5em;
+}
+
+.ciashop-titRodape{
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-family: 'robotomedium';
+}
+
+.ciashop-newsletterRodape{
+  font-size: 12px;
+  text-align: justify;
+}
+
+.ciashop-newsletterRodape > strong{
+  font-family: 'robotomedium';
+  color: #807454;
+  font-weight: normal;
+}
+
+.ciashop-containerNewsletter input[type="text"]{
+  width: 100%;
+  padding: 0.5em;
+  font-size: 13px;
+  border-radius: 0;
+}
+
+.ciashop-btNewsletter{
+  padding: 0.5em 0.8em;
+  border-radius: 0;
+  border: 0 none;
+}
+
+/* Institucional */
+
+.ciashop-institucionalGroup{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ciashop-institucionalGroup li{
+  width: 48%;
+  display: inline-block;
+}
+
+.ciashop-institucionalGroup li a{
+  font-size: 12px;
+}
+
+.ciashop-institucionalGroup li a *{
+  vertical-align: middle;
+}
+
+.ciashop-institucionalGroup li a span{
+  font-size: 4px;
+}
+
+.ciashop-boxPayment{
+  overflow: hidden;
+}
+
+.ciashop-boxPayment span{
+  display: inline-block;
+  margin: 0.3em;
+}
+
+.ciashop-socialNetwork{
+    display: none;
+}
+
+.footer-social a{
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 3px;
+}
+
+.fa-facebook{ padding: 8px 12px; }
+.fa-twitter, .fa-pinterest, .fa-google-plus{ padding: 8px; }
+.fa-instagram, .fa-youtube{ padding: 8px 9px; }
+
+.ciashop-socialSlogan{
+  display: block;
+  margin-top: 1em;
+}
+
+.ciashop-socialSlogan p{
+  font-size: 13px;
+  text-align: left;
+}
+
+.ciashop-socialSlogan p strong{
+  font-size: 13px;
+}
+
+.ciashop-socialSlogan p strong span{
+  font-size: 15px;
+}
+
+footer{
+  margin-top: 2em;
+}
+
+.ciashop-footerBottom{
+  padding: 1.2em 0 0.5em;
+}
+
+.ciashop-footerBottom p{
+  font-size: 13px;
+  margin: 0;
+  padding: 0.9em 0;
+}
+
+.ciashop-footerBottom a{
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+/* Produtos */
+
+.ciashop-productClear{
+    clear: both;
+}
+
+.product-name{
+  text-transform: uppercase;
+}
+
+  /* Produto */
+
+  .ciashop-breadCrumb{
+    padding: 0.5em;
+  }
+
+
+  .produto_imagem_grande,
+  .produto_mini_fotos{
+    margin-bottom: 0.5em;
+  }
+
+  .containerMiniaturas ul li{
+    margin: 0 1em 0 0;
+  }
+
+  .ciashop-shortDescription{
+      display: block;
+      margin-top: 2em;
+      font-size: 12px;
+      line-height: 1.5em;
+  }
+
+  .ciashop-productPrice{
+    padding: 0.5em;
+        position: relative;
+  }
+
+  .ciashop-productPriceOld{
+    display: block;
+  }
+
+  .ciashop-priceOld{
+    font-size: 11px;
+    text-decoration: line-through;
+  }
+
+  .ciashop-productTotalPrice{
+    display: block;
+  } 
+
+  .product-adjustedPrice{
+    font-family: 'robotomedium';    
+    margin: 9px 0;
+}
+  .ciashop-productSubdivision{
+    display: block;
+    font-size: 12px;
+  }
+
+  .ciashop-productSubdivisionPrice{
+        font-size: 16px;
+  }
+
+  /* Bt Formas de Pagamento */
+
+  .ciashop-openSubdivision{
+        position: absolute;
+        bottom: 0.3em;
+        right: 0.3em;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 1.5em 0.5em 0.2em;
+  }
+
+  .ciashop-openSubdivision:hover{
+        color: inherit;
+        text-decoration: none;
+  }
+
+  .ciashop-openSubdivision span{
+        display: block;
+  }
+
+  .ciashop-openSubdivision span:first-child{
+        position: absolute;
+        z-index: 2;
+        top: 0.5em;
+        left: 42%;
+        background: #ccc;
+  }
+
+  .ciashop-openSubdivision span:nth-child(2){
+        position: absolute;
+        z-index: 1;
+        top: 0.3em;
+        left: 38%;
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+        font-size: 16px;
+  }
+
+  .ciashop-openSubdivision span:last-child{
+        font-size: 10px;
+  }
+
+  .modal-body li{
+        list-style: none;
+  }
+
+  .img_parc{
+        margin: 1em 0;
+  }
+
+  .ciashop-modalList th{
+        padding: 0 0.5em;
+        border-bottom: 1px dashed #ccc;
+        font-weight: normal;
+  }
+
+  .ciashop-modalList td{
+        padding: 0.5em;
+        border-bottom: 1px dotted #eee;
+  }
+
+  /* -- */
+
+  .ciashop-priceFor{
+    display: block;
+    font-size: 11px;
+  }
+
+  .ciashop-priceForBig{
+        font-size: 13px;
+  }
+
+  .ciashop-btBuy h2{
+    text-transform: uppercase;
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    font-weight: normal;
+    z-index: 2;
+    position: relative;
+    padding: 1em 2em 1em 1.3em;
+                margin: 0;  
+  }
+
+  .ciashop-cantoBtBuy{
+    width: 1px;
+    height: 1px;
+    position: relative;
+    z-index: 2;
+    border: solid 2.4em transparent;
+    border-right: none;
+    margin: 0;
+    top: 0;
+    display: block;
+    float: left;  
+  }
+
+  .ciashop-delivery{
+        margin: 1em 0;
+  }
+
+  .ciashop-variant{
+    margin: 1em 0;
+    padding: 0.5em;
+   }
+
+  .ciashop-titVariants{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'robotomedium';
+        padding-top: 0.3em;
+  }
+
+.ciashop-boxVariant select{
+    border: 1px transparent; 
+  }
+
+  .ciashop-boxVariant{
+        width: 45%;
+  }
+
+  .variante_imagem_disponivel{
+        background: #fff;
+        padding: 0.2em 0.2em 0.3em;
+        border: 1px solid #dedede;
+        margin: 0 0.2em;
+
+  }
+
+  .variante_imagem_disponivel:hover{
+    box-shadow: 0px 0px 0px #ccc;
+  } 
+
+  .variante_imagem_disponivel img{
+        display: inline-block;
+  }
+
+  .variante_imagem_disponivel_selecionada{
+        box-shadow: 1px 1px 0 #ccc;
+        border: 1px solid #000;
+  }
+
+  /* Simular Frete Produto */
+
+  .ciashop-shipping{
+        margin: 1em 0;
+        display: inline-block;
+        width: 100%;
+  }
+
+  .ciashop-boxShipping{
+    padding: 0.3em;
+  }
+
+  .ciashop-titShipping{
+    padding: 0.3em 0;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 12px;
+        display: block;
+  }
+
+  .ciashop-boxShipping fieldset{
+    border-top: 1px dashed #d7d1d0;
+    padding: 0.7em 0 0;
+  } 
+
+  .ciashop-boxShipping fieldset *{
+        vertical-align: middle;
+  }
+
+  .ciashop-boxShipping fieldset input{
+        border: 1px solid #fff;
+        padding: 0.3em;
+        color: #ccc;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: normal;
+  }
+
+  .ciashop-btShipping{
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bold;
+      display: inline-block;
+  }
+
+  .ciashop-btShipping:hover{
+        background: #ababab;
+        transition-duration: 0.400s;
+  }
+
+  .ciashop-btShipping a{
+        color: #fff;
+        text-decoration: none;
+  }
+
+  .ciashop-shippingTable{
+      background: #e8e8e8;
+      border-top: 5px solid #fff;
+      padding: 0.3em; 
+  }
+
+  .ciashop-shippingTable th{
+      font-size: 12px;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 0 0.5em; 
+  }
+
+  .ciashop-shippingTable td{
+      font-size: 12px;
+      padding: 0.5em;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+  }
+
+  .produto_mini_fotos{
+        margin: 0.5em 0;
+  }
+
+  .produto_mini_fotos img{
+        margin: 0 0.5em 0 0;
+        cursor: pointer;
+  }
+
+  /* Redes Sociais */
+
+  .ciashop-boxSocialMobile{
+        position: absolute;
+        top: 0.5em;
+        right: 0.3em;
+  }
+
+  .ciashop-boxSocialMobile span{
+     font-size: 18px;
+     background: #373737;
+     padding: 0.4em;
+     color: #fff;
+     width: 33px;
+     border-radius: 17px;
+     opacity: 0.6;
+  }
+
+  .ciashop-productFacebook, .ciashop-productTwitter, .ciashop-productGoogle{
+        margin-right: 0.5em;
+        vertical-align: middle;
+  }
+
+  /* Avaliações */
+
+  .ciashop-boxAssess{
+        padding: 0.5em;
+        margin: 1em 0;
+        cursor: pointer;
+  }
+
+  .ciashop-boxAssess *{
+        vertical-align: middle;
+  }
+
+
+  .ciashop-btGoAssess strong{
+        text-transform: uppercase;
+  }
+
+  .avaliacao_estrela{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+  }
+
+  .avaliacao_estrela li{
+        display: inline-block;
+        margin-right: 0.5em;
+  }
+
+  .ciashop-titProductReviews{
+        color: #e99583;
+        text-transform: uppercase;
+        font-size: 12px;
+  }
+
+  .ciashop-productReviews ul{
+        list-style: none;
+        margin: 0;
+  }  
+
+/* Miniaturas */
+
+.produto_mini_fotos{
+  text-align: left;
+} 
+
+.produto_mini_fotos img{
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Endereço de entrega */
+
+.ciashop-address{
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.ciashop-addressSelected{
+  border: 1px solid #333;
+  background: #fff;
+}
+
+/* Pagamento */
+
+.ciashop-listPaymentMethod{
+  display: inline-block;
+  overflow: hidden;
+  width: 16em;
+  vertical-align: top;
+}
+
+.paymentMethod{
+  display: none;
+}
+
+.paymentMethodsList-method{
+    display: block;
+    margin: 5px 0;
+}
+
+.paymentMethodsList-method input{
+    display: block;
+    margin: 0 auto;
+}
+
+.paymentMethodContent .jumbotron{
+    padding: 15px 30px;
+}
+
+.paymentCart-table{
+    width: 100%;
+}
+
+.paymentCart-table td{
+    padding: 0.5em 1em;
+}
+
+/* Confirmação */
+
+.ciashop-addressConfirmed p{
+    margin: 0;
+}
+
+/* Buttons */
+
+.btn{
+  border-radius: 0 !important;  
+  margin: 5px !important;
+}
+
+
+/* Aba de descrição */
+
+ul.produto_abas{
+    list-style: none;
+    *height: 29px;
+    overflow: hidden;
+    margin: 0;
+}
+
+ul.produto_abas li{
+}
+
+ul.produto_abas li a{
+  display: block;
+}
+
+/*Decrição*/
+
+.descricao{
+    margin: 40px auto 20px auto;
+    text-align: left;
+}
+
+.descricao .descricao_texto {
+    border-top: 1px dotted #ececec;
+    clear: both;
+    color: #6d6d6d;
+    font-size: 14px;
+    line-height: 20px;    
+}
+
+.descricao_texto_conteudo{
+    padding: 10px;
+}
+
+.descricao .descricao_texto_conteudo ul, .descricao .descricao_texto_conteudo ol{
+    margin: 20px;
+}
+
+#imgPrincipalProduto { max-width: 370px; }
+
+/* Selos rodape */
+
+.seals-left{width: 100%;}
+.seals-left .fcontrol{padding: 5px;display: inline-block;}
+.seals-left .thawte{padding: 5px;display: inline-block;}
+.seals-left .blindado{padding: 5px;display: inline-block;}
+.seals-right{clear: both;}

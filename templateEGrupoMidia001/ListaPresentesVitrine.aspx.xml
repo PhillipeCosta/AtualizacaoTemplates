@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /><Banner ID="Fullzao_Topo" /></Banners><ListaPresentesInfos><ListaPresentesInfo ID="ListaPresentesInformacoes"><ListaPresentesInformacoesHTML><![CDATA[<condicao:aceitaevento>
+  <div class="heading-primary" style="margin: 10px 0;">
+      <h2>Lista de presentes - [A20]</h2>
+  </div>
+  <condicao:comevento>
+    <p>Homenageados: [A0]</p>
+    <p>Data: [A1]</p>
+    <p>Local: [A15], [A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="[A3]" target="_blank">(ver mapa)</a></strong></condicao:mapa></p>
+  </condicao:comevento>  
+</condicao:aceitaevento>
+<condicao:naoaceitaevento>
+  <div class="heading-primary" style="margin-top: 10px;">
+      <h2>Lista de presentes - [A20]</h2>
+  </div>  
+</condicao:naoaceitaevento>
+<condicao:semevento>
+  <div class="alert">
+    <strong>Atenção!</strong> Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.
+  </div>
+</condicao:semevento>
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInfo ID="ListaPresentesInformacoesMenu"><ListaPresentesInformacoesHTML><![CDATA[<condicao:aceitaevento>
+<div class="nav-primary dept-menu">
+	<ul>
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A13]">Produtos da lista</a>
+			</h3>
+			<ul>
+				<li><a href="javascript: void(0)" class="bt-addProduct"><span class="nav-primary-bullet">•</span>&nbsp;Adicionar produtos</a></li>
+				<li><a href="[A21]"><span class="nav-primary-bullet">•</span>&nbsp;Escolher lista pronta</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A8]">Lista de convidados</a>
+			</h3>
+		</li>			
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A9]">Enviar mensagem</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A11]">Álbum de fotos</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A10]">Editar evento</a>
+			</h3>
+		</li>					
+	</ul>
+</div>
+</condicao:aceitaevento>
+<condicao:naoaceitaevento>
+<div class="nav-primary dept-menu">
+	<ul>				
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="[A10]">Produtos da lista</a>
+			</h3>
+		</li>					
+		<li>
+			<h3 class="nav-primary-heading-primary">
+				<a href="javascript: void(0)" class="bt-addProduct">Adicionar produtos</a>
+			</h3>
+		</li>							
+	</ul>
+</div>
+</condicao:naoaceitaevento>
+
+<div style="display: none;">
+  <div class="list-addProduct">
+    <img src="imagens/animacao.gif" alt="Animação" /><br /><br />
+    <a href="[A7]" class="bt-big-special">adicionar produto</a>
+  </div>
+</div>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ListaPresentesVitrines><ListaPresentesVitrine ID="ListaPresentesVitrine1"><ListaPresentesVitrineHTML><![CDATA[[A1]
+[A2]
+[A3]]]></ListaPresentesVitrineHTML><ListaPresentesVitrinePaginacaoHTML><![CDATA[<condicao:paginacao>
+  <div class="collection-bottom">
+    <div class="collection-pagination">
+      <div class="collection-pagination-pages">
+        <repeticao:paginas quantidade="5">
+            <a href="[E7]" class="page <condicao:pagina_selecionada>active</condicao:pagina_selecionada>">[E8]</a>
+        </repeticao:paginas>
+      </div>
+    </div>
+  </div>
+</condicao:paginacao>]]></ListaPresentesVitrinePaginacaoHTML><ListaPresentesVitrinePesquisaHTML><![CDATA[<div class="giftList-findProduct">
+  <div class="w-40 to-left">
+    <fieldset>
+      <h4>Encontrar Produto</h4>
+      <span class="w-50 to-left form">[B0]</span>
+      <div class="w-40 to-left" style="margin-left: 10px;">
+      	<a href="[B2]" class="bt-small-primary">buscar</a>
+      </div>
+    </fieldset>
+  </div>
+  <div class="w-40 to-right"> 
+    <fieldset>
+      <label>
+      	<h4>Filtrar:</h4>
+        <span class="form">[B1]</span>
+      </label>
+    </fieldset>
+  </div>
+</div>]]></ListaPresentesVitrinePesquisaHTML><ListaPresentesVitrineProdutosHTML><![CDATA[[C14]
+<table width="100%;" cellspacing="0" cellpadding="0" border="0" class="table">
+  <thead>
+    <tr>
+      <th class="table-title"></th>
+      <th class="table-title">Produtos</th>
+      <th class="table-title">Quantidade Desejada</th>
+      <th class="table-title">Quantidade Comprada</th>
+      <th class="table-title"></th>
+      <th class="table-title"></th>
+    </tr>
+  </thead>
+  <tbody>    
+    <repeticao:produto>
+      <tr class="table-item">        
+          <td class="align-center"><a href="[C13]" class="modal_info_produto"><img border="0" alt="[C1]" src="[C0]?width=50" /></a></td>
+          <td class="align-center"><a href="[C13]" class="modal_info_produto">[C1]</a></td>          
+          <td class="align-center">[C2] <span class="giftList-refresh">refresh</span></td>
+          <td class="align-center">
+            <condicao:comprado>
+              <div>[C3]</div><a href="#" class="ver_compradores">Ver compradores</a>
+              <div style="display: none;" class="compradores-oculta">
+                <div class="compradores">
+                  <div class="tit_compradores">
+                    <h2>[C1]</h2>
+                  </div>
+                  <repeticao:comprador>
+                    <div class="info_compradores">
+                      <span><strong>Nome:</strong> [C7]</span>                      
+                      <span><strong>Email:</strong> [C8]</span>
+                      <span><strong>Quantidade comprada:</strong> [C10]</span>
+                      <span><strong>Comprado na:</strong> [C12]</span>
+                      <condicao:mensagem>
+                        <span><strong>Mensagem:</strong> 
+                          <div class="msg_comprador">
+                            [C9]        
+                          </div>
+                        </span>
+                      </condicao:mensagem>
+                    </div>
+                  </repeticao:comprador>
+                </div>
+              </div>              
+            </condicao:comprado>
+            <condicao:nao_comprado>
+              0
+            </condicao:nao_comprado>            
+          </td>
+          <td class="align-center">
+            <condicao:excluir>
+              <a href="[C4]"><span class="giftList-del"></span></a>
+            </condicao:excluir>
+          </td>
+          <td class="align-center">
+            <condicao:botao_comprar>
+              <a href="[C5]" class="bt-small-primary">comprar</a>
+            </condicao:botao_comprar>
+            <condicao:indisponivel>
+              <span class="bt-small-secundary">indisponível</span>
+            </condicao:indisponivel>
+          </td>
+        </tr>
+      </repeticao:produto>  
+  </tbody>
+</table>
+<script>
+  $('.ver_compradores').live('click', function() {
+      var divCompradores = $(this).next(".compradores-oculta").children(".compradores");
+      $.fn.colorbox({inline:true, href:divCompradores});
+      return false;
+  }); 
+</script>
+[C6]]]></ListaPresentesVitrineProdutosHTML><ListaPresentesVitrineSemProdutoEncontradaHTML><![CDATA[<div class="alert">
+  <strong>Atenção</strong> Nenhum produto encontrado para a palavra e/ou filtro selecionado.
+</div>]]></ListaPresentesVitrineSemProdutoEncontradaHTML><ListaPresentesVitrineSemProdutoHTML><![CDATA[<div class="sorry">
+	<div class="sorry-content ops">
+      	<div class="sorry-info">
+          <h2>Sua vitrine está <strong>vazia</strong>!</h2>
+      		<h3>Para inserir produtos na sua lista</h3>
+      		<ul>
+              	<li>» Navegue pelos departamentos ou utilize a busca do site.</li>
+              	<li>» Ao encontrar os itens desejados, clique no botão "Adicionar a lista de presentes"</li>
+      		</ul>
+  		</div>
+  	</div>
+</div>]]></ListaPresentesVitrineSemProdutoHTML><MensagemProdutosRemovidosSemPrecoListaHTML><![CDATA[<div class="alert">
+  <strong>Atenção!</strong> Os seguintes produtos foram retirados da lista, devido a nova tabela de preços:
+  <ul>
+    [E0]
+  </ul>
+</div>]]></MensagemProdutosRemovidosSemPrecoListaHTML><QuantidadeItensPorPagina value="20" /><VisaoDoConvidado value="False" /></ListaPresentesVitrine></ListaPresentesVitrines><ListaPresentesListasProntass><ListaPresentesListasProntas ID="ListaPresentesListasProntas1"><ModeloListaPresentesListasProntasHTML><![CDATA[<div>
+	<condicao:listapronta>
+		<div>
+			<h4>Quero usar listas prontas</h4>
+			<p>Listas com produtos especialmente sugeridos pela nossa equipe!</p>
+			<div>
+				<table width="100%;" cellspacing="0" cellpadding="0" border="0" class="table">
+			        <thead>
+			            <tr>
+			                <th class="table-title">Lista</th>
+			                <th class="table-title">Quantidade</th>
+			                <th class="table-title">&nbsp;</th>
+			                <th class="table-title">&nbsp;</th>
+			            </tr>
+			        </thead>
+			        <tbody>				
+						<repeticao:listapresentes>
+							<tr class="table-item">
+								<td class="align-center">[A0]</td>
+								<td class="align-center">[A1] itens</td>
+								<td class="align-center"><a href="[A3]" class="bt-small-secundary">Escolher lista</a></td>
+								<td class="align-center"><a href="[A2]" class="bt-small-primary">visualizar produtos</a></td>
+							</tr>
+						</repeticao:listapresentes>  
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</condicao:listapronta>
+  	<div style="padding: 40px 0;">
+		<h3>Quero montar minha lista personalizada</h3>
+		<p>Você escolhe os presentes que deseja ganhar!</p>
+		<a href="[A4]" class="bt-big-special" style="margin: 15px 0 20px;">Escolher produtos</a>
+	</div>	
+</div>	]]></ModeloListaPresentesListasProntasHTML></ListaPresentesListasProntas></ListaPresentesListasProntass></controles></page>

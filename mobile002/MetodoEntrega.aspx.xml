@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CarrinhoPassoss><CarrinhoPassos ID="CarrinhoPassos1" NomeAmigavel="Passos do Carrinho" Visible="True"><Passo value="3" /></CarrinhoPassos><CarrinhoPassos ID="Passos" NomeAmigavel="" Visible="True"><Passo value="1" /></CarrinhoPassos></CarrinhoPassoss><Carrinhos><Carrinho ID="Carrinho1"><CarrinhoHTML><![CDATA[[A28][A29]
+<div id="ciashop-cart" class="ciashop-overflow">
+    <div class="col-md-8 ciashop-containerProductsCart ciashop-paddingNone">
+        <repeticao:produtos>  
+            <div class="ciashop-boxProductsCart">
+                <div class="ciashop-imgCart ciashop-display">
+                    <img src="[A3]?width=285&height=381" alt="[A4]" class="img-responsive" />
+                </div>
+                <div class="ciashop-infoCart ciashop-display">
+                    <h4 class="ciashop-nameProductCart text-left"><strong>[A4]</strong></h4>
+                    <p class="ciashop-infoProductCart ">Quantidade: <span class="ciashop-form ciashop-display ciashop-inputCart form">[A5]</span></p>
+                    <condicao:imagem_presente><p class="ciashop-infoProductCart"><span class="fa fa-gift"></span></p></condicao:imagem_presente>
+                    <p class="ciashop-infoProductCart">Preço Unitário: [A8]</p>
+                    <p class="ciashop-subtotalPriceProductCart"><small>Total:</small> <strong>[A9]</strong></p>
+                </div>
+            </div> 
+        </repeticao:produtos>
+    </div>
+    <div class="col-md-4 ciashop-containerDataCart">
+        <h4 class="ciashop-titDataCart"><strong>Informações da sua compra</strong></h4>       
+        <div class="ciashop-infoDataCart">
+          <div class="ciashop-shippingAndCouponCart">
+              <h5>
+                  Subtotal dos produtos: <strong>[A23]</strong>
+              </h5> 
+          </div>                   
+            <div class="ciashop-addressBuyer">
+              <h5><span class="fa fa-truck"></span>&nbsp;<strong>Selecionar método de entrega</strong></h5>
+              <div class="ciashop-tabShipping ciashop-overflow">
+                  <table class="table">
+                      <repeticao:frete>
+                      <tr>
+                          <td>[A18]</td>
+                          <td>[A19]</td>
+                          <td>[A20]</td>
+                          <td>[A17]</td>
+                      </tr>
+                       </repeticao:frete>
+                  </table>                
+              </div>
+             </div>         
+            <div class="ciashop-shippingAndCouponCart">
+                <condicao:cupom_valor>            
+                  <h5>
+                      <span class="fa fa-tags"></span>&nbsp;Cupom: <strong>[A12]</strong>
+                  </h5>                
+              </condicao:cupom_valor>
+            </div>
+            <div class="ciashop-totalCart">
+                <h3 class="ciashop-display">
+                  <small>Total:</small> <strong>[A21]</strong>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+</div>]]></CarrinhoHTML><CarrinhoItensEditavel value="False" /><CarrinhoVazioHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Meu Carrinho&nbsp;<span class="fa fa-shopping-cart"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+<h3><strong>Seu Carrinho de compras está vazio.</strong></h3>
+	<p>Para inserir produtos em seu carrinho de compras,</p>
+	<p>escolha um produto e clique no botão Comprar.</p>
+
+]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[Cupom não é válido para o comprador atual.]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[Cupom fora do prazo de validade.]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[Cupom não encontrado.]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[O cupom não é válido para o(s) departamento(s) selecionado(s).]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[O cupom não é válido para o(s) produto(s) selecionado(s).]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[A compra não atingiu o valor mínimo para ativação do cupom.]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[O cupom já foi usado.]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[O produto [L0] não está mais disponível para pronta entrega na quantidade solicitada. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[O preço do produto [F0] mudou de [F1] para [F2].]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosPorRestricaoDeTemplateHTML><![CDATA[Atenção! O produto [S0] foi removido do carrinho pois não está disponível para o template acessado.]]></MensagemProdutosRemovidosPorRestricaoDeTemplateHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[O produto <strong>[K0]</strong> não esta mais disponível.]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Gigantes" /></Carrinho></Carrinhos><CarrinhoEnderecoEntregas><CarrinhoEnderecoEntrega ID="CarrinhoEnderecoEntrega1"><CarrinhoEnderecoEntregaHTML><![CDATA[      <div class="ciashop-titBox heading-primary">
+        <h2>Endereço de entrega&nbsp;<span class="fa fa-truck"></span></h2>      
+        <span class="ciashop-cantoTit"></span>      
+        <hr />
+      </div>
+    <div>
+        <h5><strong>[A9]</strong></h5>
+        <p><strong>[A0]</strong></p>
+        <p>[A1], [A2] [A3]</p>
+        <p>[A4] - [A5] - [A6]</p>
+        <p>CEP: [A8]</p>
+    </div>
+    <div class="bt_esquerda">
+        <a href="[A11]" class="btn btn-secondary">Escolher outro endereço</a>
+    </div>
+	]]></CarrinhoEnderecoEntregaHTML></CarrinhoEnderecoEntrega></CarrinhoEnderecoEntregas><Links><Link ID="LinkContinuar"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Pagamento" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="&lt;span class=&quot;btn-primary&quot; style=&quot;text-align: center; display: block; width: 100%; padding: 15px;&quot;&gt;Continuar&lt;/span&gt;" /><UsarHTTPS value="True" /></Link><Link ID="Alterar_Pedido"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Alterar Pedido" /><UsarHTTPS value="False" /></Link><Link ID="LinkAjuda"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="Banner_Fullzao" /><Banner ID="Fullzao_Topo" /><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ScriptRazors><ScriptRazor ID="script_headBottom" /><ScriptRazor ID="script_bodyTop" /><ScriptRazor ID="script_bodyBottom" /></ScriptRazors><Banners><Banner ID="Fullzao" /></Banners><QuoteRequests><QuoteRequest ID="orcamento"><QuoteRequestHTML><![CDATA[<div class="ciashop-titBox heading-primary"><h2>Formulário de Solicitação de Orçamento</h2><span class="ciashop-cantoTit"></span><hr /></div>
+<div class="row">
+  <div class="box-orcamento col-md-6">
+      <h3>@Model.QuoteRequest.SelectedVariant.Name</h3>
+      <div class="row">
+        <div class="foto-produto-orcamento col-md-4">
+          <img src="@Model.QuoteRequest.SelectedVariant.MainImage?width=150&height=150" alt="@Model.QuoteRequest.SelectedProduct.Name" />
+        </div>
+        <div class="col-md-8">
+          <p class="info_quote">@TemplateSettings.quoterequest_info</p>
+        </div>
+      </div>
+    </div>
+  <div class="col-md-6">
+    @if(Model.Post)
+    {
+    if(Model.Saved)
+    {
+    <div class="alert alert-success">
+      <h2>Orçamento enviado com sucesso</h2>
+      <p>Em breve enviaremos a resposta com seu orçamento.</p>
+    </div>
+    <script>
+      _gaq.push(['_trackEvent', 'Form Solicitar Proposta', 'Envio Sucesso', location.pathname]);
+    </script>
+  }
+  else
+  {
+  <div class="alert alert-warning"> 
+    @Html.ValidationSummary()
+  </div> 
+}
+}  
+@using (Html.BeginForm()){    
+<div class="ciashop-form form">
+  <div class="row">
+    <div class="form-group ciashop-overflow col-md-12">
+      <label class="radio-inline">
+        @Html.InputRadio("QuoteRequest.PersonType", "Person").TabIndex("1")
+        Pessoa Física
+      </label> 
+      <label class="radio-inline">
+        @Html.InputRadio("QuoteRequest.PersonType", "Company").TabIndex("2").AddAttr("checked","checked")
+        Pessoa Jurídica
+      </label> 
+    </div>
+    <div class="form-group col-md-12 parent-validation">
+      <label>Nome:</label>
+      @Html.InputText("QuoteRequest.Name").TabIndex("3")
+    </div>
+    <div class="form-group col-md-12 parent-validation">
+      <label>Email:</label>
+      @Html.InputText("QuoteRequest.Email").TabIndex("4")
+    </div>  
+    <div class="form-group ciashop-overflow col-md-6 parent-validation">
+      <label style="display: block;">Telefone:</label>
+      <div class="col-md-2 ciashop-paddingNone ciashop-formTelDDD">@Html.InputText("QuoteRequest.PhoneAreaCode").Maxlength("2").AddClass("txtDDD validar").TabIndex("5")</div>
+      <div style="padding-right: 0;" class="col-md-10 ciashop-formTel">@Html.InputText("QuoteRequest.PhoneNumber").AddClass("validar").Maxlength("10").TabIndex("6")</div>
+    </div>
+    <div class="form-group col-md-12 parent-validation">
+      <label class="documentid">CNPJ:</label>
+      @Html.InputText("QuoteRequest.DocumentId").Maxlength("18").TabIndex("4")
+      <small class="exampledocumentid">(00.000.000/0000-00)</small>
+    </div>    
+    <div class="form-group col-md-12 parent-validation">
+      <label>Mensagem:</label>
+      <textarea name="MetaField.QuoteRequest.System.Observacoes" tabindex="15" rows="20"></textarea>
+    </div>  
+    <div class="form-group ciashop-overflow col-md-12 parent-validation">
+      <label style="display: block;">Escreva a palavra:</label>
+      <div class="col-md-6 ciashop-paddingNone captcha-img">@Html.Captcha("imagens/reload.png")</div>
+      <div class="col-md-6 captcha-input" style="padding-right: 0;">@Html.InputText("QuoteRequest.Captcha").TabIndex("16")</div>
+    </div>  
+    <div class="form-group col-md-12 text-right">
+      <a href="#" class="fakeButtom btn btn-primary" name="enviar" id="enviar">Enviar</a>
+    </div>    
+  </div>
+</div>
+}
+</div>
+</div>
+<script>
+  $(document).ready(function(){
+    $('#QuoteRequest_Quantity').val('1');
+  })
+
+// A partir daqui foi utilizado a função validarPrePost para verificar se os campos extras foram preenchidos.
+
+function validarPrePost(){
+  if($("#campo_extra").val() === ""){
+    AddError($('#campo_extra'));
+    return false;
+  } return true;
+}
+</script>]]></QuoteRequestHTML></QuoteRequest></QuoteRequests></controles></page>

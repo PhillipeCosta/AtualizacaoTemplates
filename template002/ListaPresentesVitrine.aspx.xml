@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresentesInfos><ListaPresentesInfo ID="giftList_info"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+      <div class="main-overflow main-padding20" style="padding-let: 15px;"> 
+        <div class="col-md-4">
+         <h2 class="pull-left">
+            <span class="fa fa-gift"></span>
+          </h2>  
+          <h3 class="pull-left" style="padding: 0 15px;">
+            [A20]
+          </h3>
+        </div>
+        <div class="col-md-8" style="border-left: 1px dotted #ccc;">
+          <div class="main-clear main-overflow main-padding">
+              <condicao:comevento>
+                <p>[A0] - [A1]</p>
+                <span>
+                  Homenageado(s):[A0]<br />
+                  Data: [A1]<br />
+                  Local: [A15],[A16] - [A17] - [A18] - [A19]<br />
+                  <strong>
+                    <condicao:mapa><strong><a href="javascript:void(0);" style="text-decoration: underline;" data-toggle="modal" data-target="#myModalmapa">Clique aqui para ver mapa</a></strong></condicao:mapa>
+                  </strong><br />
+                  Texto de boas-vindas: [A4]
+                </span>
+              </condicao:comevento>
+          </div>
+        </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+
+      <div class="container_descricao_lista fechado heading-primary"> 
+          <div class="container_descricao_lista_conteudo">
+            <div class="descricao_lista">            
+              <h3>[A20]</h3>
+            </div>
+          </div>
+      </div>
+
+      </condicao:naoaceitaevento>  
+<condicao:semevento>
+  <div id="erro">
+      <div class="lista_erro message-error">
+            <h2>Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.</h2>
+        </div>
+    </div>
+</condicao:semevento>
+
+<div class="modal fade" id="myModalmapa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mapa do evento</h4>
+      </div>
+      <div class="modal-body">
+        [A3]
+      </div>
+    </div>
+  </div>
+</div>
+
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInfo ID="giftList_info2"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+      <div class="main-overflow sideMenu">
+          <ul class="main-clearPadding">
+            <li><h6 class="text-left "><a href="[A13]" style="display: block;">> Produtos da lista</a></h6>
+              <ul class="main-clearPadding" style="padding-left: 15px;">
+                <li><h6 class="text-left" style="font-size:11px;"><a href="[A13]">- Produtos da Lista</a></h6></li>
+                <li><h6 class="text-left" style="font-size:11px;"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">- Adicionar Produtos</a></h6></li>
+                <li><h6 class="text-left" style="font-size:11px;"><a href="[A21]">- Escolher lista Pronta</a></h6></li>
+              </ul>
+            </li>
+            <li><h6 class="text-left "><a href="[A8]">> Lista de Convidados</a></h6></li>
+            <li><h6 class="text-left "><a href="[A9]">> Enviar Mensagem</a></h6></li>
+            <li><h6 class="text-left "><a href="[A11]">> Álbum de Fotos</a></h6></li>
+            <li><h6 class="text-left "><a href="[A10]">> Editar Evento</a></h6></li>
+          </ul>
+      </div>
+    </condicao:aceitaevento>
+    <condicao:naoaceitaevento>
+
+
+    <div class="main-overflow main-padding20 sideMenu">
+        <ul class="main-clearPadding main-padding20">
+          <li><h6 class="text-left "><a href="[A13]">> Produtos da Lista</a></h6></li>
+          <li><h6 class="text-left "><a href="javascript: void(0)" data-toggle="modal" data-target="#myModal"> >Adicionar Produto</a></h6></li>
+        </ul>
+    </div>
+  </condicao:naoaceitaevento>  
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h5>Adicionar produto</h5>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/animacao.gif" alt="Animação" />
+        <div class="main-overflow main-padding text-right">
+        	<a href="[A7]" class="btn btn-secondary text-center text-uppercase">Adicionar produto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ListaPresentesVitrines><ListaPresentesVitrine ID="giftList_collection"><ListaPresentesVitrineHTML><![CDATA[  <div class="main-overflow giftList">        
+    	[A1]        
+        [A2]
+        [A3]
+    </div> ]]></ListaPresentesVitrineHTML><ListaPresentesVitrinePaginacaoHTML><![CDATA[<condicao:paginacao>
+  <ul class="pagination">
+    <repeticao:paginas quantidade="5">
+      <li class="<condicao:pagina_selecionada>active</condicao:pagina_selecionada>"><a href="[E7]">[E8]</a></li>
+    </repeticao:paginas>
+  </ul>
+</condicao:paginacao>]]></ListaPresentesVitrinePaginacaoHTML><ListaPresentesVitrinePesquisaHTML><![CDATA[<div>
+  <div class="col-md-6 main-clearPadding">
+    <fieldset class="form giftList-search">
+      <span>Encontrar Produto</span>
+      <span style="width: 59%; display: inline-block">[B0]</span>
+      <a href="[B2]" class="bt btn-secondary">
+        Buscar
+      </a>
+    </fieldset>
+  </div>
+  <div class="col-md-6"> 
+    <fieldset class="form pull-right" style="padding: 10px;">
+      <label class="pull-left" style="padding-top: 6px;">
+        Filtrar:&nbsp;
+      </label>
+      <label class="pull-left">
+         [B1]
+      </label>
+    </fieldset>
+  </div>
+</div>]]></ListaPresentesVitrinePesquisaHTML><ListaPresentesVitrineProdutosHTML><![CDATA[<div class="main-padding20 main-clear">
+[C14]
+<table width="100%;" cellspacing="0" cellpadding="0" border="0" class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Produtos</th>
+      <th class="text-center">Quantidade Desejada</th>
+      <th class="text-center">Quantidade Comprada</th>
+      <th class="text-center"></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>    
+    <repeticao:produto>
+      <tr>        
+          <td>
+            <a href="[C13]" class="modal_info_produto">
+              <img border="0" alt="[C1]" src="[C0]?width=50" />
+            </a>
+          </td>
+          <td><a href="[C13]" class="modal_info_produto">[C1]</a></td>          
+          <td class="text-center"><span class="form giftList-qtd">[C2]</span><span class="fa fa-refresh" style="font-size: 14px;"></span></td>
+          <td class="text-center">
+            <condicao:comprado>
+              <div>[C3]</div><a href="#" class="ver_compradores">Ver compradores</a>
+              <div style="display: none;" class="compradores-oculta">
+                <div class="compradores">
+                  <div class="tit_compradores">
+                    <h2>[C1]</h2>
+                  </div>
+                  <repeticao:comprador>
+                    <div class="info_compradores">
+                      <span><strong>Nome:</strong> [C7]</span>                      
+                      <span><strong>Email:</strong> [C8]</span>
+                      <span><strong>Quantidade comprada:</strong> [C10]</span>
+                      <span><strong>Comprado na:</strong> [C12]</span>
+                      <condicao:mensagem>
+                        <span><strong>Mensagem:</strong> 
+                          <div class="msg_comprador">
+                            [C9]        
+                          </div>
+                        </span>
+                      </condicao:mensagem>
+                    </div>
+                  </repeticao:comprador>
+                </div>
+              </div>              
+            </condicao:comprado>
+            <condicao:nao_comprado>
+              0
+            </condicao:nao_comprado>            
+          </td>
+          <td class="text-center">
+            <condicao:excluir>
+              <a href="[C4]"><h4 class="text-uppercase">x</h4></a>
+            </condicao:excluir>
+          </td>
+          <td>
+            <condicao:botao_comprar>
+              <a href="[C5]" class="bt btn-primary">Comprar lista</a>
+            </condicao:botao_comprar>
+            <condicao:indisponivel>
+              <span class="bt btn-secondary">Indisponível</span>
+            </condicao:indisponivel>
+          </td>
+        </tr>
+      </repeticao:produto>  
+  </tbody>
+</table>
+<script>
+  $('.ver_compradores').live('click', function() {
+      var divCompradores = $(this).next(".compradores-oculta").children(".compradores");
+      $.fn.colorbox({inline:true, href:divCompradores});
+      return false;
+  }); 
+</script>
+[C6]
+</div>]]></ListaPresentesVitrineProdutosHTML><ListaPresentesVitrineSemProdutoEncontradaHTML><![CDATA[<div class="alert alert-warning" role="alert">
+	<div class="lista_erro message-error" style="display: none;">
+	  <h5>Nenhum produto encontrado para a palavra e/ou filtro selecionado.</h5>
+    </div>
+</div>
+<div style="display: none;" style="text-align: center; padding: 10px 0;">
+  	<a href="javascript: window.history.go(-1)" class="bt btn-secondary">Voltar</a>
+</div>
+  
+<style>
+.table{
+	display: none;  
+}
+</style>]]></ListaPresentesVitrineSemProdutoEncontradaHTML><ListaPresentesVitrineSemProdutoHTML><![CDATA[<style>
+	.conteudo_listas_preprontas{
+  	display: block;
+  }
+  .table, .encontrar{
+  	display: none;
+  }
+</style>]]></ListaPresentesVitrineSemProdutoHTML><MensagemProdutosRemovidosSemPrecoListaHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <h5>Alerta</h5>
+  <p>- Os seguintes produtos foram retirados da lista, devido a nova tabela de preços:</p>
+  <ul class="main-clearPadding">
+    [E0]
+  </ul>
+</div>]]></MensagemProdutosRemovidosSemPrecoListaHTML><QuantidadeItensPorPagina value="20" /><VisaoDoConvidado value="False" /></ListaPresentesVitrine></ListaPresentesVitrines><ListaPresentesListasProntass><ListaPresentesListasProntas ID="giftList_readyList"><ModeloListaPresentesListasProntasHTML><![CDATA[<div class="main-overflow giftList-listPre">
+  <condicao:listapronta>
+  <div class="col-md-7">
+    <h5>
+      // Quero usar listas prontas<br />
+      <small>Listas com produtos especialmente sugeridos pela nossa equipe!</small>
+    </h5>
+    <div class="main-padding20">
+      <repeticao:listapresentes>
+      <div class="main-overflow" style="background: #f9f9f9; padding: 15px;">
+        <div class="col-md-6">
+          <h5>[A0]</h5>
+          <h6>([A1] itens)</h6>
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="[A3]" class="bt btn-secondary" style="margin-bottom: 5px;">Escolher lista</a>
+          <a href="[A2]" class="abrir_produtos_lista bt btn-secondary">visualizar os produtos</a>
+        </div>
+      </div>
+    </repeticao:listapresentes>  
+  </div>
+</div>
+</condicao:listapronta>
+<div class="col-md-5">
+  <h5>// Quero montar minha lista personalizada</h5>
+  <p>Você escolhe os presentes que deseja ganhar!</p>
+  <a href="[A4]" class="bt btn-primary">Escolher produtos</a>
+</div>  
+</div>  ]]></ModeloListaPresentesListasProntasHTML></ListaPresentesListasProntas></ListaPresentesListasProntass></controles></page>

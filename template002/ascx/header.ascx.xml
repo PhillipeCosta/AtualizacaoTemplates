@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><LabelVisitantes><LabelVisitante ID="greeting"><HTMLModeloLogado><![CDATA[<a href="[A0]">Bem-vindo [A2], <small>clique aqui para sair</small></a>]]></HTMLModeloLogado><HTMLModeloNaoLogado><![CDATA[<a href="[B0]">login</a>]]></HTMLModeloNaoLogado></LabelVisitante></LabelVisitantes><Links><Link ID="account"><Destino value="Comprador" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value=" // Cadastro" /><UsarHTTPS value="True" /></Link><Link ID="orders"><Destino value="MeusPedidos" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Pedidos" /><UsarHTTPS value="True" /></Link><Link ID="questions"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Dúvidas" /><UsarHTTPS value="False" /></Link><Link ID="contact"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="FaleConosco" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Contato" /><UsarHTTPS value="False" /></Link><Link ID="home"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="RunWay" /><UsarHTTPS value="False" /></Link><Link ID="link_miniCart"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="0" /><UsarHTTPS value="False" /></Link><Link ID="link_cart"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ir para o carrinho" /><UsarHTTPS value="False" /></Link><Link ID="giftList"><Destino value="DestinoAtual" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="ListaPresentesPrincipal" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Lista de Presentes" /><UsarHTTPS value="True" /></Link></Links><ScriptRazors><ScriptRazor ID="phone"><ScriptRazorHTML><![CDATA[@TemplateSettings.header_phone]]></ScriptRazorHTML></ScriptRazor></ScriptRazors><CaixaPesquisas><CaixaPesquisa ID="search"><CaixaPesquisaHTML><![CDATA[[A0]
+<span class="fa fa-search" onclick="[A2]"></span>]]></CaixaPesquisaHTML></CaixaPesquisa></CaixaPesquisas><Menus><Menu ID="menu"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<ul class="nav nav-pills">
+<repeticao:pais quantidade="6">  
+  <li class="dropdown nav-horizontalList">
+    <a class="text-center" href="[A0]">
+      <span>[A1]</span>
+      <condicao:filho>
+      <span class="fa fa-angle-down"></span>
+      <span class="fa fa-caret-down"></span>
+      </condicao:filho>
+    </a>
+    <condicao:filho>
+    <ul class="dropdown-menu nav-horizontal-dropDown list-inline">
+      <repeticao:filhos>        
+          <li><a href="[A0]" class="text-uppercase">[A1]</a></li>
+      </repeticao:filhos>          
+          <li class="pull-right nav-horizontalList-last"><a href="[A0]" class="text-uppercase"><strong>Veja Mais +</strong></a></li>                   
+    </ul>
+    </condicao:filho>
+  </li>  
+</repeticao:pais>                                                                  
+</ul>]]></MenuHTML><TipoMenu value="Horizontal" /></Menu></Menus><CarrinhoTopos><CarrinhoTopo ID="miniCart"><CarrinhoHTML><![CDATA[<script>
+$(function() { 
+ var quantidade = 0;
+ $(".header-miniCart-tab .qtd").each(function(){
+  quantidade = quantidade + parseInt($(this).html());
+});
+ $(".header-shoppingCart-quantity a").html(quantidade)
+});
+
+</script>
+  <h5 class="text-muted text-uppercase text-right header-miniCart-subTotal">Subtotal: <span class="header-miniCart-totalPrice">[A21]</span></h5>  
+<table cellpadding="0" cellspacing="0" border="0" class="header-miniCart-tab" width="100%">
+  <repeticao:produtos>
+  <tr>
+    <td class="text-center">
+      <a href="[A24]"><img src="[A3]?width=100&height=100" alt="[A4]" /></a>
+    </td>
+    <td class="header-miniCart-info" colspan="2">
+      <a href="[A24]" class="text-uppercase text-left">[A4]<small class="qtd" style="display: none;">[A5]</small></a>
+      <div class="text-left text-muted header-miniCart-price">[A9]</div>
+    </td>
+  </tr>
+</repeticao:produtos>
+</table> ]]></CarrinhoHTML><CarrinhoVazioHTML><![CDATA[<h5 class="text-muted text-center" style="padding: 1em;">Carrinho Vazio</h5>]]></CarrinhoVazioHTML><TamanhoImagem value="Grandes" /></CarrinhoTopo></CarrinhoTopos></controles></page>

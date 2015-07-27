@@ -1,0 +1,81 @@
+.clouds-navigation{
+	margin: 3em 0;
+}
+
+.navigation{
+	padding: 3em 0;
+}
+
+.navigation-product{
+	padding: 0 0.5em;
+}
+
+.navigation *{
+	vertical-align: middle;
+}
+
+.btn-clouds-navigation{
+	display: block;
+	margin: 2.5em 0.5em
+}
+
+
+.btn-clouds-navigation span.fa{
+	font-size: 30px;
+}
+
+.navigation-info{
+
+}
+
+.navigation-info a{
+	font-size: 10px;
+	color: #262424;
+}	
+
+.navigation-info h6{
+	font-size: 10px !important;
+	margin-bottom: 10px;
+}
+
+/* tag clouds e navegacao */
+
+.tagclouds{
+	padding: 20px 10px;
+}
+
+.tagclouds-container{
+	padding: 15px 30px;
+}
+
+.tagclouds-container a{
+	padding: 5px;
+}
+
+.clouds1{
+	font-size: 10px;
+}
+
+.clouds2{
+	font-size: 12px;
+}
+
+.clouds3{
+	font-size: 14px;
+}
+
+.clouds4{
+	font-size: 16px;
+}
+
+.clouds5{
+	font-size: 18px;
+}
+
+.clouds6{
+	font-size: 20px;
+}
+
+.clouds7{
+	font-size: 22px;
+}

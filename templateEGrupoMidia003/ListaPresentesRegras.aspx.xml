@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListaPresentesRegrass><ListaPresentesRegras ID="ListaPresentesRegras1"><CssComponente><![CDATA[]]></CssComponente><EmailEnviar value="False" /><ListaPresentesRegrasHTML><![CDATA[<div class="respiro">
+  <h2 class="sub_titulo">[A0]</h2>
+  <div class="lista_regras">
+    <div class="respiro">
+      [A1]
+    </div>
+  </div>
+  <div class="bt_direita">
+    <a href="[A3]" style="color: #666; font-size: 11px; margin: 0 10px;">(Não Concordo)</a>
+    <a href="[A2]"><img src="imagens/bt_lista_li_aceito.png?1" alt="Li e Aceito" border="0" /></a>
+    <a href="[A4]" style="float:left;"><img src="imagens/bt_lista_imprimir.png?1" alt="Imprimir" border="0" /></a>
+  </div>
+</div>
+           ]]></ListaPresentesRegrasHTML></ListaPresentesRegras></ListaPresentesRegrass><SEOs><SEO ID="seo" /></SEOs><Banners><Banner ID="Fullzao_Topo" /></Banners></controles></page>

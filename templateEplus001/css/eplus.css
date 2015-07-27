@@ -1,0 +1,1148 @@
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('../fontes/opensans/opensans-condlight-webfont.eot');
+    src: url('../fontes/opensans/opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontes/opensans/opensans-condlight-webfont.woff2') format('woff2'),
+         url('../fontes/opensans/opensans-condlight-webfont.woff') format('woff'),
+         url('../fontes/opensans/opensans-condlight-webfont.ttf') format('truetype'),
+         url('../fontes/opensans/opensans-condlight-webfont.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansCnLtIt';
+    src: url('../fontes/opensans/opensans-condlightitalic-webfont.eot');
+    src: url('../fontes/opensans/opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontes/opensans/opensans-condlightitalic-webfont.woff2') format('woff2'),
+         url('../fontes/opensans/opensans-condlightitalic-webfont.woff') format('woff'),
+         url('../fontes/opensans/opensans-condlightitalic-webfont.ttf') format('truetype'),
+         url('../fontes/opensans/opensans-condlightitalic-webfont.svg#open_sansCnLtIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sans_condensedbold';
+    src: url('../fontes/opensans/opensans-condbold-webfont.eot');
+    src: url('../fontes/opensans/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontes/opensans/opensans-condbold-webfont.woff2') format('woff2'),
+         url('../fontes/opensans/opensans-condbold-webfont.woff') format('woff'),
+         url('../fontes/opensans/opensans-condbold-webfont.ttf') format('truetype'),
+         url('../fontes/opensans/opensans-condbold-webfont.svg#open_sans_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.box_menu, .conteudo_fixo, .container_newsletter, .container_pe_baixo, .container_direitos {
+	width: 1050px;	
+}
+
+.busca_topo {
+	top: 45px;
+	width: 388px;
+	left: 340px;	
+}
+
+.lbl_busca {
+	width: 317px;	
+}
+
+.bt-busca-topo {
+	width: 44px;
+	height: 38px;
+	padding:0px!important;
+	margin-left:10px;	
+}
+
+.lbl_busca input {
+	padding: 11px 0px 10px 10px;	
+}
+
+.logo {
+	top: 15px;
+	height:150px;
+	left: 30px;	
+}
+
+.container_topo {
+	height: 180px;
+	width: 100%;
+	z-index: 9990;
+}
+
+.tit_news {
+	height: 60px;
+	margin: 4px 0px 0px 40px;	
+}
+
+.container_direitos p {
+	width: 660px;
+	margin-left: 10px;	
+}
+
+.desenvolvimento p {
+	float: left;
+	width: 120px;
+	margin: 0px 0px 15px 0px;
+}
+
+.direitos {
+	padding: 0px;	
+}
+
+.container_direitos {
+	padding: 15px 0px;
+	min-height: 80px;	
+}
+
+.desenvolvimento {
+	right: auto;
+	float: right;
+	width: 320px;
+	position: relative;
+	top: auto;
+	right: auto;
+}
+
+.rodape_esquerda {
+	margin-left: 20px;
+	margin-right: 0px;
+	width: 675px;	
+}
+
+.container_busca_topo {
+	margin-top: 37px;	
+}
+
+.acesso_rapido {
+	top: 50px;
+	right: 30px;	
+}
+
+.menu_topo {
+	padding: 0px;	
+}
+
+.nav-horizontal {
+	border: none;	
+}
+
+.newsletter {
+	padding: 0px;	
+}
+
+.lnks_rapidos a {
+	font-size: 14px;
+	font-family: 'open_sans_condensedbold';
+	text-transform: uppercase;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.lnk_pedidos a {
+	border: none;
+	padding: 0px!important;
+	margin-right: 0px!important;
+}
+
+.bt_carrinho {
+	right: 30px;
+	bottom: inherit;
+	margin-top: 80px;	
+}
+
+.header-miniCart a {
+	padding: 28px 29px 0px 60px!important;
+	width: 100px;
+	height: 40px;
+	font-size: 11px;
+	font-family: 'open_sans_condensedbold';
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.departamento_destaque {
+	padding: 16px 0px 11px 0px;
+	margin: 0px -4px -4px 0px;
+}
+
+.lnk_dpto_topo {
+	padding: 0px 12px;	
+}
+
+.departamento_destaque:hover .box_menu_topo_filhos{
+    display: block;
+}
+
+.box_menu_topo .box_menu_topo_filhos {
+	top: 47px;	
+}
+
+.conteudo_fixo {
+	margin: 0px auto;
+	clear: both;	
+}
+
+#redesSociaisPinterest {
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	background: url('../imagens/ep-redes-sociais.png') no-repeat -184px 0px scroll transparent;
+}
+
+#redesSociaisBlog {
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin: 0px 5px 0px 0px;
+	background: url('../imagens/ep-redes-sociais.png') no-repeat -147px 0px scroll transparent;
+}
+
+#redesSociaisYoutube {
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin: 0px 5px 0px 0px;
+	background: url('../imagens/ep-redes-sociais.png') no-repeat -111px 0px scroll transparent;
+}
+
+#redesSociaisInstagram {
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin: 0px 5px 0px 0px;
+	background: url('../imagens/ep-redes-sociais.png') no-repeat -75px 0px scroll transparent;
+}
+
+#redesSociaisTwitter {
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin: 0px 5px 0px 0px;
+	background: url('../imagens/ep-redes-sociais.png') no-repeat -37px 0px scroll transparent;
+}
+
+#redesSociaisFacebook {
+	width: 36px;
+	height: 36px;
+	float: left;
+	margin: 0px 5px 0px 0px;
+	background: url('../imagens/ep-redes-sociais.png') no-repeat 0px 0px scroll transparent;
+}
+
+.tit_rodape {
+	 font-family: 'open_sans_condensedbold';
+	 text-transform: uppercase;
+	 font-size: 16px;
+}
+
+.slider-wrapper {
+	width: 1050px;	
+}
+
+#coluna_esquerda {
+	width: 200px;
+	margin-top:15px;	
+}
+
+#coluna_esquerda .banner img {
+	max-width: 200px;	
+}
+
+.box_empresa {
+	width: 290px;
+	overflow: hidden;
+	float: left;
+	margin-top: 30px;
+	min-height: 170px;
+	padding-bottom: 20px;	
+}
+
+.box_empresa p {
+	float: left;
+	width: 270px;
+	font-size: 11px;
+	line-height: 18px;	
+}
+
+.box_empresa .logo {
+	left: inherit!important;
+	top: inherit!important;
+	float: left;
+	height: 130px;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.box_empresa .header-logo {
+	background-position: 0px 0px!important;	
+}
+
+.box_institucionais {
+	width: 180px;
+	padding-left: 25px;
+	padding-bottom: 20px;
+	min-height: 170px;
+	border-left: 1px solid #eaeaea;
+}
+
+.box_televendas {
+	padding: 0 0 20px 25px;	
+	width: 150px;
+}
+
+.tit_rodape_horarios {
+	font-weight: bold;
+	margin: 15px 0px 5px 0px;
+	font-size: 16px!important;	
+}
+
+.downSpace {
+	margin-bottom: 15px;	
+}
+
+.rodape_direita {
+	margin-left: 25px;
+	margin-top: 29px;	
+}
+
+.box_seguranca {
+	padding: 0px 0px 5px 10px;
+	float: left;
+	width: 300px;	
+}
+
+#selosRodape {
+	
+}
+
+.blindado, .fcontrol {
+	padding: 0px 0px 0px 20px;
+	display: block;
+	float:left;
+}
+
+.linkRodape01 {
+	float: left;
+	margin-right: 10px;	
+	width: 180px;
+}
+
+.linkRodape02 {
+	float: left;
+	width: 120px;	
+}
+
+.footer, .rodape {
+	position: relative;
+	z-index: 99;
+}
+
+.box_news {
+	height: 65px;	
+}
+
+.box_newsletter .box-bt {
+	margin: 0px 0px 0px 10px;	
+}
+
+.box-bt {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'open_sans_condensedbold';	
+}
+
+.box_pagamento {
+	padding: 15px 0px 20px 20px;
+	border-bottom: none;
+	margin: 20px 0px 0px 0px;
+	float: left;
+	width: 530px;	
+}
+
+.box_pagamento_texto {
+	padding: 15px 20px 20px 0px;
+	border-bottom: none;
+	margin: 20px 0px 0px 0px;
+	float: left;
+	width: 479px;
+	border-top: 1px solid #eaeaea;
+}
+
+.box_pagamento_texto p {
+	float: right;
+	width: 450px;
+	font-size: 11px;
+	line-height: 18px;
+}
+
+.tit_sec_rodape {
+	font-family: 'open_sans_condensedbold';	
+}
+
+.acesso_presente {
+	top: 23px;
+	right: 30px;
+	position: absolute;	
+}
+
+.acesso_presente a {
+	border: none!important;
+	margin-right: 0px!important;
+	padding-right: 0px!important;
+	font-size: 16px!important;	
+}
+
+#cia_jqueryslider {
+	padding-top: 0px;
+	padding-bottom: 0px;	
+}
+
+.bx-wrapper {
+	margin-left: 20px;
+}
+
+.vitrine_geral ul li {
+	margin: -1px 0px 25px 0px;
+	height: 435px;	
+}
+
+.vitrine_geral ul li .foto {
+	margin-bottom: 10px;	
+}
+
+.vitrine_geral ul li .produto {
+	width: 204px;	
+}
+
+.drop_filho_lat {
+	left: 188px;	
+}
+
+.fullzao_expansivel .nivo-controlNav {
+	bottom: inherit;
+	right: 15px;
+	top:15px;	
+}
+
+.fullzao_expansivel .nivo-controlNav a {
+	margin: 0 4px;
+	width: 12px;
+	height: 12px;	
+}
+
+.float {
+	width: 815px;
+	margin-bottom: 20px;
+	margin-left: 20px;	
+}
+
+.titulo {
+	font-family: 'open_sans_condensedbold';
+	line-height: 130%;
+	height: 40px;
+}
+
+.input_quantidade_espiar input {
+	height: 17px;	
+}
+
+.input_quantidade_espiar {
+	height: 25px;	
+}
+
+.bx-next {
+	background: none;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;	
+}
+
+.bx-prev {
+	background: none;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+}
+
+.tit_box_full h2 {
+	font-family: 'open_sans_condensedbold';
+	text-transform: uppercase;
+}
+
+.navegacao_esquerda .navegacao_direita_item h3 {
+	font-family: 'open_sans_condensedbold';
+	text-transform: uppercase;	
+}
+
+.box_menu_topo .box_menu_topo_filhos li a {
+	font-family: 'open_sans_condensedbold';
+}
+
+.tit-box h2 {
+	font-family: 'open_sans_condensedbold';
+	text-transform: uppercase;
+}
+
+.menu_lateral {
+	margin-bottom: 0px;	
+}
+
+.filtros_busca_conteudo select {
+	width:165px;	
+}
+
+.filtros_busca_conteudo label.botao_filtrar a {
+	float: right;
+	margin: 0px 15px 0px 0px;
+	text-transform: uppercase;	
+}
+
+.migalha {
+	padding: 20px 0 20px 0px;	
+}
+
+.heading-special {
+	margin: 15px 0 18px;	
+}
+
+.containertopo {
+	border-bottom: none;	
+}
+
+.header {
+	width: 1050px;
+	height: 180px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.topo_esquerda {
+	height: 180px;	
+}
+
+.logo h1 {
+	height: 150px;
+	margin-left: 30px;	
+}
+
+.passos {
+	margin: 42px 30px 0;
+}
+
+.respiro_conteudo {
+	padding: 5px;	
+}
+
+.identificacao_conteudo {
+	margin:0 auto 35px auto;	
+}
+
+.heading-special h2 {
+	font-family: 'open_sans_condensedbold';
+}
+
+.collection-product-unavailableTag {
+	height: 16px;	
+}
+
+.vitrine_geral ul li .promocao-express {
+	right: inherit;
+	left: inherit;
+	position:relative;
+}
+
+.ofertaLabel2 a {
+	left: 0px;
+	position: absolute;
+	float: left;
+	width: 70px;
+	padding: 5px 0px;
+	text-transform: uppercase;
+	font-family: 'open_sans_condensedbold';
+	z-index: 9;
+	text-align: center;	
+}
+
+.collection-product-shippingTag a {
+	padding: 5px;
+	font-family: 'open_sans_condensedbold';
+	text-transform: uppercase;	
+}
+
+.ofertaLabel {
+	right: 0px;
+	position: absolute;	
+}
+
+.boxOfertaQ {
+	width: 40px;
+	height: 25px;
+	text-align: center;
+	padding: 7px 0px 0px 0px;
+	font-family: 'open_sans_condensedbold';
+	font-size: 16px;
+}
+
+.boxOfertaT {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+}
+
+.variante_imagem_disponivel {
+	max-width: 50px;
+	max-height: 50px;
+	padding: 4px 1px 0px 4px;
+	width: inherit;
+	height: inherit;	
+}
+
+.vitrine_variantes_imagem {
+	width: 100%;
+	margin: 8px 0px 0px 0px;	
+}
+
+.vitrine_geral ul li .comparar {
+	margin: 4px 0px 10px 0px;	
+}
+
+.bx-wrapper .foto {
+	height: inherit!important;	
+}
+
+.box-tag {
+	font-family: 'open_sans_condensedbold';
+	text-transform: uppercase;	
+}
+
+.product-name {
+	font-family: 'open_sans_condensedbold';	
+}
+
+.produto_codigo {
+	font-family: 'source_sans_proregular','Arial'!important;	
+}
+
+.ofertaLabelProd {
+	right: 0px;
+	float: right;
+	margin-top: -10px;
+	position: relative;
+	display: none;
+}
+
+.btIndiqueProd {
+	padding: 3px 6px;
+	background-color: #333;
+	color: #fff;
+	font-family: 'open_sans_condensedbold';
+	text-transform: uppercase;
+	font-size: 14px;	
+}
+
+.btIndiqueProd:hover {
+	cursor: pointer;	
+}
+
+.voltarHist {
+	background: none;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: relative;
+	top: -20px;
+	left: 0px;
+	display: block;
+	text-indent: -9999px;
+}
+
+.passarHist {
+	background: none;
+	width: 0;
+	right: 10px;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: relative;
+	top: -20px;
+	display: block;
+	text-indent: -9999px;
+}
+
+.bx-window {
+	width: 815px;
+	margin-left: 5px;	
+}
+
+.vitrine_jquery {
+	margin: 15px 0px 30px 0px;	
+}
+
+.vitrine_jquery li {
+	width: 255px!important;	
+}
+
+.vitrine_jquery .foto img {
+	max-width: 180px;	
+}
+
+.vitrine_jquery ul li .maisdetalhe {
+	left: 23px!important;	
+}
+
+.box-bt-comprar {
+	text-transform: uppercase;	
+}
+
+#seloRodapeThawte {
+	background: url('../imagens/selo-thawte.png') no-repeat 0px 0px scroll transparent;
+	width: 113px;
+	height: 35px;
+	margin: 10px 0px 0px 10px;
+	float: left;
+}
+
+#seloRodapeFControl {
+	background: url('../imagens/selo-fcontrole.png') no-repeat 0px 0px scroll transparent;
+	width: 128px;
+	height: 18px;
+	margin: 18px 0px 0px 10px;
+	float: left;
+}
+
+#seloRodapeBlindado {
+	float: left;
+	margin: 0px 0px 0px 10px;	
+}
+
+#seloRodapeEBit {
+	float: left;
+	margin: 0px 0px 0px 20px;	
+}
+
+.ebit {
+	position:relative;
+	top: inherit;
+	right: inherit;	
+}
+
+.heading-primary{
+	text-transform: uppercase;
+	font-family: 'open_sans_condensedbold';	
+}
+
+.payment {
+	width: 1040px;	
+}
+
+.paymentTitle-resumo {
+	font-family: 'open_sans_condensedbold';
+	text-transform: uppercase;
+}
+
+.filtros_utilizados {
+	margin-top: 15px;	
+}
+
+.campoExtra01, .campoExtra02, .campoExtra03 {
+	display: none;	
+}
+
+#container_espiar .bt_comprar {
+	padding: 0px;	
+}
+
+#condicaobotao_comprar_direto a {
+	padding: 10px;	
+}
+
+#container_espiar .produto_direita .produto_preco .produto_preco_parcelado {
+	margin-bottom: 5px;	
+}
+
+.produto .produto_direita .produto_preco {
+	padding-left: 0px;	
+}
+
+#container_espiar .produto_direita .produto_comprar .variante {
+	margin: 0px 0 10px;
+	padding: 0px;	
+}
+
+#container_espiar .produto_preco_antigo span {
+	text-decoration: line-through;
+	font-size: 12px!important;
+}
+
+#container_espiar #condicaoParcelamento {
+	font-size: 12px!important;	
+}
+
+#container_espiar .preco_por_titulo, #container_espiar .produto_preco_total span, #container_espiar .produto_direita .produto_preco .produto_preco_total .preco_por {
+	font-size: 25px!important;
+	font-weight: bold!important;
+	color: #000!important;
+	font-family: 'source_sans_proregular','Arial'!important;
+}
+
+#container_espiar .produto_direita .produto_preco .produto_preco_parcelado .preco_parcelado_titulo, #container_espiar .preco_por_texto, #container_espiar .produto_preco_antigo {
+	color: #333333!important;	
+}
+
+#container_espiar .title_variante {
+	height: 25px;	
+}
+
+#container_espiar .produto_direita .produto_comprar .variante select {
+	margin-left: 10px;	
+}
+
+#container_espiar .variante2 {
+	padding: 0px;	
+}
+
+#container_espiar .produto_cima {
+	margin-top: 10px;	
+}
+
+#container_espiar .produto_direita .preco_por_texto {
+	margin: 4px 0px 0px 5px;	
+}
+
+#container_espiar .preco_parcelado_titulo  {
+	margin-right: 6px;	
+}
+
+.pgProdutos .produto_esquerda .produto_mini_fotos img {
+	max-width: 50px;
+}
+
+.pgCarrinho #msg-erro-carrinho {
+	margin: 20px auto;	
+}
+
+.pgCarrinho #msg-erro-carrinho .lista_erro {
+	width: 500px;
+	margin: 0px;
+}
+
+.btSecond a {
+	padding: 6px;
+	text-transform: uppercase;
+	font-family: 'open_sans_condensedbold';
+}
+
+.main-affiliateLink, .main-readyList, .main-giftList {
+	display: none;
+}
+
+.btnContinuar2 {
+	float: right;
+	width: 100px;
+	height: 35px;
+	position: absolute;
+	cursor:pointer;
+}
+
+.carLogos {
+	width: 990px;
+	height: 82px;
+	left: 50%;
+	position: relative;
+	margin: 20px 0px 0px -495px;
+}
+
+.carLogos .bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+}
+
+.carLogos .slide2 {
+	text-align: center;
+}
+
+.carLogos .bx-wrapper .bx-pager.bx-default-pager {
+	display: none;
+}
+
+.carLogos .bx-wrapper .bx-pager, .carLogos .bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+.carLogos .bx-wrapper .bx-pager .bx-pager-item, .carLogos .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+}
+
+.carLogos .bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -14px;
+	outline: 0;
+	text-indent: -9999px;
+	z-index: 9999;
+	background: none;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	display: block;
+}
+
+.carLogos .bx-wrapper .bx-prev {
+	left: -40px;
+}
+
+.carLogos .bx-wrapper .bx-next {
+	right: -40px;
+}
+
+.scrollup {
+	width:40px!important;
+	height:40px!important;			
+	text-indent:-9999px;
+	position:fixed!important;
+	bottom:50px;
+	right:100px;
+	display:none;
+	z-index: 99999;
+}
+
+#box_pop {
+  width: 698px;
+  height: 388px;
+  margin: 0px;
+  padding: 0px;
+}
+  
+#box_pop fieldset {
+  border: none;
+}
+  
+#newsPopNome {
+  float: right;
+  margin: 209px 0px 0px 0px;
+  padding: 0px;
+  width: 100%;
+}
+  
+#newsPopNome input {
+  float: right;
+  margin: 0px 60px 0px 0px;
+  padding: 5px;
+  border: none;
+  width: 269px;
+  color: #959595;
+}
+  
+#newsPopEmail {
+  float: right;
+  margin: 14px 0px 0px 0px;
+  padding: 0px;
+  width: 100%;
+}
+  
+#newsPopEmail input {
+  float: right;
+  margin: 0px 60px 0px 0px;
+  padding: 5px;
+  border: none;
+  width: 269px;
+  color: #959595;
+}
+  
+.btEnviarPop a {
+	float: right;
+	margin: 20px 60px 0px 0px;
+	padding: 7px 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+}
+  
+.btEnviarPop a:hover {
+  cursor: pointer;
+}
+
+.popNewsAux {
+	position: absolute;
+	right: 52px;
+	top: 80px;
+	width: 300px;
+	font-size: 20px;	
+}
+
+.tagBrinde {
+	left: 88px;
+	position: absolute;
+	float: left;
+	width: 56px;
+	padding: 5px 0px;
+	text-transform: uppercase;
+	font-family: 'open_sans_condensedbold';
+	z-index: 9;
+	text-align: center;	
+}
+
+.tagBrinde2 {
+	left: auto!important;
+	position: relative!important;
+	text-align: center;
+	margin: 7px 10px 0px 0px;	
+}
+
+.tagBrinde3 {
+	left: auto!important;
+	position: relative!important;
+	text-align: center;
+	margin: 7px 10px 0px 7px;
+	float: none!important;
+	padding: 5px!important;	
+}
+
+.brinde_sucesso {
+    margin: 20px 0;
+}
+ 
+.brinde_sucesso_mensagem{
+    background: url("../imagens/sucesso.png") no-repeat 5px 5px #DFF0D8;
+    padding: 12px 10px 12px 60px;
+    overflow: hidden;
+    border: 1px solid #D6E9C6;
+}
+ 
+.brinde_sucesso_mensagem h2{
+    color: #333;
+    margin-bottom: 5px;
+}
+ 
+.brinde_sucesso_mensagem p{
+    color: #333;
+}
+ 
+.brinde_sucesso_img{
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    float: right;
+}
+ 
+.brinde_sucesso_img img{
+    display: block;
+}
+
+.listaBrinde {
+	background-color: #f1f1f1;	
+}
+
+.listaBrinde .img_reload_carrinho, .listaBrinde .tagBrinde  {
+	display: none;	
+}
+
+.txtBrinde {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight:bold;	
+}
+
+.bonus_produto {
+	margin: 10px 0px 5px 0px;
+	float: left;
+	text-transform: uppercase;
+	font-size: 14px;	
+}
+
+.produto_direita .produto_preco .produto_bt_parcelamento {
+	margin-right: 10px;	
+}
+
+.produto_bt_parcelamento .abrir_parcelamento {
+	border: 1px solid #ccc;
+	padding: 5px;	
+}
+
+.restaEstoque {
+	float: right;
+	text-transform: uppercase;	
+}
+
+#descricao_departamento {
+	margin: 0px 0px 20px 0px;
+	width: 100%;	
+}
+
+.btnNews {
+    position: absolute;
+    width: 70px;
+    height: 25px;
+    margin: 290px 70px 0px 0px!important;
+    right: 0px;
+    z-index: 99999;
+    background: transparent!important;
+}
+
+.box_menu_topo_netos{
+    display: none;
+  	position: absolute;
+	left: 200px;
+	margin: -40px 0px 0px 0px;
+	padding: 15px;
+}
+
+.link-menu-topo:hover .box_menu_topo_netos {
+    display: block
+}
+
+.arrowMenu {
+  width: 0;
+  height: 0;
+  border-right: solid 10px;
+  border-bottom: solid 10px transparent;
+  border-top: solid 10px transparent;
+  margin-left: -26px;
+  margin-bottom: -24px;
+}
+
+ .navegacao_vitrine .frete-gratis { 
+ 	display: none;
+}  
+
+ .navegacao_vitrine .titulo { 
+ 	height: 50px!important;
+}
+
+.geral_topo {
+	height: 180px;
+}
+
+
+/*Alterações feitas em 02/07/2015*/
+
+.borda-produto {
+    height: auto !important;
+    width: auto !important;
+}
+
+.endereco_conteudo{
+    height: 180px;
+    width: 265px;
+	position:relative;
+}
+
+.bt {
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
+}

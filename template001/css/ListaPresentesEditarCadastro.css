@@ -1,0 +1,24 @@
+.containerconteudo {
+	width: 990px;
+	margin: 0 auto;
+}
+
+.lp-cadastro{
+    margin-top: 10px;
+}
+
+.lp-cadastro-formulario-linha-z {
+	padding: 20px !important;
+}
+
+.lp-cadastro-formulario-linha-conteudo{
+    width: auto !important;
+}
+
+.salvar_lista{
+    width: auto !important;
+}
+
+.lp-box-destaque h4 {
+	font-size: 18px !important;
+}

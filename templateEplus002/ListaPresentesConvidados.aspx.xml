@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListaPresentesConvidadoss><ListaPresentesConvidados ID="ListaPresentesConvidados1"><ListaPresentesConvidadosHTML><![CDATA[<div class="conteudo_lista_presente_left"> 
+<div class="lista_convidados_titulo">
+    <div class="lista_convidados_titulo_conteudo">
+      <h4>Lista de convidados</h4>
+      <p>Monte agora sua lista de convidados para seu evento <br />Cadastre o nome e o email e seus convidados. Basta clicar no botão "Adicionar convidado" e preencher os campos. Após o preenchimento salve su lista de convidados clicando em "Salvar Lista".<br />
+        Através da sua lista de convidados você poderá enviar email a todos quando quiser através do link "Enviar Mensagem".</p>			
+    </div>
+  </div>
+  [A5][A6]
+  <div class="lista_convidados_conteudo">
+    	<div class="tit_lista_convidados">
+          <span>Nome</span>
+          <span>Email</span>
+    	</div>
+        <repeticao:convidados>
+          <fieldset>
+              <label style="width: 45%;">
+                  [A0]
+              </label>
+              <label style="width: 45%;">
+                  [A1]
+              </label>
+              <label style="width: 5%;">
+                <a href="[A2]"><img src="imagens/bt_lista_presentes_remover.png" alt="Excluir convidado" /></a>
+              </label>
+          </fieldset>
+        </repeticao:convidados>
+
+        <fieldset>
+            <label style="width: 40%;">
+                <img src="imagens/bt_lista_add_convidado.jpg" alt="Adicionar novo contato" border="0" style="cursor:pointer" onclick="[A3]" />
+            </label>
+        </fieldset>
+
+        <div style="margin: 25px 0; ">
+          <a href="[A4]" class="box-bt btn-special">Salvar lista</a>
+        </div>
+    </div>
+  </div>
+]]></ListaPresentesConvidadosHTML><MensagemErroListaPresentesConvidadosHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+      <h2>[C0]</h2>
+      <ul>
+        <repeticao:erro>
+          <li>[C1]</li>
+        </repeticao:erro>
+      </ul>
+    </div>
+</div>
+]]></MensagemErroListaPresentesConvidadosHTML><MensagemSucessoListaPresentesConvidadosHTML><![CDATA[<div id="sucesso">
+  <div class="lista_sucesso message-success">
+  	<h2>Lista de convidados salva com sucesso!</h2>
+  </div>
+</div>]]></MensagemSucessoListaPresentesConvidadosHTML></ListaPresentesConvidados></ListaPresentesConvidadoss><SEOs><SEO ID="seo" /></SEOs><Banners><Banner ID="Fullzao_Topo" /></Banners><ListaPresentesInformacoess><ListaPresentesInfo ID="ListaPresentesInformacoes"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+      <div class="container_descricao_lista fechado heading-primary"> 
+        <div class="container_descricao_lista_conteudo">
+          <div class="logo_listapresente">
+            <img src="imagens/logo_lista_presente.png" />
+          </div>
+          <div class="foto_lista">
+              <condicao:fotoprincipal>
+                  <img alt="" src="[A5]?width=155&height=120" />
+              </condicao:fotoprincipal>
+          </div>
+          <div class="descricao_lista">
+            <h3>[A20] <img src="imagens/bullet_verinfo.png" /><small class="abre_header">Exibir informações</small></h3>
+              <condicao:comevento>
+                <p>[A0] - [A1]</p>
+                <span>
+                  <strong>Homenageado(s):</strong> [A0]<br />
+                  <strong>Data:</strong> [A1]<br />
+                  <strong>Local:</strong> [A15],[A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="#" class="ver_mapa">(ver mapa)</a></strong></condicao:mapa></span>
+                <span>
+                    [A4]
+                </span>
+              </condicao:comevento>
+          </div>
+        </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+
+      <div class="container_descricao_lista fechado heading-primary"> 
+          <div class="container_descricao_lista_conteudo">
+            <div class="descricao_lista">            
+              <h3>[A20]</h3>
+            </div>
+          </div>
+      </div>
+
+      </condicao:naoaceitaevento>  
+<condicao:semevento>
+  <div id="erro">
+      <div class="lista_erro message-error">
+            <h2>Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.</h2>
+        </div>
+    </div>
+</condicao:semevento>
+
+<div style="display: none;">
+  <div class="lista_mapa">
+      <div class="tit_box_full"><h2>Mapa</h2></div> 
+      [A3]
+  </div>
+</div>
+
+
+<script>
+  $(function(){
+      $('.ver_mapa').live('click', function() {
+            $.fn.colorbox({inline:true, href:".lista_mapa"});
+            return false;
+      });
+
+      $('.abre_header').click(function() {
+            if($(".container_descricao_lista").hasClass("fechado")){
+                $(".container_descricao_lista").removeClass("fechado");
+                $(this).text("Ocultar informações")
+            }else{
+                $(".container_descricao_lista").addClass("fechado");
+                $(this).text("Exibir informações")
+            };
+      });  
+    });
+</script>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInformacoess><ListaPresentesInfos><ListaPresentesInfo ID="ListaPresentesInformacoesMenu"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+              <div class="acoes_lista nav-vertical">
+          <div class="acoes_lista_conteudo">
+            <ul>
+              <li><a class="link_pai_presente" href="[A13]">Produtos da lista</a>
+                <ul>
+                  <li><a href="[A13]">Produtos da Lista</a></li>
+                  <li><a href="javascript: void(0)" class="bt_add_produto">Adicionar Produtos</a></li>
+                  <li><a href="[A21]">Escolher lista Pronta</a></li>
+                </ul>
+              </li>
+              <li class="menu_selected"><a class="link_pai_presente link_selected" href="[A8]">Lista de Convidados</a></li>
+              <li><a class="link_pai_presente" href="[A9]">Enviar Mensagem</a></li>
+              <li><a class="link_pai_presente" href="[A11]">Álbum de Fotos</a></li>
+              <li><a class="link_pai_presente" href="[A10]">Editar Evento</a></li>
+            </ul>
+          </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+
+
+              <div class="acoes_lista">
+            <div class="acoes_lista_conteudo">
+            <ul>
+              <li><a class="link_pai_presente" href="[A13]">Produtos da Lista</a></li>
+              <li><a class="link_pai_presente bt_add_produto" href="javascript: void(0)">Adicionar Produto</a></li>
+            </ul>
+            </div>
+      </div>
+      </condicao:naoaceitaevento>  
+
+<div style="display: none;">
+  <div class="lista_add_produto">
+    <img src="imagens/animacao.gif" alt="Animação" /><br /><br />
+    <a href="[A7]"><img alt="Adicionar Produto" src="imagens/adicionar_produto.png" /></a>
+  </div>
+</div>
+
+
+<script>
+  $(function(){
+
+  
+      $('.bt_add_produto').live('click', function() {
+            $.fn.colorbox({inline:true, href:".lista_add_produto", overlayClose:false, escKey:false});
+            return false;
+      }); 
+
+
+    });
+</script>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AfiliadoRelatorioClientess><AfiliadoRelatorioClientes ID="AfiliadoRelatorioCli"><AfiliadoRelatorioClientesHTML><![CDATA[          <div class="respiro">
+     <h2 class="titulo_pedido titulo_afiliados_vendas">
+        Relatório por Clientes
+    </h2>
+              <div class="afiliados_refinar">
+                <div class="afiliados_refinar_direita">
+                    [A0][A1][A2] <img src="imagens/bt_filtrar.png?15" onclick="[A3]" style="cursor:pointer; vertical-align:middle" />
+                </div>
+              </div>
+          </div>
+
+
+          <div class="afiliados_tabela respiro">
+  <table cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;" class="tab_relatorio">
+    <tbody>
+    <tr>
+        <th>&nbsp;
+
+        </th>
+        <th class="first">
+            <span></span>
+        </th>
+        <th>
+            <span>Cliente</span>
+        </th>
+        <th>
+            <span>E-mail</span>
+        </th>
+        <th>
+            <span>Pedidos</span>
+        </th>
+        <th>
+            <span>Pedidos Entregues</span>
+        </th>
+        <th>
+            <span>Valor Pedidos Entregues</span>
+        </th>
+        <th class="last">
+            <span>Comissão</span>
+        </th>
+    </tr>
+     <repeticao:cliente>
+    <tr class="cor1">
+        <td class="mostra">
+            <span class="exibe" id="[A14]"><img src="imagens/exibe.png?1" alt="exibe" /></span>
+        </td>
+        <td>&nbsp;
+
+        </td>
+        <td>
+            <span>[A5]</span>
+        </td>
+        <td>
+            <span>[A6]</span>
+        </td>
+        <td>
+            <span>[A7]</span>
+        </td>
+        <td>
+            <span>[A8]</span>
+        </td>
+        <td>
+            <span>[A9]</span>
+        </td>
+        <td>
+            <span>[A10]</span>
+        </td>
+    </tr>
+    <condicao:pedidos>
+    <tr class="cor2 [A14]">
+        <th>&nbsp;
+
+        </th>
+        <th>&nbsp;
+
+        </th>
+        <th>&nbsp;
+
+        </th>
+        <th>&nbsp;
+
+        </th>
+        <th>&nbsp;
+
+        </th>
+        <th>
+            <span>N° Pedido</span>
+        </th>
+        <th>
+            <span>Valor do Pedido</span>
+        </th>
+        <th>
+            <span>Comissão</span>
+        </th>
+
+    </tr>
+    <repeticao:pedidos>
+    <tr class="cor2 [A14]">
+        <td>&nbsp;
+
+        </td>
+        <td>&nbsp;
+
+        </td>
+        <td>&nbsp;
+
+        </td>
+        <td>&nbsp;
+
+        </td>
+         <td>&nbsp;
+
+        </td>
+        <td>
+            <span>[A11]</span>
+        </td>
+        <td>
+            <span>[A12]</span>
+        </td>
+        <td>
+            <span>[A13]</span>
+        </td>
+    </tr>
+    </repeticao:pedidos>
+    </condicao:pedidos>  
+    </repeticao:cliente>
+    <condicao:mensagem_sem_registro>
+      <tr>
+          <td colspan="8">Não existe registro para esta consulta.</td>
+      </tr>
+    </condicao:mensagem_sem_registro>      
+    </tbody>
+  </table>
+</div>]]></AfiliadoRelatorioClientesHTML><CssComponente><![CDATA[]]></CssComponente></AfiliadoRelatorioClientes></AfiliadoRelatorioClientess></controles></page>

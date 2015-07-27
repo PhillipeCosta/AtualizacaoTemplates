@@ -1,0 +1,113 @@
+/* Layout */
+
+.title_minhaslistas{
+    margin: 10px 0;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.criar_lista{
+    display: none;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.tit_lista_presente{
+	background: url('../imagens/tit_lista_presente.png') no-repeat left center transparent;
+	overflow: hidden;	
+	padding: 20px 0 15px;
+	margin: 10px 0 0;
+}
+
+.tit_lista_presente h2{
+	margin: 0 0 10px 80px;
+	border-bottom: 3px solid #062a59;
+	color: #062a59;
+	font-size: 18px;
+}
+
+
+
+/* Tabela */
+
+.tab_lista_presente{
+	clear: both;
+}
+
+#minha_lista_presente{
+	margin-top: 10px;
+}
+
+.tab_lista_presente td{
+    text-align: center;
+}
+
+.tab_lista_presente{
+    width: 100%;
+}
+
+.tab_lista_presente tr{
+    color: #052547;
+}
+
+.tab_lista_presente a{
+    color: #434343;
+    text-decoration: none;
+}
+
+.tab_lista_presente a:hover{
+    text-decoration: underline;
+}
+
+.tab_lista_presente thead tr th{
+    font-weight: bold;
+    line-height: 33px;
+    text-align: center;
+    padding: 0 5px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.tab_lista_presente tbody tr td{
+	font-size: 12px;
+	padding: 10px 5px;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.tab_lista_presente tbody tr:hover{
+    background: #f2f2f2;
+}
+
+.tab_lista_presente tbody tr:hover td{
+}
+
+.tab_lista_presente tbody tr td:first-child, .tab_lista_presente thead tr th:first-child{
+	padding-left: 20px;
+}
+
+.paginacao_lista{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.paginacao_lista a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #052547;
+	font-size: 12px;
+	padding: 0 5px;
+        display: inline-block;
+}
+
+.paginacao_lista a:hover{
+	text-decoration: underline;
+}
+
+.paginacao_lista a.selecionado{
+	border: 1px solid #052547;
+	color: #052547;
+	padding: 2px 5px;
+}

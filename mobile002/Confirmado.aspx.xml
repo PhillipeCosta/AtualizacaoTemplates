@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><PedidoDadoss><PedidoDados ID="PedidoDados" NomeAmigavel="" Visible="True"><PedidoDadosHTML><![CDATA[<div align="center">
+							<table class="tab_interna" width="620" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<th background="imagens/tab_bg.gif" colspan="2">
+										<img hspace="0" class="img_left" src="imagens/tit_confira.gif"/>
+										<img hspace="0" class="img_right" src="imagens/tab_dir.gif"/>
+									</th>
+								</tr>
+								<tr>
+									<td align="center">
+										<br/>
+										<div id="PedidoDados_Boleto">
+											<p class="cod">{0}</p>
+											<div class="mail">{1}</div>
+										</div>
+									</td>
+									<td align="center">
+										<!-- Gerar_boleto -->
+										<a href="{2}" target="_blank">
+											<img src="imagens/bt_imp_boleto.gif" alt="Gerar Boleto" width="302" height="53" border="0">
+										</a>
+										<!-- Fim_Gerar_boleto -->
+										<!-- Conveniados -->
+										<a href="{3}" target="_blank">
+											<img src="imagens/conveniados_s.gif" border="0">
+										</a>
+										<!-- Fim_Conveniados -->
+									</td>					   
+								</tr>
+								<tr>
+									<th background="imagens/tab_bg_inf.gif" colspan="2">
+										<img hspace="0" class="img_left" src="imagens/tab_esq_inf.gif"/>
+										<img hspace="0" class="img_right" src="imagens/tab_dir_inf.gif"/>
+									</th>
+								</tr>
+							</table>
+						</div><!-- CSS_Inicio -->]]></PedidoDadosHTML><PedidoDadosNaoCadastradoHTML><![CDATA[<h1>Pedido não cadastrado</h1> teste<!-- CSS_Inicio -->]]></PedidoDadosNaoCadastradoHTML></PedidoDados><PedidoDados ID="PedidoDados1"><PedidoDadosHTML><![CDATA[  <div class="ciashop-containerInfoRequest ciashop-display">
+        <p>Número do pedido:</p>
+        <h3 class="ciashop-numberRequest"><strong>[A0]</strong></h3>
+    <p>A confirmação do pedido foi enviada a seu endereço de e-mail</p>
+    <p><strong>[A1]</strong></p>
+  </div>]]></PedidoDadosHTML><PedidoDadosNaoCadastradoHTML><![CDATA[Pedido não encontrado]]></PedidoDadosNaoCadastradoHTML></PedidoDados><PedidoDados ID="PedidoDados2"><PedidoDadosHTML><![CDATA[      <condicao:boleto>
+        <p><a href="javascript: window.open('[A2]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);" class="btn btn-secondary">Imprimir Boleto</a></p>
+      </condicao:boleto>]]></PedidoDadosHTML><PedidoDadosNaoCadastradoHTML><![CDATA[]]></PedidoDadosNaoCadastradoHTML></PedidoDados></PedidoDadoss><PedidoPagamentos><PedidoPagamento ID="PedidoPagamento" NomeAmigavel="" Visible="True"><MetodoPagamentoBradescoHTML><![CDATA[]]></MetodoPagamentoBradescoHTML><MetodoPagamentoCartaoOfflineHTML><![CDATA[]]></MetodoPagamentoCartaoOfflineHTML><MetodoPagamentoContraEntregaHTML><![CDATA[]]></MetodoPagamentoContraEntregaHTML><MetodoPagamentoDepositoHTML><![CDATA[[A0]<!-- CSS_Inicio -->]]></MetodoPagamentoDepositoHTML><MetodoPagamentoItauHTML><![CDATA[]]></MetodoPagamentoItauHTML><MetodoPagamentoRedeCardHTML><![CDATA[]]></MetodoPagamentoRedeCardHTML><MetodoPagamentoVisanetHTML><![CDATA[]]></MetodoPagamentoVisanetHTML><PedidoPagamentoHTML><![CDATA[						<div align="center">
+							<table class="tab_interna" width="620" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<th background="imagens/tab_bg.gif">
+										<img hspace="0" class="img_left" src="imagens/tit_dados_pagamento.gif"/>
+										<img hspace="0" class="img_right" src="imagens/tab_dir.gif"/>
+									</th>
+								</tr>
+								<tr>
+									<td>
+										[A0]
+									</td>
+								</tr>
+								<tr>
+									<th background="imagens/tab_bg_inf.gif">
+										<img hspace="0" class="img_left" src="imagens/tab_esq_inf.gif"/>
+										<img hspace="0" class="img_right" src="imagens/tab_dir_inf.gif"/>
+									</th>
+								</tr>
+							</table>
+						</div>
+						<!-- CSS_Inicio -->]]></PedidoPagamentoHTML></PedidoPagamento><PedidoPagamento ID="PedidoPagamento1"><MetodoPagamentoAccesstageHTML><![CDATA[<p>Forma de Pagamento: [J3]</p>
+<p>Código da Transação: [J0]</p>
+<p>Token: [J1]</p>
+<p>Status do Pagamento: [J2]</p>
+<p>Valor do pedido: [J4]</p>
+<p>Parcelamento: [J5]</p>
+<condicao:categoria_boleto>
+	 <a href="javascript: window.open('[J6]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);" class="btn btn-secondary">Imprimir boleto</a>
+</condicao:categoria_boleto>
+]]></MetodoPagamentoAccesstageHTML><MetodoPagamentoBradescoHTML><![CDATA[<p>Forma de Pagamento: Bradesco</p>
+<p>Valor do pedido: [H4]</p>]]></MetodoPagamentoBradescoHTML><MetodoPagamentoCartaoOfflineHTML><![CDATA[<p>Forma de Pagamento: Cartão [D0]</p>
+<p>Valor do pedido: [D3] de [D1]</p>
+<condicao:taxa_juros>
+<p>Taxa de juros: [D4]</p>
+</condicao:taxa_juros>]]></MetodoPagamentoCartaoOfflineHTML><MetodoPagamentoContraEntregaHTML><![CDATA[<p>Forma de Pagamento: Pagamento na entrega</p>
+<p>Valor do pedido: [C0]</p>]]></MetodoPagamentoContraEntregaHTML><MetodoPagamentoDepositoHTML><![CDATA[<p>Forma de Pagamento: Depósito Bancário</p>
+<p>Valor a ser depositado: [B0]</p>
+<p>Favorecido: [B6] - [B7]</p>
+<p>Código do Banco: [B3]</p>
+<p>Agência: [B4]</p>
+<p>Conta: [B5]</p>
+<p>Prazo de pagamento: [B2]</p>
+
+]]></MetodoPagamentoDepositoHTML><MetodoPagamentoItauHTML><![CDATA[<p>Forma de Pagamento: Itaú</p>
+<p>Descrição do Método: [G0]</p>
+<p>Descrição do pagamento: [G1]</p>
+<p>Valor do pedido: [G2]</p>]]></MetodoPagamentoItauHTML><MetodoPagamentoMoipHTML><![CDATA[<p>Forma de Pagamento: [I2]</p>
+<p>Código da Transação: [I0]</p>
+<p>Status do Pagamento: [I1]</p>
+<p>Valor do pedido: [I3]</p>
+<p>Parcelamento: [I4]</p>
+<condicao:categoria_tef>
+	<p>Código de Autorização: [I5]</p>
+</condicao:categoria_tef>
+<condicao:categoria_cartao>
+	<p>Código de Autorização: [I5]</p>
+</condicao:categoria_cartao>
+<condicao:categoria_boleto> 
+	<div style="margin: 10px 0;">
+      <a href="javascript: window.open('[I6]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);" class="btn btn-secondary">Imprimir boleto</a>
+	</div>
+  	<p>Atenção: Uma nova janela será aberta com o boleto.</p>
+    <p>Atenção: Ver data de vencimento no boleto, após o prazo seu pedido será cancelado.</p>
+</condicao:categoria_boleto>
+]]></MetodoPagamentoMoipHTML><MetodoPagamentoPadraoHTML><![CDATA[<p>Forma de Pagamento: [K0]</p>
+<p>Valor: [K4]</p>]]></MetodoPagamentoPadraoHTML><MetodoPagamentoRedeCardHTML><![CDATA[<p>Forma de Pagamento: Cartão de crédito - Redecard</p>
+<p>Descrição do Método: [F0]</p>
+<p>Código de Autorização: [F4]</p>
+<p>Comprovante de Venda: [F5]</p>
+<p>Valor do pedido: [F3]x de [F1]</p>]]></MetodoPagamentoRedeCardHTML><MetodoPagamentoVisanetHTML><![CDATA[<p>Forma de Pagamento: Cartão de crédito - Cielo</p>
+<p>Identificação do pedido: [E4]</p>
+<p>Código de Autorização: [E5]</p>
+<p>Código:[E6]</p>
+<p>Valor do pedido: [E2]x de [E0]</p>
+]]></MetodoPagamentoVisanetHTML><PedidoPagamentoHTML><![CDATA[<div class="pedido_dados">        
+    [A0] 
+</div>]]></PedidoPagamentoHTML></PedidoPagamento></PedidoPagamentos><PedidoItenss><PedidoItens ID="PedidoItens" NomeAmigavel="" Visible="True"><PedidoItensHTML><![CDATA[sssssssssssssssss<!-- CSS_Inicio -->]]></PedidoItensHTML></PedidoItens><PedidoItens ID="PedidoItens1"><PedidoItensHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Confira seu pedido&nbsp;<span class="fa fa-shopping-cart"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div>
+<div id="ciashop-cart">
+    <div class="col-md-8 ciashop-containerProductsCart">
+        <repeticao:produtos>  
+            <div class="ciashop-boxProductsCart">
+                <div class="ciashop-imgCart ciashop-display">
+                    <img src="[A4]?width=285&height=381" alt="[A1]" class="img-responsive" />
+                </div>
+                <div class="ciashop-infoCart ciashop-display">
+                    <h4 class="ciashop-nameProductCart text-left"><strong>[A1]</strong></h4>
+                    <p class="ciashop-infoProductCart text-muted">Quantidade: [A5]</p>
+                    <p class="ciashop-infoProductCart text-muted">
+                        <condicao:imagem_presente><span class="fa fa-check-square"></span>&nbsp;Sim</condicao:imagem_presente>
+                    </p>
+                    <p class="ciashop-infoProductCart text-muted">Preço Unitário: [A6]</p>
+                    <p class="ciashop-subtotalPriceProductCart text-muted"><small>Total:</small> <strong>[A8]</strong></p>
+                </div>
+            </div> 
+        </repeticao:produtos>
+    </div>
+    <div class="col-md-4 ciashop-containerDataCart">
+        <h4><strong>Dados da sua compra</strong></h4>
+        <div class="ciashop-infoDataCart">
+            <div class="ciashop-shippingAndCouponCart">
+                <h5>
+                    <span class="fa fa-truck"></span>&nbsp;Frete: <strong>[A14]</strong>
+                </h5>
+                <condicao:bonus>
+                <h5>
+                    <span class="fa fa-tags"></span>&nbsp;Cupom: <strong>[A13]</strong>
+                </h5>           
+                </condicao:bonus> 
+                <condicao:desconto>
+                <h5>
+                    Desconto: <strong>[A11]</strong>
+                </h5>    
+              </condicao:desconto>
+                <condicao:cupom_desconto>
+                <h5>
+                    Cupom Desconto: <strong>[A18]</strong>
+                </h5>    
+              </condicao:cupom_desconto>              
+            </div>
+            <div class="ciashop-totalCart">
+                <h3 class="ciashop-display">
+                  <small>Total:</small> <strong>[A16]</strong>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+</div>]]></PedidoItensHTML><TamanhoImagem value="Gigantes" /></PedidoItens></PedidoItenss><PedidoEntregas><PedidoEntrega ID="PedidoEntrega" NomeAmigavel="" Visible="True"><PedidoEntregaHTML><![CDATA[<div class="">
+sw
+</div><!-- CSS_Inicio -->]]></PedidoEntregaHTML></PedidoEntrega><PedidoEntrega ID="PedidoEntrega1"><PedidoEntregaHTML><![CDATA[<div class="ciashop-clear">
+   <div class="ciashop-titBox heading-primary">
+        <h2>Dados de entrega&nbsp;<span class="fa fa-truck"></span></h2>      
+        <span class="ciashop-cantoTit"></span>      
+        <hr />
+    </div>
+    <div class="ciashop-clear ciashop-addressConfirmed">
+        <p><small>Nome do recebedor:</small> [A0]</p>
+        <p><small>CEP:</small> [A7]</p>
+        <p><small>Endereço:</small> [A1],[A2]</p>
+        <p><small>Complemento:</small> [A3]</p>
+        <p><small>Bairro:</small> [A4]</p>
+        <p><small>Cidade:</small> [A5], [A6] - [A8]</p>
+        <p><small>Trasportadora:</small> [A9]</p>
+        <p><small>Prazo de Entrega:</small> [A10]</p>
+    </div>
+</div>]]></PedidoEntregaHTML></PedidoEntrega></PedidoEntregas><PedidoContatos><PedidoContato ID="PedidoContato" NomeAmigavel="" Visible="True"><PedidoContatoHTML><![CDATA[<div class="box">
+<div class="tit_box">
+                      <h2>Dúvidas</h2>
+                      </div>
+<div class="box_conteudo">
+<div class="respiro">
+<strong>Em caso de dúvida ou consulta, poderá contatar a [A0] no: </strong>
+<p>Telefone: [A1]</p>
+<p>Email: [A2]</p>
+<p></p>
+</div>
+</div>
+</div><!-- CSS_Inicio -->]]></PedidoContatoHTML></PedidoContato><PedidoContato ID="PedidoContato1"><PedidoContatoHTML><![CDATA[<div class="ciashop-clear">
+   <div class="ciashop-titBox heading-primary">
+        <h2>Dúvidas&nbsp;<span class="fa fa-phone"></span></h2>      
+        <span class="ciashop-cantoTit"></span>      
+        <hr />
+    </div>
+    <div class="ciashop-clear ciashop-addressConfirmed">
+      	<p>Em caso de dúvida ou consulta, poderá contatar a [A0] no:</p>
+        <p><small>Telefone:</small>[A1]</p>
+        <p><small>Email:</small>[A2]</p>
+    </div>
+</div>]]></PedidoContatoHTML></PedidoContato></PedidoContatos><IdentificacaoCompradors><IdentificacaoComprador ID="Comprador" NomeAmigavel="" Visible="True"><FormularioNovoCadastroEnderecoHTML><![CDATA[]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[]]></MensagemAlertaHTML><NovaCompraHTML><![CDATA[]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><EbitBannerPedidos><EbitBannerPedido ID="EbitBannerPedido1"><EbitBannerPedidoHTML><![CDATA[<center>
+<div class='Ebit'>
+    <a href="[A0]" target="_blank"><img src="https://www.ebitempresa.com.br/bitrate/banners/b109985.gif" alt="Avalie sua compra." style="border: 0px;" /></a>
+</div>
+</center>]]></EbitBannerPedidoHTML></EbitBannerPedido></EbitBannerPedidos><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /><UsarHTTPS value="False" /></Link><Link ID="Voltar_Principal"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Voltar para página principal" /><UsarHTTPS value="False" /></Link></Links><GoogleAnalyticss><GoogleAnalytics ID="googleanalytitcs1"><AnalyticsConfirmadoHTML><![CDATA[<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol ) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{
+  var pageTracker = _gat._getTracker("[B14]");
+  pageTracker._trackPageview();
+  pageTracker._addTrans(
+      "[B0]", 
+      "[B1]", 
+      "[B2]", 
+      "[B3]", 
+      "[B4]", 
+      "[B5]", 
+      "[B6]", 
+      "[B7]"  
+    );
+
+
+   <repeticao:produtos>
+   pageTracker._addItem(
+      "[B8]", 
+      "[B9]", 
+      "[B10]",
+      "[B11]",
+      "[B12]",          
+      "[B13]"
+   );
+   </repeticao:produtos>
+   pageTracker._trackTrans(); //submits transaction to the Analytics servers
+} catch(err) {}
+</script>]]></AnalyticsConfirmadoHTML><AnalyticsHTML><![CDATA[]]></AnalyticsHTML><CssComponente><![CDATA[]]></CssComponente></GoogleAnalytics></GoogleAnalyticss><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="EbitBannerPedido"><ScriptRazorHTML><![CDATA[<div class="banner_ebit">
+  @TemplateSettings.main_ebitBanner
+</div>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

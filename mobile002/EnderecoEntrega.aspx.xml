@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CarrinhoPassoss><CarrinhoPassos ID="Passos" NomeAmigavel="Passo da compra" Visible="True"><Passo value="3" /></CarrinhoPassos></CarrinhoPassoss><EnderecoEntregas><EnderecoEntrega ID="EnderecoEntrega1"><ComponenteLista value="False" /><EnderecoEntregaHTML><![CDATA[    <div id="entrega">
+        <ul class="ciashop-overflow">
+            <repeticao:enderecos_cadastrados>
+            <li class="col-md-3 ciashop-address ciashop-overflow <condicao:endereco_selecionado>ciashop-addressSelected</condicao:endereco_selecionado>">
+            <div class="ciashop-containerAddress">
+                <h4><strong>[A17]</strong></h4>
+                <h6>[A18]</h6>
+                <p>[A19], [A20]- [A21] - [A22] - [A23]<br />
+                    CEP: [A24]
+                </p>
+                <div>
+                    <a href="[A25]" class="btn btn-secondary pull-left">Editar</a>
+                    <a href="[A26]" class="btn btn-primary pull-right">Usar este endereço</a>
+                </div>
+            </div>
+            </li>
+        </repeticao:enderecos_cadastrados>
+        </ul>
+        <div class="ciashop-overflow ciashop-clear">
+           <a href="[A27]" type="submit" class="btn btn-primary pull-right">Continuar</a>  
+        </div>         
+
+        [A16]
+
+      <div class="ciashop-titBox heading-primary">
+        <h2>Cadastrar novo endereço&nbsp;<span class="fa fa-edit"></span></h2>      
+        <span class="ciashop-cantoTit"></span>      
+        <hr />
+      </div>
+      <div class="ciashop-form form">
+        <div class="form-group col-md-6">
+          <label>CEP <small><a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">(Esqueceu o CEP?)</a></small></label>
+          [A0]
+        </div>  
+        <div class="form-group col-md-6">
+          <label>País *</label>
+          [A14]
+        </div>
+        <div class="form-group col-md-6">
+          <label>Nome para entrega *</label>
+          [A1]
+        </div>                        
+        <div class="form-group col-md-6">
+          <label>Nome do local<small> (Ex: casa, apto, etc)</small></label>
+          [A2]
+        </div>   
+        <div class="form-group col-md-6">
+          <label>Endereço *</label>
+          [A3]
+        </div>               
+        <div class="form-group col-md-6">
+          <label>Número *</label>
+          [A4]
+        </div>                       
+        <div class="form-group col-md-6">
+          <label>Complemento *</label>
+          [A5]
+        </div>                       
+        <div class="form-group col-md-6">
+          <label>Cidade *</label>
+          [A7]
+        </div>   
+        <condicao:selecao_estado>                    
+          <div class="form-group col-md-6">
+            <label>Estado *</label>
+            [A8]
+          </div>                   
+        </condicao:selecao_estado>    
+        <div class="form-group col-md-6">
+          <label>Pontos de Referência</label>
+          [A9]
+        </div>                       
+        <div class="form-group ciashop-overflow col-md-6">
+          <label style="display: block;">Telefone Principal *</label>
+          <div class="col-md-1 ciashop-paddingNone ciashop-formTelDDD">[A10]</div>
+          <div class="col-md-11 ciashop-formTel" style="padding-right: 0;">[A11]</div>
+        </div>                      
+        <div class="form-group ciashop-overflow col-md-6">
+          <label style="display: block;">Telefone Secundário</label>
+          <div class="col-md-1 ciashop-paddingNone ciashop-formTelDDD">[A12]</div>
+          <div class="col-md-11 ciashop-formTel" style="padding-right: 0;">[A13]</div>  
+        </div> 
+        <div class="ciashop-overflow ciashop-clear col-md-12">
+           <a href="[A15]" type="submit" class="btn btn-primary pull-right" style="margin: 0 !important;">Salvar e Continuar</a>  
+        </div>        
+      </div>
+      </div>
+]]></EnderecoEntregaHTML><EnderecoEntregaMensagemAlertaHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;[B0]</strong>
+  <ul>
+     <repeticao:erro>
+       <li><span class="fa fa-angle-right"></span>[B1]</li>
+     </repeticao:erro>
+  </ul>
+</div>
+]]></EnderecoEntregaMensagemAlertaHTML><MensagemCamposObrigatorios value="Esses campos são obrigatórios e não foram preenchidos corretamente:" /><MensagemProdutosComEstoqueAlteradoHTML><![CDATA[O estoque do produto [E0] mudou. Quantidade solicitada [E1], quantidade disponível [E2].]]></MensagemProdutosComEstoqueAlteradoHTML><MensagemProdutosComPrecoAlteradoHTML><![CDATA[O preço do produto [D0] mudou de [D1] para [D2].]]></MensagemProdutosComPrecoAlteradoHTML><MensagemProdutosSemPrecoRemovidosHTML><![CDATA[O produto <strong>[F0]</strong> não esta mais disponível.]]></MensagemProdutosSemPrecoRemovidosHTML><MensagemSelecionarEndereco value="Selecione um dos endereços para continuar." /><MensagensOcorrenciasCarrinhoHTML><![CDATA[]]></MensagensOcorrenciasCarrinhoHTML></EnderecoEntrega></EnderecoEntregas><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><Links><Link ID="Alterar_Pedido"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Alterar Pedido" /><UsarHTTPS value="False" /></Link><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

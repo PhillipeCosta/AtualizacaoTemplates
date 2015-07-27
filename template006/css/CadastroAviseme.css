@@ -1,0 +1,11 @@
+.backStock-content p{
+    display: block;
+    padding: 30px 0;
+    color: #666;
+}
+
+.backStock-name{
+    color: #035ba3;
+    font-size: 16px;
+    padding: 0 0 15px 15px;
+}

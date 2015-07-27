@@ -1,0 +1,36 @@
+.entrega_oculta{
+    display: none;
+}
+
+.enderecoCobranca{
+    clear: right;
+    margin-top: 50px;
+    display: none;
+}
+
+.mostra{
+    display: block !important;
+}
+
+/* tooltip */
+
+a.tooltip span {
+    display:none; 
+    padding:2px 3px; 
+    margin: -64px 3px 12px -284px;
+    width:130px;
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+a.tooltip:hover span{
+    background: none repeat scroll 0 0 #ACD8E3;
+    border: 1px solid #005380;
+    color: #005380;
+    display: inline;
+    position: absolute;
+    text-align: left;
+    width: 269px;
+    padding: 5px;
+}
+
+.input-validation-error{border-color: red !important;}

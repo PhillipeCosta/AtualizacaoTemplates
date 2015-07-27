@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ProdutoBarraNavegacaos><ProdutoBarraNavegacao ID="breadCrumb"><ProdutoBarraNavegacaoHTML><![CDATA[<div class="breadCrumb-home"><a href="[A0]">Página Inicial</a></div>
+<repeticao:departamentos>
+	<div class="breadCrumb-departaments"><small>|</small><a href="[A1]">[A2]</a></div>
+</repeticao:departamentos>]]></ProdutoBarraNavegacaoHTML></ProdutoBarraNavegacao></ProdutoBarraNavegacaos><ImagensProdutos><ImagensProduto ID="product_images"><ImagensProdutoHTML><![CDATA[<div class="product-image-big">[A0]</div>   
+<condicao:imagens_pequenas>
+  <div class="product-image-small">
+    <repeticao:imagem>[A1]</repeticao:imagem>
+  </div>
+</condicao:imagens_pequenas>            ]]></ImagensProdutoHTML><TamanhoImagemEspiar value="Pequenas" /><TamanhoImagemProdutos value="Gigantes" /><TamanhoImagemZoomEspiar value="SuperZoom" /><TamanhoImagemZoomProdutos value="SuperZoom" /><ZoomAtivado value="True" /></ImagensProduto></ImagensProdutos><SimularFreteProdutos><SimularFreteProduto ID="product_shipping_quotation"><SimularFreteProdutoFormularioHTML><![CDATA[    <div class="product-shippingQuotation-form form">
+		<div class="form-item w-20">
+            <label><span class="form-title">Qtd</span>
+          		[A0]
+            </label>
+        </div>   
+      	<div class="form-item w-60">
+            <label><span class="form-title">CEP*</span>
+          		[A1]
+            </label>
+          	<a href="javascript:callSearchZipCode('product_shipping_quotation_txtCepFrete')" class="link-default to-right" style="margin: -21px 10px 0 0; position: relative;">Esqueci meu CEP</a>
+        </div>  
+      	<div class="form-item w-20">
+            <label><span class="form-title">&nbsp;</span>
+          		<a href="[A2]" class="bt-small-primary product-shippingQuotation-bt">Calcular</a>
+            </label>
+        </div>  
+      	<div class="product-shippingQuotation-loader">
+        </div>  
+    </div>
+    <condicao:exibicao_das_transportadoras>
+      <div class="product-shippingQuotation-table">
+          <table cellpadding="0" cellspacing="0" border="0" class="table">
+              <thead>
+                  <tr>
+                      <th>Transportadora</th>
+                      <th>Prazo</th>
+                      <th>Valor</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <repeticao:frete>
+                  <tr class="table-item product-shippingQuotation-method">
+                      <td>[A3]</td>
+                      <td>[A4]</td>
+                      <td>[A5]</td>
+                  </tr>
+                  </repeticao:frete>
+              </tbody>
+          </table>
+      </div>
+    </condicao:exibicao_das_transportadoras>
+    <condicao:sem_transportadoras>
+     <div class="alert">
+       <strong>Atenção!</strong> Não foi encontrada nenhuma trasportadora para o CEP informado
+    </div>       
+    </condicao:sem_transportadoras>
+<script>
+	$(function(){
+  		$(".product-shippingQuotation-bt").live("click", function(){
+  			$(".product-shippingQuotation-loader").show();
+  		});
+  	});
+</script>]]></SimularFreteProdutoFormularioHTML></SimularFreteProduto></SimularFreteProdutos><ProdutoDescricoess><ProdutoDescricoes ID="product_descriptions"><ProdutoDescricoesHTML><![CDATA[<div class="product-descriptions">
+    <ul class="product-descriptions-titles">
+        <repeticao:abas>
+           <li data-tab="[A0]"><span>[A1]</span></li>
+        </repeticao:abas>
+    </ul>
+    <div class="product-description" itemprop="description">
+        <repeticao:conteudo>
+            <div data-tab-content="[A0]" class="product-descriptions-content">
+                <p>[A2]</p>
+            </div>
+        </repeticao:conteudo>
+    </div>
+</div>
+
+<script>
+$(function(){
+	$(".product-descriptions-content:first").addClass("active");
+	$(".product-descriptions-titles li:first").addClass("active");  
+  	$(".product-descriptions-titles li").click(function(){
+  		$(".product-descriptions-titles li").removeClass("active"); 
+  		$(".product-descriptions-content").removeClass("active");
+  		$(this).addClass("active");
+  		$("[data-tab-content='"+$(this).attr("data-tab")+"']").addClass("active");
+  	});
+});
+</script>]]></ProdutoDescricoesHTML></ProdutoDescricoes></ProdutoDescricoess><CompreJuntos><CompreJunto ID="product_bundles"><CompreJuntoHTML><![CDATA[<div class="bundles">
+    <div class="heading-secundary">
+        <h2>Compre Junto</h2>
+    </div>
+    <ul>
+        <repeticao:compre_junto>
+        <li>
+            <div class="bundle-products">
+                <div class="bundle-product bundle-product-main">                        
+                      <div class="bundle-product-select">
+                          <input type="checkbox" name="" disabled="disabled" checked="checked" />
+						   <span>Selecionado</span>
+                      </div>                    
+                      <div class="bundle-product-image">
+                         <img src="[A2]?width=250&height=250" width="100%" alt="[A0]" border="0" />
+                      </div>                  
+                      <div class="bundle-product-variants">
+                          [A13][A15]
+                      </div>
+                      <div class="bundle-product-quantity form spin">
+                          [A31]
+                          <a class="spin-bt spin-add bundle-product-add" href="javascript: void(0);">+</a>
+						  <a class="spin-bt spin-remove bundle-product-remove" href="javascript: void(0);">-</a>
+                      </div>
+                </div>
+                <repeticao:itens_imagens_compre_junto>
+                    <div class="bundle-more">
+                        +
+                    </div>
+
+                    <div class="bundle-product">                        
+                        <div class="bundle-product-select">
+                          <label>[A33] <span>Selecionado</span></label>
+                        </div>                      
+                        <div class="bundle-product-image">
+                            <a href="[A4]"><img src="[A3]?width=250&height=250" width="100%" alt="[A1]" border="0" /></a>
+                        </div>                       
+                        <div class="bundle-product-variants">
+                            [A14][A16]
+                        </div>
+                        <div class="bundle-product-quantity form spin">
+                            [A32]
+                          	<a class="spin-bt spin-add bundle-product-add" href="javascript: void(0);">+</a>
+							<a class="spin-bt spin-remove bundle-product-remove" href="javascript: void(0);">-</a>
+                        </div>
+                    </div>
+                </repeticao:itens_imagens_compre_junto>
+            </div>
+            <div class="bundle-infos">
+                <p class="bundle-product-main bundle-product-name"><strong>[A0]</strong>
+                  <repeticao:itens_descricao_compre_junto>
+                        <a href="[A4]" class="bundle-product-name"><span class="mais">+</span> [A1]</a>
+                  </repeticao:itens_descricao_compre_junto>
+                </p>
+              	<div class="bundle-product-price-bt">
+                  <div class="bundle-price-content">
+                      <p class="bundle-price">Por: <strong>[A5]</strong></p>                  
+                      <condicao:desconto_vista>
+                          <p class="bundle-payInFullPrice">ou <strong>[A18]</strong> para pagamentos por depósito bancário.</p>
+                      </condicao:desconto_vista>
+                      <p class="bundle-saved">[A10] <strong>[A11]</strong></p>
+                  </div>
+                  <div class="bundle-bt">
+                    <a href="javascript: [A12]" id="[A17]" class="bt-big-secundary">
+                      Comprar Todos
+                    </a>
+                  </div>                  
+                </div>
+            </div>          
+        </li>
+        </repeticao:compre_junto>
+    </ul>
+</div>
+]]></CompreJuntoHTML><TamanhoImagem value="Gigantes" /></CompreJunto></CompreJuntos><ProdutosRelacionadoss><ProdutosRelacionados ID="product_relatedProducts"><ProdutosRelacionadosHTML><![CDATA[<div class="collection">
+  <div class="heading-secundary">
+    	<h2>Produtos Relacionados</h2>
+  </div>
+  <ul class="relatedProducts">
+    <repeticao:produtos_relacionados>
+      	<li class="collection-ul-li w-20 collection-li">
+          <div class="collection-product">
+            <div class="collection-product-image">
+                <a href="[A0]"><img src="[A2]?width=250&height=250" width="100%" alt="[A1]" border="0" /></a>
+            </div>
+            <h3 class="collection-product-name"><a href="[A0]">[A1]</a></h3>
+                
+          </div>
+        </li>
+     </repeticao:produtos_relacionados>
+  </ul>
+</div>]]></ProdutosRelacionadosHTML><TamanhoImagem value="Gigantes" /></ProdutosRelacionados></ProdutosRelacionadoss><ProdutoAvaliars><ProdutoAvaliar ID="product_rate"><AvaliacaoHTML><![CDATA[<div class="form">
+      [C9][C10]
+      <div class="form-item validate required w-50">
+            <label><span class="form-title">Nome*</span>[C0]</label>
+      </div>
+  	  <div class="form-item validate required w-50" data-type="email">
+            <label><span class="form-title">Email*</span>[C1]</label>
+      </div>
+  	  <!--div class="form-item w-50">
+            <label><span class="form-title">Cidade</span>[C3]</label>
+      </div>
+  	  <div class="form-item w-50">
+        <label><span class="form-title">Estado <small>(sigla)</small></span>[C4]</label>
+      </div-->
+  	  <div class="form-item w-100">
+            <label><span class="form-title">Sua Nota*</span>[C8]</label>
+      </div>
+	  <div class="form-item validate required w-100 product-rate-coment">
+            <label><span class="form-title">Comentário*</span>[C5]</label>
+      </div>
+  	  <div class="form-item w-100">
+        	<button onclick="[C7] return false;" class="realButtom hide" value="Enviar"></button>
+        	<a href="javascript: void(0)" onclick="[C7]" class="bt-small-primary to-right fakeButtom">Enviar</a>
+      </div>
+</div>
+<script>
+  $(".product-rate").formValidate();
+</script>]]></AvaliacaoHTML><ImagemAvaliacaoDeselecionado value="rate-star-off.png" /><ImagemAvaliacaoSelecionado value="rate-star-on.png" /><MensagemAlertaProdutoAvaliarHTML><![CDATA[<div class="alert">
+  	[D0]
+  	<ul>
+        <repeticao:erro>
+          <li>[D1]</li>
+        </repeticao:erro>
+    </ul>
+</div>]]></MensagemAlertaProdutoAvaliarHTML><MensagemSucessoProdutoAvaliarHTML><![CDATA[<div class="alert success">
+  	<strong>Sucesso!</strong> Seu comentário foi enviado com sucesso!
+</div>]]></MensagemSucessoProdutoAvaliarHTML><ProdutoAvaliarHTML><![CDATA[[A2]]]></ProdutoAvaliarHTML><ProdutoPrimeiraAvaliacaoHTML><![CDATA[[B0]]]></ProdutoPrimeiraAvaliacaoHTML><ReadOnly value="False" /></ProdutoAvaliar><ProdutoAvaliar ID="product_rating"><AvaliacaoHTML><![CDATA[]]></AvaliacaoHTML><ImagemAvaliacaoDeselecionado value="rating-star-off.png" /><ImagemAvaliacaoSelecionado value="rating-star-on.png" /><MensagemAlertaProdutoAvaliarHTML><![CDATA[]]></MensagemAlertaProdutoAvaliarHTML><MensagemSucessoProdutoAvaliarHTML><![CDATA[]]></MensagemSucessoProdutoAvaliarHTML><ProdutoAvaliarHTML><![CDATA[]]></ProdutoAvaliarHTML><ProdutoPrimeiraAvaliacaoHTML><![CDATA[]]></ProdutoPrimeiraAvaliacaoHTML><ReadOnly value="True" /></ProdutoAvaliar></ProdutoAvaliars><ProdutoComentarios><ProdutoComentario ID="product_coments"><ImagemAvaliacaoDeselecionado value="rate-star-off.png" /><ImagemAvaliacaoSelecionado value="rate-star-on.png" /><ProdutoComentarioHTML><![CDATA[<div class="product-coments-content">
+    <ul>
+      <repeticao:produto_comentario>
+        <li>
+          <h3 class="product-coment-name">[A1]</h3>
+          <span class="product-coment-rate">[A0]</span>          
+          <p class="product-coment-coment">[A6]</p>
+        </li>
+      </repeticao:produto_comentario>
+    </ul>
+</div>]]></ProdutoComentarioHTML></ProdutoComentario></ProdutoComentarios><ProdutoNomes><ProdutoNome ID="product_name"><ProdutoNomeHTML><![CDATA[<div class="product-name-code">
+    <div class="product-name">
+      <h1>[A0] [A1] [A2]</h1>
+    </div>
+    <div class="product-code">
+        Cod. de Referência: [A3]
+    </div>
+    <div class="product-rating"> <a href="#rate" class="smoothScroll">Avalie</a></div>
+</div>]]></ProdutoNomeHTML></ProdutoNome></ProdutoNomes><PrecoProdutos><PrecoProduto ID="product_price"><ParcelamentoProdutoHTML><![CDATA[<div style="display:none">
+    <div id="product-splitPrice-details">
+        <div class="heading-primary">
+            <h2>Formas de Parcelamento</h2>
+        </div>
+        <div class="product-splitPrice-details-info">
+            <ul>
+                <repeticao:metodo_pagamento>
+                <li>
+                    <div class="product-splitPrice-details-image"><img src="[B1]" alt="Parcelamento" /></div>
+                    <div class="product-splitPrice-details-list">
+                        <table border="0" cellpadding="2" cellspacing="1">
+                            <thead>
+ 
+                                <tr>
+                                    <th>Número de Parcelas</th>
+                                    <th>Valor das Parcelas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <repeticao:parcelas>
+                                <tr>
+                                    <td>[B2]</td>
+                                    <td>[B3]</td>
+                                </tr>
+                                </repeticao:parcelas>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                </repeticao:metodo_pagamento>
+            </ul>
+        </div>
+    </div>
+</div>]]></ParcelamentoProdutoHTML><PrecoProdutoHTML><![CDATA[<div class="product-price-content" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+  <meta content="BRL" itemprop="priceCurrency" />
+    <div class="product-oldPrice">
+      <del class="produt-oldPrice-price">[A1]</del>
+    </div>
+    <div class="product-price">
+      <span class="product-price-title">Por:</span>
+      <span itemprop="price" class="product-price-price">[A3]</span> 
+    </div>
+    <condicao:desconto_vista>
+      <div class="product-payInFullPrice">
+        <span class="product-payInFullPrice-title">(ou <strong class="product-payInFullPrice-price">[A13]</strong> para pagamentos por depósito bancário ou boleto)</span>
+      </div>
+    </condicao:desconto_vista>
+    <condicao:parcelamento>
+      <div class="product-splitPrice">
+        <span class="product-splitPrice-title">ou </span><span class="product-splitPrice-quantity">[A6]x </span><span class="product-splitPrice-title"> de </span> <span class="product-splitPrice-price">[A7]</span>
+        <span class="product-splitPrice-title">sem juros</span>      
+        <span class="product-splitPrice-bt">Formas de Parcelamento</span>
+      </div> 
+    </condicao:parcelamento>
+</div> 
+[A10]]]></PrecoProdutoHTML></PrecoProduto></PrecoProdutos><VariantesProdutos><VariantesProduto ID="product_variants"><ClasseCssImagemSelecionada value="" /><TamanhoImagemVariantes value="25" /><VariantesProdutoHTML><![CDATA[<condicao:aviso_estoque_baixo>
+  <div class="product-variant-lowStock">Seja Rápido! Apenas [A8] unidades em estoque.</div>
+</condicao:aviso_estoque_baixo>
+<condicao:variante1>
+  <span class="product-variant-name">[A0]</span>
+  <div class="product-variant-select variante variante1 form">    
+    [A1]
+  </div>
+</condicao:variante1>
+<condicao:variante2>
+  <span class="product-variant-name">[A0]</span>
+  <div class="product-variant-select variante2 variante form">
+    [A1]
+  </div>
+</condicao:variante2>
+<div class="product-variants-bt">
+  <condicao:botao_comprar>
+    <a href="[A3]" class="product-variants-bt-buy bt-big-special">Comprar</a>
+  </condicao:botao_comprar>
+  <condicao:botao_encomendar>
+    <a href="[A4]" class="product-variants-bt-unavailable bt-big-disabled">Avise-me</a>
+  </condicao:botao_encomendar>
+  <condicao:disponibilidade>
+    <div class="product-variant-availability">[A2]</div>
+  </condicao:disponibilidade>
+</div>
+]]></VariantesProdutoHTML></VariantesProduto></VariantesProdutos><SelosProdutos><SelosProduto ID="product_promotions"><SelosProdutoHTML><![CDATA[<div class="product-promos">
+	<condicao:express>
+      	<div class="product-promo"><a href="[A2]" target="_blank" class="link-modal-iframe"><img src="[A0]" alt="Promoção" /></a></div>
+  	</condicao:express>
+  	<condicao:frete>
+      	<div class="product-promo"><a href="[A4]" target="_blank" class="link-modal-iframe"><img src="[A1]" alt="Promoção de Frete" /></a></div>
+  	</condicao:frete>
+</div>]]></SelosProdutoHTML></SelosProduto></SelosProdutos><Widgets><Widget ID="remarketing"><WidgetUsado value="8" /></Widget></Widgets><ScriptRazors><ScriptRazor ID="product_share"><ScriptRazorHTML><![CDATA[<div class="product-share">
+  @if(TemplateSettings.product_shareFacebook_enabled=="true"){
+    <div class="facebook">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=107088182721566";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+      <fb:like send="false" layout="button_count" width="85" show_faces="false"></fb:like>
+    </div>
+  }
+  @if(TemplateSettings.product_shareTwitter_enabled=="true"){
+    <div class="twitter">
+      <iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/tweet_button.html" style="width:90px; height:20px;"></iframe>
+    </div>
+  }
+  @if(TemplateSettings.product_shareGooglePlus_enabled=="true"){
+    <div class="google">
+      <g:plusone size="medium" annotation="none"></g:plusone>
+      <script type="text/javascript">
+        window.___gcfg = {lang: 'pt-BR'};
+        
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      </script>
+    </div>   
+  }
+</div>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

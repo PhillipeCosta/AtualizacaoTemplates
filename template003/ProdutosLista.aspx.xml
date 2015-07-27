@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CategoriasListas><CategoriasLista ID="CategoriaLista"><CategoriasListaHTML><![CDATA[  <h3 class="text-left heading-primary" style="padding-bottom: 15px;">Encontre sua lista:</h3>
+  <repeticao:categorias>
+    <h6 class="text-left text-uppercase heading-primary custom-paddingV5 custom-paddingH5"><a href="[A1]"><strong>[A0]</strong></a></h6>
+  </repeticao:categorias>
+]]></CategoriasListaHTML></CategoriasLista></CategoriasListas><ProdutosListas><ProdutosLista ID="produtosLista"><ListaVaziaHTML><![CDATA[]]></ListaVaziaHTML><ProdutosListaHTML><![CDATA[<h3 class="text-left heading-primary custom-paddingV10">Produtos da lista [A16]</h3>
+<div class="custom-clear custom-overflow custom-paddingV5">
+    <ul class="custom-clearPadding">
+        <li> > Confira abaixo os produtos da lista</li>
+    </ul>
+</div>
+<div class="custom-clear custom-overflow col-md-12 custom-clearPadding custom-paddingV5">
+    <a href="[A14]" class="btn btn-primary pull-right custom-paddingV5 custom-paddingH10">Comprar lista</a>
+    <a href="javascript:window.print();" class="btn btn-secondary pull-left custom-paddingV5 custom-paddingH10">Imprimir lista</a>
+</div>   
+
+    <div class="custom-clear custom-overflow custom-clearPadding col-md-12">
+    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%;">
+            <thead>
+                <tr>
+                    <th colspan="2">Produto</th>
+                    <th>Variantes</th>
+                    <th class="text-center">Preço Unit.</th>
+                    <th class="text-center">Quantidade</th>
+                    <th class="text-center">Preço</th>
+                </tr>
+            </thead>
+            <tbody>      
+              <repeticao:produtos>  
+                <tr>             
+                  <td>
+                      <a href="[A2]"><img src="[A1]?width=85&height=70" alt="[A0]" /></a>
+                      
+                  </td>
+                  <td>
+                    <a href="[A2]">[A0]</a>
+                    <span class="descricao-produto-lista">[A15]</span>          
+                  </td>
+                  <td class="text-center">
+                    <condicao:variante>
+                      [B]
+                    </condicao:variante>
+                  </td>
+                  <td class="text-center">
+                      [A5]
+                  </td>
+                  <td class="text-center">
+                    <span class="text-align: center;">[A4]</span>
+                    <a href="[A21]" style="display: block;" class="custom-clear">
+                      <small>remover</small>
+                    </a>
+                  </td>
+                  <td class="text-center">
+                      [A20]
+                  </td>
+                </tr>
+              </repeticao:produtos>              
+            </tbody>
+        </table>
+    </div>
+<div class="custom-clear custom-overflow custom-clearPadding custom-paddingV5 col-md-12">
+    <a href="[A14]" class="btn btn-primary pull-right custom-paddingV5 custom-paddingH10">Comprar lista</a>
+    <a href="javascript:window.print();" class="btn btn-secondary pull-left custom-paddingV5 custom-paddingH10">Imprimir lista</a>
+</div>     
+]]></ProdutosListaHTML><VariantesProdutosListaHTML><![CDATA[<span>[B2]</span>[B0]<span>[B3]</span> [B1]]]></VariantesProdutosListaHTML></ProdutosLista></ProdutosListas></controles></page>

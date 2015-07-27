@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><LabelVisitantes><LabelVisitante ID="greeting"><HTMLModeloLogado><![CDATA[Olá, [A2]! <a href="[A0]">(Sair)</a>]]></HTMLModeloLogado><HTMLModeloNaoLogado><![CDATA[Olá, Visitante! <a href="[B0]">Entre</a> ou  <a href="[B0]">Cadastre-se</a>]]></HTMLModeloNaoLogado></LabelVisitante></LabelVisitantes><Links><Link ID="linkHome"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Início" /><UsarHTTPS value="False" /></Link><Link ID="linkAboutUs"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="PaginaInstitucional" /><Parametros value="destino=empresa" /><Target value="MesmaPagina" /><Texto value="Empresa" /><UsarHTTPS value="False" /></Link><Link ID="linkStores"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="PaginaInstitucional" /><Parametros value="destino=loja" /><Target value="MesmaPagina" /><Texto value="Loja Física" /><UsarHTTPS value="False" /></Link><Link ID="linkContactUs"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="FaleConosco" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Central de Atendimento" /><UsarHTTPS value="False" /></Link><Link ID="linkTeleSales"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="FaleConosco" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Televendas: &lt;strong&gt;(11) 3019-2399&lt;/strong&gt;" /><UsarHTTPS value="False" /></Link><Link ID="homeLogo"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="" /><UsarHTTPS value="False" /></Link><Link ID="homeFixedLogo"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Magazine 25" /><UsarHTTPS value="False" /></Link><Link ID="orders"><Destino value="MeusPedidos" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Meus Pedidos" /><UsarHTTPS value="True" /></Link><Link ID="customerData"><Destino value="Comprador" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Meu Cadastro" /><UsarHTTPS value="True" /></Link><Link ID="cart"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="&lt;strong&gt;Meu Carrinho&lt;/strong&gt;&lt;/br&gt;" /><UsarHTTPS value="False" /></Link></Links><CaixaPesquisas><CaixaPesquisa ID="search"><CaixaPesquisaHTML><![CDATA[<fieldset>
+  	<label class="header-search-input">[A0]</label>
+  	<a href="[A2]" class="header-search-buttom"></a>
+</fieldset>
+<script>
+  	$(".header-search-input input").placeHolder({defaultText:"Buscar"});
+</script>]]></CaixaPesquisaHTML></CaixaPesquisa></CaixaPesquisas><CarrinhoTopos><CarrinhoTopo ID="cart_items"><CarrinhoHTML><![CDATA[<div style="display: none">
+	<repeticao:produtos>
+      <span class="q">[A5]</span>
+  	</repeticao:produtos>
+</div>
+<small id="header-cart-quantity"></small>
+<span class="to_cart">comprar</span>
+<script>
+ 	$(function(){
+  		var qtd = 0;
+  		$(".q").each(function(){
+  			qtd = qtd+1;
+  		});
+  		if(qtd == 1){
+  			$("#header-cart-quantity").html(qtd + " Item");
+  		}
+  		if(qtd > 1){
+  			$("#header-cart-quantity").html(qtd + " Itens");
+  		}
+  		
+  	});
+</script>]]></CarrinhoHTML><CarrinhoVazioHTML><![CDATA[<small style="margin-top:8px;">Seu carrinho de compras está vazio.</small>]]></CarrinhoVazioHTML><TamanhoImagem value="Pequenas" /></CarrinhoTopo></CarrinhoTopos><Menus><Menu ID="menu"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<ul class="box_menu_topo">
+<repeticao:pais quantidade="9">
+    <li class="header-menu-li" title="[A1]">
+      <a href="[A0]" class="header-menu-a  lnk_dpto_topo">[A1]</a>
+      <condicao:filho>
+      	<ul class="box_menu_topo_filhos nav-horizontalChildren">
+          <li>
+            <ul>  
+                
+                <repeticao:filhos>
+                  <li class="link-menu-topo"><a href="[A0]" class="nav-horizontalChildren-link">[A1]</a></li>
+                </repeticao:filhos>
+            </ul>
+          </li>
+        </ul>
+      </condicao:filho>
+    </li>
+</repeticao:pais>
+</ul>
+<script>
+	$(".header-menu-allDepartments-ul").adjustMenu();
+</script>]]></MenuHTML><TipoMenu value="Horizontal" /></Menu></Menus><ScriptRazors><ScriptRazor ID="h1"><ScriptRazorHTML><![CDATA[@{
+	var page = State.PageType.ToString();
+	if(page!="Produto" && page!="Departamento" && page!="Lista"){	
+		<h1 class="header-h1">Artigos para Festa é no Magazine 25 de Março Festas</h1>
+	}else{
+		<p class="header-h1">Artigos para Festa é no Magazine 25 de Março Festas</p>
+	}
+}]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="telefone"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.footer_helpDeskPhone_text!=""){
+<div class="contactUs">
+<strong>@TemplateSettings.footer_helpDeskPhone_text</strong>
+  
+</div>
+}
+]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="social"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.social_url1 !="" ){
+<a class="socialNewtwork1" href="@TemplateSettings.social_url1"></a>
+    
+}
+@if(TemplateSettings.social_url2 !="" ){
+<a class="socialNewtwork2" href="@TemplateSettings.social_url2"></a>          
+}
+]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><QuoteRequests><QuoteRequest ID="orcamento"><QuoteRequestHTML><![CDATA[<div class="box-orcamento box-produto-orcamento">
+  <div class="heading-primary">
+    <h2>
+      Formulário de Solicitação de Orçamento
+    </h2>
+  </div>
+    <div>
+        <h3>@Model.QuoteRequest.SelectedVariant.Name</h3>
+        <div class="foto-produto-orcamento to-left w-20">
+            <img src="@Model.QuoteRequest.SelectedVariant.MainImage?width=150&height=150" alt="@Model.QuoteRequest.SelectedProduct.Name" />
+        </div>
+        <div class="product-descriptions to-left w-80">
+            <ul class="product-descriptions-titles main-clearPadding">
+                @foreach(var HtmlDesc in Model.QuoteRequest.SelectedProduct.HtmlDescriptions) {
+                <li class="titulo-descricao-orcamento" data-tab="@(HtmlDesc.Id)">
+                  <span>@HtmlDesc.Title</span>
+                </li>
+                }
+            </ul>
+            <div class="product-description" itemprop="description">
+                @foreach(var HtmlDesc in Model.QuoteRequest.SelectedProduct.HtmlDescriptions) {
+                <div data-tab-content="@(HtmlDesc.Id)" class="product-descriptions-content custom-overflow">
+                    <p>@HtmlDesc.Description</p>
+                </div>
+                }
+             </div>
+        </div>
+    </div>  
+</div>
+<div style="clear: both;">
+@if(Model.Post)
+  {
+    if(Model.Saved)
+    {
+        <div class="alert alert-success">
+            <h2>Orçamento enviado com sucesso</h2>
+          <p>Em breve enviaremos a resposta com seu orçamento.</p>
+        </div>
+   <script>
+      _gaq.push(['_trackEvent', 'Form Solicitar Proposta', 'Envio Sucesso', location.pathname]);
+   </script>
+    }
+    else
+    {
+    <div class="alert alert-warning"> 
+      @Html.ValidationSummary()
+    </div> 
+    }
+  }  
+</div>
+
+@using (Html.BeginForm()){    
+<div class="formulario-orcamento form-box w-100" style="border: 0 none;"> 
+  <div class="list parent-validation">
+  <fieldset class="form">
+    <label class="list parent-validation form w-49 to-left">
+      <span class="form-title form-field-nameRequired">Nome: </span>
+      @Html.InputText("QuoteRequest.Name").TabIndex("1")
+      <!-- <input id="campo_extra" type="text" name="MetaField.QuoteRequest.System.Nome" tabindex="1" /> -->
+    </label>
+    <label class="list parent-validation form w-49 to-left">
+      <span class="form-title form-field-nameRequired">Email: </span>
+      @Html.InputText("QuoteRequest.Email").TabIndex("2")
+      <!-- <input id="campo_extra" type="text" name="MetaField.QuoteRequest.System.Email" tabindex="2" /> -->
+    </label>
+    <label class="larg_50 captcha list parent-validation form">
+      <span class="tform-title form-field-nameRequired">Escreva a palavra: </span>
+      @Html.Captcha("imagens/reload.png")
+    </label>
+    <label class="larg_50 input_captcha">
+      @Html.InputText("QuoteRequest.Captcha").TabIndex("16")
+    </label> 
+  <div class="bt_enviar_orcamento">
+      <a href="#" class="fakeButtom bt-big-primary to-right" name="enviar" id="enviar">Enviar</a>
+  </div>
+  </fieldset>
+  </div>
+</div>
+}
+
+<script>
+
+    $(document).ready(function(){
+
+    $('#QuoteRequest_Quantity').val('1');
+
+})
+
+$(function(){
+  $(".product-descriptions-content:first").addClass("active");
+  $(".product-descriptions-titles li:first").addClass("active");  
+    $(".product-descriptions-titles li").click(function(){
+      $(".product-descriptions-titles li").removeClass("active"); 
+      $(".product-descriptions-content").removeClass("active");
+      $(this).addClass("active");
+      $("[data-tab-content='"+$(this).attr("data-tab")+"']").addClass("active");
+    });
+});
+
+// A partir daqui foi utilizado a função validarPrePost para verificar se os campos extras foram preenchidos.
+
+function validarPrePost(){
+
+if($("#campo_extra").val() === ""){
+
+AddError($('#campo_extra'));
+
+return false;
+
+} return true;
+
+}
+
+</script>
+]]></QuoteRequestHTML></QuoteRequest></QuoteRequests><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor></ScriptRazors><Banners><Banner ID="header_full" /></Banners></controles></page>

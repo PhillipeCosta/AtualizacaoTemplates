@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><VisualizacaoPedidos><VisualizacaoPedido ID="VisualizacaoPedido1"><TamanhoImagem value="Médias" /><VisualizacaoPedidoHTML><![CDATA[<div class="heading-primary">
+  <h2><span>Meus Pedidos</span></h2>
+</div>
+    <div class="info_pedido">
+        <div class="info_pedido_conteudo">
+            <div class="numero_pedido heading-secondary">
+                <h3 class="heading-primary">Número do Pedido</h3>
+                <p>[A0]</p>
+                <p>A confirmação do pedido foi enviada a seu endereço do e-mail</p>
+                <p><strong>[A1]</strong></p>
+            </div>
+            <div class="pedido_dados">
+                <p class="status"><strong>Status do Pedido:</strong> [A2]</p>
+                <p class="boleto"><strong>Forma de Pagamento:</strong> [A5]</p>
+                <condicao:boleto>
+                    <p><a href="[A6]" class="box-bt bt-secundario">Imprimir boleto</a></p>
+                    <p><strong>Atenção:</strong> Uma nova janela será aberta com o boleto.</p>
+                    <p><strong>Atenção</strong> Ver data de vencimento no boleto, após o prazo seu pedido será cancelado.</p>
+                </condicao:boleto>
+            </div>
+        </div>
+    </div>
+<div class="heading-special"> <h2>Detalhes do Pedido</h2></div>
+    <div id="carrinho">
+        <table class="tab_carrinho" cellpadding="0" cellspacing="0" border="0" width="100%;">
+            <thead>
+                <tr>
+                    <th class="table-heading">&nbsp;</th>
+                    <th class="table-heading">Produto</th>
+                    <th class="table-heading">Quantidade</th>
+                    <th class="table-heading"><img src="imagens/tit_carrinho_presente.png" alt="titulopresente" class="titulo-presente" /></th>
+                    <th class="table-heading">Preço Unitário</th>
+                    <th class="table-heading">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <repeticao:produtos>
+                <tr class="item_carrinho">
+                    <td style="width: 80px"><img src="[A8]" alt="[A7]" border="0" /></td>
+                    <td style="text-align: left;">[A7]</td>
+                    <td>[A10]</td>
+                    <td><condicao:imagem_presente><img alt="Embrulho para presente" src="imagens/presente.gif?21" /> Sim</condicao:imagem_presente></td>
+                    <td>[A11]</td>
+                    <td>[A12]</td>
+                </tr>
+                <!-- CUSTOMIZAÇÃO DO PRODUTO -->
+                  
+                    <condicao:customizacao_carrinho>
+                      <repeticao:customizacao_carrinho>
+                        <tr class="item_customizacao">
+                          <th colspan="7">[AC40]</th>
+                        </tr>
+                        <repeticao:customizacao_campos_carrinho>
+                          <tr class="item_customizacao">
+                            <td colspan="6" style="text-align: left;">[AC43]: <strong>[AC41]</strong></td>
+                            <td>[AC44]</td>
+                          </tr>
+                        </repeticao:customizacao_campos_carrinho>
+                      </repeticao:customizacao_carrinho>
+                    </condicao:customizacao_carrinho>
+                    
+                    
+                  <!-- -->                  
+                </repeticao:produtos>
+                <tr>
+                    <td colspan="4" rowspan="3" class="frete">
+                        <p><strong>Endereço de entrega:</strong></p>
+                        <p>[A13] -[A14]</p>
+                        <p>[A15] - [A16] - [A17]</p>
+                        <p>Telefone: [A18]</p>
+                    </td>
+                    <th class="frete_valor">Frete:</th>
+                    <td class="frete_valor">[A19]</td>
+                </tr>
+                <tr>
+                    <th class="cupom">Cupom de Desconto:</th>
+                    <td class="cupom">[A20]</td>
+                </tr>
+                <tr>
+                    <th class="total">Total:</th>
+                    <td class="total">[A21]</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<div class="bt_esquerda">
+        <a class="box-bt btn-tertiary" href="javascript:history.go(-1);">Voltar</a>
+</div>]]></VisualizacaoPedidoHTML></VisualizacaoPedido></VisualizacaoPedidos><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><Banners></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="title"><ScriptRazorHTML><![CDATA[<title>@TemplateSettings.main_title</title>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="favicon"><ScriptRazorHTML><![CDATA[<link rel="shortcut icon" href="imagens/@TemplateSettings.main_faviIcon?2" />]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

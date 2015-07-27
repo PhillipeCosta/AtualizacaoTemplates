@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ProdutoNomes><ProdutoNome ID="produtoNomeCustomizacao"><ProdutoNomeHTML><![CDATA[<div class="tit_personalizacao_carrinho">
+	<h2 class="heading-primary">
+    	[A0] [A1] [A2]
+	</h2>
+</div>
+                ]]></ProdutoNomeHTML></ProdutoNome></ProdutoNomes><ImagensProdutos><ImagensProduto ID="ImagensProduto"><CssComponente><![CDATA[]]></CssComponente><ImagensProdutoHTML><![CDATA[<repeticao:imagem>
+  <div class="personalizacao_carrinho_produto_foto">
+		[A0]
+  </div>
+</repeticao:imagem>
+
+
+
+
+
+
+  <!--
+
+<repeticao:imagem>
+  <div class="personalizacao_carrinho_produto_foto">
+    <div class="produto_foto"> 
+      <condicao:imagens_pequenas>
+        <div class="produto_mini_fotos">
+          <repeticao:imagem>[A1]</repeticao:imagem>
+        </div>
+      </condicao:imagens_pequenas>
+    </div>  
+    <!--<img src="imagens/foto.png?1" alt=""/>
+  </div>
+</repeticao:imagem>
+
+
+          <!--<div class="produto_foto">           
+            	<div class="produto_imagem_grande">[A0]</div>
+                <condicao:imagens_pequenas>
+                      <div class="produto_mini_fotos">
+                        <repeticao:imagem>[A1]</repeticao:imagem>
+                      </div>
+               </condicao:imagens_pequenas>    
+          </div>-->
+      ]]></ImagensProdutoHTML><TamanhoImagemEspiar value="Médias" /><TamanhoImagemProdutos value="Médias" /><TamanhoImagemZoomEspiar value="SuperZoom" /><TamanhoImagemZoomProdutos value="SuperZoom" /><ZoomAtivado value="True" /></ImagensProduto></ImagensProdutos><ProdutoDescricoess><ProdutoDescricoes ID="produtoDescricaoCustomizarProdutoNoCarrinho"><CssComponente><![CDATA[]]></CssComponente><ProdutoDescricoesHTML><![CDATA[<div class="personalizacao_carrinho_produto_descricao">
+		<div class="personalizacao_produto_descricao_abas">
+			<ul>
+              	<repeticao:abas>
+					<li><a href="#tab[A0]">[A1]</a></li>      
+                </repeticao:abas>  
+			</ul>
+		</div>
+	<div class="personalizacao_produto_descricao_texto">
+		<repeticao:conteudo>
+			<div class="personalizacao_produto_descricao_texto_conteudo" id="tab[A0]">
+				[A2]
+			</div>
+		</repeticao:conteudo>
+	</div>
+</div>]]></ProdutoDescricoesHTML></ProdutoDescricoes></ProdutoDescricoess><ProdutoCustomizados><ProdutoCustomizado ID="customizarProdutoNoCarrinho"><ProdutoCustomizadoHTML><![CDATA[<div class="opcionais">
+    <repeticao:produto_customizado>    
+        <div class="opcional_item heading-secondary">
+            <h4>[AC0]</h4>
+            <div class="opcional_conteudo">
+                <div class="opcional_esquerda">
+                    <condicao:customizacao_imagem>
+                    [AC2]
+                    </condicao:customizacao_imagem>    
+                </div>
+                <div class="opcional_direita">
+                    <fieldset>
+                        <condicao:customizacao_aceite>
+                            <label class="aceite">[AC3]<span>[AC4]</span></label>
+                        </condicao:customizacao_aceite>    
+                        <repeticao:customizacao_campos>
+                            <label>
+                                <condicao:customizacao_campos>
+                                    [AC6]
+                                    [AC5]
+                                </condicao:customizacao_campos>
+                            </label>
+                        </repeticao:customizacao_campos>
+                        <condicao:customizacao_regulamento>                        
+                            <span class="opcional_regulamento"><a href="[AC7]" onclick="NovaJanela(this.href,'nomeJanela','680','600','yes'); return false" target="_blanc" class="regulamento_customizacao">Veja o regulamento</a></span>
+                        </condicao:customizacao_regulamento>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="opcional_preco">
+               <span class="opcional_preco_texto">Valor Adicional</span> <span class="opcional_preco_preco">[AC1]</span>
+            </div>    
+        </div>
+    </repeticao:produto_customizado>
+</div>
+<div class="personalizacao_carrinho_bt">
+  <a href="javascript:AjaxRequestDispatcher('salvarCustom');" class="bt-carrinho btn-secondary" onclick="[AC9]">cancelar</a>
+  <a href="javascript:AjaxRequestDispatcher('salvarCustom');" class="bt-carrinho btn-secondary" style="float: right;" onclick="[AC8]">Gravar personalização</a>  
+</div>]]></ProdutoCustomizadoHTML><TamanhoImagem value="150" /></ProdutoCustomizado><ImagensProdutos><ImagensProduto ID="ImagemCustomizarProdutoNoCarrinho"><CssComponente><![CDATA[]]></CssComponente><ImagensProdutoHTML><![CDATA[
+                
+                <div class="customiza_esquerda">
+                    <div class="customiza_foto">
+                        <div class="produto_foto">           
+                            <div class="produto_imagem_grande">
+                                [A0]
+                            </div>
+                        </div>
+                	</div>
+                </div>
+	                <!--<condicao:imagens_pequenas>
+                      <div class="produto_mini_fotos">
+                          <repeticao:imagem>
+                              [A1]
+                          </repeticao:imagem>
+                      </div>
+	                </condicao:imagens_pequenas>    
+              </div>-->
+                  
+                  
+              ]]></ImagensProdutoHTML><TamanhoImagemEspiar value="Grandes" /><TamanhoImagemProdutos value="Grandes" /><TamanhoImagemZoomEspiar value="SuperZoom" /><TamanhoImagemZoomProdutos value="SuperZoom" /><ZoomAtivado value="True" /></ImagensProduto></ImagensProdutos></ProdutoCustomizados></controles></page>

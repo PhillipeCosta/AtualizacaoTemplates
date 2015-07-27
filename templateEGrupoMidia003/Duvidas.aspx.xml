@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Duvidass><Duvidas ID="Duvidas_Conteudo"><AssuntoRespostasHTML><![CDATA[<div class="heading-tertiary">
+  <h3>[D1]</h3>
+</div>]]></AssuntoRespostasHTML><DuvidasHTML><![CDATA[<div class="heading-special">
+    <h2>
+      Perguntas Frequentes
+    </h2>
+  </div>
+<div class="faq">
+    [C1]
+</div>
+<script>
+	$(function(){
+  		$(".ask").click(function(){            
+ 			if($(this).hasClass("heading-secondary")){
+              $(".answer").slideUp();
+              $(".ask.heading-secondary").removeClass("heading-secondary");
+  			}else{
+  			  $(".answer").slideUp();
+              $(".ask.heading-secondary").removeClass("heading-secondary");
+              $(this).next(".answer").slideDown();
+              $(this).addClass("heading-secondary");
+  			}
+  		})
+  	})
+</script>
+]]></DuvidasHTML><RespostasHTML><![CDATA[<div class="faq-item">
+    <h4 class="ask heading-primary">
+      [B0]
+      <span class="fa fa-chevron-down"></span>
+    </h4>
+  	<div class="answer">  
+  		<p>[B1]</p>
+  	</div>
+</div>
+          ]]></RespostasHTML></Duvidas></Duvidass><FaleConoscos><FaleConosco ID="FaleConosco1"><FaleConoscoHTML><![CDATA[<div class="box_faleconosco">
+  <div class="heading-special">
+    <h2>
+      Ainda com dúvidas? Fale conosco
+    </h2>
+  </div>
+    <div class="faleconosco">
+        <ul class="formulario">
+            <div class="info">Campos indicados com * são de preenchimento obrigatório.</div>
+            <li class="list obrigatorio form">
+                <label class="larg_100"><span class="tit_label form-field-nameRequired">Nome*</span>[A1]</label>
+            </li>
+            <li class="list obrigatorio form">
+                <label class="larg_75"><span class="tit_label form-field-nameRequired">Email*</span>[A2]</label>
+            </li>
+            <li class="list form">
+                <label class="larg_75"><span class="tit_label form-fieldNameRequired">Telefone*</span>[A3] <small>(DDD + XXXX-XXXX)</small></label>
+            </li>
+            <li class="list form">
+              <label class="larg_50"><span class="tit_label form-fieldName">Número do Pedido</span>[A4] <small><br />(Caso a dúvida seja de uma compra já realizada)</small></label>
+            </li>
+            <li class="list form">
+                <label class="larg_75"><span class="tit_label form-fieldName">Empresa</span>[A5]</label>
+            </li>
+            <li class="list obrigatorio form">
+                <label><span class="tit_label form-field-nameRequired">Qual sua dúvida?*</span>[A6] <small class="contador">[A7]<span class="pt">caracteres</span></small></label>
+            </li>
+            <li class="list form">
+                <label><span class="tit_label">&nbsp;</span> <a href="[A8]" class="box-bt btn-secondary">enviar</a> </label>
+            </li>
+        </ul>
+    </div>
+</div>]]></FaleConoscoHTML><ObrigatorioCPFCNPJ value="False" /><tipoFormulario value="Dúvidas" /></FaleConosco></FaleConoscos><Banners><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

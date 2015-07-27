@@ -1,0 +1,124 @@
+/* Theme */
+
+/*
+Tema personalizado para banner fulzzao espansível
+*/
+
+#cia_jqueryslider{
+  position: relative;
+  z-index: 4444;
+  padding-top: 0px;
+  /* padding-bottom: 5px; */
+  /* width: 100%; */
+  margin: auto;
+}
+
+.nivo-directionNav{
+    display:none;
+}
+
+#fundo_jquery{
+  display: none;
+}
+
+.slider-wrapper {
+  width: 730px;
+}
+
+.fullzao_expansivel #slider {
+    margin:0 auto;
+}
+
+.fullzao_expansivel .nivoSlider{
+    position: relative;
+    z-index: 4444;
+    width: 734px;
+    float: left;
+    margin-left: 0px;
+    border: solid 1px #ddd;
+    display: block;
+}
+.fullzao_expansivel .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+	-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;      transition:width 2s, height 2s, background-color 2s, transform 2s;
+}
+.fullzao_expansivel .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.fullzao_expansivel .nivo-controlNav {
+    text-align: right;
+    position: absolute;
+    width: auto;
+    z-index: 9999;
+    top: 464px;
+    right: 352px;
+}
+.fullzao_expansivel .nivo-controlNav a {
+	display:inline-block;
+        *display: block;
+        *float: left;
+	width: 8px;
+	height: 8px;
+	text-indent:-9999px;
+	border:0;
+	margin: 0 2px;
+        border-radius: 10px;
+	float: left;
+	font-size: 0;
+	position: relative;
+}
+.fullzao_expansivel .nivo-controlNav a.active {
+   background: #119d98;
+}
+
+.fullzao_expansivel .nivo-directionNav a {
+	display:block;
+	width: 45px;
+	height:100%;
+	text-indent:-9999px;
+	border:0;
+}
+
+.fullzao_expansivel a.nivo-nextNav {
+    right: 0;
+}
+
+.fullzao_expansivel a.nivo-nextNav:hover {
+}
+
+.fullzao_expansivel a.nivo-prevNav {
+    left: 0;
+}
+
+.fullzao_expansivel a.nivo-prevNav:hover {
+}
+
+.fullzao_expansivel .nivo-caption {
+}
+.fullzao_expansivel .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.fullzao_expansivel .nivo-caption a:hover {
+    color:#fff;
+}
+
+.fullzao_expansivel .nivo-controlNav.nivo-thumbs-enabled {
+	width: 100%;
+}
+.fullzao_expansivel .nivo-controlNav.nivo-thumbs-enabled a {
+	width: auto;
+	height: auto;
+	background: none;
+	margin-bottom: 5px;
+}
+.fullzao_expansivel .nivo-controlNav.nivo-thumbs-enabled img {
+	display: block;
+	width: 120px;
+	height: auto;
+}

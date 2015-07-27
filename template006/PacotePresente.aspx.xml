@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><PacotePresentes><PacotePresente ID="PacotePresente1"><PacotePresenteHTML><![CDATA[ <div class="custom-paddingV20 custom-clear custom-overflow">
+    <div>
+        <p>
+            Escolha uma opção de Pacote de presente e preencha a mensagem que será posta no
+            cartão!. Caso não queira que o produto seja embrulhado escolha a opção "Não enviar
+            para presente" e clique em continuar.</p>
+        <ul class="main-clearPadding">
+            <repeticao:pacote_presente>
+            <li>
+                <h5 class="custom-paddingV10">Produto:[A0]</h5>
+                <fieldset class="main-padding form">
+                    <label>[A1]</label>
+
+                        <repeticao:opcoes> <span>[A2]</span> </repeticao:opcoes>
+
+                </fieldset>
+                <condicao:mensagem>
+                <fieldset class="main-padding form mensagem">
+                    <label>
+                        Mensagem do Cartão <small>(Máximo de 250 caracteres)</small>:<br />
+                        [A3]
+                    </label>
+                </fieldset>
+                </condicao:mensagem>
+            </li>
+            </repeticao:pacote_presente>
+        </ul>
+    </div>
+    <div class="custom-clear custom-overflow custom-paddingV20" style="border-top: 1px solid #ededed">
+        <a href="#" onclick="[A5]" class="bt btn-primary text-center text-uppercase custom-paddingV5 custom-paddingH5">Continuar</a>
+    </div>
+</div>
+]]></PacotePresenteHTML><TextoExibicaoOpcao1 value="Embrulho de presente e cartão" /><TextoExibicaoOpcao2 value="Somente embrulho de presente" /><TextoExibicaoOpcao3 value="Somente cartão" /><TextoNaoEnviarPresente value="Não enviar para presente" /></PacotePresente></PacotePresentes><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

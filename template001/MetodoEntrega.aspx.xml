@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CarrinhoPassoss><CarrinhoPassos ID="CarrinhoPassos1" NomeAmigavel="Passos do Carrinho" Visible="True"><Passo value="3" /></CarrinhoPassos><CarrinhoPassos ID="Passos" NomeAmigavel="" Visible="True"><Passo value="1" /></CarrinhoPassos></CarrinhoPassoss><Carrinhos><Carrinho ID="Carrinho1"><CarrinhoHTML><![CDATA[<div class="heading-primary">
+  <h2>Método de Entrega</h2>
+</div>
+[A28][A29]
+<div id="carrinho" style="margin-top: 20px;">
+        <table class="tab_carrinho" cellpadding="0" cellspacing="0" border="0" width="100%;">
+            <thead>
+                <tr>
+                    <th class="table-heading"> </th>
+                    <th class="table-heading" style="text-align:left;">Produto</th>
+                    <th class="table-heading">Quantidade</th>
+                    <th class="table-heading"><img src="imagens/tit_carrinho_presente.png" alt="titulopresente" class="titulo-presente" /></th>
+                    <th class="table-heading">Preço Unitário</th>
+                    <th class="table-heading" style="background-position: top right;">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <repeticao:produtos>
+                <tr class="item_carrinho">
+                    <td class="table-information" style="width:80px;"><img src="[A3]?width=100&height=100" alt="[A4]" /></td>
+                    <td class="table-information" style="text-align: left;">[A4]</td>
+                    <td class="table-information qtd">[A5]</td>
+                    <td class="table-information">[A6]</td>
+                    <td class="table-information">[A8]</td>
+                    <td class="table-information">[A9]</td>
+                </tr>
+                <!-- CUSTOMIZAÇÃO DO PRODUTO -->
+                  
+                    <condicao:customizacao_carrinho>
+                      <repeticao:customizacao_carrinho>
+                        <tr class="item_customizacao">
+                          <th colspan="6">[AC40]</th>
+                        </tr>
+                        <repeticao:customizacao_campos_carrinho>
+                          <tr class="item_customizacao">
+                            <td colspan="5" style="text-align: left;">[AC43]: <strong>[AC41]</strong></td>
+                            <td>[AC44]</td>
+                          </tr>
+                        </repeticao:customizacao_campos_carrinho>
+                      </repeticao:customizacao_carrinho>
+                    </condicao:customizacao_carrinho>
+                    
+                    
+                  <!-- -->                  
+                </repeticao:produtos>
+                <tr class="subtotal">
+                    <th colspan="5">Subtotal:</th>
+                    <td>[A23]</td>
+                </tr>
+                <tr class="selecione_frete">
+                    <th colspan="7">
+                      <div class="heading-special">
+                        <h2>Selecione o Método de Entrega</h2>
+                      </div>
+                    </th> 
+                </tr>
+                <tr>
+                    <td colspan="6">
+                      <table class="tab_transportadoras" cellpadding="0" cellspacing="0" border="0" width="98%" align="center">
+                          <repeticao:frete>
+                          <tr>
+                            <td>
+                              <table class="tipos_frete borda-produto" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td class="frete_titulo heading-secondary">
+                                      <h3>Método de entrega</h3>
+                                      <p>[A18]</p>
+                                  </td>
+                                  <td class="frete_prazo heading-secondary">
+                                      <h3>Prazo</h3>
+                                      <p>[A19]</p>
+                                  </td>
+                                  <td class="frete_valor heading-secondary">
+                                      <h3>Valor</h3>
+                                      <p>[A20]</p>
+                                  </td>
+                                  <td class="frete_input heading-primary">
+                                    <label>Selecionar método de entrega<br />[A17]</label>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                           </repeticao:frete>
+                      </table>
+                    </td>
+                </tr>
+                <tr class="frete-metodo heading-secondary">
+                    <th colspan="5">
+                        <label>[A13]</label>
+                        <label>CEP:  [A14]</label>
+                        <label>Frete:</label>
+                    </th>
+                    <td>[A16]</td>
+                </tr>
+                <condicao:cupom_valor>
+                    <tr class="cupom table-boxCep">
+                        <th colspan="5">Cupom de Desconto:</th>
+                        <td>[A12]</td>
+                    </tr>
+                </condicao:cupom_valor>
+                <tr class="total heading-primary">
+                    <th colspan="5">Total:</th>
+                    <td>[A21]</td>
+                </tr>
+            </tbody>
+        </table>
+</div>]]></CarrinhoHTML><CarrinhoItensEditavel value="False" /><CarrinhoVazioHTML><![CDATA[<div class="container_carrinho_vazio carrinho-vazio">
+    <h2>Seu carrinho de compras está vazio!</h2>
+    <div class="continuar_compra">
+        <h3>Para inserir produtos no seu carrinho</h3>
+        <ul>
+          <li>- Navegue pelos departamentos ou utilize a busca do site.</li>
+          <li>- Ao encontrar os itens desejados, clique no botão "Adicionar ao Carrinho".</li>
+        </ul>
+        <a href="[B0]" class="bt-comprar-mais btn-tertiary">Continuar Comprando</a>
+    </div>
+</div>
+]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[<div class="erro">
+        <div class="lista_erro message-error">
+        <h2>Os produtos que foram comprados já não estão mais disponíveis</h2>
+            <condicao:com_tabela>
+		<table width="100%" cellpadding="0" cellspacing="0">
+		            <thead>
+		                <tr>
+		                    <th>Nome do produto</th>
+		                    <th>Quantidade do Pedido</th>
+		                    <th>Nova Quantidade</th>
+		                </tr>
+		            </thead>
+	                    <repeticao:produtos>
+		            <tr>
+		                <td>
+		                    [D0]
+		                </td>
+		                <td>
+		                    [D1]
+		                </td>
+		                <td>
+		                    <condicao:alterado>
+		                        [D2]
+		                    </condicao:alterado>
+		                    <condicao:semestoque>
+		                        estoque acabou
+		                    </condicao:semestoque>
+		                </td>
+		            </tr>
+	        </repeticao:produtos>
+	    </table>
+        </condicao:com_tabela>
+    </div>
+</div>
+]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           Não entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
+    </div>
+</div>
+]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[<div class="erro">
+    <div class="lista_erro message-error">
+        <h2>O valor mínimo da compra é de [C0]</h2>
+    </div>
+</div>]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           Cupom não é válido para o comprador atual.
+    </div>
+</div>
+]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           Cupom fora do prazo de validade.
+    </div>
+</div>
+]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           Cupom não encontrado.
+    </div>
+</div>
+]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           O cupom não é válido para o(s) departamento(s) selecionado(s).
+    </div>
+</div>
+]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           O cupom não é válido para o(s) produto(s) selecionado(s).
+    </div>
+</div>
+]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           A compra não atingiu o valor mínimo para ativação do cupom.
+    </div>
+</div>
+]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           O cupom já foi usado.
+    </div>
+</div>
+]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.
+    </div>
+</div>
+]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           O produto [L0] não está mais disponível para pronta entrega na quantidade solicitada. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.
+    </div>
+</div>
+]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.
+    </div>
+</div>
+]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].
+    </div>
+</div>
+]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.
+    </div>
+</div>
+]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           O preço do produto [F0] mudou de [F1] para [F2].
+    </div>
+</div>
+]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           O produto <strong>[K0]</strong> não esta mais disponível.
+    </div>
+</div>
+]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[<div id="erro">
+    <div class="lista_erro message-error">
+        <h2>Aviso Importante!</h2>
+           Você não possui permissão para comprar
+    </div>
+</div>
+]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Gigantes" /></Carrinho></Carrinhos><CarrinhoEnderecoEntregas><CarrinhoEnderecoEntrega ID="CarrinhoEnderecoEntrega1"><CarrinhoEnderecoEntregaHTML><![CDATA[
+    <div class="heading-special">
+        <h2>Endereço de Entrega</h2>
+    </div>
+    <div class="endereco_entrega">
+        <p class="local">[A9]</p>
+        <p><strong>[A0]</strong></p>
+        <p>[A1], [A2] [A3]</p>
+        <p>[A4] - [A5] - [A6]</p>
+        <p>CEP: [A8]</p>
+    </div>
+    <div class="bt_esquerda">
+        <a href="[A11]" class="box-bt btn-tertiary">escolher outro endereço</a>
+    </div>
+	]]></CarrinhoEnderecoEntregaHTML></CarrinhoEnderecoEntrega></CarrinhoEnderecoEntregas><Links><Link ID="LinkContinuar"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Pagamento" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Continuar" /><UsarHTTPS value="True" /></Link><Link ID="Alterar_Pedido"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Alterar Pedido" /><UsarHTTPS value="False" /></Link><Link ID="LinkAjuda"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="Fullzao" /></Banners><ListaPresenteEnderecoEntregas><ListaPresenteEnderecoEntrega ID="ListaPresenteEnderecoEntrega"><ListaPresenteEnderecoEntregaHTML><![CDATA[    <div class="heading-special">
+        <h2>Seu pedido será entregue para:</h2>
+    </div>
+    <div class="endereco_entrega">
+        <p class="local">[A1]</p>
+        <p><strong>[A0]</strong></p>
+        <p>[A2], [A3]</p>
+        <p>[A5] - [A6] - [A7]</p>
+      	<p>[A4]</p>
+        <p>Telefone de contato: [A8] [A9]</p>
+    </div>
+]]></ListaPresenteEnderecoEntregaHTML></ListaPresenteEnderecoEntrega></ListaPresenteEnderecoEntregas><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

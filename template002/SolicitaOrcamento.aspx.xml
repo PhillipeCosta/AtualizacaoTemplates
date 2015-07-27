@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><QuoteRequests><QuoteRequest ID="orcamento"><QuoteRequestHTML><![CDATA[<h4 class="text-left heading-collection main-padding">// Formulário de Solicitação de Orçamento</h4>
+<div class="row">
+  <div class="box-orcamento box-produto-orcamento col-md-6">
+    <h3>@Model.QuoteRequest.SelectedVariant.Name</h3>
+    <div class="row">
+      <div class="foto-produto-orcamento col-md-5">
+        <img src="@Model.QuoteRequest.SelectedVariant.MainImage?width=200" alt="@Model.QuoteRequest.SelectedProduct.Name" class="img-responsive" />
+      </div>
+      <p class="info_quote col-md-7">@TemplateSettings.quoterequest_info</p>
+    </div>
+  </div>
+  <div class="formulario-orcamento col-md-6"> 
+    @if(Model.Post)
+    {
+    if(Model.Saved)
+    {
+    <div class="alert alert-success">
+      <h2>Orçamento enviado com sucesso</h2>
+      <p>Em breve enviaremos a resposta com seu orçamento.</p>
+    </div>
+  }
+  else
+  {
+  <div class="alert alert-warning"> 
+    @Html.ValidationSummary()
+  </div> 
+}
+}  
+@using (Html.BeginForm()){    
+
+<div class="form form-guest main-overflow main-clear">
+
+  <div class="form form-check form-checkPerson text-center main-clear main-overflow">
+    <label class="col-md-3 text-right main-clearPadding main-padding">&nbsp;</label>
+    <span class="col-md-9">
+      <span style="padding-right: 20px;" class="radio-inline">
+        @Html.InputRadio("QuoteRequest.PersonType", "Person").TabIndex("1")<label>Pessoa Física</label>
+      </span>
+      <span class="radio-inline">
+        @Html.InputRadio("QuoteRequest.PersonType", "Company").TabIndex("2").AddAttr("checked","checked")<label>Pessoa Jurídica</label>
+      </span>  
+    </span> 
+  </div>
+
+  <div class="form parent-validation main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Nome:</label>
+    <span class="col-md-9">
+      @Html.InputText("QuoteRequest.Name").TabIndex("1")
+    </span>
+  </div>
+
+  <div class="form parent-validation main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Email:</label>
+    <span class="col-md-9">
+      @Html.InputText("QuoteRequest.Email").TabIndex("2")
+    </span>
+  </div>
+
+  <div class="form parent-validation main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Telefone:</label>
+    <span style="width: 13%;" class="col-md-2 text-center">
+      @Html.InputText("QuoteRequest.PhoneAreaCode").Maxlength("2").AddClass("txtDDD validar").TabIndex("3")
+    </span>
+    <span class="col-md-5 custom-clearPadding">
+      @Html.InputText("QuoteRequest.PhoneNumber").AddClass("validar").Maxlength("10").TabIndex("7")
+    </span>
+  </div>
+
+  <div class="form parent-validation main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding documentid">CNPJ:</label>
+    <span class="col-md-7">
+      @Html.InputText("QuoteRequest.DocumentId").Maxlength("18").TabIndex("4")
+      <small class="exampledocumentid help-block">(00.000.000/0000-00)</small>    
+    </span>
+  </div>
+
+  <div class="form parent-validation main-clear main-overflow required">
+   <label class="col-md-3 text-right main-clearPadding main-padding">Mensagem:</label>
+    <span class="col-md-9">
+      <textarea name="MetaField.QuoteRequest.System.Observacoes" tabindex="15" rows="7"></textarea>
+    </span>
+  </div>
+
+  <div class="form parent-validation main-clear main-overflow required">
+    <label class="col-md-3 text-right main-clearPadding main-padding">Escreva a palavra:</label>
+    <span class="col-md-4 captcha-img">
+      @Html.Captcha("imagens/reload.png")
+    </span>
+    <span class="col-md-5">
+    @Html.InputText("QuoteRequest.Captcha").TabIndex("16")
+    </span>
+  </div>
+
+  <div class="bt_enviar_orcamento text-center main-overflow main-clear main-padding20">
+    <a href="#" class="fakeButtom btn-primary text-uppercase text-center custom-paddingV5 custom-paddingH15" name="enviar" id="enviar">Enviar</a>
+  </div>
+</div>
+}
+</div>
+</div>
+<script>
+  $(document).ready(function(){
+    $('#QuoteRequest_Quantity').val('1');
+  })
+
+// A partir daqui foi utilizado a função validarPrePost para verificar se os campos extras foram preenchidos.
+
+function validarPrePost(){
+  if($("#campo_extra").val() === ""){
+    AddError($('#campo_extra'));
+    return false;
+  } return true;
+}
+</script>
+]]></QuoteRequestHTML></QuoteRequest></QuoteRequests><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors><Banners><Banner ID="header_full" /></Banners></controles></page>

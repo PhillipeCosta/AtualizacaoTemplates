@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><PaginasInstitucionaiss><PaginasInstitucionais ID="institutional"><PaginasInstitucionaisHTML><![CDATA[<repeticao:pagina_institucional>
+	<li class="col-md-6">
+      <a href="[A1]">[A0]</a>
+    </li>
+</repeticao:pagina_institucional>]]></PaginasInstitucionaisHTML></PaginasInstitucionais></PaginasInstitucionaiss><IconesRodapes><IconesRodape ID="paymentMethodsIcons"><IconesRodapeHTML><![CDATA[<repeticao:icone>
+	<li class="paymentMethodsIcons-li"><img src="[A2]" alt="[A1]" /></li>
+</repeticao:icone>      ]]></IconesRodapeHTML></IconesRodape></IconesRodapes><BoletimNoticiass><BoletimNoticias ID="newsletter"><BoletimNoticiasHTML><![CDATA[<div class="container main-container">
+  <div class="main-clear main-overflow newsletter text-center">
+    <h4 class="text-uppercase heading-collection"><strong><span class="fa fa-envelope-o"></span>&nbsp;Newsletter</strong></h4>
+    <br />
+    <p class="text-uppercase">Cadastre-se e receba em seu e-mail, novidades, promoções e ofertas da loja</p>
+    <div class="form-newsletter form">
+      <span class="newsletter-name">[A0]</span>
+      <span class="newsletter-email">[A2]</span>
+      <div class="news-sexoNascimento">
+        <condicao:nascimento><span class="newsletter-nascimento">[A1]</span></condicao:nascimento>
+        <condicao:sexo><span class="newsletter-sexo">[A3] [A6]</span></condicao:sexo>
+      </div>
+      <a href="[A4]" class="bt btn-secondary text-uppercase text-center">Enviar</a>    
+    </div>  
+  </div>
+</div>]]></BoletimNoticiasHTML></BoletimNoticias></BoletimNoticiass><ScriptRazors><ScriptRazor ID="socialNetwork"><ScriptRazorHTML><![CDATA[]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="ebit"><ScriptRazorHTML><![CDATA[@TemplateSettings.footer_ebit]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="copyrigth"><ScriptRazorHTML><![CDATA[@TemplateSettings.footer_copyright]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="sealsFooter"><ScriptRazorHTML><![CDATA[<div class="pull-left footer-sealsMargin">
+  @if(TemplateSettings.footer_fControl != ""){
+    <a href="http://www.fcontrol.com.br" target="_blank" lass="custom-paddingV5" style="display: block;"><img src="imagens/fcontrol.png" alt="Fcontrol" /></a>
+    }</div>
+<div class="pull-left footer-sealsMargin">
+ @if(TemplateSettings.footer_thawte != ""){
+    <script language="JavaScript">
+        function OpenCertDetails(){thewindow = window.open('https://sealinfo.thawte.com/thawtesplash?form_file=fdf/thawtesplash.fdf&dn=@TemplateSettings.footer_thawte', 'anew', config='height=580,width=516,toolbar=no,menubar=no,scrollbars=yes,resizable=no,location=no,directories=no,status=no');}
+    </script>            
+    <a href="javascript:OpenCertDetails()" class="custom-paddingV5" style="display: block;"><img src="imagens/thawte.png" alt="Loja 100% Segura" /></a>      
+  }
+  </div>
+
+<div class="pull-left">
+  @TemplateSettings.footer_ebit
+</div>
+<div class="pull-left">
+  @TemplateSettings.footer_blindado
+</div>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="socialFooter"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.footer_facebook_link!="" || TemplateSettings.footer_twitter_link!="" || TemplateSettings.footer_pinterest_link!="" || TemplateSettings.footer_youtube_link!="" || TemplateSettings.footer_instagran_link!="" || TemplateSettings.footer_google_link!=""){
+    if(TemplateSettings.footer_facebook_link!=""){
+      <a href="@TemplateSettings.footer_facebook_link" target="_blank" class="footer-socialNetwork"><span class="fa fa-facebook"></span></a>
+    }
+    if(TemplateSettings.footer_twitter_link!=""){
+      <a href="@TemplateSettings.footer_twitter_link" target="_blank" class="footer-socialNetwork"><span class="fa fa-twitter"></span></a>
+    }
+    if(TemplateSettings.footer_pinterest_link!=""){
+      <a href="@TemplateSettings.footer_pinterest_link" target="_blank" class="footer-socialNetwork"><span class="fa fa-pinterest"></span></a>
+    }
+    if(TemplateSettings.footer_youtube_link!=""){
+      <a href="@TemplateSettings.footer_youtube_link" target="_blank" class="footer-socialNetwork"><span class="fa fa-youtube"></span></a>
+    }
+    if(TemplateSettings.footer_instagran_link!=""){
+      <a href="@TemplateSettings.footer_instagran_link" target="_blank" class="footer-socialNetwork"><span class="fa fa-instagram"></span></a>
+    }
+    if(TemplateSettings.footer_google_link!=""){
+      <a href="@TemplateSettings.footer_google_link" target="_blank" class="footer-socialNetwork"><span class="fa fa-google"></span></a>
+    }        
+}]]></ScriptRazorHTML></ScriptRazor></ScriptRazors><Links><Link ID="affiliate"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="destino=AfiliadoPrincipal" /><Target value="MesmaPagina" /><Texto value="Afiliados" /><UsarHTTPS value="False" /></Link><Link ID="readyList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="CategoriasLista" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Listas prontas" /><UsarHTTPS value="False" /></Link><Link ID="giftList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="ListaPresentesPrincipal" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Lista de presentes" /><UsarHTTPS value="True" /></Link></Links></controles></page>

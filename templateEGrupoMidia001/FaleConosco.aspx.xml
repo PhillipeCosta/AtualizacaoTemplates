@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><FaleConoscos><FaleConosco ID="contactUsForm"><FaleConoscoHTML><![CDATA[<div class="contact form">
+  <div class="w-50 to-left">
+      <div class="form-item validate required w-100">
+        <label><span class="form-title">Nome*</span> [A1]</label>
+      </div>
+      <div class="form-item validate required w-50" data-type="email">
+        <label><span class="form-title">Email*</span> [A2]</label>
+      </div>
+      <div class="form-item validate required w-50">
+        <label><span class="form-title">Telefone*</span> [A3]</label>
+      </div>
+      <div class="form-item w-50">
+        <label><span class="form-title">Empresa</span>[A5]</label>
+      </div>
+      <div class="form-item w-50">
+        <label><span class="form-title">Número do Pedido <small>(Se houver)</small></span> [A4]</label>
+      </div>      	
+  </div>
+  <div class="w-50 to-right">
+      <div class="form-item validate required w-100">
+        <label><span class="form-title">Mensagem*</span> [A6] <div style="display: none;">[A7]</div></label>
+      </div>
+      <div class="form-item w-100">
+        <a href="javascript: void(0)" onclick="[A8]" class="bt-small-primary to-right fakeButtom">Enviar</a>
+        <input type="button" onclick="[A8]" class="realButtom hide" value="Enviar" />
+      </div>
+  </div>
+</div>]]></FaleConoscoHTML><ObrigatorioCPFCNPJ value="True" /><tipoFormulario value="Dúvidas" /></FaleConosco></FaleConoscos></controles></page>

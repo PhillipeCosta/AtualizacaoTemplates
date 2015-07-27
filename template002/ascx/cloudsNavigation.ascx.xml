@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><TagCloudss><TagClouds ID="clouds"><Classe1 value="clouds1" /><Classe2 value="clouds2" /><Classe3 value="clouds3" /><Classe4 value="clouds4" /><Classe5 value="clouds5" /><Classe6 value="clouds6" /><Classe7 value="clouds7" /><LayoutHTML><![CDATA[<div class="tagclouds main-clear main-tagClouds">
+	<h6 class="text-left heading-collection text-uppercase"><strong>// Produtos mais procurados</strong></h6>
+    <div class="text-center tagclouds-container">
+      [A1]
+    </div>
+</div>]]></LayoutHTML><Titulo value="" /></TagClouds></TagCloudss><HistoricoNavegacaos><HistoricoNavegacao ID="navigation"><CaracterSeparador value="," /><HistoricoNavegacaoHTML><![CDATA[<div class="main-overflow main-clear">
+  <h4 class="text-left heading-collection">// Produtos Visualizados</h4>
+</div>
+<div class="navigation main-overflow">
+	<div>
+	 <div class="col-md-5">
+	  <condicao:imagem_anterior>
+	    <a onclick="[A3]" href="javascript:void(0)" class="pull-left btn-clouds-navigation"><span class="fa fa-angle-left"></span></a>
+	  </condicao:imagem_anterior>  
+	  [A5]
+	  <condicao:imagem_proximo>
+	    <a onclick="[A4]" href="javascript:void(0)" class="pull-right btn-clouds-navigation"><span class="fa fa-angle-right"></span></a>
+	  </condicao:imagem_proximo>  
+	 </div>
+	</div>
+	<div class="col-md-7 navigation-info">
+	  <div class="col-md-4">
+        <h6 class="text-uppercase heading-clouds"><strong>Adicionado ao carrinho:</strong></h6>
+	    <ul class="main-clearPadding">
+	      <repeticao:itens_carrinho quantidade="4">
+	        <li><a href="[A6]">[A7]</a></li>
+	      </repeticao:itens_carrinho>    
+	    </ul>
+	  </div>
+	  <div class="col-md-4">
+        <h6 class="text-uppercase heading-clouds"><strong>Últimas pesquisas:</strong></h6>
+	    <ul class="main-clearPadding">
+	      <repeticao:itens_pesquisa quantidade="4">
+	        <li><a href="[A8]">[A9]</a></li>
+	      </repeticao:itens_pesquisa>
+	    </ul>    
+	  </div>
+	  <div class="col-md-4">
+        <h6 class="text-uppercase heading-clouds"><strong>Categorias visitadas:</strong></h6>
+	    <ul class="main-clearPadding">
+	      <repeticao:itens_departamento quantidade="4">
+	        <li><a href="[A10]">[A11]</a></li>
+	      </repeticao:itens_departamento>    
+	    </ul>
+	  </div> 
+	</div>
+</div>]]></HistoricoNavegacaoHTML><ProdutoHTML><![CDATA[<a href="[B0]" class="navigation-product">
+  <img src="[B2]?width=80&height=80" alt="[B3]" />
+</a>]]></ProdutoHTML><TamanhoImagem value="Gigantes" /><TotalProdutosPagina value="4" /></HistoricoNavegacao></HistoricoNavegacaos></controles></page>

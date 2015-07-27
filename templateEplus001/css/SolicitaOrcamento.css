@@ -1,0 +1,352 @@
+/* Orcamento Produto */
+
+
+.box-orcamento{
+    display: block;
+    overflow: hidden;
+}
+
+.titulo-orcamento{
+	background: #062a59;
+	padding: 10px;
+	border-left: 15px solid #ff6801;
+}
+
+.titulo-orcamento h2{
+	color: #fff;
+	font-size: 13px;
+        text-transform: uppercase;
+}
+
+.box-produto-orcamento{
+	clear: both;
+	display: block;
+	padding: 10px 5px;
+}
+
+.box-produto-orcamento h3{
+    font-size: 15px;
+    color: #555;
+    margin: 5px 0 15px;
+}
+
+.foto-produto-orcamento{
+	width: 180px;
+	height: 180px;
+	display: block;
+	float: left;
+}
+
+.foto-produto-orcamento img{
+	display: block;
+	border: 1px solid #ccc;
+}
+
+.descricao-produto-orcamento{
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+
+.titulo-descricao-orcamento{
+	color: #062a59;
+	font-size: 13px;
+	border-right: 1px solid #ccc;
+}
+
+.desc-descricao-orcamento{
+	border-top: 1px solid #ccc;
+	font-size: 11px;
+	color: #555;
+}
+
+/* Abas */
+
+ul.produto_abas{
+    list-style: none;
+    *height: 29px;
+    overflow: hidden;
+}
+
+ul.produto_abas li{
+    float: left;
+    margin-right: 5px;
+    margin-left: -1px;
+}
+
+ul.produto_abas li a{
+    display: block;
+    padding-left: 10px;
+    line-height:28px;
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+ul.produto_abas li a span{
+    display: block;
+    line-height: 22px;
+    padding-right: 7px;
+}
+
+ul.produto_abas a.selecionado{
+    color: #062a59;
+    font-weight: bold;
+}
+
+ul.produto_abas a.selecionado span{
+    color: #062a59;
+    font-size: 13px;
+}
+
+.descricao_texto{
+    padding: 5px 0;
+    margin: 5px 0;
+    overflow: auto;
+    display: block;
+    float: left;
+    font-size: 12px;
+}
+
+/* Btns */
+
+.bt_enviar_orcamento{
+    clear: both;
+    margin: 40px 0;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.bt_orcamento{
+    float: right;
+}
+
+/*  ValidaÃ§Ã£o FormulÃ¡rio */
+
+/*Erros*/
+
+.field-validation-valid{
+    display: none;
+}
+
+.field-validation-error{
+    color: red;
+    font-size: 11px;
+}
+
+.parent-validation-error{
+    border: 1px solid #D2CF82 !important;
+    background: #FFFDCD !important
+}
+
+.input-validation-error{
+    border: 1px solid red !important;
+}
+
+.validation-summary-errors {
+    background-color: #FFF5E1;
+    background-image: url("../imagens/erro.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 1px solid #FCE7BB;
+    margin: 50px auto;
+    padding: 20px 5px 20px 65px;
+    text-align: left;
+    width: 680px;
+}
+
+.validation-summary-errors ul {
+    list-style: none outside none;
+}
+
+
+.validation-summary-errors ul li {
+    background-image: url("../imagens/seta_erro.gif");
+    background-position: left 8px;
+    background-repeat: no-repeat;
+    color: #444;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 2px 0 2px 12px;
+    font-weight: bold;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*formulario-orcamentos*/
+
+.formulario-orcamento{
+    overflow: hidden;
+    list-style: none;
+}
+
+.info{
+    color: #062A59;
+    text-align: right;
+    font-size: 11px;
+    margin: 5px;
+}
+
+.formulario-orcamento .list{
+    overflow: hidden;
+    padding: 5px 0;
+    vertical-align: top;
+    color: #999;
+    width: 48%;
+    float: left;
+    border: 1px solid transparent;
+}
+
+.tipo_pessoa input{
+    width: 20px !important;
+}
+
+.tipo_pessoa span{
+    color: #333;
+}
+
+.captcha input{
+    border: 2px solid #ccc !important;
+    padding: 0 3px !important;
+}
+
+
+.formulario-orcamento label{
+    font-size: 11px;
+    color: #999;
+}
+
+.formulario-orcamento .list .tit_label.obrigatorio{
+    color: #062a59;
+}
+
+.formulario-orcamento .list .tit_label{
+    float: left;
+    width: 140px;
+    text-align: right;
+    margin-right: 5px;
+    color: #8598AD;
+    font-weight: bold;
+    font-size: 11px;
+    clear: left;
+    padding: 4px 0;
+}
+
+.formulario-orcamento .list input{
+    font-size: 11px;
+    color: #666;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    width: 300px;
+    padding: 4px;
+    margin: 0 3px;
+}
+
+.formulario-orcamento .list .larg_100 input{
+    width: 350px;
+}
+
+.formulario-orcamento .list .larg_75 input{
+    width: 200px;
+}
+
+.formulario-orcamento .list .larg_50 input{
+    width: 100px;
+}
+
+.formulario-orcamento .list .larg_25 input{
+    width: 30px;
+}
+
+.formulario-orcamento .list .checkbox input{
+    width: auto;
+    border: none transparent;
+    background: transparent;
+    padding: 0;
+    height: auto;
+    margin: 5px 3px;
+}
+
+.formulario-orcamento .list.radio label{
+    font-weight: bold;
+    margin-right: 15px;
+    vertical-align: middle;
+    color: #062A59;
+    font-size: 11px;
+}
+
+.formulario-orcamento .list.radio input{
+    width: auto;
+    border: none transparent;
+    background: transparent;
+    padding: 0;
+    height: auto;
+    margin: 0px 3px;
+}
+
+.formulario-orcamento .list .confirm input{
+    width: auto;
+    border: none transparent;
+    background: transparent;
+    padding: 0;
+    height: 20px;
+    margin: 0 3px;
+}
+
+.formulario-orcamento .list select{
+    font-size: 11px;
+    color: #666;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    width: 200px;
+    padding: 3px;
+    margin: 0 3px;
+}
+
+.formulario-orcamento .list textarea{
+    font-size: 11px;
+    color: #666;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    width: 300px;
+    height: 100px;
+    padding: 4px;
+    margin: 0 3px;
+    font-family: tahoma;
+}
+
+.formulario-orcamento .list.cep{
+    background: #f1f1f1;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+.formulario-orcamento .list.cep a{
+    color: #062A59;
+    text-decoration: underline;
+}
+
+.formulario-orcamento .list .erro{
+    vertical-align: middle;
+}
+
+.formulario-orcamento .list small{
+    color: #999999;
+    font-size: 11px;
+}
+
+.formulario-orcamento .list small.contador input{
+    width: 25px;
+    padding:0;
+    margin:0;
+    border: none transparent;
+    color: #999;
+}
+
+.formulario-orcamento a{
+    color: #999999;
+    font-size: 11px;
+    text-decoration: undeline;
+}

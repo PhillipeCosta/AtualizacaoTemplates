@@ -1,0 +1,32 @@
+.box-rodape{
+	clear: both;	
+        margin-top: 2.5em;
+}
+
+.box-rodape aside:first-child{
+    padding-left: 0.8em;
+}
+
+.box-rodape p{
+	font-size: 11px;
+        margin: 0.5em 0;
+}
+
+.box-enderecos-rodape p strong{	
+	text-transform: uppercase;
+}
+
+.links-rodape{
+    margin: 0 0 1em;
+}
+
+.links-rodape a{
+	font-size: 12px;
+	text-decoration: underline;
+    padding: 0.2em 0.8em;
+	display: block;
+}
+
+.acessarVersao{
+	padding: 10px 0;
+}

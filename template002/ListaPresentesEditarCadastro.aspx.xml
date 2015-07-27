@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><ListaPresentesInfos><ListaPresentesInfo ID="giftList_info"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+      <div class="main-overflow main-padding20" style="padding-let: 15px;"> 
+        <div class="col-md-4">
+         <h2 class="pull-left">
+            <span class="fa fa-gift"></span>
+          </h2>  
+          <h3 class="pull-left" style="padding: 0 15px;">
+            [A20]
+          </h3>
+        </div>
+        <div class="col-md-8" style="border-left: 1px dotted #ccc;">
+          <div class="main-clear main-overflow main-padding">
+              <condicao:comevento>
+                <p>[A0] - [A1]</p>
+                <span>
+                  Homenageado(s):[A0]<br />
+                  Data: [A1]<br />
+                  Local: [A15],[A16] - [A17] - [A18] - [A19]<br />
+                  <strong>
+                    <condicao:mapa><strong><a href="javascript:void(0);" style="text-decoration: underline;" data-toggle="modal" data-target="#myModalmapa">Clique aqui para ver mapa</a></strong></condicao:mapa>
+                  </strong><br />
+                  Texto de boas-vindas: [A4]
+                </span>
+              </condicao:comevento>
+          </div>
+        </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+
+      <div class="container_descricao_lista fechado heading-primary"> 
+          <div class="container_descricao_lista_conteudo">
+            <div class="descricao_lista">            
+              <h3>[A20]</h3>
+            </div>
+          </div>
+      </div>
+
+      </condicao:naoaceitaevento>  
+<condicao:semevento>
+  <div id="erro">
+      <div class="lista_erro message-error">
+            <h2>Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.</h2>
+        </div>
+    </div>
+</condicao:semevento>
+
+<div class="modal fade" id="myModalmapa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mapa do evento</h4>
+      </div>
+      <div class="modal-body">
+        [A3]
+      </div>
+    </div>
+  </div>
+</div>
+
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInfo ID="giftList_info2"><ListaPresentesInformacoesHTML><![CDATA[      <condicao:aceitaevento>
+      <div class="main-overflow sideMenu">
+          <ul class="main-clearPadding">
+            <li><h6 class="text-left "><a href="[A13]" style="display: block;">> Produtos da lista</a></h6>
+              <ul class="main-clearPadding" style="padding-left: 15px;">
+                <li><h6 class="text-left" style="font-size:11px;"><a href="[A13]">- Produtos da Lista</a></h6></li>
+                <li><h6 class="text-left" style="font-size:11px;"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">- Adicionar Produtos</a></h6></li>
+                <li><h6 class="text-left" style="font-size:11px;"><a href="[A21]">- Escolher lista Pronta</a></h6></li>
+              </ul>
+            </li>
+            <li><h6 class="text-left "><a href="[A8]">> Lista de Convidados</a></h6></li>
+            <li><h6 class="text-left "><a href="[A9]">> Enviar Mensagem</a></h6></li>
+            <li><h6 class="text-left "><a href="[A11]">> Álbum de Fotos</a></h6></li>
+            <li><h6 class="text-left "><a href="[A10]">> Editar Evento</a></h6></li>
+          </ul>
+      </div>
+    </condicao:aceitaevento>
+    <condicao:naoaceitaevento>
+
+
+    <div class="main-overflow main-padding20 sideMenu">
+        <ul class="main-clearPadding main-padding20">
+          <li><h6 class="text-left "><a href="[A13]">> Produtos da Lista</a></h6></li>
+          <li><h6 class="text-left "><a href="javascript: void(0)" data-toggle="modal" data-target="#myModal"> >Adicionar Produto</a></h6></li>
+        </ul>
+    </div>
+  </condicao:naoaceitaevento>  
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h5>Adicionar produto</h5>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/animacao.gif" alt="Animação" />
+        <div class="main-overflow main-padding text-right">
+        	<a href="[A7]" class="btn btn-secondary text-center text-uppercase">Adicionar produto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+]]></ListaPresentesInformacoesHTML></ListaPresentesInfo></ListaPresentesInfos><ListaPresentesCadastros><ListaPresentesCadastro ID="giftList_register"><FormularioListaPresentesDadosGeraisHTML><![CDATA[<div class="main-overflow main-clear form form-guest">
+  <div class="main-overflow" style="padding: 0 0 20px;">
+      <div class="main-overflow">
+        <h4 class="heading-collection">O que você irá comemorar?</h4>
+        <p>Casamento, aniversário ou qualquer outro evento, basta selecionar que iremos lhe ajudar a montar sua lista de presentes!</p>
+      </div>
+      <div class="main-overflow">
+        <fieldset>
+          <label style="display: block; width: 62%;">
+            [B0]
+          </label>
+        </fieldset>               
+      </div>
+  </div>
+  <div class="main-overflow">
+      <h4 class="main-padding">// Onde será o evento</h4>
+      <p>Preencha abaixo algumas informações sobre o evento. São Perguntas simples como nome, data e local do evento.</p>    
+  </div>
+  <div class="main-overflow main-padding20">
+    <div class="col-md-7">
+      <div class="main-padding20 form form-guest main-overflow main-clear">
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Nome para o evento
+          </label>
+          <span class="col-md-6">
+            [B43]
+            <small>Dê um nome para seu evento. Exemplo "Meu Casamento", "Aniversário da Maria", etc.</small>                        
+          </span>
+        </div> 
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding lp-formulario-input-imagem">
+            Data do evento
+          </label>
+          <span class="col-md-4">
+            [B1]
+          </span>
+          <span class="pull-left main-clearPadding main-padding">
+            <img src="imagens/bt_abre_calendario.png" alt="" />          
+            <small>(DD/MM/AAAA)</small>                        
+          </span>          
+        </div> 
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding lp-formulario-input-imagem">
+            Hora do evento
+          </label>
+          <span class="col-md-4">
+            [B41]                       
+          </span>
+          <span class="pull-left main-clearPadding main-padding">
+            <img src="imagens/bt_abre_relogio.png" alt="" />          
+            <small>(HH:MM)</small> 
+          </span>          
+        </div>               
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Nome do Local<br />
+          </label>
+          <span class="col-md-6">
+            [B2]
+            <small>Onde o evento será realizado? Exemplo "Centro de eventos", "Catedral", "Não definido", etc.</small> 
+          </span>
+        </div>  
+
+        <div class="form cep main-clear main-overflow parent-validation">
+          <label class="col-md-5 text-right main-clearPadding main-padding">CEP do local do evento </label>
+          <span class="col-md-4" style="padding-right: 0;">
+            [B14]
+          </span>
+          <span class="col-md-3 main-clearPadding">
+            <a href="javascript:void(0);" class="bt btn-secondary text-uppercase text-center" style="padding: 6px 11px;">OK</a>
+            <a href="javascript:callSearchZipCode('ListaPresentesCadastro1_txtCepEvento')"><small>(Não sei o CEP)</small></a>
+          </span>
+        </div> 
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Rua
+          </label>
+          <span class="col-md-7">
+            [B3]
+          </span>
+        </div>     
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Número
+          </label>
+          <span class="col-md-7">
+            [B4]
+          </span>
+        </div>                     
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Cidade
+          </label>
+          <span class="col-md-7">
+            [B6]
+          </span>
+        </div> 
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Estado
+          </label>
+          <span class="col-md-7">
+            [B7]
+          </span>
+        </div>         
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Bairro
+          </label>
+          <span class="col-md-7">
+            [B5]
+          </span>
+        </div> 
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Complemento
+          </label>
+          <span class="col-md-7">
+            [B13]
+          </span>
+        </div>               
+
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h4 class="main-padding">// Mapa do local do evento</h4>
+      <p>Mostre a seus convidados onde será o evento. Você poderá enviar o código do google maps ou enviar uma imagem com o mapa. Se não possuir o mapa, não se preocupe, você poderá enviar o mapa a qualquer momento após o cadastro.</p>
+      <fieldset class="main-padding main-overflow">
+        <div class="col-md-4"><label>[B44] <span>Não tenho mapa</span></label></div>
+        <div class="col-md-4"><label>[B39] <span>Google Maps</span></label></div>
+        <div class="col-md-4"><label>[B37] <span>Enviar Imagem</span></label></div>
+      </fieldset>
+      <condicao:googlemaps> 
+        <fieldset class="main-padding20 main-overflow">
+          <label style="width: 100%;">Script do Google Maps<br />[B9]</label>
+          <span class="lp-mapa-script-help"><a href="http://support.google.com/maps/bin/answer.py?hl=pt-BR&answer=72644" target="_blank">Como obter o script do Google Maps?</a></span>
+        </fieldset>
+      </condicao:googlemaps>
+      <condicao:enviarimagem>
+          <div class="main-padding20 main-overflow">
+            [B38]
+            [B42]  
+          </div>
+      </condicao:enviarimagem>       
+    </div>
+  </div>
+  <div class="main-overflow main-padding20">
+      <h4 class="main-padding">// Quem serão os homenageados?</h4>
+      <p>Nessa etapa você irá informar quem são os homenageados e mensagem de boas vindas a seus convidados.</p>    
+  </div>  
+  <div class="main-overflow main-padding20">
+    <div class="col-md-7">
+        <div class="form main-clear main-overflow required">
+          <repeticao:homenageados quantidade="2">
+            <label class="col-md-4 text-right main-clearPadding main-padding">
+              Nome(s) do(s) homenageados
+            </label>
+            <span class="col-md-6" style="padding-right: 0;">
+              [B20] 
+            </span>
+            <span class="pull-left main-clearPadding main-padding">
+              <a href="[B21]"><img src="imagens/bt_deletar_homenageado.png" alt="" /></a>
+            </span>
+          </repeticao:homenageados>
+        </div>     
+        <div class="main-overflow main-padding text-right">
+          <a href="[B22]" class="btn btn-secondary text-center text-uppercase">Adicionar homenageado</a>      
+        </div>
+    </div>
+    <div class="col-md-5">
+      <h6><strong>Texto de boas vindas</strong></h6>
+      <p>Esse texto é exibido na página inicial da sua lista, dando as boas vindas a seus convidados!</p>
+      [B11]
+    </div>
+  </div>  
+  <div class="main-overflow main-padding20">
+      <h4 class="main-padding">// Onde quer que entregue os presentes?</h4>
+      <p>Diga-nos o endereço onde você deseja que os presentes comprados através da sua lista de presentes sejam entregues.</p>    
+  </div>
+  <div class="main-overflow main-padding20">
+    <div class="col-md-7">
+      <div class="form cep main-clear main-overflow parent-validation">
+        <label class="col-md-5 text-right main-clearPadding main-padding">CEP do endereço de entrega dos presentes </label>
+        <span class="col-md-4" style="padding-right: 0;">
+          [B23]
+        </span>
+        <span class="col-md-3 main-clearPadding">
+          <a href="javascript:void(0);" class="bt btn-secondary text-uppercase text-center" style="padding: 6px 11px;">OK</a>
+          <a href="javascript:callSearchZipCode('txtCepResponsavel')"><small>(Não sei o CEP)</small></a>
+        </span>
+      </div> 
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Rua
+          </label>
+          <span class="col-md-7">
+            [B24]
+          </span>
+        </div>
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Número
+          </label>
+          <span class="col-md-7">
+            [B25]
+          </span>
+        </div>  
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Cidade
+          </label>
+          <span class="col-md-7">
+            [B28]
+          </span>
+        </div>  
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Estado
+          </label>
+          <span class="col-md-7">
+            [B29]
+          </span>
+        </div>  
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Bairro
+          </label>
+          <span class="col-md-7">
+            [B27]
+          </span>
+        </div>  
+
+        <div class="form main-clear main-overflow required">
+          <label class="col-md-3 text-right main-clearPadding main-padding">
+            Complemento
+          </label>
+          <span class="col-md-7">
+            [B26]
+          </span>
+        </div>                                
+    </div>
+    <div class="col-md-5">
+      <h4 class="heading-collection main-padding">// Dados do Responsável</h4>
+      <p class="main-padding">Essas informações são somemente para conferência. Caso deseja que outra pessoa seja responsável pela lista realize o login com outra conta.</p>
+      <br />
+      <div class="giftlist-info">
+        <div class="main-padding"><strong>Nome:</strong>&nbsp;[B15]</div>
+        <div><strong>CPF/CNPJ:</strong>&nbsp;[B16]</div>
+        <div class="main-padding"><strong>Telefone:</strong>&nbsp;[B17]-[B18]</div>
+        <div><strong>Email:</strong>&nbsp;[B19]</div>
+      </div>
+    </div>
+  </div>
+  <div class="main-overflow">
+    <condicao:regra>
+    <div class="main-overflow main-padding">
+        <div class="main-overflow main-padding">
+          <h4 class="heading-collection">// Regulamento</h4>
+          <p>Antes de cadastrar sua lista é necessário que você concorde com os termos abaixo.</p>
+        </div>
+        <div id="regras">
+          [B33] 
+        </div>
+        <div class="main-padding">
+          <span class="pull-left">
+            <a href="javascript: printDiv('regras', 'Regas')" class="btn btn-secondary">
+              Imprimir lista
+            </a>
+          </span>
+          <label class="pull-right main-padding">
+                    <span class="pull-left">[B35]</span> <span>Li e estou de acordo com o regulamento</span>
+          </label>
+        </div>
+    </div>
+    </condicao:regra>    
+  </div>
+  <div class="main-overflow main-padding20 text-right">
+    <a href="[B40]" class="bt btn-primary text-uppercase text-center">salvar lista</a>
+  </div>
+</div>  
+]]></FormularioListaPresentesDadosGeraisHTML><ListaPresentesCadastroHTML><![CDATA[<div class="main-overflow main-clear main-padding20">
+    [A2]
+    [A1]
+    [A0]
+</div>
+
+<script>
+  
+function printDiv(id, pg) {
+    var oPrint, oJan;
+    oPrint = window.document.getElementById(id).innerHTML;
+    oJan = window.open(pg,'_blank','width=300,height=400');
+    oJan.document.write(oPrint);
+    oJan.focus();
+    oJan.window.print();
+    window.onafterprint(setTimeout("oJan.document.close()",50));
+}
+    
+</script>]]></ListaPresentesCadastroHTML><MensagemAlertaListaPresentesCadastroHTML><![CDATA[<div class="alert alert-warning" role="alert" id="erro">
+        <h5>[C0]</h5>
+        <ul class="main-clearPadding">
+          <repeticao:erro>
+            <li>[C1]</li>
+          </repeticao:erro>
+        </ul>
+</div>
+]]></MensagemAlertaListaPresentesCadastroHTML><MensagemSucessoListaPresentesCadastroHTML><![CDATA[<div class="alert alert-success" role="alert">
+  <h6>Seu cadastro foi realizado com sucesso.</h6>
+  <div class="main-overflow main-padding">
+    <a href="[D0]" class="btn btn-primary">Continuar</a>
+  </div>
+</div>
+]]></MensagemSucessoListaPresentesCadastroHTML><QuantidadeLinhasCampoMensagem value="10" /><TamanhoImagemAltura value="150" /><TamanhoImagemLargura value="200" /></ListaPresentesCadastro></ListaPresentesCadastros></controles></page>

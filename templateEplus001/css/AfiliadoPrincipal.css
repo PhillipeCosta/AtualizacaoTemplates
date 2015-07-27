@@ -1,0 +1,163 @@
+.conteudo_fixo{
+	margin-top: 20px !important;
+}
+
+.box-tit-afiliados{
+	padding: 5px 10px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.conteudo_afiliado_principal{
+    clear: both;
+    margin: 40px auto 0;
+}
+
+.informacoes_conta{
+    margin: 5px 0;
+    overflow: hidden;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.informacoes_conta .informacoes_esq, .informacoes_conta .informacoes_dir{
+  width:  340px;
+  margin: 0 15px;
+  padding: 10px;
+}
+
+.informacoes_conta .informacoes_esq{
+  float: left;
+}
+
+.informacoes_conta .informacoes_dir{
+  float: right;
+}
+
+.informacoes_conta strong{
+    display: block;
+    font-size: 12px;
+    padding: 5px 0 0;
+}
+
+.informacoes_conta span{
+    color: #000;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.informacoes_conta .bt_editar_conta{
+  float: right;
+  clear: both;
+}
+
+#painel_afiliados{
+  height: auto;
+  margin-top: 40px;
+}
+
+#painel_afiliados .coluna_esq_afiliados{
+    float: left;
+    margin-right: 20px;
+    width: 282px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.coluna_esq_afiliados h5{
+    font-size: 17px;
+    font-weight: normal;
+    padding: 7px 14px;
+    text-transform: uppercase;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.coluna_esq_afiliados .primeiros_passos{
+    padding: 0 9px;
+}
+
+.tit_box_afiliado h6{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.coluna_esq_afiliados .primeiros_passos_container{
+    margin-bottom: 6px;
+    padding: 10px 0;
+}
+
+.coluna_esq_afiliados .primeiros_passos textarea, .coluna_esq_afiliados .primeiros_passos p{
+    background: none repeat scroll 0 0 #fff;
+	color: #5a5a5a;
+    border: 0 none;
+    font-size: 12px;
+    overflow: auto;
+    padding: 14px 9px;
+    resize: none;
+}
+
+.primeiros_passos textarea.inicial{
+    height: 45px;
+    width: 244px;
+}
+
+.primeiros_passos textarea.departamento{
+  width: 244px;
+  height: 56px;
+}
+
+.primeiros_passos textarea.produto{
+  width: 244px;
+  height: 85px;
+}
+
+.conteudo_afiliados{
+    float: right;
+    height: auto;
+    width: 640px;
+}
+
+.opcoes_afiliados{
+  height: 95px;
+  margin: 0 0 55px;
+}
+
+.opcoes_afiliados_img{
+    float: left;
+    margin-right: 20px;
+    padding: 10px 0;
+    width: 77px;
+}
+
+.opcoes_afiliados h5{
+    display: block;
+    font-size: 13.34px;
+    padding: 5px 0 0;
+    text-transform: uppercase;
+}
+
+.opcoes_afiliados ul{
+    float: left;
+    list-style: none outside none;
+    padding: 5px 0;
+}
+
+.opcoes_afiliados ul li{
+    color: #000000;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.opcoes_afiliados .bt_opcoes_gerenciar{
+    clear: both;
+    margin-top: 5px;
+    text-align: right;
+}

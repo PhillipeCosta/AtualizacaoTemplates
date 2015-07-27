@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Convidados><Convidado ID="Convidado1"><LoginConvidadoHTML><![CDATA[@using (Html.BeginForm()) {  
+    <div class="form_esq">
+       <div class="heading-special">
+         <h2>DADOS CADASTRAIS</h2>
+       </div>
+        <div class="form_entrega">
+            <div class="list_entrega tipo_pessoa">
+                <label>
+                   @Html.InputRadio("Customer.CustomerType", "Person").AddClass("radio").TabIndex("1") <span>Pessoa Física</span>
+                </label>
+                <label>
+                    @Html.InputRadio("Customer.CustomerType", "Company").AddClass("radio").TabIndex("2") <span>Pessoa Jurídica</span>
+                </label>
+            </div>
+            <div class="list_entrega parent-validation form">
+                <label>
+                    <span class="tit_label_entrega obrigatorio form-field-name">Nome Completo</span>
+                    @Html.InputText("Customer.Name").Maxlength("100").TabIndex("3")
+                </label>
+            </div>                          
+            <div class="list_entrega parent-validation form">
+                <label class="larg_50">
+                    <span class="tit_label_entrega obrigatorio documentid form-field-nameRequired">CPF</span>
+                    @Html.InputText("Customer.DocumentId").Maxlength("18").TabIndex("4")
+                    <small class="exampledocumentid">(000.000.000-00)</small>
+                </label>
+            </div>              
+            <div class="list_entrega parent-validation form">  
+                <label class="larg_50">
+                    <span class="tit_label_entrega obrigatorio form-field-nameRequired regionalDocumentId-name">RG</span>
+                    @Html.InputText("Customer.RegionalDocumentId").Maxlength("20").TabIndex("5")
+                </label>
+                <label class="checkComplemento" style="display: none;">
+                    <input id="chkIsentoInscricaoEstadual" type="checkbox" /> <span>Isento</span>
+                </label>
+            </div>          
+            <div class="list_entrega parent-validation form">
+                <label class="larg_20">
+                    <span class="tit_label_entrega obrigatorio form-field-nameRequired">Telefone Principal</span>
+                    @Html.InputText("Customer.PhoneAreaCode").Maxlength("2").AddClass("txtDDD").TabIndex("6")
+                </label>
+                <label class="larg_30">
+                    @Html.InputText("Customer.PhoneNumber").Maxlength("10").TabIndex("7")
+                </label>
+            </div> 
+            <div class="list_entrega form">
+                <label class="larg_20">
+                    <span class="tit_label_entrega form-fieldName">Telefone Alternativo</span>
+                    @Html.InputText("Customer.PhoneAreaCodeAlternative").Maxlength("2").AddClass("txtDDD").TabIndex("8")
+                </label>
+                <label class="larg_30">
+                    @Html.InputText("Customer.PhoneNumberAlternative").Maxlength("10").TabIndex("9")
+                </label>
+                <small>Opcional</small>
+            </div>
+            <div class="list_entrega parent-validation form">
+                <label>
+                    <span class="tit_label_entrega obrigatorio form-field-nameRequired">Email</span>
+                    @Html.InputText("Customer.Email").Maxlength("100").TabIndex("10")
+                </label>
+            </div>
+            <div class="list_entrega centro form">
+                @Html.InputCheckBox("Customer.AcceptsMarketing")
+                @Html.LabelText("Customer.AcceptsMarketing", "Gostaria de receber emails com lançamentos e promoções")
+            </div>                            
+
+        </div>                        
+    </div>
+    if (Model.IsGiftList) {
+        <div class="form_dir">
+          <div class="heading-special">
+            <h2>ONDE ENTREGAMOS?</h2>
+          </div>
+      <div class="presente_entrega">
+                <div class="dados_presente heading-primary">
+                    <span>Este produto vai ser entregue para:</span>
+                    <strong>@Model.ShippingAddresses.RecipientName</strong>
+                    <strong>@Model.ShippingAddresses.Street, @Model.ShippingAddresses.StreetNumber</strong>
+                    <strong>@Model.ShippingAddresses.District - @Model.ShippingAddresses.City,@Model.ShippingAddresses.State</strong>
+                </div>
+            </div>
+        </div>
+
+    }else{
+
+        <div class="form_dir">
+          <div class="linha_title">
+            <div class="heading-special">
+              <h2>DADOS DE ENTREGA</h2>
+            </div>
+            </div>
+            <div class="form_entrega" style="margin: 0;">
+                <div class="list_entrega cep form">
+                        <label>
+                            <span class="tit_label_entrega obrigatorio form-field-nameRequired">Digite primeiro o CEP: <a href="javascript:callSearchZipCode('ShippingAddresses_ZipCode')">(Esqueci meu CEP)</a></span>
+                            @Html.InputText("ShippingAddresses.ZipCode").Maxlength("9").TabIndex("10")
+                            <a href="javascript:void(0);" class="bt-calcular btn-secondary">Ok</a> 
+                        </label>
+                </div>
+                <div class="list_entrega parent-validation entrega_oculta form">
+                    <label>
+                        <span class="tit_label_entrega obrigatorio form-field-nameRequired">Endereço</span>
+                        @Html.InputText("ShippingAddresses.Street").Maxlength("200").TabIndex("11")
+                    </label>
+                </div> 
+                <div class="list_entrega parent-validation entrega_oculta form">
+                    <label class="larg_50">
+                        <span class="tit_label_entrega obrigatorio form-field-nameRequired">Número</span>
+                        @Html.InputText("ShippingAddresses.StreetNumber").Maxlength("10").TabIndex("12")
+                    </label>
+                </div>
+                <div class="list_entrega entrega_oculta form">
+                    <label class="larg_30">
+                        <span class="tit_label_entrega form-fieldName">Complemento</span>
+                        @Html.InputText("ShippingAddresses.StreetComplement").Maxlength("50").TabIndex("13")
+                        <small>Opcional</small>
+                    </label>
+                </div>   
+                <div class="list_entrega parent-validation entrega_oculta form">
+                    <label class="larg_30">
+                        <span class="tit_label_entrega obrigatorio form-field-nameRequired">Bairro</span>
+                        @Html.InputText("ShippingAddresses.District").Maxlength("80").TabIndex("14")
+                    </label>
+                </div>  
+                <div class="list_entrega parent-validation entrega_oculta form">
+                    <label>
+                        <span class="tit_label_entrega obrigatorio form-field-nameRequired">Cidade</span>
+                        @Html.InputText("ShippingAddresses.City").Maxlength("100").TabIndex("15")
+                    </label>
+                </div>
+                <div class="list_entrega parent-validation entrega_oculta form">
+                    <label>
+                        <span class="tit_label_entrega obrigatorio form-field-nameRequired">Estado</span>
+                        @Html.InputDropdown("ShippingAddresses.State", "States", "Selecione um estado").TabIndex("16")
+                    </label>
+                </div>   
+                <div id="cobranca" class="entrega_oculta form">
+                    <strong>Este é seu endereço de cobrança?</strong>
+                    <a href="#" class="tooltip"><span>Usaremos essa informação apenas para dar mais segurança a sua compra. Preencha os campos com o local onde você recebe suas faturas (cartões, celular, etc).</span>
+                  </a>
+                    <div class="list_entrega centro form" style="padding: 0px; margin: 0px;">
+                        <label>
+                            @Html.InputRadio("IsSameBillingAddress", "True").AddClass("radio").TabIndex("17") <span>Sim</span>
+                        </label>
+                        <label>
+                            @Html.InputRadio("IsSameBillingAddress", "False").AddClass("radio").TabIndex("18") <span>Não</span>
+                        </label>
+                    </div>
+                </div>                            
+
+            </div>
+        </div>
+    }
+
+
+    <div class="form_dir enderecoCobranca @if (Model.IsGiftList)
+        {
+        @:mostra
+        }
+    ">
+      <div class="heading-special">
+        <h2>DADOS DE COBRANÇA</h2>
+      </div>
+        <div class="form_entrega" style="margin: 0;">
+            <div class="list_entrega cep form">
+                    <label>
+                        <span class="tit_label_entrega obrigatorio form-field-nameRequired">Digite primeiro o CEP: <a href="javascript:callSearchZipCode('ShippingAddresses_ZipCode')">(Esqueci meu CEP)</a></span>
+                        @Html.InputText("Customer.BillingAddress.ZipCode").Maxlength("9").TabIndex("19")
+                        <a href="javascript:void(0);" class="bt-calcular btn-secondary">Ok</a> 
+                    </label>
+            </div>
+
+            <div class="list_entrega parent-validation form">
+                <label>
+                    <span class="tit_label_entrega obrigatorio form-field-nameRequired">Endereço</span>
+                    @Html.InputText("Customer.BillingAddress.Street").Maxlength("200").TabIndex("20")
+                </label>
+            </div> 
+            <div class="list_entrega parent-validation form">
+                <label class="larg_50">
+                    <span class="tit_label_entrega obrigatorio form-field-nameRequired">Número</span>
+                    @Html.InputText("Customer.BillingAddress.StreetNumber").Maxlength("10").TabIndex("21")
+                </label>
+            </div>
+            <div class="list_entrega form">
+                <label class="larg_30">
+                    <span class="tit_label_entrega form-fieldName">Complemento</span>
+                    @Html.InputText("Customer.BillingAddress.StreetComplement").Maxlength("50").TabIndex("22")
+                    <small>Opcional</small>
+                </label>
+            </div>   
+            <div class="list_entrega parent-validation form">
+                <label class="larg_30">
+                    <span class="tit_label_entrega obrigatorio form-field-nameRequired">Bairro</span>
+                    @Html.InputText("Customer.BillingAddress.District").Maxlength("80").TabIndex("23")
+                </label>
+            </div>  
+            <div class="list_entrega parent-validation form">
+                <label>
+                    <span class="tit_label_entrega obrigatorio form-field-nameRequired">Cidade</span>
+                    @Html.InputText("Customer.BillingAddress.City").Maxlength("100").TabIndex("24")
+                </label>
+            </div>
+            <div class="list_entrega parent-validation form">
+                <label>
+                    <span class="tit_label_entrega obrigatorio form-field-nameRequired">Estado</span>
+                    @Html.InputDropdown("Customer.BillingAddress.State", "States", "Selecione um estado").TabIndex("25")
+                </label>
+            </div>                             
+        </div>
+    </div>
+
+    <div class="bt_continuar_entrega @if (!Model.IsGiftList)
+    { 
+        @:entrega_oculta
+    } 
+    ">
+    @Html.ButtonSubmit("Enviar").AddClass("box-bt btn-special")
+    </div>
+}
+]]></LoginConvidadoHTML></Convidado></Convidados><Links><Link ID="Identificacao"><Destino value="DestinoAtual" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="&lt;div class=&quot;bt-sou-cliente bt-secundario&quot;&gt;Já sou cliente e quero usar meu login e senha&lt;/div&gt;" /><UsarHTTPS value="True" /></Link></Links><Banners><Banner ID="Fullzao" /></Banners><Widgets><Widget ID="teste_log"><WidgetUsado value="139" /></Widget></Widgets><ScriptRazors><ScriptRazor ID="titlePage"><ScriptRazorHTML><![CDATA[@TemplateSettings.main_storeName]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CadastroDeAfiliados><CadastroDeAfiliado ID="CadastroDeAfiliado"><CadastroAfiliadoHTML><![CDATA[    <ul class="subtitulo_afiliados">
+    <li>Campos marcados com * são obrigatórios.</li>
+  </ul>
+  <div class="afiliados_ajuda">
+    <a href="#" class="abrir_ajuda">Precisa de ajuda? clique aqui</a>
+  </div>
+        <div class="formulario afiliados_conteudo">
+            <div class="tit_box_full">
+                <h2><span>Dados Bancários</span></h2>
+            </div>
+                <div class="afiliados_dados_bancarios">
+                    <ul>
+                        <li>Preencha os campos abaixo com seus dados bancários para que a comissão sobre a venda realizada seja creditada em sua conta.</li>
+                    </ul>
+                </div>
+            <div class="list">
+                <label class="larg_75">
+                  <span class="tit_label pt">Banco</span>
+                  [A3]
+                </label>
+            </div>
+            <div class="list">
+                <label class="larg_75">
+                  <span class="tit_label pt">Agência</span>
+                  [A4]
+                </label>
+            </div>
+            <div class="list">
+                <label class="larg_75">
+                  <span class="tit_label pt">Conta</span>
+                  [A5]
+                </label>
+            </div>
+            <div class="list">
+                <label class="larg_75">
+                  <span class="tit_label pt">Nome do titular da conta</span>
+                  [A6]
+                </label>
+            </div>
+            <div class="tit_box_full">
+                <h2><span>URL do Site</span></h2>
+            </div>
+            <div class="list">
+                <label class="larg_100">
+                  <span class="tit_label pt">URL(s) de seu(s) site(s)/blog(s)</span>
+                  [A2]<small>(Separado por vírgulas)</small>
+                </label>
+            </div>
+            <div class="tit_box_full">
+                <h2><span>Termo de Adesão</span></h2>
+            </div>
+            <div class="termo_aceite">
+                <div style="width: 940px;  height: 200px; border: 1px solid #ccc; overflow: auto; margin-left: 20px;">
+                  [K0]
+                </div>
+            </div>
+            <fieldset class="termo_aceite">
+                [K1] <strong>Concordo com o termo de adesão de programa de afiliados<br />e quero participar!</strong>
+            </fieldset>
+        </div>
+    <div class="bt_direita">
+            <a href="#" onclick="[A7]">
+              <img src="imagens/bt_alterarcadastro.png?1" alt="AlterarCadastro" border="0" />
+            </a>
+    </div>
+]]></CadastroAfiliadoHTML><CssComponente><![CDATA[]]></CssComponente><FormatacaoAfiliadoHTML><![CDATA[<div class="respiro">
+  <h2 class="titulo_pedido titulo_afiliados_conta">
+    Gerenciar Conta
+  </h2>
+  <div id="afiliados">
+    [C0][C1][C2]
+  </div>
+</div>  
+]]></FormatacaoAfiliadoHTML><SucessoCadastroAfiliadoHTML><![CDATA[<div id="sucesso">
+    <div class="lista_sucesso" style="background-position: left -8px;">
+        Cadastro alterado com sucesso!
+    </div>
+</div>
+]]></SucessoCadastroAfiliadoHTML><TermoAfiliadoHTML><![CDATA[]]></TermoAfiliadoHTML><ValidacaoCadastroAfiliadoHTML><![CDATA[<div id="erro">
+    <div class="lista_erro">
+        <h2>Ocorreu os seguintes erros:</h2>
+        <ul>
+            <repeticao:erro>
+                <li>[B0]</li>
+            </repeticao:erro>
+        </ul>
+    </div>
+</div>
+]]></ValidacaoCadastroAfiliadoHTML></CadastroDeAfiliado></CadastroDeAfiliados></controles></page>

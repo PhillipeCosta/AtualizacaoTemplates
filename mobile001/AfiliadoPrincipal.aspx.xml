@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AfiliadoPrincipals><AfiliadoPrincipal ID="AfiliadoPrincipal1"><AfiliadoPrincipalHTML><![CDATA[
+						<b>Banners</b><br />
+						Escolha as opções de Banner disponíveis na [A0] para colocar em seu site.<br /><br />
+
+						<b>Vitrine Online</b><br />
+						Adicione uma vritrine online no seu site com os produtos mais procurados da [A0] e tenha sempre seu site atualizado!<br /><br />
+
+						<b>Relatórios</b><br />
+						Verifique a performance de seu site quanto a visitas, vendas/comissões e pagamentos.<br /><br />
+
+						<b>Alterar Dados</b><br />
+						Altere seus dados cadastrais.<br /><br />
+
+						<b>Help</b><br />
+            Se ainda tem duvidas, <a href="#" class="abrir_ajuda">clique aqui</a>
+					]]></AfiliadoPrincipalHTML><CssComponente><![CDATA[]]></CssComponente></AfiliadoPrincipal><AfiliadoPrincipal ID="AfiliadoPrincipal"><AfiliadoPrincipalHTML><![CDATA[]]></AfiliadoPrincipalHTML><CssComponente><![CDATA[]]></CssComponente></AfiliadoPrincipal></AfiliadoPrincipals><AfiliadoLogados><AfiliadoLogado ID="AfiliadoLogado"><AfiliadoLogadoHTML><![CDATA[<div class="tit_box_minha_conta">
+    <h2>MINHA CONTA</h2>
+</div>
+<div class="informacoes_conta">
+  <div class="informacoes_esq">
+      <strong>Nome:</strong>
+      <span>[A0]</span>
+      <strong>Email:</strong>
+      <span></span>
+      <strong>Código de Afiliado:</strong>
+      <span>[A1]</span>
+      <strong>URL(s) cadastrada(s):</strong>
+      <span>[A3]</span>
+  </div>
+  <div class="informacoes_dir">
+      <strong>Banco cadastrado:</strong>
+      <span>[A4]</span>
+      <strong>Agência:</strong>
+      <span>[A5]</span>
+      <strong>Conta:</strong>
+      <span>[A8]</span>
+      <strong>Nome do titular:</strong>
+      <span>[A6]</span>
+  </div>
+  <div class="bt_editar_conta">
+      <input type="image" src="imagens/bt_editar_conta.png?1" alt="Editar Conta" onclick="[A7]" />
+  </div>
+</div>]]></AfiliadoLogadoHTML><CssComponente><![CDATA[]]></CssComponente></AfiliadoLogado></AfiliadoLogados><AfiliadoUrlExemplos><AfiliadoUrlExemplo ID="AfiliadoUrlExemplo"><AfiliadoUrlExemploHTML><![CDATA[
+          Pagina inicial: [A0]
+          Pagina Departamento: [A1]
+          Pagina Produto: [A2] 
+          ]]></AfiliadoUrlExemploHTML><CssComponente><![CDATA[]]></CssComponente></AfiliadoUrlExemplo></AfiliadoUrlExemplos><Links><Link ID="Vitrine"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="bt_afiliado_vitrine.png" /><PaginaLoja value="AfiliadoVitrine" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Vitrine" /><UsarHTTPS value="False" /></Link><Link ID="Banners"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="bt_afiliado_banner.png" /><PaginaLoja value="AfiliadoBanners" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Banners" /><UsarHTTPS value="False" /></Link><Link ID="Vendas"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="bt_afiliado_relatorio.png" /><PaginaLoja value="AfiliadoRelatorioVendas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Vendas" /><UsarHTTPS value="False" /></Link><Link ID="Visitas"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="bt_afiliado_relatorio.png" /><PaginaLoja value="AfiliadoRelatorioVisitas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Visitas" /><UsarHTTPS value="False" /></Link><Link ID="Menu_home"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link><Link ID="Menu_banners"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link><Link ID="Menu_vitrine"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link><Link ID="Menu_Vendas"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link><Link ID="Menu_visitas"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link><Link ID="EmailDivulgacao"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="bt_afiliado_email.png" /><PaginaLoja value="AfiliadoDivulgaEmail" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Email de Divulgação do Afiliado" /><UsarHTTPS value="False" /></Link><Link ID="Clientes"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="bt_afiliado_relatorio.png" /><PaginaLoja value="AfiliadoRelatorioClientes" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Clientes" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="Topo_Fullzao" /></Banners></controles></page>

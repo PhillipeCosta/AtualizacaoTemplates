@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja" NomeAmigavel="" Visible="True" /></CaixaAguardeLojas><IdentificacaoCompradors><IdentificacaoComprador ID="IdentificacaoComprador"><EditarCadastro value="True" /><FormularioNovoCadastroEnderecoHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Dados de entrega&nbsp;&nbsp;<span class="fa fa-truck"></span></h2>      
+  <span class="ciashop-cantoTit"></span>      
+  <hr />
+</div> 
+<div class="ciashop-form">
+<div class="form-group ciashop-overflow text-center" style="width: 100%">
+      <label>&nbsp;</label>
+      &nbsp;
+</div>  
+<div class="form-group col-md-12">
+  <label>CEP <small><a href="javascript:callSearchZipCode('txtCep')">(Esqueceu o CEP?)</a></small></label>
+  [I2]
+</div>   
+<div class="form-group col-md-6">
+  <label>Nome do local *<small> (Ex: casa, apto, etc)</small></label>
+  [I5]
+</div>      
+<div class="form-group col-md-6">
+  <label>Endereço *</label>
+  [I7]
+</div>        
+<div class="form-group col-md-6">
+  <label>Número</label>
+  [I9]
+</div>        
+<div class="form-group col-md-6">
+  <label>Complemento</label>
+  [I11]
+</div>   
+<div class="form-group col-md-6">
+  <label>Bairro *</label>
+  [I13]
+</div>
+<div class="form-group col-md-6">
+  <label>Cidade *</label>
+  [I15]
+</div>   
+<div class="form-group col-md-6">
+  <label>Estado *</label>
+  [I17]
+</div>        
+<div class="form-group col-md-6">
+  <label>Ponto de referência *</label>
+  [I19]
+</div>   
+  <div class="form-group col-md-12">
+     <label>&nbsp;</label>
+     <a href="javascript:void(0);" onclick="[I31]" type="submit" class="btn btn-primary pull-right" style="margin: 0 !important; width: 100%;">Salvar e Continuar</a>  
+  </div>
+</div>]]></FormularioNovoCadastroEnderecoHTML><FormularioNovoCadastroHTML><![CDATA[      <div class="ciashop-titBox heading-primary">
+        <h2>Dados Pessoais&nbsp;&nbsp;<span class="fa fa-user"></span></h2>      
+        <span class="ciashop-cantoTit"></span>      
+        <hr />
+      </div>
+<div class="ciashop-form">
+<div class="form-group ciashop-overflow text-center col-md-12">
+  <condicao:tipo_pessoa>        
+      <div class="radio-inline">[H36]</div>
+      <div class="radio-inline">[H37]</div>
+  </condicao:tipo_pessoa>
+</div>  
+<div class="form-group col-md-12">
+  <label>Nome Completo *</label>
+  [H7]
+</div>     
+<condicao:pessoa_fisica>               
+  <div class="form-group col-md-6">
+    <label>Data de Nascimento *</label>
+    [H16]
+  </div>
+  <div class="form-group col-md-6">
+    <label>Estado Civil</label>
+    [H23]
+  </div> 
+  <div class="form-group col-md-6">
+    <label>Sexo *</label>
+    [H18]
+  </div>            
+  <div class="form-group col-md-6">
+    <label>CPF *</label>
+    [H21]
+  </div>
+  <div class="form-group col-md-6">
+    <label>RG *</label>
+    [H26]
+  </div> 
+  <div class="form-group col-md-6">
+    <label>Estado Emissor</label>
+    [H28]
+  </div>      
+</condicao:pessoa_fisica>
+<condicao:pessoa_juridica>
+  <div class="form-group col-md-6">
+    <label>CNPJ *</label>
+    [H31]
+  </div> 
+  <div class="form-group col-md-6">
+    <label>Inscrição Estadual *</label>
+    [H33]
+  </div>   
+</condicao:pessoa_juridica>
+<div class="form-group ciashop-overflow col-md-6">
+  <label style="display: block;">Telefone Principal *</label>
+  <div class="col-md-2 ciashop-paddingNone ciashop-formTelDDD">[I22]</div>
+  <div class="col-md-10 ciashop-formTel" style="padding-right: 0;">[I23]</div>
+</div>
+<div class="form-group ciashop-overflow col-md-6">
+  <label style="display: block;">Telefone Secundário</label>
+  <div class="col-md-2 ciashop-paddingNone ciashop-formTelDDD">[I26]</div>
+  <div class="col-md-10 ciashop-formTel" style="padding-right: 0;">[I27]</div>  
+</div>  
+<div class="form-group col-md-6">
+  <label>Crie sua senha *</label>
+  [H9]
+  <span class="help-block">(Mínimo 5 caracteres)</span>  
+</div>  
+<div class="form-group col-md-6">
+  <label>Digite novamente sua senha *</label>
+  [H11]
+  <span class="help-block">(Mínimo 5 caracteres)</span>  
+</div>   
+</div>  ]]></FormularioNovoCadastroHTML><IdentificacaoCompradorGeralHTML><![CDATA[<div class="identification form">
+    [A4]
+        <div class="ciashop-form ciashop-formCenter">
+            [A0] [A1] [A2] [A3]
+        </div>
+        [A5]
+        <div>
+            <div class="col-md-6">
+                [A6]
+            </div>
+            <div class="col-md-6">
+                [A7]
+            </div>
+        </div>
+</div>  
+]]></IdentificacaoCompradorGeralHTML><IdentificaCompradorHTML><![CDATA[<div class="form-group">
+        <label>Digite seu Email</label>
+      [D1]
+</div>  
+<div class="form-group">
+        <label>Digite sua senha</label>
+      [D15]
+</div>  
+<div class="ciashop-overflow ciashop-clear pull-right">
+  <a href="[D10]"><small>Esqueceu a senha?</small></a>
+  <a href="javascript:void(0);" onclick="[D2]" type="submit" class="btn btn-primary">Acessar</a>
+</div>
+            <h2><a href="[D11]">[D5]</a></h2>
+            <p><a href="[D11]">[D6]</a></p>
+            <h2><a href="[D12]">[D7]</a></h2>
+            <p><a href="[D12]">[D8]</a></p>]]></IdentificaCompradorHTML><MensagemAlertaHTML><![CDATA[<div class="alert alert-warning">
+   <strong><span class="fa fa-warning"></span>&nbsp;[F0]</strong>
+  <ul>
+     <repeticao:erro>
+       <li><span class="fa fa-angle-right"></span>[F1]</li>
+     </repeticao:erro>
+  </ul>
+</div>]]></MensagemAlertaHTML><MensagemSucessoHTML><![CDATA[    <div class="alert alert-success">
+         <strong><span class="fa fa-thumbs-up"></span>&nbsp;[J0]</strong>
+    </div>]]></MensagemSucessoHTML><NovaCompraHTML><![CDATA[<div class="alert alert-info" role="alert" style="text-align: center;">
+   <h3 style="margin: 10px 0;"><strong>Esta é a sua primeira compra! Agradecemos sua preferência.</strong></h3>
+   <p>Para prosseguir será necessário o preenchimento do formulário abaixo. É fácil e rápido.</p>
+</div>]]></NovaCompraHTML><RecuperarSenhaHTML><![CDATA[<div class="form-group">
+        <label>Digite seu email e enviaremos sua senha por email.</label>
+      [E1]
+</div>   
+<div class="ciashop-overflow">
+  <a href="[E2]" type="submit" class="btn btn-primary pull-right">Recuperar senha</a>
+</div>   ]]></RecuperarSenhaHTML><VerificarEmailHTML><![CDATA[<div class="form-group">
+        <label>Digite seu Email</label>
+      [B1]
+</div>  
+<div class="ciashop-overflow ciashop-clear pull-right">
+  <a href="[B9]"><small>Esqueceu a senha?</small></a>
+  <a href="javascript:void(0);" onclick="[B2]" type="submit" class="btn btn-primary">Acessar</a>
+</div>]]></VerificarEmailHTML><VerificarNovamenteEmailHTML><![CDATA[<div class="form-group">
+        <label>Digite seu Email</label>
+      [C1]
+</div>  
+<div class="ciashop-overflow ciashop-clear">
+  <a href="[C10]" type="submit" class="btn btn-primary pull-right">Verificar email novamente</a>
+</div> 
+]]></VerificarNovamenteEmailHTML></IdentificacaoComprador></IdentificacaoCompradors><Links><Link ID="LinkAjuda"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Ajuda" /><UsarHTTPS value="False" /></Link><Link ID="PaginaInicial"><CssComponente><![CDATA[]]></CssComponente><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Continuar comprando" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="Fullzao" /></Banners><Carrinhos><Carrinho ID="Carrinho1"><CarrinhoHTML><![CDATA[]]></CarrinhoHTML><CarrinhoItensEditavel value="True" /><CarrinhoVazioHTML><![CDATA[]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[]]></MensagemAlertaValorMinimoHTML><TamanhoImagem value="Pequenas" /></Carrinho></Carrinhos><SEOs><SEO ID="seo" /></SEOs><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

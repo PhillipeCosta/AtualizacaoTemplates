@@ -1,0 +1,96 @@
+.busca_vazio{
+    color: #145FA6;
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.busca_vazio span{
+    color: #333;
+    font-weight: bold;
+}
+
+#filtros_busca{
+    background: url("../imagens/bg_refinar.png") no-repeat scroll center top transparent;
+    margin: 7px 0 0 5px;
+    padding: 36px 0 0;
+    width: 190px;
+}
+
+.filtros_busca_conteudo{
+    overflow: hidden;
+    padding-bottom: 10px;
+    border: 1px solid #d4d4d4;
+}
+
+.filtros_busca_conteudo h2{
+    color:#B3080F;
+    font-size:13px;
+    margin:5px;
+    text-decoration:none;
+}
+
+.filtros_busca_conteudo fieldset{
+    border: none;
+}
+
+.filtros_busca_conteudo label{
+    display: block;
+    margin:9px 0 3px 10px;
+}
+
+.filtros_busca_conteudo {
+    padding: 5px;
+}
+
+.filtros_busca_conteudo select{
+    width: 90%;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+
+.filtros_busca_conteudo ul{
+    text-align: left;
+    list-style: none;
+}
+
+.filtros_busca_conteudo ul li{
+    padding: 3px 5px 3px 10px;
+}
+
+.filtros_busca_conteudo ul li a{
+    color: #062a59;
+    text-align: left;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.filtros_utilizados{
+    margin: 10px 0;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.filtros_utilizados h2{
+    color: #000;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.filtros_utilizados ul{
+    list-style: none;
+}
+
+
+.filtros_utilizados ul li{
+    border: 1px solid #ccc;
+    margin: 5px;
+    float: left;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.filtros_utilizados ul li img{
+    margin-left: 3px;
+}

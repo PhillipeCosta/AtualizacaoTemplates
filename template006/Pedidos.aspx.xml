@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><VisualizacaoPedidos><VisualizacaoPedido ID="order_info"><TamanhoImagem value="Gigantes" /><VisualizacaoPedidoHTML><![CDATA[<div class="custom-paddingV10 custom-overflow">
+  <div class="col-md-3 custom-clearPadding">
+    <div class="order-number text-center custom-paddingH10" style="border: 1px solid #ccc;">
+      <h4 class="text-uppercase custom-paddingV10"><strong>Número do Pedido</strong></h4>
+      <h2 class="btn-secondary custom-paddingV5 custom-paddingH5">[A0]</h2>
+      <h6 class="text-center custom-paddingV10">A confirmação do pedido foi enviada para o e-mail: <strong>[A1]</strong></h6>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="custom-overflow text-left">
+      <p><strong>Dados da compra</strong></p>  
+      <p><strong>Status do pedido:</strong> [A2]</p>
+      <p><strong>Forma de pagamento:</strong> [A5]</p>    
+      <condicao:boleto>
+          <p style="display: block; margin: 10px 0;">
+            <a href="javascript: window.open('[A6]','Boleto','toolbar=no,location=no,status=no,menubar=yes, scrollbars=yes,resizable=yes,width=670,height=500'); void(0);" class="btn btn-Print btn-primary text-uppercase text-center custom-paddingH10 custom-paddingV10">Reimprimir Boleto</a></p>
+          <p><strong>Atenção:</strong> Uma nova janela será aberta com o boleto.</p>
+          <p><strong>Atenção</strong> Ver data de vencimento no boleto, após o prazo seu pedido será cancelado.</p>
+    </condicao:boleto>
+      <condicao:afiliado>
+      	<p class="main-affiliateLink"><strong>Afiliado:</strong> [A34] - [A35] </p>
+      </condicao:afiliado>       
+    </div>    
+  </div>
+</div>
+<div class="custom-clear custom-overflow custom-paddingV10">
+  <h5 class="text-uppercase custom-paddingV10"><strong>Itens do pedido</strong></h5>
+  <div class="col-md-12">
+    <div class="col-md-2 main-clearPadding">&nbsp;</div>
+    <div class="col-md-4"><h5 class="text-uppercase text-left heading-primary"><strong>Produto</strong></h5></div>
+    <div class="col-md-2"><h5 class="text-uppercase text-center heading-primary"><strong>Valor</strong></h5></div>
+    <div class="col-md-3"><h5 class="text-uppercase text-center heading-primary"><strong>Subtotal</strong></h5></div>
+    <div class="col-md-1">&nbsp;</div>
+    <repeticao:produtos>
+      <div class="custom-clear custom-overflow custom-paddingV30 cart-listItem">
+        <div class="cart-image text-center col-md-2 main-clearPadding">
+          <img src="[A8]?width=100&height=100" alt="[A4]" />
+        </div>
+        <div class="text-left col-md-4 custom-paddingV15">
+          <p><strong>[A7]</strong></p>
+          <div class="form cart-input-qtd custom-paddingV5">
+            quantidade:&nbsp;&nbsp;[A10]
+          </div>
+          <condicao:imagem_presente>    
+            <p><span class="fa fa-check-square-o" style="font-size: 20px;"></span> <span class="fa fa-gift"></span>&nbsp;para presente?</p>
+          </condicao:imagem_presente>  
+    		<condicao:customizacao_carrinho>
+            <repeticao:customizacao_carrinho>
+                <div class="cart-box custom-paddingH5" style="margin-top: 5px;">
+                  <p class="custom-paddingV5"><strong>Personalização do produto:</strong></p>
+                  <repeticao:customizacao_campos_carrinho>
+                    <div class="cart-box">
+                      <p style="padding-left: 15px;">[A29]: <strong>[A31]</strong></p>
+                      <p style="padding-left: 15px;"><strong>[A30]</strong></p>
+                    </div>
+                  </repeticao:customizacao_campos_carrinho>
+                </div>                  
+            </repeticao:customizacao_carrinho>
+          </condicao:customizacao_carrinho>              
+        </div>
+        <div class="text-center col-md-2 custom-paddingV15">
+          <p><strong>[A11]</strong></p>
+        </div>
+        <div class="text-center col-md-3 custom-paddingV15">
+          <p><strong>[A12]</strong></p>
+        </div>
+        <div class="text-center col-md-1 custom-paddingV15">
+          
+        </div>
+      </div>
+    </repeticao:produtos>
+  </div>
+  <!-- -->
+  <div class="col-md-4 custom-overflow custom-paddingH10 pull-right" style="padding-right: 0;">
+    <div class="cart-boxTotal custom-overflow custom-paddingV5 custom-paddingH10">      
+          <div class="col-md-6 custom-clearPadding">
+              <p>Desconto: [A23]</p>
+              <p>Frete: [A36]</p>     
+          </div>
+          <div class="col-md-6 custom-clearPadding text-right" style="padding: 7px 0;">
+              <strong class="text-uppercase">Total:</strong>
+              <h3><strong>[A21]</strong></h3>
+          </div>
+      </div>
+  </div>   
+</div>]]></VisualizacaoPedidoHTML></VisualizacaoPedido></VisualizacaoPedidos><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><CategoriasListas><CategoriasLista ID="QuickLists_Categories"><CategoriasListaHTML><![CDATA[<nav class="nav-quickList">
+  <h3 class="nav-quickList-heading">Categorias</h3>
+  <ul>
+    <repeticao:categorias>
+      <li class="nav-primary-heading-primary"><a href="[A1]">[A0]</a></li>
+    </repeticao:categorias>
+  </ul>
+</nav>]]></CategoriasListaHTML></CategoriasLista></CategoriasListas><ScriptRazors><ScriptRazor ID="quickList_homeInfo"><ScriptRazorHTML><![CDATA[<h1 class="quickLists-title">@TemplateSettings.quickLists_homeTitle_text</h1>
+<p class="quickLists-home-description">@TemplateSettings.quickLists_homeDescription_text</p>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

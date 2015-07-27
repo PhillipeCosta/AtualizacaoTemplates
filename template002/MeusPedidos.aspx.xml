@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><MeusPedidoss><MeusPedidos ID="customer_orders"><DadosUltimoPedidoHTML><![CDATA[<div class="main-padding20 main-overflow">
+  <div class="col-md-3">
+    <div class="order-number text-center">
+      <h4 class="text-uppercase main-padding">Número do Pedido</h4>
+      <h2>[C0]</h2>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <condicao:boleto>
+    <div class="main-overflow text-left">
+      <p><strong>Dados da compra</strong></p>  
+      <p><strong>Status:</strong> [C2]</p>
+      <p><strong>Valor:</strong> [C3]</p>    
+      <p><strong>Data:</strong> [C4]</p>
+      <p><a href="[C6]" style="text-decoration: underline;">Veja a descrição completa do pedido</a></p>
+    </div>
+    </condicao:boleto>
+  </div>
+</div>]]></DadosUltimoPedidoHTML><ListagemPedidosPesquisadosHTML><![CDATA[<div class="main-padding20 main-overflow main-clear">
+    <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%;" class="table">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Data do Pedido</th>
+                <!--th class="table-title">Total</th-->
+                <th>Método de Pagamento</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <repeticao:pedidos>
+            <tr class="order-table-active">
+                <td><a href="[E5]"><strong>[E0]</strong></a></td>
+                <td><a href="[E5]">[E1]</a></td>
+                <!--td>[E2]</td-->
+                <td><a href="[E5]">[E3]</a></td>
+                <td><a href="[E5]">[E4]</a></td>
+            </tr>
+            </repeticao:pedidos>
+        </tbody>
+    </table>
+</div>]]></ListagemPedidosPesquisadosHTML><ListagemPedidosPesquisadosSemResultadoHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <h4><strong>Nenhum</strong> Pedido Encontrado!</h4>
+  <h6>O que devo fazer?</h6>
+  <ul class="main-clearPadding">
+    <li>» Verifique se os termos da busca pelo pedido estão corretos.</li>
+    <li>» Selecione a opção "Todos os pedidos"</li>
+  </ul>
+</div>]]></ListagemPedidosPesquisadosSemResultadoHTML><MeusPedidosInicialHTML><![CDATA[<div class="main-overflow main-padding20">
+  [A0]
+  [A1]
+</div>
+]]></MeusPedidosInicialHTML><MeusPedidosPesquisaHTML><![CDATA[<div class="main-overflow main-padding20">
+  [B0]
+  [B1]
+</div>
+]]></MeusPedidosPesquisaHTML><PesquisarOutrosPedidosHTML><![CDATA[<div class="main-overflow main-clear main-padding20">
+  <h4>// Consultar outros pedidos</h4>
+  <div class="form form-guest main-padding20">
+      <fieldset class="main-padding">
+          <label>
+              <span class="pull-left form-check">[D1]</span> <span>Pedidos Abertos</span> </label>
+      </fieldset>
+      <fieldset class="main-padding">
+          <label>
+              <span class="pull-left form-check">[D0]</span> <span>Todos Pedidos</span></label>
+      </fieldset>
+      <fieldset class="main-padding">
+          <label>
+              <span class="pull-left form-check">[D2]</span> <span>Pesquisa por Número do Pedido:</span>
+          </label>
+          <label>[D3]</label>
+      </fieldset>
+      <fieldset class="main-padding">
+          <label>
+              <span class="pull-left form-check">[D4]</span> <span>Por Data (Mês/Ano) de:</span> </label>
+          <label>
+              [D5]
+          </label>
+          <label>
+              [D6]
+          </label>
+          <label>a &nbsp;</label>
+          <label>
+              [D7]
+          </label>
+          <label>
+              [D8]
+          </label>
+      </fieldset>
+    <a href="[D9]" class="bt btn-primary text-uppercase text-center">Pesquisar</a>
+  </div>
+</div>
+]]></PesquisarOutrosPedidosHTML></MeusPedidos></MeusPedidoss><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

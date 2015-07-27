@@ -1,0 +1,62 @@
+.lista_convidados_titulo{
+    padding: 10px 5px 10px 170px;
+    background: url("../imagens/ico_lista_presentes_convidados.png") no-repeat 40px 40px #f1f1f1;
+    text-align: left;
+    margin: 10px 0 40px;
+    overflow: hidden;
+}
+
+.lista_convidados_titulo_conteudo{
+    float: left;
+    margin: 10px 0;
+    width: 583px;   
+}
+
+.lista_convidados_titulo_conteudo h4{
+	font-size: 21px;
+	margin: 0 0 15px;   
+}
+
+.lista_convidados_titulo_conteudo p{
+	font-size: 12px;
+}
+
+.lista_convidados_conteudo fieldset{
+  border: none;
+  margin: 5px 0 0px 5px;
+  padding: 0 0 0 0px;
+  width: 550px;
+  clear: both;
+  display: block;
+}
+
+.lista_convidados_conteudo fieldset label{
+  display: block;
+  margin: 8px 0 0px 0px;
+  float: left;
+}
+
+.lista_convidados_conteudo fieldset label *{
+  vertical-align: middle;
+}
+
+.lista_convidados_conteudo fieldset label input{
+  border: 1px solid #ccc;
+  width: 218px;
+  padding: 5px;
+  font-size: 11px;
+  border-radius: 3px;
+}
+
+.tit_lista_convidados{
+    overflow: hidden;
+}
+
+.tit_lista_convidados span{
+  display: block;
+  float: left;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 0 6px;
+  width: 235px;
+}

@@ -1,0 +1,180 @@
+/*Tag Clouds*/
+
+.clouds{
+    text-align: center;
+    margin: 15px 0 39px;
+}
+
+.clouds a{
+    color: #000;
+    text-decoration: none;
+}
+
+.clouds a:hover{
+    text-decoration: underline;
+}
+
+.clouds a.cloud1{
+    font-size: 7px;
+    color: #666;
+}
+
+.clouds a.cloud2{
+    font-size: 9px;
+    color: #333;
+}
+
+.clouds a.cloud3{
+    font-size: 11px;
+    color: #031c4b;
+}
+
+.clouds a.cloud4{
+    font-size: 12px;
+    color: #031c4b;
+}
+
+.clouds a.cloud5{
+    font-size: 13px;
+    color: #1263AF;
+    font-weight: bold;
+}
+
+.clouds a.cloud6{
+    font-size: 15px;
+    color: #408acf;
+}
+
+.clouds a.cloud7{
+    font-size: 17px;
+    color: #1263af;
+}
+
+/*Minha Navegacao*/
+
+.navegacao{
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.navegacao .navegacao_esquerda{
+    float: left;
+    width: 205px
+}
+
+
+.navegacao_direita {
+    float: right;
+    margin-left: 30px;
+    width: 745px;
+}
+
+.navegacao_esquerda .navegacao_direita_item{
+  width: 200px;
+  margin: 0 0 10px 0;
+}
+
+.navegacao_esquerda .navegacao_direita_item h3{
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.navegacao_esquerda .navegacao_direita_item ul{
+    margin: 5px 20px;
+}
+
+.navegacao_esquerda .navegacao_direita_item ul li{
+    padding: 2px 0;
+    line-height: 12px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.navegacao_esquerda .navegacao_direita_item ul li a {
+    font-size: 11px;
+    text-decoration: none;
+    line-height: 15px;
+}
+
+.navegacao_direita .paginacao-navegacao{
+    text-align: center;
+    overflow: hidden;
+    margin: 10px 10px 5px 5px;
+    font-size: 16px;
+    float: none;
+}
+
+.navegacao_direita .paginacao-navegacao a {
+    padding: 0 5px;
+	border-radius: 2px;
+    text-decoration: none;
+}
+
+.navegacao_direita .paginacao-navegacao a.selecionado{
+    font-family: 'source_sans_prosemibold';
+}
+
+.navegacao_direita .paginacao-navegacao h3 {
+    color: #101763;
+    float: left;
+    font-size: 13px;
+}
+
+.navegacao_direita .paginacao-navegacao h3 span{
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.navegacao_vitrine{
+    overflow: hidden;
+}
+
+.navegacao_vitrine_seta_voltar{
+    float: left;
+    width: 3%;
+    margin-top: 160px;
+}
+
+.navegacao_vitrine_seta_avancar{
+    float: right;
+    width: 3%;
+    margin-top: 160px;
+}
+
+.navegacao_vitrine ul {
+    list-style: none outside none;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: left;
+    width: 690px;
+    float: left;
+}
+
+.navegacao_vitrine .foto{
+	position: relative;
+}
+
+.navegacao_vitrine ul li {
+  border-top: 1px solid #C9C9C9;
+  float: left;
+  height: 100%;
+  margin: -1px 0 0;
+  padding: 10px 0 0;
+  text-align: left;
+  vertical-align: top;
+  width: 230px;
+}
+
+.navegacao_vitrine ul li.first {
+    clear: left;
+}
+
+.navegacao_vitrine ul li .produto{
+  margin: 0 auto;
+  padding-top: 4px;
+  position: relative;
+  width: 200px;
+}
+

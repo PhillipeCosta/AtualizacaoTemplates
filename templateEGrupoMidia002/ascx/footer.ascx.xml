@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><PaginasInstitucionaiss><PaginasInstitucionais ID="institutional"><PaginasInstitucionaisHTML><![CDATA[<repeticao:pagina_institucional>
+	<li><a href="[A1]" target="[A2]">[A0]</a></li>
+</repeticao:pagina_institucional>]]></PaginasInstitucionaisHTML></PaginasInstitucionais></PaginasInstitucionaiss><Links><Link ID="contact"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="FaleConosco" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Fale Conosco" /><UsarHTTPS value="False" /></Link><Link ID="faq"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Duvidas" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Dúvidas" /><UsarHTTPS value="False" /></Link><Link ID="affilated"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="destino=AfiliadoPrincipal" /><Target value="MesmaPagina" /><Texto value="Área do afiliado" /><UsarHTTPS value="False" /></Link><Link ID="giftList"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="ListaPresentesPrincipal" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Lista de presentes" /><UsarHTTPS value="True" /></Link><Link ID="readyList"><Destino value="DestinoAtual" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="CategoriasLista" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Listas prontas" /><UsarHTTPS value="False" /></Link></Links><IconesRodapes><IconesRodape ID="paymentMethodsIcons"><IconesRodapeHTML><![CDATA[<ul>
+	<repeticao:icone>
+        <li class="paymentMethodsIcons-li"><img src="[A2]" alt="[A1]" /></li>
+    </repeticao:icone>         
+</ul>]]></IconesRodapeHTML></IconesRodape></IconesRodapes><CaixaPesquisas><CaixaPesquisa ID="footer_search"><CaixaPesquisaHTML><![CDATA[<fieldset>
+  	<label class="footer-search-title">Buscar</label>
+  	<label class="footer-search-input">[A0]</label>
+  	<a href="[A2]" class="footer-search-buttom sprite">Buscar</a>
+</fieldset>
+<script>
+  	$(".footer-search-input input").upPlaceholder({defaultText:"O que você está procurando?"});
+</script>]]></CaixaPesquisaHTML></CaixaPesquisa></CaixaPesquisas><ScriptRazors><ScriptRazor ID="institutionalLinks"><ScriptRazorHTML><![CDATA[<li><a href="~/faleconosco">Contato</a></li>
+<li><a href="javascript: void(0);" class="link-coupon-rules">Cupom de Desconto</a></li>
+<li><a href="~/duvidas">Dúvidas</a></li>
+<li><a href="~/paginainstitucional/imprensa">Imprensa</a></li>
+<li><a href="~/paginainstitucional/loja">Loja Física</a></li>
+<li><a href="~/paginainstitucional/politicadeprivacidade">Política de Privacidade</a></li>
+<li><a href="~/paginainstitucional/empresa">Quem Somos</a></li>
+<li><a href="~/paginainstitucional/seguranca">Segurança</a></li>
+<li><a href="~/paginainstitucional/trocasedevolucoes">Troca e Devoluções</a></li>
+<li><a href="~/paginainstitucional/trabalheconosco">Trabalhe Conosco</a></li>
+
+
+<!--Conteúdo do Modal de Cupom de Desconto-->
+<div class="hide">
+  <div class="coupom-rules">
+    <div class="heading-primary"><h2>Cupom de Desconto</h2></div>
+    <div class="coupom-rules-content">
+      <p>A <strong>palavra-chave</strong> (Cupom de Desconto) é enviada para todos os clientes do <strong>Magazine25.com</strong> cadastrados no <strong>Newsletters</strong> sempre que houver uma promoção. A promoção é temporária com data de início e término.</p>
+      <p>Caso possua uma palavra-chave ativa siga os passos abaixo:</p>
+      <p>Antes de você finalizar sua compra na página <strong>Seu Carrinho</strong> observe que existe um campo chamado <strong>"Cupom de Desconto"</strong>, nele você irá digitar a <strong>palavra-chave</strong>.</p>
+      <p>Depois de digitar a palavra-chave clique no botão <strong>calcular</strong>, automaticamente o desconto será acrescido nos produtos do Seu Carrinho.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+	$(".link-coupon-rules").click(function(){
+  		$.colorbox({href:".coupom-rules", inline:true});
+  	});	
+</script>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="footer_social_helpDesk_storeInfo"><ScriptRazorHTML><![CDATA[<div class="footer-middle">
+</div>
+<div class="footer-bottom">
+    <div class="footer-content">
+        <div class="footer-text">
+          	@TemplateSettings.footer_storeInfo_text
+        </div>
+        <div class="footer-imgs">
+            <a href="http://www.ciashop.com.br" target="_blank" class="sprite footer-ciashop">Ciashop</a>
+        </div>
+    </div>
+</div>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="footer_seals"><ScriptRazorHTML><![CDATA[<div class="footer-seals to-left">
+<h3>Segurança</h3>
+  @if(TemplateSettings.footer_blindado != ""){
+ <div class="footer-blindado">
+  @TemplateSettings.footer_blindado
+</div>  
+}  
+  @if(TemplateSettings.footer_fControl != ""){
+    <a href="http://www.fcontrol.com.br" target="_blank" class="footer-fcontrol sprite" style="display: block;"></a>
+    }
+  @if(TemplateSettings.footer_ebit != ""){  
+<div class="footer-ebit to-right">
+  @TemplateSettings.footer_ebit
+</div>
+  }
+ @if(TemplateSettings.footer_thawte != ""){
+    <script language="JavaScript">
+        function OpenCertDetails(){thewindow = window.open('https://seal.thawte.com/thawtesplash?form_file=fdf/thawtesplash.fdf&dn=@TemplateSettings.footer_thawte', 'anew', config='height=580,width=516,toolbar=no,menubar=no,scrollbars=yes,resizable=no,location=no,directories=no,status=no');}
+    </script>            
+    <a href="javascript:OpenCertDetails()" class="footer_thawte sprite" style="display: block;"></a>      
+  }
+
+
+</div>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_facebook"><ScriptRazorHTML><![CDATA[  @if(TemplateSettings.scriptface != ""){
+
+
+  <div class="plugin_facebook" style="height: 246px;">
+  @TemplateSettings.scriptface  
+  </div>
+
+}]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="enderecos"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.address_text != ""){
+  @TemplateSettings.address_text  
+}]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="atendimento"><ScriptRazorHTML><![CDATA[  @if(TemplateSettings.horarioatendimento_text != ""){
+
+  @TemplateSettings.horarioatendimento_text  
+
+}]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="aditional_informations"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.aditional_informations != ""){
+
+  <span>
+  	@TemplateSettings.aditional_informations  
+  </span>
+
+}]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="chatonline"><ScriptRazorHTML><![CDATA[@if(TemplateSettings.chatonline_code !=""){  
+@TemplateSettings.chatonline_code
+
+
+}]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

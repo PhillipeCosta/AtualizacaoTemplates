@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Carrinhos><Carrinho ID="cart"><CarrinhoHTML><![CDATA[]]></CarrinhoHTML><CarrinhoItensEditavel value="True" /><CarrinhoVazioHTML><![CDATA[]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[]]></MensagemAlertaValorMinimoHTML><MensagemCupomCompradorInvalido><![CDATA[Cupom não é válido para o comprador atual.]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[Cupom fora do prazo de validade.]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[Cupom não encontrado.]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[O cupom não é válido para o(s) departamento(s) selecionado(s).]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[O cupom não é válido para o(s) produto(s) selecionado(s).]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[A compra não atingiu o valor mínimo para ativação do cupom.]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[O cupom já foi usado.]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[O produto [L0] não está mais disponível para pronta entrega na quantidade solicitada. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[O produto <strong>[I0]</strong> não teve seu contrato aceito, favor verificar.]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[O preço do produto [F0] mudou de [F1] para [F2].]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[O produto <strong>[K0]</strong> não esta mais disponível.]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Pequenas" /></Carrinho></Carrinhos><ScriptRazors><ScriptRazor ID="buildCart"><ScriptRazorHTML><![CDATA[@{
+	var cartUrl = "//www9.ciashop.com.br/magazine25/carrinho";
+	var buildCartURL = cartUrl+"/?sku="+System.Web.HttpContext.Current.Request.QueryString["sku"]+"&qtd="+System.Web.HttpContext.Current.Request.QueryString["qtd"];
+}
+
+<script>
+function buildCart(){
+	$(".ajaxLoader").show();
+    $.ajax({
+        url: "@buildCartURL",
+		cache: false,
+        success: function(){
+  			setTimeout(function(){window.location = "@(cartUrl)/t/@(Cart.TemplateId)"},1000);
+        }
+    });   
+}
+
+function clearAndBuildCart(){
+	$(".ajaxLoader").show();
+    AjaxRequestDispatcher('btnEsvaziar');
+	setTimeout(function(){buildCart()},3000);    
+}
+
+</script>
+
+@if(Cart.Items.Count>0){
+	<div class="buildCart">
+      	<div class="alert w-65">
+            <strong>Atenção!</strong> Verificamos que você já possuí alguns produtos adicionados ao seu carrinho. Escolha abaixo se você deseja adicionar os novos itens ao seu carrinho atual ou limpar o seu carrinho antes de adicionar os novos itens.
+        </div>
+		<div class="form-box w-65">
+          	<h2 class="form-box-heading">
+              Seu Carrinho
+          	</h2>
+			<div class="miniCart-table">
+			    <div class="miniCart-items">
+			      <table class="table">
+			        <tbody>
+			          @foreach(var item in Cart.Items){
+			              <tr class="table-item">
+			                  <td class="cart-product-image" width="90"><img class="photo-product" src="@(item.Image)?width=80&height=80" alt="[A4]" width="60" height="60" /></td>
+			                <td class="cart-product-name"><strong>@item.Name</strong><div class="miniCart-product-quantity">Quantidade: @item.Quantity</div></td> 
+			                  <td class="cart-product-subtotalPrice">@item.TotalPrice.AsMoney()</td>
+			              </tr>
+			          }
+			        </tbody>
+			      </table>
+			    </div>
+			</div>	
+			<div class="form-box-bt">
+				<a href="javascript: buildCart();" class="bt-small-secundary to-left">Adicionar Produtos</a>
+		        <a href="javascript: clearAndBuildCart();" class="bt-small-primary to-right">Limpar Carrinho e Adicionar Produtos</a>
+		    </div>
+		</div>
+	</div>
+}else{
+	<script>
+		buildCart();
+	</script>	
+}
+<div class="ajaxLoader"></div>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

@@ -1,0 +1,378 @@
+/* Arquivo CSS RAZOR */
+
+/* Geral */
+
+body{
+  background: @TemplateSettings.main_backgroundColor; /* fff */
+  color: @TemplateSettings.main_color; /* 474747 */
+  font-size: @TemplateSettings.main_fontSize; /* 12 */
+  font-family: '@TemplateSettings.main_fontFamily'; 
+}
+
+a{
+  color: @TemplateSettings.main_link_color; /* 428bca */
+}
+
+.conteudo-loja{
+  background: @TemplateSettings.main_backgroundColor; /* fff */
+}
+
+.main-breadCrumb,
+.main-breadCrumb a{
+  background: @TemplateSettings.main_breadCrumb_backgroundColor; /* 2d3382 */
+  color: @TemplateSettings.main_breadCrumb_color; /
+}
+
+.main-pagination{
+  background: @TemplateSettings.main_pagination_backgroundColor;
+}
+
+.main-pagination a{
+  color: @TemplateSettings.main_pagination_color; /* 333 */
+}
+
+.main-pagination a.selecionado{
+  background: @TemplateSettings.main_paginationSelected_backgroundColor;
+  color: @TemplateSettings.main_paginationSelected_color;
+}
+
+.main-newsletter{
+  background: @TemplateSettings.main_newsletter_backgroundColor;  /* 333 */
+  color: @TemplateSettings.main_newsletter_color ; /* fff */
+}
+
+.main-newsletter a small{
+  color: @TemplateSettings.main_newsletter_color ; /* fff */
+}
+
+.main-newsletter input{
+  background: @TemplateSettings.main_newsletterInput_backgroundColor; /* fff */
+    color: @TemplateSettings.main_newsletterInput_color; /* 333 */
+}
+
+.form .paymentMethod-buttom input{
+  background: @TemplateSettings.btn_primary_backgroundColor; /* #f18f1a; */
+  color: @TemplateSettings.btn_primary_color; /* #fff */    
+}
+
+/* Topo */
+
+.header{ /* container-topo */
+  background: @TemplateSettings.header_backgroundColor; /*#2d3382 */
+  color: @TemplateSettings.header_color; /* #FFF */
+}
+
+.header-nav{ /* .abrir-menu  */
+  background: @TemplateSettings.header_nav_backgroundColor; /*#424ab0 */
+  color: @TemplateSettings.header_nav_color; /* #fff  .abrir-menu span  */
+}
+
+.header-logo a{ /* box-logo a */
+    background: url('../imagens/@TemplateSettings.header_logo_image') no-repeat center 0 scroll transparent;;
+}
+
+.header-miniCart a{ /* box-carrinho */
+    background: @TemplateSettings.header_miniCart_backgroundColor; /* #424ab0 */
+    color: @TemplateSettings.header_miniCart_color; /* #fff .box-carrinho a span */
+}
+
+.header-search{ /* box-pesquisa-topo */
+  background: @TemplateSettings.header_search_backgroundColor; /* #424ab0 */
+}
+
+.header-inputSearch input{ /* .box-input-busca-topo input, .box-input-busca-topo input[placeholder] */
+  background-color: @TemplateSettings.header_inputSearch_backgroundColor; /* #fff */
+  color: @TemplateSettings.header_inputSearch_color; /* #ccc */
+  font-size: @TemplateSettings.header_inputSearch_fontSize; /* 18px */
+}
+
+
+/* MENU */
+
+.nav-accessAccount{ /* saudacao-topo */
+  background: @TemplateSettings.nav_accessAccount_backgroundColor; /* 2d3382 */
+  color: @TemplateSettings.nav_accessAccount_color; /* #fff */
+}
+
+.nav{ /* menu-principal */
+  background: @TemplateSettings.nav_backgroundColor; /* 424ab0 */
+  color: @TemplateSettings.nav_color; /* #fff */
+}
+
+.nav-parentsList{ /* lista-pai */
+  border-color: @TemplateSettings.nav_parentsList_borderColor; /* eee */
+  border-style: solid;
+  border-width: 1px;
+}
+
+.nav-parentsLink{ /* link-pai */
+  background: @TemplateSettings.nav_parentsLink_backgroundColor; /* fff */
+  color: @TemplateSettings.nav_parentsLink_color; /* 5a2d82 */
+}
+
+.nav-parentsLink span{
+  color: @TemplateSettings.nav_parentsLink_span_color; /* fff */
+}
+
+.nav-parentsLink:hover{
+  background: @TemplateSettings.nav_parentsLink_hover_backgroundColor; /* fff */
+  color: @TemplateSettings.nav_parentsLink_hover_color; /* 5a2d82 */
+}
+
+.nav-containerLinks-children{ /* box-menu-filho */
+  background: @TemplateSettings.nav_containerLinks_children_backgroundColor; /* fff */
+}
+
+.nav-childrenBack{ /* back */
+  background: @TemplateSettings.nav_childrenBack_backgroundColor; /* 424ab0 */
+}
+
+.nav-childrenBack a{ /* back a */
+  color: @TemplateSettings.nav_childrenBack_color; /* fff */
+}
+
+.nav-childrenList{
+  border-color: @TemplateSettings.nav_childrenList_borderColor; /* eee */
+  border-style: solid;
+  border-width: 1px;
+}
+
+.nav-childrenLink{
+  background: @TemplateSettings.nav_childrenLink_backgroundColor; /* fff */
+  color: @TemplateSettings.nav_childrenLink_color; /* 5a2d82 */ 
+}
+
+.boxMenu, .clica-pai .box-menu-filho{
+  background: @TemplateSettings.nav_childrenLink_backgroundColor; /* fff */
+}
+
+/* Botões */
+
+.btn-headerSearch{ /* bt-buscar-topo */
+  background: @TemplateSettings.btn_headerSearch_backgroundColor; /* #f18f1a; */
+  color: @TemplateSettings.btn_headerSearch_color; /* #fff */
+}
+
+.btn-buy{ /* btn-comprar */
+  background: @TemplateSettings.btn_buy_backgroundColor; /* #f60 */
+  color: @TemplateSettings.btn_buy_color; /* fff */
+  font-size: @TemplateSettings.btn_buy_fontSize; /* 17 */
+}
+
+.btn-unavailable{ /* btn-encomendar */
+  background: @TemplateSettings.btn_unavailable_backgroundColor; /* #ccc */
+  color: @TemplateSettings.btn_unavailable_color; /* 333 */
+  font-size: @TemplateSettings.btn_unavailable_fontSize; /* 17 */ 
+}
+
+.btn-share{
+  background: @TemplateSettings.btn_share_backgroundColor; /* #13abe1 */
+  color: @TemplateSettings.btn_share_color; /* fff */
+  font-size: @TemplateSettings.btn_share_fontSize; /* 17 */   
+}
+
+.btn-primary, .btn-primary:hover,
+.btn-primary a, .btn-primary a:hover{
+  background: @TemplateSettings.btn_primary_backgroundColor; /* #f18f1a; */
+  color: @TemplateSettings.btn_primary_color; /* #fff */  
+}
+
+.btn-secondary{
+  background: @TemplateSettings.btn_secondary_backgroundColor; /* ##13abe1; */
+  color: @TemplateSettings.btn_secondary_color; /* #fff */  
+}
+
+.btn-tertiary{
+  color: @TemplateSettings.btn_tertiary_color; /* #13abe1 */
+}
+
+/* Títulos */
+
+
+.heading-primary{ /* tit_box */
+  background: @TemplateSettings.heading_primary_backgroundColor; /* efefef */
+  color: @TemplateSettings.heading_primary_color; /* #666 */
+}
+
+.heading-secondary{
+  color: @TemplateSettings.heading_primary_color; /* #333 */
+  border-bottom: 1px solid @TemplateSettings.heading_secondary_borderColor; /* efefef */
+}
+
+/* Vitrines */
+
+.collection-productName,
+.collection-productName a{
+  color: @TemplateSettings.collection_productName_color; /* 5a2d82 */
+  font-size: @TemplateSettings.collection_productName_fontSize; /* 13px */
+}
+
+.collection-price{
+  color: @TemplateSettings.collection_price_color; /* 333 */
+  font-size: @TemplateSettings.collection_price_fontSize; /* 11 */
+}
+
+.collection-adjustedPrice{
+  color: @TemplateSettings.collection_adjustedPrice_color; /* #333 */
+  font-size: @TemplateSettings.colection_adjustedPrice_fontSize; /* 13px */
+}
+
+.collection-productInstallments{
+  color: @TemplateSettings.collection_productInstallments_color; /* #333 */
+  font-size: @TemplateSettings.collection_productInstallments_fontSize; /* 13px */
+}
+
+.collection-product-releaseTag{ 
+    background: @TemplateSettings.collection_product_releaseTag_backgroundColor;
+    color: @TemplateSettings.collection_product_releaseTag_color;
+}
+
+/* Produto */
+
+.product-name{ /* nome-produto */
+  color: @TemplateSettings.product_name_color; /* 5a2d82 */
+  font-size: @TemplateSettings.product_name_fontSize; /* 20px */
+}
+
+.product-cod{
+  color: @TemplateSettings.product_cod_color; /* 333 */
+}
+
+.product-price{  /* preco-antigo-produto */
+  color: @TemplateSettings.product_price_color; /* 333 */
+  font-size: @TemplateSettings.product_price_fontSize; /* 14 */
+}
+
+.product-adjustedPrice{ /* preco-do-produto */
+  color: @TemplateSettings.product_adjustedPrice_color; /* 5a2d82 */
+  font-size: @TemplateSettings.product_adjustedPrice_fontSize; /* 20 */ 
+}
+
+.product-payInFullPrice{ /* preco-a-vista */
+  color: @TemplateSettings.product_payInFullPrice_color; /* 5a2d82 */
+  font-size: @TemplateSettings.product_payInFullPrice_fontSize; /* 14 */    
+}
+
+.product-installments{ /* preco-parcelado-produto */
+  color: @TemplateSettings.product_installments_color; /* 13abe1 */
+  font-size: @TemplateSettings.product_installments_fontSize; /* 13 */      
+}
+
+.product-descriptionTab{
+  background: @TemplateSettings.product_descriptionTab_backgroundColor; /* efefef */
+  color: @TemplateSettings.product_descriptionTab_color; /* 333 */
+}
+.product-descriptionTab-active{
+  background: @TemplateSettings.product_descriptionTab_backgroundColor_active; /* efefef */
+  color: @TemplateSettings.product_descriptionTab_color_active; /* 333 */
+}
+
+/* Filtros */
+
+.filters-heading{
+  background: @TemplateSettings.filters_heading_backgroundColor; /* #2d3382 */
+  color: @TemplateSettings.filters_heading_color; /* #fff */  
+}
+
+.filters-show > a{
+  background: @TemplateSettings.filters_show_backgroundColor; /* #fff */
+  color: @TemplateSettings.filters_show_color; /* #5a2d82 */    
+  border-width: 1px;
+  border-style: solid;
+  border-color: @TemplateSettings.filters_show_borderColor; /* 5a2d82 */
+}
+
+.filters-container{
+  background: @TemplateSettings.filters_container_backgroundColor; /*efefef */
+} 
+
+.filters-name{
+  color: @TemplateSettings.filters_name_color; /* 333 */
+}
+
+/* Tabela */
+
+.table{
+  color: @TemplateSettings.table_color; /* 5a2d82 */
+}
+
+.table-cart-subtotal{
+  background: @TemplateSettings.table_subtotal_backgroundColor; /* fff */
+  border-bottom: 1px solid @TemplateSettings.table_subtotal_borderColor; /* d9eef7 */
+  color: @TemplateSettings.table_subtotal_color; /* 333 */
+}
+
+.table-cart-productTotal{
+  background: @TemplateSettings.table_productSubtotal_backgroundColor; /* #efefef */  
+  color: @TemplateSettings.table_productSubtotal_color; /* 5a2d82 */  
+}
+
+.table-cart-total{
+  color: @TemplateSettings.table_total_color; /* 5a2d82 */  
+}
+
+/* Formulários */
+
+.form{
+
+}
+
+.form label span{
+  color: @TemplateSettings.form_label_color; /* 333 */
+}
+
+.form label input, .form label select, .form label textarea, .form input{
+  background: @TemplateSettings.form_labelInput_backgroundColor; /* fff */
+  border: 1px solid @TemplateSettings.form_labelInput_borderColor; /* d9eef7 */
+  box-shadow: 0 1px 1px @TemplateSettings.form_labelInput_boxShadow inset;
+  -webkit-box-shadow: 0 1px 1px @TemplateSettings.form_labelInput_boxShadow inset;
+  box-shadow: 0 1px 1px @TemplateSettings.form_labelInput_boxShadow inset;  
+  color: @TemplateSettings.form_labelInput_color; /* 666 */
+}
+
+/* Mensagens */
+
+.message-firstBuy{
+  background: @TemplateSettings.message_firstBuy_backgroundColor; /* #d9edf7 */
+  border-color: @TemplateSettings.message_firstBuy_color; /* #31708f */
+}
+
+.message-error{
+  background: @TemplateSettings.message_error_backgroundColor; /* #fcf8e3 */
+  border-color: @TemplateSettings.message_error_color; /* #8a6d3b */
+}
+
+.message-success{
+  background: @TemplateSettings.message_success_backgroundColor; /* #dff0d8 */
+  border-color: @TemplateSettings.message_success_color; /* #3c763d */  
+}
+
+/* Fluxo de compra */
+
+.checkout-tab{
+  background: @TemplateSettings.checkout_tab_backgroundColor; /* efefef */
+  color: @TemplateSettings.checkout_tab_color; /* 333 */  
+}
+
+.checkout-tabInfo{
+  color: @TemplateSettings.checkout_tabInfo_color; /* #13abe1 */    
+}
+
+/* Rodape */
+
+.footer{
+  background: @TemplateSettings.footer_backgroundColor; /* fff */
+  color: @TemplateSettings.footer_color; /* 999 */
+}
+
+.footer-institutional a{
+  color: @TemplateSettings.footer_institutional_color; /* #13abe1 */
+}
+
+.footer-site{
+  color: @TemplateSettings.footer_site_color; /* 333 */
+}
+
+/*CSS Avançado*/
+
+@TemplateSettings.advanced_css

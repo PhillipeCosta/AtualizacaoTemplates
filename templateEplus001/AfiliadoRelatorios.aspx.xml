@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><AfiliadoRelatorioss><AfiliadoRelatorios ID="AfiliadoRelatorios1"><AfiliadoRelatoriosHTML><![CDATA[<div class="tit_box">
+ <h2>Relatório do Afiliado</h2>
+</div>
+<a href="[A0]"><b style="font-size: 11px;">Vendas e Comissões</b></a><br />
+Relatório de vendas e comissão mensal do seu site
+<br /><br />
+<a href="[A1]"><b style="font-size: 11px;">Visitas</font></b></a><br />
+Relatório de visitas por mês e por dia de internautas vindos de seu site.
+<br /><br />]]></AfiliadoRelatoriosHTML><CssComponente><![CDATA[]]></CssComponente></AfiliadoRelatorios></AfiliadoRelatorioss></controles></page>

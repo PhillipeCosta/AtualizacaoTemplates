@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Banners><Banner ID="header_full" /></Banners><PaymentMethodss><PaymentMethods ID="payment_methods"><PaymentMethodsHTML><![CDATA[@using (Html.BeginForm()){
+  <div class="paymentMethods">
+    <div class="paymentMethodsList">
+      @Html.ValidationSummary()
+      <ul>
+        @foreach(var Categoria in Model.PaymentCategories){
+          <li>
+             <h3>
+                @switch(Categoria.Id){
+                  case 1:
+                    <span>Cartão de Crédito</span>
+                      break;
+                  case 2:
+                      <span>Transferência</span>
+                      break;
+                  case 3:
+                      <span>Boleto</span>
+                      break;
+                  case 4:
+                      <span>Depósito</span>
+                      break;
+                  default:
+                      <span>@Categoria.Name</span>
+                      break;
+                }
+                @if(Categoria.PaymentMethods[0].HasPayInFullDiscount){
+                   <span class="paymentMethodsList-method-discount">
+                      @(Categoria.PaymentMethods[0].PayInFullDiscountPercent)% de desconto
+                   </span>
+                }
+              </h3>
+            
+             <ul>
+               @foreach(var ImageMetodo in Categoria.PaymentMethods){
+                 <li class="paymentMethodsList-method">
+                  <img src="@ImageMetodo.MainImageURL" alt="@ImageMetodo.DisplayName" />                                 
+                    <span>@ImageMetodo.DisplayName</span>
+                    @Html.InputRadio("PaymentMethod.Id", ImageMetodo.Id, ImageMetodo.Selected)
+                 </li>
+               }
+               @foreach(var Metodo in Categoria.PaymentMethods){                
+                  <div class="paymentMethod form-box" method="@Metodo.Id">
+                      <h2 class="form-box-heading"><img src="@Metodo.MainImageURL?v0001" alt="@Metodo.DisplayName" /> <span>@Metodo.DisplayName</span></h2>
+                      @if(Metodo.HasPayInFullDiscount){
+                        <div class="paymentMethod-discount">
+                          <strong>Pague somente @Metodo.PayInFullDiscountValue.AsMoney()</strong> (@Metodo.PayInFullDiscountPercent% de desconto)
+                        </div>
+                      }         
+                      @if(Metodo.HasForm){
+                        <div class="paymentMethod-form form">
+                          @foreach(var Field in Metodo.PaymentForm.Fields){
+                            if(Field.Id=="SecurityCode"){
+                              <div class="form custom-clear custom-overflow custom-paddingV5 paymentMethod-field parent-validation">
+                                  <label class="col-md-3 text-right custom-clearPadding custom-paddingV5 paymentMethod-fieldSpan">
+                                  @Field.LabelText                             
+                                  </label>
+                                  <span class="col-md-8">
+                                    @Html.Input(Field).AddClass(Field.Id) @Html.ValidateMessage(Field)
+                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" class="paymentMethod-fieldCodSeg">(O que é código de segurança?)</a>
+                                    </span>
+                              </div>  
+                            }else if(Field.Id=="ExpirationMonth"){
+                              @:<div class="form paymentMethod-field parent-validation col-md-8">
+                                @:<label class="col-md-3 text-right custom-clearPadding custom-paddingV5 paymentMethod-fieldSpan">Validade</label>
+                                  <span class="col-md-6" style="padding-right:0">@Html.Input(Field).AddClass(Field.Id)</span>
+                              @:</div> 
+                            }else if(Field.Id=="ExpirationYear"){
+                                @:<div class="form paymentMethod-field parent-validation col-md-4">
+                                  <span class="col-md-11" style="padding-left:0"> @Html.Input(Field).AddClass(Field.Id)</span>
+                              @:</div>              
+                            }else{
+                              <div class="form custom-clear custom-overflow custom-paddingV5 paymentMethod-field parent-validation">
+                                <label class="col-md-3 text-right custom-clearPadding custom-paddingV5 paymentMethod-fieldSpan">@Field.LabelText</label>
+                                <span class="col-md-8">@Html.Input(Field).AddClass(Field.Id)  @Html.ValidateMessage(Field)</span>
+                              </div>                  
+                            }
+                          }                                     
+                        </div>
+                            }         
+                      @if(Metodo.HasInstallments){
+                    <div class="form">
+                            <div class="form custom-clear custom-overflow custom-paddingV5 paymentMethod-field parent-validation">
+                              <label class="col-md-3 text-right custom-clearPadding custom-paddingV5 paymentMethod-fieldSpan">Parcelamento</label>
+                                  <span class="col-md-8">@Html.InputDropdown("PaymentInstallments.Quantity", Metodo.PaymentInstallments,"Selecione o parcelamento")
+                              </span>
+                            </div>
+                        </div>
+                      }               
+                      @if(Metodo.Help!=""){
+                          <div class="paymentMethod-text">@Metodo.Help</div>
+                      }
+                      <div class="text-right" style="padding-right:30px;">
+                          <a href="javascript: void(0);" class="btn btn-primary text-uppercase text-center custom-paddingV10 custom-paddingH15" id="enviar" name="enviar">Concluir Compra</a>
+                      </div>
+                   </div>
+              }           
+            </ul>
+          </li>
+        }           
+      </ul>
+    </div>
+  </div>
+}
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Código de Segurança</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+      </div>
+      <div class="custom-paddingV15 custom-paddingH15">
+        <p class="linha">
+          <h5><strong>O que é?</strong></h5>
+          O código de segurança do cartão de crédito é uma sequência numérica complementar ao número do cartão, que garante a veracidade dos dados de uma transação eletrônica, uma vez que essa informação é verificada somente pelo portador do cartão e não consta em nenhum tipo de leitura magnética.
+        </p>
+        <div class="image-text linha">
+          <div class="image custom-paddingV10">
+            <img src="imagens/cartao_verso_01.png" />
+          </div>
+          <div class="text">
+            <h5><strong>VISA / MaterCard / Diners</strong></h5>
+            <p>O código de segurança dos cartões com Bandeira VISA / MasterCard / Diners está localizado no verso do cartão e corresponde aos três últimos dígitos da faixa numérica.</p>
+          </div>
+        </div>
+        <div class="image-text linha">
+          <div class="image custom-paddingV10">
+            <img src="imagens/cartao_verso_02.png" />
+          </div>
+          <div class="text">
+            <h5><strong>AMERICAN EXPRESS</strong></h5>
+            <p>O código de segurança está localizado na parte frontal do cartão AMERICAN EXPRESS e corresponde aos 4 dígitos localizados do lado direito acima da faixa numérica do seu cartão.</p>
+          </div>
+        </div>    
+      </div>      
+    </div>
+  </div>
+
+
+</div>
+<script src="js/paymentMethod.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $(".paymentMethod-fieldCodSeg").colorbox({inline:true});
+  });
+</script>]]></PaymentMethodsHTML></PaymentMethods></PaymentMethodss><CarrinhoBonuss><CarrinhoBonus ID="bonus"><CarrinhoBonusHTML><![CDATA[]]></CarrinhoBonusHTML></CarrinhoBonus></CarrinhoBonuss><Carrinhos><Carrinho ID="cart_items"><CarrinhoHTML><![CDATA[<div>
+  <h5 class="text-uppercase text-left heading-primary custom-paddingV20"><strong>Itens do pedido</strong></h5>
+  <div class="col-md-3 custom-clearPadding">&nbsp;</div>
+  <div class="col-md-5">&nbsp;</div>
+  <div class="col-md-4">&nbsp;</div>
+  <repeticao:produtos>
+    <div class="custom-clear custom-oveflow custom-padding">
+      <div class="cart-image text-center col-md-3 custom-clearPadding">
+        <img src="[A3]?width=100&height=100" alt="[A4]" />
+      </div>
+      <div class="text-left col-md-5 cart-margin" style="border-right: 1px solid #2f2f3f;">
+        <h6 style="margin-bottom: 5px;">[A4]</h6>
+        <div class="form cart-input-qtd">
+          <small>quantidade: </small> [A5]
+        </div>
+        <condicao:listapresente>        
+           Presente: [A6] 
+        </condicao:listapresente>            
+      </div>
+      <div class="text-center col-md-4 cart-margin">
+        <h5 class="cart-price">[A8]</h5>
+        <a href="[A7]" class="cart-remove"><small>x remover</small></a>
+      </div>
+    </div>
+  </repeticao:produtos>
+  <div class="custom-clear custom-oveflow custom-padding">
+    <div class="cart-info pull-right text-right">
+      <p>Subtotal: [A23]</p>
+      <condicao:cupom_valor><p>Desconto: [A12]</p></condicao:cupom_valor>
+      <p>Frete: [A16]</p>
+    </div>
+    <div class="cart-total pull-right text-right custom-clear">
+      <h4>Total: <strong>[A21]</strong></h4>
+    </div>  
+  </div>
+</div>]]></CarrinhoHTML><CarrinhoItensEditavel value="False" /><CarrinhoVazioHTML><![CDATA[<div class="alert alert-warning" role="alert">
+	<strong>Atenção!</strong> Seu carrinho expirou.
+</div>]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <strong>Atenção!</strong> Não entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
+</div>]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <strong>Atenção!</strong> O valor mínimo da compra é de [C0].
+</div>]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[]]></MensagemBrindeAdicionadoNoCarrinhoHTML><MensagemBrindesRemovidosPorRegra><![CDATA[O brinde <strong>[P0]</strong> foi removido devido as regras da promoção.]]></MensagemBrindesRemovidosPorRegra><MensagemBrindesRemovidosSemEstoque><![CDATA[O brinde <strong>[Q0]</strong> foi removido por não estar mais disponível]]></MensagemBrindesRemovidosSemEstoque><MensagemBrindesVarianteAlteradaPorIndisponibilidade><![CDATA[A variante do brinde <strong>[R0]</strong> foi alterada por não estar mais disponível.]]></MensagemBrindesVarianteAlteradaPorIndisponibilidade><MensagemCupomCompradorInvalido><![CDATA[<div class="alert alert-warning" role="alert">
+  Cupom não é válido para o comprador atual.
+</div>]]></MensagemCupomCompradorInvalido><MensagemCupomDataInvalida><![CDATA[<div class="alert alert-warning" role="alert">
+  Cupom fora do prazo de validade.
+</div>]]></MensagemCupomDataInvalida><MensagemCupomInexistente><![CDATA[<div class="alert alert-warning" role="alert">
+  Cupom não encontrado.
+</div>]]></MensagemCupomInexistente><MensagemCupomInvalidoDepartamento><![CDATA[<div class="alert alert-warning" role="alert">
+  O cupom não é válido para o(s) departamento(s) selecionado(s).
+</div>]]></MensagemCupomInvalidoDepartamento><MensagemCupomInvalidoProduto><![CDATA[<div class="alert alert-warning" role="alert">
+  O cupom não é válido para o(s) produto(s) selecionado(s).
+</div>]]></MensagemCupomInvalidoProduto><MensagemCupomInvalidoValorMinimo><![CDATA[<div class="alert alert-warning" role="alert">
+  A compra não atingiu o valor mínimo para ativação do cupom.
+</div>]]></MensagemCupomInvalidoValorMinimo><MensagemCupomUsado><![CDATA[<div class="alert alert-warning" role="alert">
+  O cupom já foi usado.
+</div>]]></MensagemCupomUsado><MensagemCustomizacoesObrigatoriasNaoRealizadas><![CDATA[<div class="alert alert-warning" role="alert">
+  O produto <strong>[J0]</strong> possui customização obrigatória. Favor verificar.
+</div>]]></MensagemCustomizacoesObrigatoriasNaoRealizadas><MensagemProdutosComDisponibilidadeDiferenciadaHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  O produto [L0] não está mais disponível para pronta entrega na quantidade solicitada. Note que o prazo de envio do seu pedido será o maior prazo entre todos os produtos.
+</div>]]></MensagemProdutosComDisponibilidadeDiferenciadaHTML><MensagemProdutosContratoNaoAceitoHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <strong>Atenção!</strong> O produto <strong>[H0]</strong> não teve seu contrato aceito, favor verificar.
+</div>]]></MensagemProdutosContratoNaoAceitoHTML><MensagemProdutosEstoqueAlteradoHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  A quantidade desejada do item [G0] é maior que o estoque. Quantidade desejada: [G1], quantidade disponível: [G2].
+</div>]]></MensagemProdutosEstoqueAlteradoHTML><MensagemProdutosGratisSemPermissaoDeVendaHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.
+</div>]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  O preço do produto [F0] mudou de [F1] para [F2].
+</div>]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  O produto <strong>[K0]</strong> não esta mais disponível.
+</div>]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <strong>Atenção!</strong> Para comprar por esse template é necessário permissão.
+</div>]]></MensagemSemPermissaoDeCompraNoTemplateHTML><TamanhoImagem value="Gigantes" /></Carrinho></Carrinhos><CarrinhoEnderecoEntregas><CarrinhoEnderecoEntrega ID="shipping_address"><CarrinhoEnderecoEntregaHTML><![CDATA[<div class="custom-paddingV30 custom-clear"> 
+    <h5 class="text-uppercase text-left heading-primary custom-paddingV10"><strong>Endereço de entrega</strong></h5>   
+    <div class="custom-paddingV5">
+      <p><strong>[A0]</strong></p>
+      <p style="margin: 0;">[A1], [A2] [A3]</p>
+      <p style="margin: 0;">[A4] - [A5] - [A6]</p>
+      <p style="margin: 0;">CEP: [A8]</p>
+    </div>
+    <a href="[A11]" class="btn btn-secondary text-uppercase text-center custom-paddingV5 custom-paddingH15">Alterar endereço de entrega</a>
+</div>]]></CarrinhoEnderecoEntregaHTML></CarrinhoEnderecoEntrega></CarrinhoEnderecoEntregas><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

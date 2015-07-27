@@ -1,0 +1,43 @@
+.guest-title{
+    border-bottom: 4px solid #e2e8ef;
+    overflow: hidden;
+    padding: 0 16px;
+	position: relative;
+	margin-top: 15px;
+}
+
+.guest-title h2{
+    float: left;
+    font-size: 40px;
+    padding: 24px 0 18px 0;
+}
+
+.guest-title p{
+	float: right;
+	text-align: left;
+	font-size: 13px;
+	color: #5f5a5a;
+	width: 575px;
+    padding: 18px 0;
+    font-weight: normal;
+	display: block;
+}
+
+#isSameAddress{
+	padding: 10px;
+	margin: 10px;
+	font-size: 12px;
+}
+
+#isSameAddress strong{
+	display: block;
+	margin-top: 5px;
+}
+
+#isSameAddress label{
+	margin-right: 10px;
+}
+
+#isSameAddress label *{
+	vertical-align: middle;
+}

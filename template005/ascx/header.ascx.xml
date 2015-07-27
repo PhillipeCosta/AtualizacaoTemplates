@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><LabelVisitantes><LabelVisitante ID="greeting"><HTMLModeloLogado><![CDATA[[A1], <strong>[A2]</strong>
+<a href="[A0]">(se não for você, <u>clique aqui</u>)</a>]]></HTMLModeloLogado><HTMLModeloNaoLogado><![CDATA[[B1], <strong>Visitante</strong>
+<a href="[B0]">(<u>entrar</u>)</a>]]></HTMLModeloNaoLogado></LabelVisitante></LabelVisitantes><Links><Link ID="linkHome"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Início" /><UsarHTTPS value="False" /></Link><Link ID="linkAboutUs"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="PaginaInstitucional" /><Parametros value="destino=empresa" /><Target value="MesmaPagina" /><Texto value="Empresa" /><UsarHTTPS value="False" /></Link><Link ID="linkStores"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="PaginaInstitucional" /><Parametros value="destino=loja" /><Target value="MesmaPagina" /><Texto value="Loja Física" /><UsarHTTPS value="False" /></Link><Link ID="linkContactUs"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="FaleConosco" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Contato" /><UsarHTTPS value="False" /></Link><Link ID="linkTeleSales"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="FaleConosco" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Televendas: &lt;strong&gt;(11) 3019-2399&lt;/strong&gt;" /><UsarHTTPS value="False" /></Link><Link ID="homeLogo"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="" /><UsarHTTPS value="False" /></Link><Link ID="homeFixedLogo"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Default" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Magazine 25" /><UsarHTTPS value="False" /></Link><Link ID="orders"><Destino value="MeusPedidos" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Meus Pedidos" /><UsarHTTPS value="True" /></Link><Link ID="customerData"><Destino value="Comprador" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Identificacao" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="Meu Cadastro" /><UsarHTTPS value="True" /></Link><Link ID="cart"><Destino value="Nenhum" /><EnderecoLinkExterno value="" /><Imagem value="" /><PaginaLoja value="Carrinho" /><Parametros value="" /><Target value="MesmaPagina" /><Texto value="&lt;span id=&quot;header-cart-quantity&quot;&gt;00&lt;/span&gt;" /><UsarHTTPS value="False" /></Link></Links><CaixaPesquisas><CaixaPesquisa ID="search"><CaixaPesquisaHTML><![CDATA[<fieldset>
+  	<label class="header-search-input">[A0]</label>
+  	<a href="[A2]" class="header-search-buttom sprite">Buscar</a>
+</fieldset>
+<script>
+  	$(".header-search-input input").placeHolder({defaultText:"O que você está procurando?"});
+</script>]]></CaixaPesquisaHTML></CaixaPesquisa></CaixaPesquisas><CarrinhoTopos><CarrinhoTopo ID="cart_items"><CarrinhoHTML><![CDATA[<div style="display: none">
+	<repeticao:produtos>
+      <span class="q">[A5]</span>
+  	</repeticao:produtos>
+</div>
+<script>
+ 	$(function(){
+  		var qtd = 0;
+  		$(".q").each(function(){
+  			qtd = qtd+1;
+  		});
+  		$("#header-cart-quantity").html(qtd);
+  	});
+</script>]]></CarrinhoHTML><CarrinhoVazioHTML><![CDATA[<script>
+ 	$(function(){
+  		$("#header-cart-quantity").html("0");
+  	});
+</script>]]></CarrinhoVazioHTML><TamanhoImagem value="Pequenas" /></CarrinhoTopo></CarrinhoTopos><Menus><Menu ID="menu"><ApenasDepartamento value="False" /><MenuHTML><![CDATA[<li class="header-menu-allDepartments">
+  <a href="javascript: void(0)" class="header-menu-allDepartments-a">
+    <span>Ver todos os</span><span>departamentos</span>
+  </a>
+  <nav class="header-menu-subMenu">
+    <ul class="header-menu-allDepartments-ul">
+      <repeticao:pais>
+        <li><a href="[A0]">[A1]</a></li>
+      </repeticao:pais>
+    </ul>
+  </nav>
+</li>
+
+<repeticao:pais quantidade="7">
+    <li class="header-menu-li">
+      <a href="[A0]" class="header-menu-a">[A1]</a>
+    </li>
+</repeticao:pais>
+
+<script>
+	$(".header-menu-allDepartments-ul").adjustMenu();
+</script>]]></MenuHTML><TipoMenu value="Horizontal" /></Menu></Menus><ScriptRazors><ScriptRazor ID="h1"><ScriptRazorHTML><![CDATA[@{
+	var page = State.PageType.ToString();
+	if(page!="Produto" && page!="Departamento" && page!="Lista"){	
+		<h1 class="header-h1">Artigos para Festa é no Magazine 25 de Março Festas</h1>
+	}else{
+		<p class="header-h1">Artigos para Festa é no Magazine 25 de Março Festas</p>
+	}
+}]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="phone_treatment" /><ScriptRazor ID="contactUs"><ScriptRazorHTML><![CDATA[<p>Central de atendimento <strong>@TemplateSettings.header_helpDeskPhone_text</strong></p>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="headerSocial"><ScriptRazorHTML><![CDATA[        @if(TemplateSettings.main_facebook_link!="" || TemplateSettings.main_twitter_link!="" || TemplateSettings.main_instagran_link!=""){
+            if(TemplateSettings.main_facebook_link!=""){
+				  <a href="@TemplateSettings.main_facebook_link" target="_blank" class="header-social"><img src="imagens/@TemplateSettings.header_facebook_icon" alt="facebook" /></a>
+            }
+            if(TemplateSettings.main_instagran_link!=""){
+                  <a href="@TemplateSettings.main_instagran_link" target="_blank" class="header-social"><img src="imagens/@TemplateSettings.header_instagram_icon" alt="instagram" /></a>  
+            }
+            if(TemplateSettings.main_twitter_link!=""){
+                  <a href="@TemplateSettings.main_twitter_link" target="_blank" class="header-social"><img src="imagens/@TemplateSettings.header_twitter_icon" alt="twitter" /></a>
+            }
+        }
+]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

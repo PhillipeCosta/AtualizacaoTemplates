@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CaixaAguardeLojas><CaixaAguardeLoja ID="CaixaAguardeLoja"><CaixaAguardeHTML><![CDATA[]]></CaixaAguardeHTML></CaixaAguardeLoja></CaixaAguardeLojas><PacotePresentes><PacotePresente ID="PacotePresente1"><PacotePresenteHTML><![CDATA[        <div class="presente_conteudo">
+            <p style="padding-top: 5px; font-size: 11px;">
+                Escolha uma opção de Pacote de presente e preencha a mensagem que será posta no
+                cartão!. Caso não queira que o produto seja embrulhado escolha a opção "Não enviar
+                para presente" e clique em continuar.</p>
+            <ul>
+                <repeticao:pacote_presente>
+                <li>
+                    <h2 class="btn-primary" style="padding: 10px; font-size: 13px;">produto: [A0]</h2>
+                    <fieldset class="form">
+                        <label style="width: 100%;">[A1]</label>
+
+                            <repeticao:opcoes>
+                              <span class="opcoes_presente">[A2]</span>
+                            </repeticao:opcoes>
+
+                    </fieldset><br />
+                    <condicao:mensagem>
+                    <fieldset class="form mensagem">
+                        <label style="width: 100%;">
+                            Mensagem do Cartão <small>(Máximo de 250 caracteres)</small>:<br />
+                            [A3]
+                        </label>
+                    </fieldset>
+                    </condicao:mensagem>
+                </li>
+                </repeticao:pacote_presente>
+            </ul>
+        </div>
+        <div class="bt_direita pull-right">
+                <a href="#" onclick="[A5]" class="bt-principal btn btn-primary">Continuar</a>
+        </div>
+]]></PacotePresenteHTML><TextoExibicaoOpcao1 value="Embrulho de presente e cartão" /><TextoExibicaoOpcao2 value="Somente embrulho de presente" /><TextoExibicaoOpcao3 value="Somente cartão" /><TextoNaoEnviarPresente value="Não enviar para presente" /></PacotePresente></PacotePresentes><Links><Link ID="LinkAjuda"><PaginaLoja value="Default" /><Target value="MesmaPagina" /><UsarHTTPS value="False" /></Link></Links><Banners><Banner ID="mobile_identificacao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

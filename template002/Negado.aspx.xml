@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><Negados><Negado ID="denied"><NegadoHTML><![CDATA[
+      <div class="alert alert-warning" role="alert">
+      	<p>O pedido [A0] não foi autorizado pela operadora.<br /> O motivo citado pela mesma foi: [A1]</p>
+      </div>
+      <div>
+      	<p>Aconselhamos a você clicar no botão <strong>"Tentar Novamente"</strong> e, se possível, fechar o pedido com outro<br /> método de pagamento.</p>
+      	<a href="[A2]" class="bt btn-secondary">Tentar Novamente</a>
+      </div>
+ ]]></NegadoHTML></Negado></Negados><Banners><Banner ID="header_full" /></Banners><ScriptRazors><ScriptRazor ID="titleNegado"><ScriptRazorHTML><![CDATA[]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="titleDenied"><ScriptRazorHTML><![CDATA[<h4 class="main-padding20"><span class="fa fa-exclamation-triangle"></span>&nbsp;@TemplateSettings.heading_Denied</h4>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

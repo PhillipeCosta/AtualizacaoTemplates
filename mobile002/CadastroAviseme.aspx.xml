@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><CadastroAvisemes><CadastroAviseme ID="cmpCadastroAviseme"><CadastroAvisemeHTML><![CDATA[<div class="ciashop-titBox heading-primary">
+  <h2>Avise-me&nbsp;</h2>     
+  <span class="ciashop-cantoTit"></span>
+  <hr />
+</div>
+[A4][A5][A6]
+<div>
+    <p> A <strong>[A0]</strong> avisa você quando este produto estiver disponível, é só preencher
+    os campos abaixo com seus dados e assim que possível lhe enviaremos um e-mail.</p>
+    <div style="overflow: hidden; margin: 15px 0;">
+      <div class="col-md-6">
+        <img src="[A8]?width=150&height=150" alt="[A7]" align="left" />
+        <h4><strong>[A7]</strong></h4>      
+      </div>
+      <div class="col-md-6 form">
+          <fieldset>
+          <label class="col-md-12">
+             <span class="col-md-3">Nome:</span>
+             <span class="col-md-6">[A1]</span>
+          </label>
+          <label class="col-md-12">
+            <span class="col-md-3">Email:</span>
+            <span class="col-md-6">[A2]</span>
+          </label>
+          <label class="col-md-7 text-right" style="padding-right: 5px;">
+            <a href="[A3]" class="btn btn-secondary">Enviar</a> 
+          </label>
+          </fieldset>
+       </div>
+     </div>
+    <div>
+    <p><strong>Atenção:</strong> Este aviso não garante a reserva do produto, por isso, quanto mais
+    breve for seu acesso no site maior a possibilidade dele estar disponível.</p>
+    <p><strong>Valor do produto sujeito a alteração após reposição do item no estoque.</strong></p>
+    </div>
+</div>]]></CadastroAvisemeHTML><CadastroAvisemeProdutoNaoSelecionadoHTML><![CDATA[<div class="alert alert-info" role="alert">
+    <p><strong>Código da variante do produto inválida ou inexistente.</strong></p>
+</div>]]></CadastroAvisemeProdutoNaoSelecionadoHTML><MensagemAlertaCadastroAvisemeHTML><![CDATA[<div class="alert alert-warning" role="alert">
+        <h5>[B0]</h5>
+        <ul>
+            <repeticao:erro>
+                <li>[B1]</li>
+            </repeticao:erro>
+        </ul>
+</div>]]></MensagemAlertaCadastroAvisemeHTML><MensagemEmailCadastradoAvisemeHTML><![CDATA[<div class="alert alert-warning" role="alert">
+  <h5>Email já cadastrado. Quando o produto retornar ao estoque enviaremos um email para você.</h5>
+</div>]]></MensagemEmailCadastradoAvisemeHTML><MensagemSucessoCadastroAvisemeHTML><![CDATA[<div class="alert alert-success" role="alert">
+  <h5>Cadastro realizado com sucesso. Aguarde, quando o produto retornar ao estoque iremos enviar um email.</h5>
+</div>]]></MensagemSucessoCadastroAvisemeHTML><TamanhoImagem value="Gigantes" /></CadastroAviseme></CadastroAvisemes><Banners><Banner ID="Banner_Fullzao" /><Banner ID="Fullzao_Topo" /><Banner ID="BannerFull" /><Banner ID="Fullzao" /></Banners><ScriptRazors><ScriptRazor ID="script_headBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_headBottom]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyTop"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyTop]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="script_bodyBottom"><ScriptRazorHTML><![CDATA[@TemplateSettings.advanced_script_bodyBottom]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

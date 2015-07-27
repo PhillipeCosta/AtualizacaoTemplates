@@ -1,0 +1,158 @@
+.pedido_dados{
+  float: left;
+  margin-left: 15px;
+  width: 600px;
+}
+
+.pedido_dados p{
+  color:#585858;
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  margin: 3px 0;
+}
+
+.pedido_dados p.boleto{
+  color: #464646;
+  font-size: 13px;
+}
+
+.pedido_dados p.status{
+  font-size: 12px;;
+  color: #444;
+}
+
+.pedido_dados p.status img{
+  margin: 0;
+  vertical-align: middle;
+}
+
+.pedido_dados img{
+  margin: 5px 0;
+}
+
+
+.tab_carrinho .subtotal th, .tab_carrinho .cupom th, .tab_carrinho .total th, .tab_carrinho .frete th{
+  text-align: right;
+  font-size: 12px;;
+  background: #fff;
+}
+
+.tab_carrinho th{
+  text-align: center;
+  font-size: 12px;
+  color: #262626;
+  font-weight: normal;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+.tab_carrinho .item_carrinho td{
+  border-bottom: 1px dashed #ccc;
+  padding: 10px 5px;
+  font-size: 12px;
+}
+
+.tab_carrinho td{
+  text-align: center;
+  font-size: 12px;
+}
+
+.tab_carrinho{
+}
+
+.tab_carrinho tr{
+  color: #666;
+}
+
+.tab_carrinho a{
+  color: #585858;
+  text-decoration: none;
+}
+
+.tab_carrinho a:hover{
+  text-decoration: underline;
+}
+
+
+.tab_carrinho thead th {
+  line-height: 36px;
+  color: #fff;
+  background: url('../imagens/tit_box_bg.png') repeat-x center top;
+}
+
+.tab_carrinho thead th.th_tit_carrinho {
+  background-position: left top;
+}
+
+.tab_carrinho .frete{
+  text-align: left;
+  padding: 5px;
+  color: #666;
+  font-size: 12px;
+  background: #fff;
+  line-height: 150%;
+}
+
+.tab_carrinho th.frete_valor{
+  color:#333;
+  font-weight: bold;
+  text-align: right;
+}
+
+.tab_carrinho td.frete_valor{
+  color:#333;
+  white-space: nowrap;
+  padding: 0 10px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.tab_carrinho th.cupom{
+  color: #333;
+  font-weight: bold;
+  text-align: right;
+}
+
+.tab_carrinho td.cupom{
+  color:#333;
+  white-space: nowrap;
+  padding: 0 10px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.tab_carrinho th.total{
+  color:#FB6900;
+  font-weight: bold;
+  text-align: right;
+  background: #fff;
+}
+
+.tab_carrinho td.total{
+  color: #FB6900;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 0 10px;
+  line-height: 25px;
+  font-size: 12px;
+  background: #fff;
+}
+
+h2.confira{
+    color:#062A59;
+    font-size: 17px;
+    margin: 0 0 20px 0;   
+}
+
+.bt_esquerda{
+    text-align: left;
+}
+
+.bt_esquerda a{
+    margin: 5px 0px;
+}
+
+.depts_filho{
+    display: none;
+}
