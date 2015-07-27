@@ -86,6 +86,9 @@
         </div>
     </div>
 </div>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="footer_seals"><ScriptRazorHTML><![CDATA[<h3>Segurança</h3>
+<div class="footer-ebit to-right">
+  @TemplateSettings.footer_ebit
+</div>
   @if(TemplateSettings.footer_fControl != ""){
     <a href="http://www.fcontrol.com.br" target="_blank" class="footer-fcontrol sprite" style="display: block;">Fcontrol</a>
     }
@@ -97,7 +100,4 @@
   }
 <div class="footer-blindado">
   @TemplateSettings.footer_blindado
-</div>  
-<div class="footer-ebit to-right">
-  @TemplateSettings.footer_ebit
-</div>]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="socialFooter" /><ScriptRazor ID="facebookBox"><ScriptRazorHTML><![CDATA[<div class="footer-facebookBox to-right">@TemplateSettings.footer_scriptFacebook_text</div>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>
+</div>  ]]></ScriptRazorHTML></ScriptRazor><ScriptRazor ID="socialFooter" /><ScriptRazor ID="facebookBox"><ScriptRazorHTML><![CDATA[<div class="footer-facebookBox to-right">@TemplateSettings.footer_scriptFacebook_text</div>]]></ScriptRazorHTML></ScriptRazor></ScriptRazors></controles></page>

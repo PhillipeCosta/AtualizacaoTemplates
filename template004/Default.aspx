@@ -98,7 +98,7 @@ $(document).ready(function(){
 });
 </script>
 <ciac:scriptrazor id="script_bodyBottom" runat="server"></ciac:scriptrazor>
-<!-- Template Kids - versão 22 - mantido por Ciashop -->
+<!-- Template Kids - versão 25 - mantido por Ciashop -->
 </form>
 </body>
 </html>

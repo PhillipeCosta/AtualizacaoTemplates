@@ -163,7 +163,7 @@
 </div>]]></CarrinhoVazioHTML><MensagemAlertaProdutoSemEstoqueHTML><![CDATA[<div class="alert">
 	<strong>Atenção!</strong> Produto sem estoque
 </div>]]></MensagemAlertaProdutoSemEstoqueHTML><MensagemAlertaSemTrasportadorasHTML><![CDATA[<div class="alert">
-  <strong>Atenção!</strong> NNão entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
+  <strong>Atenção!</strong> Não entregamos para sua região. Por favor pesquise abaixo <b>outro CEP</b> ou <a href="[E0]">clique aqui</a> para entrar em contato com o nosso serviço de atendimento ao cliente.
 </div>]]></MensagemAlertaSemTrasportadorasHTML><MensagemAlertaValorMinimoHTML><![CDATA[<div class="alert">
 	<strong>Atenção!</strong> O valor mínimo da compra é de [C0].
 </div>]]></MensagemAlertaValorMinimoHTML><MensagemBrindeAdicionadoNoCarrinhoHTML><![CDATA[<div class="alert alert-success" style="overflow: hidden;">  	
@@ -212,7 +212,9 @@
 	<strong>Atenção!</strong> Esta loja não permite a venda grátis do produto <strong>[N0]</strong>.
 </div>]]></MensagemProdutosGratisSemPermissaoDeVendaHTML><MensagemProdutosPrecoAlteradoHTML><![CDATA[<div class="alert">
 	<strong>Atenção!</strong> O preço do produto [F0] mudou de [F1] para [F2].
-</div>]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[<div class="alert">
+</div>]]></MensagemProdutosPrecoAlteradoHTML><MensagemProdutosRemovidosPorRestricaoDeTemplateHTML><![CDATA[<div class="alert">
+	<strong>Atenção!</strong> O produto [S0] foi removido do carrinho pois não está disponível para o template acessado.
+</div>]]></MensagemProdutosRemovidosPorRestricaoDeTemplateHTML><MensagemProdutosRemovidosSemPrecoHTML><![CDATA[<div class="alert">
 	<strong>Atenção!</strong> O produto <strong>[K0]</strong> não esta mais disponível.
 </div>]]></MensagemProdutosRemovidosSemPrecoHTML><MensagemSemPermissaoDeCompraNoTemplateHTML><![CDATA[<div class="alert">
 	<strong>Atenção!</strong> Para comprar por esse template é necessário permissão.

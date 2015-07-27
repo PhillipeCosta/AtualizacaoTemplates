@@ -211,7 +211,13 @@ a{color:@TemplateSettings.main_darkText_color}
 
 @if(TemplateSettings.footer_scriptFacebook_text == ""){
 	<text>
-	.footer-paymentSeals{width: 50% !important;}
+	.footer-paymentSeals{width: 58% !important;}
       .footer-seals{float: right !important;}
+	</text>
+}
+
+@if(TemplateSettings.footer_ebit == ""){
+	<text>
+      .footer-seals{width: auto !important;}
 	</text>
 }

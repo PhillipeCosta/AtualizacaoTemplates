@@ -102,6 +102,7 @@
 .footer-paymentMethods{
     margin-bottom: 15px;
     margin-right: 3%;
+max-width: 300px;
 }
 
 
@@ -114,6 +115,7 @@
 .footer-seals {
     float: left;
     overflow: hidden;
+    width: 250px;
 }
 
 .footer-fcontrol{
