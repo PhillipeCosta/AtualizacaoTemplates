@@ -5,16 +5,16 @@
       </h1>
     </div>
   	<div class="form">
-      <div class="form-item validate required w-50">
+      <div class="form-item validate required w-100">
             <label><span class="form-title">Nome*</span>[A0]</label>
       </div>
-  	  <div class="form-item validate required w-50" data-type="email">
+  	  <div class="form-item validate required w-100" data-type="email">
             <label><span class="form-title">Email*</span>[A1]</label>
       </div>
-      <div class="form-item w-50">
+      <div class="form-item w-100">
             <label><span class="form-title">Cidade</span>[A3]</label>
       </div>
-  	  <div class="form-item w-50">
+  	  <div class="form-item w-100">
         <label><span class="form-title">Estado <small>(sigla)</small></span>[A4]</label>
       </div>
       <div style="display: none;">
@@ -24,16 +24,16 @@
     <div class="rate-content">
         <ul class="rate-products">
             <repeticao:produtos>
-                <li>
+                <li class="rate-products-iten">
                   <div class="heading-secundary"><h2>[A6]</h2></div>
-                  <div class="rate-product-image to-left w-20">
+                  <div class="rate-product-image">
                     <img src="[A5]?width=150&height=150" width="180" height="180" alt="[A6]" />
                   </div>
-                  <div class="rate-product-rate to-left w-30 form">
-                      <div class="form-item">
+                  <div class="rate-product-rate form">
+                      <div class="form-item w-100">
                         <label><span class="form-title">Avaliação*</span>[A7]</label>
                       </div>
-                      <div class="form-item">
+                      <div class="form-item w-100">
                         <label><span class="form-title">Comentário*</span>[A8]</label>
                       </div>
                   </div>
