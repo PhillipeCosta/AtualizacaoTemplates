@@ -4051,6 +4051,11 @@ ul, li{
     padding: 0.5em;
 }
 
+.tag_lancamento_prevenda{
+    font-size: 11px;
+    padding: 0.5em;
+}
+
 .bt-continuar{
     border: 0 none;
     border-radius: 5px;

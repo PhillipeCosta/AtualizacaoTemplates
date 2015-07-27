@@ -1,3 +1,7 @@
+.box_opiniao .form input[type="text"]{
+	width: 100% !important;
+}
+
 .produto_avaliar{
     clear: both;
     list-style: none;
@@ -10,29 +14,22 @@
 
 .produto_avaliar li h3{
     padding: 7px 10px;
-    background: #062A59;
-    color: #fff;
     font-weight: bold;
     font-size: 13px;
 }
 
 .produto_avaliar li .opiniao_foto{
-    float: left;
-    height: 150px;
-    width: 150px;
     background: #fff;
     text-align: center;
     margin-top: 20px;
 }
 
 .produto_avaliar li .opiniao_conteudo{
-    float: left;
     margin-left: 15px;
     margin-top: 20px;
 }
 
 .produto_avaliar li .opiniao_conteudo .opiniao_avaliacao{
-    color: #062A59;
     font-weight: bold;
     font-size: 11px;
     clear: both;
@@ -40,7 +37,6 @@
 }
 
 .produto_avaliar li .opiniao_conteudo .opiniao_comentario{
-    color: #062A59;
     font-weight: bold;
     font-size: 11px;
     clear: both;
@@ -51,11 +47,8 @@
     border: 1px solid #ccc;
     font-size: 11px;
     padding: 4px;
-    color: #666;
     vertical-align: middle;
     margin-top: 3px;
-    height: 70px;
-    width: 250px;
 }
 
 .produto_avaliar li .avaliacao_estrela{
@@ -73,8 +66,4 @@
 
 .bt_opniao{
     text-align: right;
-}
-
-.depts_filho{
-    display:none;
 }

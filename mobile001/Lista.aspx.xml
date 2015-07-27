@@ -7,11 +7,11 @@
          <a href="[D1]">
              <img alt="[D6]" src="[D2]?width=130&height=130" />
          </a>
-               <condicao:oferta>
-                 <span class="tag_oferta collection-product-releaseTag">
-                   Super oferta
-                 </span>
-               </condicao:oferta>
+            <condicao:oferta>
+              <span class="tag_oferta collection-product-offerTag">
+                Super oferta
+              </span>
+            </condicao:oferta>
       </div>
             <h3 class="titulo-produto collection-productName"><a href="[D1]"><strong>[D6]</strong></a></h3>
             <aside class="preco-produto">
@@ -37,6 +37,16 @@
                 </condicao:promocao_frete>              
               </div>                  
             </aside>
+            <condicao:lancamento>
+              <span class="tag_lancamento_prevenda collection-product-releaseTag">
+                Lançamento
+              </span>
+            </condicao:lancamento>      
+            <condicao:pre_venda>
+              <span class="tag_lancamento_prevenda collection-product-releaseTag">
+                Pré-Venda
+              </span>
+            </condicao:pre_venda>       
     </div>
   </li>
 </repeticao:produtos>
